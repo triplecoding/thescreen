@@ -12,86 +12,620 @@
     "title_bn": "আসল সম্পদ চোখে পড়ে না"
   },
   "cast": {
-    "rafi": {"name": "রাফি", "type": "teen_boy", "skin": "wheat", "outfit": "uniform", "color": "#F2F2EE", "color2": "#24415E", "hair": "side", "voice": "teen_boy"},
-    "abba": {"name": "আব্বা", "type": "man", "skin": "brown", "outfit": "shirt", "color": "#8FA9B8", "hair": "side_grey", "beard": "moustache", "voice": "man"},
-    "amma": {"name": "আম্মা", "type": "woman", "skin": "tan", "outfit": "sari", "color": "#2F7D6D", "color2": "#C4473A", "hair": "long_bun", "voice": "woman"},
-    "friend": {"name": "তানভীর", "type": "teen_boy", "skin": "light", "outfit": "uniform", "color": "#F2F2EE", "color2": "#24415E", "hair": "curly", "voice": "teen_boy"}
+    "rafi": {
+      "name": "রাফি",
+      "type": "teen_boy",
+      "skin": "wheat",
+      "outfit": "uniform",
+      "color": "#F2F2EE",
+      "color2": "#24415E",
+      "hair": "side",
+      "voice": "teen_boy"
+    },
+    "abba": {
+      "name": "আব্বা",
+      "type": "man",
+      "skin": "brown",
+      "outfit": "shirt",
+      "color": "#8FA9B8",
+      "hair": "side_grey",
+      "beard": "moustache",
+      "voice": "man"
+    },
+    "amma": {
+      "name": "আম্মা",
+      "type": "woman",
+      "skin": "tan",
+      "outfit": "sari",
+      "color": "#2F7D6D",
+      "color2": "#C4473A",
+      "hair": "long_bun",
+      "voice": "woman"
+    },
+    "friend": {
+      "name": "তানভীর",
+      "type": "teen_boy",
+      "skin": "light",
+      "outfit": "uniform",
+      "color": "#F2F2EE",
+      "color2": "#24415E",
+      "hair": "curly",
+      "voice": "teen_boy"
+    }
   },
   "beats": [
-    {"say": "ক্লাস টেনের রাফি, প্রতিদিন স্কুল গেটের *দুশো মিটার আগেই* আব্বার সাইকেল থেকে নেমে যেত।",
-     "scene": {"set": "street", "light": "day", "chip": "প্রতিদিন সকাল", "props": ["bicycle", "school_gate"],
-       "chars": [{"id": "abba", "x": 0.35, "pose": "stand", "face": "right", "mood": "smile", "arm": "down"},
-                 {"id": "rafi", "x": 0.66, "pose": "walk", "face": "right", "mood": "worried", "arm": "down", "hold": "bag"}],
-       "widget": {"kind": "stats", "items": [{"label": "গেট থেকে দূরত্ব", "value": "২০০ মি.", "from": "০ মি."}]}, "cam": "push"}},
-    {"say": "কারণ বন্ধুদের আব্বারা আসত *গাড়িতে*। আর রাফির আব্বা আসতেন বারো বছরের পুরনো, ক্যাঁচক্যাঁচে একটা সাইকেলে।",
-     "scene": {"widget": null, "props": ["bicycle", "school_gate", "car"], "cam": "wide"}},
-    {"voice": "friend", "tone": "teasing", "say": "কিরে রাফি, তোর আব্বার সাইকেলের বেল তো *পুরো পাড়া* শোনে!",
-     "scene": {"chars": [{"id": "friend", "x": 0.3, "pose": "stand", "face": "right", "mood": "happy", "arm": "point"},
-                         {"id": "rafi", "x": 0.68, "pose": "stand", "face": "left", "mood": "sad", "arm": "down", "hold": "bag"}],
-       "bubble": {"who": "friend", "text": "ক্রিং ক্রিং! 😂"}, "cam": {"focus": "friend", "zoom": 1.35}}},
-    {"say": "সবাই হাসল। রাফি কিছু বলল না। শুধু *মাটির দিকে* তাকিয়ে রইল।", "pause": 0.5, "scene": {"bubble": null, "cam": {"focus": "rafi", "zoom": 1.5}}},
-    {"say": "সেই রাতে বৃষ্টি। রাফি জানালা দিয়ে দেখল, আব্বা উঠানে বসে নিজেই সাইকেলের *ছেঁড়া চেইন* জোড়া দিচ্ছেন।",
-     "scene": {"set": "street", "light": "night", "chip": "সেই রাতে", "props": ["bicycle"], "fx": "rain",
-       "chars": [{"id": "abba", "x": 0.3, "pose": "sit", "face": "right", "mood": "neutral", "arm": "hold"}], "cam": "push"}},
-    {"say": "মিস্ত্রির কাছে নিলে পঞ্চাশ টাকা লাগত। আব্বা ভিজে ভিজে *এক ঘণ্টা* ধরে কাজ করলেন।",
-     "scene": {"widget": {"kind": "clock", "time": "11:00", "label": "রাত ১১টা"}, "cam": {"focus": "abba", "zoom": 1.35}}},
-    {"say": "রাফির খারাপ লাগল ঠিকই। কিন্তু রাগটা আরও বাড়ল। রাতের খাবারে সে আর চুপ থাকতে পারল না।",
-     "scene": {"set": "home", "light": "night", "chip": "খাবার টেবিল", "props": ["table", "window"], "fx": null, "widget": null,
-       "chars": [{"id": "abba", "x": 0.28, "pose": "sit", "face": "right", "mood": "neutral", "arm": "down"},
-                 {"id": "amma", "x": 0.52, "pose": "sit", "face": "right", "mood": "worried", "arm": "down"},
-                 {"id": "rafi", "x": 0.78, "pose": "stand", "face": "left", "mood": "angry", "arm": "down"}], "cam": "push"}},
-    {"voice": "rafi", "tone": "upset", "say": "সবার আব্বার গাড়ি আছে! তুমি কিস্তিতেও তো *একটা* নিতে পারো! আমার লজ্জা লাগে!",
-     "scene": {"arms": {"rafi": "point"}, "cam": {"focus": "rafi", "zoom": 1.4}}},
-    {"say": "আব্বা কিছু বললেন না। শুধু ভাতের থালাটা একটু *সরিয়ে* রাখলেন। আম্মা চোখ নামিয়ে নিলেন।", "pause": 0.8, "tone": "softly",
-     "scene": {"moods": {"abba": "sad", "amma": "sad"}, "arms": {"rafi": "down"}, "cam": {"focus": "abba", "zoom": 1.45}}},
-    {"say": "দুই মাস পর রেজাল্ট। রাফি শহরের সবচেয়ে ভালো কলেজে *চান্স* পেল।",
-     "scene": {"set": "home", "light": "day", "chip": "দুই মাস পর", "props": ["sofa", "window"],
-       "chars": [{"id": "rafi", "x": 0.5, "pose": "stand", "face": "right", "mood": "happy", "arm": "hold", "hold": "phone"}],
-       "widget": {"kind": "note", "style": "paper", "title": "ভর্তির ফলাফল", "lines": ["রাফি আহমেদ — নির্বাচিত ✓", "ভর্তি ও হোস্টেল: ৳ ১,৮০,০০০"]}, "cam": "push"}},
-    {"say": "কিন্তু খরচের অঙ্কটা শুনে, আম্মার মুখ *শুকিয়ে* গেল।",
-     "scene": {"widget": null, "chars": [{"id": "amma", "x": 0.32, "pose": "stand", "face": "right", "mood": "worried", "arm": "face"},
-                                         {"id": "rafi", "x": 0.7, "pose": "stand", "face": "left", "mood": "worried", "arm": "down"}], "cam": {"focus": "amma", "zoom": 1.35}}},
-    {"say": "আব্বা চুপচাপ উঠে আলমারি খুললেন। বের করলেন একটা পুরনো *ব্যাংকের পাসবই*।",
-     "scene": {"props": ["almirah"], "chars": [{"id": "abba", "x": 0.42, "pose": "stand", "face": "right", "mood": "neutral", "arm": "hold", "hold": "passbook"},
-                                               {"id": "rafi", "x": 0.74, "pose": "stand", "face": "left", "mood": "surprised", "arm": "down"}], "cam": "push"}},
-    {"say": "পাতার পর পাতা। প্রতি মাসে ছোট ছোট জমা। আর প্রতিটা লাইনের পাশে লেখা— *রাফির পড়া*।",
-     "scene": {"widget": {"kind": "note", "style": "passbook", "title": "সঞ্চয়ী হিসাব — রাফির পড়া", "lines": ["জানু ২০১৪ ........ ৳ ২,০০০", "জুন ২০১৮ ........ ৳ ৩,০০০", "মার্চ ২০২৩ ....... ৳ ৪,০০০", "মোট ....... ৳ ৪,৮০,০০০"]}, "cam": "static"}},
-    {"voice": "abba", "tone": "softly", "say": "যেদিন তুই হলি, সেদিন থেকে জমাচ্ছি। গাড়ির কিস্তি দিলে, এই খাতাটা *থাকত না*।", "pause": 0.7,
-     "scene": {"widget": null, "moods": {"abba": "smile"}, "arms": {"abba": "talk"}, "cam": {"focus": "abba", "zoom": 1.4}}},
-    {"say": "রাফির হঠাৎ মনে পড়ল, বৃষ্টির রাতের সেই পঞ্চাশ টাকা। কারণটা এখন *পরিষ্কার*।", "pause": 0.6,
-     "scene": {"moods": {"rafi": "crying"}, "cam": {"focus": "rafi", "zoom": 1.5}}},
-    {"say": "সে জানালা দিয়ে উঠানে তাকাল। পুরনো সাইকেলটা দাঁড়িয়ে আছে, *চুপচাপ*।", "tone": "softly",
-     "scene": {"set": "street", "light": "evening", "chip": "উঠান", "chars": [], "props": ["bicycle"], "cam": {"zoom": 1.25}, "fx": "dust"}},
-    {"say": "বারো বছর ধরে ওটা শুধু আব্বাকে বয়ে বেড়ায়নি— বয়ে বেড়িয়েছে *রাফির ভবিষ্যৎ*।", "pause": 0.6, "scene": {"cam": {"zoom": 1.45}, "fx": "glow"}},
-    {"say": "পরদিন সকালে, রাফি সাইকেলের পেছনে বসে বলল—",
-     "scene": {"light": "day", "chip": "পরদিন সকাল", "props": ["bicycle", "school_gate"], "fx": null,
-       "chars": [{"id": "abba", "x": 0.4, "pose": "stand", "face": "right", "mood": "neutral", "arm": "down"},
-                 {"id": "rafi", "x": 0.66, "pose": "stand", "face": "left", "mood": "smile", "arm": "down", "hold": "bag"}], "cam": "push"}},
-    {"voice": "rafi", "tone": "warmly", "say": "আব্বা, আজ আমাকে *গেটের সামনেই* নামিয়ো।", "pause": 0.6, "scene": {"moods": {"abba": "happy"}, "cam": {"focus": "rafi", "zoom": 1.35}}},
-    {"say": "গেটে তানভীর আবার হাসতে যাচ্ছিল। রাফি আব্বার হাত ধরে বলল, এটা আমার আব্বার সাইকেল। *আমার গর্ব*।",
-     "scene": {"chars": [{"id": "friend", "x": 0.22, "pose": "stand", "face": "right", "mood": "surprised", "arm": "down"},
-                         {"id": "abba", "x": 0.5, "pose": "stand", "face": "right", "mood": "happy", "arm": "down"},
-                         {"id": "rafi", "x": 0.74, "pose": "stand", "face": "left", "mood": "happy", "arm": "hug"}], "cam": "wide", "fx": "glow"}},
-    {"kind": "book", "say": "এই গল্পের পেছনের বই— মরগান হাউজেলের *দ্য সাইকোলজি অফ মানি*।"},
-    {"kind": "book", "say": "নয় নম্বর অধ্যায়— আসল সম্পদ *চোখে পড়ে না*।", "reveal": true, "pause": 0.3},
-    {"kind": "concept", "say": "গাড়ি, দামি ফোন চোখে পড়ে। কিন্তু আসল সম্পদ সেই টাকা, যা খরচ হয়নি— *পানির নিচে*, কেউ দেখে না।",
-     "card": {"title": "যা দেখা যায়, যা যায় না", "widget": {"type": "iceberg", "top": [{"icon": "car", "t": "গাড়ি"}, {"icon": "phone", "t": "দামি ফোন"}], "bottom": [{"icon": "bank", "t": "সঞ্চয়"}, {"icon": "door", "t": "সুযোগ"}, {"icon": "heart", "t": "নিশ্চিন্ত ঘুম"}], "show": 2}}},
-    {"kind": "takeaways", "say": "এক, দেখানো খরচ আর আসল সম্পদ *এক না*।", "show": 1,
-     "card": {"items": [{"t": "দেখানো খরচ ≠ সম্পদ", "sub": "গাড়ি চোখে পড়ে, পাসবই পড়ে না", "icon": "eye"}, {"t": "না-কেনাই স্বাধীনতা", "sub": "প্রতিটা ‘না’, একটা খোলা দরজা", "icon": "door"}, {"t": "সাদামাটা মানুষকে বিচার নয়", "sub": "হয়তো চুপচাপ ভবিষ্যৎ গড়ছে", "icon": "heart"}]}},
-    {"kind": "takeaways", "say": "দুই, যা কেনোনি, সেটাই তোমার *স্বাধীনতা*।", "show": 2},
-    {"kind": "takeaways", "say": "তিন, সাদামাটা মানুষকে *বিচার কোরো না*।", "show": 3, "pause": 0.4},
-    {"kind": "ask", "tone": "softly", "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি মানুষকে *মুগ্ধ* করতে কিনছি, নাকি নিজের *ভবিষ্যৎ* গড়ছি?", "pause": 0.7,
-     "card": {"quote": "আমি কি মানুষকে *মুগ্ধ* করছি,\nনাকি নিজের *ভবিষ্যৎ* গড়ছি?"}},
-    {"kind": "outro", "say": "দামি জিনিস সবার চোখে পড়ে… *দামি মানুষগুলো* পড়ে না।", "pause": 1.6,
-     "card": {"line1": "দামি জিনিস সবার চোখে পড়ে…", "line2": "দামি মানুষগুলো পড়ে না।"}}
+    {
+      "say": "ক্লাস টেনের রাফি, প্রতিদিন স্কুল গেটের *দুশো মিটার আগেই* আব্বার সাইকেল থেকে নেমে যেত।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "প্রতিদিন সকাল",
+        "props": [
+          "bicycle",
+          "school_gate"
+        ],
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.35,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "rafi",
+            "x": 0.66,
+            "pose": "walk",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "গেট থেকে দূরত্ব",
+              "value": "২০০ মি.",
+              "from": "০ মি."
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "কারণ বন্ধুদের আব্বারা আসত *গাড়িতে*। রাফির আব্বা, বারো বছরের পুরনো সাইকেলে।",
+      "scene": {
+        "widget": null,
+        "props": [
+          "bicycle",
+          "school_gate",
+          "car"
+        ],
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "friend",
+      "tone": "teasing",
+      "say": "কিরে রাফি, তোর আব্বার সাইকেলের বেল তো *পুরো পাড়া* শোনে!",
+      "scene": {
+        "chars": [
+          {
+            "id": "friend",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "point"
+          },
+          {
+            "id": "rafi",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "bubble": {
+          "who": "friend",
+          "text": "ক্রিং ক্রিং! 😂"
+        },
+        "cam": {
+          "focus": "friend",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "সবাই হাসল। রাফি *মাটির দিকে* তাকিয়ে রইল।",
+      "pause": 0.5,
+      "scene": {
+        "bubble": null,
+        "cam": {
+          "focus": "rafi",
+          "zoom": 1.5
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে বৃষ্টি। রাফি দেখল, আব্বা উঠানে বসে নিজেই সাইকেলের *ছেঁড়া চেইন* জোড়া দিচ্ছেন।",
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "bicycle"
+        ],
+        "fx": "rain",
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "মিস্ত্রির কাছে নিলে পঞ্চাশ টাকা। আব্বা ভিজে ভিজে *এক ঘণ্টা* কাজ করলেন।",
+      "scene": {
+        "widget": {
+          "kind": "clock",
+          "time": "11:00",
+          "label": "রাত ১১টা"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "তবু রাফির রাগ কমল না। রাতের খাবারে সে বলেই ফেলল—",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "খাবার টেবিল",
+        "props": [
+          "table",
+          "window"
+        ],
+        "fx": null,
+        "widget": null,
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.28,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "amma",
+            "x": 0.52,
+            "pose": "sit",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          },
+          {
+            "id": "rafi",
+            "x": 0.78,
+            "pose": "stand",
+            "face": "left",
+            "mood": "angry",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "rafi",
+      "tone": "upset",
+      "say": "সবার আব্বার গাড়ি আছে! কিস্তিতেও তো *একটা* নিতে পারো! আমার লজ্জা লাগে!",
+      "scene": {
+        "arms": {
+          "rafi": "point"
+        },
+        "cam": {
+          "focus": "rafi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আব্বা কিছু বললেন না। শুধু ভাতের থালাটা একটু *সরিয়ে* রাখলেন।",
+      "pause": 0.8,
+      "tone": "softly",
+      "scene": {
+        "moods": {
+          "abba": "sad",
+          "amma": "sad"
+        },
+        "arms": {
+          "rafi": "down"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "দুই মাস পর, রাফি শহরের সেরা কলেজে *চান্স* পেল।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "দুই মাস পর",
+        "props": [
+          "sofa",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "rafi",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "phone"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "ভর্তির ফলাফল",
+          "lines": [
+            "রাফি আহমেদ — নির্বাচিত ✓",
+            "ভর্তি ও হোস্টেল: ৳ ১,৮০,০০০"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "কিন্তু খরচের অঙ্ক শুনে আম্মার মুখ *শুকিয়ে* গেল।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.32,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "face"
+          },
+          {
+            "id": "rafi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "আব্বা চুপচাপ আলমারি খুলে বের করলেন একটা পুরনো *পাসবই*।",
+      "scene": {
+        "props": [
+          "almirah"
+        ],
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.42,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "passbook"
+          },
+          {
+            "id": "rafi",
+            "x": 0.74,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "প্রতি মাসে ছোট ছোট জমা। প্রতিটা লাইনের পাশে লেখা— *রাফির পড়া*।",
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "passbook",
+          "title": "সঞ্চয়ী হিসাব — রাফির পড়া",
+          "lines": [
+            "জানু ২০১৪ ........ ৳ ২,০০০",
+            "জুন ২০১৮ ........ ৳ ৩,০০০",
+            "মার্চ ২০২৩ ....... ৳ ৪,০০০",
+            "মোট ....... ৳ ৪,৮০,০০০"
+          ]
+        },
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "abba",
+      "tone": "softly",
+      "say": "যেদিন তুই হলি, সেদিন থেকে জমাচ্ছি। গাড়ির কিস্তি দিলে, এই খাতাটা *থাকত না*।",
+      "pause": 0.7,
+      "scene": {
+        "widget": null,
+        "moods": {
+          "abba": "smile"
+        },
+        "arms": {
+          "abba": "talk"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রাফির মনে পড়ল, বৃষ্টির রাতের সেই পঞ্চাশ টাকা। কারণটা এখন *পরিষ্কার*।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "rafi": "crying"
+        },
+        "cam": {
+          "focus": "rafi",
+          "zoom": 1.5
+        }
+      }
+    },
+    {
+      "say": "উঠানে পুরনো সাইকেলটা দাঁড়িয়ে আছে, *চুপচাপ*।",
+      "tone": "softly",
+      "scene": {
+        "set": "street",
+        "light": "evening",
+        "chip": "উঠান",
+        "chars": [],
+        "props": [
+          "bicycle"
+        ],
+        "cam": {
+          "zoom": 1.25
+        },
+        "fx": "dust"
+      }
+    },
+    {
+      "say": "বারো বছর ধরে ওটা বয়ে বেড়িয়েছে *রাফির ভবিষ্যৎ*।",
+      "pause": 0.6,
+      "scene": {
+        "cam": {
+          "zoom": 1.45
+        },
+        "fx": "glow"
+      }
+    },
+    {
+      "say": "পরদিন সকালে রাফি বলল—",
+      "scene": {
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "bicycle",
+          "school_gate"
+        ],
+        "fx": null,
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.4,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "rafi",
+            "x": 0.66,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "rafi",
+      "tone": "warmly",
+      "say": "আব্বা, আজ আমাকে *গেটের সামনেই* নামিয়ো।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "abba": "happy"
+        },
+        "cam": {
+          "focus": "rafi",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "গেটে তানভীর হাসতে যাচ্ছিল। রাফি আব্বার হাত ধরে বলল, এটা আমার আব্বার সাইকেল— *আমার গর্ব*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "friend",
+            "x": 0.22,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "abba",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "rafi",
+            "x": 0.74,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hug"
+          }
+        ],
+        "cam": "wide",
+        "fx": "glow"
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— মরগান হাউজেলের *দ্য সাইকোলজি অফ মানি*।"
+    },
+    {
+      "kind": "book",
+      "say": "নয় নম্বর অধ্যায়— আসল সম্পদ *চোখে পড়ে না*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "গাড়ি চোখে পড়ে। আসল সম্পদ সেই টাকা, যা খরচ হয়নি— *কেউ দেখে না*।",
+      "card": {
+        "title": "যা দেখা যায়, যা যায় না",
+        "widget": {
+          "type": "iceberg",
+          "top": [
+            {
+              "icon": "car",
+              "t": "গাড়ি"
+            },
+            {
+              "icon": "phone",
+              "t": "দামি ফোন"
+            }
+          ],
+          "bottom": [
+            {
+              "icon": "bank",
+              "t": "সঞ্চয়"
+            },
+            {
+              "icon": "door",
+              "t": "সুযোগ"
+            },
+            {
+              "icon": "heart",
+              "t": "নিশ্চিন্ত ঘুম"
+            }
+          ],
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "এক, দেখানো খরচ আর আসল সম্পদ *এক না*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "দেখানো খরচ ≠ সম্পদ",
+            "sub": "গাড়ি চোখে পড়ে, পাসবই পড়ে না",
+            "icon": "eye"
+          },
+          {
+            "t": "না-কেনাই স্বাধীনতা",
+            "sub": "প্রতিটা ‘না’, একটা খোলা দরজা",
+            "icon": "door"
+          },
+          {
+            "t": "সাদামাটা মানুষকে বিচার নয়",
+            "sub": "হয়তো চুপচাপ ভবিষ্যৎ গড়ছে",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, যা কেনোনি, সেটাই তোমার *স্বাধীনতা*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, সাদামাটা মানুষকে *বিচার কোরো না*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "পর্দাটা এবার তোমার দিকে— আমি কি মানুষকে *মুগ্ধ* করছি, নাকি নিজের *ভবিষ্যৎ* গড়ছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি মানুষকে *মুগ্ধ* করছি,\nনাকি নিজের *ভবিষ্যৎ* গড়ছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "দামি জিনিস সবার চোখে পড়ে… *দামি মানুষগুলো* পড়ে না।",
+      "pause": 1.6,
+      "card": {
+        "line1": "দামি জিনিস সবার চোখে পড়ে…",
+        "line2": "দামি মানুষগুলো পড়ে না।"
+      }
+    }
   ],
   "youtube": {
     "title": "যে সাইকেলের জন্য লজ্জা পেত, সেটাই ছিল তার ভবিষ্যৎ 🚲 | The Psychology of Money বাংলা",
     "description": "বন্ধুদের আব্বারা আসত গাড়িতে। রাফির আব্বা আসতেন বারো বছরের পুরনো সাইকেলে। তারপর একদিন আলমারি থেকে বের হলো একটা পাসবই…\nMorgan Housel-এর The Psychology of Money — Wealth Is What You Don't See — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": ["psychology of money bangla", "morgan housel bangla", "বাবার গল্প", "বাংলা গল্প", "টাকার মনস্তত্ত্ব", "সঞ্চয়", "বাবা ছেলের গল্প", "জীবনের শিক্ষা"]
+    "tags": [
+      "psychology of money bangla",
+      "morgan housel bangla",
+      "বাবার গল্প",
+      "বাংলা গল্প",
+      "টাকার মনস্তত্ত্ব",
+      "সঞ্চয়",
+      "বাবা ছেলের গল্প",
+      "জীবনের শিক্ষা"
+    ]
   },
   "facebook": {
     "caption": "বারো বছর ধরে সাইকেলটা শুধু আব্বাকে বয়ে বেড়ায়নি— বয়ে বেড়িয়েছে রাফির ভবিষ্যৎ। 🚲\n\nতোমার আব্বার কোন জিনিসটা তুমি কখনো ভুলবে না? 👇\n\n📖 The Psychology of Money — Morgan Housel\n#বাবা #সঞ্চয়"
   },
-  "thumbnail": {"text": "আব্বার সাইকেল", "sub": "লজ্জা থেকে গর্ব"}
+  "thumbnail": {
+    "text": "আব্বার সাইকেল",
+    "sub": "লজ্জা থেকে গর্ব"
+  }
 }

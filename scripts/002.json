@@ -12,84 +12,565 @@
     "title_bn": "মানুষের নিজের ছবিটাকে সম্মান করো"
   },
   "cast": {
-    "ruma": {"name": "রুমা", "type": "young_woman", "skin": "wheat", "outfit": "salwar", "color": "#2F7D6D", "color2": "#E8A33D", "hair": "long_braid", "voice": "young_woman"},
-    "amma": {"name": "শাশুড়ি", "type": "old_woman", "skin": "tan", "outfit": "sari", "color": "#7A3B5E", "color2": "#E8A33D", "hair": "grey_bun", "glasses": true, "voice": "old_woman"},
-    "fupu": {"name": "ফুপু শাশুড়ি", "type": "woman", "skin": "light", "outfit": "sari", "color": "#C4473A", "color2": "#F2E2B8", "hair": "long_bun", "voice": "woman"},
-    "jamal": {"name": "জামাল", "type": "young_man", "skin": "wheat", "outfit": "panjabi", "color": "#DCE3E0", "hair": "side", "beard": "stubble", "voice": "young_man"}
+    "ruma": {
+      "name": "রুমা",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#2F7D6D",
+      "color2": "#E8A33D",
+      "hair": "long_braid",
+      "voice": "young_woman"
+    },
+    "amma": {
+      "name": "শাশুড়ি",
+      "type": "old_woman",
+      "skin": "tan",
+      "outfit": "sari",
+      "color": "#7A3B5E",
+      "color2": "#E8A33D",
+      "hair": "grey_bun",
+      "glasses": true,
+      "voice": "old_woman"
+    },
+    "fupu": {
+      "name": "ফুপু শাশুড়ি",
+      "type": "woman",
+      "skin": "light",
+      "outfit": "sari",
+      "color": "#C4473A",
+      "color2": "#F2E2B8",
+      "hair": "long_bun",
+      "voice": "woman"
+    },
+    "jamal": {
+      "name": "জামাল",
+      "type": "young_man",
+      "skin": "wheat",
+      "outfit": "panjabi",
+      "color": "#DCE3E0",
+      "hair": "side",
+      "beard": "stubble",
+      "voice": "young_man"
+    }
   },
   "beats": [
-    {"say": "বিয়ের পর *ছয় মাস*। শাশুড়ি রুমার সাথে কথা বলতেন শুধু দরকারে— চা হয়েছে? ভাত বসিয়েছ?",
-     "scene": {"set": "kitchen", "light": "day", "chip": "ছয় মাস ধরে", "props": ["stove"],
-       "chars": [{"id": "amma", "x": 0.3, "pose": "stand", "face": "right", "mood": "neutral", "arm": "cross"},
-                 {"id": "ruma", "x": 0.72, "pose": "stand", "face": "left", "mood": "worried", "arm": "hold", "hold": "tea"}],
-       "widget": {"kind": "stats", "items": [{"label": "মাস", "value": "৬", "from": "১"}, {"label": "মন খুলে কথা", "value": "০", "red": true}]}, "cam": "push"}},
-    {"say": "রুমা অনেক চেষ্টা করেছে। ইউটিউব দেখে নতুন নতুন রান্না, *চায়নিজ*, পাস্তা, কেক।",
-     "scene": {"widget": null, "props": ["stove", "pot"], "chars": [{"id": "ruma", "x": 0.5, "pose": "stand", "face": "left", "mood": "happy", "arm": "hold", "hold": "plate"}], "cam": "pan"}},
-    {"voice": "amma", "tone": "flatly", "say": "এগুলো আমাদের বাড়িতে কেউ খায় না, বউমা।",
-     "scene": {"chars": [{"id": "amma", "x": 0.3, "pose": "stand", "face": "right", "mood": "neutral", "arm": "cross"},
-                         {"id": "ruma", "x": 0.72, "pose": "stand", "face": "left", "mood": "sad", "arm": "hold", "hold": "plate"}], "cam": {"focus": "amma", "zoom": 1.45}}},
-    {"kind": "list", "say": "নতুন শাড়ি দিল, ঘরের সব কাজ নিজে করল, রাত জেগে শাশুড়ির পায়ে তেলও দিল। দূরত্ব একটুও *কমল না*।",
-     "card": {"title": "ছয় মাসের চেষ্টা", "items": [{"t": "নতুন নতুন রান্না", "mark": "x"}, {"t": "শাড়ি উপহার", "mark": "x"}, {"t": "সব কাজ একা করা", "mark": "x"}]}},
-    {"say": "স্বামী জামাল বলল, আম্মা একটু কঠিন মানুষ, সময় লাগবে। কিন্তু রুমার মনে হচ্ছিল, সময় না— *কিছু একটা* ভুল হচ্ছে।",
-     "scene": {"set": "home", "light": "night", "chip": "এক রাতে", "props": ["bed", "window"],
-       "chars": [{"id": "jamal", "x": 0.3, "pose": "sit", "face": "right", "mood": "neutral", "arm": "talk"},
-                 {"id": "ruma", "x": 0.7, "pose": "sit", "face": "left", "mood": "thinking", "arm": "face"}], "cam": "push"}},
-    {"say": "তারপর এল ফুপু শাশুড়ির বাড়িতে বড় *দাওয়াত*। আত্মীয়রা সবাই খেতে বসেছে।",
-     "scene": {"set": "home", "light": "evening", "chip": "দাওয়াতের দিন", "props": ["table", "window"],
-       "chars": [{"id": "fupu", "x": 0.2, "pose": "sit", "face": "right", "mood": "smile", "arm": "down"},
-                 {"id": "amma", "x": 0.48, "pose": "sit", "face": "right", "mood": "neutral", "arm": "down"},
-                 {"id": "ruma", "x": 0.78, "pose": "sit", "face": "left", "mood": "neutral", "arm": "down"}], "cam": "wide"}},
-    {"voice": "fupu", "tone": "teasing", "say": "আজকালকার বউরা তো সব নতুন রান্না পারে। পুরনো রান্না তো আর *কেউ শেখে না*!",
-     "scene": {"arms": {"fupu": "point"}, "cam": {"focus": "fupu", "zoom": 1.35}}},
-    {"say": "সবাই হাসল। শাশুড়ির মুখটা একটু *শক্ত* হয়ে গেল।", "pause": 0.5,
-     "scene": {"arms": {"fupu": "down"}, "moods": {"amma": "sad"}, "cam": {"focus": "amma", "zoom": 1.45}}},
-    {"say": "রুমা প্লেট নামিয়ে রাখল। তারপর শান্ত গলায়, *সবার সামনে* বলল—",
-     "scene": {"cam": {"focus": "ruma", "zoom": 1.3}}},
-    {"voice": "ruma", "tone": "warmly", "say": "ফুপু, আমি যা শিখছি, আম্মার কাছ থেকেই শিখছি। ওনার হাতের *শুঁটকি ভর্তা* খেয়ে বুঝেছি, রান্না আসলে কাকে বলে।",
-     "scene": {"arms": {"ruma": "talk"}, "cam": {"focus": "ruma", "zoom": 1.4}}},
-    {"say": "টেবিলে হঠাৎ নীরবতা। শাশুড়ি রুমার দিকে তাকালেন— এই প্রথম, *অন্যরকম চোখে*।", "pause": 0.9, "tone": "softly",
-     "scene": {"arms": {"ruma": "down"}, "moods": {"amma": "surprised"}, "cam": {"focus": "amma", "zoom": 1.55}}},
-    {"say": "কথাটা মিথ্যে ছিল না। ছয় মাসে রুমা সত্যিই খেয়াল করেছিল, এ বাড়ির আসল স্বাদ *ওনার হাতে*।",
-     "scene": {"moods": {"amma": "smile"}, "cam": "wide", "fx": "glow"}},
-    {"say": "পরদিন ভোর ছয়টা। দরজায় টোকা।",
-     "scene": {"set": "home", "light": "day", "chip": "পরদিন ভোর", "props": ["door_closed"], "fx": null,
-       "chars": [{"id": "amma", "x": 0.55, "pose": "stand", "face": "left", "mood": "smile", "arm": "down"}], "cam": "push"}},
-    {"voice": "amma", "tone": "gently", "say": "ওঠ বউমা। চল, তোকে *ইলিশ কাটা* শেখাই। এ বাড়ির রান্না শাশুড়িই শেখায়।",
-     "scene": {"arms": {"amma": "talk"}, "cam": {"focus": "amma", "zoom": 1.35}}},
-    {"say": "সেদিন রান্নাঘরে দুজন। শাশুড়ি শেখালেন, বকলেন, আর মাঝে মাঝে *হাসলেন*।",
-     "scene": {"set": "kitchen", "light": "day", "chip": "সকাল", "props": ["stove", "pot"],
-       "chars": [{"id": "amma", "x": 0.34, "pose": "stand", "face": "right", "mood": "happy", "arm": "point"},
-                 {"id": "ruma", "x": 0.66, "pose": "stand", "face": "left", "mood": "happy", "arm": "hold", "hold": "plate"}], "cam": "pan"}},
-    {"voice": "amma", "tone": "playfully", "say": "সর্ষে আরেকটু দে… এত ভয় পাস কেন? *আমি তো আছি*।",
-     "scene": {"bubble": {"who": "amma", "text": "সর্ষে আরেকটু!"}, "cam": {"focus": "amma", "zoom": 1.3}}},
-    {"say": "এক মাস পর, পাশের বাসার ভাবিদের সামনে শাশুড়ি নিজেই বললেন—",
-     "scene": {"set": "home", "light": "day", "chip": "এক মাস পর", "props": ["sofa"], "bubble": null,
-       "chars": [{"id": "fupu", "x": 0.25, "pose": "sit", "face": "right", "mood": "surprised", "arm": "down"},
-                 {"id": "amma", "x": 0.55, "pose": "sit", "face": "right", "mood": "happy", "arm": "talk"},
-                 {"id": "ruma", "x": 0.82, "pose": "stand", "face": "left", "mood": "smile", "arm": "hold", "hold": "tea"}], "cam": "wide"}},
-    {"voice": "amma", "tone": "proudly", "say": "আমার বউমার ইলিশ ভাপা একবার খেয়ে দেখো। *আমার চেয়েও ভালো* হয়।",
-     "scene": {"cam": {"focus": "amma", "zoom": 1.4}}},
-    {"say": "ছয় মাসের চেষ্টা যা পারেনি, সবার সামনে বলা *একটা সত্যি কথা* তা পারল।", "pause": 0.8, "scene": {"cam": "wide", "fx": "glow"}},
-    {"kind": "book", "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য লজ অফ হিউম্যান নেচার*।"},
-    {"kind": "book", "say": "সাত নম্বর অধ্যায়— মানুষের *নিজের ছবিটাকে* সম্মান করো।", "reveal": true, "pause": 0.3},
-    {"kind": "concept", "say": "প্রতিটা মানুষ মনে মনে নিজেকে একভাবে দেখে। সেই ছবিতে আঘাত দিলে *দেয়াল ওঠে*, সম্মান দিলে *দরজা খোলে*।",
-     "card": {"title": "মনের ছবি", "widget": {"type": "compare", "left": {"icon": "shield", "t": "ছবিতে আঘাত", "sub": "দেয়াল ওঠে", "bad": true}, "right": {"icon": "door", "t": "ছবিকে সম্মান", "sub": "দরজা খোলে"}, "show": 2}}},
-    {"kind": "takeaways", "say": "এক, মানুষটার *গর্বের জায়গাটা* খোঁজো।", "show": 1,
-     "card": {"items": [{"t": "গর্বের জায়গাটা খোঁজো", "sub": "রান্না, বাগান, পুরনো দক্ষতা", "icon": "star"}, {"t": "সেটা সবার সামনে বলো", "sub": "প্রশংসা আড়ালে নয়", "icon": "people"}, {"t": "কথাটা যেন সত্যি হয়", "sub": "বানানো প্রশংসা মানুষ টের পায়", "icon": "heart"}]}},
-    {"kind": "takeaways", "say": "দুই, সেই সম্মানটা দাও *সবার সামনে*।", "show": 2},
-    {"kind": "takeaways", "say": "তিন, কথাটা যেন *সত্যি* হয়।", "show": 3, "pause": 0.4},
-    {"kind": "ask", "tone": "softly", "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি ওর সামনে নিজেকে *প্রমাণ* করছি, নাকি ওকে *সম্মান* দিচ্ছি?", "pause": 0.7,
-     "card": {"quote": "আমি কি নিজেকে *প্রমাণ* করছি,\nনাকি ওকে *সম্মান* দিচ্ছি?"}},
-    {"kind": "outro", "say": "মানুষকে হারিয়ে কাছে পাওয়া যায় না… *তার জায়গাটা দিলে, সে নিজেই কাছে আসে*।", "pause": 1.6,
-     "card": {"line1": "মানুষকে হারিয়ে কাছে পাওয়া যায় না…", "line2": "তার জায়গাটা দিলে,\nসে নিজেই কাছে আসে।"}}
+    {
+      "say": "বিয়ের পর *ছয় মাস*। শাশুড়ি রুমার সাথে কথা বলতেন শুধু দরকারে।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "ছয় মাস ধরে",
+        "props": [
+          "stove"
+        ],
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "cross"
+          },
+          {
+            "id": "ruma",
+            "x": 0.72,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "tea"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "মাস",
+              "value": "৬",
+              "from": "১"
+            },
+            {
+              "label": "মন খুলে কথা",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "রুমা চেষ্টা কম করেনি। ইউটিউব দেখে নতুন রান্না— *চায়নিজ*, পাস্তা, কেক।",
+      "scene": {
+        "widget": null,
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "ruma",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "voice": "amma",
+      "tone": "flatly",
+      "say": "এগুলো আমাদের বাড়িতে কেউ খায় না, বউমা।",
+      "scene": {
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "cross"
+          },
+          {
+            "id": "ruma",
+            "x": 0.72,
+            "pose": "stand",
+            "face": "left",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "নতুন শাড়ি দিল, সব কাজ নিজে করল। দূরত্ব একটুও *কমল না*।",
+      "card": {
+        "title": "ছয় মাসের চেষ্টা",
+        "items": [
+          {
+            "t": "নতুন নতুন রান্না",
+            "mark": "x"
+          },
+          {
+            "t": "শাড়ি উপহার",
+            "mark": "x"
+          },
+          {
+            "t": "সব কাজ একা করা",
+            "mark": "x"
+          }
+        ]
+      }
+    },
+    {
+      "say": "জামাল বলল, আম্মা একটু কঠিন মানুষ। কিন্তু রুমার মনে হলো, কোথাও *কিছু একটা* ভুল হচ্ছে।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "এক রাতে",
+        "props": [
+          "bed",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "jamal",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "talk"
+          },
+          {
+            "id": "ruma",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "thinking",
+            "arm": "face"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "তারপর ফুপু শাশুড়ির বাড়িতে বড় *দাওয়াত*।",
+      "scene": {
+        "set": "home",
+        "light": "evening",
+        "chip": "দাওয়াতের দিন",
+        "props": [
+          "table",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "fupu",
+            "x": 0.2,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "amma",
+            "x": 0.48,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "ruma",
+            "x": 0.78,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "down"
+          }
+        ],
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "fupu",
+      "tone": "teasing",
+      "say": "আজকালকার বউরা তো সব নতুন রান্না পারে। পুরনো রান্না তো আর *কেউ শেখে না*!",
+      "scene": {
+        "arms": {
+          "fupu": "point"
+        },
+        "cam": {
+          "focus": "fupu",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "সবাই হাসল। শাশুড়ির মুখটা একটু *শক্ত* হয়ে গেল।",
+      "pause": 0.5,
+      "scene": {
+        "arms": {
+          "fupu": "down"
+        },
+        "moods": {
+          "amma": "sad"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "রুমা প্লেট নামিয়ে রাখল। তারপর শান্ত গলায়, *সবার সামনে* বলল—",
+      "scene": {
+        "cam": {
+          "focus": "ruma",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "voice": "ruma",
+      "tone": "warmly",
+      "say": "ফুপু, আমি যা শিখছি, আম্মার কাছেই শিখছি। ওনার হাতের *শুঁটকি ভর্তা* খেয়ে বুঝেছি, রান্না কাকে বলে।",
+      "scene": {
+        "arms": {
+          "ruma": "talk"
+        },
+        "cam": {
+          "focus": "ruma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "টেবিলে নীরবতা। শাশুড়ি রুমার দিকে তাকালেন— এই প্রথম, *অন্যরকম চোখে*।",
+      "pause": 0.9,
+      "tone": "softly",
+      "scene": {
+        "arms": {
+          "ruma": "down"
+        },
+        "moods": {
+          "amma": "surprised"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.55
+        }
+      }
+    },
+    {
+      "say": "কথাটা মিথ্যে ছিল না। এ বাড়ির আসল স্বাদ সত্যিই *ওনার হাতে*।",
+      "scene": {
+        "moods": {
+          "amma": "smile"
+        },
+        "cam": "wide",
+        "fx": "glow"
+      }
+    },
+    {
+      "say": "পরদিন ভোর ছয়টা। দরজায় টোকা।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "পরদিন ভোর",
+        "props": [
+          "door_closed"
+        ],
+        "fx": null,
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.55,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "amma",
+      "tone": "gently",
+      "say": "ওঠ বউমা। চল, তোকে *ইলিশ কাটা* শেখাই। এ বাড়ির রান্না শাশুড়িই শেখায়।",
+      "scene": {
+        "arms": {
+          "amma": "talk"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "সেদিন রান্নাঘরে দুজন। শাশুড়ি শেখালেন, বকলেন, আর *হাসলেন*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "সকাল",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.34,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "point"
+          },
+          {
+            "id": "ruma",
+            "x": 0.66,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "voice": "amma",
+      "tone": "playfully",
+      "say": "সর্ষে আরেকটু দে… এত ভয় পাস কেন? *আমি তো আছি*।",
+      "scene": {
+        "bubble": {
+          "who": "amma",
+          "text": "সর্ষে আরেকটু!"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "say": "এক মাস পর, প্রতিবেশীদের সামনে শাশুড়ি নিজেই বললেন—",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "এক মাস পর",
+        "props": [
+          "sofa"
+        ],
+        "bubble": null,
+        "chars": [
+          {
+            "id": "fupu",
+            "x": 0.25,
+            "pose": "sit",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "amma",
+            "x": 0.55,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "talk"
+          },
+          {
+            "id": "ruma",
+            "x": 0.82,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          }
+        ],
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "amma",
+      "tone": "proudly",
+      "say": "আমার বউমার ইলিশ ভাপা একবার খেয়ে দেখো। *আমার চেয়েও ভালো* হয়।",
+      "scene": {
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "ছয় মাসের চেষ্টা যা পারেনি, সবার সামনে বলা *একটা সত্যি কথা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "cam": "wide",
+        "fx": "glow"
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য লজ অফ হিউম্যান নেচার*।"
+    },
+    {
+      "kind": "book",
+      "say": "সাত নম্বর অধ্যায়— মানুষের *নিজের ছবিটাকে* সম্মান করো।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "মানুষ মনে মনে নিজেকে একভাবে দেখে। সেই ছবিতে আঘাত দিলে *দেয়াল ওঠে*, সম্মান দিলে *দরজা খোলে*।",
+      "card": {
+        "title": "মনের ছবি",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "shield",
+            "t": "ছবিতে আঘাত",
+            "sub": "দেয়াল ওঠে",
+            "bad": true
+          },
+          "right": {
+            "icon": "door",
+            "t": "ছবিকে সম্মান",
+            "sub": "দরজা খোলে"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "এক, মানুষটার *গর্বের জায়গাটা* খোঁজো।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "গর্বের জায়গাটা খোঁজো",
+            "sub": "রান্না, বাগান, পুরনো দক্ষতা",
+            "icon": "star"
+          },
+          {
+            "t": "সেটা সবার সামনে বলো",
+            "sub": "প্রশংসা আড়ালে নয়",
+            "icon": "people"
+          },
+          {
+            "t": "কথাটা যেন সত্যি হয়",
+            "sub": "বানানো প্রশংসা মানুষ টের পায়",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, সেই সম্মানটা দাও *সবার সামনে*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, কথাটা যেন *সত্যি* হয়।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "পর্দাটা এবার তোমার দিকে— আমি কি নিজেকে *প্রমাণ* করছি, নাকি ওকে *সম্মান* দিচ্ছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি নিজেকে *প্রমাণ* করছি,\nনাকি ওকে *সম্মান* দিচ্ছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "মানুষকে হারিয়ে কাছে পাওয়া যায় না… *তার জায়গাটা দিলে, সে নিজেই কাছে আসে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "মানুষকে হারিয়ে কাছে পাওয়া যায় না…",
+        "line2": "তার জায়গাটা দিলে,\nসে নিজেই কাছে আসে।"
+      }
+    }
   ],
   "youtube": {
     "title": "দাওয়াতের টেবিলে একটা কথায় বদলে গেল শাশুড়ি 🍲 | The Laws of Human Nature বাংলা",
     "description": "বিয়ের পর ছয় মাস, শাশুড়ি মন খুলে একটা কথাও বলেননি। রুমা সব চেষ্টা করল, কিছুই কাজ হলো না। তারপর এক দাওয়াতে, সবার সামনে সে একটা সত্যি কথা বলল…\nরবার্ট গ্রিনের The Laws of Human Nature — The Law of Defensiveness — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": ["laws of human nature bangla", "robert greene bangla", "শাশুড়ি বউমা", "বাংলা গল্প", "পারিবারিক গল্প", "সংসারের গল্প", "জীবনের শিক্ষা"]
+    "tags": [
+      "laws of human nature bangla",
+      "robert greene bangla",
+      "শাশুড়ি বউমা",
+      "বাংলা গল্প",
+      "পারিবারিক গল্প",
+      "সংসারের গল্প",
+      "জীবনের শিক্ষা"
+    ]
   },
   "facebook": {
     "caption": "ছয় মাসের চেষ্টা যা পারেনি, সবার সামনে বলা একটা সত্যি কথা তা পারল। 🍲\n\nতোমার পরিবারে কার হাতের রান্না সবচেয়ে প্রিয়? 👇\n\n📖 The Laws of Human Nature — Robert Greene\n#শাশুড়িবউমা #পরিবার"
   },
-  "thumbnail": {"text": "একটা সত্যি কথা", "sub": "শাশুড়ি বদলে গেলেন"}
+  "thumbnail": {
+    "text": "একটা সত্যি কথা",
+    "sub": "শাশুড়ি বদলে গেলেন"
+  }
 }

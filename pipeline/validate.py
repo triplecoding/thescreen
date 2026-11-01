@@ -23,7 +23,7 @@ WIDGETS = {"stats", "checklist", "note", "chat", "clock"}
 KINDS = {"story", "list", "statement", "book", "concept", "takeaways", "ask", "outro"}
 CONCEPTS = {"flow", "compare", "iceberg", "puzzle", "scale"}
 ICONS = {"chat", "shield", "wall", "eye", "hand", "heart", "star", "ear", "door", "car", "phone", "bank", "bulb", "x", "check", "puzzle", "clock", "film", "book", "people", "brain"}
-CHARS_PER_SEC = 13.6  # calibrated: narration incl. natural pauses
+CHARS_PER_SEC = 12.2  # measured on ElevenLabs eleven_v4_turbo Bangla voices (speech only)
 
 
 def check(path):
@@ -66,7 +66,7 @@ def check(path):
             if i == 0 and not sc.get("set"): errs.append("first beat must set a scene")
             if sc.get("light") and sc["light"] not in LIGHTS: errs.append(f"{where}: bad light")
             for p in sc.get("props") or []:
-                if str(p).startswith("sign:"): continue
+                if str(p).startswith(("sign:", "door:")): continue
                 if cur_set and p not in PROPS.get(cur_set, set()): warns.append(f"{where}: prop '{p}' not drawn in set '{cur_set}'")
             for c in sc.get("chars") or []:
                 if c.get("id") not in cast: errs.append(f"{where}: char {c.get('id')} not in cast")
@@ -95,10 +95,10 @@ def check(path):
     for need in ("book", "takeaways", "ask", "outro"):
         if need not in kinds: errs.append(f"structure: missing '{need}' beat")
     if kinds and kinds[-1] != "outro": errs.append("structure: last beat must be outro")
-    est = chars_total / CHARS_PER_SEC + 6
+    est = chars_total / CHARS_PER_SEC + 0.5 * len(s["beats"]) + 4   # speech + lead-ins/pauses + outro hold
     d = channel()["duration"]
     if est < d["min"] - 10: warns.append(f"estimated {est:.0f}s — probably too short (target {d['min']:.0f}-{d['max']:.0f}s)")
-    if est > d["max"] + 12: errs.append(f"estimated {est:.0f}s — too long (target {d['min']:.0f}-{d['max']:.0f}s); cut narration")
+    if est > d["max"] + 4: errs.append(f"estimated {est:.0f}s — too long (target {d['min']:.0f}-{d['max']:.0f}s); cut narration")
     if len(s["youtube"].get("title", "")) > 100: errs.append("youtube title > 100 chars")
     return errs, warns, est
 

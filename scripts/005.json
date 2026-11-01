@@ -12,88 +12,635 @@
     "title_bn": "যা দেখি, মনে হয় সেটাই সব"
   },
   "cast": {
-    "shuvo": {"name": "শুভ", "type": "young_man", "skin": "brown", "outfit": "shirt", "color": "#4A6FA5", "hair": "curly", "beard": "stubble", "voice": "young_man"},
-    "aunty": {"name": "জাহানারা আন্টি", "type": "old_woman", "skin": "wheat", "outfit": "sari", "color": "#2F7D6D", "color2": "#E8A33D", "hair": "grey_bun", "glasses": true, "voice": "old_woman"},
-    "uncle": {"name": "আঙ্কেল", "type": "old_man", "skin": "tan", "outfit": "panjabi", "color": "#E9E4D8", "hair": "bald_grey", "beard": "short_grey", "voice": "old_man"},
-    "nurse": {"name": "নার্স", "type": "young_woman", "skin": "tan", "outfit": "scrub", "color": "#5FA8A0", "hair": "hijab", "voice": "young_woman"}
+    "shuvo": {
+      "name": "শুভ",
+      "type": "young_man",
+      "skin": "brown",
+      "outfit": "shirt",
+      "color": "#4A6FA5",
+      "hair": "curly",
+      "beard": "stubble",
+      "voice": "young_man"
+    },
+    "aunty": {
+      "name": "জাহানারা আন্টি",
+      "type": "old_woman",
+      "skin": "wheat",
+      "outfit": "sari",
+      "color": "#2F7D6D",
+      "color2": "#E8A33D",
+      "hair": "grey_bun",
+      "glasses": true,
+      "voice": "old_woman"
+    },
+    "uncle": {
+      "name": "আঙ্কেল",
+      "type": "old_man",
+      "skin": "tan",
+      "outfit": "panjabi",
+      "color": "#E9E4D8",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "voice": "old_man"
+    },
+    "nurse": {
+      "name": "নার্স",
+      "type": "young_woman",
+      "skin": "tan",
+      "outfit": "scrub",
+      "color": "#5FA8A0",
+      "hair": "hijab",
+      "voice": "young_woman"
+    }
   },
   "beats": [
-    {"say": "চার তলার নতুন ভাড়াটে ছেলেটা, প্রতি রাতে বাসায় ফিরত *রাত তিনটায়*।",
-     "scene": {"set": "stairs", "light": "night", "chip": "প্রতি রাতে",
-       "chars": [{"id": "shuvo", "x": 0.55, "pose": "walk", "face": "right", "mood": "neutral", "arm": "down", "hold": "bag"}],
-       "widget": {"kind": "clock", "time": "3:00", "label": "রাত ৩টা"}, "cam": "push"}},
-    {"say": "সারাদিন দরজা বন্ধ। সিঁড়িতে দেখা হলে, মাথা নিচু করে চলে যেত— *সালামও* দিত না।",
-     "scene": {"light": "day", "chip": "দিনের বেলা", "widget": null,
-       "chars": [{"id": "aunty", "x": 0.3, "pose": "stand", "face": "right", "mood": "neutral", "arm": "down"},
-                 {"id": "shuvo", "x": 0.7, "pose": "walk", "face": "right", "mood": "neutral", "arm": "down"}], "cam": "static"}},
-    {"say": "দোতলার জাহানারা আন্টি, *একদিনেই* বুঝে ফেললেন।",
-     "scene": {"chars": [{"id": "aunty", "x": 0.45, "pose": "stand", "face": "right", "mood": "angry", "arm": "cross"}], "cam": {"focus": "aunty", "zoom": 1.45}}},
-    {"voice": "aunty", "tone": "suspicious", "say": "এত রাতে কোন ভালো ছেলে বাসায় ফেরে? নিশ্চয়ই *খারাপ কিছু* করে।", "scene": {"arms": {"aunty": "point"}, "cam": {"focus": "aunty", "zoom": 1.55}}},
-    {"say": "বিল্ডিংয়ের গ্রুপে খবর ছড়াল। *এক কান, দুই কান…*",
-     "scene": {"set": "home", "light": "day", "chip": "বিল্ডিং গ্রুপ", "props": ["sofa"], "chars": [{"id": "aunty", "x": 0.3, "pose": "sit", "face": "right", "mood": "neutral", "arm": "phone", "hold": "phone"}],
-       "widget": {"kind": "chat", "title": "রোড ৭ ফ্ল্যাট মালিক 🏢", "msgs": [{"who": "জাহানারা", "t": "চার তলার ছেলেটা রাত ৩টায় ফেরে 😒"}, {"who": "৩-বি", "t": "নেশা-টেশা করে নাকি?"}, {"who": "৫-এ", "t": "বাড়িওয়ালাকে বলা দরকার!"}]}, "cam": "static"}},
-    {"say": "দারোয়ান রাতে গেট খুলতে দেরি করা শুরু করল। বাচ্চাদের বলা হলো, *ওই ভাইয়ার* সাথে কথা বলবে না।",
-     "scene": {"set": "stairs", "light": "night", "chip": "রাত ৩টা ১০", "widget": null,
-       "chars": [{"id": "shuvo", "x": 0.55, "pose": "stand", "face": "right", "mood": "sad", "arm": "down", "hold": "bag"}], "cam": {"focus": "shuvo", "zoom": 1.3}}},
-    {"say": "চার মাসের মাথায় বাড়িওয়ালা ঠিক করলেন— ছেলেটাকে *নোটিশ* দেবেন।", "pause": 0.5,
-     "scene": {"widget": {"kind": "note", "style": "paper", "title": "নোটিশ", "lines": ["আগামী মাসের মধ্যে", "ফ্ল্যাট ছাড়তে হবে।"]}, "chars": [], "cam": "push"}},
-    {"say": "সেই সপ্তাহেই, এক রাতে, আঙ্কেলের বুকে *তীব্র ব্যথা*।", "tone": "serious",
-     "scene": {"set": "home", "light": "night", "chip": "রাত ২টা ৪০", "widget": null, "props": ["bed", "window"],
-       "chars": [{"id": "uncle", "x": 0.35, "pose": "sit", "face": "right", "mood": "crying", "arm": "face"},
-                 {"id": "aunty", "x": 0.7, "pose": "stand", "face": "left", "mood": "worried", "arm": "phone", "hold": "phone"}], "cam": "push", "fx": "pulse"}},
-    {"say": "ছেলে বিদেশে। লিফট বন্ধ। ফোনে কাউকে *পাওয়া যাচ্ছে না*।",
-     "scene": {"widget": {"kind": "checklist", "title": "কল করা হলো", "items": [{"t": "ছেলে — বিদেশে", "mark": "x"}, {"t": "৩-বি — ধরছে না", "mark": "x"}, {"t": "দারোয়ান — ঘুমিয়ে", "mark": "x"}]}, "cam": {"focus": "aunty", "zoom": 1.3}}},
-    {"say": "আন্টি দৌড়ে সিঁড়িতে বেরোলেন— আর ঠিক তখন, চার তলার ছেলেটা *বাসায় ফিরছে*।", "pause": 0.4,
-     "scene": {"set": "stairs", "light": "night", "chip": "রাত ২টা ৪৫", "widget": null, "fx": null,
-       "chars": [{"id": "aunty", "x": 0.3, "pose": "stand", "face": "right", "mood": "crying", "arm": "down"},
-                 {"id": "shuvo", "x": 0.7, "pose": "stand", "face": "left", "mood": "surprised", "arm": "down", "hold": "bag"}], "cam": "push"}},
-    {"voice": "aunty", "tone": "tearful", "say": "বাবা… তোমার আঙ্কেল… *নিঃশ্বাস নিতে পারছে না*।", "scene": {"cam": {"focus": "aunty", "zoom": 1.4}}},
-    {"say": "শুভ এক নজর দেখেই বুঝল। আঙ্কেলকে আধশোয়া করে বসাল, শান্ত গলায় *কথা বলতে* থাকল।",
-     "scene": {"set": "home", "light": "night", "props": ["bed"],
-       "chars": [{"id": "uncle", "x": 0.35, "pose": "sit", "face": "right", "mood": "sad", "arm": "down"},
-                 {"id": "shuvo", "x": 0.65, "pose": "stand", "face": "left", "mood": "neutral", "arm": "talk"}], "cam": {"focus": "shuvo", "zoom": 1.3}}},
-    {"voice": "shuvo", "tone": "gently", "say": "আঙ্কেল, আমার দিকে তাকান। আস্তে নিঃশ্বাস নিন। *কিছু হবে না*।", "scene": {"cam": {"focus": "shuvo", "zoom": 1.4}}},
-    {"say": "তারপর আঙ্কেলকে কোলে করে, চার তলা সিঁড়ি নামিয়ে, বৃষ্টির মধ্যে *সিএনজিতে* তুলল।",
-     "scene": {"set": "street", "light": "night", "chip": "রাত ৩টা", "props": ["cng"], "chars": [], "fx": "rain", "cam": "pan"}},
-    {"say": "হাসপাতালের ইমার্জেন্সিতে ঢুকতেই, এক নার্স অবাক হয়ে বললেন—",
-     "scene": {"set": "hospital", "light": "night", "chip": "ইমার্জেন্সি", "fx": null,
-       "chars": [{"id": "nurse", "x": 0.3, "pose": "stand", "face": "right", "mood": "surprised", "arm": "down"},
-                 {"id": "shuvo", "x": 0.62, "pose": "stand", "face": "left", "mood": "neutral", "arm": "down"},
-                 {"id": "aunty", "x": 0.86, "pose": "stand", "face": "left", "mood": "worried", "arm": "down"}], "cam": "push"}},
-    {"voice": "nurse", "say": "শুভ স্যার? আপনার না এইমাত্র *নাইট ডিউটি* শেষ হলো?", "scene": {"arms": {"nurse": "talk"}, "cam": {"focus": "nurse", "zoom": 1.4}}},
-    {"say": "জাহানারা আন্টি জমে গেলেন। শুভ এই হাসপাতালেরই *ডাক্তার*। চার মাস ধরে তার ডিউটি— রাত আটটা থেকে আড়াইটা।", "pause": 0.6,
-     "scene": {"moods": {"aunty": "surprised"}, "arms": {"nurse": "down"}, "cam": {"focus": "aunty", "zoom": 1.5},
-       "widget": {"kind": "note", "style": "sticky", "title": "ডিউটি রোস্টার", "lines": ["ডা. শুভ", "রাত ৮টা — ২:৩০"]}}},
-    {"say": "সালাম না দেওয়ার কারণটাও তখন বোঝা গেল— চোদ্দ ঘণ্টা ডিউটির পর, মানুষ শুধু *বিছানা* খোঁজে।",
-     "scene": {"widget": null, "moods": {"aunty": "sad"}, "cam": {"focus": "shuvo", "zoom": 1.35}}},
-    {"say": "সকালে আঙ্কেল বিপদমুক্ত। আর আন্টি প্রথমবার, চার তলার দরজায় কড়া নাড়লেন— *ভাত-তরকারি* হাতে।",
-     "scene": {"set": "stairs", "light": "day", "chip": "পরদিন সকাল",
-       "chars": [{"id": "aunty", "x": 0.35, "pose": "stand", "face": "right", "mood": "sad", "arm": "hold", "hold": "plate"},
-                 {"id": "shuvo", "x": 0.7, "pose": "stand", "face": "left", "mood": "smile", "arm": "down"}], "cam": "push"}},
-    {"voice": "aunty", "tone": "tearful", "say": "বাবা, খেয়ে *ঘুমাও*। আমাদের মাফ করো।", "pause": 0.7, "scene": {"moods": {"aunty": "crying"}, "cam": {"focus": "aunty", "zoom": 1.4}}},
-    {"say": "সেদিন বিল্ডিং গ্রুপে আন্টি নিজেই লিখলেন—",
-     "scene": {"chars": [], "widget": {"kind": "chat", "title": "রোড ৭ ফ্ল্যাট মালিক 🏢", "msgs": [{"who": "জাহানারা", "t": "আমরা ভুল ছিলাম। চার তলার শুভ একজন ডাক্তার। কাল রাতে ও না থাকলে… 🙏"}, {"who": "৫-এ", "t": "নোটিশ বাতিল। ডাক্তার সাহেবকে আমাদের সালাম 🙏"}]}, "cam": "static"}},
-    {"say": "চার মাস ধরে সবাই যা দেখেছিল, তা ছিল সত্যের *একটা টুকরো* মাত্র।", "pause": 0.8, "scene": {"widget": null, "cam": {"zoom": 1.2}, "fx": "glow"}},
-    {"kind": "book", "say": "এই গল্পের পেছনের বই— ড্যানিয়েল কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"},
-    {"kind": "book", "say": "মনের একটা ফাঁদ— *যা দেখি, মনে হয় সেটাই সব*।", "reveal": true, "pause": 0.3},
-    {"kind": "concept", "say": "আমাদের দ্রুত মন দু-তিনটা টুকরো দেখেই পুরো গল্প বানিয়ে ফেলে, আর একবারও জিজ্ঞেস করে না— *কী জানি না*?",
-     "card": {"title": "টুকরো থেকে গল্প", "widget": {"type": "puzzle", "known": ["রাত ৩টা", "সারাদিন ঘুম", "সালাম নেই"], "verdict": "খারাপ ছেলে?", "missing": ["নাইট ডিউটি", "ডাক্তার", "ক্লান্ত"], "show": 2}}},
-    {"kind": "takeaways", "say": "এক, রায় দেওয়ার আগে জিজ্ঞেস করো— *কী জানি না*?", "show": 1,
-     "card": {"items": [{"t": "রায়ের আগে: কী জানি না?", "sub": "হারানো টুকরোটা খোঁজো", "icon": "puzzle"}, {"t": "ফরোয়ার্ডের আগে থামো", "sub": "গুজব এক ক্লিকে ছড়ায়", "icon": "hand"}, {"t": "অনুমান নয়, সরাসরি কথা", "sub": "একটা “কেমন আছ” অনেক গুজব থামায়", "icon": "chat"}]}},
-    {"kind": "takeaways", "say": "দুই, গুজব *ফরোয়ার্ড* করার আগে থামো।", "show": 2},
-    {"kind": "takeaways", "say": "তিন, অনুমান নয়— *সরাসরি কথা* বলো।", "show": 3, "pause": 0.4},
-    {"kind": "ask", "tone": "softly", "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি পুরো মানুষটাকে *দেখছি*, নাকি শুধু একটা *টুকরো*?", "pause": 0.7,
-     "card": {"quote": "আমি কি পুরো মানুষটাকে *দেখছি*,\nনাকি শুধু একটা *টুকরো*?"}},
-    {"kind": "outro", "say": "আমরা মানুষকে দেখি এক মুহূর্তে… *অথচ মানুষ বাঁচে পুরো একটা জীবন*।", "pause": 1.6,
-     "card": {"line1": "আমরা মানুষকে দেখি এক মুহূর্তে…", "line2": "অথচ মানুষ বাঁচে\nপুরো একটা জীবন।"}}
+    {
+      "say": "চার তলার নতুন ভাড়াটে ছেলেটা, প্রতি রাতে বাসায় ফিরত *রাত তিনটায়*।",
+      "scene": {
+        "set": "stairs",
+        "light": "night",
+        "chip": "প্রতি রাতে",
+        "chars": [
+          {
+            "id": "shuvo",
+            "x": 0.55,
+            "pose": "walk",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "widget": {
+          "kind": "clock",
+          "time": "3:00",
+          "label": "রাত ৩টা"
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "সারাদিন দরজা বন্ধ। সিঁড়িতে দেখা হলে মাথা নিচু করে চলে যেত— *সালামও* না।",
+      "scene": {
+        "light": "day",
+        "chip": "দিনের বেলা",
+        "widget": null,
+        "chars": [
+          {
+            "id": "aunty",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.7,
+            "pose": "walk",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "say": "দোতলার জাহানারা আন্টি, *একদিনেই* বুঝে ফেললেন।",
+      "scene": {
+        "chars": [
+          {
+            "id": "aunty",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "cross"
+          }
+        ],
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "voice": "aunty",
+      "tone": "suspicious",
+      "say": "এত রাতে কোন ভালো ছেলে বাসায় ফেরে? নিশ্চয়ই *খারাপ কিছু* করে।",
+      "scene": {
+        "arms": {
+          "aunty": "point"
+        },
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.55
+        }
+      }
+    },
+    {
+      "say": "বিল্ডিংয়ের গ্রুপে খবর ছড়াল। *এক কান, দুই কান…*",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "বিল্ডিং গ্রুপ",
+        "props": [
+          "sofa"
+        ],
+        "chars": [
+          {
+            "id": "aunty",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "widget": {
+          "kind": "chat",
+          "title": "রোড ৭ ফ্ল্যাট মালিক 🏢",
+          "msgs": [
+            {
+              "who": "জাহানারা",
+              "t": "চার তলার ছেলেটা রাত ৩টায় ফেরে 😒"
+            },
+            {
+              "who": "৩-বি",
+              "t": "নেশা-টেশা করে নাকি?"
+            },
+            {
+              "who": "৫-এ",
+              "t": "বাড়িওয়ালাকে বলা দরকার!"
+            }
+          ]
+        },
+        "cam": "static"
+      }
+    },
+    {
+      "say": "বাচ্চাদের বলা হলো, *ওই ভাইয়ার* সাথে কথা নয়।",
+      "scene": {
+        "set": "stairs",
+        "light": "night",
+        "chip": "রাত ৩টা ১০",
+        "widget": null,
+        "chars": [
+          {
+            "id": "shuvo",
+            "x": 0.55,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "say": "চার মাস পর বাড়িওয়ালা ঠিক করলেন— ছেলেটাকে *নোটিশ* দেবেন।",
+      "pause": 0.5,
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "নোটিশ",
+          "lines": [
+            "আগামী মাসের মধ্যে",
+            "ফ্ল্যাট ছাড়তে হবে।"
+          ]
+        },
+        "chars": [],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "সেই সপ্তাহেই, এক রাতে, আঙ্কেলের বুকে *তীব্র ব্যথা*।",
+      "tone": "serious",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "রাত ২টা ৪০",
+        "widget": null,
+        "props": [
+          "bed",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "uncle",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          },
+          {
+            "id": "aunty",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "cam": "push",
+        "fx": "pulse"
+      }
+    },
+    {
+      "say": "ছেলে বিদেশে। লিফট বন্ধ। ফোনে কাউকে *পাওয়া যাচ্ছে না*।",
+      "scene": {
+        "widget": {
+          "kind": "checklist",
+          "title": "কল করা হলো",
+          "items": [
+            {
+              "t": "ছেলে — বিদেশে",
+              "mark": "x"
+            },
+            {
+              "t": "৩-বি — ধরছে না",
+              "mark": "x"
+            },
+            {
+              "t": "দারোয়ান — ঘুমিয়ে",
+              "mark": "x"
+            }
+          ]
+        },
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "say": "আন্টি দৌড়ে সিঁড়িতে বেরোলেন— আর ঠিক তখন, ছেলেটা *বাসায় ফিরছে*।",
+      "pause": 0.4,
+      "scene": {
+        "set": "stairs",
+        "light": "night",
+        "chip": "রাত ২টা ৪৫",
+        "widget": null,
+        "fx": null,
+        "chars": [
+          {
+            "id": "aunty",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "crying",
+            "arm": "down"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "aunty",
+      "tone": "tearful",
+      "say": "বাবা… তোমার আঙ্কেল… *নিঃশ্বাস নিতে পারছে না*।",
+      "scene": {
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "শুভ এক নজর দেখেই বুঝল। আঙ্কেলকে আধশোয়া করে বসাল, *শান্ত গলায়* কথা বলল।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "props": [
+          "bed"
+        ],
+        "chars": [
+          {
+            "id": "uncle",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.65,
+            "pose": "stand",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "voice": "shuvo",
+      "tone": "gently",
+      "say": "আঙ্কেল, আমার দিকে তাকান। আস্তে নিঃশ্বাস নিন। *কিছু হবে না*।",
+      "scene": {
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "তারপর কোলে করে চার তলা নামিয়ে, বৃষ্টির মধ্যে *সিএনজিতে* তুলল।",
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "রাত ৩টা",
+        "props": [
+          "cng"
+        ],
+        "chars": [],
+        "fx": "rain",
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "ইমার্জেন্সিতে ঢুকতেই এক নার্স অবাক হয়ে বললেন—",
+      "scene": {
+        "set": "hospital",
+        "light": "night",
+        "chip": "ইমার্জেন্সি",
+        "fx": null,
+        "chars": [
+          {
+            "id": "nurse",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.62,
+            "pose": "stand",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "aunty",
+            "x": 0.86,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nurse",
+      "say": "শুভ স্যার? আপনার না এইমাত্র *নাইট ডিউটি* শেষ হলো?",
+      "scene": {
+        "arms": {
+          "nurse": "talk"
+        },
+        "cam": {
+          "focus": "nurse",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আন্টি জমে গেলেন। শুভ এই হাসপাতালেরই *ডাক্তার*— চার মাস ধরে তার নাইট ডিউটি।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "aunty": "surprised"
+        },
+        "arms": {
+          "nurse": "down"
+        },
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.5
+        },
+        "widget": {
+          "kind": "note",
+          "style": "sticky",
+          "title": "ডিউটি রোস্টার",
+          "lines": [
+            "ডা. শুভ",
+            "রাত ৮টা — ২:৩০"
+          ]
+        }
+      }
+    },
+    {
+      "say": "সালাম না দেওয়ার কারণও বোঝা গেল— *চোদ্দ ঘণ্টা* ডিউটির ক্লান্তি।",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "aunty": "sad"
+        },
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "সকালে আঙ্কেল বিপদমুক্ত। আন্টি প্রথমবার চার তলায় গেলেন— *ভাত-তরকারি* হাতে।",
+      "scene": {
+        "set": "stairs",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "chars": [
+          {
+            "id": "aunty",
+            "x": 0.35,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "aunty",
+      "tone": "tearful",
+      "say": "বাবা, খেয়ে *ঘুমাও*। আমাদের মাফ করো।",
+      "pause": 0.7,
+      "scene": {
+        "moods": {
+          "aunty": "crying"
+        },
+        "cam": {
+          "focus": "aunty",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চার মাস ধরে সবাই যা দেখেছিল, তা ছিল সত্যের *একটা টুকরো* মাত্র।",
+      "pause": 0.8,
+      "scene": {
+        "widget": {
+          "kind": "chat",
+          "title": "রোড ৭ ফ্ল্যাট মালিক 🏢",
+          "msgs": [
+            {
+              "who": "জাহানারা",
+              "t": "আমরা ভুল ছিলাম। চার তলার শুভ একজন ডাক্তার। কাল রাতে ও না থাকলে… 🙏"
+            },
+            {
+              "who": "৫-এ",
+              "t": "নোটিশ বাতিল। ডাক্তার সাহেবকে আমাদের সালাম 🙏"
+            }
+          ]
+        },
+        "cam": {
+          "zoom": 1.2
+        },
+        "fx": "glow",
+        "chars": []
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"
+    },
+    {
+      "kind": "book",
+      "say": "মনের একটা ফাঁদ— *যা দেখি, মনে হয় সেটাই সব*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "আমাদের দ্রুত মন দু-তিনটা টুকরো দেখেই পুরো গল্প বানায়, আর জিজ্ঞেস করে না— *কী জানি না*?",
+      "card": {
+        "title": "টুকরো থেকে গল্প",
+        "widget": {
+          "type": "puzzle",
+          "known": [
+            "রাত ৩টা",
+            "সারাদিন ঘুম",
+            "সালাম নেই"
+          ],
+          "verdict": "খারাপ ছেলে?",
+          "missing": [
+            "নাইট ডিউটি",
+            "ডাক্তার",
+            "ক্লান্ত"
+          ],
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "এক, রায়ের আগে ভাবো— *কী জানি না*?",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "রায়ের আগে: কী জানি না?",
+            "sub": "হারানো টুকরোটা খোঁজো",
+            "icon": "puzzle"
+          },
+          {
+            "t": "ফরোয়ার্ডের আগে থামো",
+            "sub": "গুজব এক ক্লিকে ছড়ায়",
+            "icon": "hand"
+          },
+          {
+            "t": "অনুমান নয়, সরাসরি কথা",
+            "sub": "একটা “কেমন আছ” অনেক গুজব থামায়",
+            "icon": "chat"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, গুজব *ফরোয়ার্ড* করার আগে থামো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, অনুমান নয়— *সরাসরি কথা* বলো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "পর্দাটা এবার তোমার দিকে— আমি কি পুরো মানুষটাকে *দেখছি*, নাকি শুধু একটা *টুকরো*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি পুরো মানুষটাকে *দেখছি*,\nনাকি শুধু একটা *টুকরো*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "আমরা মানুষকে দেখি এক মুহূর্তে… *অথচ মানুষ বাঁচে পুরো একটা জীবন*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "আমরা মানুষকে দেখি এক মুহূর্তে…",
+        "line2": "অথচ মানুষ বাঁচে\nপুরো একটা জীবন।"
+      }
+    }
   ],
   "youtube": {
     "title": "যে ছেলেকে সবাই খারাপ ভাবত, সেই রাতে সে-ই জীবন বাঁচাল 🌙 | Thinking, Fast and Slow বাংলা",
     "description": "চার তলার ছেলেটা ফিরত রাত তিনটায়। সারাদিন ঘুমাত। পুরো বিল্ডিং তাকে নিয়ে গল্প বানাল— যতক্ষণ না এক রাতে…\nDaniel Kahneman-এর Thinking, Fast and Slow — What You See Is All There Is — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": ["thinking fast and slow bangla", "daniel kahneman", "গুজব", "বাংলা গল্প", "মানুষ চেনা", "ডাক্তারের গল্প", "জীবনের শিক্ষা"]
+    "tags": [
+      "thinking fast and slow bangla",
+      "daniel kahneman",
+      "গুজব",
+      "বাংলা গল্প",
+      "মানুষ চেনা",
+      "ডাক্তারের গল্প",
+      "জীবনের শিক্ষা"
+    ]
   },
   "facebook": {
     "caption": "চার মাস ধরে সবাই যা দেখেছিল, তা ছিল সত্যের একটা টুকরো মাত্র। 🌙\n\nকখনো কাউকে ভুল বুঝে পরে লজ্জা পেয়েছ? 👇\n\n📖 Thinking, Fast and Slow — Daniel Kahneman\n#গুজব #মানুষচেনা"
   },
-  "thumbnail": {"text": "রাত ৩টা", "sub": "সবাই ভুল ভেবেছিল"}
+  "thumbnail": {
+    "text": "রাত ৩টা",
+    "sub": "সবাই ভুল ভেবেছিল"
+  }
 }

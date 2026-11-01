@@ -67,29 +67,23 @@ def build(script, clips, fit=True):
     rows, total = layout()
     speed, pscale, extra = 1.0, 1.0, 0.0
     if fit:
-        if total > dmax:
-            speech = sum(c["dur"] for c in clips)
-            # 1) shrink pauses down to 50%
-            for ps in (0.85, 0.7, 0.55):
-                rows, total = layout(ps)
-                pscale = ps
-                if total <= dmax:
+        eps = 0.05
+        if total > dmax + eps:
+            # keep the emotional pauses as long as possible: first a gentle speed-up, then trim pauses, then more speed
+            for sp, ps in ((1.02, 1.0), (1.04, 1.0), (1.04, 0.85), (1.06, 0.85), (1.06, 0.7), (1.08, 0.7), (1.08, 0.55), (1.10, 0.55)):
+                rows, total = layout(ps, 0, sp)
+                speed, pscale = sp, ps
+                if total <= dmax + eps:
                     break
-            # 2) speed up voice (max 1.10x)
-            if total > dmax:
-                need = total - dmax
-                speed = min(1.10, speech / max(1.0, speech - need))
-                rows, total = layout(pscale, 0, speed)
-            if total > dmax:
+            if total > dmax + eps:
                 raise TooLong(f"script runs {total:.1f}s even after tightening (max {dmax}s); trim ~{total - dmax:.0f}s of narration")
-        if total < dmin:
-            n = len(beats)
+        if total < dmin - eps:
             for ex in (0.1, 0.2, 0.3, 0.4, 0.5, 0.6):
                 rows, total = layout(1.0, ex)
                 extra = ex
-                if total >= dmin:
+                if total >= dmin - eps:
                     break
-            if total < dmin:
+            if total < dmin - eps:
                 raise TooShort(f"script runs only {total:.1f}s (min {dmin}s); add ~{dmin - total:.0f}s of narration")
     log(f"timeline: {total:.1f}s  (speed x{speed:.3f}, pauses x{pscale}, +{extra}s/beat)")
     return rows, total, speed

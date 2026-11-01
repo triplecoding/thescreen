@@ -11,14 +11,7 @@
       "scheduled_for": "2026-11-02T10:00:00+06:00"
     }
   ],
-  "failed": [
-    {
-      "id": "001",
-      "reason": "script runs 150.0s even after tightening (max 150.0s); trim ~0s of narration",
-      "at": "2026-11-01T23:02:18.078278+06:00",
-      "kind": "length"
-    }
-  ],
+  "failed": [],
   "playlists": {
     "The Laws of Human Nature": "PLa_DKXTCT90U"
   },
