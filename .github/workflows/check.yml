@@ -24,3 +24,5 @@ jobs:
       - run: pip install -q requests numpy
       - name: Doctor (posts nothing; links the owner's ElevenLabs library voices to My Voices if needed)
         run: python pipeline/doctor.py --deep --link-voices
+      - name: Posted video status (read-only)
+        run: python pipeline/status.py
