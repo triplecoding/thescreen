@@ -9,7 +9,7 @@ Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs
 ## How the system runs
 ```
 GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on GitHub's own cron, no Claude session needed
-   cron 25 1,7,13,19 * * * (UTC) = ~35 min before each slot 08:00 · 14:00 · 20:00 · 02:00 Asia/Dhaka → ONE video every 6 hours
+   cron ~35 min before each slot 10:00 · 13:30 · 17:30 · 20:00 Asia/Dhaka → 4 videos a day
    → pipeline/daily.py --next: picks the next unfilled slot
        produce.py: ElevenLabs voice (eleven_v4_turbo ONLY, bn ONLY, owner's voice ids) → timeline (auto-fit 120–150 s)
                    → renderer (HTML/SVG, Playwright, 30 fps) → original score + SFX → mux → QA → thumbnails
@@ -37,7 +37,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → healt
 
 ## Locked rules (owner must approve changes)
 1. Voice: ElevenLabs pay-as-you-go, model `eleven_v4_turbo` ONLY, language `bn` ONLY, voices = the owner's ids in `config/voices.json` (never design, swap or fall back).
-2. Format: 1080×1920, 30 fps, **120–150 s**, one video every 6 hours. QA rejects anything else. Story ≈ 70–75 %, lesson short.
+2. Format: 1080×1920, 30 fps, **120–150 s**, 4 videos a day (10:00, 13:30, 17:30, 20:00 Dhaka). QA rejects anything else. Story ≈ 70–75 %, lesson short.
 3. Logo always from `assets/brand/logo.png` (transparent), top-LEFT corner with no box behind it, same outro lockup in every video.
 3b. Never write stories from The 48 Laws of Power. Never copy any plot/scenario from the reference videos — every story original.
 4. Never write secrets in code, logs, chat or commits. They live only in GitHub → Settings → Secrets → Actions.

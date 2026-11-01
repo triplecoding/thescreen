@@ -4,10 +4,10 @@
   "timezone": "Asia/Dhaka",
   "posts_per_day": 4,
   "slots": [
-    "08:00",
-    "14:00",
-    "20:00",
-    "02:00"
+    "10:00",
+    "13:30",
+    "17:30",
+    "20:00"
   ],
   "publish_mode": "scheduled",
   "platforms": [
@@ -158,5 +158,5 @@
     "volume_db": -21,
     "duck": 0.55
   },
-  "_schedule_note": "One video every 6 hours (Asia/Dhaka). GitHub Actions runs ~35 min before each slot (see .github/workflows/daily.yml cron) and schedules the upload for the exact slot time; a late run publishes immediately."
+  "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately."
 }

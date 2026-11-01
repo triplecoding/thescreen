@@ -14,6 +14,10 @@ lesson the viewer can use tonight. Viewers should feel something in the first 5 
   drawing of a drinking father, no roommate negativity, no suitor + old football photo, no puja-mic complaint + old photo).
 - **Story is the main course:** ~70–75 % of narration is story/animation; the lesson part is short (≈ 25–30 s).
 - **Length 2:00–2:30** (120–150 s).
+- **Many voices, not one narrator:** every story has 2–3 speaking characters with real back-and-forth dialogue
+  (at least 6–8 dialogue lines in total, each voiced by that character's ElevenLabs voice). The narrator links the scenes.
+- **Premium storytelling:** take ONE idea from the book and *show* it through a Bangladeshi life example so naturally
+  that the theory feels discovered, not taught; then the lesson part names the idea and ties it back in a few lines.
 
 ## The arc (≈ 26–30 beats, 2:00–2:30)
 

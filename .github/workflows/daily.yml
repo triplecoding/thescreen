@@ -13,10 +13,12 @@ on:
         description: "Date YYYY-MM-DD (blank = today, Asia/Dhaka)"
         default: ""
   schedule:
-    # One video every 6 hours. Runs ~35 min before each slot in config/channel.json
-    # (08:00, 14:00, 20:00, 02:00 Asia/Dhaka = 02:00, 08:00, 14:00, 20:00 UTC) and schedules the upload for the slot.
-    # Runs entirely on GitHub — no Claude session needed. Re-runs are idempotent (never double-post).
-    - cron: "25 1,7,13,19 * * *"
+    # 4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka (UTC+6). Each run starts ~35 min before its slot and
+    # schedules the upload for the exact slot time. Runs entirely on GitHub — no Claude session needed. Idempotent.
+    - cron: "25 3 * * *"    # 09:25 Dhaka -> 10:00 slot
+    - cron: "55 6 * * *"    # 12:55 Dhaka -> 13:30 slot
+    - cron: "55 10 * * *"   # 16:55 Dhaka -> 17:30 slot
+    - cron: "25 13 * * *"   # 19:25 Dhaka -> 20:00 slot
 
 concurrency:
   group: publish-videos
