@@ -22,6 +22,19 @@ def present(n):
 
 def check_eleven():
     k = os.environ["ELEVENLABS_API_KEY"].strip()
+    if "--link-voices" in sys.argv:
+        from voice import Eleven
+        rep, changed = Eleven().link_owner_voices()
+        for line in rep:
+            print("   voice", line)
+        if changed and os.environ.get("CI"):
+            import subprocess
+            root = Path(__file__).resolve().parent.parent
+            subprocess.run(["git", "config", "user.name", "The Screen Bot"], cwd=root)
+            subprocess.run(["git", "config", "user.email", "bot@thescreen.local"], cwd=root)
+            subprocess.run(["git", "add", "config/voices.json"], cwd=root)
+            subprocess.run(["git", "commit", "-m", "voices: linked owner's library voices"], cwd=root)
+            subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=root)
     H = {"xi-api-key": k}
     r = requests.get("https://api.elevenlabs.io/v1/user/subscription", headers=H, timeout=30)
     if r.status_code == 401:
@@ -145,7 +158,7 @@ def main():
                 f.write("SKIP_PRODUCTION=1\n")
         return
     if fatal:
-        print("FATAL: ElevenLabs key invalid — cannot produce voice.")
+        print("FATAL: ElevenLabs not ready (key or voices) — cannot produce voice.")
         sys.exit(1)
 
 

@@ -44,10 +44,11 @@
 
   // ---------- header ----------
   function header(dark, chip, chipAnim) {
-    let h = `<div style="position:absolute;top:44px;left:50%;transform:translateX(-50%);padding:10px 26px;border-radius:26px;background:rgba(250,246,238,${dark ? .92 : .86});box-shadow:0 6px 18px rgba(0,0,0,.12);backdrop-filter:blur(4px)"><img src="../assets/brand/logo.png" style="height:64px;display:block"></div>`;
+    // Logo: top-left, transparent PNG, no box behind it (owner rule). A soft shadow keeps it legible on any scene.
+    let h = `<img src="../assets/brand/logo.png" style="position:absolute;top:46px;left:44px;height:100px;display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,${dark ? .55 : .28})) drop-shadow(0 0 14px rgba(${dark ? '0,0,0,.35' : '255,255,255,.55'}))">`;
     if (chip) {
       const a = chipAnim || { o: 1, s: 1, y: 0 };
-      h += `<div style="position:absolute;top:150px;left:0;right:0;display:flex;justify-content:center"><div style="${tf(a)};background:${dark ? 'rgba(255,255,255,.92)' : '#FFFFFF'};border-radius:30px;padding:6px 26px 8px;font:600 32px ${TH.bn};color:${TH.ink};box-shadow:0 5px 0 rgba(0,0,0,.08);display:flex;align-items:center;gap:12px"><span style="width:12px;height:12px;border-radius:50%;background:${TH.red}"></span>${U.esc(chip)}</div></div>`;
+      h += `<div style="position:absolute;top:70px;right:44px;display:flex;justify-content:flex-end"><div style="${tf(a)};transform-origin:right center;background:${dark ? 'rgba(255,255,255,.92)' : '#FFFFFF'};border-radius:30px;padding:6px 24px 8px;font:600 32px ${TH.bn};color:${TH.ink};box-shadow:0 5px 0 rgba(0,0,0,.08);display:flex;align-items:center;gap:12px;max-width:560px;white-space:nowrap"><span style="width:12px;height:12px;border-radius:50%;background:${TH.red}"></span>${U.esc(chip)}</div></div>`;
     }
     return h;
   }

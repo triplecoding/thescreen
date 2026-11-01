@@ -60,9 +60,50 @@ class Eleven:
         log("ElevenLabs model (locked):", self._model)
         return self._model
 
+    def link_owner_voices(self):
+        """Owner's voices come from ElevenLabs' public Voice Library. Add each one to this account's 'My Voices'
+        (POST /v1/voices/add/{public_owner_id}/{voice_id}) so the API can use it. Updates config/voices.json if the id changes."""
+        data = load_json(VOICES_FILE, {}) or {}
+        report, changed = [], False
+        for vid in sorted({v["voice_id"] for v in data.values()}):
+            r = self._req("GET", f"/v1/voices/{vid}")
+            if r.ok:
+                report.append(f"{vid}: in My Voices ({r.json().get('name', '')})")
+                continue
+            sv = self._req("GET", "/v1/shared-voices", params={"search": vid, "page_size": 10})
+            lib = [v for v in (sv.json().get("voices", []) if sv.ok else []) if v.get("voice_id") == vid]
+            if not lib:
+                report.append(f"{vid}: NOT FOUND in library")
+                continue
+            v = lib[0]
+            add = self._req("POST", f"/v1/voices/add/{v['public_owner_id']}/{vid}", json={"new_name": f"TheScreen - {v.get('name', vid)}"[:100]})
+            if not add.ok:
+                report.append(f"{vid}: add failed {add.status_code} {add.text[:160]}")
+                continue
+            new_id = add.json().get("voice_id", vid)
+            if new_id != vid:
+                for role in data.values():
+                    if role["voice_id"] == vid:
+                        role["voice_id"] = new_id
+                        role["library_id"] = vid
+                changed = True
+            report.append(f"{vid}: added to My Voices as '{v.get('name', '')}'" + (f" (new id {new_id})" if new_id != vid else ""))
+        if changed:
+            save_json(VOICES_FILE, data)
+        return report, changed
+
     def ensure_voices(self, roles):
         """Voices are the owner's fixed ElevenLabs voice ids in config/voices.json. Never designs or swaps voices."""
         data = load_json(VOICES_FILE, {}) or {}
+        if not getattr(self, "_linked", False):
+            try:
+                rep, _ = self.link_owner_voices()
+                for line in rep:
+                    log("voice", line)
+                data = load_json(VOICES_FILE, {}) or {}
+            except Exception as e:  # noqa
+                log("voice linking skipped:", e)
+            self._linked = True
         missing = [r for r in roles if not (data.get(r) or {}).get("voice_id")]
         if missing:
             raise RuntimeError(f"no voice id configured for role(s): {', '.join(missing)} — add them to config/voices.json")

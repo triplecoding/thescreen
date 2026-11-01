@@ -6,6 +6,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 10
     env:
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
@@ -19,6 +21,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q requests
-      - name: Doctor (reads only — posts nothing)
-        run: python pipeline/doctor.py --deep
+      - run: pip install -q requests numpy
+      - name: Doctor (posts nothing; links the owner's ElevenLabs library voices to My Voices if needed)
+        run: python pipeline/doctor.py --deep --link-voices
