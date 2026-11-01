@@ -32,7 +32,20 @@ def check_eleven():
     if m.ok:
         ids = [x.get("model_id") for x in m.json()]
         want = channel()["elevenlabs"]["model_id"]
-        msg += f"; model {want}: {'available' if want in ids else 'NOT listed (fallback will be used)'}"
+        if want not in ids:
+            return False, f"ElevenLabs model {want} NOT available on this account"
+        msg += f"; model {want}: available (locked, bn)"
+    import json as _j
+    vfile = Path(__file__).resolve().parent.parent / "config" / "voices.json"
+    vids = sorted({v["voice_id"] for v in _j.loads(vfile.read_text()).values()})
+    bad = []
+    for vid in vids:
+        rr = requests.get(f"https://api.elevenlabs.io/v1/voices/{vid}", headers=H, timeout=30)
+        if not rr.ok:
+            bad.append(f"{vid}({rr.status_code})")
+    msg += f"; voices {len(vids) - len(bad)}/{len(vids)} reachable" + (f" — NOT reachable: {', '.join(bad)}" if bad else "")
+    if bad:
+        return False, msg
     return True, msg
 
 
@@ -46,7 +59,15 @@ def check_youtube():
     if not c.ok or not c.json().get("items"):
         return False, f"YouTube channel lookup failed ({c.status_code})"
     it = c.json()["items"][0]
-    return True, f"YouTube OK — channel '{it['snippet']['title']}', long uploads: {it['status'].get('longUploadsStatus', '?')}"
+    info = requests.get("https://oauth2.googleapis.com/tokeninfo", params={"access_token": tok}, timeout=30).json()
+    scopes = set(info.get("scope", "").split())
+    need = {"https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube", "https://www.googleapis.com/auth/youtube.force-ssl"}
+    missing = [x.rsplit("/", 1)[-1] for x in need - scopes]
+    extra = " +analytics" if "https://www.googleapis.com/auth/yt-analytics.readonly" in scopes else " (no analytics scope)"
+    msg = f"YouTube OK — channel '{it['snippet']['title']}', long uploads: {it['status'].get('longUploadsStatus', '?')}, scopes ok{extra}"
+    if missing:
+        return False, f"YouTube channel '{it['snippet']['title']}' found but token is missing scope(s): {', '.join(missing)}"
+    return True, msg
 
 
 def check_facebook():
@@ -54,7 +75,22 @@ def check_facebook():
     r = requests.get(f"https://graph.facebook.com/{ver}/{os.environ['FB_PAGE_ID']}", params={"fields": "name", "access_token": os.environ["FB_PAGE_TOKEN"]}, timeout=30)
     if not r.ok:
         return False, f"Facebook token/page check failed ({r.status_code}): {r.json().get('error', {}).get('message', '')[:160]}"
-    return True, f"Facebook OK — page '{r.json().get('name')}'"
+    name = r.json().get("name")
+    tok = os.environ["FB_PAGE_TOKEN"]
+    me = requests.get(f"https://graph.facebook.com/{ver}/me", params={"fields": "id,name", "access_token": tok}, timeout=30).json()
+    kind = "Page token" if str(me.get("id")) == str(os.environ["FB_PAGE_ID"]) else f"NOT a page token (token belongs to {me.get('name', '?')})"
+    perms = requests.get(f"https://graph.facebook.com/{ver}/me/permissions", params={"access_token": tok}, timeout=30)
+    granted = []
+    if perms.ok:
+        granted = [p["permission"] for p in perms.json().get("data", []) if p.get("status") == "granted"]
+    dbg = requests.get(f"https://graph.facebook.com/{ver}/debug_token", params={"input_token": tok, "access_token": tok}, timeout=30).json().get("data", {})
+    exp = dbg.get("expires_at", None)
+    scopes = dbg.get("scopes") or granted
+    need = ["pages_manage_posts", "pages_read_engagement", "pages_manage_engagement", "pages_show_list"]
+    miss = [p for p in need if scopes and p not in scopes]
+    exp_txt = "never expires" if exp == 0 else (f"expires_at={exp}" if exp else "expiry unknown")
+    ok = "NOT a page" not in kind and not miss
+    return ok, f"Facebook {'OK' if ok else 'PROBLEM'} — page '{name}', {kind}, {exp_txt}" + (f", missing: {', '.join(miss)}" if miss else ", permissions ok")
 
 
 def main():

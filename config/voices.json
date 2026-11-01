@@ -1,0 +1,46 @@
+{
+  "narrator": {
+    "voice_id": "6551pRDYAi5ZzvTYlIp6",
+    "source": "owner"
+  },
+  "young_man": {
+    "voice_id": "GuSivqtqi1qfWxEuGhqa",
+    "source": "owner"
+  },
+  "man": {
+    "voice_id": "j5PhP1QJv2DvlhRv3mEv",
+    "source": "owner"
+  },
+  "old_man": {
+    "voice_id": "1JOQMQINvsOLiEu2pZFd",
+    "source": "owner"
+  },
+  "old_woman": {
+    "voice_id": "N6PAsaEqAXM8EIxJn9g3",
+    "source": "owner"
+  },
+  "woman": {
+    "voice_id": "N6PAsaEqAXM8EIxJn9g3",
+    "source": "owner"
+  },
+  "young_woman": {
+    "voice_id": "VixjjTLMa0rgjbAS8LTX",
+    "source": "owner"
+  },
+  "teen_girl": {
+    "voice_id": "VixjjTLMa0rgjbAS8LTX",
+    "source": "owner"
+  },
+  "teen_boy": {
+    "voice_id": "GuSivqtqi1qfWxEuGhqa",
+    "source": "owner"
+  },
+  "child_girl": {
+    "voice_id": "VixjjTLMa0rgjbAS8LTX",
+    "source": "owner"
+  },
+  "child_boy": {
+    "voice_id": "VixjjTLMa0rgjbAS8LTX",
+    "source": "owner"
+  }
+}

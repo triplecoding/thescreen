@@ -1,7 +1,7 @@
 """Voice generation.
 
-Production: ElevenLabs (pay-as-you-go API key in ELEVENLABS_API_KEY), model from config (eleven_v4_turbo),
-character voices designed once with Voice Design and stored in config/voices.json.
+Production: ElevenLabs (pay-as-you-go key in ELEVENLABS_API_KEY). Owner rules: model eleven_v4_turbo ONLY, language bn ONLY,
+voices = the owner's fixed voice ids in config/voices.json (no voice design, no fallback model).
 Preview only (never used for publishing): Microsoft Edge neural voices, so the system can be tested without a key.
 """
 import base64
@@ -42,95 +42,36 @@ class Eleven:
         return r
 
     def model(self):
-        """Pick the configured model, verifying it exists and supports Bangla."""
+        """Owner rule: ONLY eleven_v4_turbo, ONLY Bangla. No fallback to any other model."""
         if self._model:
             return self._model
-        want = [self.cfg["model_id"]] + self.cfg.get("model_fallbacks", [])
+        want = self.cfg["model_id"]
         try:
             r = self._req("GET", "/v1/models")
-            models = r.json() if r.ok else []
-            by = {m.get("model_id"): m for m in models if m.get("can_do_text_to_speech", True)}
-            for mid in want:
-                m = by.get(mid)
-                if m:
-                    langs = [l.get("language_id") for l in m.get("languages", [])]
-                    if not langs or "bn" in langs or "ben" in langs:
-                        self._model = mid
-                        break
-                    log(f"model {mid} does not list Bangla; trying next")
-            if not self._model:
-                # any v4 turbo-like model
-                for mid in by:
-                    if "v4" in mid and "turbo" in mid:
-                        self._model = mid
-                        break
-        except Exception as e:  # noqa
-            log("model check failed:", e)
-        self._model = self._model or self.cfg["model_id"]
-        log("ElevenLabs model:", self._model)
+            if r.ok:
+                ids = [m.get("model_id") for m in r.json()]
+                if want not in ids:
+                    raise RuntimeError(f"ElevenLabs model {want} is not available on this account (found: {', '.join(i for i in ids if i)[:300]})")
+        except RuntimeError:
+            raise
+        except Exception as e:  # noqa - network hiccup on the listing; the TTS call itself will still enforce the model
+            log("model listing check skipped:", e)
+        self._model = want
+        log("ElevenLabs model (locked):", self._model)
         return self._model
 
-    # ---- voice design (one-time per role) ----
-    def design_voice(self, role, spec):
-        sample = channel().get("voice_sample_bn")
-        body = {"voice_description": spec["description"], "model_id": self.cfg.get("voice_design_model", "eleven_ttv_v3"),
-                "text": sample, "guidance_scale": 5, "loudness": 0.5}
-        r = self._req("POST", "/v1/text-to-voice/design", json=body)
-        if not r.ok and body["model_id"] != "eleven_multilingual_ttv_v2":
-            log(f"design {role} with {body['model_id']} failed {r.status_code}: {r.text[:200]}; retrying with multilingual_ttv_v2")
-            body["model_id"] = "eleven_multilingual_ttv_v2"
-            r = self._req("POST", "/v1/text-to-voice/design", json=body)
-        if not r.ok:
-            raise RuntimeError(f"voice design failed for {role}: {r.status_code} {r.text[:300]}")
-        previews = r.json().get("previews", [])
-        if not previews:
-            raise RuntimeError(f"no previews for {role}")
-        gen = previews[0]["generated_voice_id"]
-        r = self._req("POST", "/v1/text-to-voice", json={"voice_name": f"TheScreen - {role}", "voice_description": spec["description"][:500], "generated_voice_id": gen})
-        if not r.ok:
-            raise RuntimeError(f"create voice failed for {role}: {r.status_code} {r.text[:300]}")
-        return r.json()["voice_id"]
-
-    def library_voice(self, role):
-        """Fallback: a Bangla voice from the shared library matching gender/age."""
-        gender = "female" if any(k in role for k in ("woman", "girl")) else "male"
-        age = "old" if "old" in role else ("young" if any(k in role for k in ("young", "teen", "child")) else "middle_aged")
-        for params in ({"language": "bn", "gender": gender, "age": age}, {"language": "bn", "gender": gender}):
-            r = self._req("GET", "/v1/shared-voices", params={**params, "page_size": 10})
-            if r.ok and r.json().get("voices"):
-                v = r.json()["voices"][0]
-                add = self._req("POST", f"/v1/voices/add/{v['public_owner_id']}/{v['voice_id']}", json={"new_name": f"TheScreen - {role}"})
-                if add.ok:
-                    return add.json().get("voice_id", v["voice_id"])
-        raise RuntimeError(f"no library voice for {role}")
-
     def ensure_voices(self, roles):
+        """Voices are the owner's fixed ElevenLabs voice ids in config/voices.json. Never designs or swaps voices."""
         data = load_json(VOICES_FILE, {}) or {}
-        specs = channel()["voices"]
-        changed = False
-        for role in roles:
-            if role in data and data[role].get("voice_id"):
-                continue
-            spec = specs.get(role) or specs["narrator"]
-            try:
-                vid = self.design_voice(role, spec)
-                how = "designed"
-            except Exception as e:  # noqa
-                log(f"voice design for {role} failed: {e}; using shared library")
-                vid = self.library_voice(role)
-                how = "library"
-            data[role] = {"voice_id": vid, "source": how, "created": time.strftime("%Y-%m-%d")}
-            log(f"voice ready: {role} -> {vid} ({how})")
-            changed = True
-        if changed:
-            save_json(VOICES_FILE, data)
+        missing = [r for r in roles if not (data.get(r) or {}).get("voice_id")]
+        if missing:
+            raise RuntimeError(f"no voice id configured for role(s): {', '.join(missing)} — add them to config/voices.json")
         return data
 
     def tts(self, text, voice_id, settings, prev_text=None, next_text=None, seed=None):
         cfg = self.cfg
         body = {"text": text, "model_id": self.model(), "voice_settings": settings}
-        if cfg.get("language_code"):
-            body["language_code"] = cfg["language_code"]
+        body["language_code"] = "bn"
         if prev_text:
             body["previous_text"] = prev_text
         if next_text:
@@ -140,10 +81,11 @@ class Eleven:
         path = f"/v1/text-to-speech/{voice_id}/with-timestamps?output_format={cfg.get('output_format', 'mp3_44100_128')}"
         r = self._req("POST", path, json=body)
         if r.status_code in (400, 422):
-            log(f"tts {r.status_code}: {r.text[:200]} — retrying with minimal body")
-            for k in ("language_code", "previous_text", "next_text", "seed"):
+            # keep model + language locked; only drop optional extras
+            log(f"tts {r.status_code}: {r.text[:200]} — retrying without optional fields")
+            for k in ("previous_text", "next_text", "seed"):
                 body.pop(k, None)
-            body["voice_settings"] = {k: v for k, v in settings.items() if k in ("stability", "similarity_boost")}
+            body["voice_settings"] = {k: v for k, v in settings.items() if k in ("stability", "similarity_boost", "style", "speed", "use_speaker_boost")}
             r = self._req("POST", path, json=body)
         if not r.ok:
             raise RuntimeError(f"tts failed {r.status_code}: {r.text[:300]}")

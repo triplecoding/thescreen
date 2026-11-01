@@ -16,7 +16,7 @@
   ],
   "duration": {
     "min": 120.0,
-    "max": 135.0
+    "max": 150.0
   },
   "render": {
     "fps": 30,
@@ -24,11 +24,6 @@
   },
   "elevenlabs": {
     "model_id": "eleven_v4_turbo",
-    "model_fallbacks": [
-      "eleven_v4",
-      "eleven_v3",
-      "eleven_multilingual_v2"
-    ],
     "language_code": "bn",
     "output_format": "mp3_44100_128",
     "audio_tags": true,
@@ -54,84 +49,93 @@
       "curious",
       "serious"
     ],
-    "voice_design_model": "eleven_ttv_v3",
     "default_settings": {
       "stability": 0.45,
       "similarity_boost": 0.8,
       "style": 0.35,
       "use_speaker_boost": true,
       "speed": 1.0
-    }
+    },
+    "model_locked": true,
+    "voice_design": false
   },
   "voices": {
     "narrator": {
-      "description": "Warm, calm Bangladeshi male storyteller in his early thirties from Dhaka, speaking standard Bangla (Bengali). Soft, intimate, emotionally expressive delivery like a late-night radio storyteller. Clear diction, gentle unhurried pacing, rich mid-low tone.",
+      "note": "young sharp voiceover male",
       "settings": {
         "stability": 0.5,
-        "style": 0.4,
+        "style": 0.35,
         "speed": 1.0
       }
     },
     "young_man": {
-      "description": "Bangladeshi young man around 25, earnest and friendly, natural conversational Bangla (Bengali), clear and slightly energetic.",
+      "note": "male young",
       "settings": {
         "stability": 0.42
       }
     },
     "man": {
-      "description": "Bangladeshi father around 45, steady warm baritone, natural everyday Bangla (Bengali), caring but firm.",
+      "note": "uncle-type age male",
       "settings": {
         "stability": 0.45
       }
     },
     "old_man": {
-      "description": "Elderly Bangladeshi man around 68, slightly raspy and slow, dignified, natural Bangla (Bengali) with a fatherly warmth.",
+      "note": "old age male",
       "settings": {
         "stability": 0.5,
-        "speed": 0.95
+        "speed": 0.96
+      }
+    },
+    "old_woman": {
+      "note": "old mother / grandmother",
+      "settings": {
+        "stability": 0.48,
+        "speed": 0.96
+      }
+    },
+    "woman": {
+      "note": "mother — uses the old mother voice",
+      "settings": {
+        "stability": 0.45,
+        "speed": 1.0
       }
     },
     "young_woman": {
-      "description": "Bangladeshi young woman around 25, soft, warm and sincere voice, natural Bangla (Bengali).",
+      "note": "daughter voice",
       "settings": {
         "stability": 0.42
       }
     },
-    "woman": {
-      "description": "Bangladeshi mother around 42, calm, caring and gentle voice, natural Bangla (Bengali).",
+    "teen_girl": {
+      "note": "daughter voice",
       "settings": {
-        "stability": 0.45
-      }
-    },
-    "old_woman": {
-      "description": "Elderly Bangladeshi grandmother around 65, gentle, slightly shaky, affectionate voice, natural Bangla (Bengali).",
-      "settings": {
-        "stability": 0.48,
-        "speed": 0.95
+        "stability": 0.4,
+        "style": 0.45
       }
     },
     "teen_boy": {
-      "description": "Bangladeshi teenage boy around 15, youthful bright voice not yet deep, natural Bangla (Bengali), expressive.",
+      "note": "male young voice, livelier",
       "settings": {
-        "stability": 0.4
-      }
-    },
-    "teen_girl": {
-      "description": "Bangladeshi teenage girl around 14, youthful soft and clear voice, natural Bangla (Bengali), expressive.",
-      "settings": {
-        "stability": 0.4
-      }
-    },
-    "child_boy": {
-      "description": "Young Bangladeshi boy around 8, high-pitched playful childlike voice, natural Bangla (Bengali).",
-      "settings": {
-        "stability": 0.4
+        "stability": 0.38,
+        "style": 0.45,
+        "speed": 1.03
       }
     },
     "child_girl": {
-      "description": "Young Bangladeshi girl around 8, high-pitched sweet childlike voice, natural Bangla (Bengali).",
+      "note": "daughter voice with child settings",
       "settings": {
-        "stability": 0.4
+        "stability": 0.3,
+        "style": 0.6,
+        "speed": 1.06
+      }
+    },
+    "child_boy": {
+      "note": "daughter voice with child settings",
+      "settings": {
+        "stability": 0.3,
+        "style": 0.6,
+        "speed": 1.06
       }
     }
   },
