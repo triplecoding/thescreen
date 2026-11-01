@@ -1,0 +1,8 @@
+out/
+.cache/
+node_modules/
+renderer/dev/
+__pycache__/
+*.pyc
+*.part.mp4
+.env

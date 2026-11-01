@@ -1,0 +1,37 @@
+"""Facebook Page video upload (Graph API). Secrets: FB_PAGE_ID, FB_PAGE_TOKEN (long-lived Page access token).
+Videos longer than 90 s cannot go through the Reels API, so they are posted as Page videos (Facebook shows vertical
+Page videos in the Reels/Video surfaces)."""
+from pathlib import Path
+
+import requests
+
+from common import channel, env, log, retry
+
+
+def caption(script):
+    fb = script.get("facebook", {})
+    return fb.get("caption") or script["youtube"]["title"]
+
+
+def upload(video, script, publish_unix=None, thumb=None):
+    ver = channel()["facebook"].get("graph_version", "v21.0")
+    page = env("FB_PAGE_ID")
+    token = env("FB_PAGE_TOKEN")
+    url = f"https://graph-video.facebook.com/{ver}/{page}/videos"
+    data = {"access_token": token, "description": caption(script), "title": script.get("title_bn", "")[:250]}
+    if publish_unix:
+        data.update({"published": "false", "scheduled_publish_time": str(int(publish_unix))})
+    else:
+        data["published"] = "true"
+
+    def go():
+        files = {"source": (Path(video).name, open(video, "rb"), "video/mp4")}
+        if thumb and Path(thumb).exists():
+            files["thumb"] = (Path(thumb).name, open(thumb, "rb"), "image/jpeg")
+        r = requests.post(url, data=data, files=files, timeout=900)
+        if not r.ok:
+            raise RuntimeError(f"Facebook upload failed: {r.status_code} {r.text[:400]}")
+        return r.json()["id"]
+    vid = retry(go, tries=3, base=10, what="facebook upload")
+    log(f"Facebook uploaded: video {vid} ({'scheduled' if publish_unix else 'published'})")
+    return vid

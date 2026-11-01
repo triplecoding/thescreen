@@ -1,0 +1,10 @@
+{
+  "_note": "One line per script already written. The weekly writer appends here so ideas are never repeated.",
+  "used": [
+    {"id": "001", "book": "The 48 Laws of Power", "item": "Win Through Your Actions, Never Through Argument", "relation": "father-son", "set": "shop", "hook": "12 months, 12 arguments, 0 result"},
+    {"id": "002", "book": "The Laws of Human Nature", "item": "The Law of Defensiveness — Soften People's Resistance by Confirming Their Self-opinion", "relation": "mother-in-law / daughter-in-law", "set": "kitchen", "hook": "6 months, 0 open conversations"},
+    {"id": "003", "book": "The Psychology of Money", "item": "Wealth Is What You Don't See", "relation": "father-son", "set": "street", "hook": "gets off 200 m before the school gate"},
+    {"id": "004", "book": "Games People Play", "item": "Why Don't You — Yes, But", "relation": "father-daughter", "set": "balcony", "hook": "came home and spoke to no one"},
+    {"id": "005", "book": "Thinking, Fast and Slow", "item": "WYSIATI — What You See Is All There Is", "relation": "neighbours", "set": "stairs", "hook": "comes home at 3 am every night"}
+  ]
+}

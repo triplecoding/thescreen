@@ -1,0 +1,11 @@
+{
+  "name": "thescreen",
+  "private": true,
+  "description": "The Screen — automated Bangla story video pipeline",
+  "scripts": {
+    "render": "node pipeline/render.js"
+  },
+  "dependencies": {
+    "playwright": "1.48.2"
+  }
+}

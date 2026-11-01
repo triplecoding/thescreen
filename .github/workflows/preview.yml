@@ -1,0 +1,45 @@
+name: Preview one script
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Script id, e.g. 006"
+        required: true
+      tts:
+        description: "elevenlabs | edge (edge = free robotic preview voice)"
+        default: "elevenlabs"
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm install --no-audit --no-fund && npx playwright install --with-deps chromium
+      - run: pip install -q -r requirements.txt
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: voice-${{ github.run_id }}
+          restore-keys: voice-
+      - run: python pipeline/produce.py ${{ github.event.inputs.id }} --tts ${{ github.event.inputs.tts }}
+      - run: python pipeline/contact_sheet.py || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preview-${{ github.event.inputs.id }}
+          path: |
+            out/*/video.mp4
+            out/*/thumb_*.jpg
+            out/*/contact.jpg
+            out/*/meta.json
+          retention-days: 14

@@ -1,0 +1,88 @@
+name: Daily videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many videos (0 = all slots for today)"
+        default: "0"
+      mode:
+        description: "scheduled | now | dry-run"
+        default: "scheduled"
+      date:
+        description: "Date YYYY-MM-DD (blank = today, Asia/Dhaka)"
+        default: ""
+  schedule:
+    # Safety net. The Claude scheduled task dispatches this every night;
+    # if that ever fails, this cron still runs (21:20 UTC = 03:20 Dhaka). Re-runs are idempotent.
+    - cron: "20 21 * * *"
+
+concurrency:
+  group: daily-videos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      TZ: Asia/Dhaka
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Node + Chromium
+        run: npm install --no-audit --no-fund && npx playwright install --with-deps chromium
+      - name: Python deps
+        run: pip install -q -r requirements.txt
+      - name: Voice cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: voice-${{ github.run_id }}
+          restore-keys: voice-
+      - name: Check secrets
+        run: python pipeline/doctor.py --ci
+      - name: Produce and publish
+        run: |
+          git config user.name "The Screen Bot"
+          git config user.email "bot@thescreen.local"
+          ARGS=""
+          [ "${{ github.event.inputs.count }}" != "" ] && [ "${{ github.event.inputs.count }}" != "0" ] && ARGS="$ARGS --count ${{ github.event.inputs.count }}"
+          [ "${{ github.event.inputs.mode }}" = "now" ] && ARGS="$ARGS --now"
+          [ "${{ github.event.inputs.mode }}" = "dry-run" ] && ARGS="$ARGS --dry-run"
+          [ "${{ github.event.inputs.date }}" != "" ] && ARGS="$ARGS --date ${{ github.event.inputs.date }}"
+          python pipeline/daily.py $ARGS
+      - name: Contact sheets for review
+        if: always()
+        run: python pipeline/contact_sheet.py || true
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-${{ github.run_number }}
+          path: |
+            out/*/video.mp4
+            out/*/thumb_*.jpg
+            out/*/meta.json
+            out/*/captions.srt
+            out/*/contact.jpg
+          retention-days: 7
+          if-no-files-found: ignore
