@@ -113,11 +113,12 @@
   };
 
   // ---------------- SHOP ----------------
+  const signOf = (props, dflt) => { const p = (props || []).find(x => typeof x === 'string' && x.startsWith('sign:')); return p ? p.slice(5) : dflt; };
   SETS.shop = (light, props, t, k) => {
     const P = light === 'night' ? pal('night') : { ...pal(light), wallT: '#E9DCC6', wallB: '#DCCBB0' };
     let b = `<defs>${grad('wall' + k, P.wallT, P.wallB)}</defs><rect x="-200" y="-200" width="1480" height="1700" fill="url(#wall${k})"/>`;
     // signboard
-    b += `<g><rect x="150" y="300" width="780" height="110" rx="12" fill="#24615C" ${SW}/><rect x="166" y="316" width="748" height="78" rx="8" fill="none" stroke="#E8A33D" stroke-width="4"/><text x="540" y="374" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="54" fill="#F4EDE1">মা-বাবা স্টোর · ১৯৮৫</text></g>`;
+    b += `<g><rect x="150" y="300" width="780" height="110" rx="12" fill="#24615C" ${SW}/><rect x="166" y="316" width="748" height="78" rx="8" fill="none" stroke="#E8A33D" stroke-width="4"/><text x="540" y="374" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="54" fill="#F4EDE1">${U.esc(signOf(props, 'মা-বাবা স্টোর'))}</text></g>`;
     // shelves
     b += `<rect x="50" y="460" width="980" height="760" rx="10" fill="#7A4C2C" ${SW}/><rect x="70" y="480" width="940" height="720" fill="#5E3A22"/>`;
     [690, 930].forEach(y => { b += `<rect x="62" y="${y}" width="956" height="24" fill="#8A5A36" ${SW}/>`; });
@@ -216,6 +217,15 @@
     let f = '';
     if (has(props, 'school_gate')) {
       b += `<g><rect x="700" y="760" width="40" height="680" fill="#3E5E80" ${SW}/><rect x="1040" y="760" width="40" height="680" fill="#3E5E80" ${SW}/><path d="M700 780 Q890 640 1080 780" fill="none" stroke="#3E5E80" stroke-width="30"/><rect x="730" y="700" width="330" height="80" rx="10" fill="#F4EDE1" ${SW}/><text x="895" y="752" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="34" fill="#24415E">আদর্শ উচ্চ বিদ্যালয়</text>${Array.from({ length: 8 }, (_, j) => `<path d="M${760 + j * 36} 900 V1440" stroke="#3E5E80" stroke-width="10"/>`).join('')}<path d="M740 920 H1040 M740 1300 H1040" stroke="#3E5E80" stroke-width="12"/></g>`;
+    }
+    if (has(props, 'superstore')) {
+      const glow = light !== 'day';
+      b += `<g><rect x="520" y="820" width="560" height="560" fill="#E9EEF2" ${SW}/><rect x="520" y="820" width="560" height="120" fill="#C40F1C" ${SW}/>` +
+        `<text x="800" y="900" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="64" fill="#FFF">${U.esc(signOf(props, 'মেগা মার্ট'))}</text>` +
+        `<rect x="560" y="980" width="480" height="400" fill="${glow ? '#FFF4C8' : '#BFE3F2'}" ${SW}/>` +
+        [0, 1, 2].map(i => `<rect x="${590 + i * 150}" y="1020" width="120" height="70" rx="6" fill="#E8A33D" opacity="0.8"/><rect x="${590 + i * 150}" y="1120" width="120" height="70" rx="6" fill="#2F7D6D" opacity="0.8"/>`).join('') +
+        `<rect x="640" y="1240" width="320" height="140" fill="#9FC7DA" opacity="0.6" ${SW}/><rect x="560" y="940" width="480" height="40" fill="#E8A33D"/><text x="800" y="970" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="30" fill="${OL}">৩০% ছাড় · এসি · সব এক ছাদে</text></g>` +
+        (glow ? lampGlow(k + 's', 800, 1100, 520, 0.35) : '');
     }
     if (has(props, 'car')) {
       b += `<g transform="translate(560,1330)"><path d="M-40 0 L-30 -70 Q-10 -130 80 -136 L250 -136 Q320 -130 350 -70 L420 -60 Q450 -50 450 0 Z" fill="#F2F2EE" ${SW}/><path d="M20 -72 Q30 -118 90 -120 L160 -120 L160 -72 Z M180 -72 L180 -120 L240 -120 Q300 -116 320 -72 Z" fill="#8FB7CF" ${SW}/><circle cx="60" cy="0" r="36" fill="#2E3440" ${SW}/><circle cx="350" cy="0" r="36" fill="#2E3440" ${SW}/><circle cx="60" cy="0" r="14" fill="#B9C2CB"/><circle cx="350" cy="0" r="14" fill="#B9C2CB"/></g>`;

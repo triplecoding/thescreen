@@ -8,7 +8,7 @@ from common import SCRIPTS, channel, plain  # noqa: E402
 
 SETS = {"home", "shop", "kitchen", "street", "stairs", "hospital", "balcony"}
 PROPS = {"home": {"window", "almirah", "sofa", "bed", "table", "door_closed"}, "shop": {"signboard", "signboard_new", "cashbox", "envelope", "envelopes"},
-         "kitchen": {"stove", "pot"}, "street": {"bicycle", "school_gate", "car", "cng"}, "stairs": set(), "hospital": set(), "balcony": {"plants", "tea"}}
+         "kitchen": {"stove", "pot"}, "street": {"bicycle", "school_gate", "car", "cng", "superstore"}, "stairs": set(), "hospital": set(), "balcony": {"plants", "tea"}}
 LIGHTS = {"day", "evening", "night"}
 TYPES = {"man", "young_man", "old_man", "woman", "young_woman", "old_woman", "teen_boy", "teen_girl", "child_boy", "child_girl"}
 OUTFITS = {"shirt", "tshirt", "panjabi", "sari", "salwar", "scrub", "uniform"}
@@ -66,6 +66,7 @@ def check(path):
             if i == 0 and not sc.get("set"): errs.append("first beat must set a scene")
             if sc.get("light") and sc["light"] not in LIGHTS: errs.append(f"{where}: bad light")
             for p in sc.get("props") or []:
+                if str(p).startswith("sign:"): continue
                 if cur_set and p not in PROPS.get(cur_set, set()): warns.append(f"{where}: prop '{p}' not drawn in set '{cur_set}'")
             for c in sc.get("chars") or []:
                 if c.get("id") not in cast: errs.append(f"{where}: char {c.get('id')} not in cast")
@@ -86,6 +87,11 @@ def check(path):
             if wt not in CONCEPTS: errs.append(f"{where}: bad concept widget {wt}")
         elif k == "takeaways" and b.get("show") is None:
             errs.append(f"{where}: takeaways needs 'show'")
+    if s["source"].get("book") == "The 48 Laws of Power":
+        errs.append("owner rule: no stories from The 48 Laws of Power")
+    story_c = sum(len(plain(b.get("say", ""))) for b in s["beats"] if b.get("kind", "story") in ("story", "list", "statement"))
+    if chars_total and story_c / chars_total < 0.66:
+        warns.append(f"story is only {story_c / chars_total:.0%} of narration — owner wants ~70–75 % story, short lesson")
     for need in ("book", "takeaways", "ask", "outro"):
         if need not in kinds: errs.append(f"structure: missing '{need}' beat")
     if kinds and kinds[-1] != "outro": errs.append("structure: last beat must be outro")

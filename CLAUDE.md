@@ -1,8 +1,8 @@
 # CLAUDE.md — The Screen (owner: triplecoding)
 
 **The Screen** (`দ্য স্ক্রিন` · tagline *গল্পে দেখি জীবন*) is a fully automated Bangla storytelling channel:
-touching Bangladeshi life stories built on ideas from 27 books (Robert Greene, Cialdini, Kahneman, Housel, Orwell…),
-rendered as premium 9:16 motion-graphics videos (2:00–2:15) with ElevenLabs voices, and published to YouTube + Facebook.
+touching, fully original Bangladeshi life stories built on ideas from 26 books (Greene's other books, Sun Tzu, Cialdini, Kahneman, Housel, Orwell… — never The 48 Laws of Power),
+rendered as premium 9:16 motion-graphics videos (2:00–2:30) with ElevenLabs voices, and published to YouTube + Facebook.
 
 Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs/SCRIPT_FORMAT.md` (JSON) and `docs/GROWTH.md` (algorithm/SEO) before writing scripts.
 
@@ -11,7 +11,7 @@ Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs
 GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on GitHub's own cron, no Claude session needed
    cron 25 1,7,13,19 * * * (UTC) = ~35 min before each slot 08:00 · 14:00 · 20:00 · 02:00 Asia/Dhaka → ONE video every 6 hours
    → pipeline/daily.py --next: picks the next unfilled slot
-       produce.py: ElevenLabs voice (eleven_v4_turbo, bn) → timeline (auto-fit 120–135 s)
+       produce.py: ElevenLabs voice (eleven_v4_turbo ONLY, bn ONLY, owner's voice ids) → timeline (auto-fit 120–150 s)
                    → renderer (HTML/SVG, Playwright, 30 fps) → original score + SFX → mux → QA → thumbnails
        → YouTube (scheduled publishAt) + Facebook Page (scheduled_publish_time)
        → state.json updated + committed after every upload (idempotent; never double-posts)
@@ -36,9 +36,10 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → healt
 | `.github/workflows/` | `daily.yml` (production), `preview.yml` (render one script, no upload), `validate.yml` |
 
 ## Locked rules (owner must approve changes)
-1. Voice: ElevenLabs pay-as-you-go, model `eleven_v4_turbo`, language `bn`. Voice ids in `config/voices.json` stay fixed once created.
-2. Format: 1080×1920, 30 fps, **120–135 s**, one video every 6 hours. QA rejects anything else.
-3. Logo always from `assets/brand/logo.png`, same header position and the same outro lockup in every video.
+1. Voice: ElevenLabs pay-as-you-go, model `eleven_v4_turbo` ONLY, language `bn` ONLY, voices = the owner's ids in `config/voices.json` (never design, swap or fall back).
+2. Format: 1080×1920, 30 fps, **120–150 s**, one video every 6 hours. QA rejects anything else. Story ≈ 70–75 %, lesson short.
+3. Logo always from `assets/brand/logo.png` (transparent), top-LEFT corner with no box behind it, same outro lockup in every video.
+3b. Never write stories from The 48 Laws of Power. Never copy any plot/scenario from the reference videos — every story original.
 4. Never write secrets in code, logs, chat or commits. They live only in GitHub → Settings → Secrets → Actions.
 5. Scripts are produced in id order; one video never refers to another episode.
 6. Facebook captions contain no website links.
@@ -50,7 +51,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → healt
 1. `git pull`. Read `docs/STORY_GUIDE.md`, `docs/SCRIPT_FORMAT.md`, `data/books.json`, `data/used.json`, and 2 existing scripts.
 2. Write **30** new scripts continuing the numbering. Mix: every priority-1 book at least twice, others once; rotate
    relationships/sets/lights/genders per the variety rules. Each story original, specific, Bangladeshi, touching.
-3. `python pipeline/validate.py` — fix every error; keep estimates ~118–135 s.
+3. `python pipeline/validate.py` — fix every error; keep estimates ~125–145 s.
 4. Optional spot-check: `python pipeline/produce.py <id> --tts edge --stills` renders still frames to `out/<id>/stills` (free preview voice) — look at 2–3 of them.
 5. Append each new script to `data/used.json`. Commit "scripts: NNN–MMM" and push to `main`.
 

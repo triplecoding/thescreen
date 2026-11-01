@@ -7,7 +7,15 @@ then rebuilt with The Screen's own identity. **Content quality is the #1 priorit
 Every video = one *touching, specific, Bangladeshi* family/work/neighbourhood story → the book idea behind it → a humane
 lesson the viewer can use tonight. Viewers should feel something in the first 5 seconds and want to send it to someone.
 
-## The 8-beat arc (≈ 30–36 beats, 2:00–2:15)
+## Owner rules (absolute)
+- **Never** write a story from *The 48 Laws of Power*. Use the other books in `data/books.json`.
+- **Every story and every scenario is original.** The reference videos the owner shared were only to show the style —
+  never reuse their plots, situations, turning points, props or lines (e.g. no grandmother-refusing-doctor, no child's
+  drawing of a drinking father, no roommate negativity, no suitor + old football photo, no puja-mic complaint + old photo).
+- **Story is the main course:** ~70–75 % of narration is story/animation; the lesson part is short (≈ 25–30 s).
+- **Length 2:00–2:30** (120–150 s).
+
+## The arc (≈ 26–30 beats, 2:00–2:30)
 
 | # | Part | Share | What it does | Typical beats |
 |---|------|-------|--------------|---------------|
@@ -17,15 +25,15 @@ lesson the viewer can use tonight. Viewers should feel something in the first 5 
 | 4 | **The low point** | ~8 s | Silence, distance, a door closed, a night. | night light, `pause` 0.7–1.0 |
 | 5 | **The turn** | ~25 s | "তারপর X একটা অদ্ভুত কাজ করল।" A *small, humane, specific* act — a question, a gift, listening, a quiet proof. Never cunning, never cruel. | `statement` card, then the act, then the other person's silence and reply |
 | 6 | **Payoff line** | ~5 s | Contrast formula: **"[long effort] যা পারেনি, [small thing] তা পারল।"** | one story beat, `fx: glow` |
-| 7 | **Book → idea** | ~25 s | Book card, then law/chapter reveal (2 beats). Then 2–3 `concept` beats with ONE simple visual metaphor. | `book` ×2, `concept` ×2–3 |
-| 8 | **Lesson → mirror → aphorism** | ~35 s | `takeaways` header + 3 numbered, parallel lines with a sub-example tied to the story. Then `ask` (turn the screen to the viewer) with an "X, নাকি Y?" question. Then a 2-part poetic `outro`. | `takeaways` ×4, `ask` ×2, `outro` |
+| 7 | **Book → idea** | ~10 s | Book card, then chapter reveal (2 short beats). Then ONE `concept` beat with one visual metaphor. | `book` ×2, `concept` ×1 |
+| 8 | **Lesson → mirror → aphorism** | ~20 s | `takeaways` show 1, 2, 3 (very short lines; the header is on the card). One `ask` beat with the quote. A 2-part poetic `outro`. | `takeaways` ×3, `ask` ×1, `outro` |
 
-Story ≈ 60 %, lesson ≈ 40 %.
+Story ≈ 70–75 %, lesson ≈ 25–30 %. Give the story room: more scenes, more dialogue, a specific emotional detail, a quiet moment, and an after-scene that shows the change.
 
 ## Signature lines (The Screen's voice — use every time)
 - Book: **"এই গল্পের পেছনের বই— [author_bn]-এর *[book]*।"** then **"[n] নম্বর ল— *[title_bn]*।"**
-- Takeaways header: **"পর্দার বাইরে, *তোমার জীবনে*—"**
-- Mirror: **"এবার পর্দাটা তোমার দিকে ঘোরাই। [situation], নিজেকে জিজ্ঞেস করো—"** then **"আমি কি …, নাকি …?"**
+- Takeaways: the card header reads "পর্দার বাইরে, তোমার জীবনে"; beats are just "এক, …" "দুই, …" "তিন, …" (short).
+- Mirror (one beat): **"এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি …, নাকি …?"**
 - Outro: two halves with "…" — e.g. "মানুষ তর্ক ভুলে যায়… *প্রমাণ ভোলে না*।" Under ~14 words. Parallel, rhythmic.
 
 ## Humane reinterpretation (very important)
@@ -43,7 +51,7 @@ Takeaway #3 is often the ethical guard-rail: "প্রশংসা হোক �
 - Mark 1–2 key words per beat with `*…*` (they glow red in captions). Don't over-highlight.
 - `say` must be written exactly as it should be spoken (numbers as words when natural: "আটশো চল্লিশ টাকা").
 - Tone tags (`tone`) sparingly: softly / warmly / tearful / hopeful / annoyed at emotional lines only.
-- Length: **~1,650–1,900 characters of narration** total. `validate.py` estimates duration; the pipeline auto-fits 120–135 s, but a script that is far off gets parked.
+- Length: **~1,750–2,000 characters of narration** total (story ~1,300–1,450, lesson ~420–480). `validate.py` estimates duration; the pipeline auto-fits 120–135 s, but a script that is far off gets parked.
 
 ## Variety rules (checked by the weekly writer)
 - Never the same book in 3 consecutive scripts; cover all priority-1 books every week.

@@ -51,8 +51,8 @@ Every beat has `say` (spoken + captioned; `*word*` = highlight). Optional: `voic
 Scene state carries over between beats; only write what changes. Characters keep positions and animate between beats
 (arms, moods, walking). The speaking character's mouth moves with the voice automatically.
 
-Props by set — home: window, almirah, sofa, bed, table, door_closed · shop: signboard, signboard_new, cashbox, envelope, envelopes
-· kitchen: stove, pot · street: bicycle, school_gate, car, cng · balcony: plants, tea · stairs / hospital: none.
+Props by set — home: window, almirah, sofa, bed, table, door_closed · shop: signboard, signboard_new, cashbox, envelope, envelopes,
+`"sign:দোকানের নাম"` (signboard text) · kitchen: stove, pot · street: bicycle, school_gate, car, cng, superstore (`"sign:…"` names it) · balcony: plants, tea · stairs / hospital: none.
 (sofa/bed provide the seat; otherwise sitting characters get a chair.)
 
 Widgets (top of screen):
