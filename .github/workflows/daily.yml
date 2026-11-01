@@ -7,7 +7,7 @@ on:
         description: "0 = only the next slot · N = fill N of today's slots"
         default: "0"
       mode:
-        description: "scheduled | now | dry-run"
+        description: "scheduled | now | extra (publish one extra video now, keeps all slots) | dry-run"
         default: "scheduled"
       date:
         description: "Date YYYY-MM-DD (blank = today, Asia/Dhaka)"
@@ -71,6 +71,7 @@ jobs:
           ARGS="--next"
           [ "${{ github.event.inputs.count }}" != "" ] && [ "${{ github.event.inputs.count }}" != "0" ] && ARGS="--count ${{ github.event.inputs.count }}"
           [ "${{ github.event.inputs.mode }}" = "now" ] && ARGS="$ARGS --now"
+          [ "${{ github.event.inputs.mode }}" = "extra" ] && ARGS="--extra"
           [ "${{ github.event.inputs.mode }}" = "dry-run" ] && ARGS="$ARGS --dry-run"
           [ "${{ github.event.inputs.date }}" != "" ] && ARGS="$ARGS --date ${{ github.event.inputs.date }}"
           python pipeline/daily.py $ARGS

@@ -102,7 +102,8 @@ def main():
     ap.add_argument("--now", action="store_true", help="publish immediately instead of scheduling")
     ap.add_argument("--dry-run", action="store_true", help="produce but do not upload")
     ap.add_argument("--date", default="")
-    ap.add_argument("--next", action="store_true", help="fill only the next upcoming slot (used by the 6-hourly cron)")
+    ap.add_argument("--next", action="store_true", help="fill only the next upcoming slot (used by the cron)")
+    ap.add_argument("--extra", action="store_true", help="one extra video published right now, without using a scheduled slot")
     ap.add_argument("--tts", default="elevenlabs")
     a = ap.parse_args()
 
@@ -125,7 +126,12 @@ def main():
             log("no platform credentials ready — running as dry-run (videos kept as artifacts, nothing marked posted)")
             a.dry_run = True
     done = {(p["date"], p["slot"]) for p in state["posted"]}
-    if a.next:
+    if a.extra:
+        date = now.date()
+        todo = [(f"extra-{now.strftime('%H%M')}", now)]
+        a.now = True
+        log("extra video: publishing immediately (no slot used)")
+    elif a.next:
         ns = next_slot(now, cfg, done)
         if not ns:
             log("nothing to do"); return
