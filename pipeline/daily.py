@@ -52,7 +52,18 @@ def slot_times(date, cfg):
     for hhmm in cfg["slots"][: cfg["posts_per_day"]]:
         h, m = map(int, hhmm.split(":"))
         out.append((hhmm, datetime(date.year, date.month, date.day, h, m, tzinfo=tz)))
-    return out
+    return sorted(out, key=lambda x: x[1])
+
+
+def next_slot(now, cfg, done, grace_min=100):
+    """The earliest slot (today or tomorrow) not yet filled whose time is >= now - grace."""
+    cands = []
+    for d in (now.date() - timedelta(days=1), now.date(), now.date() + timedelta(days=1)):
+        for s, t in slot_times(d, cfg):
+            if t >= now - timedelta(minutes=grace_min) and (str(d), s) not in done:
+                cands.append((d, s, t))
+    cands.sort(key=lambda x: x[2])
+    return cands[0] if cands else None
 
 
 def main():
@@ -61,6 +72,7 @@ def main():
     ap.add_argument("--now", action="store_true", help="publish immediately instead of scheduling")
     ap.add_argument("--dry-run", action="store_true", help="produce but do not upload")
     ap.add_argument("--date", default="")
+    ap.add_argument("--next", action="store_true", help="fill only the next upcoming slot (used by the 6-hourly cron)")
     ap.add_argument("--tts", default="elevenlabs")
     a = ap.parse_args()
 
@@ -82,12 +94,20 @@ def main():
         if not platforms and not a.dry_run:
             log("no platform credentials ready — running as dry-run (videos kept as artifacts, nothing marked posted)")
             a.dry_run = True
-    slots = slot_times(date, cfg)
-    if a.count:
-        slots = slots[: a.count]
     done = {(p["date"], p["slot"]) for p in state["posted"]}
-    todo = [(s, t) for s, t in slots if (str(date), s) not in done]
-    log(f"date {date}: {len(todo)} slot(s) to fill of {len(slots)}")
+    if a.next:
+        ns = next_slot(now, cfg, done)
+        if not ns:
+            log("nothing to do"); return
+        date = ns[0]
+        todo = [(ns[1], ns[2])]
+        log(f"next slot: {date} {ns[1]} ({ns[2].isoformat()})")
+    else:
+        slots = slot_times(date, cfg)
+        if a.count:
+            slots = slots[: a.count]
+        todo = [(s, t) for s, t in slots if (str(date), s) not in done]
+        log(f"date {date}: {len(todo)} slot(s) to fill of {len(slots)}")
     errors = []
     dry_used = set()
     for slot, when in todo:

@@ -240,9 +240,8 @@
         <div style="position:absolute;top:330px;left:50px;right:50px;text-align:center;opacity:${a};transform:scale(${1 + U.prog(lt, 0, 1.9) * 0.04})"><div style="display:inline-block;background:${TH.red};color:#fff;font:700 132px/1.15 ${TH.bn};padding:12px 44px 24px;border-radius:26px;box-shadow:0 18px 0 rgba(0,0,0,.25);transform:rotate(-2deg)">${U.esc(th.text)}</div><div style="margin-top:34px;font:700 64px ${TH.bn};color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.6)">${U.esc(th.sub || '')}</div></div>`;
     }
     // finishing: vignette, grain, screen frame
-    const gx = Math.floor(U.rand('gx', Math.floor(t * 30)) * 200), gy = Math.floor(U.rand('gy', Math.floor(t * 30)) * 200);
     html += `<div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.22) 100%)"></div>`;
-    html += `<div style="position:absolute;inset:-200px;pointer-events:none;background:url(../assets/brand/grain.png);opacity:.07;transform:translate(${gx}px,${gy}px)"></div>`;
+    html += `<div style="position:absolute;inset:0;pointer-events:none;background:url(../assets/brand/grain.png);opacity:.035"></div>`;
     html += `<div style="position:absolute;inset:18px;border:2px solid rgba(255,255,255,.28);border-radius:38px;pointer-events:none"></div>`;
     document.getElementById('stage').innerHTML = html;
   }

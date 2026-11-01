@@ -8,18 +8,17 @@ Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft) and `d
 
 ## How the system runs
 ```
-Claude scheduled task — "The Screen: weekly scripts" (Fri morning, Dhaka)
-   → writes 30 new scripts/NNN.json → validate → commit + push
-
-Claude scheduled task — "The Screen: daily supervisor" (every night, Dhaka)
-   → gh workflow run daily.yml  →  watches the run  →  fixes & re-runs on failure  →  reviews contact sheets
-
-GitHub Actions — daily.yml (has the secrets; also a backup cron 03:20 Dhaka)
-   → pipeline/daily.py: for each of today's slots (config/channel.json)
+GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on GitHub's own cron, no Claude session needed
+   cron 25 1,7,13,19 * * * (UTC) = ~35 min before each slot 08:00 · 14:00 · 20:00 · 02:00 Asia/Dhaka → ONE video every 6 hours
+   → pipeline/daily.py --next: picks the next unfilled slot
        produce.py: ElevenLabs voice (eleven_v4_turbo, bn) → timeline (auto-fit 120–135 s)
                    → renderer (HTML/SVG, Playwright, 30 fps) → original score + SFX → mux → QA → thumbnails
        → YouTube (scheduled publishAt) + Facebook Page (scheduled_publish_time)
        → state.json updated + committed after every upload (idempotent; never double-posts)
+
+Claude scheduled task — "The Screen: weekly scripts" (Fri 07:33 Dhaka) → writes 30 new scripts → validate → push
+Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → health check only: reads the last runs,
+   fixes failures, re-runs a missed slot, reviews contact sheets, tops up the queue. Posting never depends on it.
 ```
 
 ## Repo map
@@ -38,7 +37,7 @@ GitHub Actions — daily.yml (has the secrets; also a backup cron 03:20 Dhaka)
 
 ## Locked rules (owner must approve changes)
 1. Voice: ElevenLabs pay-as-you-go, model `eleven_v4_turbo`, language `bn`. Voice ids in `config/voices.json` stay fixed once created.
-2. Format: 1080×1920, 30 fps, **120–135 s**. QA rejects anything else.
+2. Format: 1080×1920, 30 fps, **120–135 s**, one video every 6 hours. QA rejects anything else.
 3. Logo always from `assets/brand/logo.png`, same header position and the same outro lockup in every video.
 4. Never write secrets in code, logs, chat or commits. They live only in GitHub → Settings → Secrets → Actions.
 5. Scripts are produced in id order; one video never refers to another episode.
@@ -56,12 +55,17 @@ GitHub Actions — daily.yml (has the secrets; also a backup cron 03:20 Dhaka)
 5. Append each new script to `data/used.json`. Commit "scripts: NNN–MMM" and push to `main`.
 
 ## Daily supervisor — exact procedure
-1. `gh workflow run daily.yml -R triplecoding/thescreen` (skip if a run for today is already in progress/succeeded).
-2. Poll `gh run list --workflow daily.yml -R triplecoding/thescreen -L 1` until finished.
-3. If failed: `gh run view <id> --log-failed`, fix the cause in code/scripts (small, safe changes), push, re-run. Script
+(GraphQL is blocked in Claude sessions — use the REST API through `gh api`.)
+1. Check the last runs: `gh api "repos/triplecoding/thescreen/actions/workflows/daily.yml/runs?per_page=3" --jq '.workflow_runs[]|[.id,.status,.conclusion,.created_at]|@tsv'`.
+   Compare state.json → posted with the slots of the last 24 h. If a slot was missed because a run failed, fix the cause and
+   dispatch a catch-up run (it publishes immediately when the slot time has passed):
+   `gh api -X POST repos/triplecoding/thescreen/actions/workflows/daily.yml/dispatches -f ref=main -f "inputs[mode]=now"`
+2. Poll the run (`gh api repos/triplecoding/thescreen/actions/runs/<id> --jq '.status,.conclusion'`) every few minutes until completed (~40–80 min).
+3. If failed: read logs (`gh api repos/triplecoding/thescreen/actions/runs/<id>/jobs --jq '.jobs[].steps[]|select(.conclusion=="failure")'`,
+   then `gh api repos/triplecoding/thescreen/actions/jobs/<job_id>/logs`), fix the cause in code/scripts (small, safe changes), push, re-run. Script
    problems (too long/short/invalid) are parked automatically in `state.json → failed`; repair those scripts and set them
    back by removing their entry from `failed`.
-4. Download the artifact (`gh run download <id>`), open `contact.jpg` of each video and check visuals; if a video is broken,
+4. Download the artifact (`gh api repos/triplecoding/thescreen/actions/runs/<id>/artifacts`, then the `archive_download_url`), open `contact.jpg` of each video and check visuals; if a video is broken,
    fix and re-produce; tell the owner what happened.
 5. If `state.json → queue_remaining` < 12, write extra scripts (same procedure as weekly).
 

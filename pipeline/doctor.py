@@ -86,8 +86,14 @@ def main():
         if gh:
             with open(gh, "a") as f:
                 f.write(f"READY_PLATFORMS={','.join(ok_platforms)}\n")
+    if not present("ELEVENLABS_API_KEY"):
+        print("NOT CONFIGURED: add ELEVENLABS_API_KEY in GitHub → Settings → Secrets → Actions. Skipping production (not an error).")
+        if ci and os.environ.get("GITHUB_ENV"):
+            with open(os.environ["GITHUB_ENV"], "a") as f:
+                f.write("SKIP_PRODUCTION=1\n")
+        return
     if fatal:
-        print("FATAL: ElevenLabs key missing or invalid — cannot produce voice.")
+        print("FATAL: ElevenLabs key invalid — cannot produce voice.")
         sys.exit(1)
 
 

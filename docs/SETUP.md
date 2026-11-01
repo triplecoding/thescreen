@@ -12,7 +12,7 @@
 | `FB_PAGE_ID` | The Screen Facebook পেজের ID |
 | `FB_PAGE_TOKEN` | Long-lived Page access token |
 
-সব দেওয়ার পর **Actions → Daily videos → Run workflow → mode = dry-run** চালাও। প্রথম ধাপ "Check secrets"-এ দেখা যাবে কোনটা ঠিক আছে আর কোনটা নেই।
+সব দেওয়ার পর **Actions → Publish videos → Run workflow → mode = dry-run** চালাও। প্রথম ধাপ "Check secrets"-এ দেখা যাবে কোনটা ঠিক আছে আর কোনটা নেই।
 
 ---
 
@@ -48,8 +48,9 @@
 
 ## ৪. সময়সূচি বদলাতে চাইলে
 `config/channel.json`:
-- `posts_per_day` — দিনে কয়টা ভিডিও যাবে (এখন ৪টা)।
-- `slots` — ঢাকার সময় অনুযায়ী প্রকাশের সময় (এখন ০৯:৩০, ১৩:৩০, ১৮:৩০, ২১:৩০)।
+- `posts_per_day` — দিনে কয়টা ভিডিও যাবে (এখন ৪টা, প্রতি ৬ ঘণ্টায় একটা)।
+- `slots` — ঢাকার সময় অনুযায়ী প্রকাশের সময় (এখন ০৮:০০, ১৪:০০, ২০:০০, ০২:০০)।
+  সময় বদলালে `.github/workflows/daily.yml`-এর cron-ও বদলাতে হবে, প্রতিটা স্লটের ~৩৫ মিনিট আগে (UTC = ঢাকা − ৬ ঘণ্টা)।
 - `publish_mode` — `scheduled` দিলে রাতে বানিয়ে সময়মতো প্রকাশ হবে, `immediate` দিলে বানানোর সঙ্গে সঙ্গেই প্রকাশ হবে।
 
 ## ৫. নিজের মিউজিক দিতে চাইলে

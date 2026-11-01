@@ -1,10 +1,10 @@
-name: Daily videos
+name: Publish videos
 
 on:
   workflow_dispatch:
     inputs:
       count:
-        description: "How many videos (0 = all slots for today)"
+        description: "0 = only the next slot · N = fill N of today's slots"
         default: "0"
       mode:
         description: "scheduled | now | dry-run"
@@ -13,12 +13,13 @@ on:
         description: "Date YYYY-MM-DD (blank = today, Asia/Dhaka)"
         default: ""
   schedule:
-    # Safety net. The Claude scheduled task dispatches this every night;
-    # if that ever fails, this cron still runs (21:20 UTC = 03:20 Dhaka). Re-runs are idempotent.
-    - cron: "20 21 * * *"
+    # One video every 6 hours. Runs ~35 min before each slot in config/channel.json
+    # (08:00, 14:00, 20:00, 02:00 Asia/Dhaka = 02:00, 08:00, 14:00, 20:00 UTC) and schedules the upload for the slot.
+    # Runs entirely on GitHub — no Claude session needed. Re-runs are idempotent (never double-post).
+    - cron: "25 1,7,13,19 * * *"
 
 concurrency:
-  group: daily-videos
+  group: publish-videos
   cancel-in-progress: false
 
 permissions:
@@ -27,7 +28,7 @@ permissions:
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 120
     env:
       TZ: Asia/Dhaka
       ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
@@ -61,11 +62,12 @@ jobs:
       - name: Check secrets
         run: python pipeline/doctor.py --ci
       - name: Produce and publish
+        if: env.SKIP_PRODUCTION != '1'
         run: |
           git config user.name "The Screen Bot"
           git config user.email "bot@thescreen.local"
-          ARGS=""
-          [ "${{ github.event.inputs.count }}" != "" ] && [ "${{ github.event.inputs.count }}" != "0" ] && ARGS="$ARGS --count ${{ github.event.inputs.count }}"
+          ARGS="--next"
+          [ "${{ github.event.inputs.count }}" != "" ] && [ "${{ github.event.inputs.count }}" != "0" ] && ARGS="--count ${{ github.event.inputs.count }}"
           [ "${{ github.event.inputs.mode }}" = "now" ] && ARGS="$ARGS --now"
           [ "${{ github.event.inputs.mode }}" = "dry-run" ] && ARGS="$ARGS --dry-run"
           [ "${{ github.event.inputs.date }}" != "" ] && ARGS="$ARGS --date ${{ github.event.inputs.date }}"
