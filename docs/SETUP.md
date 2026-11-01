@@ -24,13 +24,13 @@
 
 ## ২. YouTube
 1. console.cloud.google.com → নতুন project (নাম: The Screen) → **APIs & Services → Library → YouTube Data API v3 → Enable**।
-2. **OAuth consent screen** → External → অ্যাপের নাম The Screen → নিজের ইমেইল দাও → Scopes-এ `youtube.upload` আর `youtube` যোগ করো।
+2. **OAuth consent screen** → External → অ্যাপের নাম The Screen → নিজের ইমেইল দাও → Scopes-এ `youtube.upload`, `youtube` আর `youtube.force-ssl` যোগ করো (শেষেরটা প্রথম কমেন্ট করার জন্য)।
    ⚠️ এরপর **Publish app → In production** করে দাও। "Testing" মোডে রাখলে refresh token ৭ দিন পর বাতিল হয়ে যায়।
 3. **Credentials → Create credentials → OAuth client ID → Web application**।
    Authorized redirect URI: `https://developers.google.com/oauthplayground`
    এখান থেকে Client ID আর Client secret পাবে, এ দুটোই `YT_CLIENT_ID` আর `YT_CLIENT_SECRET`।
 4. developers.google.com/oauthplayground খোলো → ডান পাশের ⚙️ → "Use your own OAuth credentials"-এ টিক দিয়ে Client ID আর Secret বসাও।
-   বাম পাশে এই দুটো scope লিখে দাও: `https://www.googleapis.com/auth/youtube.upload` আর `https://www.googleapis.com/auth/youtube` →
+   বাম পাশে এই তিনটা scope লিখে দাও: `https://www.googleapis.com/auth/youtube.upload`, `https://www.googleapis.com/auth/youtube` আর `https://www.googleapis.com/auth/youtube.force-ssl` →
    Authorize → **The Screen চ্যানেলের Google অ্যাকাউন্ট** দিয়ে লগইন করো → "Exchange authorization code for tokens" →
    **Refresh token** কপি করে `YT_REFRESH_TOKEN`-এ রাখো।
 5. ⚠️ জরুরি: নতুন বা যাচাই না হওয়া API project দিয়ে আপলোড করা ভিডিও YouTube **private** করে রাখে, যতক্ষণ না project-টা অডিট পাস করে।
@@ -41,7 +41,7 @@
 ## ৩. Facebook পেজ
 1. developers.facebook.com → **My Apps → Create App** → Business টাইপ।
 2. **Graph API Explorer** খোলো → তোমার অ্যাপ সিলেক্ট করো → User token নাও এই permission দিয়ে:
-   `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`, `publish_video`।
+   `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`, `pages_manage_engagement`, `publish_video`।
 3. Access Token Debugger-এ গিয়ে "Extend Access Token" চাপো, তাহলে long-lived user token পাবে।
 4. Graph API Explorer-এ সেই token দিয়ে `me/accounts` চালাও → The Screen পেজের `id` হলো `FB_PAGE_ID`, আর সেখানকার `access_token` হলো `FB_PAGE_TOKEN`।
    Long-lived user token থেকে নেওয়া এই Page token-এর মেয়াদ সাধারণত শেষ হয় না।

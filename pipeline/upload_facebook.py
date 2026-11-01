@@ -9,8 +9,17 @@ from common import channel, env, log, retry
 
 
 def caption(script):
-    fb = script.get("facebook", {})
-    return fb.get("caption") or script["youtube"]["title"]
+    import seo
+    return seo.facebook_caption(script, seed=int(script["id"]) if str(script["id"]).isdigit() else 0)
+
+
+def comment(video_id, text):
+    """First comment from the Page (needs pages_manage_engagement). Works once the video is published."""
+    ver = channel()["facebook"].get("graph_version", "v21.0")
+    r = requests.post(f"https://graph.facebook.com/{ver}/{video_id}/comments", data={"message": text, "access_token": env("FB_PAGE_TOKEN")}, timeout=60)
+    if not r.ok:
+        raise RuntimeError(f"comment failed {r.status_code}: {r.text[:200]}")
+    return r.json().get("id")
 
 
 def upload(video, script, publish_unix=None, thumb=None):

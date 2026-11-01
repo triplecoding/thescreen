@@ -22,20 +22,21 @@ def access_token():
 
 
 def build_metadata(script):
+    import seo
     cfg = channel()
-    yt = script["youtube"]
-    src = script["source"]
-    desc = yt["description"].strip()
-    desc += f"\n\n📖 বই: {src['book']} — {src['author']}"
-    desc += "\n✍️ বইয়ের ধারণা থেকে অনুপ্রাণিত একটি মৌলিক গল্প।"
-    desc += "\n\n#Shorts #TheScreen #বাংলাগল্প #জীবনেরগল্প"
-    tags, total = [], 0
-    for t in yt.get("tags", []) + cfg["youtube"].get("extra_tags", []) + [src["book"], src["author"]]:
-        if t and t not in tags and total + len(t) + 2 < 480:
-            tags.append(t)
-            total += len(t) + 2
-    return {"title": yt["title"][:100], "description": desc[:4900], "tags": tags, "categoryId": cfg["youtube"].get("category_id", "22"),
+    m = seo.youtube_meta(script, seed=int(script["id"]) if str(script["id"]).isdigit() else 0)
+    return {"title": m["title"], "description": m["description"], "tags": m["tags"], "categoryId": cfg["youtube"].get("category_id", "22"),
             "defaultLanguage": cfg["youtube"].get("default_language", "bn"), "defaultAudioLanguage": "bn"}
+
+
+def comment(video_id, text):
+    """Top-level comment from the channel (needs scope youtube.force-ssl). Works once the video is public."""
+    tok = access_token()
+    r = requests.post(f"{API}/commentThreads", params={"part": "snippet"}, headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json"},
+                      data=json.dumps({"snippet": {"videoId": video_id, "topLevelComment": {"snippet": {"textOriginal": text}}}}), timeout=60)
+    if not r.ok:
+        raise RuntimeError(f"comment failed {r.status_code}: {r.text[:200]}")
+    return r.json()["id"]
 
 
 def upload(video, script, publish_at_iso=None, thumb=None):

@@ -4,7 +4,7 @@
 touching Bangladeshi life stories built on ideas from 27 books (Robert Greene, Cialdini, Kahneman, Housel, Orwell…),
 rendered as premium 9:16 motion-graphics videos (2:00–2:15) with ElevenLabs voices, and published to YouTube + Facebook.
 
-Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft) and `docs/SCRIPT_FORMAT.md` (JSON) before writing scripts.
+Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs/SCRIPT_FORMAT.md` (JSON) and `docs/GROWTH.md` (algorithm/SEO) before writing scripts.
 
 ## How the system runs
 ```

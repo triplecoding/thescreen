@@ -51,6 +51,14 @@ Takeaway #3 is often the ethical guard-rail: "প্রশংসা হোক �
 - Rotate sets and lights; alternate male/female protagonists; vary hook types (number, quote, habit, secret, object).
 - Use `data/used.json` — never reuse a book item + relationship combination.
 
+## Metadata (algorithm + SEO — see docs/GROWTH.md)
+- `youtube.title`: emotional hook first (≤ 70 chars ideal), one emoji, then `| Book name`. Must be true to the story.
+- `youtube.description`: line 1 = the hook in 1–2 sentences ending with "…"; then 1 line on the book; then the tagline.
+- `youtube.tags`: 6–10 — book in Bangla + Banglish + English, the theme (বাবার গল্প, সঞ্চয়, সম্পর্ক…), relationship.
+- `facebook.caption`: line 1 = the payoff/hook line + emoji; line 2 = a question about the viewer's own life + 👇;
+  then `📖 Book — Author` and ≤ 4 hashtags. No links. (seo.py adds the share prompt and brand tags.)
+- `thumbnail.text`: 2–3 bold words that create curiosity; `sub`: ≤ 5 words.
+
 ## Never
 Real public figures, brands, political parties or current politics, religion debates, violence/gore, self-harm, romance
 manipulation, medical instructions, mocking any group, defamation, copying book text, fake statistics presented as research.

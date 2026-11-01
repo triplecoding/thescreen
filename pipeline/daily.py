@@ -66,6 +66,36 @@ def next_slot(now, cfg, done, grace_min=100):
     return cands[0] if cands else None
 
 
+def engage(state, platforms, now):
+    """Post the 'first comment' (the episode's mirror question) on videos that have gone live since the last run."""
+    import seo
+    import upload_facebook
+    import upload_youtube
+    for rec in state.get("posted", [])[-12:]:
+        live = rec.get("scheduled_for") == "immediate" or (rec.get("scheduled_for") and datetime.fromisoformat(rec["scheduled_for"]) <= now)
+        if not live:
+            continue
+        script = load_json(SCRIPTS / f"{rec['id']}.json")
+        text = seo.first_comment(script) if script else None
+        if not text:
+            continue
+        if "youtube" in platforms and rec.get("youtube") and not rec.get("yt_comment"):
+            try:
+                rec["yt_comment"] = upload_youtube.comment(rec["youtube"], text)
+                log(f"youtube comment on {rec['id']}")
+            except Exception as e:  # noqa
+                rec["yt_comment_error"] = str(e)[:160]
+                if "403" in str(e) or "404" in str(e): rec["yt_comment"] = "skipped"
+        if "facebook" in platforms and rec.get("facebook") and not rec.get("fb_comment"):
+            try:
+                rec["fb_comment"] = upload_facebook.comment(rec["facebook"], text)
+                log(f"facebook comment on {rec['id']}")
+            except Exception as e:  # noqa
+                rec["fb_comment_error"] = str(e)[:160]
+                if "403" in str(e) or "(#200)" in str(e): rec["fb_comment"] = "skipped"
+    save_json(STATE, state)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--count", type=int, default=0)
@@ -110,6 +140,8 @@ def main():
         log(f"date {date}: {len(todo)} slot(s) to fill of {len(slots)}")
     errors = []
     dry_used = set()
+    if not a.dry_run:
+        engage(state, platforms, now)
     for slot, when in todo:
         q = [x for x in queue(state) if x not in dry_used]
         if not q:
