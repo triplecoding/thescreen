@@ -89,7 +89,11 @@ def upload(video, script, publish_at_iso=None, thumb=None):
 
 
 def add_to_playlist(video_id, book, cache):
-    """Group videos by source book. cache: dict book->playlist id (persisted in state.json)."""
+    """Group videos by source book. cache: dict book->playlist id (persisted in state.json).
+    Returns True once the video is in the book's playlist (idempotent: checks before inserting).
+    playlistItems.insert often answers 409 right after a playlist is created or a video is uploaded,
+    so it is retried with backoff; anything still failing is retried on the next run (daily.engage)."""
+    import time
     try:
         tok = access_token()
         H = {"Authorization": f"Bearer {tok}", "Content-Type": "application/json"}
@@ -99,13 +103,29 @@ def add_to_playlist(video_id, book, cache):
                               data=json.dumps({"snippet": {"title": f"{book} — বাংলা গল্পে | The Screen", "description": f"{book} বইয়ের শিক্ষা, জীবনের গল্পে। The Screen — গল্পে দেখি জীবন।", "defaultLanguage": "bn"}, "status": {"privacyStatus": "public"}}))
             if not r.ok:
                 log("playlist create skipped:", r.status_code)
-                return None
+                return False
             pid = r.json()["id"]
             cache[book] = pid
-        r = requests.post(f"{API}/playlistItems", params={"part": "snippet"}, headers=H, timeout=60,
-                          data=json.dumps({"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": video_id}}}))
-        log("playlist:", "added" if r.ok else f"skipped ({r.status_code})")
-        return pid
+            time.sleep(8)  # a brand-new playlist rejects inserts for a few seconds
+        r = requests.get(f"{API}/playlistItems", params={"part": "id", "playlistId": pid, "videoId": video_id}, headers=H, timeout=60)
+        if r.ok and r.json().get("items"):
+            log("playlist: already there")
+            return True
+        for wait in (0, 10, 30, 60):
+            time.sleep(wait)
+            r = requests.post(f"{API}/playlistItems", params={"part": "snippet"}, headers=H, timeout=60,
+                              data=json.dumps({"snippet": {"playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": video_id}}}))
+            if r.ok:
+                log("playlist: added")
+                return True
+            if r.status_code not in (409, 500, 503):
+                break
+        try:
+            reason = r.json()["error"]["errors"][0].get("reason", "")
+        except Exception:  # noqa
+            reason = ""
+        log(f"playlist: not added yet ({r.status_code} {reason}) — will retry next run")
+        return False
     except Exception as e:  # noqa
         log("playlist skipped:", e)
-        return None
+        return False

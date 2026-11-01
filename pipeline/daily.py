@@ -76,6 +76,8 @@ def engage(state, platforms, now):
         if not live:
             continue
         script = load_json(SCRIPTS / f"{rec['id']}.json")
+        if "youtube" in platforms and rec.get("youtube") and script and not rec.get("playlist") and channel()["youtube"].get("playlist_by_book"):
+            rec["playlist"] = upload_youtube.add_to_playlist(rec["youtube"], script["source"]["book"], state["playlists"])
         text = seo.first_comment(script) if script else None
         if not text:
             continue
@@ -192,7 +194,7 @@ def main():
                     vid = upload_youtube.upload(video, script, iso, Path(odir) / "thumb_16x9.jpg")
                     rec["youtube"] = vid
                     if cfg["youtube"].get("playlist_by_book"):
-                        upload_youtube.add_to_playlist(vid, script["source"]["book"], state["playlists"])
+                        rec["playlist"] = upload_youtube.add_to_playlist(vid, script["source"]["book"], state["playlists"])
                 except Exception as e:  # noqa
                     rec["youtube_error"] = str(e)[:300]; errors.append(f"youtube {sid}: {e}")
             if "facebook" in platforms:
