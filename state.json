@@ -1,5 +1,16 @@
 {
-  "posted": [],
+  "posted": [
+    {
+      "id": "002",
+      "date": "2026-11-02",
+      "slot": "10:00",
+      "duration": 150.0,
+      "title": "দাওয়াতের টেবিলে একটা কথায় বদলে গেল শাশুড়ি 🍲 | The Laws of Human Nature বাংলা",
+      "youtube": "X1qOLAf0X1E",
+      "facebook": "1132860129288481",
+      "scheduled_for": "2026-11-02T10:00:00+06:00"
+    }
+  ],
   "failed": [
     {
       "id": "001",
@@ -8,5 +19,11 @@
       "kind": "length"
     }
   ],
-  "playlists": {}
+  "playlists": {
+    "The Laws of Human Nature": "PLa_DKXTCT90U"
+  },
+  "last_run": {
+    "at": "2026-11-01T23:08:17.010530+06:00",
+    "errors": []
+  }
 }
