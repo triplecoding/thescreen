@@ -42,7 +42,16 @@ def check_eleven():
     for vid in vids:
         rr = requests.get(f"https://api.elevenlabs.io/v1/voices/{vid}", headers=H, timeout=30)
         if not rr.ok:
-            bad.append(f"{vid}({rr.status_code})")
+            detail = ""
+            try:
+                d = rr.json().get("detail")
+                detail = d.get("status", "") + ": " + d.get("message", "")[:120] if isinstance(d, dict) else str(d)[:120]
+            except Exception:  # noqa
+                pass
+            # is it a public library voice that just isn't in "My Voices"?
+            sv = requests.get("https://api.elevenlabs.io/v1/shared-voices", headers=H, params={"search": vid, "page_size": 5}, timeout=30)
+            lib = [v for v in (sv.json().get("voices", []) if sv.ok else []) if v.get("voice_id") == vid]
+            bad.append(f"{vid}({rr.status_code} {detail}{' | in public library: ' + lib[0].get('name', '') if lib else ''})")
     msg += f"; voices {len(vids) - len(bad)}/{len(vids)} reachable" + (f" — NOT reachable: {', '.join(bad)}" if bad else "")
     if bad:
         return False, msg
@@ -79,6 +88,13 @@ def check_facebook():
     tok = os.environ["FB_PAGE_TOKEN"]
     me = requests.get(f"https://graph.facebook.com/{ver}/me", params={"fields": "id,name", "access_token": tok}, timeout=30).json()
     kind = "Page token" if str(me.get("id")) == str(os.environ["FB_PAGE_ID"]) else f"NOT a page token (token belongs to {me.get('name', '?')})"
+    if "NOT a page" in kind:
+        ex = requests.get(f"https://graph.facebook.com/{ver}/{os.environ['FB_PAGE_ID']}", params={"fields": "access_token", "access_token": tok}, timeout=30).json()
+        if ex.get("access_token"):
+            kind = f"user/system-user token ({me.get('name', '?')}) — page token derived automatically ✓"
+            tok = ex["access_token"]
+        else:
+            kind += f"; could not derive page token: {ex.get('error', {}).get('message', '')[:120]}"
     perms = requests.get(f"https://graph.facebook.com/{ver}/me/permissions", params={"access_token": tok}, timeout=30)
     granted = []
     if perms.ok:
