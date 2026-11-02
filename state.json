@@ -116,6 +116,17 @@
       "playlist": true,
       "facebook": "1059506940438807",
       "scheduled_for": "2026-11-04T10:00:00+06:00"
+    },
+    {
+      "id": "011",
+      "date": "2026-11-04",
+      "slot": "13:30",
+      "duration": 137.74,
+      "title": "রোজ ২০০ অঙ্ক করেও ৩৮, তিনটা পুরনো খাতায় বদলে গেল সব 📚 | The Art of War বাংলা",
+      "youtube": "z1SwI7b4VLU",
+      "playlist": true,
+      "facebook": "1434664791507495",
+      "scheduled_for": "2026-11-04T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -129,7 +140,7 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T15:56:58.469972+06:00",
+    "at": "2026-11-02T16:03:18.588446+06:00",
     "errors": []
   },
   "queue_remaining": 26,
