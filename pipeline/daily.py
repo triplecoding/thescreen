@@ -254,6 +254,7 @@ def main():
         log(f"date {date}: {len(todo)} slot(s) to fill of {len(slots)}")
     errors = []
     dry_used = set()
+    parked_now = 0
     if not a.dry_run:
         engage(state, platforms, now)
     def taken(slot, when):
@@ -282,9 +283,15 @@ def main():
             except Exception as e:  # noqa
                 tb = traceback.format_exc(limit=3)
                 log(f"producing {sid} failed: {e}\n{tb}")
+                transient = any(w in str(e).lower() for w in ("timeout", "timed out", "connection", "429", "500", "502", "503", "504", "quota", "credits", "unauthorized", "401", "403"))
                 if "script invalid" in str(e) or "QA failed" in str(e):
                     state["failed"].append({"id": sid, "reason": str(e)[:400], "at": now.isoformat(), "kind": "script"})
                     save_json(STATE, state); git_commit(f"park {sid}: invalid", state)
+                elif not transient and parked_now < 2:
+                    # a bug that hits only this script must not stop the channel: park it, use the next one
+                    parked_now += 1
+                    state["failed"].append({"id": sid, "reason": (str(e) + " | " + tb)[:600], "at": now.isoformat(), "kind": "error", "retry": True})
+                    save_json(STATE, state); git_commit(f"park {sid}: production error", state)
                 else:
                     errors.append(f"{sid}: {e}")
                     raise

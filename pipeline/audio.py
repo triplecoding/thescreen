@@ -82,7 +82,7 @@ def score(total, seed, lift_at=None):
         for j, idx in enumerate(pattern):
             m = chord[idx] + (12 if lifted and j % 2 else 0)
             v = 0.16 + 0.05 * random.random()
-            s = int((t + j * step + random.uniform(-0.01, 0.01)) * SR)
+            s = max(0, int((t + j * step + random.uniform(-0.01, 0.01)) * SR))
             pn = piano(note_freq(m), 2.4, v)
             if s < n:
                 out[s:s + len(pn)] += pn[:n - s]
