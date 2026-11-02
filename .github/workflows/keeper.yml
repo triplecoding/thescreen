@@ -1,0 +1,70 @@
+name: Keeper (timer)
+
+# A self-renewing timer that does not depend on GitHub's cron (which can be late or silently skipped).
+# It sleeps on a runner until ~35 min before the next slot (10:00, 13:30, 17:30, 20:00 Asia/Dhaka),
+# dispatches "Publish videos", then dispatches itself again. Runner minutes are free for public repos.
+# "Publish videos" restarts this timer whenever it is not running, and the cron below restarts it too.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 */4 * * *"
+
+concurrency:
+  group: keeper
+  cancel-in-progress: true
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  wait-and-fire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Sleep until the next production time
+        id: wait
+        run: |
+          python3 - <<'EOF' >> "$GITHUB_OUTPUT"
+          from datetime import datetime, timedelta, timezone
+          tz = timezone(timedelta(hours=6))
+          now = datetime.now(tz)
+          fire = ["09:25", "12:55", "16:55", "19:25"]   # 35 min before each slot
+          cands = []
+          for d in (0, 1):
+              day = (now + timedelta(days=d)).date()
+              for f in fire:
+                  h, m = map(int, f.split(":"))
+                  t = datetime(day.year, day.month, day.day, h, m, tzinfo=tz)
+                  if t > now + timedelta(seconds=30):
+                      cands.append(t)
+          t = min(cands)
+          wait = (t - now).total_seconds()
+          cap = 5 * 3600                                 # stay inside the 6 h job limit
+          print(f"fire={'1' if wait <= cap else '0'}")
+          print(f"sleep={int(min(wait, cap))}")
+          print(f"target={t.isoformat()}")
+          EOF
+          cat "$GITHUB_OUTPUT"
+      - name: Sleep
+        run: |
+          echo "sleeping ${{ steps.wait.outputs.sleep }} s (next target ${{ steps.wait.outputs.target }}, fire=${{ steps.wait.outputs.fire }})"
+          sleep ${{ steps.wait.outputs.sleep }}
+      - name: Start "Publish videos"
+        if: steps.wait.outputs.fire == '1'
+        run: |
+          for i in 1 2 3 4 5; do
+            gh api -X POST "repos/$REPO/actions/workflows/daily.yml/dispatches" -f ref=main -f "inputs[mode]=scheduled" && break
+            sleep 30
+          done
+      - name: Renew the timer
+        if: always()
+        run: |
+          for i in 1 2 3 4 5; do
+            gh api -X POST "repos/$REPO/actions/workflows/keeper.yml/dispatches" -f ref=main && break
+            sleep 30
+          done

@@ -28,6 +28,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   produce:
@@ -113,3 +114,11 @@ jobs:
             out/*/contact.jpg
           retention-days: 7
           if-no-files-found: ignore
+      - name: Make sure the Keeper timer is running
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh api "repos/${{ github.repository }}/actions/workflows/keeper.yml/runs?per_page=5" --jq '[.workflow_runs[]|select(.status=="in_progress" or .status=="queued" or .status=="waiting" or .status=="pending")]|length' || echo 1)
+          echo "active keeper runs: $n"
+          if [ "$n" = "0" ]; then gh api -X POST "repos/${{ github.repository }}/actions/workflows/keeper.yml/dispatches" -f ref=main && echo "keeper restarted"; fi

@@ -18,6 +18,10 @@ GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on
        → YouTube (scheduled publishAt) + Facebook Page (scheduled_publish_time)
        → state.json updated + committed after every upload (idempotent; never double-posts)
 
+GitHub Actions — .github/workflows/keeper.yml ("Keeper (timer)") ← self-renewing timer, independent of GitHub cron:
+   sleeps until 35 min before each slot → dispatches "Publish videos" → dispatches itself again.
+   "Publish videos" restarts the Keeper whenever it is not running (each watches the other).
+
 Claude scheduled task — "The Screen: weekly scripts" (Fri 07:33 Dhaka) → writes 30 new scripts → validate → push
 Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backup trigger (dispatches a run if tomorrow is
    not fully scheduled) + health check: reads the last runs,
