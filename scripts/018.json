@@ -1,0 +1,552 @@
+{
+  "id": "018",
+  "status": "ready",
+  "title_bn": "নানুর মরিচের টব",
+  "source": {
+    "book": "The Daily Laws",
+    "author": "Robert Greene",
+    "author_bn": "রবার্ট গ্রিন",
+    "chapter": "DAILY LAW",
+    "chapter_bn": "একটা দৈনিক শিক্ষা",
+    "title": "Patience as a Superpower",
+    "title_bn": "ধৈর্যই আসল শক্তি"
+  },
+  "cast": {
+    "ruhi": {
+      "name": "রুহি",
+      "type": "child_girl",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#E07A9F",
+      "color2": "#FFFFFF",
+      "hair": "kid",
+      "voice": "child_girl"
+    },
+    "nanu": {
+      "name": "নানু",
+      "type": "old_woman",
+      "skin": "tan",
+      "outfit": "sari",
+      "color": "#FFFFFF",
+      "color2": "#2F7D6D",
+      "hair": "grey_bun",
+      "glasses": true,
+      "voice": "old_woman"
+    }
+  },
+  "beats": [
+    {
+      "say": "হারমোনিয়াম তিন দিন, আঁকা পাঁচ দিন, ক্যারাটে এক সপ্তাহ। রুহি সব ছেড়ে দেয় *সাত দিনের মধ্যে*।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "সিলেট",
+        "props": [
+          "sofa",
+          "almirah"
+        ],
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "cross"
+          }
+        ],
+        "widget": {
+          "kind": "checklist",
+          "title": "রুহির শুরু করা",
+          "items": [
+            {
+              "t": "হারমোনিয়াম — ৩ দিন",
+              "mark": "x"
+            },
+            {
+              "t": "আঁকা — ৫ দিন",
+              "mark": "x"
+            },
+            {
+              "t": "ক্যারাটে — ৭ দিন",
+              "mark": "x"
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "ruhi",
+      "tone": "upset",
+      "say": "আমি কিছুই পারি না, নানু। আমাকে দিয়ে *কিছু হবে না*।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          },
+          {
+            "id": "nanu",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "ruhi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nanu",
+      "tone": "laughs",
+      "say": "সাত দিনে তো আমের আঁটি থেকে *একটা পাতাও* বের হয় না, বোকা।",
+      "scene": {
+        "arms": {
+          "nanu": "talk"
+        },
+        "cam": {
+          "focus": "nanu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "আম্মু বকলেন, আব্বু নতুন রঙের বাক্স আনলেন, শিক্ষক উৎসাহ দিলেন। রুহি তবু *ছেড়ে দিল*।",
+      "card": {
+        "title": "সবার চেষ্টা",
+        "items": [
+          {
+            "t": "আম্মুর বকা",
+            "mark": "x"
+          },
+          {
+            "t": "নতুন রঙের বাক্স",
+            "mark": "x"
+          },
+          {
+            "t": "শিক্ষকের উৎসাহ",
+            "mark": "x"
+          }
+        ],
+        "footer": "ফল: আবার ছেড়ে দেওয়া"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "সেই রাতে রুহি রঙের বাক্সটা আলমারির *একদম পেছনে* রেখে দিল।",
+      "pause": 0.9,
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "almirah",
+          "bed"
+        ],
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": {
+          "focus": "ruhi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "পরদিন সকালে নানু আনলেন একটা মাটির টব, আর এক মুঠো *মরিচের বীজ*।",
+      "scene": {
+        "set": "balcony",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "nanu",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "ruhi",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nanu",
+      "tone": "playfully",
+      "say": "চল, একটা খেলা খেলি। যে আগে *টবের মাটি খুঁড়বে*, সে হারবে।",
+      "scene": {
+        "arms": {
+          "nanu": "point"
+        },
+        "cam": {
+          "focus": "nanu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রুহি রোজ স্কুলের আগে পানি দেয়। তিন দিন, পাঁচ দিন, দশ দিন… *কিছুই না*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "দিন",
+              "value": "১০",
+              "from": "১"
+            },
+            {
+              "label": "চারা",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "ruhi",
+      "tone": "frustrated",
+      "say": "নানু, বীজগুলো মনে হয় *মরে গেছে*। একটু খুঁড়ে দেখি?",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "talk"
+          },
+          {
+            "id": "nanu",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "ruhi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nanu",
+      "tone": "gently",
+      "say": "মাটির নিচে কাজ চলছে, চোখে দেখা যায় না। *ধৈর্য*, নানুমণি।",
+      "scene": {
+        "cam": {
+          "focus": "nanu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেদিন নানু আলমারি থেকে বের করলেন পুরনো একটা খাতা। প্রথম পাতায় কাঁপা অক্ষরে— *আমেনা*।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "দুপুর",
+        "props": [
+          "almirah",
+          "sofa"
+        ],
+        "chars": [
+          {
+            "id": "nanu",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "book"
+          },
+          {
+            "id": "ruhi",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "notebook",
+          "title": "নানুর খাতা",
+          "lines": [
+            "আ মে না — প্রথম মাস",
+            "আমেনা — সাত মাস পর",
+            "আমেনা বেগম ✓"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nanu",
+      "tone": "softly",
+      "say": "আটান্ন বছর বয়সে নিজের নাম লিখতে শিখেছি। *সাত মাস* লেগেছিল।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "nanu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "ruhi",
+      "tone": "curious",
+      "say": "সাত মাস! তুমি *ছেড়ে দাওনি*?",
+      "scene": {
+        "cam": {
+          "focus": "ruhi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nanu",
+      "tone": "warmly",
+      "say": "রোজ ছাড়তে ইচ্ছা করত। তবু পরদিন আবার *একটা লাইন* লিখতাম।",
+      "scene": {
+        "cam": {
+          "focus": "nanu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "একুশ দিনের মাথায়, ভোরে রুহির চিৎকারে পুরো বাড়ি *জেগে উঠল*।",
+      "scene": {
+        "set": "balcony",
+        "light": "day",
+        "chip": "একুশতম দিন",
+        "props": [
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "point"
+          }
+        ],
+        "fx": "glow",
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "ruhi",
+      "tone": "excited",
+      "say": "নানু! দুইটা *সবুজ পাতা*! আমি জিতেছি!",
+      "scene": {
+        "fx": null,
+        "cam": {
+          "focus": "ruhi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেই বিকেলে রুহি আলমারির পেছন থেকে রঙের বাক্সটা *আবার বের করল*। প্রথম ছবি— একটা টব।",
+      "scene": {
+        "set": "home",
+        "light": "evening",
+        "chip": "সেই বিকেলে",
+        "props": [
+          "almirah",
+          "table"
+        ],
+        "chars": [
+          {
+            "id": "ruhi",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "সবার বকা আর উৎসাহ যা পারেনি, একটা *মরিচের চারা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য ডেইলি লজ*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা দৈনিক শিক্ষা— ধৈর্যই *আসল শক্তি*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "শুরুর দিনগুলোতে উন্নতি চোখে পড়ে না, কাজ চলে *মাটির নিচে*। যে অপেক্ষা পারে, সে-ই ফল দেখে।",
+      "card": {
+        "title": "মাটির নিচে কী হয়?",
+        "widget": {
+          "type": "iceberg",
+          "top": [
+            {
+              "icon": "eye",
+              "t": "চোখে: কিছুই না"
+            }
+          ],
+          "bottom": [
+            {
+              "icon": "clock",
+              "t": "রোজকার অভ্যাস"
+            },
+            {
+              "icon": "brain",
+              "t": "ধীরে শেখা"
+            },
+            {
+              "icon": "star",
+              "t": "শিকড়"
+            }
+          ],
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, শুরুর দিনগুলো *নীরব* হয়।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "শুরুর দিনগুলো নীরব",
+            "sub": "উন্নতি আগে ভেতরে হয়",
+            "icon": "clock"
+          },
+          {
+            "t": "রোজ একটু, প্রতিদিন",
+            "sub": "একটা লাইন, এক ফোঁটা পানি",
+            "icon": "check"
+          },
+          {
+            "t": "বারবার খুঁড়ে দেখো না",
+            "sub": "অধৈর্য চারাকে মারে",
+            "icon": "hand"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, রোজ *একটু*, প্রতিদিন।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, বারবার *খুঁড়ে দেখো না*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *ফল* খুঁজছি, নাকি *শিকড়* গজাতে দিচ্ছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *ফল* খুঁজছি,\nনাকি *শিকড়* গজাতে দিচ্ছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "বীজ কখনো তাড়াহুড়া করে না… *তবু একদিন ঠিকই ফোটে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "বীজ কখনো তাড়াহুড়া করে না…",
+        "line2": "তবু একদিন\nঠিকই ফোটে।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "সব কিছু সাত দিনে ছেড়ে দিত রুহি, নানুর পুরনো খাতা বদলে দিল তাকে 🌱 | The Daily Laws বাংলা",
+    "description": "হারমোনিয়াম তিন দিন, আঁকা পাঁচ দিন— রুহি সব ছেড়ে দিত এক সপ্তাহের মধ্যে। তারপর নানু আনলেন একটা মাটির টব আর এক মুঠো বীজ…\nরবার্ট গ্রিন-এর The Daily Laws — Patience as a Superpower — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "daily laws bangla",
+      "robert greene bangla",
+      "নানুর গল্প",
+      "ধৈর্য",
+      "বাংলা গল্প",
+      "শিশুদের গল্প",
+      "patience story bangla",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "সবার বকা আর উৎসাহ যা পারেনি, একটা মরিচের চারা তা পারল। 🌱\n\nকোন জিনিসটা শিখতে তোমার সবচেয়ে বেশি সময় লেগেছে? 👇\n\n📖 The Daily Laws — Robert Greene\n#নানু #ধৈর্য"
+  },
+  "thumbnail": {
+    "text": "সাত দিনেই হার",
+    "sub": "নানুর পুরনো খাতা"
+  }
+}

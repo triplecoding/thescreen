@@ -1,0 +1,536 @@
+{
+  "id": "019",
+  "status": "ready",
+  "title_bn": "রাত সাড়ে বারোটার টোকা",
+  "source": {
+    "book": "The Art of War",
+    "author": "Sun Tzu",
+    "author_bn": "সান জু",
+    "chapter": "CHAPTER 7",
+    "chapter_bn": "সাত নম্বর অধ্যায়",
+    "title": "Manoeuvring",
+    "title_bn": "ফেরার জন্য সোনার সেতু রাখো"
+  },
+  "cast": {
+    "tanim": {
+      "name": "তানিম",
+      "type": "teen_boy",
+      "skin": "tan",
+      "outfit": "tshirt",
+      "color": "#3D6FA5",
+      "hair": "kid",
+      "voice": "teen_boy"
+    },
+    "hasan": {
+      "name": "আব্বা",
+      "type": "man",
+      "skin": "wheat",
+      "outfit": "shirt",
+      "color": "#E9E2D0",
+      "hair": "side",
+      "beard": "stubble",
+      "glasses": true,
+      "voice": "man"
+    },
+    "rahim": {
+      "name": "রহিম চাচা",
+      "type": "old_man",
+      "skin": "dark",
+      "outfit": "shirt",
+      "color": "#5B6B7A",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "voice": "old_man"
+    }
+  },
+  "beats": [
+    {
+      "say": "ষোলো বছর, লাইসেন্স নেই। তানিম আব্বার মোটরসাইকেল নিয়ে বেরিয়েছিল *না বলে*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "খুলনা",
+        "props": [
+          "car"
+        ],
+        "chars": [
+          {
+            "id": "tanim",
+            "x": 0.45,
+            "pose": "walk",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "বয়স",
+              "value": "১৬"
+            },
+            {
+              "label": "লাইসেন্স",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "মোড়ে ব্রেক কষতেই পড়ে গেল। হাঁটু ছিলল, বাইকের আয়না *ভাঙল*।",
+      "scene": {
+        "widget": null,
+        "fx": "pulse",
+        "chars": [
+          {
+            "id": "tanim",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          }
+        ]
+      }
+    },
+    {
+      "say": "টিউশনের জমানো টাকায় চুপিচুপি সারাল, রহিম চাচার *ওয়ার্কশপে*।",
+      "scene": {
+        "set": "shop",
+        "light": "day",
+        "chip": "রহিম মোটরস",
+        "props": [
+          "signboard",
+          "sign:রহিম মোটরস ওয়ার্কশপ"
+        ],
+        "fx": null,
+        "chars": [
+          {
+            "id": "rahim",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "bag"
+          },
+          {
+            "id": "tanim",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "tanim",
+      "tone": "whispers",
+      "say": "চাচা, আব্বাকে কিছু বলবেন না। *প্লিজ*।",
+      "scene": {
+        "cam": {
+          "focus": "tanim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rahim",
+      "tone": "gently",
+      "say": "বাবা, মিথ্যার ওপর রং করা যায়। *দাগ কিন্তু যায় না*।",
+      "scene": {
+        "arms": {
+          "rahim": "talk"
+        },
+        "cam": {
+          "focus": "rahim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সন্ধ্যায় রহিম চাচার একটা ফোনে আব্বা *সব জেনে গেলেন*।",
+      "scene": {
+        "set": "home",
+        "light": "evening",
+        "chip": "সন্ধ্যা",
+        "props": [
+          "sofa",
+          "door_closed"
+        ],
+        "chars": [
+          {
+            "id": "hasan",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "worried",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "রাতে খাবার টেবিলে আব্বা শুধু জিজ্ঞেস করলেন, হাঁটুতে কী হয়েছে।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "রাতের খাবার",
+        "props": [
+          "table"
+        ],
+        "chars": [
+          {
+            "id": "hasan",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "tanim",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "tanim",
+      "tone": "flatly",
+      "say": "ক্রিকেট খেলতে গিয়ে… *পড়ে গেছি*।",
+      "scene": {
+        "cam": {
+          "focus": "tanim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "আগে মিথ্যা ধরা পড়লে— চিৎকার, মোবাইল কেড়ে নেওয়া, এক মাস ঘরবন্দি। মিথ্যা শুধু *আরো পাকা* হতো।",
+      "card": {
+        "title": "আগের শাস্তিগুলো",
+        "items": [
+          {
+            "t": "চিৎকার",
+            "mark": "x"
+          },
+          {
+            "t": "মোবাইল কেড়ে নেওয়া",
+            "mark": "x"
+          },
+          {
+            "t": "এক মাস ঘরবন্দি",
+            "mark": "x"
+          }
+        ],
+        "footer": "ফল: আরো পাকা মিথ্যা"
+      }
+    },
+    {
+      "say": "প্রমাণ হাতে, রাগও ছিল। তবু আব্বা অনেকক্ষণ *কিছুই বললেন না*।",
+      "pause": 0.9,
+      "scene": {
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এবার তিনি ছেলেকে কোণঠাসা করলেন না। খুলে রাখলেন *একটা দরজা*।",
+      "pause": 0.7,
+      "card": {
+        "text": "কোণঠাসা নয়—\nখুলে রাখলেন *একটা দরজা*।"
+      }
+    },
+    {
+      "voice": "hasan",
+      "tone": "softly",
+      "say": "জানিস, তোর বয়সে নানার সাইকেল ভেঙে *লুকিয়েছিলাম*। এক সপ্তাহ ঘুম হয়নি।",
+      "scene": {
+        "set": "balcony",
+        "light": "night",
+        "chip": "বারান্দা",
+        "props": [
+          "tea",
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "hasan",
+            "x": 0.32,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          },
+          {
+            "id": "tanim",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "hasan",
+      "tone": "warmly",
+      "say": "বুক থেকে কিছু নামাতে চাইলে, আমি *এই বারান্দায়* থাকি। রাগ করব না।",
+      "scene": {
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আব্বা উঠে গেলেন। তানিম অনেকক্ষণ *একা বসে রইল*।",
+      "pause": 0.8,
+      "scene": {
+        "chars": [
+          {
+            "id": "tanim",
+            "x": 0.5,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "face"
+          }
+        ],
+        "cam": {
+          "focus": "tanim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রাত সাড়ে বারোটায়, বারান্দার দরজায় *আস্তে টোকা*।",
+      "scene": {
+        "chip": "রাত ১২টা ৩০",
+        "chars": [
+          {
+            "id": "hasan",
+            "x": 0.32,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "tanim",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "crying",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "tanim",
+      "tone": "tearful",
+      "say": "আব্বা… বাইকটা আমি নিয়েছিলাম। আয়নাটা *আমিই ভেঙেছি*।",
+      "scene": {
+        "cam": {
+          "focus": "tanim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "hasan",
+      "tone": "gently",
+      "say": "জানি, বাবা। শুধু চেয়েছিলাম, কথাটা *তুই নিজে* বলিস।",
+      "scene": {
+        "arms": {
+          "hasan": "hug",
+          "tanim": "hug"
+        },
+        "moods": {
+          "hasan": "smile"
+        },
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "পরের শুক্রবার বাপ-ছেলে একসাথে ভর্তি হলো *ড্রাইভিং স্কুলে*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "পরের শুক্রবার",
+        "props": [
+          "car"
+        ],
+        "chars": [
+          {
+            "id": "hasan",
+            "x": 0.38,
+            "pose": "walk",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "tanim",
+            "x": 0.6,
+            "pose": "walk",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "চিৎকার আর শাস্তি যা পারেনি, *খোলা রাখা একটা দরজা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— সান জুর *দ্য আর্ট অফ ওয়ার*।"
+    },
+    {
+      "kind": "book",
+      "say": "সাত নম্বর অধ্যায়— ফেরার জন্য *সোনার সেতু* রাখো।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "কোণঠাসা মানুষ মিথ্যা আঁকড়ে ধরে। সম্মান নিয়ে ফেরার পথ পেলে, *নিজেই ফিরে আসে*।",
+      "card": {
+        "title": "ফেরার পথ",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "wall",
+            "t": "কোণঠাসা করা",
+            "sub": "আরো মিথ্যা, আরো জেদ",
+            "bad": true
+          },
+          "right": {
+            "icon": "door",
+            "t": "সোনার সেতু",
+            "sub": "সম্মান নিয়ে ফেরা"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, ধরে ফেলা মানেই *জেতা নয়*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "ধরে ফেলা মানেই জেতা নয়",
+            "sub": "প্রমাণ থাকলেও থামো",
+            "icon": "hand"
+          },
+          {
+            "t": "ফেরার পথটা খুলে রাখো",
+            "sub": "নিজের ভুলের গল্প বলো",
+            "icon": "door"
+          },
+          {
+            "t": "সত্যিটা ওকেই বলতে দাও",
+            "sub": "সম্মানটাও ওর থাকে",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, ফেরার *পথটা* খুলে রাখো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, সত্যিটা *ওকেই* বলতে দাও।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি মানুষকে *কোণঠাসা* করছি, নাকি ফেরার *পথ* রাখছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি মানুষকে *কোণঠাসা* করছি,\nনাকি ফেরার *পথ* রাখছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "দেয়াল মানুষকে লুকাতে শেখায়… *দরজা শেখায় ফিরে আসতে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "দেয়াল মানুষকে লুকাতে শেখায়…",
+        "line2": "দরজা শেখায়\nফিরে আসতে।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "ছেলের মিথ্যা ধরেও কিছু বললেন না আব্বা, তারপর রাত সাড়ে বারোটায়… 🏍️ | The Art of War বাংলা",
+    "description": "ষোলো বছরের তানিম না বলে আব্বার মোটরসাইকেল নিয়েছিল, ভেঙে চুপিচুপি সারিয়েও ফেলেছিল। আব্বা সব জানলেন— কিন্তু বকলেন না…\nসান জু-এর The Art of War — Manoeuvring — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "art of war bangla",
+      "sun tzu bangla",
+      "বাবা ছেলের গল্প",
+      "parenting bangla",
+      "বাংলা গল্প",
+      "কিশোর",
+      "সত্যি বলা",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "চিৎকার আর শাস্তি যা পারেনি, খোলা রাখা একটা দরজা তা পারল। 🏍️\n\nছোটবেলার কোন ভুলটা আব্বা-আম্মাকে বলতে সবচেয়ে ভয় পেয়েছিলে? 👇\n\n📖 The Art of War — Sun Tzu\n#বাবাছেলে #প্যারেন্টিং"
+  },
+  "thumbnail": {
+    "text": "খোলা দরজা",
+    "sub": "আব্বা সব জানতেন"
+  }
+}

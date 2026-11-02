@@ -1,0 +1,583 @@
+{
+  "id": "030",
+  "status": "ready",
+  "title_bn": "নানার তেঁতুলের পানি",
+  "source": {
+    "book": "On War",
+    "author": "Carl von Clausewitz",
+    "author_bn": "কার্ল ফন ক্লাউজেভিৎস",
+    "chapter": "BOOK VII",
+    "chapter_bn": "সপ্তম খণ্ড",
+    "title": "The Culminating Point",
+    "title_bn": "কোথায় থামতে হয়, জানো"
+  },
+  "cast": {
+    "tithi": {
+      "name": "তিথি",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#C4473A",
+      "color2": "#F2C14E",
+      "hair": "long_braid",
+      "voice": "young_woman"
+    },
+    "nana": {
+      "name": "নানা",
+      "type": "old_man",
+      "skin": "tan",
+      "outfit": "panjabi",
+      "color": "#E9E2D0",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "glasses": true,
+      "voice": "old_man"
+    },
+    "ruma": {
+      "name": "রুমা আপা",
+      "type": "young_woman",
+      "skin": "light",
+      "outfit": "salwar",
+      "color": "#5FA8A0",
+      "color2": "#3A3F58",
+      "hair": "hijab",
+      "voice": "young_woman"
+    }
+  },
+  "beats": [
+    {
+      "say": "ছয় মাসে এক ফুচকার গাড়ি থেকে *চারটা*। মহল্লায় তিথির নাম এখন সবার মুখে।",
+      "scene": {
+        "set": "street",
+        "light": "evening",
+        "chip": "ময়মনসিংহ",
+        "props": [
+          "bicycle"
+        ],
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "wave"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "গাড়ি",
+              "value": "৪",
+              "from": "১"
+            },
+            {
+              "label": "ঋণ",
+              "value": "২ লাখ ৳",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "প্রথম গাড়িটা নানার হাতে বানানো। টক-ঝাল তেঁতুলের পানি— *নানার রেসিপি*।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "nana",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "tithi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "tithi",
+      "tone": "excited",
+      "say": "নানা, এবার আরো দুইটা গাড়ি! ঋণ নিলেই *হয়ে যাবে*।",
+      "scene": {
+        "cam": {
+          "focus": "tithi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nana",
+      "tone": "gently",
+      "say": "মা, ঘুড়ির সুতা বেশি ছাড়লে *ঘুড়ি কেটে যায়*।",
+      "scene": {
+        "arms": {
+          "nana": "talk"
+        },
+        "cam": {
+          "focus": "nana",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "তিথি হাসল। শুনল না। ঋণের টাকায় এল আরো দুইটা ঝকঝকে গাড়ি।",
+      "scene": {
+        "moods": {
+          "tithi": "smile"
+        },
+        "cam": {
+          "focus": "tithi",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "মান পড়তে লাগল। আরো কর্মচারী, সস্তা তেঁতুল, তিন মোড়ে দৌড়। অভিযোগ *বাড়তেই থাকল*।",
+      "card": {
+        "title": "সামলানোর চেষ্টা",
+        "items": [
+          {
+            "t": "আরো কর্মচারী",
+            "mark": "x"
+          },
+          {
+            "t": "সস্তা কাঁচামাল",
+            "mark": "x"
+          },
+          {
+            "t": "তিন মোড়ে দৌড়",
+            "mark": "x"
+          }
+        ],
+        "footer": "অভিযোগ ↑"
+      }
+    },
+    {
+      "voice": "ruma",
+      "tone": "flatly",
+      "say": "তিথি, তোমার ফুচকা আর আগের মতো নেই। পানিটা *শুধু টক*।",
+      "scene": {
+        "set": "street",
+        "light": "evening",
+        "chip": "টাউন হল মোড়",
+        "props": [
+          "bicycle"
+        ],
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "ruma",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "ruma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রাতে এক খদ্দের ফেসবুকে লিখল— *নাম বড়, স্বাদ ছোট*।",
+      "scene": {
+        "moods": {
+          "tithi": "sad"
+        },
+        "cam": {
+          "focus": "tithi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "এক রাতে হিসাব মিলিয়ে দেখল— চারটা গাড়ি, অথচ লাভ *একটার চেয়েও কম*।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "এক রাতে",
+        "props": [
+          "table"
+        ],
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "notebook",
+          "title": "হিসাবের খাতা",
+          "lines": [
+            "গাড়ি ১টা — লাভ ১৮,০০০",
+            "গাড়ি ৪টা — লাভ ১১,০০০",
+            "কিস্তি বাকি — ২ মাস"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "নানা পাশে এসে বসলেন। কিছু বললেন না, শুধু *চা এগিয়ে দিলেন*।",
+      "pause": 0.9,
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.32,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "down"
+          },
+          {
+            "id": "nana",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "tea"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "tithi",
+      "tone": "tearful",
+      "say": "নানা, আমি কি সব *নষ্ট করে* ফেললাম?",
+      "scene": {
+        "cam": {
+          "focus": "tithi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nana",
+      "tone": "softly",
+      "say": "না রে। শুধু ভুলে গেছিস কোথায় *থামতে* হয়। থামাও একটা জয়।",
+      "scene": {
+        "cam": {
+          "focus": "nana",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "tithi",
+      "tone": "sad",
+      "say": "কিন্তু থামলে লোকে বলবে, *তিথি হেরে গেছে*।",
+      "scene": {
+        "cam": {
+          "focus": "tithi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nana",
+      "tone": "gently",
+      "say": "লোকে ঘুড়ি দেখে, মা। সুতাটা দেখে *শুধু যে ওড়ায়*।",
+      "scene": {
+        "cam": {
+          "focus": "nana",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এগিয়ে যাওয়ার মতো, *থামাও* একটা সিদ্ধান্ত।",
+      "pause": 0.7,
+      "card": {
+        "text": "এগিয়ে যাওয়ার মতো,\n*থামাও* একটা সিদ্ধান্ত।"
+      }
+    },
+    {
+      "say": "তিথি দুইটা গাড়ি বিক্রি করল। অর্ধেক ঋণ শোধ হলো *এক সপ্তাহে*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "এক সপ্তাহ পর",
+        "props": [
+          "bicycle"
+        ],
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "বাকি দুইটা গাড়িতে ফিরল নানার রেসিপি। তেঁতুলের পানি আবার *নিজের হাতে*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "nana",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "tithi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "ruma",
+      "tone": "excited",
+      "say": "এই তো! এই স্বাদের জন্যই তো *লাইনে দাঁড়াই*।",
+      "scene": {
+        "light": "evening",
+        "chip": "এক মাস পর",
+        "chars": [
+          {
+            "id": "tithi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "ruma",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "ruma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "এক বছরে ঋণ শেষ। দুই গাড়ির লাভ, চার গাড়ির সময়ের *দ্বিগুণ*।",
+      "scene": {
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "গাড়ি",
+              "value": "২",
+              "from": "৪"
+            },
+            {
+              "label": "ঋণ",
+              "value": "০",
+              "from": "২ লাখ"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "nana",
+      "tone": "warmly",
+      "say": "সুতা এখন ঠিক আছে। এবার এগোবি ধীরে, *একটা একটা* করে।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "nana",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "talk"
+          },
+          {
+            "id": "tithi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hug"
+          }
+        ],
+        "cam": {
+          "focus": "nana",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চারটা গাড়ির দৌড় যা পারেনি, *ঠিক সময়ে থামা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— ক্লাউজেভিৎসের *অন ওয়ার*।"
+    },
+    {
+      "kind": "book",
+      "say": "সপ্তম খণ্ড— *চূড়ার বিন্দু*, কোথায় থামতে হয় জানো।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "প্রতিটা অভিযানের একটা চূড়া আছে। তার পরে এগোলে শক্তি বাড়ে না— *ফুরিয়ে যায়*।",
+      "card": {
+        "title": "চূড়াটা চেনো",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "star",
+              "t": "শুরু"
+            },
+            {
+              "icon": "check",
+              "t": "বাড়ছে"
+            },
+            {
+              "icon": "eye",
+              "t": "চূড়া: থামো"
+            },
+            {
+              "icon": "x",
+              "t": "বাড়াবাড়ি"
+            }
+          ],
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, প্রতিটা বৃদ্ধির একটা *চূড়া* আছে।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "বৃদ্ধিরও একটা চূড়া আছে",
+            "sub": "তার পরে শক্তি ফুরায়",
+            "icon": "eye"
+          },
+          {
+            "t": "মানই আসল সংকেত",
+            "sub": "স্বাদ কমলে থামো",
+            "icon": "star"
+          },
+          {
+            "t": "থামা মানে হার নয়",
+            "sub": "গুছিয়ে আবার এগোনো",
+            "icon": "hand"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, মান কমলেই— *থামো*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, থামা মানে *হার নয়*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *আরো বড়* হতে চাইছি, নাকি জানি কোথায় *থামতে* হয়?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *আরো বড়* হতে চাইছি,\nনাকি জানি কোথায় *থামতে* হয়?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "এগিয়ে যেতে সাহস লাগে… *থামতে লাগে জ্ঞান*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "এগিয়ে যেতে সাহস লাগে…",
+        "line2": "থামতে লাগে\nজ্ঞান।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "ছয় মাসে ফুচকার গাড়ি একটা থেকে চারটা, তারপর নানার একটা কথা 🥟 | On War বাংলা",
+    "description": "ছয় মাসে এক ফুচকার গাড়ি থেকে চারটা, ঋণ দুই লাখ। নানা বলেছিলেন, সুতা বেশি ছাড়লে ঘুড়ি কেটে যায়— তিথি শোনেনি। তারপর এক রাতে হিসাবের খাতা…\nকার্ল ফন ক্লাউজেভিৎস-এর On War — The Culminating Point — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "on war bangla",
+      "clausewitz bangla",
+      "ফুচকা",
+      "ছোট ব্যবসা",
+      "বাংলা গল্প",
+      "নানা নাতনির গল্প",
+      "business lesson bangla",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "চারটা গাড়ির দৌড় যা পারেনি, ঠিক সময়ে থামা তা পারল। 🥟\n\nজীবনে কখন থেমে গিয়ে তুমি আসলে জিতেছিলে? 👇\n\n📖 On War — Carl von Clausewitz\n#ছোটব্যবসা #নানা"
+  },
+  "thumbnail": {
+    "text": "চারটা গাড়ি",
+    "sub": "লাভ তবু কম"
+  }
+}

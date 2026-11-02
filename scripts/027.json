@@ -1,0 +1,545 @@
+{
+  "id": "027",
+  "status": "ready",
+  "title_bn": "আব্বার এক পাতা",
+  "source": {
+    "book": "Animal Farm",
+    "author": "George Orwell",
+    "author_bn": "জর্জ অরওয়েল",
+    "chapter": "BOXER",
+    "chapter_bn": "একটা চরিত্র",
+    "title": "The Loyal Worker",
+    "title_bn": "যে শুধু বলে, আমি আরো খাটব"
+  },
+  "cast": {
+    "altaf": {
+      "name": "আলতাফ চাচা",
+      "type": "man",
+      "skin": "dark",
+      "outfit": "uniform",
+      "color": "#3A3F58",
+      "color2": "#3A3F58",
+      "hair": "side_grey",
+      "beard": "moustache",
+      "voice": "man"
+    },
+    "shuvo": {
+      "name": "শুভ",
+      "type": "young_man",
+      "skin": "brown",
+      "outfit": "shirt",
+      "color": "#FFFFFF",
+      "hair": "short",
+      "voice": "young_man"
+    },
+    "manager": {
+      "name": "ম্যানেজার সাহেব",
+      "type": "man",
+      "skin": "light",
+      "outfit": "shirt",
+      "color": "#8E9AAF",
+      "hair": "side",
+      "glasses": true,
+      "voice": "man"
+    }
+  },
+  "beats": [
+    {
+      "say": "আঠারো বছর রাতের ডিউটি। ছুটি নিয়েছেন *মাত্র তিন দিন*।",
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "উত্তরা, ঢাকা",
+        "props": [
+          "car"
+        ],
+        "chars": [
+          {
+            "id": "altaf",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "cross"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "বছর",
+              "value": "১৮",
+              "from": "১"
+            },
+            {
+              "label": "ছুটি",
+              "value": "৩ দিন",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "নয় বছর বেতন বাড়েনি। আর সব সমস্যায় আলতাফ চাচার উত্তর একটাই—",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "voice": "altaf",
+      "tone": "proudly",
+      "say": "আমি *আরো খাটব*।",
+      "scene": {
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "manager",
+      "tone": "warmly",
+      "say": "আলতাফ ভাই, আজ রাতেও থাকেন। আপনি তো আমাদের *সবচেয়ে বিশ্বস্ত*।",
+      "scene": {
+        "set": "shop",
+        "light": "evening",
+        "chip": "অফিস",
+        "props": [
+          "signboard",
+          "sign:রূপসা ট্রেডিং — অফিস"
+        ],
+        "chars": [
+          {
+            "id": "manager",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "talk"
+          },
+          {
+            "id": "altaf",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "manager",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "altaf",
+      "say": "জি স্যার, *কোনো সমস্যা নাই*।",
+      "scene": {
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "ছেলে শুভ বলল— বেতনের কথা বলো, ছুটি চাও, অন্য কাজ দেখো। উত্তর একটাই— *আরো খাটব*।",
+      "card": {
+        "title": "শুভর পরামর্শ",
+        "items": [
+          {
+            "t": "বেতনের কথা বলা",
+            "mark": "x"
+          },
+          {
+            "t": "ছুটি চাওয়া",
+            "mark": "x"
+          },
+          {
+            "t": "অন্য কাজ দেখা",
+            "mark": "x"
+          }
+        ],
+        "footer": "উত্তর: “আরো খাটব”"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "শুভর সমাবর্তনের দিন। হলভর্তি বাবা-মা। আব্বার চেয়ারটা *খালি*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "সমাবর্তন",
+        "props": [
+          "school_gate"
+        ],
+        "chars": [
+          {
+            "id": "shuvo",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "আব্বা তখন গেটে দাঁড়িয়ে, *ডাবল শিফটে*।",
+      "pause": 0.9,
+      "scene": {
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "রাতে ফোনে ছবি দেখে আব্বা বললেন, *খুব সুন্দর লাগছে*। গলাটা কাঁপছিল।",
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "রাত ১১টা",
+        "props": [
+          "car"
+        ],
+        "chars": [
+          {
+            "id": "altaf",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "crying",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে শুভ আব্বার পাশে বসল, হাতে কাগজ আর কলম।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "table"
+        ],
+        "chars": [
+          {
+            "id": "altaf",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "shuvo",
+      "tone": "gently",
+      "say": "আব্বা, চুপ করে খাটলে মানুষ ভাবে তোমার *কিছুই লাগে না*।",
+      "scene": {
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "altaf",
+      "tone": "sad",
+      "say": "চাইলে যদি চাকরি যায়, বাবা? এই বয়সে *কোথায় যাব*?",
+      "scene": {
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "shuvo",
+      "say": "চলো, আগে লিখি— আঠারো বছরে তুমি *কী কী করেছ*।",
+      "scene": {
+        "arms": {
+          "shuvo": "talk"
+        },
+        "cam": {
+          "focus": "shuvo",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "লেখা হলো এক পাতা। আর আব্বা প্রথমবার দেখলেন নিজের *আঠারো বছর*।",
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "আলতাফ মিয়া — ১৮ বছর",
+          "lines": [
+            "চুরি ঠেকানো — ২ বার",
+            "আগুন নেভানো — ১ বার",
+            "দেরি — ০ দিন"
+          ]
+        },
+        "moods": {
+          "altaf": "surprised"
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এবার তিনি শুধু খাটবেন না— নিজের কথাটাও *বলবেন*।",
+      "pause": 0.7,
+      "card": {
+        "text": "শুধু খাটবেন না—\nনিজের কথাটাও *বলবেন*।"
+      }
+    },
+    {
+      "voice": "altaf",
+      "tone": "softly",
+      "say": "স্যার, আমি খাটব। কিন্তু আমার কাজের একটা *ন্যায্য দাম* চাই।",
+      "scene": {
+        "set": "shop",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "signboard",
+          "sign:রূপসা ট্রেডিং — অফিস"
+        ],
+        "widget": null,
+        "chars": [
+          {
+            "id": "manager",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "hold",
+            "hold": "envelope"
+          },
+          {
+            "id": "altaf",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "ম্যানেজার অনেকক্ষণ কাগজটা পড়লেন। তারপর *মাথা নিচু* করলেন।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "manager": "sad"
+        },
+        "cam": {
+          "focus": "manager",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "manager",
+      "tone": "sad",
+      "say": "আঠারো বছর… আমরা আসলে *কখনো গুনে দেখিনি*, আলতাফ ভাই।",
+      "scene": {
+        "cam": {
+          "focus": "manager",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "বেতন বাড়ল, ওভারটাইম এল, মাসে চার দিন ছুটি। প্রথম ছুটিতে বাপ-ছেলে গেল *ছবি তুলতে*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "প্রথম ছুটির দিন",
+        "props": [
+          "school_gate"
+        ],
+        "chars": [
+          {
+            "id": "altaf",
+            "x": 0.38,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hug"
+          },
+          {
+            "id": "shuvo",
+            "x": 0.62,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hug"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "altaf",
+      "tone": "tearful",
+      "say": "শুভ, এই প্রথম মনে হলো, আমার আঠারো বছর *কেউ দেখেছে*।",
+      "scene": {
+        "cam": {
+          "focus": "altaf",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আঠারো বছরের নীরব খাটুনি যা পারেনি, *এক পাতা সাহস* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— জর্জ অরওয়েলের *অ্যানিমেল ফার্ম*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা চরিত্র— যে শুধু বলে, *আমি আরো খাটব*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "বইয়ের বিশ্বস্ত ঘোড়াটা ভাবত, খাটলেই সব ঠিক। কিন্তু মিষ্টি কথা আর নীরবতায় *পরিশ্রম হারায়*।",
+      "card": {
+        "title": "খাটুনির সাথে কী লাগে?",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "hand",
+            "t": "শুধু খাটা",
+            "sub": "নীরব মানেই অদৃশ্য",
+            "bad": true
+          },
+          "right": {
+            "icon": "chat",
+            "t": "খাটা + বলা",
+            "sub": "কাজের ন্যায্য দাম"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, কাজের হিসাব *লিখে* রাখো।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "কাজের হিসাব লিখে রাখো",
+            "sub": "পরিশ্রমের প্রমাণ",
+            "icon": "book"
+          },
+          {
+            "t": "মিষ্টি কথায় ভুলো না",
+            "sub": "‘বিশ্বস্ত’ বেতন নয়",
+            "icon": "eye"
+          },
+          {
+            "t": "ভদ্রভাবে চাইতে শেখো",
+            "sub": "চাওয়া অকৃতজ্ঞতা নয়",
+            "icon": "chat"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, শুধু *মিষ্টি কথায়* ভুলো না।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, ভদ্রভাবে *চাইতে* শেখো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *আরো খাটছি*, নাকি নিজের *কথাটাও* বলছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *আরো খাটছি*,\nনাকি নিজের *কথাটাও* বলছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "নীরব পরিশ্রম কেউ দেখে না… *বলা পরিশ্রম সম্মান পায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "নীরব পরিশ্রম কেউ দেখে না…",
+        "line2": "বলা পরিশ্রম\nসম্মান পায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "আঠারো বছরে তিন দিন ছুটি নিয়েছিলেন আব্বা, তারপর ছেলের এক পাতা কাগজ 📄 | Animal Farm বাংলা",
+    "description": "আঠারো বছর রাতের ডিউটি, ছুটি মাত্র তিন দিন, নয় বছর বেতন বাড়েনি। সব প্রশ্নে আলতাফ চাচার উত্তর— আমি আরো খাটব। তারপর ছেলের সমাবর্তনের দিন…\nজর্জ অরওয়েল-এর Animal Farm — The Loyal Worker — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "animal farm bangla",
+      "george orwell bangla",
+      "বাবার গল্প",
+      "বাবা ছেলের গল্প",
+      "পরিশ্রম",
+      "বাংলা গল্প",
+      "ন্যায্য বেতন",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "আঠারো বছরের নীরব খাটুনি যা পারেনি, এক পাতা সাহস তা পারল। 📄\n\nতোমার আব্বা-আম্মার কোন পরিশ্রম কেউ কখনো গুনে দেখেনি? 👇\n\n📖 Animal Farm — George Orwell\n#বাবা #পরিশ্রম"
+  },
+  "thumbnail": {
+    "text": "১৮ বছরে ৩ দিন ছুটি",
+    "sub": "আব্বার এক পাতা"
+  }
+}

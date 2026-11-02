@@ -1,0 +1,594 @@
+{
+  "id": "016",
+  "status": "ready",
+  "title_bn": "ফ্রিজের গায়ে একটা কাগজ",
+  "source": {
+    "book": "Games People Play",
+    "author": "Eric Berne",
+    "author_bn": "এরিক বার্ন",
+    "chapter": "THE GAME",
+    "chapter_bn": "একটা মানসিক খেলা",
+    "title": "Harried",
+    "title_bn": "সব একা করার খেলা"
+  },
+  "cast": {
+    "rokeya": {
+      "name": "রোকেয়া",
+      "type": "woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#B23A48",
+      "color2": "#F2C14E",
+      "hair": "long_braid",
+      "voice": "woman"
+    },
+    "mou": {
+      "name": "মৌ",
+      "type": "teen_girl",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#5FA8A0",
+      "color2": "#FFFFFF",
+      "hair": "long_braid",
+      "voice": "teen_girl"
+    },
+    "abbu": {
+      "name": "আব্বু",
+      "type": "man",
+      "skin": "tan",
+      "outfit": "tshirt",
+      "color": "#4A6FA5",
+      "hair": "short",
+      "beard": "moustache",
+      "voice": "man"
+    }
+  },
+  "beats": [
+    {
+      "say": "ভোর পাঁচটা থেকে রাত একটা। রোকেয়ার দিনে কাজ *বাইশটা*, বিশ্রাম *শূন্য*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "চট্টগ্রাম",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "কাজ",
+              "value": "২২",
+              "from": "১"
+            },
+            {
+              "label": "বিশ্রাম",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "নাস্তা, তিনটা টিফিন, দাদির ওষুধ, অফিসের ফাইল। কেউ হাত লাগাতে চাইলেই—",
+      "scene": {
+        "widget": {
+          "kind": "checklist",
+          "title": "আম্মুর দিন",
+          "items": [
+            {
+              "t": "সকালের নাস্তা",
+              "mark": "check"
+            },
+            {
+              "t": "তিনটা টিফিন",
+              "mark": "check"
+            },
+            {
+              "t": "দাদির ওষুধ",
+              "mark": "check"
+            },
+            {
+              "t": "অফিসের ফাইল",
+              "mark": "check"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "voice": "rokeya",
+      "tone": "sighs",
+      "say": "থাক, থাক! তোমরা পারবে না। *আমিই করে নিচ্ছি*।",
+      "scene": {
+        "widget": null,
+        "arms": {
+          "rokeya": "talk"
+        },
+        "cam": {
+          "focus": "rokeya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "মেয়ে মৌ দেখত, আম্মু যত বেশি করেন, তত বেশি *ক্লান্ত আর একা*।",
+      "scene": {
+        "set": "home",
+        "light": "evening",
+        "chip": "সন্ধ্যা",
+        "props": [
+          "table",
+          "sofa"
+        ],
+        "chars": [
+          {
+            "id": "mou",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          },
+          {
+            "id": "rokeya",
+            "x": 0.7,
+            "pose": "walk",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "mou",
+      "tone": "gently",
+      "say": "আম্মু, থালাগুলো আজ আমি ধুয়ে দিই?",
+      "scene": {
+        "cam": {
+          "focus": "mou",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rokeya",
+      "tone": "flatly",
+      "say": "না মা, তুই পড়। আমি না করলে এই সংসার *চলবে না*।",
+      "scene": {
+        "cam": {
+          "focus": "rokeya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "abbu",
+      "tone": "playfully",
+      "say": "তাহলে আজ রাতের রান্নাটা আমি করি? *ডিম ভাজি* তো পারি!",
+      "scene": {
+        "chars": [
+          {
+            "id": "mou",
+            "x": 0.25,
+            "pose": "sit",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          },
+          {
+            "id": "rokeya",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "abbu",
+            "x": 0.78,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "abbu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rokeya",
+      "tone": "annoyed",
+      "say": "তুমি রান্নাঘরে ঢুকলে *দ্বিগুণ কাজ*। বসো তো।",
+      "scene": {
+        "arms": {
+          "rokeya": "point"
+        },
+        "cam": {
+          "focus": "rokeya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "আব্বুর রান্না, দাদির সবজি কাটা, মৌয়ের বাজার করা। প্রতিবার উত্তর— *না*।",
+      "card": {
+        "title": "সাহায্যের চেষ্টা",
+        "items": [
+          {
+            "t": "আব্বুর রান্না",
+            "mark": "x"
+          },
+          {
+            "t": "দাদির সবজি কাটা",
+            "mark": "x"
+          },
+          {
+            "t": "মৌয়ের বাজার করা",
+            "mark": "x"
+          }
+        ],
+        "footer": "উত্তর: “আমিই করব”"
+      }
+    },
+    {
+      "tone": "serious",
+      "say": "এক সন্ধ্যায় রান্নাঘরে, রোকেয়া হঠাৎ *মাথা ঘুরে বসে পড়লেন*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "evening",
+        "chip": "এক সন্ধ্যায়",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          }
+        ],
+        "fx": "pulse",
+        "cam": "push"
+      }
+    },
+    {
+      "say": "ডাক্তার বললেন, বড় কিছু না। কিন্তু শরীরটা অনেকদিন ধরে *বিশ্রাম চাইছে*।",
+      "scene": {
+        "set": "hospital",
+        "light": "night",
+        "chip": "হাসপাতাল",
+        "fx": null,
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "mou",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "rokeya",
+      "tone": "tearful",
+      "say": "আমি শুয়ে থাকলে… বাসার সব কে *সামলাবে*?",
+      "scene": {
+        "cam": {
+          "focus": "rokeya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "মৌ কিছু বলল না। শুধু আম্মুর হাতটা *শক্ত করে ধরল*।",
+      "pause": 0.9,
+      "scene": {
+        "arms": {
+          "mou": "hug"
+        },
+        "cam": {
+          "focus": "mou",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে মৌ ফ্রিজের গায়ে লাগাল একটা কাগজ— *সংসারের ভাগ*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "stove"
+        ],
+        "chars": [
+          {
+            "id": "mou",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "thinking",
+            "arm": "point"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "সংসারের ভাগ",
+          "lines": [
+            "নাস্তা — আব্বু",
+            "সবজি কাটা — দাদি",
+            "টিফিন — মৌ",
+            "আম্মু — শুধু বলে দেবে"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "mou",
+      "tone": "playfully",
+      "say": "আম্মু, তুমি এখন থেকে *সেনাপতি*। হুকুম দেবে, কাজ করব আমরা।",
+      "scene": {
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "widget": null,
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "mou",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "mou",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "প্রথম দিন আব্বুর ভাত হয়ে গেল জাউ। রোকেয়া হাসতে হাসতে *চোখ মুছলেন*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.25,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "face"
+          },
+          {
+            "id": "abbu",
+            "x": 0.55,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "mou",
+            "x": 0.8,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "down"
+          }
+        ],
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "rokeya",
+      "tone": "warmly",
+      "say": "জাউ হোক, তবু আজ *কেউ আমার জন্য* রাঁধল।",
+      "scene": {
+        "arms": {
+          "rokeya": "down"
+        },
+        "cam": {
+          "focus": "rokeya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "এক মাস পর, বিকেলে বারান্দায় রোকেয়ার চা। *প্রতিদিন বিশ মিনিট, শুধু নিজের*।",
+      "scene": {
+        "set": "balcony",
+        "light": "evening",
+        "chip": "এক মাস পর",
+        "props": [
+          "plants",
+          "tea"
+        ],
+        "chars": [
+          {
+            "id": "rokeya",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "বছরের পর বছর একা টানা যা পারেনি, ফ্রিজের গায়ে *একটা কাগজ* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— এরিক বার্নের *গেমস পিপল প্লে*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা মানসিক খেলা— *হ্যারিড*, সব একা করার খেলা।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "সব দায়িত্ব কাঁধে, সাহায্য ফেরানো, তারপর ভেঙে পড়া। ভেতরের কথা— *আমাকে ছাড়া চলবে না*।",
+      "card": {
+        "title": "খেলাটা কীভাবে চলে",
+        "widget": {
+          "type": "flow",
+          "loop": true,
+          "nodes": [
+            {
+              "icon": "hand",
+              "t": "সব আমি করব"
+            },
+            {
+              "icon": "x",
+              "t": "সাহায্য ফেরানো"
+            },
+            {
+              "icon": "clock",
+              "t": "ক্লান্তি"
+            },
+            {
+              "icon": "heart",
+              "t": "ভেঙে পড়া"
+            }
+          ],
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, সাহায্য নেওয়া *দুর্বলতা নয়*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "সাহায্য নেওয়া দুর্বলতা নয়",
+            "sub": "ভাগ করলে ভালোবাসাও বাড়ে",
+            "icon": "hand"
+          },
+          {
+            "t": "কাজগুলো লিখে ভাগ করো",
+            "sub": "কে কী করবে, স্পষ্ট",
+            "icon": "check"
+          },
+          {
+            "t": "নিখুঁত না হলেও মেনে নাও",
+            "sub": "জাউ ভাতেও ভালোবাসা থাকে",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, কাজগুলো *লিখে ভাগ* করো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, নিখুঁত না হলেও *মেনে নাও*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি সংসারটা *একা টানছি*, নাকি সবাইকে *পাশে ডাকছি*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি সংসারটা *একা টানছি*,\nনাকি সবাইকে *পাশে ডাকছি*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "সব একা করলে সংসার চলে… *কিন্তু মানুষটা থেমে যায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "সব একা করলে সংসার চলে…",
+        "line2": "কিন্তু মানুষটা\nথেমে যায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "যে মা সব একা করতেন, মেয়ের একটা কাগজে বদলে গেল সংসার 📝 | Games People Play বাংলা",
+    "description": "ভোর পাঁচটা থেকে রাত একটা— রোকেয়া সব একা করতেন, কাউকে হাত লাগাতে দিতেন না। তারপর এক সন্ধ্যায় রান্নাঘরে…\nএরিক বার্ন-এর Games People Play — Harried — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "games people play bangla",
+      "eric berne bangla",
+      "মায়ের গল্প",
+      "মা মেয়ের গল্প",
+      "সংসারের গল্প",
+      "বাংলা গল্প",
+      "family story bangla",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "বছরের পর বছর একা টানা যা পারেনি, ফ্রিজের গায়ে একটা কাগজ তা পারল। 📝\n\nতোমার আম্মু শেষ কবে বিশ মিনিট শুধু নিজের জন্য বসেছেন? 👇\n\n📖 Games People Play — Eric Berne\n#মা #সংসার"
+  },
+  "thumbnail": {
+    "text": "আম্মুর ২২টা কাজ",
+    "sub": "বিশ্রাম শূন্য"
+  }
+}

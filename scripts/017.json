@@ -1,0 +1,509 @@
+{
+  "id": "017",
+  "status": "ready",
+  "title_bn": "বৃষ্টির রাতের যাত্রী",
+  "source": {
+    "book": "The Book of Five Rings",
+    "author": "Miyamoto Musashi",
+    "author_bn": "মিয়ামোতো মুসাশি",
+    "chapter": "THE FIRE BOOK",
+    "chapter_bn": "আগুনের অধ্যায়",
+    "title": "Become the Opponent",
+    "title_bn": "প্রতিপক্ষ হয়ে ভাবো"
+  },
+  "cast": {
+    "mokbul": {
+      "name": "মকবুল",
+      "type": "man",
+      "skin": "dark",
+      "outfit": "shirt",
+      "color": "#2F7D6D",
+      "hair": "short",
+      "beard": "stubble",
+      "voice": "man"
+    },
+    "sumi": {
+      "name": "সুমি আপা",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#C4473A",
+      "color2": "#3A3F58",
+      "hair": "hijab",
+      "voice": "young_woman"
+    },
+    "tania": {
+      "name": "তানিয়া",
+      "type": "teen_girl",
+      "skin": "brown",
+      "outfit": "salwar",
+      "color": "#E8A33D",
+      "color2": "#FFFFFF",
+      "hair": "long_braid",
+      "voice": "teen_girl"
+    }
+  },
+  "beats": [
+    {
+      "say": "এক মাসে পঁচিশটা ঝগড়া। মকবুলের সিএনজিতে উঠলেই *ভাড়া নিয়ে তর্ক*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "ফার্মগেট, ঢাকা",
+        "props": [
+          "cng"
+        ],
+        "chars": [
+          {
+            "id": "mokbul",
+            "x": 0.35,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "cross"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "ঝগড়া",
+              "value": "২৫",
+              "from": "১",
+              "red": true
+            },
+            {
+              "label": "নিয়মিত যাত্রী",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "মিটার নেই, দাম মুখে মুখে। কেউ দরদাম করলেই তার *মাথা গরম*।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "voice": "sumi",
+      "tone": "annoyed",
+      "say": "মামা, মোহাম্মদপুর তিনশো? কাল তো *দুশো দিয়ে* গেলাম!",
+      "scene": {
+        "chars": [
+          {
+            "id": "mokbul",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "cross"
+          },
+          {
+            "id": "sumi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "angry",
+            "arm": "talk",
+            "hold": "bag"
+          }
+        ],
+        "cam": {
+          "focus": "sumi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "mokbul",
+      "tone": "frustrated",
+      "say": "কাল কাল, আজ আজ! না পোষালে *অন্য গাড়ি দেখেন*।",
+      "scene": {
+        "arms": {
+          "mokbul": "point"
+        },
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "গলা চড়াল, দাম বাড়িয়ে বলল, যাত্রী ফেরাল। দিনের শেষে আয় *আরো কমল*।",
+      "card": {
+        "title": "মকবুলের কৌশল",
+        "items": [
+          {
+            "t": "গলা চড়ানো",
+            "mark": "x"
+          },
+          {
+            "t": "দাম বাড়িয়ে বলা",
+            "mark": "x"
+          },
+          {
+            "t": "যাত্রী ফিরিয়ে দেওয়া",
+            "mark": "x"
+          }
+        ],
+        "footer": "আয় ↓"
+      }
+    },
+    {
+      "say": "এক সন্ধ্যায় সিএনজিটা গ্যারেজে গেল। মকবুলকে বাড়ি ফিরতে হলো *অন্যের সিএনজিতে*।",
+      "scene": {
+        "set": "street",
+        "light": "evening",
+        "chip": "এক সন্ধ্যায়",
+        "props": [
+          "cng"
+        ],
+        "chars": [
+          {
+            "id": "mokbul",
+            "x": 0.4,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "bag"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "পকেটে দুশো টাকা। চালক এক কথায় চাইল *সাড়ে তিনশো*। না গেলে— রাস্তা মাপেন।",
+      "scene": {
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "বৃষ্টি নামল। মকবুল দাঁড়িয়ে রইল। এই প্রথম বুঝল, *যাত্রীর জায়গাটা* কেমন।",
+      "pause": 0.9,
+      "scene": {
+        "fx": "rain",
+        "moods": {
+          "mokbul": "sad"
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে মেয়ে তানিয়া দেখল, আব্বা চুপচাপ *কাগজে কিছু লিখছেন*।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "table",
+          "window"
+        ],
+        "fx": null,
+        "chars": [
+          {
+            "id": "mokbul",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "thinking",
+            "arm": "hold",
+            "hold": "book"
+          },
+          {
+            "id": "tania",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "tania",
+      "tone": "curious",
+      "say": "আব্বা, এত রাতে কী *লেখো*?",
+      "scene": {
+        "cam": {
+          "focus": "tania",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "mokbul",
+      "tone": "softly",
+      "say": "যাত্রীরা কী চায়, মা। আজ আমি নিজেই *যাত্রী* ছিলাম।",
+      "scene": {
+        "moods": {
+          "mokbul": "sad"
+        },
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "tania",
+      "tone": "excited",
+      "say": "ওরা ঠকতে ভয় পায়, আব্বা। দামটা *আগে লিখে* দাও না!",
+      "scene": {
+        "moods": {
+          "tania": "happy"
+        },
+        "arms": {
+          "tania": "talk"
+        },
+        "cam": {
+          "focus": "tania",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "সে ঠিক করল, এখন থেকে গাড়ি চালাবে *যাত্রীর চোখ দিয়ে*।",
+      "pause": 0.7,
+      "card": {
+        "text": "এখন থেকে গাড়ি চলবে\n*যাত্রীর চোখ দিয়ে*।"
+      }
+    },
+    {
+      "say": "পরদিন সিএনজির ভেতরে লাগল ছোট্ট একটা *ভাড়ার তালিকা*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "পরদিন",
+        "props": [
+          "cng"
+        ],
+        "chars": [
+          {
+            "id": "mokbul",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "sumi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "ভাড়ার তালিকা",
+          "lines": [
+            "ফার্মগেট → মোহাম্মদপুর — ২২০",
+            "ফার্মগেট → মিরপুর ১০ — ২৫০",
+            "বৃষ্টির দিনেও একই দাম"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "sumi",
+      "tone": "excited",
+      "say": "মামা, দাম আগে থেকেই লেখা? আজ তো *তর্কই লাগল না*!",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "sumi": "happy"
+        },
+        "cam": {
+          "focus": "sumi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "mokbul",
+      "tone": "warmly",
+      "say": "আপা, নাম্বারটা রাখেন। রোজ অফিসে *আমিই নিয়ে যাব*।",
+      "scene": {
+        "arms": {
+          "mokbul": "phone"
+        },
+        "holds": {
+          "mokbul": "phone"
+        },
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "দুই মাসে ফোনে জমল চল্লিশজন নিয়মিত যাত্রী। আয় বাড়ল, ঝগড়া *শূন্য*।",
+      "scene": {
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "নিয়মিত যাত্রী",
+              "value": "৪০",
+              "from": "০"
+            },
+            {
+              "label": "ঝগড়া",
+              "value": "০",
+              "from": "২৫"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "তানিয়া এখন স্কুলে গর্ব করে বলে— আমার আব্বার সিএনজিতে *কেউ ঠকে না*।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "mokbul",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "say": "গলা চড়িয়ে যা পারেনি, যাত্রীর *জায়গায় দাঁড়ানো* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "widget": null,
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— মিয়ামোতো মুসাশির *দ্য বুক অফ ফাইভ রিংস*।"
+    },
+    {
+      "kind": "book",
+      "say": "আগুনের অধ্যায়— *প্রতিপক্ষ হয়ে* ভাবো।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "ওপারে দাঁড়ালে দেখা যায়, মানুষটা কী *ভয় পায়*। ভয়টা সরালে লড়াইয়ের দরকারই থাকে না।",
+      "card": {
+        "title": "দুই দিক থেকে দেখা",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "x",
+            "t": "আমার চোখে",
+            "sub": "যাত্রী মানেই ঝামেলা",
+            "bad": true
+          },
+          "right": {
+            "icon": "eye",
+            "t": "যাত্রীর চোখে",
+            "sub": "ভয়: ঠকে যাওয়া"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, একদিন *ওর জায়গায়* দাঁড়াও।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "একদিন ওর জায়গায় দাঁড়াও",
+            "sub": "অভিযোগের পেছনে ভয় থাকে",
+            "icon": "eye"
+          },
+          {
+            "t": "ভয়টা আগেই দূর করো",
+            "sub": "স্পষ্ট দাম, স্পষ্ট কথা",
+            "icon": "check"
+          },
+          {
+            "t": "ঝগড়া নয়, সম্পর্ক গড়ো",
+            "sub": "একজন যাত্রী, রোজকার ভরসা",
+            "icon": "people"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, ওর ভয়টা *আগেই* দূর করো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, ঝগড়া নয়— *সম্পর্ক* গড়ো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *নিজের দিক* দেখছি, নাকি *ওপারের মানুষটাকেও*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *নিজের দিক* দেখছি,\nনাকি *ওপারের মানুষটাকেও*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "নিজের সিটে সবাই ঠিক… *অন্যের সিটে বসলে বোঝা যায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "নিজের সিটে সবাই ঠিক…",
+        "line2": "অন্যের সিটে বসলে\nবোঝা যায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "রোজ যাত্রীর সাথে ঝগড়া করত মকবুল, এক বৃষ্টির রাতে বদলে গেল সব 🛺 | The Book of Five Rings বাংলা",
+    "description": "এক মাসে পঁচিশটা ঝগড়া— মকবুলের সিএনজিতে উঠলেই ভাড়া নিয়ে তর্ক। তারপর এক সন্ধ্যায় তাকেই উঠতে হলো অন্যের সিএনজিতে…\nমিয়ামোতো মুসাশি-এর The Book of Five Rings — Become the Opponent — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "book of five rings bangla",
+      "musashi bangla",
+      "সিএনজি চালক",
+      "ঢাকার গল্প",
+      "বাংলা গল্প",
+      "অন্যের জায়গায় দাঁড়ানো",
+      "বাবা মেয়ের গল্প",
+      "life lesson bangla"
+    ]
+  },
+  "facebook": {
+    "caption": "গলা চড়িয়ে যা পারেনি, যাত্রীর জায়গায় দাঁড়ানো তা পারল। 🛺\n\nকোন রিকশা বা সিএনজি চালককে তুমি আজও মনে রেখেছ? 👇\n\n📖 The Book of Five Rings — Miyamoto Musashi\n#সিএনজি #ঢাকা"
+  },
+  "thumbnail": {
+    "text": "পঁচিশটা ঝগড়া",
+    "sub": "তারপর এক বৃষ্টির রাত"
+  }
+}

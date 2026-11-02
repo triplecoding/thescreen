@@ -1,0 +1,540 @@
+{
+  "id": "035",
+  "status": "ready",
+  "title_bn": "বাতিল বিয়ের কাচ্চি",
+  "source": {
+    "book": "The 50th Law",
+    "author": "Robert Greene & 50 Cent",
+    "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+    "chapter": "CHAPTER 3",
+    "chapter_bn": "তিন নম্বর অধ্যায়",
+    "title": "Turn Bad Situations into Opportunity",
+    "title_bn": "খারাপ সময়কে সুযোগে বদলাও"
+  },
+  "cast": {
+    "moti": {
+      "name": "মতি বাবুর্চি",
+      "type": "old_man",
+      "skin": "dark",
+      "outfit": "tshirt",
+      "color": "#FFFFFF",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "voice": "old_man"
+    },
+    "sajal": {
+      "name": "সজল",
+      "type": "young_man",
+      "skin": "brown",
+      "outfit": "shirt",
+      "color": "#2E5E8C",
+      "hair": "curly",
+      "voice": "young_man"
+    },
+    "rina": {
+      "name": "রিনা আপা",
+      "type": "young_woman",
+      "skin": "tan",
+      "outfit": "salwar",
+      "color": "#B23A48",
+      "color2": "#3A3F58",
+      "hair": "hijab",
+      "voice": "young_woman"
+    }
+  },
+  "beats": [
+    {
+      "say": "রাত দশটায় ফোন— বিয়ে বাতিল। হাঁড়িতে তখন *দুশো জনের কাচ্চি*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "night",
+        "chip": "চট্টগ্রাম",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "phone",
+            "hold": "phone"
+          },
+          {
+            "id": "sajal",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "কাচ্চি",
+              "value": "২০০ জন"
+            },
+            {
+              "label": "বাজার খরচ",
+              "value": "৪৮,০০০ ৳",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "sajal",
+      "tone": "upset",
+      "say": "আব্বা, আটচল্লিশ হাজার টাকার বাজার! সব তো *নষ্ট হয়ে যাবে*!",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "sajal",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "moti",
+      "tone": "sighs",
+      "say": "চুপ কর। আগে *ভাবতে দে*।",
+      "scene": {
+        "arms": {
+          "moti": "face"
+        },
+        "cam": {
+          "focus": "moti",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চল্লিশ বছরে মতি বাবুর্চি এমন রাত *একবারও* দেখেননি।",
+      "scene": {
+        "cam": {
+          "focus": "moti",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "বর পক্ষকে ফোন, প্রতিবেশীদের দরজা, পাড়ার দোকান। রাত এগারোটায় কেউ *নিল না*।",
+      "card": {
+        "title": "বাঁচানোর চেষ্টা",
+        "items": [
+          {
+            "t": "বর পক্ষ — ফোন বন্ধ",
+            "mark": "x"
+          },
+          {
+            "t": "প্রতিবেশীদের দরজা",
+            "mark": "x"
+          },
+          {
+            "t": "পাড়ার দোকান",
+            "mark": "x"
+          }
+        ],
+        "footer": "বিক্রি: ০"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "রাত বারোটা। ধোঁয়া ওঠা ডেকচির পাশে বাপ-ছেলে *চুপচাপ বসে* রইল।",
+      "pause": 0.9,
+      "scene": {
+        "chip": "রাত ১২টা",
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "sajal",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "sad",
+            "arm": "face"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "say": "তখন রাস্তার ওপারে ছুটি হলো কারখানার নাইট শিফট। হাজারো মানুষ, *খালি পেটে* বাড়ির পথে।",
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "রাত ১২টা ১৫",
+        "props": [
+          "cng"
+        ],
+        "chars": [
+          {
+            "id": "sajal",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "point"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "voice": "sajal",
+      "tone": "excited",
+      "say": "আব্বা! ওরা তো সারারাত *কিছু খায়নি*!",
+      "scene": {
+        "cam": {
+          "focus": "sajal",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "যে কাচ্চি নষ্ট হতে যাচ্ছিল, সেটাই হলো *একটা সুযোগ*।",
+      "pause": 0.7,
+      "card": {
+        "text": "যা নষ্ট হতে যাচ্ছিল,\nসেটাই *সুযোগ*।"
+      }
+    },
+    {
+      "say": "রাস্তার পাশে দুইটা টেবিল। প্লেট পঞ্চাশ টাকা, *বিয়েবাড়ির কাচ্চি*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "sajal",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "আজ রাতের মেনু",
+          "lines": [
+            "বিয়েবাড়ির কাচ্চি — ৫০ ৳",
+            "আজ রাতেই রান্না",
+            "শেষ হলে শেষ"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "rina",
+      "tone": "hopeful",
+      "say": "চাচা, পঞ্চাশ টাকায় কাচ্চি? দুইটা দেন। মেয়েটা কতদিন *কাচ্চি খায়নি*।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "rina",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "hold",
+            "hold": "bag"
+          }
+        ],
+        "cam": {
+          "focus": "rina",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রাত একটার মধ্যে দুশো প্লেট *শেষ*। কেউ কেউ দাঁড়িয়েই খেল। খরচ উঠে এল প্রায় পুরোটাই।",
+      "scene": {
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "প্লেট",
+              "value": "২০০",
+              "from": "০"
+            },
+            {
+              "label": "খরচ উঠল",
+              "value": "৯০%",
+              "from": "০%"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "rina",
+      "say": "চাচা, কাল রাতেও আসবেন? শিফট শেষে তো *কিছুই খোলা থাকে না*।",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "rina": "smile"
+        },
+        "cam": {
+          "focus": "rina",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "বাপ-ছেলে একে অন্যের দিকে তাকাল। *উত্তরটা* দুজনেই জানত।",
+      "pause": 0.6,
+      "scene": {
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "sajal",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "say": "এক মাস পর সেই মোড়ে ছোট্ট দোকান। রাত দশটা থেকে ভোর চারটা— *নাইট শিফটের জন্য*।",
+      "scene": {
+        "set": "shop",
+        "light": "night",
+        "chip": "এক মাস পর",
+        "props": [
+          "signboard",
+          "sign:মতি বাবুর্চির রাতের হোটেল",
+          "cashbox"
+        ],
+        "chars": [
+          {
+            "id": "moti",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "sajal",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "wave"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "প্রতি রাতে",
+              "value": "৩০০ প্লেট",
+              "from": "০"
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "moti",
+      "tone": "proudly",
+      "say": "চল্লিশ বছর বিয়েবাড়িতে রেঁধেছি। এখন রাঁধি *ক্লান্ত মানুষের* জন্য।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "moti",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "sajal",
+      "tone": "laughs",
+      "say": "আব্বা, সেই বাতিল বিয়েটাই আমাদের *সবচেয়ে বড় দাওয়াত*!",
+      "scene": {
+        "cam": {
+          "focus": "sajal",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চল্লিশ বছরের বিয়েবাড়ি যা দেয়নি, *একটা বাতিল রাত* তা দিল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিন ও ফিফটি সেন্টের *দ্য ফিফটিয়েথ ল*।"
+    },
+    {
+      "kind": "book",
+      "say": "তিন নম্বর অধ্যায়— খারাপ সময়কে *সুযোগে বদলাও*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "বিপদের মুহূর্তে মন শুধু ক্ষতি দেখে। অথচ অনেক ধাক্কার ভেতরেই লুকিয়ে থাকে *একটা দরজা*।",
+      "card": {
+        "title": "ক্ষতির নিচে কী?",
+        "widget": {
+          "type": "iceberg",
+          "top": [
+            {
+              "icon": "x",
+              "t": "বাতিল বিয়ে"
+            },
+            {
+              "icon": "x",
+              "t": "নষ্ট কাচ্চি"
+            }
+          ],
+          "bottom": [
+            {
+              "icon": "people",
+              "t": "ক্ষুধার্ত শ্রমিক"
+            },
+            {
+              "icon": "bulb",
+              "t": "রাতের হোটেল"
+            },
+            {
+              "icon": "star",
+              "t": "নতুন পথ"
+            }
+          ],
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, আগে *শান্ত* হও।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "আগে শান্ত হও",
+            "sub": "আতঙ্ক দরজা দেখতে দেয় না",
+            "icon": "hand"
+          },
+          {
+            "t": "চারপাশে তাকাও",
+            "sub": "কার কী দরকার, এখনই?",
+            "icon": "eye"
+          },
+          {
+            "t": "শুরু করো ছোট করে",
+            "sub": "দুইটা টেবিলই যথেষ্ট",
+            "icon": "check"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, চারপাশে *তাকাও*— কার কী দরকার?",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, শুরু করো *ছোট করে*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *ক্ষতিটা* দেখছি, নাকি তার ভেতরের *দরজাটাও*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *ক্ষতিটা* দেখছি,\nনাকি তার ভেতরের *দরজাটাও*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "ঝড় সব কেড়ে নিতে আসে… *কখনো রেখে যায় একটা পথ*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "ঝড় সব কেড়ে নিতে আসে…",
+        "line2": "কখনো রেখে যায়\nএকটা পথ।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "রাত দশটায় বিয়ে বাতিল, হাঁড়িতে ২০০ জনের কাচ্চি— তারপর বাপ-ছেলে যা করল 🍛 | The 50th Law",
+    "description": "রাত দশটায় ফোন এল— বিয়ে বাতিল। হাঁড়িতে দুশো জনের কাচ্চি, বাজারে খরচ আটচল্লিশ হাজার টাকা। তারপর রাত বারোটায় রাস্তার ওপারে ছুটি হলো নাইট শিফট…\nরবার্ট গ্রিন ও ফিফটি সেন্ট-এর The 50th Law — Turn Bad Situations into Opportunity — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "50th law bangla",
+      "robert greene bangla",
+      "বাবুর্চি",
+      "বাবা ছেলের গল্প",
+      "বাংলা গল্প",
+      "ছোট ব্যবসা",
+      "সুযোগ",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "চল্লিশ বছরের বিয়েবাড়ি যা দেয়নি, একটা বাতিল রাত তা দিল। 🍛\n\nতোমার জীবনের কোন খারাপ দিন পরে ভালো কিছু নিয়ে এসেছিল? 👇\n\n📖 The 50th Law — Robert Greene & 50 Cent\n#বাবাছেলে #ছোটব্যবসা"
+  },
+  "thumbnail": {
+    "text": "২০০ জনের কাচ্চি",
+    "sub": "বিয়ে বাতিল, তারপর…"
+  }
+}

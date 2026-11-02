@@ -1,0 +1,517 @@
+{
+  "id": "020",
+  "status": "ready",
+  "title_bn": "স্টেশন মাস্টারের গল্প",
+  "source": {
+    "book": "The Art of Seduction",
+    "author": "Robert Greene",
+    "author_bn": "রবার্ট গ্রিন",
+    "chapter": "THE CHARMER",
+    "chapter_bn": "একটা চরিত্র",
+    "title": "The Charmer",
+    "title_bn": "মানুষকে গুরুত্বপূর্ণ বোধ করাও"
+  },
+  "cast": {
+    "nabila": {
+      "name": "নাবিলা",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "sari",
+      "color": "#2F7D6D",
+      "color2": "#F2C14E",
+      "hair": "long_bun",
+      "voice": "young_woman"
+    },
+    "abba": {
+      "name": "শ্বশুর আব্বা",
+      "type": "old_man",
+      "skin": "tan",
+      "outfit": "panjabi",
+      "color": "#E9E4D8",
+      "hair": "side_grey",
+      "beard": "short_grey",
+      "glasses": true,
+      "voice": "old_man"
+    },
+    "sajid": {
+      "name": "সাজিদ",
+      "type": "young_man",
+      "skin": "wheat",
+      "outfit": "shirt",
+      "color": "#4A6FA5",
+      "hair": "short",
+      "beard": "stubble",
+      "voice": "young_man"
+    }
+  },
+  "beats": [
+    {
+      "say": "বিয়ের পর আট মাস। শ্বশুর আব্বা নাবিলার সাথে কথা বলেছেন *হাতে গোনা কয়েকটা*।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "সৈয়দপুর",
+        "props": [
+          "sofa",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "book"
+          },
+          {
+            "id": "nabila",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "মাস",
+              "value": "৮",
+              "from": "১"
+            },
+            {
+              "label": "মন খোলা কথা",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nabila",
+      "tone": "softly",
+      "say": "আব্বা, আপনার চা। আদা দিয়েছি।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "nabila",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "abba",
+      "tone": "flatly",
+      "say": "রেখে যাও।",
+      "scene": {
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সারাদিন জানালার পাশে বসে থাকেন। রেলস্টেশনের স্টেশন মাস্টার ছিলেন *বত্রিশ বছর*।",
+      "scene": {
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "প্রিয় রান্না, ওষুধের সময় মনে করানো, নতুন পাঞ্জাবি। উত্তর একটাই— *আচ্ছা*।",
+      "card": {
+        "title": "নাবিলার চেষ্টা",
+        "items": [
+          {
+            "t": "প্রিয় রান্না",
+            "mark": "x"
+          },
+          {
+            "t": "ওষুধের সময় মনে করানো",
+            "mark": "x"
+          },
+          {
+            "t": "নতুন পাঞ্জাবি",
+            "mark": "x"
+          }
+        ],
+        "footer": "উত্তর: “আচ্ছা”"
+      }
+    },
+    {
+      "say": "এক রাতে নাবিলা জিজ্ঞেস করল, আব্বা কি তাকে *পছন্দ করেন না*?",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "এক রাতে",
+        "props": [
+          "bed",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "nabila",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "sajid",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "sajid",
+      "tone": "sad",
+      "say": "আম্মা চলে যাওয়ার পর আব্বা এমনই। কেউ আর *ওনার কথা শোনে না*।",
+      "scene": {
+        "cam": {
+          "focus": "sajid",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "নাবিলা অনেকক্ষণ চুপ করে রইল। জানালার বাইরে দূরে, *ট্রেনের হুইসেল*।",
+      "pause": 0.9,
+      "scene": {
+        "cam": {
+          "focus": "nabila",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এবার সে কিছু দেবে না। শুধু *জানতে চাইবে*।",
+      "pause": 0.7,
+      "card": {
+        "text": "কিছু দেবে না।\nশুধু *জানতে চাইবে*।"
+      }
+    },
+    {
+      "voice": "nabila",
+      "tone": "curious",
+      "say": "আব্বা, আপনার সময়ে ট্রেন কি সত্যিই *ঠিক সময়ে* আসত?",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "sofa",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "nabila",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "nabila",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "শ্বশুর আব্বা চশমাটা নামালেন। তারপর শুরু হলো *গল্প*।",
+      "scene": {
+        "moods": {
+          "abba": "smile"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "voice": "abba",
+      "tone": "proudly",
+      "say": "আটাশি সালের বন্যা। স্টেশনে আটকা তিনশো যাত্রী। *তিন রাত* আমি ঘুমাইনি।",
+      "scene": {
+        "arms": {
+          "abba": "talk"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেদিন দুপুরের ভাত ঠান্ডা হয়ে গেল। কিন্তু গল্প *থামল না*।",
+      "scene": {
+        "cam": "static"
+      }
+    },
+    {
+      "say": "নাবিলা রোজ একটা প্রশ্ন করত, আর ফোনে গল্পগুলো *রেকর্ড* করে রাখত।",
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "notebook",
+          "title": "আব্বার গল্পের খাতা",
+          "lines": [
+            "আটাশির বন্যার তিন রাত",
+            "প্রথম সিগন্যাল বাতি",
+            "যে যাত্রী টাকা ফেরত দিল"
+          ]
+        },
+        "arms": {
+          "nabila": "phone"
+        },
+        "holds": {
+          "nabila": "phone"
+        }
+      }
+    },
+    {
+      "voice": "abba",
+      "tone": "warmly",
+      "say": "বউমা, কাল তোমাকে *রেলের সিগন্যাল* বোঝাব। খাতা-কলম নিয়ে বসবে।",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "abba": "happy"
+        },
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "এক মাস পর সাজিদ দেখল, আব্বা নিজেই নাবিলাকে ডাকছেন *বিকেলের চায়ে*।",
+      "scene": {
+        "set": "balcony",
+        "light": "evening",
+        "chip": "এক মাস পর",
+        "props": [
+          "tea",
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.25,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "talk"
+          },
+          {
+            "id": "nabila",
+            "x": 0.52,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          },
+          {
+            "id": "sajid",
+            "x": 0.8,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "sajid",
+      "tone": "teasing",
+      "say": "আব্বা, আমার সাথে তো এত গল্প *করো না*!",
+      "scene": {
+        "cam": {
+          "focus": "sajid",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "abba",
+      "tone": "laughs",
+      "say": "তুই তো কখনো *জিজ্ঞেসই করিসনি*, বাবা।",
+      "scene": {
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে আব্বা ফোনে নিজের গল্প শুনলেন। নিজের গলা শুনে, *চোখ মুছলেন*।",
+      "pause": 0.6,
+      "scene": {
+        "chars": [
+          {
+            "id": "abba",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "cam": {
+          "focus": "abba",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রান্না, উপহার, যত্ন যা পারেনি, একটা *আন্তরিক প্রশ্ন* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য আর্ট অফ সিডাকশন*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা চরিত্র— *দ্য চার্মার*, যে মানুষকে গুরুত্ব দেয়।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "মানুষের বড় ক্ষুধা— *কেউ আমাকে গুরুত্ব দিক*। যে মন দিয়ে শোনে, তার কাছেই মন খোলে।",
+      "card": {
+        "title": "মন খোলার পথ",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "ear",
+              "t": "আন্তরিক প্রশ্ন"
+            },
+            {
+              "icon": "star",
+              "t": "গুরুত্ব পাওয়া"
+            },
+            {
+              "icon": "heart",
+              "t": "মন খোলা"
+            }
+          ],
+          "show": 3
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, উপহারের চেয়ে *প্রশ্ন* বড়।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "উপহারের চেয়ে প্রশ্ন বড়",
+            "sub": "“আপনার সময় কেমন ছিল?”",
+            "icon": "chat"
+          },
+          {
+            "t": "ওর গর্বের গল্পটা খোঁজো",
+            "sub": "সবার একটা থাকে",
+            "icon": "star"
+          },
+          {
+            "t": "শোনো, সত্যি করে",
+            "sub": "অভিনয় মানুষ টের পায়",
+            "icon": "ear"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, ওর *গর্বের গল্পটা* খোঁজো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, শোনো— *সত্যি করে*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি মানুষকে *জিনিস* দিচ্ছি, নাকি তাকে *গুরুত্ব* দিচ্ছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি মানুষকে *জিনিস* দিচ্ছি,\nনাকি তাকে *গুরুত্ব* দিচ্ছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "উপহার হাতে পৌঁছায়… *মনোযোগ পৌঁছায় মনে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "উপহার হাতে পৌঁছায়…",
+        "line2": "মনোযোগ পৌঁছায়\nমনে।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "আট মাস মন খুলে কথা বলেননি শ্বশুর, বউমার একটা প্রশ্নে বদলে গেল সব 🚂 | The Art of Seduction বাংলা",
+    "description": "বিয়ের পর আট মাস, শ্বশুর আব্বা শুধু বলতেন ‘রেখে যাও’। নাবিলা রান্না করল, উপহার দিল— কিছুই কাজ হলো না। তারপর সে একটা প্রশ্ন করল…\nরবার্ট গ্রিন-এর The Art of Seduction — The Charmer — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "art of seduction bangla",
+      "robert greene bangla",
+      "শ্বশুর বউমা",
+      "পারিবারিক গল্প",
+      "বাংলা গল্প",
+      "শোনার গুরুত্ব",
+      "রেলের গল্প",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "রান্না, উপহার, যত্ন যা পারেনি, একটা আন্তরিক প্রশ্ন তা পারল। 🚂\n\nতোমার পরিবারের কোন বড় মানুষের গল্প এখনো কেউ রেকর্ড করেনি? 👇\n\n📖 The Art of Seduction — Robert Greene\n#শ্বশুরবাড়ি #পরিবার"
+  },
+  "thumbnail": {
+    "text": "একটা প্রশ্ন",
+    "sub": "শ্বশুরের মন খুলল"
+  }
+}

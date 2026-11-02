@@ -1,0 +1,596 @@
+{
+  "id": "028",
+  "status": "ready",
+  "title_bn": "চার হাতের টিফিন",
+  "source": {
+    "book": "The Wealth of Nations",
+    "author": "Adam Smith",
+    "author_bn": "অ্যাডাম স্মিথ",
+    "chapter": "BOOK I, CHAPTER 1",
+    "chapter_bn": "প্রথম অধ্যায়",
+    "title": "Of the Division of Labour",
+    "title_bn": "শ্রমের ভাগ উৎপাদন বাড়ায়"
+  },
+  "cast": {
+    "shathi": {
+      "name": "শাথী",
+      "type": "young_woman",
+      "skin": "brown",
+      "outfit": "salwar",
+      "color": "#B5476B",
+      "color2": "#F2C14E",
+      "hair": "hijab",
+      "voice": "young_woman"
+    },
+    "ammu": {
+      "name": "আম্মা",
+      "type": "woman",
+      "skin": "tan",
+      "outfit": "sari",
+      "color": "#2F7D6D",
+      "color2": "#E8A33D",
+      "hair": "long_bun",
+      "voice": "woman"
+    },
+    "rony": {
+      "name": "রনি",
+      "type": "teen_boy",
+      "skin": "brown",
+      "outfit": "tshirt",
+      "color": "#4A6FA5",
+      "hair": "kid",
+      "voice": "teen_boy"
+    }
+  },
+  "beats": [
+    {
+      "say": "রোজ চল্লিশটা টিফিন, একা হাতে। আরো অর্ডার আসে, শাথীকে বলতে হয় *না*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "টঙ্গী",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "টিফিন",
+              "value": "৪০"
+            },
+            {
+              "label": "ফেরানো অর্ডার",
+              "value": "৫০",
+              "from": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "ভোর চারটায় বাজার, তারপর কাটা, রান্না, প্যাকিং, ডেলিভারি— *সব একাই*।",
+      "scene": {
+        "widget": {
+          "kind": "checklist",
+          "title": "শাথীর দিন",
+          "items": [
+            {
+              "t": "ভোর ৪টা — বাজার",
+              "mark": "check"
+            },
+            {
+              "t": "কাটা-বাটা",
+              "mark": "check"
+            },
+            {
+              "t": "রান্না",
+              "mark": "check"
+            },
+            {
+              "t": "প্যাকিং, ডেলিভারি",
+              "mark": "check"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "voice": "shathi",
+      "tone": "frustrated",
+      "say": "আরো পঞ্চাশটা অর্ডার আছে, আম্মা। কিন্তু আমার হাত তো *দুটোই*।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "talk"
+          },
+          {
+            "id": "ammu",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "shathi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "sad",
+      "say": "এভাবে রাত জাগলে শরীরটা *ভেঙে পড়বে*, মা।",
+      "scene": {
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "রাত তিনটায় ওঠা, আরো দ্রুত হাত, নিজেই ডেলিভারি দৌড়। অর্ডার বাড়ল না, *ক্লান্তি বাড়ল*।",
+      "card": {
+        "title": "শাথীর চেষ্টা",
+        "items": [
+          {
+            "t": "রাত তিনটায় ওঠা",
+            "mark": "x"
+          },
+          {
+            "t": "আরো দ্রুত হাত",
+            "mark": "x"
+          },
+          {
+            "t": "নিজেই ডেলিভারি দৌড়",
+            "mark": "x"
+          }
+        ],
+        "footer": "টিফিন: ৪০ → ৪০"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "এক দুপুরে ডেলিভারিতে এক ঘণ্টা দেরি। তিনটা অফিস একসাথে *অর্ডার বাতিল* করল।",
+      "pause": 0.9,
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "এক দুপুরে",
+        "props": [
+          "sofa"
+        ],
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "widget": {
+          "kind": "chat",
+          "title": "অফিস লাঞ্চ 🍱",
+          "msgs": [
+            {
+              "who": "রহমান অ্যাসোসিয়েটস",
+              "t": "কাল থেকে আর লাগবে না"
+            },
+            {
+              "who": "নিউ ফ্যাশন",
+              "t": "দুঃখিত, বাতিল"
+            },
+            {
+              "who": "স্টার প্রিন্টার্স",
+              "t": "সময়মতো না এলে চলবে না"
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "সেদিন শাথী প্রথমবার ভাবল— *সব ছেড়ে দেবে*।",
+      "pause": 0.7,
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "shathi",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "রাতে ছোট ভাই রনি স্কুলের বই খুলে কী যেন পড়ছিল।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "table"
+        ],
+        "widget": null,
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          },
+          {
+            "id": "rony",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "thinking",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "rony",
+      "tone": "excited",
+      "say": "আপু, বইয়ে লেখা— সবাই একটা করে কাজ করলে, *বহুগুণ বেশি* তৈরি হয়!",
+      "scene": {
+        "moods": {
+          "rony": "happy"
+        },
+        "cam": {
+          "focus": "rony",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "shathi",
+      "tone": "curious",
+      "say": "মানে সবাই সব না করে, *একেকজন একেকটা*?",
+      "scene": {
+        "moods": {
+          "shathi": "thinking"
+        },
+        "cam": {
+          "focus": "shathi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "পরদিন রান্নাঘরে শুরু হলো *ছোট্ট একটা কারখানা*।",
+      "pause": 0.7,
+      "card": {
+        "text": "পরদিন রান্নাঘরে শুরু হলো\n*ছোট্ট একটা কারখানা*।"
+      }
+    },
+    {
+      "say": "আম্মা সবজি কাটেন, পাশের বাসার জুঁই খালা মসলা বাটেন। শাথী শুধু *রান্না*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "plate"
+          },
+          {
+            "id": "shathi",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "কে কী করবে",
+          "lines": [
+            "সবজি কাটা — আম্মা",
+            "মসলা — জুঁই খালা",
+            "রান্না — শাথী",
+            "প্যাকিং, ডেলিভারি — রনি"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "proudly",
+      "say": "বিশ বছর ধরে সবজি কাটি। এই কাজটা আমার *হাতের ভেতর*।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রনি স্কুল থেকে ফিরে প্যাকিং, তারপর *সাইকেলে ডেলিভারি*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "দুপুর একটা",
+        "props": [
+          "bicycle"
+        ],
+        "chars": [
+          {
+            "id": "rony",
+            "x": 0.45,
+            "pose": "walk",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "bag"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "আর শাথী এই প্রথম রান্নায় মন দেওয়ার সময় পেল। স্বাদ হলো *আগের চেয়েও ভালো*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "রান্নাঘর",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "cam": {
+          "focus": "shathi",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "এক মাসে চল্লিশ থেকে একশো বিশ। ফিরে এল সেই তিন অফিসও। জুঁই খালার হাতেও এল *নিজের আয়*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "evening",
+        "chip": "এক মাস পর",
+        "props": [
+          "stove",
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shathi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "rony",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "টিফিন",
+              "value": "১২০",
+              "from": "৪০"
+            },
+            {
+              "label": "হাত",
+              "value": "৪",
+              "from": "১"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "voice": "shathi",
+      "tone": "laughs",
+      "say": "রনি, তোর বইয়ের ওই লোকটাকে একটা *ধন্যবাদ* দিস।",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "shathi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rony",
+      "tone": "laughs",
+      "say": "উনি তো প্রায় *আড়াইশো বছর* আগের মানুষ, আপু!",
+      "scene": {
+        "cam": {
+          "focus": "rony",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "একা হাতের রাতজাগা যা পারেনি, *ভাগ করা চারটা হাত* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— অ্যাডাম স্মিথের *দ্য ওয়েলথ অফ নেশনস*।"
+    },
+    {
+      "kind": "book",
+      "say": "প্রথম অধ্যায়— *শ্রমের ভাগ* উৎপাদন বাড়ায়।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "সবাই সব করলে সময় যায় কাজ বদলাতে। প্রত্যেকে এক কাজে পাকা হলে, *একসাথে বহুগুণ*।",
+      "card": {
+        "title": "চার হাত, চার কাজ",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "hand",
+              "t": "কাটা"
+            },
+            {
+              "icon": "star",
+              "t": "রান্না"
+            },
+            {
+              "icon": "check",
+              "t": "প্যাকিং"
+            },
+            {
+              "icon": "people",
+              "t": "ডেলিভারি"
+            }
+          ],
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, সব কাজ *একা* কোরো না।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "সব কাজ একা কোরো না",
+            "sub": "একা হাত সীমিত",
+            "icon": "hand"
+          },
+          {
+            "t": "যার যেটা ভালো, তাকে সেটা",
+            "sub": "দক্ষতা অনুযায়ী ভাগ",
+            "icon": "star"
+          },
+          {
+            "t": "লাভটাও ভাগ করো",
+            "sub": "সবার লাভে সবাই থাকে",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, যার যেটা ভালো, *তাকে সেটা*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, লাভটাও *ভাগ* করো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি সব *নিজে* করছি, নাকি কাজটা *ভাগ* করতে শিখছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি সব *নিজে* করছি,\nনাকি কাজটা *ভাগ* করতে শিখছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "একা হাত তাড়াতাড়ি চলে… *অনেক হাত অনেক দূর যায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "একা হাত তাড়াতাড়ি চলে…",
+        "line2": "অনেক হাত\nঅনেক দূর যায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "একা হাতে ৪০টা টিফিন, তারপর ভাইয়ের স্কুলের বই বদলে দিল ব্যবসা 🍱 | The Wealth of Nations বাংলা",
+    "description": "রোজ চল্লিশটা টিফিন, ভোর চারটা থেকে সব একা হাতে। আরো অর্ডার এলে শাথীকে বলতে হতো না। তারপর এক রাতে ছোট ভাই রনি বই থেকে একটা লাইন পড়ল…\nঅ্যাডাম স্মিথ-এর The Wealth of Nations — Of the Division of Labour — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "wealth of nations bangla",
+      "adam smith bangla",
+      "টিফিন ব্যবসা",
+      "ছোট ব্যবসা",
+      "বাংলা গল্প",
+      "ভাই বোনের গল্প",
+      "division of labour bangla",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "একা হাতের রাতজাগা যা পারেনি, ভাগ করা চারটা হাত তা পারল। 🍱\n\nতোমার পরিবারে কে কোন কাজে সবচেয়ে পাকা? 👇\n\n📖 The Wealth of Nations — Adam Smith\n#ছোটব্যবসা #পরিবার"
+  },
+  "thumbnail": {
+    "text": "একা হাতে ৪০টা",
+    "sub": "তারপর চার হাত"
+  }
+}

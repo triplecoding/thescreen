@@ -1,0 +1,548 @@
+{
+  "id": "032",
+  "status": "ready",
+  "title_bn": "বাহান্নটা চিরকুট",
+  "source": {
+    "book": "The Open Society and Its Enemies",
+    "author": "Karl Popper",
+    "author_bn": "কার্ল পপার",
+    "chapter": "IDEA",
+    "chapter_bn": "একটা ভাবনা",
+    "title": "Criticism Makes Communities Stronger",
+    "title_bn": "সমালোচনা সমাজকে শক্ত করে"
+  },
+  "cast": {
+    "anjuman": {
+      "name": "আঞ্জুমান আপা",
+      "type": "old_woman",
+      "skin": "wheat",
+      "outfit": "sari",
+      "color": "#3A3F58",
+      "color2": "#F2C14E",
+      "hair": "grey_bun",
+      "glasses": true,
+      "voice": "old_woman"
+    },
+    "habib": {
+      "name": "হাবিব স্যার",
+      "type": "man",
+      "skin": "tan",
+      "outfit": "panjabi",
+      "color": "#CFC6B0",
+      "hair": "short",
+      "beard": "full_black",
+      "voice": "man"
+    },
+    "mim": {
+      "name": "মিম",
+      "type": "teen_girl",
+      "skin": "brown",
+      "outfit": "uniform",
+      "color": "#FFFFFF",
+      "color2": "#2F7D6D",
+      "hair": "hijab",
+      "voice": "teen_girl"
+    }
+  },
+  "beats": [
+    {
+      "say": "এক বছরে স্কুল ছেড়েছে *সতেরো জন* মেয়ে। প্রধান শিক্ষিকা আঞ্জুমান আপা জানেন না— *কেন*।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "কুড়িগ্রাম",
+        "props": [
+          "school_gate"
+        ],
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "cross"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "স্কুল ছাড়ল",
+              "value": "১৭",
+              "from": "১",
+              "red": true
+            },
+            {
+              "label": "কারণ জানা",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "anjuman",
+      "say": "হাবিব স্যার, মেয়েরা কিছু বলে না কেন? আমার দরজা তো *খোলা*।",
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "talk"
+          },
+          {
+            "id": "habib",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "habib",
+      "tone": "softly",
+      "say": "আপা, কিছু মনে করবেন না। কেউ কিছু বললে, *আপনি রেগে যান*।",
+      "scene": {
+        "cam": {
+          "focus": "habib",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আপা চুপ করে গেলেন। কথাটা *সত্যি*।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "anjuman": "sad"
+        },
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "অভিভাবক সভা, কড়া নোটিশ, উপবৃত্তির কথা মনে করানো। একটা মেয়েও *ফিরল না*।",
+      "card": {
+        "title": "আপার চেষ্টা",
+        "items": [
+          {
+            "t": "অভিভাবক সভা",
+            "mark": "x"
+          },
+          {
+            "t": "কড়া নোটিশ",
+            "mark": "x"
+          },
+          {
+            "t": "উপবৃত্তির কথা",
+            "mark": "x"
+          }
+        ],
+        "footer": "ফিরল: ০"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "এক বিকেলে খালি ক্লাসরুমে আপা একা বসে রইলেন। বেঞ্চে খোদাই করা একটা নাম— *যে আর আসবে না*।",
+      "pause": 0.9,
+      "scene": {
+        "set": "home",
+        "light": "evening",
+        "chip": "ক্লাস এইট, খালি ঘর",
+        "props": [
+          "table",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "face"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "পরদিন তিনি অফিসের দরজায় ঝোলালেন *একটা বাক্স*।",
+      "pause": 0.7,
+      "card": {
+        "text": "পরদিন অফিসের দরজায়\n*একটা বাক্স*।"
+      }
+    },
+    {
+      "say": "বাক্সের গায়ে লেখা— নাম লাগবে না। *আমার ভুলগুলো* লিখে দাও।",
+      "scene": {
+        "set": "street",
+        "light": "day",
+        "chip": "পরদিন",
+        "props": [
+          "school_gate"
+        ],
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "point"
+          },
+          {
+            "id": "habib",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "মতামতের বাক্স",
+          "lines": [
+            "নাম লাগবে না।",
+            "আমার ভুল, স্কুলের ভুল—",
+            "সব লিখে দাও। — আঞ্জুমান"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "habib",
+      "tone": "curious",
+      "say": "আপা, মেয়েরা যদি *আপনাকেই* খারাপ বলে?",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "habib",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "anjuman",
+      "tone": "softly",
+      "say": "তাহলে বুঝব, এতদিন কেউ আমাকে *সত্যি বলেনি*।",
+      "scene": {
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "প্রথম সপ্তাহে বাক্স খালি। দ্বিতীয় সপ্তাহে— *বাহান্নটা চিরকুট*।",
+      "scene": {
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "চিরকুট",
+              "value": "৫২",
+              "from": "০"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "আপা পড়লেন। মেয়েরা ছেড়ে যাচ্ছিল *খুব সাধারণ কিছু কারণে*।",
+      "scene": {
+        "widget": {
+          "kind": "checklist",
+          "title": "চিরকুটে লেখা",
+          "items": [
+            {
+              "t": "মেয়েদের টয়লেটে দরজা নেই",
+              "mark": "x"
+            },
+            {
+              "t": "ছুটির পর রাস্তায় ভয় লাগে",
+              "mark": "x"
+            },
+            {
+              "t": "আপা ধমক দিলে কথা আটকে যায়",
+              "mark": "x"
+            }
+          ]
+        },
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "সেই রাতে আপা ঘুমালেন না। তিনটা কারণের একটা ছিলেন *তিনি নিজেই*।",
+      "pause": 0.8,
+      "scene": {
+        "widget": null,
+        "moods": {
+          "anjuman": "sad"
+        },
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.5
+        }
+      }
+    },
+    {
+      "say": "এক মাসে টয়লেটে দরজা বসল। ছুটির পর শিক্ষকরা মোড় পর্যন্ত *হেঁটে যান*।",
+      "scene": {
+        "chip": "এক মাস পর",
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.4,
+            "pose": "walk",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "habib",
+            "x": 0.6,
+            "pose": "walk",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "সেদিন থেকে আপা ধমক দেওয়া ছেড়ে দিলেন। ক্লাসে ঢুকে আগে *একটু হাসেন*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "wave"
+          }
+        ],
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "voice": "mim",
+      "tone": "softly",
+      "say": "আপা, একটা চিরকুট আমি লিখেছিলাম। আপনি *রাগ করেননি* তো?",
+      "scene": {
+        "chars": [
+          {
+            "id": "anjuman",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "mim",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": {
+          "focus": "mim",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "anjuman",
+      "tone": "warmly",
+      "say": "রাগ? তুই আমাকে *ভালো শিক্ষক* বানালি, মা।",
+      "scene": {
+        "moods": {
+          "anjuman": "happy"
+        },
+        "arms": {
+          "anjuman": "hug"
+        },
+        "cam": {
+          "focus": "anjuman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "পরের বছর ফিরে এল এগারো জন। চলে গেল *একজনও না*।",
+      "scene": {
+        "chip": "পরের বছর",
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "ফিরে এল",
+              "value": "১১",
+              "from": "০"
+            },
+            {
+              "label": "স্কুল ছাড়ল",
+              "value": "০",
+              "from": "১৭"
+            }
+          ]
+        },
+        "moods": {
+          "mim": "happy"
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "কড়া নিয়ম যা পারেনি, *একটা সমালোচনার বাক্স* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "widget": null,
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— কার্ল পপারের *দ্য ওপেন সোসাইটি অ্যান্ড ইটস এনিমিজ*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা ভাবনা— সমালোচনাই সমাজকে *শক্ত করে*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "যেখানে প্রশ্ন করা নিরাপদ, ভুল তাড়াতাড়ি ধরা পড়ে। যেখানে ভয়, ভুল *চুপচাপ বড় হয়*।",
+      "card": {
+        "title": "নীরবতা, না প্রশ্ন?",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "wall",
+            "t": "ভয়ের নীরবতা",
+            "sub": "ভুল লুকিয়ে বড় হয়",
+            "bad": true
+          },
+          "right": {
+            "icon": "ear",
+            "t": "খোলা সমালোচনা",
+            "sub": "ভুল তাড়াতাড়ি সারে"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, সমালোচনা *চেয়ে নাও*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "সমালোচনা চেয়ে নাও",
+            "sub": "নাম ছাড়া হলেও",
+            "icon": "ear"
+          },
+          {
+            "t": "রাগ নয়, ধন্যবাদ",
+            "sub": "তবেই আবার বলবে",
+            "icon": "heart"
+          },
+          {
+            "t": "শুনে কাজ করো",
+            "sub": "দরজা বসলে ভরসা বসে",
+            "icon": "check"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, রাগ নয়— *ধন্যবাদ* দাও।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, শুনে *কাজ* করো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার চারপাশের মানুষ কি আমাকে *ভয় পায়*, নাকি *সত্যি বলে*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমার চারপাশের মানুষ কি আমাকে *ভয় পায়*,\nনাকি *সত্যি বলে*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "প্রশংসা মানুষকে খুশি রাখে… *সমালোচনা তাকে ঠিক রাখে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "প্রশংসা মানুষকে খুশি রাখে…",
+        "line2": "সমালোচনা তাকে\nঠিক রাখে।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "এক বছরে স্কুল ছাড়ল ১৭ জন মেয়ে, তারপর প্রধান শিক্ষিকার একটা বাক্স 📮 | The Open Society বাংলা",
+    "description": "এক বছরে স্কুল ছেড়েছে সতেরো জন মেয়ে, কেউ বলেনি কেন। সভা, নোটিশ— কিছুই কাজ করল না। তারপর আঞ্জুমান আপা অফিসের দরজায় ঝোলালেন একটা বাক্স…\nকার্ল পপার-এর The Open Society and Its Enemies — Criticism Makes Communities Stronger — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "open society bangla",
+      "karl popper bangla",
+      "শিক্ষকের গল্প",
+      "মেয়েদের শিক্ষা",
+      "বাংলা গল্প",
+      "স্কুলের গল্প",
+      "সমালোচনা",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "কড়া নিয়ম যা পারেনি, একটা সমালোচনার বাক্স তা পারল। 📮\n\nকোন শিক্ষক তোমার কথা মন দিয়ে শুনতেন? 👇\n\n📖 The Open Society and Its Enemies — Karl Popper\n#শিক্ষক #স্কুল"
+  },
+  "thumbnail": {
+    "text": "১৭ জন মেয়ে",
+    "sub": "কেউ বলেনি কেন"
+  }
+}

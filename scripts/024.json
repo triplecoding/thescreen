@@ -1,0 +1,531 @@
+{
+  "id": "024",
+  "status": "ready",
+  "title_bn": "রাতের এক কাপ চা",
+  "source": {
+    "book": "1984",
+    "author": "George Orwell",
+    "author_bn": "জর্জ অরওয়েল",
+    "chapter": "IDEA",
+    "chapter_bn": "একটা ভাবনা",
+    "title": "Constant Watching Changes Behaviour",
+    "title_bn": "নজরদারি মানুষকে বদলে দেয়"
+  },
+  "cast": {
+    "ammu": {
+      "name": "আম্মু",
+      "type": "woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#3A3F58",
+      "color2": "#8E9AAF",
+      "hair": "hijab",
+      "voice": "woman"
+    },
+    "orpa": {
+      "name": "অর্পা",
+      "type": "teen_girl",
+      "skin": "wheat",
+      "outfit": "uniform",
+      "color": "#FFFFFF",
+      "color2": "#2E5E8C",
+      "hair": "long_braid",
+      "voice": "teen_girl"
+    }
+  },
+  "beats": [
+    {
+      "say": "দিনে চোদ্দবার। মেয়ের ফোন, ব্যাগ, ডায়েরি— আম্মুর চোখ *সবখানে*।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "রাজশাহী",
+        "props": [
+          "sofa",
+          "door_closed"
+        ],
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "thinking",
+            "arm": "phone",
+            "hold": "phone"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "দিনে চেক",
+              "value": "১৪",
+              "from": "১",
+              "red": true
+            },
+            {
+              "label": "মেয়ের গল্প",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "ক্লাস নাইনের অর্পা আগে স্কুল থেকে ফিরেই *সব গল্প* করত।",
+      "scene": {
+        "widget": null,
+        "fx": "bw",
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "orpa",
+            "x": 0.68,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "say": "এখন ফিরে সোজা নিজের ঘর। *দরজা বন্ধ*।",
+      "scene": {
+        "fx": null,
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          },
+          {
+            "id": "orpa",
+            "x": 0.72,
+            "pose": "walk",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down",
+            "hold": "bag"
+          }
+        ]
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "suspicious",
+      "say": "অর্পা! দরজা বন্ধ কেন? ফোনটা *দে তো*, দেখি।",
+      "scene": {
+        "arms": {
+          "ammu": "point"
+        },
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "orpa",
+      "tone": "upset",
+      "say": "তুমি তো সবই দেখো, আম্মু। আমার কিছুই *আমার না*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "point"
+          },
+          {
+            "id": "orpa",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "angry",
+            "arm": "cross"
+          }
+        ],
+        "cam": {
+          "focus": "orpa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "ফোনের পাসওয়ার্ড, বান্ধবীদের মায়েদের ফোন, স্কুলে হঠাৎ হাজির। যত দেখলেন, তত *কম জানলেন*।",
+      "card": {
+        "title": "আম্মুর পাহারা",
+        "items": [
+          {
+            "t": "ফোনের পাসওয়ার্ড",
+            "mark": "x"
+          },
+          {
+            "t": "বান্ধবীদের মায়েদের ফোন",
+            "mark": "x"
+          },
+          {
+            "t": "স্কুলে হঠাৎ হাজির",
+            "mark": "x"
+          }
+        ],
+        "footer": "জানা ↓ · দূরত্ব ↑"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "এক রাতে আম্মু দেখলেন, অর্পা বালিশে মুখ গুঁজে *কাঁদছে*।",
+      "pause": 0.6,
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "এক রাতে",
+        "props": [
+          "bed",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "orpa",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          },
+          {
+            "id": "ammu",
+            "x": 0.72,
+            "pose": "stand",
+            "face": "left",
+            "mood": "worried",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "softly",
+      "say": "কী হয়েছে, মা? *বল আমাকে*।",
+      "scene": {
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "orpa",
+      "tone": "tearful",
+      "say": "বললে তো তুমি আরো *পাহারা* বসাবে।",
+      "scene": {
+        "cam": {
+          "focus": "orpa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "কথাটা বুকে বিঁধল। পাহারা দিচ্ছিলেন মেয়েকে বাঁচাতে, অথচ মেয়ে *লুকাতে শিখছিল*।",
+      "pause": 0.9,
+      "scene": {
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.45
+        },
+        "moods": {
+          "ammu": "sad"
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "পরদিন তিনি একটা অদ্ভুত কাজ করলেন— মেয়ের ফোনটা *ফিরিয়ে দিলেন*।",
+      "pause": 0.7,
+      "card": {
+        "text": "পরদিন তিনি মেয়ের ফোনটা\n*ফিরিয়ে দিলেন*।"
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "warmly",
+      "say": "আর চেক করব না। শুধু একটা চুক্তি— *রাতের চা*, প্রতিদিন, দুজনে।",
+      "scene": {
+        "set": "balcony",
+        "light": "evening",
+        "chip": "পরদিন সন্ধ্যা",
+        "props": [
+          "tea",
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.32,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "tea"
+          },
+          {
+            "id": "orpa",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "hold",
+            "hold": "phone"
+          }
+        ],
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "orpa",
+      "tone": "curious",
+      "say": "সত্যি? আর *কখনো* দেখবে না?",
+      "scene": {
+        "cam": {
+          "focus": "orpa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "gently",
+      "say": "কথা দিলাম। তুই না বললে, আমি *জিজ্ঞেসও* করব না।",
+      "scene": {
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "প্রথম তিন রাত অর্পা চুপ। চতুর্থ রাতে, চায়ের কাপ হাতে, *আস্তে মুখ খুলল*।",
+      "scene": {
+        "light": "night",
+        "chip": "চতুর্থ রাত",
+        "widget": {
+          "kind": "clock",
+          "time": "9:30",
+          "label": "রাতের চা"
+        },
+        "holds": {
+          "orpa": "tea"
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "orpa",
+      "tone": "sad",
+      "say": "আম্মু, ক্লাসের কয়েকজন আমাকে নিয়ে *হাসাহাসি* করে। তাই কাঁদছিলাম।",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "orpa": "sad"
+        },
+        "cam": {
+          "focus": "orpa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "ammu",
+      "tone": "gently",
+      "say": "আমাকে বললি, এটাই বড় সাহস। চল, *একসাথে* ভাবি কী করা যায়।",
+      "scene": {
+        "arms": {
+          "ammu": "hug"
+        },
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "দুই মাস পর, স্কুল থেকে ফিরে দরজায় দাঁড়িয়েই অর্পা চেঁচায়— *আম্মু, শোনো!*",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "দুই মাস পর",
+        "props": [
+          "sofa"
+        ],
+        "chars": [
+          {
+            "id": "ammu",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "orpa",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk",
+            "hold": "bag"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "say": "ফোনটা আম্মু এখন আর ছুঁয়েও দেখেন না। দরকারই পড়ে না— *অর্পা নিজেই বলে*।",
+      "scene": {
+        "cam": {
+          "focus": "ammu",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "say": "চোদ্দবারের পাহারা যা পারেনি, *রাতের এক কাপ চা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— জর্জ অরওয়েলের *নাইনটিন এইটি-ফোর*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা ভাবনা— সারাক্ষণ নজরদারি *মানুষকে বদলে দেয়*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "যে জানে সারাক্ষণ দেখা হচ্ছে, সে ভালো হয় না— *লুকাতে শেখে*। ভরসা মানুষকে খুলে দেয়।",
+      "card": {
+        "title": "পাহারা, না ভরসা?",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "eye",
+            "t": "পাহারা",
+            "sub": "লুকাতে শেখায়",
+            "bad": true
+          },
+          "right": {
+            "icon": "heart",
+            "t": "ভরসা",
+            "sub": "নিজে থেকে বলা"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, বেশি পাহারা *ভরসা ভাঙে*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "বেশি পাহারা ভরসা ভাঙে",
+            "sub": "দেখা বাড়লে বলা কমে",
+            "icon": "eye"
+          },
+          {
+            "t": "কথার নিয়মিত সময় রাখো",
+            "sub": "রাতের চা, বিকেলের হাঁটা",
+            "icon": "clock"
+          },
+          {
+            "t": "শুনে আগে শান্ত থাকো",
+            "sub": "তবেই আবার বলবে",
+            "icon": "ear"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, কথার একটা *নিয়মিত সময়* রাখো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, শুনে আগে *শান্ত* থাকো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি প্রিয় মানুষটাকে *পাহারা* দিচ্ছি, নাকি তার *ভরসা* হচ্ছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি প্রিয় মানুষটাকে *পাহারা* দিচ্ছি,\nনাকি তার *ভরসা* হচ্ছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "নজর দিয়ে মানুষ আটকানো যায়… *ভরসা দিয়ে কাছে রাখা যায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "নজর দিয়ে মানুষ আটকানো যায়…",
+        "line2": "ভরসা দিয়ে\nকাছে রাখা যায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "দিনে ১৪ বার মেয়ের ফোন চেক করতেন আম্মু, তারপর একটা চুক্তি ☕ | 1984 বাংলা",
+    "description": "দিনে চোদ্দবার— মেয়ের ফোন, ব্যাগ, ডায়েরি। যত দেখলেন, অর্পা তত দূরে সরল। তারপর এক রাতে আম্মু শুনলেন একটা কথা…\nজর্জ অরওয়েল-এর 1984 — Constant Watching Changes Behaviour — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "1984 bangla",
+      "george orwell bangla",
+      "মা মেয়ের গল্প",
+      "parenting bangla",
+      "বাংলা গল্প",
+      "কিশোরী",
+      "ভরসা",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "চোদ্দবারের পাহারা যা পারেনি, রাতের এক কাপ চা তা পারল। ☕\n\nআম্মু-আব্বুর সাথে মন খুলে কথা বলার তোমার প্রিয় সময় কোনটা? 👇\n\n📖 1984 — George Orwell\n#মামেয়ে #প্যারেন্টিং"
+  },
+  "thumbnail": {
+    "text": "দিনে ১৪ বার চেক",
+    "sub": "তবু মেয়ে দূরে"
+  }
+}

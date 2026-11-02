@@ -1,0 +1,535 @@
+{
+  "id": "031",
+  "status": "ready",
+  "title_bn": "রাত একটার চিঠি",
+  "source": {
+    "book": "The Laws of Human Nature",
+    "author": "Robert Greene",
+    "author_bn": "রবার্ট গ্রিন",
+    "chapter": "CHAPTER 1",
+    "chapter_bn": "এক নম্বর অধ্যায়",
+    "title": "The Law of Irrationality",
+    "title_bn": "আবেগী মনটাকে সামলাতে শেখো"
+  },
+  "cast": {
+    "nasir": {
+      "name": "নাসির",
+      "type": "man",
+      "skin": "wheat",
+      "outfit": "shirt",
+      "color": "#4A6FA5",
+      "hair": "side",
+      "beard": "stubble",
+      "glasses": true,
+      "voice": "man"
+    },
+    "fatema": {
+      "name": "ফাতেমা আপা",
+      "type": "woman",
+      "skin": "tan",
+      "outfit": "salwar",
+      "color": "#2F7D6D",
+      "color2": "#8E9AAF",
+      "hair": "hijab",
+      "voice": "woman"
+    },
+    "boss": {
+      "name": "কবির সাহেব",
+      "type": "man",
+      "skin": "light",
+      "outfit": "shirt",
+      "color": "#3A3F58",
+      "hair": "side_grey",
+      "beard": "moustache",
+      "voice": "man"
+    }
+  },
+  "beats": [
+    {
+      "say": "এগারো বছরের চাকরি। সেদিন মিটিংয়ে, *বারোজনের সামনে*, বস ধমক দিলেন।",
+      "scene": {
+        "set": "shop",
+        "light": "day",
+        "chip": "মতিঝিল, ঢাকা",
+        "props": [
+          "signboard",
+          "sign:মেঘনা এন্টারপ্রাইজ — হিসাব বিভাগ"
+        ],
+        "chars": [
+          {
+            "id": "boss",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "point"
+          },
+          {
+            "id": "nasir",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "চাকরি",
+              "value": "১১ বছর"
+            },
+            {
+              "label": "সামনে ছিল",
+              "value": "১২ জন",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "boss",
+      "tone": "annoyed",
+      "say": "নাসির সাহেব, এই হিসাব তো একটা *বাচ্চাও* করতে পারত!",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "boss",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "নাসির কিছু বলল না। কিন্তু ভেতরে তখন *আগুন*।",
+      "scene": {
+        "moods": {
+          "nasir": "angry"
+        },
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "say": "রাত একটায় সে লিখে ফেলল পদত্যাগপত্র। সকালেই *জমা দেবে*।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "রাত ১টা",
+        "props": [
+          "table",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "nasir",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "angry",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "পদত্যাগপত্র",
+          "lines": [
+            "এগারো বছর দিয়েছি…",
+            "আর এক দিনও না।"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "kind": "list",
+      "say": "রাতে হাঁটল, বন্ধুকে ফোন করল, ফেসবুকে লম্বা পোস্ট লিখল। রাগ শুধু *আরো বাড়ল*।",
+      "card": {
+        "title": "রাগ কমানোর চেষ্টা",
+        "items": [
+          {
+            "t": "রাতে হাঁটা",
+            "mark": "x"
+          },
+          {
+            "t": "বন্ধুকে ফোন",
+            "mark": "x"
+          },
+          {
+            "t": "ফেসবুকে লম্বা পোস্ট",
+            "mark": "x"
+          }
+        ],
+        "footer": "রাগ ↑"
+      }
+    },
+    {
+      "tone": "softly",
+      "say": "পাশের ঘরে ঘুমিয়ে দুই মেয়ে। কিস্তির ফ্ল্যাট। চিঠি হাতে নাসির *জানালার পাশে* দাঁড়িয়ে রইল।",
+      "pause": 0.9,
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "nasir",
+            "x": 0.5,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সকালে অফিসে ঢুকতেই, পাশের টেবিলের ফাতেমা আপা চিঠিটা *দেখে ফেললেন*।",
+      "scene": {
+        "set": "shop",
+        "light": "day",
+        "chip": "পরদিন সকাল",
+        "props": [
+          "signboard",
+          "sign:মেঘনা এন্টারপ্রাইজ — হিসাব বিভাগ"
+        ],
+        "chars": [
+          {
+            "id": "fatema",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "down"
+          },
+          {
+            "id": "nasir",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "angry",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "fatema",
+      "tone": "gently",
+      "say": "জমা দেবেন? দিন। শুধু একটা অনুরোধ— *তিন দিন* ড্রয়ারে রাখুন।",
+      "scene": {
+        "moods": {
+          "fatema": "neutral"
+        },
+        "arms": {
+          "fatema": "talk"
+        },
+        "cam": {
+          "focus": "fatema",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nasir",
+      "tone": "frustrated",
+      "say": "আপা, আমি *ঠিকই* ভাবছি। আর অপমান সহ্য করব না।",
+      "scene": {
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "fatema",
+      "tone": "softly",
+      "say": "রাগ যে সিদ্ধান্ত নেয়, শান্ত মন পরে তার *দাম দেয়*। তিন দিন, ব্যস।",
+      "scene": {
+        "cam": {
+          "focus": "fatema",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "চিঠিটা গেল ড্রয়ারে। সিদ্ধান্ত গেল *তিন দিন পরে*।",
+      "pause": 0.7,
+      "card": {
+        "text": "চিঠিটা গেল ড্রয়ারে।\nসিদ্ধান্ত গেল *তিন দিন পরে*।"
+      }
+    },
+    {
+      "say": "দ্বিতীয় দিন নাসির হিসাবটা আবার খুলল। আর দেখল— একটা ভুল *সত্যিই ছিল*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "nasir",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "তৃতীয় দিন বস নিজেই এলেন তার টেবিলে।",
+      "scene": {
+        "chars": [
+          {
+            "id": "nasir",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "boss",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "boss",
+      "tone": "softly",
+      "say": "সেদিন সবার সামনে ওভাবে বলা *ঠিক হয়নি*। আমার চাপ, ঝাড়লাম আপনার ওপর।",
+      "scene": {
+        "cam": {
+          "focus": "boss",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nasir",
+      "tone": "softly",
+      "say": "ভুলটা আমারও ছিল, স্যার। ঠিক করে *দিয়েছি*।",
+      "scene": {
+        "moods": {
+          "nasir": "smile"
+        },
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেদিন বিকেলে নাসির ড্রয়ার খুলে চিঠিটা *ছিঁড়ে ফেলল*।",
+      "scene": {
+        "light": "evening",
+        "chip": "সেই বিকেলে",
+        "chars": [
+          {
+            "id": "fatema",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "smile",
+            "arm": "down"
+          },
+          {
+            "id": "nasir",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "fatema",
+      "tone": "playfully",
+      "say": "তিন দিনে কী বদলাল, নাসির ভাই?",
+      "scene": {
+        "cam": {
+          "focus": "fatema",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nasir",
+      "tone": "laughs",
+      "say": "কিছুই না, আপা। শুধু *আমি* শান্ত হলাম।",
+      "scene": {
+        "cam": {
+          "focus": "nasir",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "ছয় মাস পর নাসিরের প্রমোশন। ছেঁড়া চিঠির টুকরোগুলো আজও মানিব্যাগে— *মনে রাখার জন্য*।",
+      "scene": {
+        "light": "day",
+        "chip": "ছয় মাস পর",
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "পদ",
+              "value": "সিনিয়র",
+              "from": "জুনিয়র"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "রাতের রাগ যা প্রায় শেষ করে দিচ্ছিল, *তিন দিনের অপেক্ষা* তা বাঁচাল।",
+      "pause": 0.8,
+      "scene": {
+        "widget": null,
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য লজ অফ হিউম্যান নেচার*।"
+    },
+    {
+      "kind": "book",
+      "say": "এক নম্বর অধ্যায়— আবেগী মনটাকে *সামলাতে শেখো*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "রাগের সময় মনে হয় যুক্তি দিয়ে ভাবছি। আসলে সিদ্ধান্ত নেয় আবেগ, যুক্তি আসে *পরে সাফাই দিতে*।",
+      "card": {
+        "title": "রাগের সিদ্ধান্ত",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "x",
+              "t": "আঘাত"
+            },
+            {
+              "icon": "heart",
+              "t": "আবেগ জ্বলে"
+            },
+            {
+              "icon": "brain",
+              "t": "যুক্তি সাফাই দেয়"
+            },
+            {
+              "icon": "hand",
+              "t": "ভুল সিদ্ধান্ত"
+            }
+          ],
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, রাগের মাথায় *সিদ্ধান্ত নয়*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "রাগের মাথায় সিদ্ধান্ত নয়",
+            "sub": "লেখো, পাঠিয়ো না",
+            "icon": "hand"
+          },
+          {
+            "t": "সময়কে কাজ করতে দাও",
+            "sub": "এক রাত, তিন দিন",
+            "icon": "clock"
+          },
+          {
+            "t": "আরেক দিকটা দেখো",
+            "sub": "ভুল হয়তো দুই দিকেই",
+            "icon": "eye"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, সময়কে *কাজ করতে* দাও।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, ঘটনার *আরেক দিকটা* দেখো।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *নিজে* সিদ্ধান্ত নিচ্ছি, নাকি *আমার রাগ*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি *নিজে* সিদ্ধান্ত নিচ্ছি,\nনাকি *আমার রাগ*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "রাগ সিদ্ধান্ত নেয় এক মিনিটে… *দাম দিতে হয় অনেক বছর*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "রাগ সিদ্ধান্ত নেয় এক মিনিটে…",
+        "line2": "দাম দিতে হয়\nঅনেক বছর।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "বসের এক ধমকে রাত একটায় পদত্যাগপত্র, তারপর তিন দিনের ড্রয়ার ✉️ | The Laws of Human Nature বাংলা",
+    "description": "এগারো বছরের চাকরি, বারোজনের সামনে বসের ধমক। রাত একটায় নাসির লিখে ফেলল পদত্যাগপত্র। সকালে ফাতেমা আপা শুধু একটা অনুরোধ করলেন…\nরবার্ট গ্রিন-এর The Laws of Human Nature — The Law of Irrationality — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "laws of human nature bangla",
+      "robert greene bangla",
+      "অফিসের গল্প",
+      "রাগ নিয়ন্ত্রণ",
+      "বাংলা গল্প",
+      "সহকর্মী",
+      "চাকরি",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "রাতের রাগ যা প্রায় শেষ করে দিচ্ছিল, তিন দিনের অপেক্ষা তা বাঁচাল। ✉️\n\nরাগের মাথায় নেওয়া কোন সিদ্ধান্তে পরে আফসোস হয়েছে? 👇\n\n📖 The Laws of Human Nature — Robert Greene\n#অফিস #রাগ"
+  },
+  "thumbnail": {
+    "text": "রাত ১টার চিঠি",
+    "sub": "তিন দিন ড্রয়ারে"
+  }
+}

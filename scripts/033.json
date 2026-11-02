@@ -1,0 +1,521 @@
+{
+  "id": "033",
+  "status": "ready",
+  "title_bn": "সিঁড়ির একটা বাল্ব",
+  "source": {
+    "book": "The 33 Strategies of War",
+    "author": "Robert Greene",
+    "author_bn": "রবার্ট গ্রিন",
+    "chapter": "STRATEGY 8",
+    "chapter_bn": "আট নম্বর কৌশল",
+    "title": "Pick Your Battles Carefully",
+    "title_bn": "লড়াই বেছে নাও, সাবধানে"
+  },
+  "cast": {
+    "rubel": {
+      "name": "রুবেল",
+      "type": "young_man",
+      "skin": "brown",
+      "outfit": "tshirt",
+      "color": "#C4473A",
+      "hair": "short",
+      "beard": "stubble",
+      "voice": "young_man"
+    },
+    "chacha": {
+      "name": "বাড়িওয়ালা চাচা",
+      "type": "old_man",
+      "skin": "wheat",
+      "outfit": "panjabi",
+      "color": "#FFFFFF",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "glasses": true,
+      "voice": "old_man"
+    },
+    "nipa": {
+      "name": "নীপা",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "sari",
+      "color": "#5FA8A0",
+      "color2": "#E8A33D",
+      "hair": "long_bun",
+      "voice": "young_woman"
+    }
+  },
+  "beats": [
+    {
+      "say": "এক বছরে বাড়িওয়ালার সাথে *উনিশটা* লড়াই। জিতেছে *একটাও না*।",
+      "scene": {
+        "set": "stairs",
+        "light": "night",
+        "chip": "কাজীপাড়া, ঢাকা",
+        "chars": [
+          {
+            "id": "rubel",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "cross"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "লড়াই",
+              "value": "১৯",
+              "from": "১",
+              "red": true
+            },
+            {
+              "label": "জয়",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "say": "পানি কখন আসবে, গেট কখন বন্ধ, মেহমান কয়জন— *সবকিছুতে* তর্ক।",
+      "scene": {
+        "widget": {
+          "kind": "checklist",
+          "title": "রুবেলের লড়াই",
+          "items": [
+            {
+              "t": "পানির সময়",
+              "mark": "x"
+            },
+            {
+              "t": "গেট রাত দশটায়",
+              "mark": "x"
+            },
+            {
+              "t": "মেহমানের সংখ্যা",
+              "mark": "x"
+            },
+            {
+              "t": "সাইকেল রাখার জায়গা",
+              "mark": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "voice": "chacha",
+      "tone": "annoyed",
+      "say": "রাত দশটার পর গেট বন্ধ। *আমার বাড়ি, আমার নিয়ম*।",
+      "scene": {
+        "widget": null,
+        "light": "day",
+        "chip": "সিঁড়িঘর",
+        "chars": [
+          {
+            "id": "chacha",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "point"
+          },
+          {
+            "id": "rubel",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "angry",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "chacha",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rubel",
+      "tone": "frustrated",
+      "say": "আপনার নিয়মে তো *মানুষ বাঁচবে না*, চাচা!",
+      "scene": {
+        "cam": {
+          "focus": "rubel",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "নালিশ, চিৎকার, ভাড়া আটকে রাখার হুমকি। প্রতিবার চাচা *আরো শক্ত* হলেন।",
+      "card": {
+        "title": "রুবেলের অস্ত্র",
+        "items": [
+          {
+            "t": "নালিশ",
+            "mark": "x"
+          },
+          {
+            "t": "চিৎকার",
+            "mark": "x"
+          },
+          {
+            "t": "ভাড়া আটকানোর হুমকি",
+            "mark": "x"
+          }
+        ],
+        "footer": "জয়: ০"
+      }
+    },
+    {
+      "tone": "serious",
+      "say": "এক রাতে সিঁড়ির নষ্ট বাতির অন্ধকারে পা পিছলে পড়ল স্ত্রী নীপা। হাতে *প্লাস্টার*।",
+      "scene": {
+        "set": "stairs",
+        "light": "night",
+        "chip": "রাত ন'টা",
+        "chars": [
+          {
+            "id": "nipa",
+            "x": 0.45,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "face"
+          }
+        ],
+        "fx": "pulse",
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nipa",
+      "tone": "sad",
+      "say": "উনিশটা ঝগড়া করলে। অথচ যেটা *সত্যি জরুরি*, সেটা কখনো বলোনি।",
+      "scene": {
+        "set": "home",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "bed"
+        ],
+        "fx": null,
+        "chars": [
+          {
+            "id": "nipa",
+            "x": 0.32,
+            "pose": "sit",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold"
+          },
+          {
+            "id": "rubel",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "nipa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রুবেল অনেকক্ষণ চুপ। সত্যিই, বাতির কথাটা হারিয়ে গিয়েছিল *হাজারটা ছোট তর্কে*।",
+      "pause": 0.9,
+      "scene": {
+        "cam": {
+          "focus": "rubel",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এবার সে লড়বে *একটাই লড়াই*।",
+      "pause": 0.7,
+      "card": {
+        "text": "এবার লড়াই হবে\n*একটাই*।"
+      }
+    },
+    {
+      "say": "বাকি আঠারোটা ছেড়ে দিল। গেট দশটায়? মেনে নিল। পানির সময়? *মেনে নিল*।",
+      "scene": {
+        "set": "stairs",
+        "light": "day",
+        "chip": "পরের সপ্তাহ",
+        "chars": [
+          {
+            "id": "rubel",
+            "x": 0.45,
+            "pose": "walk",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "তারপর এক সকালে চাচার দরজায় গেল। হাতে নীপার এক্স-রে, আর *একটা নতুন বাল্ব*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "rubel",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "envelope"
+          },
+          {
+            "id": "chacha",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "rubel",
+      "tone": "gently",
+      "say": "চাচা, আর কিছু চাই না। শুধু সিঁড়ির বাতি। আপনার নাতিও তো *এই সিঁড়িতে* নামে।",
+      "scene": {
+        "cam": {
+          "focus": "rubel",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চাচা এক্স-রের দিকে অনেকক্ষণ *তাকিয়ে রইলেন*।",
+      "pause": 0.6,
+      "scene": {
+        "moods": {
+          "chacha": "sad"
+        },
+        "cam": {
+          "focus": "chacha",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "voice": "chacha",
+      "tone": "softly",
+      "say": "এতদিন সবকিছুতে চেঁচাতে। আজ *একটা কথা* বললে, তাই কানে ঢুকল।",
+      "scene": {
+        "cam": {
+          "focus": "chacha",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেদিন বিকেলেই প্রতিটা তলায় জ্বলল *নতুন বাতি*। চাচা নিজে দাঁড়িয়ে থেকে লাগালেন।",
+      "scene": {
+        "light": "evening",
+        "chip": "সেই বিকেলে",
+        "chars": [
+          {
+            "id": "rubel",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          }
+        ],
+        "fx": "glow",
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "এক মাস পর চাচা নিজেই বললেন— মেহমান এলে গেট খোলা থাকবে *রাত এগারোটা পর্যন্ত*।",
+      "scene": {
+        "fx": null,
+        "light": "day",
+        "chip": "এক মাস পর",
+        "chars": [
+          {
+            "id": "chacha",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "talk"
+          },
+          {
+            "id": "rubel",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "nipa",
+      "tone": "teasing",
+      "say": "উনিশবার চেঁচিয়ে যা পাওনি, *একবার বেছে নিয়ে* পেলে!",
+      "scene": {
+        "chars": [
+          {
+            "id": "rubel",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "happy",
+            "arm": "down"
+          },
+          {
+            "id": "nipa",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "talk"
+          }
+        ],
+        "cam": {
+          "focus": "nipa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "উনিশটা লড়াই যা পারেনি, *ঠিক বেছে নেওয়া একটা* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য থার্টি থ্রি স্ট্র্যাটেজিস অফ ওয়ার*।"
+    },
+    {
+      "kind": "book",
+      "say": "আট নম্বর কৌশল— লড়াই বেছে নাও, *সাবধানে*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "সব লড়াইয়ে নামলে শক্তি আর বিশ্বাস দুটোই ফুরায়। যে কম লড়ে, তার *একটা কথার ওজন* বেশি।",
+      "card": {
+        "title": "কোন লড়াই লড়বে?",
+        "widget": {
+          "type": "compare",
+          "left": {
+            "icon": "x",
+            "t": "উনিশটা ছোট লড়াই",
+            "sub": "সব হার, কথার দাম শূন্য",
+            "bad": true
+          },
+          "right": {
+            "icon": "star",
+            "t": "একটা জরুরি লড়াই",
+            "sub": "কথায় ওজন, জয়"
+          },
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, সব তর্কে *নেমো না*।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "সব তর্কে নেমো না",
+            "sub": "ছোট জিনিস ছেড়ে দাও",
+            "icon": "hand"
+          },
+          {
+            "t": "বাছো সবচেয়ে জরুরিটা",
+            "sub": "যেটায় সত্যি ক্ষতি",
+            "icon": "star"
+          },
+          {
+            "t": "যাও প্রমাণ নিয়ে",
+            "sub": "চিৎকার নয়, ওজন",
+            "icon": "check"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, বাছো *সবচেয়ে জরুরিটা*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, যাও *প্রমাণ নিয়ে*, শান্তভাবে।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *সব লড়াই* লড়ছি, নাকি *ঠিক লড়াইটা*?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি *সব লড়াই* লড়ছি,\nনাকি *ঠিক লড়াইটা*?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "সব লড়াইয়ে যে নামে… *আসল লড়াইয়ে সে ক্লান্ত থাকে*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "সব লড়াইয়ে যে নামে…",
+        "line2": "আসল লড়াইয়ে\nসে ক্লান্ত থাকে।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "বাড়িওয়ালার সাথে ১৯টা ঝগড়া, সব হার— তারপর একটা বাল্ব 💡 | The 33 Strategies of War বাংলা",
+    "description": "এক বছরে বাড়িওয়ালার সাথে উনিশটা লড়াই— পানি, গেট, মেহমান। জিতেছে একটাও না। তারপর এক রাতে সিঁড়ির অন্ধকারে…\nরবার্ট গ্রিন-এর The 33 Strategies of War — Pick Your Battles Carefully — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "33 strategies of war bangla",
+      "robert greene bangla",
+      "ভাড়াটে বাড়িওয়ালা",
+      "ঢাকার গল্প",
+      "বাংলা গল্প",
+      "স্বামী স্ত্রীর গল্প",
+      "ঝগড়া",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "উনিশটা লড়াই যা পারেনি, ঠিক বেছে নেওয়া একটা তা পারল। 💡\n\nকোন ছোট তর্ক ছেড়ে দিয়ে তুমি বড় কিছু পেয়েছিলে? 👇\n\n📖 The 33 Strategies of War — Robert Greene\n#ভাড়াটে #ঢাকা"
+  },
+  "thumbnail": {
+    "text": "১৯টা ঝগড়া",
+    "sub": "জয় শূন্য"
+  }
+}
