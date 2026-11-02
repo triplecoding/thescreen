@@ -47,6 +47,17 @@
       "playlist": true,
       "facebook": "1658204239383355",
       "scheduled_for": "2026-11-02T17:30:00+06:00"
+    },
+    {
+      "id": "005",
+      "date": "2026-11-02",
+      "slot": "20:00",
+      "duration": 145.81,
+      "title": "যে ছেলেকে সবাই খারাপ ভাবত, সেই রাতে সে-ই জীবন বাঁচাল 🌙 | Thinking, Fast and Slow বাংলা",
+      "youtube": "BCmElgzdYgk",
+      "playlist": true,
+      "facebook": "2171459740108389",
+      "scheduled_for": "2026-11-02T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -54,10 +65,11 @@
     "The Laws of Human Nature": "PLa_DKXTCT90U",
     "The Art of War": "PLdM5Kv756r_M",
     "The Psychology of Money": "PLZobVivd3FvM",
-    "Games People Play": "PLYpqRqurL8gc"
+    "Games People Play": "PLYpqRqurL8gc",
+    "Thinking, Fast and Slow": "PLEGQPM39e2RQ"
   },
   "last_run": {
-    "at": "2026-11-02T13:39:43.827583+06:00",
+    "at": "2026-11-02T13:46:41.280185+06:00",
     "errors": []
   },
   "queue_remaining": 3
