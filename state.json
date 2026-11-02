@@ -105,6 +105,17 @@
       "playlist": true,
       "facebook": "1351823661358934",
       "scheduled_for": "2026-11-03T20:00:00+06:00"
+    },
+    {
+      "id": "010",
+      "date": "2026-11-04",
+      "slot": "10:00",
+      "duration": 141.77,
+      "title": "দরদামে হারতেন আব্বা, মেয়ের একটা কার্ডে বদলে গেল দোকান 🧵 | Thinking, Fast and Slow বাংলা",
+      "youtube": "c2EBg8QPTCE",
+      "playlist": true,
+      "facebook": "1059506940438807",
+      "scheduled_for": "2026-11-04T10:00:00+06:00"
     }
   ],
   "failed": [],
@@ -118,11 +129,10 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T14:30:06.406774+06:00",
-    "errors": [],
-    "queue_remaining": 26
+    "at": "2026-11-02T15:56:58.469972+06:00",
+    "errors": []
   },
   "queue_remaining": 26,
-  "_run_started": "2026-11-02T14:16:40.483112+06:00",
+  "_run_started": "2026-11-02T15:50:33.725679+06:00",
   "dry_runs": []
 }
