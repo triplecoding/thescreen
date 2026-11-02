@@ -66,6 +66,18 @@ def next_slot(now, cfg, done, grace_min=100):
     return cands[0] if cands else None
 
 
+def upcoming(now, cfg, done, hours=26, grace_min=100, limit=4):
+    """All unfilled slots from (now - grace) to (now + hours), earliest first — so one successful run
+    schedules a whole day ahead and a missed cron never means a missed post."""
+    out = []
+    for d in (now.date() - timedelta(days=1), now.date(), now.date() + timedelta(days=1), now.date() + timedelta(days=2)):
+        for s, t in slot_times(d, cfg):
+            if now - timedelta(minutes=grace_min) <= t <= now + timedelta(hours=hours) and (str(d), s) not in done:
+                out.append((d, s, t))
+    out.sort(key=lambda x: x[2])
+    return out[:limit]
+
+
 def engage(state, platforms, now):
     """Post the 'first comment' (the episode's mirror question) on videos that have gone live since the last run."""
     import seo
@@ -106,15 +118,39 @@ def main():
     ap.add_argument("--date", default="")
     ap.add_argument("--next", action="store_true", help="fill only the next upcoming slot (used by the cron)")
     ap.add_argument("--extra", action="store_true", help="one extra video published right now, without using a scheduled slot")
+    ap.add_argument("--ahead", type=int, default=0, help="fill every unfilled slot in the next ~26 h (max N) — used by the cron")
+    ap.add_argument("--plan", action="store_true", help="only report whether there is work (writes work=0/1 to GITHUB_OUTPUT)")
+    ap.add_argument("--engage-only", action="store_true", help="only first comments / playlist backfill, no production")
     ap.add_argument("--tts", default="elevenlabs")
     a = ap.parse_args()
+
+    cfg = channel()
+    if a.plan:
+        tz = ZoneInfo(cfg["timezone"]); now = datetime.now(tz)
+        state = load_json(STATE, {}) or {}
+        done = {(p["date"], p["slot"]) for p in state.get("posted", [])}
+        todo = upcoming(now, cfg, done, limit=max(a.ahead, 1))
+        work = 1 if todo and queue(state) else 0
+        log("plan:", ", ".join(f"{d} {s}" for d, s, _ in todo) or "all slots for the next 26 h already scheduled", "| queue:", len(queue(state)))
+        if os.environ.get("GITHUB_OUTPUT"):
+            with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                f.write(f"work={work}\n")
+        return
+    if a.engage_only:
+        tz = ZoneInfo(cfg["timezone"])
+        state = load_json(STATE, {}) or {}
+        state.setdefault("playlists", {})
+        rp = os.environ.get("READY_PLATFORMS")
+        platforms = [p for p in cfg["platforms"] if rp is None or p in rp.split(",")]
+        engage(state, platforms, datetime.now(tz))
+        git_commit("engage: first comments / playlists")
+        return
 
     from produce import produce  # heavy imports after arg parsing
     import upload_facebook
     import upload_youtube
     from timeline import TooLong, TooShort
 
-    cfg = channel()
     tz = ZoneInfo(cfg["timezone"])
     now = datetime.now(tz)
     date = datetime.strptime(a.date, "%Y-%m-%d").date() if a.date else now.date()
@@ -133,6 +169,12 @@ def main():
         todo = [(f"extra-{now.strftime('%H%M')}", now)]
         a.now = True
         log("extra video: publishing immediately (no slot used)")
+    elif a.ahead:
+        todo_d = upcoming(now, cfg, done, limit=a.ahead)
+        if not todo_d:
+            log("nothing to do — the next 26 h are already scheduled")
+        todo = [(s_, t) for _, s_, t in todo_d]
+        log("filling ahead:", ", ".join(f"{d} {s_}" for d, s_, _ in todo_d))
     elif a.next:
         ns = next_slot(now, cfg, done)
         if not ns:
@@ -179,6 +221,8 @@ def main():
             errors.append(f"slot {slot}: nothing producible")
             continue
         sid, odir = produced
+        if a.ahead:
+            date = when.date()
         script = load_json(SCRIPTS / f"{sid}.json")
         video = Path(odir) / "video.mp4"
         meta = load_json(Path(odir) / "meta.json", {})

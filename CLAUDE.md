@@ -9,15 +9,18 @@ Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs
 ## How the system runs
 ```
 GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on GitHub's own cron, no Claude session needed
-   cron ~35 min before each slot 10:00 · 13:30 · 17:30 · 20:00 Asia/Dhaka → 4 videos a day
-   → pipeline/daily.py --next: picks the next unfilled slot
+   cron 4× a day (~35 min before 10:00 · 13:30 · 17:30 · 20:00 Dhaka) + an hourly safety net → 4 videos a day
+   → "Plan" step (20 s): is any slot of the next ~26 h unfilled? if not → only first comments/playlists, exit
+   → pipeline/daily.py --ahead 4: produces + schedules EVERY unfilled slot of the next ~26 h, so YouTube/Facebook
+     publish at the exact slot time themselves even if later GitHub crons are late or dropped
        produce.py: ElevenLabs voice (eleven_v4_turbo ONLY, bn ONLY, owner's voice ids) → timeline (auto-fit 120–150 s)
                    → renderer (HTML/SVG, Playwright, 30 fps) → original score + SFX → mux → QA → thumbnails
        → YouTube (scheduled publishAt) + Facebook Page (scheduled_publish_time)
        → state.json updated + committed after every upload (idempotent; never double-posts)
 
 Claude scheduled task — "The Screen: weekly scripts" (Fri 07:33 Dhaka) → writes 30 new scripts → validate → push
-Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → health check only: reads the last runs,
+Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backup trigger (dispatches a run if tomorrow is
+   not fully scheduled) + health check: reads the last runs,
    fixes failures, re-runs a missed slot, reviews contact sheets, tops up the queue. Posting never depends on it.
 ```
 
