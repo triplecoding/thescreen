@@ -1,0 +1,36 @@
+name: Photo posts (Facebook)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["cards/schedule.json"]
+
+concurrency:
+  group: photo-posts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Dhaka
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - name: Schedule photo cards
+        run: |
+          git config user.name "The Screen Bot"
+          git config user.email "bot@thescreen.local"
+          python pipeline/photo_posts.py
