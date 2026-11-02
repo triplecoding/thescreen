@@ -138,6 +138,17 @@
       "playlist": true,
       "facebook": "2169254370372417",
       "scheduled_for": "2026-11-04T17:30:00+06:00"
+    },
+    {
+      "id": "013",
+      "date": "2026-11-04",
+      "slot": "20:00",
+      "duration": 139.23,
+      "title": "সাত দিন ধরে ‘শেষ ২টা’— নানুকে যেভাবে বোঝাল নাতি 📒 | Influence বাংলা",
+      "youtube": "yRCxFZDpF4Y",
+      "playlist": true,
+      "facebook": "1454545720154421",
+      "scheduled_for": "2026-11-04T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -151,7 +162,7 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T16:11:41.636897+06:00",
+    "at": "2026-11-02T16:17:09.065821+06:00",
     "errors": []
   },
   "queue_remaining": 24,
