@@ -45,8 +45,9 @@
     "The Psychology of Money": "PLApsrgMmIXhs"
   },
   "last_run": {
-    "at": "2026-11-02T13:24:48.820443+06:00",
-    "errors": []
+    "at": "2026-11-02T13:24:50.836536+06:00",
+    "errors": [],
+    "queue_remaining": 12
   },
-  "queue_remaining": 3
+  "queue_remaining": 12
 }
