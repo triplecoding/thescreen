@@ -94,6 +94,17 @@
       "playlist": true,
       "facebook": "2571172823356943",
       "scheduled_for": "2026-11-03T17:30:00+06:00"
+    },
+    {
+      "id": "009",
+      "date": "2026-11-03",
+      "slot": "20:00",
+      "duration": 145.24,
+      "title": "\"তোর জন্যই তো\"— বারো বছরের অভিযোগ থামাল একটা খাম ✉️ | Games People Play বাংলা",
+      "youtube": "_yoIg3SnsIk",
+      "playlist": true,
+      "facebook": "1351823661358934",
+      "scheduled_for": "2026-11-03T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -107,7 +118,7 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T14:23:22.883730+06:00",
+    "at": "2026-11-02T14:30:04.375747+06:00",
     "errors": []
   },
   "queue_remaining": 28,
