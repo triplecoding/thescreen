@@ -36,7 +36,9 @@
       "playlist": true,
       "facebook": "1443194160499198",
       "scheduled_for": "immediate",
-      "youtube_duplicate": "bpeYVII4R3I"
+      "youtube_duplicate": "bpeYVII4R3I",
+      "yt_comment": "Ugwxjk0ZSYkQBRD5hal4AaABAg",
+      "fb_comment": "1443194160499198_2119071568815619"
     },
     {
       "id": "004",
@@ -59,6 +61,17 @@
       "playlist": true,
       "facebook": "2171459740108389",
       "scheduled_for": "2026-11-02T20:00:00+06:00"
+    },
+    {
+      "id": "006",
+      "date": "2026-11-03",
+      "slot": "10:00",
+      "duration": 144.98,
+      "title": "ফ্রি এক কাপ চায়ে বাঁচল ১৪ বছরের দোকান ☕ | Influence বাংলা",
+      "youtube": "btwUnsLzhMA",
+      "playlist": true,
+      "facebook": "1749903749436300",
+      "scheduled_for": "2026-11-03T10:00:00+06:00"
     }
   ],
   "failed": [],
@@ -67,11 +80,14 @@
     "The Art of War": "PLdM5Kv756r_M",
     "The Psychology of Money": "PLZobVivd3FvM",
     "Games People Play": "PLYpqRqurL8gc",
-    "Thinking, Fast and Slow": "PLEGQPM39e2RQ"
+    "Thinking, Fast and Slow": "PLEGQPM39e2RQ",
+    "Influence: The Psychology of Persuasion": "PLZf68dtHdWh8"
   },
   "last_run": {
-    "at": "2026-11-02T13:46:41.280185+06:00",
+    "at": "2026-11-02T14:02:12.848341+06:00",
     "errors": []
   },
-  "queue_remaining": 3
+  "queue_remaining": 3,
+  "_run_started": "2026-11-02T13:55:16.305341+06:00",
+  "dry_runs": []
 }
