@@ -7,7 +7,7 @@ on:
     paths: ["cards/schedule.json"]
 
 concurrency:
-  group: photo-posts
+  group: publish-videos        # same lock as "Publish videos": never two photo-post jobs at once
   cancel-in-progress: false
 
 permissions:
