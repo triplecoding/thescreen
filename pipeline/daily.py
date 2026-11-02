@@ -30,8 +30,11 @@ def merge_state(local, remote):
         key = (rec.get("date"), rec.get("slot"))
         if key in seen:
             old = seen[key]
-            for kk, vv in rec.items():          # same slot: keep the first record, fill in missing fields
-                old.setdefault(kk, vv)
+            if old.get("id") == rec.get("id"):  # same post: this run's newer info wins (comments, playlist…)
+                old.update(rec)
+            else:                               # a different script in a filled slot: keep the first one
+                for kk, vv in rec.items():
+                    old.setdefault(kk, vv)
             continue
         seen[key] = dict(rec)
         posted.append(seen[key])
