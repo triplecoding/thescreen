@@ -160,6 +160,17 @@
       "playlist": true,
       "facebook": "1167824942857190",
       "scheduled_for": "2026-11-05T10:00:00+06:00"
+    },
+    {
+      "id": "015",
+      "date": "2026-11-05",
+      "slot": "13:30",
+      "duration": 140.1,
+      "title": "তিন মাস শুধু স্ক্রু গুনল— লোডশেডিংয়ের রাতে বুঝল কেন 🔧 | Mastery বাংলা",
+      "youtube": "38MVS1VicnQ",
+      "playlist": true,
+      "facebook": "2718126645271980",
+      "scheduled_for": "2026-11-05T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -170,10 +181,11 @@
     "Games People Play": "PLYpqRqurL8gc",
     "Thinking, Fast and Slow": "PLEGQPM39e2RQ",
     "Influence: The Psychology of Persuasion": "PLZf68dtHdWh8",
-    "Animal Farm": "PLVdr_fxg17H8"
+    "Animal Farm": "PLVdr_fxg17H8",
+    "Mastery": "PLbqUW4qBrso8"
   },
   "last_run": {
-    "at": "2026-11-02T16:30:25.320106+06:00",
+    "at": "2026-11-02T16:35:30.363261+06:00",
     "errors": []
   },
   "queue_remaining": 22,
