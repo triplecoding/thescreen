@@ -10,8 +10,8 @@
       "facebook": "1132860129288481",
       "scheduled_for": "2026-11-02T10:00:00+06:00",
       "playlist": true,
-      "yt_comment": "Ugw7qQD_9SJ2A1gNeRl4AaABAg",
-      "fb_comment": "1132860129288481_1812586913320410"
+      "yt_comment": "UgxwYY1BYK2mGGv3rOZ4AaABAg",
+      "fb_comment": "1132860129288481_1675944054325224"
     },
     {
       "id": "001",
@@ -23,8 +23,8 @@
       "facebook": "2230479227497883",
       "scheduled_for": "immediate",
       "playlist": true,
-      "yt_comment": "UgzvXGF4IeJ3jtnraSt4AaABAg",
-      "fb_comment": "2230479227497883_1117273337517639"
+      "yt_comment": "UgzarHQIo9Q7o9XkcaZ4AaABAg",
+      "fb_comment": "2230479227497883_1663946488425685"
     },
     {
       "id": "003",
@@ -32,9 +32,9 @@
       "slot": "13:30",
       "duration": 142.46,
       "title": "যে সাইকেলের জন্য লজ্জা পেত, সেটাই ছিল তার ভবিষ্যৎ 🚲 | The Psychology of Money বাংলা",
-      "youtube": "bpeYVII4R3I",
+      "youtube": "XKjq0VnWVrQ",
       "playlist": true,
-      "facebook": "1443194160499198",
+      "facebook": "1116425400980474",
       "scheduled_for": "immediate"
     }
   ],
@@ -42,12 +42,11 @@
   "playlists": {
     "The Laws of Human Nature": "PLa_DKXTCT90U",
     "The Art of War": "PLdM5Kv756r_M",
-    "The Psychology of Money": "PLApsrgMmIXhs"
+    "The Psychology of Money": "PLZobVivd3FvM"
   },
   "last_run": {
-    "at": "2026-11-02T13:24:50.836536+06:00",
-    "errors": [],
-    "queue_remaining": 12
+    "at": "2026-11-02T13:33:07.451188+06:00",
+    "errors": []
   },
   "queue_remaining": 12
 }
