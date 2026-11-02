@@ -1,0 +1,569 @@
+{
+ "id": "013",
+ "status": "ready",
+ "title_bn": "নানুর লাইভের খাতা",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 6",
+  "chapter_bn": "ছয় নম্বর নীতি",
+  "title": "Scarcity",
+  "title_bn": "যা কম, সেটাই দামি মনে হয়"
+ },
+ "cast": {
+  "nayeem": {
+   "name": "নাঈম",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#24415E",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "nanu": {
+   "name": "নানু",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2E2B8",
+   "color2": "#2F7D6D",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "khala": {
+   "name": "খালা",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#E8A33D",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "এক মাসে নানুর ঘরে এল *তিনটা* পার্সেল। ব্লেন্ডার, প্রেশার কুকার, আর মালিশের যন্ত্র।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক মাসে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পার্সেল",
+       "value": "৩",
+       "from": "০"
+      },
+      {
+       "label": "পেনশনের টাকা",
+       "value": "-৯,৬০০৳",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সবই কেনা ফেসবুক লাইভ থেকে। আর প্রতিবার, *একই কথা*—",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "লাইভ সেল 🔴",
+     "msgs": [
+      {
+       "who": "বিক্রেতা",
+       "t": "আর মাত্র ২টা বাকি! 🔥"
+      },
+      {
+       "who": "বিক্রেতা",
+       "t": "৫ মিনিট পর দাম বাড়বে!"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "excited",
+   "say": "নাঈম, দেখ দেখ! মাত্র *দুইটা* বাকি। এখনই না নিলে শেষ!",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point",
+      "hold": "phone"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nayeem",
+   "tone": "annoyed",
+   "say": "নানু, এগুলো সব *ভুয়া*! তুমি বোঝো না কেন?",
+   "scene": {
+    "arms": {
+     "nanu": "phone",
+     "nayeem": "talk"
+    },
+    "moods": {
+     "nayeem": "angry",
+     "nanu": "surprised"
+    },
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নাঈম বকল, বোঝাল, একদিন অ্যাপটাই মুছে দিল। নানু আবার *নামিয়ে* নিলেন।",
+   "card": {
+    "title": "এক মাসের চেষ্টা",
+    "items": [
+     {
+      "t": "বকাবকি",
+      "mark": "x"
+     },
+     {
+      "t": "লম্বা লেকচার",
+      "mark": "x"
+     },
+     {
+      "t": "অ্যাপ মুছে দেওয়া",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সে রাতে নানু অনেকক্ষণ চুপ করে বসে রইলেন।",
+   "pause": 0.8,
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সে রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "sad",
+   "say": "আমি বুড়ো হয়েছি রে, *বোকা* তো হইনি।",
+   "scene": {
+    "arms": {
+     "nanu": "face"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "নাঈম বুঝল, বকা খেলে মানুষ বদলায় না। লজ্জা পায়, আর *জেদ* বাড়ে।",
+   "scene": {
+    "moods": {
+     "nayeem": "thinking"
+    },
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "তারপর নাঈম একটা অদ্ভুত কাজ করল।",
+   "card": {
+    "text": "তারপর নাঈম একটা\n*অদ্ভুত* কাজ করল।"
+   }
+  },
+  {
+   "say": "প্রতি রাতে নানুর পাশে বসে, ওই একই লাইভ দেখতে লাগল। হাতে একটা *খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "প্রতি রাতে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "curious",
+   "say": "কিরে, তুইও কিনবি নাকি?",
+   "scene": {
+    "moods": {
+     "nanu": "surprised"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nayeem",
+   "tone": "playfully",
+   "say": "না নানু, শুধু *লিখে রাখছি*। সাত দিন পর দেখাব।",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাত দিন পর, নাঈম খাতাটা নানুর *হাতে* দিল।",
+   "scene": {
+    "chip": "সাত দিন পর",
+    "holds": {
+     "nanu": "book",
+     "nayeem": "none"
+    },
+    "arms": {
+     "nanu": "hold",
+     "nayeem": "point"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "লাইভের খাতা",
+     "lines": [
+      "শনিবার — শেষ ২টা",
+      "রবিবার — শেষ ২টা",
+      "সোমবার — শেষ ২টা",
+      "মঙ্গলবার — শেষ ২টা"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সাত দিন, একই ব্লেন্ডার। আর প্রতি রাতেই— *শেষ দুইটা*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "লাইভের খাতা",
+     "lines": [
+      "শনি থেকে শুক্র — শেষ ২টা",
+      "প্রতিদিন — ৫ মিনিট পর দাম বাড়বে",
+      "দাম বাড়েনি একদিনও"
+     ],
+     "sub": "৭ দিন · একই কথা"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানু খাতাটা দেখলেন। তারপর হঠাৎ, *হো হো* করে হেসে উঠলেন।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "nanu": "happy",
+     "nayeem": "happy"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "laughs",
+   "say": "সাত দিন ধরে দুইটা! ওদের ব্লেন্ডার তো দেখি *বাচ্চা দেয়*!",
+   "scene": {
+    "arms": {
+     "nanu": "talk"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈম কিছু প্রমাণ করেনি। নানু *নিজের চোখে* দেখে ফেলেছিলেন।",
+   "scene": {
+    "arms": {
+     "nanu": "hug",
+     "nayeem": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর, পাশের ফ্ল্যাটের খালা এলেন নানুর *আমের আচার* নিতে।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "khala",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "khala",
+   "tone": "excited",
+   "say": "খালাম্মা, এবার দশ বয়াম দিন। *সবাই* চাইছে!",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "warmly",
+   "say": "এবার আম ছিল কম, বয়াম হয়েছে মাত্র *বারোটা*। এটা সত্যি কথা, লাইভের কথা না!",
+   "scene": {
+    "arms": {
+     "nanu": "talk",
+     "khala": "down"
+    },
+    "moods": {
+     "khala": "surprised"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাসের বকা যা পারেনি, সাত দিনের *একটা খাতা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "khala": "happy",
+     "nanu": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— রবার্ট চালডিনির *ইনফ্লুয়েন্স*।"
+  },
+  {
+   "kind": "book",
+   "say": "ছয় নম্বর নীতি— যা *কম*, সেটাই দামি মনে হয়।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "শেষ দুইটা শুনলে মাথা ভাবে না, *ভয় পায়*। হারানোর ভয়েই আমরা কিনে ফেলি।",
+   "card": {
+    "title": "অভাবের ফাঁদ",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "clock",
+      "t": "বানানো অভাব",
+      "sub": "শেষ ২টা, ৫ মিনিট",
+      "bad": true
+     },
+     "right": {
+      "icon": "check",
+      "t": "সত্যিকারের অভাব",
+      "sub": "এ বছর মাত্র ১২ বয়াম"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, কেউ তাড়া দিলে *একটু থামো*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "তাড়া দিলে থামো",
+      "sub": "কাল পর্যন্ত থাকে কিনা দেখো",
+      "icon": "clock"
+     },
+     {
+      "t": "বকা নয়, দেখাও",
+      "sub": "প্রমাণ নিজের চোখে",
+      "icon": "eye"
+     },
+     {
+      "t": "নিজে বেচলে সত্যি বলো",
+      "sub": "অভাব বানিয়ো না",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, প্রিয়জনকে বকা নয়, *নিজে দেখতে* দাও।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, নিজে বেচলে, অভাবের কথা *সত্যি* বলো।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি জিনিসটা *চাইছি*, নাকি হারানোর *ভয়ে* কিনছি?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি জিনিসটা *চাইছি*,\nনাকি হারানোর *ভয়ে* কিনছি?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তাড়া দেয় বিক্রেতা… *সময় নেয় বুদ্ধিমান*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তাড়া দেয় বিক্রেতা…",
+    "line2": "সময় নেয়\nবুদ্ধিমান।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সাত দিন ধরে ‘শেষ ২টা’— নানুকে যেভাবে বোঝাল নাতি 📒 | Influence বাংলা",
+  "description": "এক মাসে তিনটা পার্সেল, প্রতিবার লাইভে একই কথা— ‘আর মাত্র ২টা বাকি!’ নাঈম বকল, অ্যাপ মুছল, কিছুই হলো না। তারপর সে হাতে নিল একটা খাতা…\nরবার্ট চালডিনির Influence — Scarcity — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "influence bangla",
+   "robert cialdini bangla",
+   "scarcity",
+   "ইনফ্লুয়েন্স বই",
+   "নানু নাতি",
+   "অনলাইন কেনাকাটা",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "এক মাসের বকা যা পারেনি, সাত দিনের একটা খাতা তা পারল। 📒\n\n‘শেষ ২টা বাকি’ শুনে তুমি কখনো কিছু কিনে পরে আফসোস করেছ? 👇\n\n📖 Influence — Robert Cialdini\n#বাংলাগল্প #নানু"
+ },
+ "thumbnail": {
+  "text": "শেষ ২টা বাকি!",
+  "sub": "সাত দিন ধরে…"
+ }
+}

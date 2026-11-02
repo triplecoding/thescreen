@@ -1,0 +1,530 @@
+{
+ "id": "007",
+ "status": "ready",
+ "title_bn": "ঝড়ের দিনের পাসবই",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 5",
+  "chapter_bn": "পাঁচ নম্বর অধ্যায়",
+  "title": "Getting Wealthy vs. Staying Wealthy",
+  "title_bn": "টাকা আনা এক জিনিস, ধরে রাখা আরেক"
+ },
+ "cast": {
+  "nasrin": {
+   "name": "নাসরিন",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F5D7D",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "faisal": {
+   "name": "ফয়সাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#DCE3E0",
+   "hair": "side",
+   "beard": "stubble",
+   "glasses": true,
+   "voice": "man"
+  },
+  "titli": {
+   "name": "তিতলি",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#E86A7A",
+   "color2": "#F2E2B8",
+   "hair": "kid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "দুই বছরে ফয়সালের বেতন *দ্বিগুণ*। কিন্তু মাসের শেষে, অ্যাকাউন্টে প্রায় শূন্য।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "মিরপুর, দুই বছর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "cross"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "দ্বিগুণ",
+       "from": "১x"
+      },
+      {
+       "label": "মাস শেষে বাকি",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নতুন ফ্ল্যাটের কিস্তি, গাড়ির লোন, প্রতি শুক্রবার *রেস্টুরেন্ট*।",
+   "scene": {
+    "widget": null,
+    "cam": "pan"
+   }
+  },
+  {
+   "voice": "faisal",
+   "tone": "excited",
+   "say": "নাসরিন, দেখো এই গাড়িটা। কলিগরা সবাই কিনছে, আমরা কেন *পিছিয়ে থাকব*?",
+   "scene": {
+    "arms": {
+     "faisal": "talk"
+    },
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "tone": "serious",
+   "say": "কিনবা। কিন্তু প্রতি মাসে বেতনের *বিশ ভাগ* আলাদা থাকবে। ওটায় হাত দেবা না।",
+   "scene": {
+    "arms": {
+     "nasrin": "talk"
+    },
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "faisal",
+   "tone": "laughs",
+   "say": "তুমি না, আমার আম্মার মতো কথা বলো। *ভয় পেয়ে* বাঁচলে জীবন উপভোগ করবা কবে?",
+   "scene": {
+    "moods": {
+     "faisal": "smile"
+    },
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসরিন তর্ক করল না। চুপচাপ একটা পাসবই খুলল, নাম দিল *ঝড়ের দিন*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "almirah",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "passbook",
+     "title": "ঝড়ের দিন",
+     "lines": [
+      "মাসে বেতনের ২০%",
+      "হাত দেওয়া নিষেধ"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নিজের শাড়ির শখ বাদ দিল, পার্লার বাদ দিল। প্রতি মাসে, *একদিনও* বাদ না দিয়ে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "আঠারো মাস পর, এক মঙ্গলবার। ফয়সাল অফিস থেকে ফিরল *দুপুরেই*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "আঠারো মাস পর",
+    "props": [
+     "door_closed",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "faisal",
+   "tone": "sad",
+   "say": "অফিসটা বন্ধ হয়ে গেছে। পুরো ডিপার্টমেন্ট… *সবাইকে বাদ*।",
+   "pause": 0.6,
+   "scene": {
+    "arms": {
+     "faisal": "face"
+    },
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "সে রাতে ফয়সাল ঘুমাল না। বারান্দায় বসে কিস্তির হিসাব করল, *বারবার*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "widget": {
+     "kind": "clock",
+     "time": "2:00",
+     "label": "রাত ২টা"
+    },
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তখন ছোট্ট তিতলি এসে দাঁড়াল।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "titli",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "titli",
+   "tone": "softly",
+   "say": "আব্বু, আমরা কি এখন *গরিব* হয়ে যাব?",
+   "scene": {
+    "cam": {
+     "focus": "titli",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "ফয়সাল উত্তর খুঁজে পেল না। তখন নাসরিন এসে পাশে বসল। হাতে সেই *পাসবই*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "titli",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.82,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "tone": "warmly",
+   "say": "না মা। আমাদের *আট মাসের* খরচ আছে। আব্বু শান্ত মাথায় নতুন চাকরি খুঁজবে।",
+   "scene": {
+    "arms": {
+     "nasrin": "talk"
+    },
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "ফয়সাল পাসবইয়ের পাতা উল্টাল। প্রতিটা লাইনে নাসরিনের *আঠারোটা* ছোট্ট ত্যাগ।",
+   "pause": 0.9,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "passbook",
+     "title": "ঝড়ের দিন",
+     "lines": [
+      "মোট: আট মাসের খরচ",
+      "আঠারো মাস · একদিনও বাদ নেই"
+     ]
+    },
+    "moods": {
+     "faisal": "crying"
+    },
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.55
+    }
+   }
+  },
+  {
+   "voice": "faisal",
+   "tone": "tearful",
+   "say": "আর আমি ভাবতাম তুমি *ভয় পাও*। তুমি তো আসলে আমাদের পাহারা দিচ্ছিলা।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "faisal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চার মাস পর ফয়সাল নতুন চাকরি পেল। প্রথম বেতনের দিন, প্রথম কাজ— পাসবইয়ে *জমা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চার মাস পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "faisal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বড় বেতন যা দিতে পারেনি, ছোট্ট একটা পাসবই তা দিল— *নিশ্চিন্ত ঘুম*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— মরগান হাউজেলের *দ্য সাইকোলজি অফ মানি*।"
+  },
+  {
+   "kind": "book",
+   "say": "পাঁচ নম্বর অধ্যায়— টাকা আনা এক জিনিস, *ধরে রাখা* আরেক।",
+   "pause": 0.3,
+   "reveal": true
+  },
+  {
+   "kind": "concept",
+   "say": "টাকা আনতে লাগে সাহস। ধরে রাখতে লাগে একটু *ভয়*, আর অনেকটা বিনয়।",
+   "card": {
+    "title": "আয় বনাম টিকে থাকা",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "star",
+      "t": "টাকা আনা",
+      "sub": "সাহস, ঝুঁকি"
+     },
+     "right": {
+      "icon": "shield",
+      "t": "ধরে রাখা",
+      "sub": "সঞ্চয়, বিনয়"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, বেতন বাড়লে খরচ *সাথে সাথে* বাড়িও না।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "বেতন বাড়লে খরচ নয়",
+      "sub": "আগে সঞ্চয়",
+      "icon": "bank"
+     },
+     {
+      "t": "ঝড়ের দিনের খাম রাখো",
+      "sub": "অন্তত কয়েক মাসের খরচ",
+      "icon": "shield"
+     },
+     {
+      "t": "ঘরের সাবধানী মানুষটাকে চেনো",
+      "sub": "সে ভয় নয়, পাহারা",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, ঝড় আসার আগেই *ছাতা* কেনো।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, ঘরের সাবধানী মানুষটার *মূল্য* দাও।",
+   "pause": 0.4,
+   "show": 3
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *কামাচ্ছি*, নাকি কিছু *রাখছিও*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি শুধু *কামাচ্ছি*,\nনাকি কিছু *রাখছিও*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "টাকা আসে সাহসে… *টিকে থাকে সাবধানে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "টাকা আসে সাহসে…",
+    "line2": "টিকে থাকে\nসাবধানে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চাকরি হারানোর রাতে স্ত্রী বের করলেন একটা পাসবই 📒 | The Psychology of Money বাংলা",
+  "description": "বেতন দ্বিগুণ, কিন্তু মাস শেষে অ্যাকাউন্ট শূন্য। নাসরিন চুপচাপ একটা পাসবই খুলেছিল, নাম দিয়েছিল 'ঝড়ের দিন'। তারপর একদিন সত্যিই ঝড় এলো…\nমরগান হাউজেলের The Psychology of Money — Getting Wealthy vs. Staying Wealthy — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "psychology of money bangla",
+   "morgan housel bangla",
+   "সঞ্চয়",
+   "স্বামী স্ত্রী",
+   "টাকার গল্প",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা",
+   "emergency fund"
+  ]
+ },
+ "facebook": {
+  "caption": "বড় বেতন যা দিতে পারেনি, ছোট্ট একটা পাসবই তা দিল— নিশ্চিন্ত ঘুম। 📒\n\nআপনার ঘরে 'ঝড়ের দিনের' টাকাটা কে জমায়? 👇\n\n📖 The Psychology of Money — Morgan Housel\n#সঞ্চয় #পরিবার"
+ },
+ "thumbnail": {
+  "text": "ঝড়ের দিনের পাসবই",
+  "sub": "চাকরি চলে গেল, তারপর…"
+ }
+}

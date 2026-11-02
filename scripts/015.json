@@ -1,0 +1,576 @@
+{
+ "id": "015",
+ "status": "ready",
+ "title_bn": "চার হাজার স্ক্রু",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 2",
+  "chapter_bn": "দুই নম্বর ধাপ",
+  "title": "Submit to Reality: The Ideal Apprenticeship",
+  "title_bn": "শেখার আগে, ধৈর্যের শিক্ষানবিশি"
+ },
+ "cast": {
+  "sabbir": {
+   "name": "সাব্বির",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#2F7D6D",
+   "hair": "curly",
+   "voice": "young_man"
+  },
+  "ustad": {
+   "name": "মনির ওস্তাদ",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#DCE3E0",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "cap": true,
+   "voice": "old_man"
+  },
+  "customer": {
+   "name": "খালা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2E2B8",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিন মাসে সাব্বির একটাও ফোন খোলেনি। শুধু গুনেছে— *চার হাজার স্ক্রু*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পুরান ঢাকা · তিন মাস",
+    "props": [
+     "sign:মনির রেডিও অ্যান্ড মোবাইল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "স্ক্রু গোনা",
+       "value": "৪,০০০",
+       "from": "০"
+      },
+      {
+       "label": "খোলা ফোন",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম দিনেই মনির ওস্তাদ ওর হাতে দিলেন এক বাক্স *মিশানো স্ক্রু*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "ustad",
+   "tone": "flatly",
+   "say": "সাইজ ধরে আলাদা কর। কাল আবার মিশিয়ে দেব, আবার করবি।",
+   "scene": {
+    "arms": {
+     "ustad": "point"
+    },
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "tone": "frustrated",
+   "say": "ওস্তাদ, আমি ফোন সারাতে এসেছি। *স্ক্রু গুনতে* না!",
+   "scene": {
+    "arms": {
+     "sabbir": "talk",
+     "ustad": "down"
+    },
+    "moods": {
+     "sabbir": "angry"
+    },
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "একদিন সাব্বির লুকিয়ে এক কাস্টমারের ফোন খুলল। ভেতরের *ফিতাটা* ছিঁড়ে গেল।",
+   "card": {
+    "title": "শর্টকাটের চেষ্টা",
+    "items": [
+     {
+      "t": "রাত জেগে ইউটিউব",
+      "mark": "x"
+     },
+     {
+      "t": "লুকিয়ে ফোন খোলা",
+      "mark": "x"
+     },
+     {
+      "t": "ক্ষতিপূরণ— ওস্তাদের পকেট থেকে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ওস্তাদ নিজের পকেট থেকে টাকা দিলেন। সাব্বিরকে *একটা কথাও* বললেন না।",
+   "pause": 0.7,
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যায়",
+    "props": [
+     "sign:মনির রেডিও অ্যান্ড মোবাইল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "সে রাতে সাব্বির ব্যাগ গোছাল। ঠিক করল, কাল আর *আসবে না*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "sabbir",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "light": "night",
+    "chip": "সে রাতে",
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন সন্ধ্যা। ব্যাগটা দিতে এসেই *বিদ্যুৎ চলে গেল*।",
+   "scene": {
+    "chip": "পরদিন সন্ধ্যা",
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": {
+     "kind": "clock",
+     "time": "৮:৪০",
+     "label": "লোডশেডিং"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঠিক তখন এক খালা দৌড়ে এলেন। হাতে একটা খোলা ফোন, স্ক্রুগুলো *আঁচলে বাঁধা*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.22,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "customer",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "customer",
+   "tone": "upset",
+   "say": "বাবা, দশটায় ছেলে বিদেশ থেকে ফোন দেবে। এটা একটু *জোড়া লাগিয়ে* দাও!",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ustad",
+   "tone": "serious",
+   "say": "অন্ধকারে আমার চোখ চলে না রে। সাব্বির, *তুই* ধর।",
+   "scene": {
+    "arms": {
+     "ustad": "point"
+    },
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সাব্বির ফোনটা হাতে নিল। আর তখন একটা অদ্ভুত ব্যাপার ঘটল।",
+   "card": {
+    "text": "আর তখন একটা\n*অদ্ভুত* ব্যাপার ঘটল।"
+   }
+  },
+  {
+   "say": "মোমের আলোয় কিছুই দেখা যায় না। কিন্তু আঙুল বলে দিচ্ছিল— এটা *দুই মিলি*, এটা আড়াই।",
+   "scene": {
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "phone"
+     },
+     {
+      "id": "customer",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "চার হাজার স্ক্রু তার আঙুলে *মুখস্থ* হয়ে গিয়েছিল।",
+   "scene": {
+    "moods": {
+     "sabbir": "surprised"
+    },
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.55
+    },
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "সাত মিনিট। ফোন জ্বলে উঠল। ঠিক দশটায়, খালার কানে *ছেলের গলা*।",
+   "scene": {
+    "fx": null,
+    "widget": {
+     "kind": "clock",
+     "time": "১০:০০",
+     "label": "রাত দশটা"
+    },
+    "moods": {
+     "customer": "crying",
+     "sabbir": "happy"
+    },
+    "arms": {
+     "customer": "call",
+     "sabbir": "down"
+    },
+    "holds": {
+     "customer": "phone",
+     "sabbir": "none"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "customer",
+   "tone": "tearful",
+   "say": "বেঁচে থাকো বাবা। তোমার হাতে *বরকত* আছে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ustad",
+   "tone": "warmly",
+   "say": "এবার বুঝলি, তিন মাস *স্ক্রু* কেন গুনতে দিয়েছিলাম?",
+   "scene": {
+    "moods": {
+     "ustad": "smile"
+    },
+    "arms": {
+     "ustad": "talk"
+    },
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "সাব্বির কিছু বলতে পারল না। ব্যাগটা আবার টেবিলের নিচে *রেখে দিল*।",
+   "pause": 0.8,
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "sabbir": "crying"
+    },
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক বছর পর, দোকানে নতুন এক ছেলে। সাব্বির তার হাতে দিল এক বাক্স *মিশানো স্ক্রু*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "sign:মনির রেডিও অ্যান্ড মোবাইল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.22,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ইউটিউবের একশো ভিডিও যা শেখাতে পারেনি, *চার হাজার স্ক্রু* তা শেখাল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *মাস্টারি*।"
+  },
+  {
+   "kind": "book",
+   "say": "দুই নম্বর ধাপ— শেখার আগে, *ধৈর্যের* শিক্ষানবিশি।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "আমরা দেখি শুধু ওপরের দক্ষতা। নিচে থাকে হাজার ঘণ্টার *ছোট, বিরক্তিকর* কাজ।",
+   "card": {
+    "title": "দক্ষতার বরফখণ্ড",
+    "widget": {
+     "type": "iceberg",
+     "top": [
+      {
+       "icon": "phone",
+       "t": "ফোন সারানো"
+      }
+     ],
+     "bottom": [
+      {
+       "icon": "hand",
+       "t": "স্ক্রু চেনা"
+      },
+      {
+       "icon": "clock",
+       "t": "ধৈর্য"
+      },
+      {
+       "icon": "eye",
+       "t": "দেখে শেখা"
+      }
+     ],
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, ছোট কাজটা *মন দিয়ে* করো।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "ছোট কাজ মন দিয়ে",
+      "sub": "ভিত্তি এখানেই তৈরি",
+      "icon": "hand"
+     },
+     {
+      "t": "শর্টকাট খুঁজো না",
+      "sub": "আঙুলে মুখস্থ হতে দাও",
+      "icon": "clock"
+     },
+     {
+      "t": "ওস্তাদ হলে কারণটাও বলো",
+      "sub": "শুধু খাটিয়ো না",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, শর্টকাট নয়, *অভ্যাস* গড়ো।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, তুমি ওস্তাদ হলে, *কারণটাও* বলো।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *দ্রুত* শিখতে চাইছি, নাকি *গভীরে*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *দ্রুত* শিখতে চাইছি,\nনাকি *গভীরে*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তাড়াহুড়ো শেখায় কৌশল… *ধৈর্য শেখায় হাত*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তাড়াহুড়ো শেখায় কৌশল…",
+    "line2": "ধৈর্য শেখায়\nহাত।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন মাস শুধু স্ক্রু গুনল— লোডশেডিংয়ের রাতে বুঝল কেন 🔧 | Mastery বাংলা",
+  "description": "ফোন সারাতে এসে সাব্বির তিন মাস শুধু স্ক্রু গুনল। রাগে ব্যাগ গুছিয়ে ফেলল। তারপর এক লোডশেডিংয়ের রাতে, মোমের আলোয়…\nরবার্ট গ্রিনের Mastery — The Ideal Apprenticeship — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "mastery bangla",
+   "robert greene bangla",
+   "মাস্টারি বই",
+   "ওস্তাদ শাগরেদ",
+   "ধৈর্য",
+   "দক্ষতা",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "ইউটিউবের একশো ভিডিও যা শেখাতে পারেনি, চার হাজার স্ক্রু তা শেখাল। 🔧\n\nকোন ‘বিরক্তিকর’ কাজটা পরে তোমার সবচেয়ে বড় শক্তি হয়েছে? 👇\n\n📖 Mastery — Robert Greene\n#ওস্তাদ #ধৈর্য"
+ },
+ "thumbnail": {
+  "text": "৪০০০ স্ক্রু",
+  "sub": "তিন মাস শুধু গোনা"
+ }
+}

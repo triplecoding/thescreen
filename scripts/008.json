@@ -1,0 +1,504 @@
+{
+ "id": "008",
+ "status": "ready",
+ "title_bn": "নোটিশ বোর্ডের পুরনো কাগজ",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 1",
+  "chapter_bn": "প্রথম ভাবনা",
+  "title": "All are equal, but some become more equal",
+  "title_bn": "সবাই সমান, কেউ কেউ একটু বেশি"
+ },
+ "cast": {
+  "tanim": {
+   "name": "তানিম",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#3D6B5A",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "habib": {
+   "name": "হাবিব সাহেব",
+   "type": "man",
+   "skin": "light",
+   "outfit": "panjabi",
+   "color": "#F2E2B8",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  },
+  "karim": {
+   "name": "করিম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#4A5A6A",
+   "color2": "#2A2F36",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "চল্লিশ ফ্ল্যাটের বিল্ডিং। এক বছর আগে নতুন সেক্রেটারি এসে বলেছিলেন— *সবাই সমান*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "মিরপুর, এক বছর আগে",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "tanim",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বিল্ডিংয়ের নিয়ম",
+     "lines": [
+      "জেনারেটর— সব ফ্ল্যাটে সমান",
+      "পার্কিং— সবার একটা",
+      "হিসাব— প্রতি মাসে সবার সামনে"
+     ],
+     "sub": "স্বাক্ষর: হাবিব"
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "habib",
+   "tone": "warmly",
+   "say": "আমি সেক্রেটারি না, তোমাদের *ভাই*। এই কাগজটা আমার কথা।",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক বছরে জেনারেটর চলে শুধু সাততলায়। ওনার পার্কিং *দুইটা*। হিসাবের মিটিং *বন্ধ*।",
+   "card": {
+    "title": "এক বছরে যা বদলাল",
+    "items": [
+     {
+      "t": "জেনারেটর শুধু সাততলায়",
+      "mark": "x"
+     },
+     {
+      "t": "একজনের দুই পার্কিং",
+      "mark": "x"
+     },
+     {
+      "t": "হিসাবের মিটিং বন্ধ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দারোয়ান করিম চাচা গেটে বসে সব দেখেন, কিন্তু *মুখ খোলেন না*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "গেট",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "karim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "tanim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tanim",
+   "tone": "curious",
+   "say": "চাচা, আপনি তো সব জানেন। কিছু বলেন না কেন?",
+   "scene": {
+    "cam": {
+     "focus": "tanim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "tone": "sighs",
+   "say": "বাবা, চাকরিটা ওনার হাতে। আর সবাই তো বলে, *উনি অনেক করেন*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "তানিম পোস্টার লিখতে বসে থেমে গেল। ঝগড়ায় সবাই দুই ভাগ হবে, *বদলাবে না* কিছুই।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tanim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "tanim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পুরনো ফোনে খুঁজে পেল এক বছর আগের একটা ছবি। হাবিব সাহেবের *নিজের স্বাক্ষর* করা সেই কাগজ।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বিল্ডিংয়ের নিয়ম",
+     "lines": [
+      "জেনারেটর— সব ফ্ল্যাটে সমান",
+      "পার্কিং— সবার একটা",
+      "হিসাব— প্রতি মাসে সবার সামনে"
+     ],
+     "sub": "স্বাক্ষর: হাবিব"
+    },
+    "moods": {
+     "tanim": "surprised"
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "তানিম কোনো অভিযোগ লিখল না। শুধু কাগজটা প্রিন্ট করে *নোটিশ বোর্ডে* লাগাল।",
+   "card": {
+    "text": "কোনো অভিযোগ নয়।\nশুধু *পুরনো কাগজটা*।"
+   }
+  },
+  {
+   "say": "পরদিন সিঁড়িতে ভিড়। সবাই *পড়ছে*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "karim",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tanim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "habib",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "habib",
+   "tone": "annoyed",
+   "say": "এটা কে লাগিয়েছে? বিল্ডিংয়ের পরিবেশ *নষ্ট* করছ তোমরা!",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanim",
+   "tone": "gently",
+   "say": "চাচা, আমি লাগিয়েছি। এটা তো *আপনার কথা*। আমরা শুধু মনে রেখেছি।",
+   "scene": {
+    "arms": {
+     "habib": "down",
+     "tanim": "talk"
+    },
+    "cam": {
+     "focus": "tanim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "হাবিব সাহেব কাগজটার দিকে তাকালেন। নিজের স্বাক্ষর। অনেকক্ষণ *চুপ* করে রইলেন।",
+   "pause": 1.0,
+   "scene": {
+    "moods": {
+     "habib": "sad"
+    },
+    "arms": {
+     "tanim": "down"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.55
+    }
+   }
+  },
+  {
+   "say": "তখন করিম চাচা, এই প্রথম, আস্তে বললেন—",
+   "scene": {
+    "moods": {
+     "karim": "worried"
+    },
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "tone": "softly",
+   "say": "স্যার, আপনি প্রথম দিন আমারে চা খাওয়াইছিলেন। সেই দিনের *আপনারে* আমরা মিস করি।",
+   "scene": {
+    "arms": {
+     "karim": "talk"
+    },
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার, এক বছর পর প্রথম মিটিং। হাবিব সাহেব নিজেই *খাতা* খুললেন।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শুক্রবার, মিটিং",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "karim",
+      "x": 0.58,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "tanim",
+      "x": 0.82,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "habib",
+   "tone": "sighs",
+   "say": "জেনারেটর আবার সব ফ্ল্যাটে। আমার দ্বিতীয় পার্কিংটা… *করিম ভাইয়ের সাইকেলের*।",
+   "scene": {
+    "arms": {
+     "habib": "talk"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পোস্টার আর ঝগড়া যা পারত না, নোটিশ বোর্ডের *পুরনো একটা কাগজ* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "habib": "smile"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— জর্জ অরওয়েলের *অ্যানিম্যাল ফার্ম*।"
+  },
+  {
+   "kind": "book",
+   "say": "বইয়ের ভাবনা— সবাই সমান, কিন্তু কেউ কেউ *একটু বেশি*।",
+   "pause": 0.3,
+   "reveal": true
+  },
+  {
+   "kind": "concept",
+   "say": "ক্ষমতা মানুষকে একদিনে বদলায় না। নিয়ম বদলায় *একটু একটু করে*, যখন সবাই চুপ থাকে।",
+   "card": {
+    "title": "নিয়ম যেভাবে ক্ষয়ে যায়",
+    "widget": {
+     "type": "flow",
+     "nodes": [
+      {
+       "icon": "book",
+       "t": "সমান নিয়ম"
+      },
+      {
+       "icon": "eye",
+       "t": "সবাই চুপ"
+      },
+      {
+       "icon": "x",
+       "t": "একটু একটু বদল"
+      }
+     ],
+     "show": 3
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, প্রথম দিনের কথাগুলো *লিখে রাখো*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "প্রথম কথাগুলো লিখে রাখো",
+      "sub": "স্মৃতি নয়, কাগজ",
+      "icon": "book"
+     },
+     {
+      "t": "চুপ থাকাও একটা ভোট",
+      "sub": "ছোট বদলেই কথা বলো",
+      "icon": "chat"
+     },
+     {
+      "t": "অপমান নয়, মনে করাও",
+      "sub": "মানুষকে ফেরার পথ দাও",
+      "icon": "door"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, ছোট বদলেই কথা বলো। *চুপ থাকাটাও* একটা সম্মতি।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, অপমান কোরো না, *মনে করিয়ে দাও*।",
+   "pause": 0.4,
+   "show": 3
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *চুপ থেকে* বাঁচছি, নাকি *মনে করিয়ে* দিচ্ছি?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *চুপ থেকে* বাঁচছি,\nনাকি *মনে করিয়ে* দিচ্ছি?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "নিয়ম ভাঙে আস্তে আস্তে… *ফেরেও, একজন মনে করালে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "নিয়ম ভাঙে আস্তে আস্তে…",
+    "line2": "ফেরেও,\nএকজন মনে করালে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সেক্রেটারির নিজের স্বাক্ষরেই বদলে গেল পুরো বিল্ডিং 📋 | Animal Farm বাংলা",
+  "description": "নতুন সেক্রেটারি বলেছিলেন, সবাই সমান। এক বছরে জেনারেটর চলে শুধু তাঁর ফ্লোরে, পার্কিং তাঁর দুইটা। তানিম ঝগড়া করল না— শুধু একটা পুরনো কাগজ নোটিশ বোর্ডে লাগাল…\nজর্জ অরওয়েলের Animal Farm — All are equal, but some become more equal — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "animal farm bangla",
+   "george orwell bangla",
+   "বিল্ডিং কমিটি",
+   "প্রতিবেশী",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা",
+   "ন্যায্যতা"
+  ]
+ },
+ "facebook": {
+  "caption": "পোস্টার আর ঝগড়া যা পারত না, নোটিশ বোর্ডের পুরনো একটা কাগজ তা পারল। 📋\n\nআপনার বিল্ডিং বা অফিসে কোন নিয়ম চুপচাপ বদলে গেছে? 👇\n\n📖 Animal Farm — George Orwell\n#প্রতিবেশী #জীবনেরগল্প"
+ },
+ "thumbnail": {
+  "text": "নিজের স্বাক্ষর",
+  "sub": "সেক্রেটারি চুপ"
+ }
+}

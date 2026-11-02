@@ -40,6 +40,86 @@
       "relation": "neighbours",
       "set": "stairs",
       "hook": "comes home at 3 am every night"
+    },
+    {
+      "id": "006",
+      "book": "Influence: The Psychology of Persuasion",
+      "item": "Reciprocity",
+      "relation": "tea-stall owner / rickshaw puller (neighbours), father-son",
+      "set": "street",
+      "hook": "14-year tea stall down to 40 cups a day after a new café; free first cup on winter dawns"
+    },
+    {
+      "id": "007",
+      "book": "The Psychology of Money",
+      "item": "Getting Wealthy vs. Staying Wealthy",
+      "relation": "spouses (wife protagonist)",
+      "set": "home",
+      "hook": "salary doubled, month-end balance zero; wife's 'ঝড়ের দিন' passbook saves the family after layoff"
+    },
+    {
+      "id": "008",
+      "book": "Animal Farm",
+      "item": "All are equal, but some become more equal",
+      "relation": "housing-society neighbours / secretary / guard",
+      "set": "stairs",
+      "hook": "secretary promised 'everyone equal'; a year later the generator runs only on his floor; old signed rules pinned on the notice board"
+    },
+    {
+      "id": "009",
+      "book": "Games People Play",
+      "item": "If It Weren't For You",
+      "relation": "siblings (elder sister protagonist)",
+      "set": "balcony",
+      "hook": "12 years of 'তোর জন্যই তো'; brother leaves an open-university admission form"
+    },
+    {
+      "id": "010",
+      "book": "Thinking, Fast and Slow",
+      "item": "Anchoring",
+      "relation": "father-daughter / shopkeeper-customer",
+      "set": "shop",
+      "hook": "11 customers a day, 11 bargains, almost zero profit; an honest value card on the counter"
+    },
+    {
+      "id": "011",
+      "book": "The Art of War",
+      "item": "Know yourself and know your opponent",
+      "relation": "teacher-student / mother-son",
+      "set": "home",
+      "hook": "200 sums every night, still 38 in the test exam; three old answer scripts"
+    },
+    {
+      "id": "012",
+      "book": "The Laws of Human Nature",
+      "item": "The Law of Envy — Beware the Fragile Ego",
+      "relation": "friends (two women, tiffin business)",
+      "set": "kitchen",
+      "hook": "80 orders vs 12; admits envy at 4:30 am and learns the hidden cost"
+    },
+    {
+      "id": "013",
+      "book": "Influence: The Psychology of Persuasion",
+      "item": "Scarcity",
+      "relation": "grandmother-grandson",
+      "set": "home",
+      "hook": "3 parcels in a month from Facebook lives; 'only 2 left' every night for 7 nights"
+    },
+    {
+      "id": "014",
+      "book": "The Psychology of Money",
+      "item": "Room for Error",
+      "relation": "older sister-younger brother",
+      "set": "hospital",
+      "hook": "3 years of 500 tk a month in an envelope marked 'for nothing'"
+    },
+    {
+      "id": "015",
+      "book": "Mastery",
+      "item": "Submit to Reality: The Ideal Apprenticeship",
+      "relation": "ustad-apprentice",
+      "set": "shop",
+      "hook": "3 months, 4,000 screws counted, 0 phones opened"
     }
   ]
 }

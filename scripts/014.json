@@ -1,0 +1,583 @@
+{
+ "id": "014",
+ "status": "ready",
+ "title_bn": "কোনো কিছুর জন্য না",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 11",
+  "chapter_bn": "এগারো নম্বর অধ্যায়",
+  "title": "Room for Error",
+  "title_bn": "ভুলের জন্য জায়গা রাখো"
+ },
+ "cast": {
+  "shirin": {
+   "name": "শিরিন",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#7A3B5E",
+   "color2": "#F2E2B8",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "rasel": {
+   "name": "রাসেল",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "nurse": {
+   "name": "নার্স",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "scrub",
+   "color": "#5FA8A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিন বছর, প্রতি মাসে *পাঁচশো টাকা*। একটা খামে, যার গায়ে লেখা— কোনো কিছুর জন্য না।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "গাজীপুর · তিন বছর",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাস",
+       "value": "৩৬",
+       "from": "১"
+      },
+      {
+       "label": "প্রতি মাসে",
+       "value": "৫০০৳"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শিরিন গার্মেন্টসে কাজ করে। ছোট ভাই রাসেলের পড়া, ঘরভাড়া— সব ওর *একার* ঘাড়ে।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "কোনো কিছুর জন্য না",
+     "lines": [
+      "ছোঁয়া নিষেধ"
+     ],
+     "sub": "শিরিন"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rasel",
+   "tone": "annoyed",
+   "say": "আপু, ক্লাসের সবার নতুন ফোন। খামটা ভাঙো না, *একবার*!",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rasel",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "gently",
+   "say": "এটা ফোনের টাকা না রে। এটা কোনো কিছুর জন্য না।",
+   "scene": {
+    "arms": {
+     "rasel": "cross",
+     "shirin": "talk"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "tone": "frustrated",
+   "say": "কোনো কিছুর জন্য না? তাহলে জমাও কেন? এটা তো *কিপটামি*!",
+   "scene": {
+    "arms": {
+     "rasel": "point",
+     "shirin": "hold"
+    },
+    "moods": {
+     "shirin": "sad"
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রাসেল দরজা টেনে বেরিয়ে গেল। তিন সপ্তাহ, ভাইবোনে *একটা কথাও* হলো না।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "chip": "তিন সপ্তাহ",
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "তারপর এক রাতে, মাসের পঁচিশ তারিখ। রাসেলের *ভীষণ জ্বর*।",
+   "scene": {
+    "set": "hospital",
+    "light": "night",
+    "chip": "মাসের ২৫ তারিখ, রাত",
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "shirin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "clock",
+     "time": "১১:৪০",
+     "label": "রাত পৌনে বারোটা"
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ডেঙ্গু। হাসপাতালে ভর্তি। বেতন আসতে তখনো *পাঁচ দিন* বাকি।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "nurse",
+   "tone": "serious",
+   "say": "আপা, ভর্তি আর টেস্ট মিলিয়ে আজ রাতেই *আঠারো হাজার* জমা দিতে হবে।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "shirin",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "nurse",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "nurse",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শিরিন ফোন করল খালাকে, বাড়িওয়ালাকে, সুপারভাইজারকে। সবার একই উত্তর— *এই মাসে হবে না*।",
+   "card": {
+    "title": "রাত বারোটার ফোন",
+    "items": [
+     {
+      "t": "খালা",
+      "mark": "x"
+     },
+     {
+      "t": "বাড়িওয়ালা",
+      "mark": "x"
+     },
+     {
+      "t": "সুপারভাইজার",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তখন শিরিনের মনে পড়ল, ব্যাগের ভেতরের সেই *খামটার* কথা।",
+   "pause": 0.6,
+   "scene": {
+    "set": "hospital",
+    "light": "night",
+    "chip": "রাত বারোটা",
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "তিন বছরের পাঁচশো টাকা। গুনে দেখল— *আঠারো হাজার ছয়শো*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দরকার",
+       "value": "১৮,০০০৳"
+      },
+      {
+       "label": "খামে",
+       "value": "১৮,৬০০৳",
+       "from": "০"
+      }
+     ]
+    },
+    "moods": {
+     "shirin": "crying"
+    },
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "ভোরে রাসেলের জ্বর একটু কমল। চোখ খুলে দেখল, আপু চেয়ারেই *ঘুমিয়ে* আছে।",
+   "scene": {
+    "widget": null,
+    "fx": null,
+    "chip": "ভোর",
+    "light": "day",
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shirin",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "face"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rasel",
+   "tone": "tearful",
+   "say": "আপু… খামের টাকাটা? ওটা না *কোনো কিছুর জন্য না*?",
+   "scene": {
+    "moods": {
+     "shirin": "smile"
+    },
+    "arms": {
+     "shirin": "down"
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "softly",
+   "say": "ওটা ছিল সেই দিনের জন্য, যেটা আসবে *কেউ জানে না*।",
+   "scene": {
+    "arms": {
+     "shirin": "talk"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "রাসেল আপুর হাতটা ধরে অনেকক্ষণ *চুপ* করে রইল।",
+   "pause": 0.9,
+   "tone": "softly",
+   "scene": {
+    "arms": {
+     "rasel": "hug",
+     "shirin": "hug"
+    },
+    "moods": {
+     "rasel": "crying"
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর, রাসেলের প্রথম টিউশনির টাকা। দুশো টাকা গেল একটা নতুন খামে।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "দুই মাস পর",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "shirin",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "কোনো কিছুর জন্য না — ২",
+     "lines": [
+      "রাসেলের প্রথম দুশো"
+     ],
+     "sub": "ছোঁয়া নিষেধ"
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rasel",
+   "tone": "playfully",
+   "say": "আপু, এটা আমার। আর এটাও *কোনো কিছুর জন্য না*।",
+   "scene": {
+    "arms": {
+     "rasel": "talk"
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভাইয়ের সব যুক্তি যা বোঝেনি, এক রাতের *একটা খাম* তা বুঝিয়ে দিল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "moods": {
+     "shirin": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— মরগান হাউজেলের *দ্য সাইকোলজি অফ মানি*।"
+  },
+  {
+   "kind": "book",
+   "say": "এগারো নম্বর অধ্যায়— ভুলের জন্য *জায়গা রাখো*।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "হিসাব টায়ট্যায় হলে, একটা ধাক্কাতেই সব ভাঙে। একটু ফাঁকা জায়গা রাখলে, *ধাক্কা সামলানো* যায়।",
+   "card": {
+    "title": "ফাঁকা জায়গার শক্তি",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "wall",
+      "t": "টায়ট্যায় হিসাব",
+      "sub": "এক ধাক্কায় ভাঙে",
+      "bad": true
+     },
+     "right": {
+      "icon": "shield",
+      "t": "একটু জায়গা রাখা",
+      "sub": "ধাক্কা সামলায়"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, নাম ছাড়া একটা সঞ্চয় রাখো।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "নাম ছাড়া একটা সঞ্চয়",
+      "sub": "কোনো কিছুর জন্য না",
+      "icon": "bank"
+     },
+     {
+      "t": "অল্প হলেও প্রতি মাসে",
+      "sub": "পাঁচশো, দুশো— যা পারো",
+      "icon": "clock"
+     },
+     {
+      "t": "ছুঁয়ো শুধু বিপদে",
+      "sub": "শখে নয়",
+      "icon": "shield"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, অল্প হলেও, *প্রতি মাসে*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, ওটা ছুঁয়ো শুধু *বিপদে*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *জানা দিনের* জন্য জমাই, নাকি *অজানা রাতের* জন্যও?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি শুধু *জানা দিনের* জন্য জমাই,\nনাকি *অজানা রাতের* জন্যও?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পরিকল্পনা হয় জানা দিনের জন্য… *সঞ্চয় হয় অজানা রাতের জন্য*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পরিকল্পনা হয় জানা দিনের জন্য…",
+    "line2": "সঞ্চয় হয়\nঅজানা রাতের জন্য।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "যে খামের গায়ে লেখা ‘কোনো কিছুর জন্য না’— সেটাই বাঁচাল ভাইকে ✉️ | The Psychology of Money",
+  "description": "তিন বছর ধরে প্রতি মাসে পাঁচশো টাকা, একটা খামে। ছোট ভাই বলত কিপটামি। তারপর মাসের পঁচিশ তারিখের এক রাতে, হাসপাতালে…\nমরগান হাউজেলের The Psychology of Money — Room for Error — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "psychology of money bangla",
+   "morgan housel bangla",
+   "সঞ্চয়",
+   "টাকার মনস্তত্ত্ব",
+   "ভাইবোনের গল্প",
+   "গার্মেন্টস কর্মী",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "ভাইয়ের সব যুক্তি যা বোঝেনি, এক রাতের একটা খাম তা বুঝিয়ে দিল। ✉️\n\nতোমার কি ‘কোনো কিছুর জন্য না’— এমন একটা সঞ্চয় আছে? 👇\n\n📖 The Psychology of Money — Morgan Housel\n#ভাইবোন #সঞ্চয়"
+ },
+ "thumbnail": {
+  "text": "কোনো কিছুর জন্য না",
+  "sub": "একটা খামের গল্প"
+ }
+}

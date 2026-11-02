@@ -1,0 +1,560 @@
+{
+ "id": "006",
+ "status": "ready",
+ "title_bn": "শীতের ভোরের প্রথম কাপ",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "প্রথম নীতি",
+  "title": "Reciprocity",
+  "title_bn": "আগে দাও, মন থেকে"
+ },
+ "cast": {
+  "motin": {
+   "name": "মতিন",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A5A3C",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "rahim": {
+   "name": "রহিম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#5C6B73",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "roni": {
+   "name": "রনি",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "curly",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "চৌদ্দ বছরের চায়ের দোকান। মোড়ে নতুন ক্যাফে খোলার পর, দিনে বিক্রি নেমে এলো *চল্লিশ কাপে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শ্যামলী মোড়",
+    "props": [
+     "superstore",
+     "sign:নতুন ক্যাফে",
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "cross"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের বয়স",
+       "value": "১৪ বছর"
+      },
+      {
+       "label": "দিনে বিক্রি",
+       "value": "৪০ কাপ",
+       "from": "২০০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মতিন দাম কমাল, রেডিও বাজাল, নতুন সাইনবোর্ড টাঙাল। লাভ হলো *না*।",
+   "card": {
+    "title": "মতিনের চেষ্টা",
+    "items": [
+     {
+      "t": "এক কাপে দুই টাকা কম",
+      "mark": "x"
+     },
+     {
+      "t": "জোরে রেডিও",
+      "mark": "x"
+     },
+     {
+      "t": "নতুন সাইনবোর্ড",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ছেলে রনি ক্যাশবাক্স গুনে মুখ কালো করল।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "সন্ধ্যা",
+    "props": [
+     "signboard_new",
+     "sign:মতিনের চা",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "roni",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk"
+     }
+    ],
+    "widget": null,
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "roni",
+   "tone": "upset",
+   "say": "আব্বা, এভাবে চললে আর *তিন মাস*। তারপর দোকানটা ছাড়তে হবে।",
+   "scene": {
+    "cam": {
+     "focus": "roni",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মতিন কিছু বলল না। অনেকক্ষণ খালি কেতলিটার দিকে তাকিয়ে রইল।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "motin": "thinking"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পৌষের এক ভোর। কুয়াশায় রিকশা থামাল রহিম চাচা। হাত দুটো *কাঁপছে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পৌষের ভোর, ছয়টা",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "motin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চাচা প্রতিদিন থামেন, বসেন, কিন্তু চা খান না। পকেটের খুচরা গুনে *উঠে যান*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেদিন মতিন একটা গরম কাপ এগিয়ে দিল।",
+   "scene": {
+    "arms": {
+     "motin": "hold"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "tone": "warmly",
+   "say": "নেন চাচা। শীতের *প্রথম কাপ* আমার পক্ষ থেকে। টাকা লাগবে না।",
+   "scene": {
+    "arms": {
+     "motin": "talk"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahim",
+   "tone": "sad",
+   "say": "না না বাবা, ফ্রি জিনিস খাই না। *গরিব হইছি*, ছোট তো হই নাই।",
+   "scene": {
+    "moods": {
+     "rahim": "worried"
+    },
+    "arms": {
+     "rahim": "talk"
+    },
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "tone": "gently",
+   "say": "তাইলে দোয়া কইরেন চাচা। ওইটাই *দাম*।",
+   "scene": {
+    "moods": {
+     "motin": "smile"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "চাচা কাপটা দুই হাতে ধরলেন। চোখ ভিজে উঠল, কিন্তু মুখে *হাসি*।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "motin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সেদিন থেকে ভোর ছয়টায়, প্রতিটা রিকশাওয়ালার প্রথম কাপ *ফ্রি*।",
+   "card": {
+    "text": "ভোর ছয়টার\nপ্রথম কাপ— *ফ্রি*"
+   }
+  },
+  {
+   "voice": "roni",
+   "tone": "frustrated",
+   "say": "আব্বা, এমনিই লস, তার ওপর ফ্রি চা? এইটা কোন হিসাব?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "signboard_new",
+     "sign:মতিনের চা",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "roni",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": {
+     "focus": "roni",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "tone": "warmly",
+   "say": "সব হিসাব খাতায় হয় না রে। কিছু হিসাব *মানুষ রাখে*।",
+   "scene": {
+    "arms": {
+     "roni": "down",
+     "motin": "talk"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর, রহিম চাচা রিকশা থেকে যাত্রী নামিয়ে বললেন—",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "bicycle",
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "motin",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rahim",
+   "tone": "proudly",
+   "say": "মামা, অফিসে যাওয়ার আগে মতিনের চা খাইয়া যান। এই মোড়ের *আসল চা* এইখানে।",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিকশাওয়ালারা যাত্রী আনল, সিএনজিওয়ালা আনল বন্ধুদের। কেউ বেঞ্চ সারাল, কেউ *ছাউনি* টাঙাল।",
+   "scene": {
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "তিন মাস পর রনি আবার ক্যাশবাক্স গুনল। এবার চোখ *বড় বড়*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard_new",
+     "sign:মতিনের চা",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "roni",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দিনে বিক্রি",
+       "value": "২৬০ কাপ",
+       "from": "৪০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দাম কমানো যা পারেনি, শীতের ভোরে *এক কাপ চা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "moods": {
+     "roni": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— রবার্ট চালডিনির *ইনফ্লুয়েন্স*।"
+  },
+  {
+   "kind": "book",
+   "say": "প্রথম নীতি— *আগে দাও*, মন থেকে।",
+   "pause": 0.3,
+   "reveal": true
+  },
+  {
+   "kind": "concept",
+   "say": "কেউ আগে কিছু দিলে, মানুষ ভেতরে একটা ঋণ টের পায়। আর সেটা শোধ করতে চায়, *অনেক বেশি* করে।",
+   "card": {
+    "title": "দেওয়ার চক্র",
+    "widget": {
+     "type": "flow",
+     "nodes": [
+      {
+       "icon": "hand",
+       "t": "আগে দেওয়া"
+      },
+      {
+       "icon": "heart",
+       "t": "মনে ঋণ"
+      },
+      {
+       "icon": "people",
+       "t": "ফিরে আসা"
+      }
+     ],
+     "loop": true,
+     "show": 3
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, আগে দাও, *শর্ত ছাড়া*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "আগে দাও, শর্ত ছাড়া",
+      "sub": "ছোট হলেও সত্যি",
+      "icon": "hand"
+     },
+     {
+      "t": "ফাঁদ চিনে রাখো",
+      "sub": "ফ্রি স্যাম্পল, ফ্রি গিফট",
+      "icon": "eye"
+     },
+     {
+      "t": "দাম চাও না, সম্মান দাও",
+      "sub": "দোয়াই যথেষ্ট",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, কেউ ফ্রি দিয়ে চাপ দিলে, *ফাঁদটা* চিনে রাখো।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, বদলে কিছু চেয়ো না। মানুষ *নিজেই ফেরায়*।",
+   "pause": 0.4,
+   "show": 3
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি আগে *চাই*, নাকি আগে *দিই*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি আগে *চাই*,\nনাকি আগে *দিই*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দাম কমালে খদ্দের আসে… *মন দিলে মানুষ ফেরে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দাম কমালে খদ্দের আসে…",
+    "line2": "মন দিলে\nমানুষ ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ফ্রি এক কাপ চায়ে বাঁচল ১৪ বছরের দোকান ☕ | Influence বাংলা",
+  "description": "নতুন ক্যাফের পাশে মতিনের চায়ের দোকান প্রায় বন্ধ হতে চলেছিল। তারপর এক শীতের ভোরে, কাঁপতে থাকা এক রিকশাওয়ালাকে সে এক কাপ চা দিল…\nরবার্ট চালডিনির Influence — Reciprocity (আগে দাও) — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "influence bangla",
+   "robert cialdini bangla",
+   "reciprocity",
+   "চায়ের দোকান",
+   "রিকশাওয়ালা",
+   "বাংলা গল্প",
+   "জীবনের শিক্ষা",
+   "ব্যবসার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দাম কমানো যা পারেনি, শীতের ভোরে এক কাপ চা তা পারল। ☕\n\nশেষ কবে কাউকে কিছু দিয়েছেন, বদলে কিছু না চেয়ে? 👇\n\n📖 Influence — Robert Cialdini\n#চায়েরদোকান #জীবনেরগল্প"
+ },
+ "thumbnail": {
+  "text": "প্রথম কাপ ফ্রি",
+  "sub": "দোকানটা বেঁচে গেল"
+ }
+}

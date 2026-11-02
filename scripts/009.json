@@ -1,0 +1,503 @@
+{
+ "id": "009",
+ "status": "ready",
+ "title_bn": "তোর জন্যই তো",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 2",
+  "chapter_bn": "দুই নম্বর খেলা",
+  "title": "If It Weren't For You",
+  "title_bn": "তুমি না থাকলে আমি পারতাম"
+ },
+ "cast": {
+  "mitu": {
+   "name": "মিতু আপা",
+   "type": "young_woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#7A3B5E",
+   "color2": "#F2E2B8",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "rashed": {
+   "name": "রাশেদ",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7FA6",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2F2EE",
+   "color2": "#2F7D6D",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বারো বছর ধরে, প্রতিটা ঝগড়ার শেষে মিতু আপার *একই বাক্য*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "ময়মনসিংহ, বারো বছর",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বছর",
+       "value": "১২",
+       "from": "১"
+      },
+      {
+       "label": "একই বাক্য",
+       "value": "রোজ",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "frustrated",
+   "say": "তোর জন্যই তো আমার ভার্সিটি হলো না। *তোর জন্য* সব ছাড়লাম!",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা মারা যাওয়ার পর, আঠারো বছরের মিতু টিউশনি করে ভাইকে পড়িয়েছিল। কথাটা *মিথ্যে নয়*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কিন্তু রাশেদ এখন চাকরি করে। আর বাক্যটা প্রতিদিন তাকে *একটু ছোট* করে দেয়।",
+   "scene": {
+    "moods": {
+     "mitu": "neutral"
+    },
+    "arms": {
+     "mitu": "cross"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রাশেদ চেষ্টা করেছিল। মাসের বেতন আপার হাতে দিল, নতুন ফোন কিনে দিল। বাক্যটা *থামল না*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক বছর",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক সন্ধ্যায় আম্মা চায়ের কাপ নামিয়ে রাশেদকে বললেন—",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "এক সন্ধ্যা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "softly",
+   "say": "ও রাগ করে না রে। ও *ভয় পায়*। ভার্সিটির পরীক্ষাটা আর দিতে পারবে কিনা।",
+   "scene": {
+    "arms": {
+     "amma": "talk"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রাশেদ সেদিন বুঝল, আপার অভিযোগের নিচে একটা *পুরনো ভয়* লুকিয়ে আছে।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "rashed": "thinking"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পরদিন বারান্দায় রাশেদ চুপচাপ একটা খাম রাখল। *উন্মুক্ত বিশ্ববিদ্যালয়ের* ভর্তি ফর্ম।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "পরদিন",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rashed",
+   "tone": "gently",
+   "say": "আপা, আমি এখন দাঁড়িয়ে গেছি। এবার তোমার পালা। ফি আমি দিব, *বই আমি কিনব*।",
+   "scene": {
+    "arms": {
+     "rashed": "talk"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "upset",
+   "say": "এই বয়সে? বত্রিশ বছরে মানুষ পড়ে? লোকে *হাসবে*।",
+   "scene": {
+    "moods": {
+     "mitu": "worried"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "tone": "softly",
+   "say": "আপা, বারো বছর তুমি বলছ, আমার জন্য পারো নাই। এখন তো *আমি পথে নাই*।",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "মিতু অনেকক্ষণ চুপ করে রইল। অজুহাতটা হঠাৎ *হারিয়ে গেছে*। সামনে শুধু ভয়টা।",
+   "pause": 1.0,
+   "scene": {
+    "moods": {
+     "mitu": "sad"
+    },
+    "arms": {
+     "rashed": "down"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.55
+    }
+   }
+  },
+  {
+   "say": "তারপর, এই প্রথম, সে নিজের সত্যিটা বলল—",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "tearful",
+   "say": "আমি আসলে *ফেল করতে* ভয় পাই রে। তোর নামটা ছিল আমার লুকানোর জায়গা।",
+   "scene": {
+    "moods": {
+     "mitu": "crying"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাশেদ পাশে বসল। দুই ভাইবোন কাঁদল, তারপর *হাসল*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hug"
+     },
+     {
+      "id": "rashed",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hug"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ছয় মাস পর, রাত এগারোটা। বারান্দায় বই খুলে বসে মিতু। পাশে রাশেদ, *চা* নিয়ে।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বারো বছরের অভিযোগ যা পারেনি, একটা *ভর্তি ফর্ম* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— এরিক বার্নের *গেমস পিপল প্লে*।"
+  },
+  {
+   "kind": "book",
+   "say": "দুই নম্বর খেলা— তুমি না থাকলে, *আমি পারতাম*।",
+   "pause": 0.3,
+   "reveal": true
+  },
+  {
+   "kind": "concept",
+   "say": "কখনো কখনো আমরা অন্যকে দোষ দিই, যাতে নিজের *ভয়ের মুখোমুখি* হতে না হয়।",
+   "card": {
+    "title": "অভিযোগের নিচে",
+    "widget": {
+     "type": "iceberg",
+     "top": [
+      {
+       "icon": "chat",
+       "t": "তোর জন্যই তো"
+      }
+     ],
+     "bottom": [
+      {
+       "icon": "brain",
+       "t": "ফেল করার ভয়"
+      },
+      {
+       "icon": "shield",
+       "t": "লুকানোর জায়গা"
+      }
+     ],
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "এক, অভিযোগের নিচে *ভয়টা* খোঁজো।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "অভিযোগের নিচে ভয় খোঁজো",
+      "sub": "রাগ প্রায়ই ঢাকনা",
+      "icon": "eye"
+     },
+     {
+      "t": "অজুহাত সরিয়ে দাও",
+      "sub": "তর্ক নয়, পথ খুলে দাও",
+      "icon": "door"
+     },
+     {
+      "t": "নিজেকে জিজ্ঞেস করো",
+      "sub": "আমি কাকে ঢাল বানাচ্ছি?",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, তর্ক নয়, অজুহাতটা *সরিয়ে* দাও।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, নিজেকে জিজ্ঞেস করো, আমি কাকে *ঢাল* বানাচ্ছি?",
+   "pause": 0.4,
+   "show": 3
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি কাউকে *দোষ* দিচ্ছি, নাকি নিজের *ভয় থেকে* পালাচ্ছি?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি কাউকে *দোষ* দিচ্ছি,\nনাকি নিজের *ভয় থেকে* পালাচ্ছি?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অভিযোগ আমাদের আটকে রাখে… *সত্যিটা বললে পথ খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অভিযোগ আমাদের আটকে রাখে…",
+    "line2": "সত্যিটা বললে\nপথ খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "\"তোর জন্যই তো\"— বারো বছরের অভিযোগ থামাল একটা খাম ✉️ | Games People Play বাংলা",
+  "description": "আব্বা মারা যাওয়ার পর মিতু আপা ভাইকে পড়িয়েছিল। বারো বছর ধরে প্রতিটা ঝগড়ার শেষে একটাই বাক্য— তোর জন্যই তো সব ছাড়লাম। তারপর একদিন ভাই একটা খাম রাখল…\nএরিক বার্নের Games People Play — If It Weren't For You — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "games people play bangla",
+   "eric berne bangla",
+   "ভাইবোনের গল্প",
+   "বড় বোন",
+   "বাংলা গল্প",
+   "পারিবারিক গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "বারো বছরের অভিযোগ যা পারেনি, একটা ভর্তি ফর্ম তা পারল। ✉️\n\nআপনার জীবনে কোন স্বপ্নটা 'অন্যের জন্য' ছেড়ে দিয়েছিলেন? 👇\n\n📖 Games People Play — Eric Berne\n#ভাইবোন #জীবনেরগল্প"
+ },
+ "thumbnail": {
+  "text": "তোর জন্যই তো",
+  "sub": "বারো বছরের অভিযোগ"
+ }
+}
