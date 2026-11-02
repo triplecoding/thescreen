@@ -41,14 +41,14 @@
       s += `<g fill="#FFFFFF" opacity="0.85"><ellipse cx="${x + cx}" cy="${y + h * 0.25}" rx="70" ry="22"/><ellipse cx="${x + cx + 40}" cy="${y + h * 0.22}" rx="44" ry="26"/></g>`;
     }
     // building silhouettes
-    const bcol = light === 'night' ? '#222A4A' : light === 'evening' ? '#B9705A' : '#A9BCCB';
+    const bcol = light === 'night' ? '#222A4A' : light === 'evening' ? '#C98A72' : '#B7C7D3';
     let bx = x - 10;
     for (let i = 0; bx < x + w; i++) {
       const bw = 70 + U.rand('bw' + k, i) * 90, bh = h * (0.28 + U.rand('bh' + k, i) * 0.35);
       s += `<rect x="${bx}" y="${y + h - bh}" width="${bw}" height="${bh}" fill="${bcol}"/>`;
-      for (let wy = y + h - bh + 18; wy < y + h - 10; wy += 34) for (let wx = bx + 12; wx < bx + bw - 14; wx += 26) {
+      for (let wy = y + h - bh + 24; wy < y + h - 10; wy += 52) for (let wx = bx + 14; wx < bx + bw - 16; wx += 40) {
         const lit = light === 'night' ? U.rand('lw', wx * 7 + wy) > 0.45 : false;
-        s += `<rect x="${wx}" y="${wy}" width="12" height="16" fill="${lit ? '#FFD27A' : (light === 'night' ? '#2E375C' : U.shade(bcol, 0.2))}"/>`;
+        s += `<rect x="${wx}" y="${wy}" width="14" height="18" fill="${lit ? '#FFD27A' : (light === 'night' ? '#2E375C' : U.shade(bcol, -0.08))}" opacity="${lit ? 1 : 0.6}"/>`;
       }
       bx += bw + 6;
     }
@@ -87,6 +87,66 @@
       `<path d="M-50 -46 L50 -46 L38 40 L-38 40 Z" fill="#C4673A" ${SW}/></g>`;
   }
 
+
+  // A Dhaka residential building: plaster, floor slabs, grilled windows, balconies with drying clothes,
+  // AC units, rooftop parapet + water tank, rolling-shutter shop on the ground floor.
+  function dhakaBuilding(x, top, w, base, light, seed, t) {
+    const night = light === 'night', eve = light === 'evening';
+    const c0 = night ? U.shade(base, -0.62) : eve ? U.mix(base, '#E3895A', 0.22) : base;
+    const R = i => U.rand('b' + seed, i);
+    let s = `<rect x="${x}" y="${top}" width="${w}" height="${1300 - top}" fill="${c0}" ${SW}/>`;
+    s += `<rect x="${x}" y="${top}" width="${w * 0.18}" height="${1300 - top}" fill="#000" opacity="0.07"/>`;
+    // parapet + water tank + antenna
+    s += `<rect x="${x - 8}" y="${top - 26}" width="${w + 16}" height="30" fill="${U.shade(c0, -0.12)}" ${SW}/>`;
+    if (R(1) > 0.35) { const tx = x + w * (0.25 + R(2) * 0.4); s += `<rect x="${tx}" y="${top - 96}" width="70" height="72" rx="12" fill="${night ? '#1A1C22' : '#2B2F36'}" ${SW}/><path d="M${tx} ${top - 72} h70 M${tx} ${top - 50} h70" stroke="#474C55" stroke-width="4"/>`; }
+    if (R(3) > 0.5) s += `<path d="M${x + w - 40} ${top - 26} V${top - 130} M${x + w - 70} ${top - 110} H${x + w - 10} M${x + w - 62} ${top - 90} H${x + w - 18}" stroke="${OL}" stroke-width="4"/>`;
+    const fh = 150, floors = Math.floor((1170 - top) / fh);
+    for (let f = 0; f < floors; f++) {
+      const fy = top + 20 + f * fh;
+      s += `<rect x="${x}" y="${fy + fh - 14}" width="${w}" height="14" fill="${U.shade(c0, 0.1)}" stroke="${OL}" stroke-width="3"/>`;
+      const nW = w > 300 ? 2 : 1;
+      for (let j = 0; j < nW; j++) {
+        const ww = nW === 2 ? w * 0.3 : w * 0.46, wx = x + (nW === 2 ? (j ? w * 0.6 : w * 0.1) : w * 0.27), wy = fy + 22;
+        const balcony = R(f * 7 + j) > 0.55;
+        const lit = night ? R(f * 13 + j) > 0.35 : eve ? R(f * 13 + j) > 0.7 : false;
+        s += `<rect x="${wx}" y="${wy}" width="${ww}" height="${fh - 58}" fill="${lit ? '#FFD58A' : night ? '#1F2740' : '#7FA4BC'}" stroke="${OL}" stroke-width="3.5"/>`;
+        if (!night && !lit) s += `<path d="M${wx + 6} ${wy + 6} l${ww * 0.4} 0 l-${ww * 0.25} ${fh - 70} l-${ww * 0.15} 0 z" fill="#FFF" opacity="0.18"/>`;
+        // grill
+        s += `<g stroke="${night ? '#0E1220' : '#2D3A3A'}" stroke-width="3">` + Array.from({ length: Math.max(2, Math.floor(ww / 22)) }, (_, q) => `<path d="M${wx + 11 + q * 22} ${wy} V${wy + fh - 58}"/>`).join('') + `<path d="M${wx} ${wy + (fh - 58) / 2} H${wx + ww}"/></g>`;
+        if (balcony) {
+          const by = fy + fh - 66;
+          s += `<rect x="${wx - 16}" y="${by}" width="${ww + 32}" height="52" fill="${U.shade(c0, -0.05)}" ${SW}/>` + Array.from({ length: Math.floor((ww + 32) / 14) }, (_, q) => `<path d="M${wx - 10 + q * 14} ${by + 6} V${by + 46}" stroke="${OL}" stroke-width="2.5"/>`).join('');
+          if (R(f * 3 + j + 50) > 0.4) {   // drying clothes
+            const cl = ['#C4473A', '#2F7A6B', '#E8A33D', '#5B7DB1', '#F2EEE3', '#D9668B'];
+            s += `<path d="M${wx - 10} ${by - 30} H${wx + ww + 10}" stroke="${OL}" stroke-width="2"/>`;
+            for (let q = 0; q < 3; q++) { const cx = wx + 4 + q * (ww / 3), sw = Math.sin(t * 1.5 + q + seed) * 2; s += `<path d="M${cx} ${by - 30} h${ww / 3.6} l${sw} 38 h-${ww / 3.6} z" fill="${cl[(f + q + j) % cl.length]}" stroke="${OL}" stroke-width="2.5"/>`; }
+          }
+        } else if (R(f * 5 + j + 90) > 0.6) {   // AC unit
+          s += `<rect x="${wx + ww + 6}" y="${wy + 30}" width="48" height="38" rx="3" fill="#E9ECEF" stroke="${OL}" stroke-width="3"/><path d="M${wx + ww + 12} ${wy + 40} h36 M${wx + ww + 12} ${wy + 50} h36 M${wx + ww + 12} ${wy + 60} h36" stroke="#9AA4AE" stroke-width="2"/>`;
+        }
+      }
+    }
+    // ground floor: rolling shutter
+    s += `<rect x="${x + 14}" y="1186" width="${w - 28}" height="114" fill="${night ? '#3A3F48' : '#9CA3AB'}" stroke="${OL}" stroke-width="3.5"/>` + Array.from({ length: 9 }, (_, q) => `<path d="M${x + 14} ${1194 + q * 12} H${x + w - 14}" stroke="${night ? '#2C3038' : '#7F868E'}" stroke-width="3"/>`).join('');
+    s += `<rect x="${x}" y="${1240}" width="${w}" height="60" fill="#000" opacity="0.08"/>`;
+    return s;
+  }
+  function ceilingFan(cx, cy, t, night) {
+    let s = `<path d="M${cx} -60 V${cy - 14}" stroke="${OL}" stroke-width="7"/><ellipse cx="${cx}" cy="${cy}" rx="30" ry="16" fill="${night ? '#8E949C' : '#C9CED4'}" stroke="${OL}" stroke-width="4"/>`;
+    const blades = [];
+    for (let i = 0; i < 3; i++) {
+      const a = t * 9 + i * 2.094, ex = cx + Math.cos(a) * 190, ey = cy + 6 + Math.sin(a) * 30, w = 14 + Math.abs(Math.sin(a)) * 10;
+      blades.push({ z: Math.sin(a), d: `<path d="M${cx} ${cy + 4} L${ex} ${ey - w / 2} Q${ex + Math.cos(a) * 16} ${ey} ${ex} ${ey + w / 2} Z" fill="${night ? '#7C838C' : '#B9C0C8'}" stroke="${OL}" stroke-width="3.5" stroke-linejoin="round"/>` });
+    }
+    blades.sort((p, q) => p.z - q.z).forEach(b => { s += b.d; });
+    return s + `<ellipse cx="${cx}" cy="${cy + 8}" rx="18" ry="9" fill="${night ? '#6E747C' : '#AEB4BB'}" stroke="${OL}" stroke-width="3"/>`;
+  }
+  function tree(x, y, s, light, t) {
+    const g1 = light === 'night' ? '#1F3B2E' : light === 'evening' ? '#4E7A3C' : '#4F8A4A', g2 = U.shade(g1, 0.15), sw = Math.sin(t * 1.2) * 3;
+    return `<g transform="translate(${x},${y}) scale(${s})"><path d="M-18 0 L-12 -260 Q-40 -330 -90 -360 M-12 -260 Q20 -330 70 -380 M-14 -200 Q-60 -230 -110 -240" stroke="#5A3E2B" stroke-width="26" fill="none" stroke-linecap="round"/><path d="M-30 0 L-14 -280 L8 -280 L22 0 Z" fill="#6B4A33" ${SW}/>` +
+      [[-120, -380, 110], [0, -460, 140], [110, -390, 110], [-60, -300, 90], [70, -300, 90]].map(([a, b, r], i) => `<circle cx="${a + sw * (i % 2 ? 1 : -1)}" cy="${b}" r="${r}" fill="${i % 2 ? g2 : g1}" ${SW}/>`).join('') + `</g>`;
+  }
+
   const SETS = {};
 
   // ---------------- HOME ----------------
@@ -94,7 +154,9 @@
     const P = pal(light);
     let b = `<defs>${grad('wall' + k, P.wallT, P.wallB)}</defs><rect x="-200" y="-200" width="1480" height="1700" fill="url(#wall${k})"/>`;
     // subtle wall texture stripes
-    b += `<g opacity="0.05">${Array.from({ length: 16 }, (_, i) => `<rect x="${-200 + i * 100}" y="0" width="50" height="1440" fill="#000"/>`).join('')}</g>`;
+    b += `<defs>${radial('wl' + k, '#FFFFFF', light === 'night' ? 0.05 : 0.22)}</defs><ellipse cx="760" cy="700" rx="700" ry="620" fill="url(#wl${k})"/>`;
+    b += `<rect x="-200" y="-200" width="1480" height="330" fill="${U.shade(P.wallT, 0.06)}"/><rect x="-200" y="118" width="1480" height="16" fill="${U.shade(P.wallT, -0.08)}" ${SW}/>`;
+    b += `<rect x="-200" y="1250" width="1480" height="156" fill="#000" opacity="0.035"/>`;
     if (has(props, 'window') || !props || !props.length) b += windowFrame(P, light, k, 600, 380, 300, 470, t);
     if (has(props, 'almirah')) {
       b += `<g><rect x="90" y="560" width="300" height="880" rx="10" fill="#7E93A3" ${SW}/><path d="M240 570 V1430" stroke="${OL}" stroke-width="5"/><rect x="200" y="940" width="14" height="70" rx="5" fill="#D6DEE4" ${SW}/><rect x="266" y="940" width="14" height="70" rx="5" fill="#D6DEE4" ${SW}/><rect x="104" y="574" width="120" height="840" fill="#FFF" opacity="0.08"/></g>`;
@@ -104,7 +166,9 @@
     if (!has(props, 'almirah') && !has(props, 'door_closed')) b += clock(470, 470, t);
     if (has(props, 'door_closed')) b += `<g><rect x="80" y="520" width="300" height="920" rx="6" fill="#8A5A36" ${SW}/><rect x="112" y="560" width="236" height="380" rx="6" fill="none" stroke="#6B4326" stroke-width="6"/><rect x="112" y="980" width="236" height="400" rx="6" fill="none" stroke="#6B4326" stroke-width="6"/><circle cx="344" cy="990" r="14" fill="#E8C66A" ${SW}/>${(() => { const n = (props || []).find(x => typeof x === 'string' && x.startsWith('door:')); return n ? `<rect x="150" y="700" width="160" height="50" rx="8" fill="#E7B6C8" ${SW}/><text x="230" y="736" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="28" fill="${OL}">${U.esc(n.slice(5))}</text>` : ''; })()}</g>`;
     if (light !== 'day') b += lampGlow(k, 900, 980, 520, light === 'night' ? 0.55 : 0.3);
+    b += `<g><rect x="950" y="840" width="74" height="96" rx="6" fill="#F7F4EC" ${SW}/><rect x="962" y="856" width="18" height="30" rx="3" fill="#D9D2C2" stroke="${OL}" stroke-width="3"/><rect x="992" y="856" width="18" height="30" rx="3" fill="#D9D2C2" stroke="${OL}" stroke-width="3"/><circle cx="987" cy="912" r="7" fill="#C4473A"/></g>`;
     b += floor(P, k);
+    b += ceilingFan(560, 236, t, light === 'night');
     if (has(props, 'sofa')) b += `<g><rect x="80" y="1010" width="920" height="210" rx="40" fill="#5C6E8C" ${SW}/><rect x="60" y="1150" width="960" height="130" rx="30" fill="#6E81A0" ${SW}/><rect x="40" y="1080" width="90" height="230" rx="30" fill="#5C6E8C" ${SW}/><rect x="950" y="1080" width="90" height="230" rx="30" fill="#5C6E8C" ${SW}/><rect x="90" y="1290" width="20" height="150" fill="#3A2C25"/><rect x="970" y="1290" width="20" height="150" fill="#3A2C25"/><rect x="230" y="1050" width="140" height="100" rx="24" fill="#E8A33D" ${SW}/></g>`;
     if (has(props, 'bed')) b += `<g><rect x="40" y="900" width="60" height="540" rx="10" fill="#6B4326" ${SW}/><rect x="60" y="1150" width="980" height="130" rx="12" fill="#8A5A36" ${SW}/><rect x="70" y="1100" width="960" height="80" rx="20" fill="#F2E9DA" ${SW}/><rect x="100" y="1040" width="210" height="80" rx="30" fill="#FFFFFF" ${SW}/><path d="M400 1110 Q600 1150 1020 1110 L1020 1180 L400 1180 Z" fill="#B7464F" ${SW}/><rect x="80" y="1280" width="20" height="160" fill="#3A2C25"/><rect x="1000" y="1280" width="20" height="160" fill="#3A2C25"/></g>`;
     if (has(props, 'table')) b += `<g><rect x="300" y="1150" width="480" height="40" rx="8" fill="#8A5A36" ${SW}/><rect x="330" y="1190" width="26" height="250" fill="#6B4326" ${SW}/><rect x="724" y="1190" width="26" height="250" fill="#6B4326" ${SW}/><ellipse cx="460" cy="1146" rx="60" ry="14" fill="#FFF" ${SW}/><ellipse cx="460" cy="1138" rx="34" ry="10" fill="#F2E6C8"/><ellipse cx="640" cy="1146" rx="60" ry="14" fill="#FFF" ${SW}/><rect x="540" y="1090" width="30" height="58" rx="6" fill="#BFE3F2" opacity="0.9" ${SW}/></g>`;
@@ -186,27 +250,16 @@
   // ---------------- STREET ----------------
   SETS.street = (light, props, t, k) => {
     const P = pal(light);
-    let b = `<defs>${grad('sky' + k, P.skyT, P.skyB)}</defs>` + sky(P, light, k + 'a', -200, -200, 1480, 1000, t);
+    let b = `<defs>${grad('sky' + k + 'a', P.skyT, P.skyB)}</defs>` + sky(P, light, k + 'a', -200, -200, 1480, 1000, t);
     // foreground buildings (Dhaka look)
-    const bl = [[-60, 380, 360, '#D9B98E'], [300, 300, 300, '#C9D3C6'], [600, 420, 330, '#E3A986'], [930, 340, 260, '#BFC8D6']];
-    bl.forEach(([x, y, w, c], i) => {
-      const cc = light === 'night' ? U.shade(c, -0.6) : light === 'evening' ? U.mix(c, '#E07A4E', 0.25) : c;
-      b += `<rect x="${x}" y="${y}" width="${w}" height="${1300 - y}" fill="${cc}" ${SW}/>`;
-      for (let wy = y + 50; wy < 1180; wy += 150) {
-        b += `<rect x="${x + 20}" y="${wy}" width="${w - 40}" height="96" fill="${U.shade(cc, -0.12)}" ${SW}/>`;
-        for (let wx = x + 40; wx < x + w - 70; wx += 90) {
-          const lit = light !== 'day' && U.rand('sw' + i, wx + wy) > 0.4;
-          b += `<rect x="${wx}" y="${wy + 14}" width="56" height="62" fill="${lit ? '#FFD27A' : (light === 'night' ? '#2A3352' : '#8FB7CF')}" stroke="${OL}" stroke-width="3"/>`;
-        }
-        b += `<path d="M${x + 20} ${wy + 96} h${w - 40}" stroke="${OL}" stroke-width="6"/>` + Array.from({ length: Math.floor((w - 40) / 22) }, (_, j) => `<path d="M${x + 30 + j * 22} ${wy + 70} v26" stroke="${OL}" stroke-width="3"/>`).join('');
-      }
-      if (i === 1) b += `<rect x="${x + 30}" y="${y + 20}" width="${w - 60}" height="0"/>`;
-    });
+    const bl = [[-70, 360, 360, '#E2D3B8'], [300, 250, 300, '#C9D0C4'], [610, 410, 320, '#DDB496'], [940, 300, 280, '#C3CBD6']];
+    bl.forEach(([x, y, w, c], i) => { b += dhakaBuilding(x, y, w, c, light, i + 1, t); });
     // shop signs
     b += `<rect x="20" y="1180" width="300" height="70" rx="6" fill="#C4473A" ${SW}/><text x="170" y="1228" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="36" fill="#FFF">ফার্মেসি</text>`;
     b += `<rect x="640" y="1190" width="280" height="64" rx="6" fill="#24615C" ${SW}/><text x="780" y="1234" text-anchor="middle" font-family="Hind Siliguri" font-weight="700" font-size="34" fill="#FFF">চা ঘর</text>`;
     // wires
     b += `<g fill="none" stroke="#1E1A18" stroke-width="3" opacity="0.8"><path d="M-200 520 Q300 620 1280 500"/><path d="M-200 560 Q400 680 1280 540"/><path d="M-200 600 Q500 700 1280 590"/></g>`;
+    b += tree(1060, 1300, 0.95, light, t);
     // electric pole + lamp
     b += `<rect x="900" y="440" width="26" height="1000" fill="#7A7F86" ${SW}/><path d="M913 520 Q980 500 1010 540" stroke="${OL}" stroke-width="8" fill="none"/><path d="M990 540 h50 l-12 22 h-26 z" fill="#3B4252" ${SW}/>`;
     if (light !== 'day') b += lampGlow(k, 1015, 600, 420, light === 'night' ? 0.6 : 0.3);
@@ -288,7 +341,7 @@
   // ---------------- BALCONY ----------------
   SETS.balcony = (light, props, t, k) => {
     const P = pal(light === 'day' ? 'day' : light);
-    let b = `<defs>${grad('sky' + k, P.skyT, P.skyB)}</defs>` + sky(P, light, k + 'b', -200, -200, 1480, 1300, t);
+    let b = `<defs>${grad('sky' + k + 'b', P.skyT, P.skyB)}</defs>` + sky(P, light, k + 'b', -200, -200, 1480, 1300, t);
     // string lights
     b += `<path d="M-40 220 Q270 320 540 250 Q810 180 1120 280" fill="none" stroke="${OL}" stroke-width="3"/>`;
     for (let i = 0; i < 12; i++) { const x = -20 + i * 100, y = 220 + Math.sin(i * 0.9) * 40 + 30; b += `<circle cx="${x}" cy="${y}" r="12" fill="#FFD27A" opacity="${0.7 + 0.3 * Math.sin(t * 3 + i)}"/>` + (light !== 'day' ? `<circle cx="${x}" cy="${y}" r="34" fill="#FFD27A" opacity="0.18"/>` : ''); }

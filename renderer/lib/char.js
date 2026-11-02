@@ -72,14 +72,14 @@
       if (mood === 'thinking') { look = 5; lookY = -5; lid = 0.15; }
       if (mood === 'worried') lid = 0.12;
       const open = mood === 'surprised' ? 1.22 : 1;
-      const rx = 13 * scale, ry = 13 * open;
+      const rx = 11.5 * scale, ry = 12 * open;
       if (blink > 0.55 || mood === 'happy') {
         // closed / happy arc
         const curve = mood === 'happy' ? -9 : 3;
         return `<path d="M${x - rx} -1 Q${x} ${-1 + curve} ${x + rx} -1" fill="none" stroke="${OL}" stroke-width="5" stroke-linecap="round"/>`;
       }
       let s = `<ellipse cx="${x}" cy="0" rx="${rx}" ry="${ry}" fill="#FFFDF8" stroke="${OL}" stroke-width="3.5"/>` +
-        `<circle cx="${x + look * scale}" cy="${2 + lookY}" r="${8.5 * scale}" fill="#2B1A12"/>` +
+        `<circle cx="${x + look * scale}" cy="${2 + lookY}" r="${7.2 * scale}" fill="#2B1A12"/>` +
         `<circle cx="${x + look * scale + 3}" cy="${-2 + lookY}" r="2.6" fill="#FFFFFF"/>`;
       if (lid > 0) {
         const ly = -ry + 2 * ry * lid;
@@ -174,7 +174,30 @@
       `<path d="M66 -24 C70 30 52 66 12 78 C-30 84 -54 54 -56 6 C-56 -40 -26 -64 10 -66 C44 -66 64 -50 66 -24 Z" fill="${skin}" stroke="${OL}" stroke-width="4"/>`;
   }
 
-  // ---------- body ----------
+  // ---------- body (v2: tapered limbs, real hands/feet, tailored clothes, natural motion) ----------
+  const LW = 4.5;                       // outline width
+  function cap(ax, ay, bx, by, wa, wb) { // tapered capsule between two joints
+    const dx = bx - ax, dy = by - ay, L = Math.hypot(dx, dy) || 1, nx = -dy / L, ny = dx / L, ra = wa / 2, rb = wb / 2;
+    return `M${ax + nx * ra} ${ay + ny * ra} L${bx + nx * rb} ${by + ny * rb} A${rb} ${rb} 0 0 0 ${bx - nx * rb} ${by - ny * rb} L${ax - nx * ra} ${ay - ny * ra} A${ra} ${ra} 0 0 0 ${ax + nx * ra} ${ay + ny * ra} Z`;
+  }
+  const P = (d, fill, extra = '') => `<path d="${d}" fill="${fill}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round" ${extra}/>`;
+  function hand(x, y, ang, r, skin) {   // mitten hand pointing along the forearm, thumb toward the facing side
+    return `<g transform="translate(${x},${y}) rotate(${-ang})">` +
+      `<path d="M${-r * 0.78} ${-r * 0.2} C${-r * 0.95} ${r * 0.9} ${-r * 0.55} ${r * 1.75} 0 ${r * 1.75} C${r * 0.6} ${r * 1.75} ${r * 0.9} ${r * 0.95} ${r * 0.74} ${-r * 0.2} Z" fill="${skin}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+      `<path d="M${r * 0.55} ${r * 0.15} C${r * 1.25} ${r * 0.25} ${r * 1.3} ${r * 0.9} ${r * 0.85} ${r * 1.05}" fill="${skin}" stroke="${OL}" stroke-width="${LW - 0.5}" stroke-linecap="round"/>` +
+      `<path d="M${-r * 0.3} ${r * 1.15} V${r * 1.55} M${r * 0.1} ${r * 1.2} V${r * 1.62}" stroke="${U.shade(skin, -0.3)}" stroke-width="2.5" stroke-linecap="round"/></g>`;
+  }
+  function foot(x, y, kind, skin, col) {  // y = ankle; sole sits on the floor (y = 0 when standing)
+    const g0 = y + 30;
+    if (kind === 'sandal') {
+      return `<path d="M${x - 18} ${y - 4} Q${x - 26} ${g0 - 4} ${x - 10} ${g0 - 4} L${x + 50} ${g0 - 6} Q${x + 60} ${g0 - 10} ${x + 48} ${g0 - 18} Q${x + 20} ${y + 6} ${x + 10} ${y - 6} Z" fill="${skin}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+        `<path d="M${x - 22} ${g0 - 2} H${x + 58}" stroke="#4A3226" stroke-width="7" stroke-linecap="round"/><path d="M${x + 12} ${g0 - 22} Q${x + 30} ${g0 - 8} ${x + 44} ${g0 - 20}" fill="none" stroke="${col}" stroke-width="7" stroke-linecap="round"/>`;
+    }
+    const c = kind === 'sneaker' ? '#F4F1EA' : '#2E2420';
+    return `<path d="M${x - 22} ${y - 8} Q${x - 28} ${g0} ${x - 8} ${g0} L${x + 54} ${g0} Q${x + 66} ${g0 - 4} ${x + 58} ${g0 - 16} Q${x + 36} ${y + 2} ${x + 12} ${y - 10} Z" fill="${c}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+      (kind === 'sneaker' ? `<path d="M${x - 10} ${g0 - 8} H${x + 56}" stroke="${col}" stroke-width="6"/>` : `<path d="M${x + 30} ${g0 - 14} Q${x + 46} ${g0 - 18} ${x + 54} ${g0 - 12}" stroke="#5A4A42" stroke-width="3" fill="none"/>`);
+  }
+
   function render(def, st) {
     const T = TYPES[def.type] || TYPES.man;
     const skin = SKIN[def.skin] || SKIN.wheat;
@@ -183,123 +206,153 @@
     const outfit = def.outfit || 'shirt';
     const t = st.t || 0;
     const phase = U.hash(def.name || def.type) * 6.28;
-    const breathe = Math.sin(t * 1.7 + phase) * 3;
-    const sitting = st.pose === 'sit';
-    const walking = st.pose === 'walk';
-    const dy = sitting ? 130 : 0;               // torso drop when sitting
-    const hunch = T.old ? 4 : 0;
-    const sh = T.sh, hip = T.hip;
-    let pants = '#33405A';
-    if (outfit === 'panjabi') pants = '#EFE9DD';
+    const talk = st.talk || 0, talking = talk > 0.05;
+    const breathe = Math.sin(t * 1.6 + phase) * 2.5;
+    const sitting = st.pose === 'sit', walking = st.pose === 'walk';
+    const dy = sitting ? 130 : 0;
+    const sh = T.sh * 0.94, hip = T.hip * 0.96;
+    const fem = T.fem, kid = T.kid;
+    const tucked = (outfit === 'shirt' && (def.type === 'man' || def.type === 'old_man')) || outfit === 'uniform';
+    // trousers / leg colours
+    let pants = '#36435C';
+    if (outfit === 'panjabi') pants = '#F1ECE2';
     if (outfit === 'uniform') pants = col2;
-    if (outfit === 'salwar') pants = U.mix(col, '#FFFFFF', 0.55);
+    if (outfit === 'salwar') pants = U.mix(col, '#FFFFFF', 0.5);
     if (outfit === 'scrub') pants = col;
-    if (outfit === 'tshirt') pants = '#3B4252';
-    const shoe = '#3A2C25';
-    let back = '', legs = '', torso = '', front = '';
-    const legW = T.fem ? 54 : 60;
+    if (outfit === 'tshirt') pants = kid ? '#3E5C8A' : '#3B4A63';
+    if (outfit === 'shirt' && def.type === 'old_man') pants = '#5B5A55';
+    const footKind = (outfit === 'panjabi' || outfit === 'sari' || outfit === 'salwar' || T.old) ? 'sandal' : (kid || outfit === 'tshirt' || outfit === 'uniform') ? 'sneaker' : 'shoe';
+    const strap = fem ? U.shade(col, -0.2) : '#5A3A28';
 
-    // ---- legs ----
-    const hipY = -380 + dy;
+    // ---- legs (two-bone, walk cycle with knee bend; feet stay on the floor) ----
+    const hipY0 = -380 + dy, Lt = 172, Ls = 172;
+    const w = t * 7 + phase;
+    const legsGeo = [-hip * 0.42, hip * 0.42].map((x, i) => {
+      if (sitting) { const kx = x + 160, ky = hipY0 + 12; return { x, k: [kx, ky], a: [kx + 6, -30] }; }
+      const ph = w + i * Math.PI;
+      const a = walking ? Math.sin(ph) * 21 : (i ? 2.5 : -2.5);
+      const kb = walking ? Math.max(0, Math.cos(ph)) * 34 : 0;
+      const r = Math.PI / 180;
+      const kx = x + Math.sin(a * r) * Lt, ky = hipY0 + Math.cos(a * r) * Lt;
+      const a2 = a - kb;
+      return { x, k: [kx, ky], a: [kx + Math.sin(a2 * r) * Ls, ky + Math.cos(a2 * r) * Ls] };
+    });
+    // drop the body so the lowest foot touches the floor
+    const drop = sitting ? 0 : (-30 - Math.max(...legsGeo.map(l => l.a[1])));
+    legsGeo.forEach(l => { if (!sitting) { l.k[1] += drop; l.a[1] += drop; } });
+    const hipY = hipY0 + drop;
+    let legs = '', back = '';
+    const lw = fem ? [64, 52, 40] : kid ? [58, 50, 42] : [66, 56, 46];
     if (outfit === 'sari') {
-      // skirt covers legs
+      const sw = walking ? Math.sin(w) * 10 : 0;
+      const top = hipY - 30, hem = sitting ? -6 : -14;
       if (sitting) {
-        legs += `<path d="M${-hip} ${hipY - 20} L${hip + 10} ${hipY - 20} Q${hip + 170} ${hipY - 10} ${hip + 170} ${hipY + 40} L${hip + 175} -6 L${hip + 40} -6 L${hip + 40} ${hipY + 50} L${-hip} ${hipY + 60} Z" fill="${col}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>` +
-          `<path d="M${hip + 40} -26 L${hip + 175} -26" stroke="${col2}" stroke-width="16"/>` +
-          `<ellipse cx="${hip + 150}" cy="-4" rx="34" ry="12" fill="${shoe}" stroke="${OL}" stroke-width="4"/>`;
+        legs += P(`M${-hip} ${top} L${hip + 10} ${top} Q${hip + 175} ${top + 6} ${hip + 178} ${top + 46} L${hip + 182} ${hem} L${hip + 30} ${hem} L${hip + 30} ${top + 60} L${-hip} ${top + 70} Z`, col);
+        legs += `<path d="M${hip + 34} ${hem - 22} L${hip + 182} ${hem - 22}" stroke="${col2}" stroke-width="18"/><path d="M${hip + 34} ${hem - 33} L${hip + 182} ${hem - 33}" stroke="#E8C66A" stroke-width="4"/>`;
+        legs += foot(hip + 150, -30, 'sandal', skin, strap);
       } else {
-        const sw = walking ? Math.sin(t * 9) * 8 : 0;
-        legs += `<path d="M${-hip} ${hipY - 30} L${hip} ${hipY - 30} L${hip + 20 + sw} -8 L${-hip - 18 + sw} -8 Z" fill="${col}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>` +
-          `<path d="M${-hip + 6} ${hipY + 10} L${-hip - 8 + sw} -30 M${-hip / 3} ${hipY + 20} L${-hip / 3 - 4 + sw} -30 M${hip / 3} ${hipY + 20} L${hip / 3 + 6 + sw} -30" stroke="${U.shade(col, -0.18)}" stroke-width="5"/>` +
-          `<path d="M${-hip - 16 + sw} -30 L${hip + 18 + sw} -30" stroke="${col2}" stroke-width="18"/>` +
-          `<ellipse cx="${30 + sw}" cy="-4" rx="34" ry="12" fill="${shoe}" stroke="${OL}" stroke-width="4"/>`;
+        legsGeo.forEach(l => { legs += foot(l.a[0] - 6, l.a[1], 'sandal', skin, strap); });
+        legs += P(`M${-hip - 4} ${top} C${-hip - 10} ${top + 120} ${-hip - 24 + sw} ${hem - 90} ${-hip - 30 + sw} ${hem} L${hip + 34 + sw} ${hem} C${hip + 26 + sw} ${hem - 90} ${hip + 12} ${top + 120} ${hip + 6} ${top} Z`, col);
+        // front pleats fanning out
+        for (let j = 0; j < 5; j++) legs += `<path d="M${6 + j * 9} ${top + 40} Q${10 + j * 14 + sw * 0.5} ${top + 200} ${2 + j * 20 + sw} ${hem - 4}" fill="none" stroke="${U.shade(col, -0.22)}" stroke-width="3.5"/>`;
+        legs += `<path d="M${-hip - 28 + sw} ${hem - 22} L${hip + 32 + sw} ${hem - 22}" stroke="${col2}" stroke-width="20"/><path d="M${-hip - 26 + sw} ${hem - 35} L${hip + 30 + sw} ${hem - 35}" stroke="#E8C66A" stroke-width="4"/>`;
       }
     } else {
-      const lx = [-hip * 0.45, hip * 0.45];
-      lx.forEach((x, i) => {
-        const isFront = i === 1;
-        if (sitting) {
-          const kx = x + 165, ky = hipY + 10;
-          legs += limb(`M${x} ${hipY} L${kx} ${ky} L${kx + 6} -40`, legW, isFront ? pants : U.shade(pants, -0.12));
-          legs += `<path d="M${kx - 20} -18 Q${kx + 6} -40 ${kx + 50} -24 Q${kx + 60} -6 ${kx + 34} -2 L${kx - 20} -2 Z" fill="${shoe}" stroke="${OL}" stroke-width="4"/>`;
-        } else {
-          const a = walking ? Math.sin(t * 9 + i * Math.PI) * 18 : (i ? 3 : -3);
-          const r = Math.PI / 180;
-          const fx = x + Math.sin(a * r) * 360, fy = hipY + Math.cos(a * r) * 360;
-          legs += limb(`M${x} ${hipY} L${fx} ${Math.min(fy, -40)}`, legW, isFront ? pants : U.shade(pants, -0.12));
-          legs += `<path d="M${fx - 26} -16 Q${fx} -40 ${fx + 44} -22 Q${fx + 54} -4 ${fx + 30} 0 L${fx - 26} 0 Z" fill="${shoe}" stroke="${OL}" stroke-width="4"/>`;
-        }
-        if (outfit === 'panjabi' || outfit === 'uniform' || outfit === 'salwar' || outfit === 'shirt' || outfit === 'tshirt' || outfit === 'scrub') { /* plain */ }
+      legsGeo.forEach((l, i) => {
+        const c = i === 1 ? pants : U.shade(pants, -0.12);
+        legs += P(cap(l.x, hipY, l.k[0], l.k[1], lw[0], lw[1]), c) + P(cap(l.k[0], l.k[1], l.a[0], l.a[1], lw[1], lw[2]), c);
+        if (outfit === 'salwar') legs += `<path d="M${l.a[0] - lw[2] / 2} ${l.a[1] - 18} h${lw[2]}" stroke="${col2}" stroke-width="6"/>`;
+        else if (!sitting) legs += `<path d="M${l.x + 8} ${hipY + 40} L${l.k[0] + 8} ${l.k[1]}" stroke="${U.shade(c, -0.18)}" stroke-width="2.5" opacity="0.7"/>`;
+        legs += foot(l.a[0] - 4, l.a[1], footKind, skin, footKind === 'sneaker' ? (kid ? '#C4473A' : '#2F7A6B') : strap);
       });
     }
 
     // ---- torso ----
-    const sy = -625 + dy + breathe * 0.5;  // shoulder line
-    let bottom = -372 + dy;
-    let flare = 0;
-    if (outfit === 'panjabi') { bottom = -185 + dy; flare = 18; }
-    if (outfit === 'salwar') { bottom = -205 + dy; flare = 22; }
-    if (outfit === 'sari') { bottom = -420 + dy; }
-    if (sitting && (outfit === 'panjabi' || outfit === 'salwar')) bottom = Math.min(bottom, -250 + dy);
-    const tw = sh, bw = hip + flare;
-    const body = `M${-tw + 6} ${sy + 6} C${-tw - 10} ${sy + 40} ${-tw - 6} ${sy + 150} ${-hip - 4} ${-380 + dy} L${-bw} ${bottom} Q0 ${bottom + 8} ${bw} ${bottom} L${hip + 4} ${-380 + dy} C${tw + 6} ${sy + 150} ${tw + 10} ${sy + 40} ${tw - 6} ${sy + 6} Q0 ${sy - 14} ${-tw + 6} ${sy + 6} Z`;
+    const sy = -620 + dy + drop + breathe * 0.4;          // shoulder line
+    const waist = hipY + (tucked ? 6 : 0);
+    let bottom = tucked ? waist : hipY + 46, flare = 6;
+    if (outfit === 'panjabi') { bottom = -190 + dy + drop; flare = 22; }
+    if (outfit === 'salwar') { bottom = -205 + dy + drop; flare = 26; }
+    if (outfit === 'sari') { bottom = hipY - 40; flare = 0; }
+    if (sitting && (outfit === 'panjabi' || outfit === 'salwar')) bottom = Math.min(bottom, hipY + 70);
+    const tw = sh, bw = hip + flare, wx = fem ? hip * 0.86 : hip;   // waist narrower for women
     const tcol = outfit === 'sari' ? col2 : col;
-    torso += `<path d="${body}" fill="${tcol}" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>`;
-    // shading on back side
-    torso += `<path d="M${-tw + 6} ${sy + 6} C${-tw - 10} ${sy + 40} ${-tw - 6} ${sy + 150} ${-hip - 4} ${-380 + dy} L${-bw} ${bottom} L${-bw + 34} ${bottom} C${-tw + 30} ${sy + 150} ${-tw + 26} ${sy + 60} ${-tw + 30} ${sy + 4} Z" fill="#000" opacity="0.09"/>`;
-    // outfit details
+    const body = `M${-tw + 14} ${sy - 2} C${-tw - 14} ${sy + 8} ${-tw - 8} ${sy + 110} ${-wx - 2} ${hipY - 30} L${-bw} ${bottom} Q0 ${bottom + 10} ${bw} ${bottom} L${wx + 2} ${hipY - 30} C${tw + 8} ${sy + 110} ${tw + 14} ${sy + 8} ${tw - 14} ${sy - 2} Q0 ${sy - 18} ${-tw + 14} ${sy - 2} Z`;
+    let torso = P(body, tcol);
+    torso += `<path d="M${-tw + 14} ${sy - 2} C${-tw - 14} ${sy + 8} ${-tw - 8} ${sy + 110} ${-wx - 2} ${hipY - 30} L${-bw} ${bottom} L${-bw + 30} ${bottom} C${-wx + 26} ${hipY - 60} ${-tw + 26} ${sy + 110} ${-tw + 40} ${sy + 4} Z" fill="#000" opacity="0.1"/>`;
+    torso += `<path d="M${tw - 34} ${sy + 30} C${tw - 20} ${sy + 90} ${tw - 22} ${sy + 160} ${wx - 18} ${hipY - 50}" fill="none" stroke="#FFF" stroke-width="6" opacity="0.18" stroke-linecap="round"/>`;
+    const fold = c => `stroke="${U.shade(c, -0.2)}" stroke-width="3" fill="none" stroke-linecap="round"`;
     if (outfit === 'shirt' || outfit === 'uniform') {
-      torso += `<path d="M-30 ${sy - 2} L0 ${sy + 34} L30 ${sy - 2}" fill="${U.shade(tcol, 0.18)}" stroke="${OL}" stroke-width="4" stroke-linejoin="round"/>` +
-        `<path d="M6 ${sy + 34} L8 ${bottom - 6}" stroke="${U.shade(tcol, -0.2)}" stroke-width="4"/>` +
-        [70, 130, 190].map(o => `<circle cx="16" cy="${sy + o}" r="4.5" fill="${U.shade(tcol, -0.3)}"/>`).join('') +
-        `<path d="M40 ${sy + 70} h34 v32 h-34 z" fill="none" stroke="${U.shade(tcol, -0.18)}" stroke-width="4"/>`;
-      if (outfit === 'uniform') torso += `<path d="M-6 ${sy + 30} l10 70 l10 -70 z" fill="${col2}" stroke="${OL}" stroke-width="3"/>`;
+      torso += `<path d="M-30 ${sy - 10} L-4 ${sy + 34} L2 ${sy + 8} Z" fill="${U.shade(tcol, 0.12)}" stroke="${OL}" stroke-width="3.5" stroke-linejoin="round"/><path d="M34 ${sy - 10} L8 ${sy + 34} L2 ${sy + 8} Z" fill="${U.shade(tcol, 0.12)}" stroke="${OL}" stroke-width="3.5" stroke-linejoin="round"/>` +
+        `<path d="M4 ${sy + 30} L6 ${bottom - 4}" ${fold(tcol)}/>` + [62, 118, 174].map(o => `<circle cx="13" cy="${sy + o}" r="3.8" fill="${U.shade(tcol, -0.35)}"/>`).join('') +
+        `<path d="M36 ${sy + 64} h30 v26 q-15 6 -30 0 z" fill="none" ${fold(tcol)}/><path d="M-40 ${sy + 150} q16 14 30 6" ${fold(tcol)}/>`;
+      if (outfit === 'uniform') torso += `<path d="M-4 ${sy + 30} l9 64 l9 -64 z" fill="${col2}" stroke="${OL}" stroke-width="3"/><rect x="-60" y="${sy + 80}" width="34" height="34" rx="4" fill="${U.shade(tcol, -0.08)}" stroke="${OL}" stroke-width="3"/>`;
+      if (tucked) torso += `<rect x="${-wx - 2}" y="${waist - 16}" width="${wx * 2 + 4}" height="18" fill="#3A2A22" stroke="${OL}" stroke-width="3"/><rect x="10" y="${waist - 18}" width="22" height="22" rx="3" fill="#C9A44E" stroke="${OL}" stroke-width="3"/>`;
+      else torso += `<path d="M${-bw + 6} ${bottom - 10} Q0 ${bottom - 2} ${bw - 6} ${bottom - 10}" ${fold(tcol)}/>`;
     } else if (outfit === 'tshirt') {
-      torso += `<path d="M-30 ${sy - 4} Q0 ${sy + 22} 30 ${sy - 4}" fill="none" stroke="${OL}" stroke-width="5"/>` +
-        `<path d="M-20 ${sy + 80} h70" stroke="${U.shade(tcol, 0.25)}" stroke-width="10" stroke-linecap="round" opacity="0.7"/>`;
+      torso += `<path d="M-30 ${sy - 8} Q2 ${sy + 22} 34 ${sy - 8}" fill="none" stroke="${OL}" stroke-width="4.5"/><path d="M-26 ${sy - 4} Q2 ${sy + 14} 30 ${sy - 4}" fill="none" stroke="${U.shade(tcol, -0.2)}" stroke-width="3"/>` +
+        `<path d="M${-bw + 8} ${bottom - 12} Q0 ${bottom - 4} ${bw - 8} ${bottom - 12}" ${fold(tcol)}/><path d="M-30 ${sy + 160} q20 12 44 2" ${fold(tcol)}/>`;
     } else if (outfit === 'panjabi' || outfit === 'salwar') {
-      torso += `<path d="M-18 ${sy - 6} Q0 ${sy + 6} 22 ${sy - 6}" fill="none" stroke="${OL}" stroke-width="4"/>` +
-        `<path d="M12 ${sy + 2} L12 ${sy + 120}" stroke="${U.shade(tcol, -0.22)}" stroke-width="4"/>` +
-        (outfit === 'panjabi' ? [30, 62, 94].map(o => `<circle cx="12" cy="${sy + o}" r="4.5" fill="${U.shade(tcol, -0.35)}"/>`).join('') : '') +
-        `<path d="M${-bw + 10} ${bottom - 8} Q0 ${bottom} ${bw - 10} ${bottom - 8}" fill="none" stroke="${U.shade(tcol, -0.18)}" stroke-width="5"/>`;
+      const emb = outfit === 'panjabi' ? (def.color2 || '#C9A44E') : U.shade(col2, -0.1);
+      torso += `<path d="M-24 ${sy - 10} Q2 ${sy + 6} 28 ${sy - 10}" fill="none" stroke="${OL}" stroke-width="4"/>` +
+        `<path d="M12 ${sy - 2} L12 ${sy + 130}" stroke="${emb}" stroke-width="10"/><path d="M12 ${sy - 2} L12 ${sy + 130}" stroke="${OL}" stroke-width="1.5" stroke-dasharray="6 8"/>` +
+        (outfit === 'panjabi' ? [30, 64, 98].map(o => `<circle cx="12" cy="${sy + o}" r="4.5" fill="#F4EDE1" stroke="${OL}" stroke-width="2"/>`).join('') : '') +
+        `<path d="M${-bw + 7} ${bottom - 100} L${-bw + 9} ${bottom - 6}" stroke="${U.shade(tcol, -0.3)}" stroke-width="3"/><path d="M${bw - 7} ${bottom - 100} L${bw - 9} ${bottom - 6}" stroke="${U.shade(tcol, -0.3)}" stroke-width="3"/>` +
+        `<path d="M${-bw + 8} ${bottom - 12} Q0 ${bottom - 2} ${bw - 8} ${bottom - 12}" stroke="${emb}" stroke-width="6" fill="none"/>` +
+        `<path d="M-34 ${hipY - 20} q18 30 4 80 M30 ${hipY - 10} q-10 40 8 90" ${fold(tcol)}/>`;
       if (outfit === 'salwar') {
-        // dupatta over shoulders
-        torso += `<path d="M${-tw + 4} ${sy + 10} Q${-tw + 30} ${sy + 60} 10 ${sy + 70} Q${tw - 10} ${sy + 60} ${tw} ${sy + 4} L${tw + 8} ${sy + 40} Q${tw - 20} ${sy + 110} 10 ${sy + 118} Q${-tw + 20} ${sy + 110} ${-tw - 6} ${sy + 50} Z" fill="${col2}" stroke="${OL}" stroke-width="4" opacity="0.96"/>` +
-          `<path d="M${-tw - 4} ${sy + 20} L${-tw - 22} ${sy + 300}" stroke="${OL}" stroke-width="40" stroke-linecap="round"/><path d="M${-tw - 4} ${sy + 20} L${-tw - 22} ${sy + 300}" stroke="${col2}" stroke-width="30" stroke-linecap="round"/>`;
+        // dupatta: V across the chest, tails falling behind both shoulders
+        back += `<path d="M${-tw + 10} ${sy + 4} C${-tw - 30} ${sy + 160} ${-tw - 40} ${sy + 280} ${-tw - 26} ${sy + 380} L${-tw + 20} ${sy + 380} C${-tw + 10} ${sy + 260} ${-tw + 20} ${sy + 140} ${-tw + 40} ${sy + 4} Z" fill="${U.shade(col2, -0.1)}" stroke="${OL}" stroke-width="${LW}"/>`;
+        torso += `<path d="M${-tw + 8} ${sy} Q${-tw + 40} ${sy + 110} 6 ${sy + 120} Q${tw - 30} ${sy + 110} ${tw - 4} ${sy - 4} L${tw + 10} ${sy + 34} Q${tw - 14} ${sy + 150} 6 ${sy + 160} Q${-tw + 24} ${sy + 150} ${-tw - 8} ${sy + 40} Z" fill="${col2}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+          `<path d="M${-tw + 4} ${sy + 30} Q${-tw + 34} ${sy + 128} 6 ${sy + 140} Q${tw - 22} ${sy + 128} ${tw + 4} ${sy + 18}" fill="none" stroke="${U.shade(col2, -0.18)}" stroke-width="3"/>`;
       }
     } else if (outfit === 'sari') {
-      // anchal: diagonal drape from right hip over left shoulder
-      torso += `<path d="M${-tw + 2} ${sy + 4} L${-tw + 46} ${sy - 4} L${hip + 14} ${-372 + dy} L${hip - 40} ${-360 + dy} Z" fill="${col}" stroke="${OL}" stroke-width="4" stroke-linejoin="round"/>` +
-        `<path d="M${-tw + 30} ${sy} L${hip - 6} ${-366 + dy}" stroke="${col2}" stroke-width="10"/>` +
-        `<path d="M${-tw + 2} ${sy + 4} L${-tw - 18} ${sy + 330}" stroke="${OL}" stroke-width="48" stroke-linecap="round"/><path d="M${-tw + 2} ${sy + 4} L${-tw - 18} ${sy + 330}" stroke="${col}" stroke-width="38" stroke-linecap="round"/><path d="M${-tw - 14} ${sy + 300} L${-tw - 22} ${sy + 330}" stroke="${col2}" stroke-width="30"/>`;
+      // blouse is the torso (col2); anchal/pallu crosses from right hip to left shoulder, then falls down the back
+      back += `<path d="M${-tw + 6} ${sy} C${-tw - 26} ${sy + 140} ${-tw - 36} ${sy + 300} ${-tw - 30} ${sy + 420} L${-tw + 22} ${sy + 430} C${-tw + 14} ${sy + 300} ${-tw + 24} ${sy + 140} ${-tw + 46} ${sy - 4} Z" fill="${U.shade(col, -0.08)}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+        `<path d="M${-tw - 26} ${sy + 410} L${-tw + 18} ${sy + 418}" stroke="${col2}" stroke-width="16"/><path d="M${-tw - 26} ${sy + 396} L${-tw + 18} ${sy + 404}" stroke="#E8C66A" stroke-width="3.5"/>`;
+      torso += `<path d="M${-tw + 4} ${sy + 2} L${-tw + 64} ${sy - 10} C${-10} ${sy + 120} ${hip - 10} ${hipY - 120} ${hip + 16} ${hipY - 30} L${hip - 50} ${hipY - 18} C${-30} ${hipY - 90} ${-tw + 20} ${sy + 120} ${-tw + 4} ${sy + 2} Z" fill="${col}" stroke="${OL}" stroke-width="${LW}" stroke-linejoin="round"/>` +
+        `<path d="M${-tw + 56} ${sy - 4} C${-4} ${sy + 120} ${hip - 18} ${hipY - 120} ${hip + 8} ${hipY - 34}" fill="none" stroke="${col2}" stroke-width="9"/><path d="M${-tw + 44} ${sy + 4} C${-14} ${sy + 126} ${hip - 28} ${hipY - 114} ${hip - 4} ${hipY - 30}" fill="none" stroke="#E8C66A" stroke-width="3"/>` +
+        `<path d="M${-tw + 30} ${sy + 60} q20 40 50 60 M${-tw + 50} ${sy + 150} q30 20 70 26" ${fold(col)}/>`;
     } else if (outfit === 'scrub') {
-      torso += `<path d="M-30 ${sy - 4} L0 ${sy + 46} L30 ${sy - 4}" fill="none" stroke="${OL}" stroke-width="5" stroke-linejoin="round"/>` +
-        `<path d="M30 ${sy + 120} h40 v34 h-40 z" fill="none" stroke="${U.shade(tcol, -0.2)}" stroke-width="4"/><path d="M-50 ${sy + 4} Q-60 ${sy + 120} -20 ${sy + 150}" fill="none" stroke="#3A4651" stroke-width="5"/><circle cx="-20" cy="${sy + 156}" r="9" fill="#9AA6B2" stroke="${OL}" stroke-width="3"/>`;
+      torso += `<path d="M-30 ${sy - 8} L2 ${sy + 46} L34 ${sy - 8}" fill="none" stroke="${OL}" stroke-width="4.5" stroke-linejoin="round"/>` +
+        `<path d="M30 ${sy + 120} h40 v34 h-40 z" fill="none" ${fold(tcol)}/><path d="M-50 ${sy + 4} Q-60 ${sy + 120} -20 ${sy + 150}" fill="none" stroke="#3A4651" stroke-width="5"/><circle cx="-20" cy="${sy + 156}" r="9" fill="#9AA6B2" stroke="${OL}" stroke-width="3"/>`;
     }
     // neck
-    const neck = `<path d="M-20 ${sy - 6} L-20 ${sy - 40} L22 ${sy - 40} L22 ${sy - 6} Q0 ${sy + 4} -20 ${sy - 6} Z" fill="${skin}" stroke="${OL}" stroke-width="5"/><path d="M-20 ${sy - 30} Q0 ${sy - 18} 22 ${sy - 30}" fill="none" stroke="${U.shade(skin, -0.25)}" stroke-width="5" opacity="0.6"/>`;
+    const neckW = fem ? 34 : kid ? 32 : 42;
+    const neck = P(cap(2, sy + 4, 6, sy - 40, neckW, neckW - 4), skin) + `<path d="M${-neckW / 2 + 4} ${sy - 30} Q4 ${sy - 14} ${neckW / 2 + 6} ${sy - 30}" fill="none" stroke="${U.shade(skin, -0.25)}" stroke-width="5" opacity="0.6"/>`;
 
     // ---- arms ----
     const A = ARMS[st.arm] || ARMS.down;
-    const aF = st.armF || A.f, aB = st.armB || A.b;
-    const sleeveLong = !['tshirt', 'scrub'].includes(outfit);
+    let aF = (st.armF || A.f).slice(), aB = (st.armB || A.b).slice();
+    if (walking && (st.arm || 'down') === 'down') { const s = Math.sin(w) * 16; aF = [aF[0] - s, aF[1] - s * 1.2]; aB = [aB[0] + s, aB[1] + s * 1.2]; }
+    if (talking && ['talk', 'point', 'hold', 'cross'].indexOf(st.arm) < 0 && !walking) aF = [aF[0] + Math.sin(t * 2.3 + phase) * 4, aF[1] + Math.sin(t * 2.3 + phase) * 8];
+    if (talking && st.arm === 'talk') { const g2 = Math.sin(t * 4.2 + phase) * 9 * Math.min(1, talk * 3); aF = [aF[0] + g2 * 0.4, aF[1] + g2]; }
+    const shortSleeve = ['tshirt', 'scrub', 'sari'].includes(outfit);
     const sleeve = outfit === 'sari' ? col2 : col;
-    const armW = T.fem ? 40 : 46;
+    const k = fem ? 0.86 : 1;
+    const L1 = 142, L2 = 130;
+    const handR = (fem ? 17 : 19);
     const drawArm = (sx, a, isFront) => {
-      const p = armPts(sx, sy + 18, a[0], a[1]);
-      const c = isFront ? sleeve : U.shade(sleeve, -0.12);
+      const r = Math.PI / 180, sy0 = sy + 22;
+      const ex = sx + L1 * Math.sin(a[0] * r), ey = sy0 + L1 * Math.cos(a[0] * r);
+      const hx = ex + L2 * Math.sin(a[1] * r), hy = ey + L2 * Math.cos(a[1] * r);
+      const sk = isFront ? skin : U.shade(skin, -0.1), c = isFront ? sleeve : U.shade(sleeve, -0.12);
       let s = '';
-      if (sleeveLong) s += limb(`M${sx} ${sy + 18} L${p.ex} ${p.ey} L${p.hx} ${p.hy}`, armW, c);
-      else {
-        const mx = sx + (p.ex - sx) * 0.55, my = sy + 18 + (p.ey - sy - 18) * 0.55;
-        s += limb(`M${sx} ${sy + 18} L${p.ex} ${p.ey} L${p.hx} ${p.hy}`, armW - 6, isFront ? skin : U.shade(skin, -0.1));
-        s += limb(`M${sx} ${sy + 18} L${mx} ${my}`, armW + 4, c);
+      if (!shortSleeve) {
+        s += P(cap(sx, sy0, ex, ey, 52 * k, 42 * k), c) + P(cap(ex, ey, hx, hy, 42 * k, 36 * k), c);
+        s += `<path d="${cap(ex + (hx - ex) * 0.86, ey + (hy - ey) * 0.86, hx, hy, 38 * k, 36 * k)}" fill="${U.shade(c, -0.15)}" opacity="0.9"/>`;
+      } else {
+        s += P(cap(sx, sy0, ex, ey, 40 * k, 34 * k), sk) + P(cap(ex, ey, hx, hy, 34 * k, 27 * k), sk);
+        const mx = sx + (ex - sx) * (outfit === 'sari' ? 0.62 : 0.5), my = sy0 + (ey - sy0) * (outfit === 'sari' ? 0.62 : 0.5);
+        s += P(cap(sx, sy0, mx, my, 56 * k, 48 * k), c);
+        if (fem) s += `<circle cx="${hx}" cy="${hy}" r="${15}" fill="none" stroke="#E8C66A" stroke-width="5"/>`;   // churi
       }
-      s += `<circle cx="${p.hx}" cy="${p.hy}" r="${T.fem ? 19 : 22}" fill="${isFront ? skin : U.shade(skin, -0.1)}" stroke="${OL}" stroke-width="5"/>`;
-      return { s, p };
+      s += hand(hx, hy, a[1], handR, sk);
+      const hc = { hx: hx + Math.sin(a[1] * r) * handR * 0.9, hy: hy + Math.cos(a[1] * r) * handR * 0.9 };
+      return { s, p: hc };
     };
-    const bArm = drawArm(-sh + 26, aB, false);
-    const fArm = drawArm(sh - 26, aF, true);
+    const bArm = drawArm(-sh + 30, aB, false);
+    const fArm = drawArm(sh - 30, aF, true);
     let held = '';
     if (st.hold && st.hold !== 'none') {
       const useBack = st.arm === 'call';
@@ -308,23 +361,23 @@
     }
 
     // ---- head ----
-    const hs = T.head * 1.2;
-    const headY = sy - 124 - (T.kid ? 8 : 0);
-    const tilt = (st.tilt || 0) + Math.sin(t * 1.1 + phase) * 1.2 + (st.talk || 0) * 2.5;
+    const hs = 0.92 * T.head;
+    const headY = sy - 26 - 84 * hs + (T.old ? 6 : 0);
+    const tilt = (st.tilt || 0) + Math.sin(t * 1.1 + phase) * 1.2 + (talking ? Math.sin(t * 3.4 + phase) * 2.2 * Math.min(1, talk * 2) : 0) + (walking ? Math.sin(w * 2) * 1 : 0);
     let head = '';
     if (def.hair === 'hijab') {
       head += hijab(def, skin);
     } else {
       head += hairBack(def);
       head += `<ellipse cx="-56" cy="6" rx="15" ry="21" fill="${skin}" stroke="${OL}" stroke-width="5"/><path d="M-58 0 q-6 8 0 14" fill="none" stroke="${U.shade(skin, -0.3)}" stroke-width="4"/>`;
-      head += `<path d="M2 -82 C50 -82 74 -48 74 -6 C74 42 52 80 10 84 C-40 86 -70 52 -70 0 C-70 -50 -46 -82 2 -82 Z" fill="${skin}" stroke="${OL}" stroke-width="5"/>`;
-      head += `<path d="M-70 0 C-70 52 -40 86 10 84 C-24 76 -46 46 -50 6 C-52 -30 -40 -58 -20 -76 C-50 -66 -70 -40 -70 0 Z" fill="#000" opacity="0.07"/>`;
+      head += `<path d="M2 -82 C50 -82 72 -50 72 -8 C72 36 56 74 18 84 C-30 90 -68 56 -70 0 C-70 -50 -46 -82 2 -82 Z" fill="${skin}" stroke="${OL}" stroke-width="5"/>`;
+      head += `<path d="M-70 0 C-68 56 -30 90 18 84 C-24 76 -46 46 -50 6 C-52 -30 -40 -58 -20 -76 C-50 -66 -70 -40 -70 0 Z" fill="#000" opacity="0.07"/>`;
+      if (fem && !kid) head += `<circle cx="-56" cy="30" r="5" fill="#E8C66A" stroke="${OL}" stroke-width="2"/>`;   // earring
     }
-    // beard (under features)
-    if (def.beard === 'stubble') head += `<path d="M-48 30 C-40 66 -10 84 14 84 C46 82 66 58 72 30 C60 52 40 64 14 66 C-12 66 -34 52 -48 30 Z" fill="#2A211C" opacity="0.16"/>`;
+    if (def.beard === 'stubble') head += `<path d="M-48 30 C-40 66 -10 86 18 84 C46 80 64 58 70 30 C60 52 40 64 14 66 C-12 66 -34 52 -48 30 Z" fill="#2A211C" opacity="0.16"/>`;
     if (def.beard === 'short_grey' || def.beard === 'full_black') {
       const bc = def.beard === 'short_grey' ? '#D8D2C8' : '#231C19';
-      head += `<path d="M-52 24 C-44 74 -10 96 16 96 C52 94 72 64 74 26 C64 52 50 60 40 58 C30 52 0 52 -10 58 C-24 56 -40 46 -52 24 Z" fill="${bc}" stroke="${OL}" stroke-width="4"/>`;
+      head += `<path d="M-52 24 C-44 74 -10 96 18 94 C52 90 70 62 72 26 C64 52 50 60 40 58 C30 52 0 52 -10 58 C-24 56 -40 46 -52 24 Z" fill="${bc}" stroke="${OL}" stroke-width="4"/>`;
     }
     head += face(Object.assign({ fem: T.fem }, def), st, skin);
     if (def.beard === 'moustache' || def.beard === 'short_grey' || def.beard === 'full_black') {
@@ -335,30 +388,28 @@
     if (def.glasses) head += `<g fill="none" stroke="${OL}" stroke-width="4.5"><rect x="-26" y="-20" width="34" height="28" rx="10"/><rect x="20" y="-22" width="40" height="30" rx="11"/><path d="M8 -8 Q14 -12 20 -8 M-26 -8 L-54 -4"/></g><g fill="#FFFFFF" opacity="0.25"><rect x="24" y="-18" width="10" height="8" rx="3"/></g>`;
     if (def.cap) head += `<path d="M-60 -48 C-50 -96 52 -100 66 -46 Q2 -64 -60 -48 Z" fill="#FBF8F1" stroke="${OL}" stroke-width="5"/><path d="M-40 -66 Q4 -78 50 -64" fill="none" stroke="#D9D2C2" stroke-width="3"/>`;
     if (def.teep) head += `<circle cx="20" cy="-36" r="5" fill="#C4473A"/>`;
-    const headG = `<g transform="translate(${hunch * 4},${headY + breathe}) rotate(${tilt}) scale(${hs})">${head}</g>`;
+    const hunch = T.old ? 6 : 0;
+    const headG = `<g transform="translate(${hunch + 4},${headY + breathe * 0.6}) rotate(${tilt}) scale(${hs})">${head}</g>`;
 
     // ---- assemble (facing right) ----
-    const shadow = `<ellipse cx="${sitting ? 60 : 4}" cy="0" rx="${sitting ? 150 : 108}" ry="16" fill="#000" opacity="0.16"/>`;
+    const shadow = `<ellipse cx="${sitting ? 60 : 8}" cy="0" rx="${sitting ? 150 : 100}" ry="15" fill="#000" opacity="0.18"/>`;
     let inner = shadow;
     if (sitting && st.seat !== 'none') {
-      const wc = '#8A5A36', wd = '#6B4326', seatY = hipY + 24;
+      const wc = '#8A5A36', wd = '#6B4326', seatY = hipY0 + 26;
       inner += `<g stroke="${OL}" stroke-width="5" stroke-linejoin="round">` +
-        `<rect x="${-hip - 44}" y="${seatY - 300}" width="30" height="${300 - seatY + seatY}" rx="8" fill="${wd}"/>` +
+        `<rect x="${-hip - 44}" y="${seatY - 300}" width="30" height="300" rx="8" fill="${wd}"/>` +
         `<rect x="${hip + 96}" y="${seatY}" width="24" height="${-seatY}" rx="6" fill="${wd}"/>` +
         `<rect x="${-hip - 36}" y="${seatY}" width="24" height="${-seatY}" rx="6" fill="${wd}"/>` +
         `<rect x="${-hip - 50}" y="${seatY}" width="${hip * 2 + 180}" height="30" rx="8" fill="${wc}"/></g>`;
     }
-    if (A.crossed) {
-      inner += legs + torso + neck + headG + bArm.s + fArm.s;
-    } else {
-      inner += bArm.s + legs + torso + neck + headG + fArm.s + held;
-    }
-    if (A.crossed && held) inner += held;
+    const sway = walking ? 0 : Math.sin(t * 0.7 + phase) * 0.6;
+    const upper = (A.crossed ? '' : bArm.s) + back + legs + torso + neck + headG;
+    inner += `<g transform="rotate(${sway} 0 0)">` + (A.crossed ? (back + legs + torso + neck + headG + bArm.s + fArm.s + held) : (upper + fArm.s + held)) + `</g>`;
     const flip = st.face === 'left' ? -1 : 1;
     const s = (st.scale || 1) * T.h;
     const pop = st.pop || 0;
     const sc = s * (1 + pop * 0.03);
-    return `<g transform="translate(${st.x},${st.y}) scale(${sc * flip},${sc}) rotate(${hunch * 0.6})" opacity="${st.alpha == null ? 1 : st.alpha}">${inner}</g>`;
+    return `<g transform="translate(${st.x},${st.y}) scale(${sc * flip},${sc}) rotate(${hunch * 0.4})" opacity="${st.alpha == null ? 1 : st.alpha}">${inner}</g>`;
   }
 
   // world-space head position (for camera focus / bubbles)
@@ -366,7 +417,9 @@
     const T = TYPES[def.type] || TYPES.man;
     const s = (st.scale || 1) * T.h;
     const dy = st.pose === 'sit' ? 130 : 0;
-    return { x: st.x + (st.face === 'left' ? -1 : 1) * 10 * s, y: st.y + (-737 + dy) * s, s };
+    const hs = 0.92 * T.head;
+    const rel = -620 + dy - 26 - 84 * hs;
+    return { x: st.x + (st.face === 'left' ? -1 : 1) * 10 * s, y: st.y + rel * s, s };
   }
 
   g.CHAR = { render, headPos, ARMS, TYPES, SKIN };
