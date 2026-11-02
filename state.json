@@ -196,10 +196,11 @@
     "Mastery": "PLbqUW4qBrso8"
   },
   "last_run": {
-    "at": "2026-11-02T16:40:28.994857+06:00",
-    "errors": []
+    "at": "2026-11-02T16:40:30.969465+06:00",
+    "errors": [],
+    "queue_remaining": 19
   },
-  "queue_remaining": 22,
+  "queue_remaining": 19,
   "_run_started": "2026-11-02T16:25:30.169985+06:00",
   "dry_runs": []
 }
