@@ -1,0 +1,515 @@
+{
+  "id": "044",
+  "status": "ready",
+  "title_bn": "খাটের নিচে তিন ড্রাম",
+  "source": {
+    "book": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "author_bn": "মরগান হাউজেল",
+    "chapter": "CHAPTER 1",
+    "chapter_bn": "এক নম্বর অধ্যায়",
+    "title": "No One's Crazy",
+    "title_bn": "কেউ পাগল নয়"
+  },
+  "cast": {
+    "sumaiya": {
+      "name": "সুমাইয়া",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#3949AB",
+      "color2": "#C5CAE9",
+      "hair": "hijab",
+      "voice": "young_woman"
+    },
+    "amma": {
+      "name": "আম্মা",
+      "type": "old_woman",
+      "skin": "tan",
+      "outfit": "sari",
+      "color": "#F5F5F5",
+      "color2": "#8D6E63",
+      "hair": "grey_bun",
+      "voice": "old_woman"
+    },
+    "tuhin": {
+      "name": "তুহিন",
+      "type": "young_man",
+      "skin": "brown",
+      "outfit": "tshirt",
+      "color": "#43A047",
+      "hair": "curly",
+      "voice": "young_man"
+    }
+  },
+  "beats": [
+    {
+      "say": "আম্মার খাটের নিচে চাল ভরা তিনটা ড্রাম। আর বালিশের ভেতর *নগদ টাকা*।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "ময়মনসিংহ",
+        "props": [
+          "bed",
+          "almirah"
+        ],
+        "chars": [
+          {
+            "id": "sumaiya",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "surprised",
+            "arm": "point"
+          },
+          {
+            "id": "amma",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "চালের ড্রাম",
+              "value": "৩"
+            },
+            {
+              "label": "ব্যাংকে",
+              "value": "০ ৳",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "sumaiya",
+      "say": "আম্মা, আমি ব্যাংকে চাকরি করি! আর তুমি টাকা রাখো *বালিশের ভেতর*?",
+      "tone": "frustrated",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "sumaiya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "tuhin",
+      "say": "আপু, বাদ দাও। আম্মা *পুরনো দিনের* মানুষ।",
+      "tone": "teasing",
+      "scene": {
+        "chars": [
+          {
+            "id": "sumaiya",
+            "x": 0.25,
+            "pose": "stand",
+            "face": "right",
+            "mood": "angry",
+            "arm": "cross"
+          },
+          {
+            "id": "amma",
+            "x": 0.52,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "tuhin",
+            "x": 0.8,
+            "pose": "stand",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "cam": {
+          "focus": "tuhin",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "amma",
+      "say": "তোরা বুঝবি না। ঘরে *কিছু থাকা* লাগে।",
+      "tone": "serious",
+      "scene": {
+        "moods": {
+          "amma": "sad"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "সুমাইয়া বোঝাল— সুদের হিসাব, চুরির ভয়, *মোবাইল ব্যাংকিং*। আম্মা শুধু মাথা নাড়লেন।",
+      "card": {
+        "title": "সুমাইয়ার যুক্তি",
+        "items": [
+          {
+            "t": "ব্যাংকে সুদ",
+            "mark": "x"
+          },
+          {
+            "t": "চুরির ভয়",
+            "mark": "x"
+          },
+          {
+            "t": "মোবাইলে সব",
+            "mark": "x"
+          }
+        ],
+        "footer": "আম্মা: না"
+      }
+    },
+    {
+      "say": "তর্কটা শেষ হলো আম্মার *চুপ করে উঠে যাওয়ায়*।",
+      "tone": "softly",
+      "pause": 0.8,
+      "scene": {
+        "chars": [
+          {
+            "id": "sumaiya",
+            "x": 0.35,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "say": "রাতে সুমাইয়া দেখল, আম্মা বারান্দায় একা, *আকাশের দিকে* তাকিয়ে।",
+      "scene": {
+        "set": "balcony",
+        "light": "night",
+        "chip": "সেই রাতে",
+        "props": [
+          "plants"
+        ],
+        "chars": [
+          {
+            "id": "sumaiya",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "thinking",
+            "arm": "down"
+          },
+          {
+            "id": "amma",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "এবার সে তর্ক করল না। শুধু *একটা প্রশ্ন* করল।",
+      "pause": 0.7,
+      "card": {
+        "text": "তর্ক নয়,\n*একটা প্রশ্ন*।"
+      }
+    },
+    {
+      "voice": "sumaiya",
+      "say": "আম্মা, তুমি *কবে থেকে* এভাবে চাল জমাও?",
+      "tone": "gently",
+      "scene": {
+        "cam": {
+          "focus": "sumaiya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "অনেকক্ষণ চুপ। তারপর আম্মা বললেন *আটাশি সালের* কথা।",
+      "pause": 0.8,
+      "scene": {
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "voice": "amma",
+      "say": "বন্যায় ঘর ডুবল। তোর নানা অসুস্থ। তিন দিন ঘরে *এক মুঠো চালও* ছিল না।",
+      "tone": "tearful",
+      "scene": {
+        "moods": {
+          "amma": "crying"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "amma",
+      "say": "সেদিন নিজেকে কথা দিয়েছিলাম— আমার বাচ্চারা *কোনোদিন না খেয়ে* থাকবে না।",
+      "tone": "tearful",
+      "scene": {
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সুমাইয়া আম্মার হাতটা ধরল। ড্রামগুলো আর *পাগলামি* মনে হলো না।",
+      "pause": 0.7,
+      "scene": {
+        "chars": [
+          {
+            "id": "sumaiya",
+            "x": 0.42,
+            "pose": "sit",
+            "face": "right",
+            "mood": "crying",
+            "arm": "hug"
+          },
+          {
+            "id": "amma",
+            "x": 0.62,
+            "pose": "sit",
+            "face": "left",
+            "mood": "sad",
+            "arm": "hug"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "voice": "sumaiya",
+      "say": "আম্মা, ড্রাম থাকুক। শুধু একটা অংশ চলো *ব্যাংকেও* রাখি— তোমার নামে।",
+      "tone": "softly",
+      "scene": {
+        "cam": {
+          "focus": "sumaiya",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "amma",
+      "say": "আমার নামে? … আচ্ছা, তুই পাশে থাকলে *রাখব*।",
+      "tone": "warmly",
+      "scene": {
+        "moods": {
+          "amma": "smile",
+          "sumaiya": "smile"
+        },
+        "cam": {
+          "focus": "amma",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "তিন মাস পর আম্মার হাতে নিজের নামের *প্রথম পাসবই*। ড্রাম এখনো তিনটাই।",
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "তিন মাস পর",
+        "props": [
+          "bed",
+          "almirah"
+        ],
+        "chars": [
+          {
+            "id": "amma",
+            "x": 0.35,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "passbook"
+          },
+          {
+            "id": "tuhin",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "note",
+          "style": "passbook",
+          "title": "আম্মার পাসবই",
+          "lines": [
+            "প্রথম জমা — ২০,০০০ ৳",
+            "খাটের নিচে — ৩টা ড্রাম"
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "tuhin",
+      "say": "আম্মা, তুমি তো এখন *আধুনিক*!",
+      "tone": "laughs",
+      "scene": {
+        "widget": null,
+        "moods": {
+          "tuhin": "happy"
+        },
+        "cam": {
+          "focus": "tuhin",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "এক বছরের তর্ক যা পারেনি, *একটা প্রশ্ন* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— মরগান হাউজেলের *দ্য সাইকোলজি অফ মানি*।"
+    },
+    {
+      "kind": "book",
+      "say": "এক নম্বর অধ্যায়— *কেউ পাগল নয়*।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "টাকা নিয়ে প্রত্যেকের আচরণ আসে নিজের জীবনের ইতিহাস থেকে। যা অদ্ভুত লাগে, তার পেছনে থাকে *একটা গল্প*।",
+      "card": {
+        "title": "অভ্যাসের নিচে কী?",
+        "widget": {
+          "type": "iceberg",
+          "top": [
+            {
+              "icon": "x",
+              "t": "খাটের নিচে চাল"
+            },
+            {
+              "icon": "x",
+              "t": "বালিশে টাকা"
+            }
+          ],
+          "bottom": [
+            {
+              "icon": "clock",
+              "t": "আটাশির বন্যা"
+            },
+            {
+              "icon": "heart",
+              "t": "সন্তানের জন্য ভয়"
+            },
+            {
+              "icon": "shield",
+              "t": "নিরাপত্তার খোঁজ"
+            }
+          ],
+          "show": 2
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, তর্কের আগে *প্রশ্ন* করো।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "তর্কের আগে প্রশ্ন",
+            "sub": "কবে থেকে, কেন?",
+            "icon": "chat"
+          },
+          {
+            "t": "গল্পটা শোনো",
+            "sub": "অভ্যাসের পেছনে ইতিহাস",
+            "icon": "ear"
+          },
+          {
+            "t": "সম্মান রেখে বদল",
+            "sub": "পুরোটা নয়, একটু একটু",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, অভ্যাসের পেছনের *গল্পটা* শোনো।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, বদলাও *সম্মান রেখে*, একটু একটু।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— যাকে আমি *বোকা* ভাবছি, তার *গল্পটা* কি আমি জানি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "যাকে আমি *বোকা* ভাবছি,\nতার *গল্পটা* কি জানি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "অদ্ভুত অভ্যাস চোখে পড়ে… *পেছনের ক্ষতটা পড়ে না*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "অদ্ভুত অভ্যাস চোখে পড়ে…",
+        "line2": "পেছনের ক্ষতটা\nপড়ে না।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "ব্যাংকার মেয়ে, আর আম্মা টাকা রাখেন বালিশে— এক রাতে জানা গেল কেন 🌾 | The Psychology of Money",
+    "description": "আম্মার খাটের নিচে চাল ভরা তিনটা ড্রাম, বালিশের ভেতর নগদ টাকা। ব্যাংকার মেয়ে সুমাইয়া কত বোঝাল— সুদ, চুরির ভয়, মোবাইল ব্যাংকিং। তারপর এক রাতে সে তর্ক না করে শুধু একটা প্রশ্ন করল…\nমরগান হাউজেলের The Psychology of Money — No One's Crazy — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "psychology of money bangla",
+      "morgan housel bangla",
+      "মা মেয়ের গল্প",
+      "সঞ্চয়",
+      "বাংলা গল্প",
+      "টাকার গল্প",
+      "বন্যা",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "এক বছরের তর্ক যা পারেনি, একটা প্রশ্ন তা পারল। 🌾\n\nতোমার মা-বাবার কোন অভ্যাসটা তোমার অদ্ভুত লাগে? তার পেছনের গল্পটা জানো? 👇\n\n📖 The Psychology of Money — Morgan Housel\n#মামেয়ে #টাকারগল্প"
+  },
+  "thumbnail": {
+    "text": "বালিশে টাকা",
+    "sub": "আম্মা কেন এমন…"
+  }
+}

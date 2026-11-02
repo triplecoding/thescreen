@@ -280,6 +280,78 @@
       "relation": "father–son / customers",
       "set": "street",
       "hook": "wedding cancelled at 10 pm with biryani for 200 already cooked"
+    },
+    {
+      "id": "036",
+      "book": "Influence: The Psychology of Persuasion",
+      "item": "Commitment and Consistency",
+      "relation": "neighbours (young woman, elderly neighbour, bhabi)",
+      "set": "stairs",
+      "hook": "24 flats, garbage on the stairs every morning; 24 signed door cards"
+    },
+    {
+      "id": "037",
+      "book": "The Psychology of Money",
+      "item": "Man in the Car Paradox",
+      "relation": "mother–son / cousins",
+      "set": "street",
+      "hook": "12 instalments of 10,000 tk for an expensive phone on a 28k salary"
+    },
+    {
+      "id": "038",
+      "book": "Games People Play",
+      "item": "Ain't It Awful",
+      "relation": "colleagues (women) / boss",
+      "set": "kitchen",
+      "hook": "40 minutes of the same lunch complaints every day for 8 months"
+    },
+    {
+      "id": "039",
+      "book": "Thinking, Fast and Slow",
+      "item": "The Planning Fallacy",
+      "relation": "spouses (tailor husband) / customer",
+      "set": "shop",
+      "hook": "3 Eids, 3 late deliveries, 23 angry customers; wife's old notebook"
+    },
+    {
+      "id": "040",
+      "book": "The Art of War",
+      "item": "Victorious warriors win first, then go to war (preparation)",
+      "relation": "younger sister–elder brother / shopkeeper",
+      "set": "shop",
+      "hook": "7 job interviews, 7 rejections; 30 shopkeepers asked before the 8th"
+    },
+    {
+      "id": "041",
+      "book": "The Laws of Human Nature",
+      "item": "The Law of Narcissism — Transform Self-love into Empathy",
+      "relation": "spouses (husband learns) / daughter",
+      "set": "home",
+      "hook": "12 years of marriage, only one person talks at dinner; daughter's 'know your parents' worksheet"
+    },
+    {
+      "id": "042",
+      "book": "Animal Farm",
+      "item": "Rules quietly rewritten after the fact",
+      "relation": "friends (teen cricket club) / younger boy",
+      "set": "street",
+      "hook": "12 pay the club fee, only the captain bats; first-day rule notebook"
+    },
+    {
+      "id": "043",
+      "book": "The Social Contract",
+      "item": "Freedom includes obeying rules we made together",
+      "relation": "grandfather–grandchildren / joint family",
+      "set": "home",
+      "hook": "1 bathroom, 7 people, a fight every morning at 7:30"
+    },
+    {
+      "id": "044",
+      "book": "The Psychology of Money",
+      "item": "No One's Crazy",
+      "relation": "mother–daughter / brother",
+      "set": "home",
+      "hook": "3 rice drums under the bed, cash in the pillow; the 1988 flood"
     }
   ]
 }

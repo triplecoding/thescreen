@@ -1,0 +1,528 @@
+{
+  "id": "036",
+  "status": "ready",
+  "title_bn": "চব্বিশটা দরজার সই",
+  "source": {
+    "book": "Influence: The Psychology of Persuasion",
+    "author": "Robert Cialdini",
+    "author_bn": "রবার্ট চালডিনি",
+    "chapter": "PRINCIPLE 3",
+    "chapter_bn": "তিন নম্বর নীতি",
+    "title": "Commitment and Consistency",
+    "title_bn": "নিজের কথার সাথে মিল রাখে মন"
+  },
+  "cast": {
+    "nusrat": {
+      "name": "নুসরাত",
+      "type": "young_woman",
+      "skin": "wheat",
+      "outfit": "salwar",
+      "color": "#2F7D6D",
+      "color2": "#E8C07D",
+      "hair": "long_braid",
+      "voice": "young_woman"
+    },
+    "rahman": {
+      "name": "রহমান চাচা",
+      "type": "old_man",
+      "skin": "tan",
+      "outfit": "panjabi",
+      "color": "#E9E4D8",
+      "hair": "bald_grey",
+      "beard": "short_grey",
+      "glasses": true,
+      "voice": "old_man"
+    },
+    "mitu": {
+      "name": "মিতু ভাবি",
+      "type": "woman",
+      "skin": "brown",
+      "outfit": "sari",
+      "color": "#C2185B",
+      "color2": "#F4C430",
+      "hair": "long_bun",
+      "voice": "woman"
+    }
+  },
+  "beats": [
+    {
+      "say": "ছয় তলা, চব্বিশটা ফ্ল্যাট। আর প্রতিদিন সকালে সিঁড়িতে *ময়লার পলিথিন*।",
+      "scene": {
+        "set": "stairs",
+        "light": "day",
+        "chip": "মিরপুর ১০",
+        "chars": [
+          {
+            "id": "nusrat",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "face"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "ফ্ল্যাট",
+              "value": "২৪"
+            },
+            {
+              "label": "পরিষ্কার দিন",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nusrat",
+      "say": "আবার! কে রাখে এগুলো দরজার সামনে? *গন্ধে* তো শ্বাস নেওয়া যায় না!",
+      "tone": "annoyed",
+      "scene": {
+        "widget": null,
+        "arms": {
+          "nusrat": "point"
+        },
+        "moods": {
+          "nusrat": "angry"
+        },
+        "cam": {
+          "focus": "nusrat",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চার মাস ধরে নুসরাতের *একই সকাল*।",
+      "scene": {
+        "cam": {
+          "focus": "nusrat",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "kind": "list",
+      "say": "গেটে নোটিশ, মিটিংয়ে অনুরোধ, জরিমানার প্রস্তাব। কেউ *গায়ে মাখল না*।",
+      "card": {
+        "title": "সব চেষ্টা",
+        "items": [
+          {
+            "t": "গেটে নোটিশ",
+            "mark": "x"
+          },
+          {
+            "t": "মিটিংয়ে অনুরোধ",
+            "mark": "x"
+          },
+          {
+            "t": "জরিমানার প্রস্তাব",
+            "mark": "x"
+          }
+        ],
+        "footer": "ফল: ০"
+      }
+    },
+    {
+      "voice": "rahman",
+      "say": "মা, নোটিশ এ দেশে কেউ পড়ে না। *এভাবেই চলবে*।",
+      "tone": "flatly",
+      "scene": {
+        "chars": [
+          {
+            "id": "nusrat",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "talk"
+          },
+          {
+            "id": "rahman",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "cross"
+          }
+        ],
+        "cam": {
+          "focus": "rahman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nusrat",
+      "say": "চাচা, আপনিও তো রোজ এই গন্ধের ভেতর দিয়েই *বাজারে যান*।",
+      "tone": "upset",
+      "scene": {
+        "cam": {
+          "focus": "nusrat",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "রহমান চাচা কিছু বললেন না। দরজাটা *আস্তে বন্ধ* হয়ে গেল।",
+      "tone": "softly",
+      "pause": 0.9,
+      "scene": {
+        "light": "evening",
+        "chip": "সেদিন সন্ধ্যা",
+        "chars": [
+          {
+            "id": "nusrat",
+            "x": 0.45,
+            "pose": "stand",
+            "face": "right",
+            "mood": "sad",
+            "arm": "down"
+          }
+        ],
+        "cam": "static"
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "সেই রাতে নুসরাত ঠিক করল— আর অনুরোধ না। এবার *একটা প্রশ্ন*।",
+      "pause": 0.7,
+      "card": {
+        "text": "অনুরোধ না,\nএবার *একটা প্রশ্ন*।"
+      }
+    },
+    {
+      "say": "শুক্রবার সকালে সে প্রতিটা দরজায় নক করল। হাতে *ছোট ছোট কার্ড*।",
+      "scene": {
+        "set": "stairs",
+        "light": "day",
+        "chip": "শুক্রবার সকাল",
+        "chars": [
+          {
+            "id": "nusrat",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "envelope"
+          },
+          {
+            "id": "mitu",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "surprised",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "nusrat",
+      "say": "ভাবি, একটা কথা জিজ্ঞেস করি— আপনি কি *পরিষ্কার সিঁড়ি* চান?",
+      "tone": "gently",
+      "scene": {
+        "cam": {
+          "focus": "nusrat",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "mitu",
+      "say": "এটা আবার কেমন প্রশ্ন? চাইব না কেন? *অবশ্যই চাই*।",
+      "tone": "laughs",
+      "scene": {
+        "moods": {
+          "mitu": "happy"
+        },
+        "cam": {
+          "focus": "mitu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "nusrat",
+      "say": "তাহলে এই কার্ডে একটা সই দেবেন? আপনার দরজায় *লাগিয়ে রাখব*।",
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "sticky",
+          "title": "এই দরজা থেকে",
+          "lines": [
+            "আমরা সিঁড়ি পরিষ্কার রাখি",
+            "— ফ্ল্যাট ৩বি"
+          ]
+        },
+        "cam": {
+          "focus": "nusrat",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চব্বিশটা দরজায় একই প্রশ্ন। চব্বিশটা উত্তরই *হ্যাঁ*।",
+      "scene": {
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "সই",
+              "value": "২৪",
+              "from": "০"
+            }
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "শেষ দরজা রহমান চাচার। কার্ডটা তিনি অনেকক্ষণ *হাতে ধরে* রইলেন।",
+      "pause": 0.8,
+      "scene": {
+        "widget": null,
+        "chars": [
+          {
+            "id": "nusrat",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "down"
+          },
+          {
+            "id": "rahman",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "thinking",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": {
+          "focus": "rahman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "rahman",
+      "say": "নিজের নাম লিখে দরজায় লাগাব… তারপর নিজেই ময়লা রাখব? *তা হয় না*।",
+      "tone": "serious",
+      "scene": {
+        "cam": {
+          "focus": "rahman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "দুই সপ্তাহ পর দেখা গেল— যে দরজায় নিজের সই, তার সামনে *ময়লা নেই*।",
+      "scene": {
+        "set": "stairs",
+        "light": "day",
+        "chip": "দুই সপ্তাহ পর",
+        "chars": [
+          {
+            "id": "mitu",
+            "x": 0.4,
+            "pose": "walk",
+            "face": "right",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "bag"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "পরিষ্কার দিন",
+              "value": "১৪",
+              "from": "০"
+            }
+          ]
+        },
+        "cam": "pan"
+      }
+    },
+    {
+      "voice": "mitu",
+      "say": "কার্ডটা যেন দরজা থেকে *চেয়ে থাকে*। সই করেছি, এখন ফেলি কীভাবে?",
+      "tone": "laughs",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "mitu",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আর রহমান চাচা? তিনি নিজেই হয়ে গেলেন *সিঁড়ির পাহারাদার*।",
+      "scene": {
+        "chars": [
+          {
+            "id": "rahman",
+            "x": 0.35,
+            "pose": "stand",
+            "face": "right",
+            "mood": "smile",
+            "arm": "point"
+          },
+          {
+            "id": "nusrat",
+            "x": 0.7,
+            "pose": "stand",
+            "face": "left",
+            "mood": "happy",
+            "arm": "down"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "rahman",
+      "say": "এই যে বাবা, ব্যাগটা নিচে নিয়ে যাও। দেখো না, *দরজায় কী লেখা*?",
+      "tone": "playfully",
+      "scene": {
+        "cam": {
+          "focus": "rahman",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "চার মাসের নোটিশ যা পারেনি, *চব্বিশটা ছোট সই* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— রবার্ট চালডিনির *ইনফ্লুয়েন্স*।"
+    },
+    {
+      "kind": "book",
+      "say": "তিন নম্বর নীতি— মন চায় *নিজের কথার সাথে* মিল রাখতে।",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "মানুষ যা নিজে বলে, নিজের হাতে লেখে— তার পক্ষেই সে *দাঁড়াতে চায়*।",
+      "card": {
+        "title": "ছোট হ্যাঁ, বড় বদল",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "chat",
+              "t": "ছোট একটা হ্যাঁ"
+            },
+            {
+              "icon": "hand",
+              "t": "নিজের সই"
+            },
+            {
+              "icon": "eye",
+              "t": "সবার সামনে"
+            },
+            {
+              "icon": "check",
+              "t": "কাজে মিল"
+            }
+          ],
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, চাপ নয়, *প্রশ্ন* করো।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "চাপ নয়, প্রশ্ন",
+            "sub": "মানুষ নিজের উত্তরে বাঁধা",
+            "icon": "chat"
+          },
+          {
+            "t": "ছোট করে শুরু",
+            "sub": "একটা সই, একটা কথা",
+            "icon": "hand"
+          },
+          {
+            "t": "হ্যাঁ হোক সত্যি",
+            "sub": "জোর করে নেওয়া হ্যাঁ টেকে না",
+            "icon": "heart"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, শুরু করো *ছোট একটা হ্যাঁ* দিয়ে।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, হ্যাঁ-টা হোক *সত্যি*, জোর করে নয়।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *আদেশ* দিই, নাকি মানুষকে *নিজের কথাটা* বলতে দিই?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *আদেশ* দিই,\nনাকি *নিজের কথাটা*\nবলতে দিই?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "নোটিশ মানুষ ভুলে যায়… *নিজের সই ভোলে না*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "নোটিশ মানুষ ভুলে যায়…",
+        "line2": "নিজের সই\nভোলে না।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "চার মাসের নোটিশে যা হয়নি, চব্বিশটা সইয়ে তা হলো 🏢 | Influence বাংলা",
+    "description": "ছয় তলা বিল্ডিং, চব্বিশটা ফ্ল্যাট, প্রতিদিন সকালে সিঁড়িতে ময়লার পলিথিন। নোটিশ, মিটিং, জরিমানা— কিছুতেই কাজ হলো না। তারপর নুসরাত প্রতিটা দরজায় নিয়ে গেল একটা প্রশ্ন…\nরবার্ট চালডিনির Influence — Commitment and Consistency — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "influence bangla",
+      "cialdini bangla",
+      "ইনফ্লুয়েন্স",
+      "প্রতিবেশীর গল্প",
+      "বাংলা গল্প",
+      "commitment and consistency",
+      "অভ্যাস বদল",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "চার মাসের নোটিশ যা পারেনি, চব্বিশটা ছোট সই তা পারল। 🏢\n\nতোমার বিল্ডিং বা পাড়ায় কোন সমস্যা বছরের পর বছর একই রকম আছে? 👇\n\n📖 Influence — Robert Cialdini\n#প্রতিবেশী #ইনফ্লুয়েন্স"
+  },
+  "thumbnail": {
+    "text": "২৪টা সই",
+    "sub": "ময়লার সিঁড়ি, তারপর…"
+  }
+}

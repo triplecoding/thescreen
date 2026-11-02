@@ -1,0 +1,517 @@
+{
+  "id": "038",
+  "status": "ready",
+  "title_bn": "পেন্ট্রির চল্লিশ মিনিট",
+  "source": {
+    "book": "Games People Play",
+    "author": "Eric Berne",
+    "author_bn": "এরিক বার্ন",
+    "chapter": "THE GAME",
+    "chapter_bn": "একটা মানসিক খেলা",
+    "title": "Ain't It Awful",
+    "title_bn": "“কী ভয়ংকর অবস্থা, না?”"
+  },
+  "cast": {
+    "lipi": {
+      "name": "লিপি",
+      "type": "young_woman",
+      "skin": "light",
+      "outfit": "salwar",
+      "color": "#5E35B1",
+      "color2": "#B39DDB",
+      "hair": "hijab",
+      "voice": "young_woman"
+    },
+    "shampa": {
+      "name": "শম্পা আপা",
+      "type": "woman",
+      "skin": "wheat",
+      "outfit": "sari",
+      "color": "#00838F",
+      "color2": "#FFB74D",
+      "hair": "long_bun",
+      "glasses": true,
+      "voice": "woman"
+    },
+    "hasan": {
+      "name": "হাসান স্যার",
+      "type": "man",
+      "skin": "tan",
+      "outfit": "shirt",
+      "color": "#ECEFF1",
+      "hair": "side_grey",
+      "beard": "moustache",
+      "glasses": true,
+      "voice": "man"
+    }
+  },
+  "beats": [
+    {
+      "say": "দুপুর একটা থেকে পৌনে দুইটা। রোজ চল্লিশ মিনিট— *একই অভিযোগ*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "মতিঝিল, অফিসের পেন্ট্রি",
+        "props": [
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shampa",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "angry",
+            "arm": "talk",
+            "hold": "tea"
+          },
+          {
+            "id": "lipi",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "plate"
+          }
+        ],
+        "widget": {
+          "kind": "stats",
+          "items": [
+            {
+              "label": "মাস",
+              "value": "৮"
+            },
+            {
+              "label": "সমাধান",
+              "value": "০",
+              "red": true
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "shampa",
+      "say": "এসি নষ্ট, ফাইলের পাহাড়, স্যার কিছুই দেখেন না। *কী যে অবস্থা*!",
+      "tone": "frustrated",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "shampa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "লিপি এই অফিসে আট মাস। প্রথম দিন থেকেই এই টেবিলে তার *জায়গা পাকা*।",
+      "scene": {
+        "cam": {
+          "focus": "lipi",
+          "zoom": 1.3
+        }
+      }
+    },
+    {
+      "voice": "lipi",
+      "say": "আর ক্যান্টিনের ডাল? কাল তো *পানি ছাড়া কিছুই* ছিল না!",
+      "tone": "laughs",
+      "scene": {
+        "moods": {
+          "lipi": "happy"
+        },
+        "arms": {
+          "lipi": "talk"
+        },
+        "cam": {
+          "focus": "lipi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সবাই হাসল, মাথা নাড়ল। মনে হলো, *কিছু একটা হলো*। আসলে কিছুই হলো না।",
+      "scene": {
+        "cam": "wide"
+      }
+    },
+    {
+      "kind": "list",
+      "say": "আট মাসে অভিযোগ বদলায়নি— গরম, ফাইল, ক্যান্টিন। স্যারের কানে পৌঁছায়নি *একটাও*।",
+      "card": {
+        "title": "পেন্ট্রির অভিযোগ",
+        "items": [
+          {
+            "t": "এসি নষ্ট",
+            "mark": "x"
+          },
+          {
+            "t": "ফাইলের পাহাড়",
+            "mark": "x"
+          },
+          {
+            "t": "ক্যান্টিনের খাবার",
+            "mark": "x"
+          }
+        ],
+        "footer": "জানানো হয়েছে: ০"
+      }
+    },
+    {
+      "say": "সেদিন বাসে ফিরতে ফিরতে লিপি টের পেল, মাথাটা *ভারী, অথচ খালি*।",
+      "tone": "softly",
+      "pause": 0.8,
+      "scene": {
+        "set": "street",
+        "light": "night",
+        "chip": "বাড়ি ফেরার পথে",
+        "chars": [
+          {
+            "id": "lipi",
+            "x": 0.45,
+            "pose": "walk",
+            "face": "right",
+            "mood": "sad",
+            "arm": "hold",
+            "hold": "bag"
+          }
+        ],
+        "cam": "pan"
+      }
+    },
+    {
+      "say": "সে ভাবল, রোজ এত কথা বলি। অথচ একটা কাগজেও *কিছু লিখিনি*।",
+      "pause": 0.6,
+      "scene": {
+        "cam": {
+          "focus": "lipi",
+          "zoom": 1.45
+        }
+      }
+    },
+    {
+      "kind": "statement",
+      "say": "পরদিন লিপি একটা অদ্ভুত কাজ করল।",
+      "pause": 0.7,
+      "card": {
+        "text": "অভিযোগ নয়,\nএবার *একটা কাগজ*।"
+      }
+    },
+    {
+      "say": "আড্ডা শুরু হতেই লিপি একটা *খাতা খুলল*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "পরদিন দুপুর",
+        "props": [
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shampa",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "neutral",
+            "arm": "hold",
+            "hold": "tea"
+          },
+          {
+            "id": "lipi",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "hold",
+            "hold": "book"
+          }
+        ],
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "lipi",
+      "say": "আপা, এই তিনটার মধ্যে কোনটা আমরা *সত্যি বদলাতে* চাই?",
+      "tone": "curious",
+      "scene": {
+        "cam": {
+          "focus": "lipi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "shampa",
+      "say": "মানে? স্যারকে বলব? পাগল নাকি! *কিছুই হবে না*।",
+      "tone": "annoyed",
+      "scene": {
+        "moods": {
+          "shampa": "surprised"
+        },
+        "cam": {
+          "focus": "shampa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "voice": "lipi",
+      "say": "হবে কি না জানি না। কিন্তু চল্লিশ মিনিট তো *এমনিতেও যায়*।",
+      "tone": "playfully",
+      "scene": {
+        "cam": {
+          "focus": "lipi",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "সেদিন প্রথমবার আড্ডাটা অভিযোগে না, *একটা চিঠিতে* শেষ হলো।",
+      "scene": {
+        "widget": {
+          "kind": "note",
+          "style": "paper",
+          "title": "স্যারের কাছে আবেদন",
+          "lines": [
+            "১. এসি ঠিক করা",
+            "২. ফাইলের জন্য একজন সহকারী",
+            "— পাঁচজনের সই"
+          ]
+        },
+        "cam": "wide"
+      }
+    },
+    {
+      "say": "স্যার চিঠিটা দুবার পড়লেন। তারপর *চশমা খুলে* তাকালেন।",
+      "pause": 0.6,
+      "scene": {
+        "set": "home",
+        "light": "day",
+        "chip": "স্যারের রুম",
+        "props": [
+          "table",
+          "window"
+        ],
+        "chars": [
+          {
+            "id": "lipi",
+            "x": 0.3,
+            "pose": "stand",
+            "face": "right",
+            "mood": "worried",
+            "arm": "down"
+          },
+          {
+            "id": "hasan",
+            "x": 0.68,
+            "pose": "sit",
+            "face": "left",
+            "mood": "thinking",
+            "arm": "hold",
+            "hold": "envelope"
+          }
+        ],
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.35
+        }
+      }
+    },
+    {
+      "voice": "hasan",
+      "say": "আট মাস ধরে শুনি তোমরা অসন্তুষ্ট। কিন্তু *কী চাও*, কেউ তো বলোনি।",
+      "tone": "serious",
+      "scene": {
+        "moods": {
+          "hasan": "smile"
+        },
+        "cam": {
+          "focus": "hasan",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "এক সপ্তাহে এসি ঠিক হলো। ফাইলের জন্য এল *একজন সহকারী*।",
+      "scene": {
+        "set": "kitchen",
+        "light": "day",
+        "chip": "এক সপ্তাহ পর",
+        "props": [
+          "pot"
+        ],
+        "chars": [
+          {
+            "id": "shampa",
+            "x": 0.3,
+            "pose": "sit",
+            "face": "right",
+            "mood": "happy",
+            "arm": "hold",
+            "hold": "tea"
+          },
+          {
+            "id": "lipi",
+            "x": 0.7,
+            "pose": "sit",
+            "face": "left",
+            "mood": "smile",
+            "arm": "down"
+          }
+        ],
+        "widget": {
+          "kind": "checklist",
+          "title": "আবেদনের ফল",
+          "items": [
+            {
+              "t": "এসি ঠিক",
+              "mark": "check"
+            },
+            {
+              "t": "নতুন সহকারী",
+              "mark": "check"
+            }
+          ]
+        },
+        "cam": "push"
+      }
+    },
+    {
+      "voice": "shampa",
+      "say": "আট মাস গজগজ করলাম, আর এক পাতায় *কাজ হয়ে গেল*!",
+      "tone": "laughs",
+      "scene": {
+        "widget": null,
+        "cam": {
+          "focus": "shampa",
+          "zoom": 1.4
+        }
+      }
+    },
+    {
+      "say": "আট মাসের অভিযোগ যা পারেনি, *এক পাতার একটা চিঠি* তা পারল।",
+      "pause": 0.8,
+      "scene": {
+        "fx": "glow",
+        "cam": {
+          "zoom": 1.2
+        }
+      }
+    },
+    {
+      "kind": "book",
+      "say": "এই গল্পের পেছনের বই— এরিক বার্নের *গেমস পিপল প্লে*।"
+    },
+    {
+      "kind": "book",
+      "say": "একটা মানসিক খেলা— *এইন্ট ইট অফুল*, মানে কী ভয়ংকর অবস্থা, না?",
+      "reveal": true,
+      "pause": 0.3
+    },
+    {
+      "kind": "concept",
+      "say": "একসাথে অভিযোগ করলে মনে হয় কিছু করছি। আসলে খেলাটা ঘোরে *একই বৃত্তে*।",
+      "card": {
+        "title": "খেলাটা কীভাবে চলে",
+        "widget": {
+          "type": "flow",
+          "nodes": [
+            {
+              "icon": "chat",
+              "t": "অভিযোগ"
+            },
+            {
+              "icon": "people",
+              "t": "সবার সায়"
+            },
+            {
+              "icon": "heart",
+              "t": "একটু হালকা লাগা"
+            },
+            {
+              "icon": "x",
+              "t": "কিছুই বদলায় না"
+            }
+          ],
+          "loop": true,
+          "show": 4
+        }
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "পর্দার বাইরে, তোমার জীবনে— এক, অভিযোগকে *প্রশ্ন* বানাও।",
+      "show": 1,
+      "card": {
+        "items": [
+          {
+            "t": "অভিযোগকে প্রশ্ন বানাও",
+            "sub": "আসলে কী বদলাতে চাই?",
+            "icon": "bulb"
+          },
+          {
+            "t": "লিখে ফেলো",
+            "sub": "মুখের কথা উড়ে যায়",
+            "icon": "book"
+          },
+          {
+            "t": "ঠিক মানুষকে বলো",
+            "sub": "যার হাতে সমাধান",
+            "icon": "ear"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "takeaways",
+      "say": "দুই, কথাটা *লিখে ফেলো*।",
+      "show": 2
+    },
+    {
+      "kind": "takeaways",
+      "say": "তিন, বলো তাকে, যার হাতে *সমাধান*।",
+      "show": 3,
+      "pause": 0.4
+    },
+    {
+      "kind": "ask",
+      "tone": "softly",
+      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি শুধু *দুঃখটা ভাগ করছি*, নাকি *বদলানোর চেষ্টা* করছি?",
+      "pause": 0.7,
+      "card": {
+        "quote": "আমি কি শুধু *দুঃখটা ভাগ করছি*,\nনাকি *বদলানোর চেষ্টা*\nকরছি?"
+      }
+    },
+    {
+      "kind": "outro",
+      "say": "অভিযোগ মনটা হালকা করে… *উদ্যোগ জীবনটা বদলায়*।",
+      "pause": 1.6,
+      "card": {
+        "line1": "অভিযোগ মনটা হালকা করে…",
+        "line2": "উদ্যোগ জীবনটা\nবদলায়।"
+      }
+    }
+  ],
+  "youtube": {
+    "title": "আট মাস রোজ অভিযোগ, তারপর এক পাতার চিঠিতে বদলে গেল অফিস 📝 | Games People Play বাংলা",
+    "description": "দুপুরের পেন্ট্রিতে রোজ চল্লিশ মিনিট— এসি, ফাইল, ক্যান্টিন নিয়ে একই অভিযোগ। আট মাসে কিছুই বদলায়নি। তারপর লিপি একদিন আড্ডার মাঝে খাতা খুলল…\nএরিক বার্নের Games People Play — Ain't It Awful — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+    "tags": [
+      "games people play bangla",
+      "eric berne bangla",
+      "অফিসের গল্প",
+      "সহকর্মী",
+      "বাংলা গল্প",
+      "অভিযোগ",
+      "মানসিক খেলা",
+      "জীবনের শিক্ষা"
+    ]
+  },
+  "facebook": {
+    "caption": "আট মাসের অভিযোগ যা পারেনি, এক পাতার একটা চিঠি তা পারল। 📝\n\nতোমার অফিস বা বাসায় কোন অভিযোগটা রোজ হয়, কিন্তু কেউ কিছু করে না? 👇\n\n📖 Games People Play — Eric Berne\n#অফিসেরগল্প #সহকর্মী"
+  },
+  "thumbnail": {
+    "text": "রোজ ৪০ মিনিট",
+    "sub": "একই অভিযোগ, তারপর…"
+  }
+}
