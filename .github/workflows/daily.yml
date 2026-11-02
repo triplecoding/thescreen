@@ -45,6 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main            # always the LATEST main (state.json), never the commit from when the run was queued
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:

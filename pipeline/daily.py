@@ -19,17 +19,76 @@ sys.path.insert(0, str(Path(__file__).parent))
 from common import OUT, ROOT, SCRIPTS, STATE, channel, load_json, log, save_json  # noqa: E402
 
 
-def git_commit(msg):
+def merge_state(local, remote):
+    """Union of two state.json versions — never loses a posted record (prevents double posts)."""
+    if not remote:
+        return local
+    out = dict(remote)
+    out.update({k: v for k, v in local.items() if k not in ("posted", "failed", "playlists", "dry_runs")})
+    seen, posted = {}, []
+    for rec in (remote.get("posted", []) + local.get("posted", [])):
+        key = (rec.get("date"), rec.get("slot"))
+        if key in seen:
+            old = seen[key]
+            for kk, vv in rec.items():          # same slot: keep the first record, fill in missing fields
+                old.setdefault(kk, vv)
+            continue
+        seen[key] = dict(rec)
+        posted.append(seen[key])
+    out["posted"] = posted
+    # failed: what is on main (a human may have removed entries to retry them) + entries parked during THIS run
+    start = local.get("_run_started") or ""
+    rkeys = {(f.get("id"), f.get("kind")) for f in remote.get("failed", [])}
+    out["failed"] = list(remote.get("failed", [])) + [f for f in local.get("failed", []) if start and (f.get("id"), f.get("kind")) not in rkeys and f.get("at", "") >= start]
+    out["playlists"] = {**remote.get("playlists", {}), **local.get("playlists", {})}
+    out["dry_runs"] = (remote.get("dry_runs", []) + [d for d in local.get("dry_runs", []) if d not in remote.get("dry_runs", [])])[-20:]
+    return out
+
+
+def remote_state():
+    """state.json as it is on origin/main right now (None outside CI or on error)."""
+    if not os.environ.get("CI"):
+        return None
+    try:
+        subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=ROOT, check=True, timeout=60)
+        txt = subprocess.run(["git", "show", "origin/main:state.json"], cwd=ROOT, check=True, capture_output=True, text=True).stdout
+        import json
+        return json.loads(txt)
+    except Exception as e:  # noqa
+        log("could not read remote state:", e)
+        return None
+
+
+def sync_state(state):
+    """Merge the latest origin/main state into `state` in place."""
+    merged = merge_state(state, remote_state())
+    state.clear(); state.update(merged)
+    return state
+
+
+_START_SHA = None
+
+
+def git_commit(msg, state=None):
+    """Commit state.json on top of the LATEST origin/main (merging, never overwriting other runs' records)."""
     if not os.environ.get("CI"):
         return
+    global _START_SHA
     try:
-        subprocess.run(["git", "add", "state.json", "config/voices.json"], cwd=ROOT, check=False)
-        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
-            return
-        subprocess.run(["git", "commit", "-m", msg], cwd=ROOT, check=True)
-        for _ in range(4):
-            subprocess.run(["git", "pull", "--rebase", "-X", "theirs", "origin", "main"], cwd=ROOT, check=False)
-            if subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=ROOT).returncode == 0:
+        if _START_SHA is None:
+            _START_SHA = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+        voices_changed = subprocess.run(["git", "diff", "--quiet", _START_SHA, "--", "config/voices.json"], cwd=ROOT).returncode != 0
+        for _ in range(5):
+            if state is not None:
+                sync_state(state)
+                save_json(STATE, state)
+            subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=ROOT, check=False)
+            subprocess.run(["git", "reset", "-q", "--mixed", "origin/main"], cwd=ROOT, check=False)
+            subprocess.run(["git", "add", "state.json"] + (["config/voices.json"] if voices_changed else []), cwd=ROOT, check=False)
+            if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+                return
+            subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=True)
+            if subprocess.run(["git", "push", "-q", "origin", "HEAD:main"], cwd=ROOT).returncode == 0:
                 return
         log("warning: could not push state")
     except Exception as e:  # noqa
@@ -124,6 +183,9 @@ def main():
     ap.add_argument("--tts", default="elevenlabs")
     a = ap.parse_args()
 
+    global _START_SHA
+    if os.environ.get("CI") and _START_SHA is None:
+        _START_SHA = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
     cfg = channel()
     if a.plan:
         tz = ZoneInfo(cfg["timezone"]); now = datetime.now(tz)
@@ -143,7 +205,7 @@ def main():
         rp = os.environ.get("READY_PLATFORMS")
         platforms = [p for p in cfg["platforms"] if rp is None or p in rp.split(",")]
         engage(state, platforms, datetime.now(tz))
-        git_commit("engage: first comments / playlists")
+        git_commit("engage: first comments / playlists", state)
         return
 
     from produce import produce  # heavy imports after arg parsing
@@ -155,6 +217,8 @@ def main():
     now = datetime.now(tz)
     date = datetime.strptime(a.date, "%Y-%m-%d").date() if a.date else now.date()
     state = load_json(STATE, {}) or {}
+    sync_state(state)                      # always decide from the latest origin/main, never a stale checkout
+    state["_run_started"] = now.isoformat()
     state.setdefault("posted", []); state.setdefault("failed", []); state.setdefault("playlists", {})
     platforms = list(cfg["platforms"])
     rp = os.environ.get("READY_PLATFORMS")
@@ -192,7 +256,14 @@ def main():
     dry_used = set()
     if not a.dry_run:
         engage(state, platforms, now)
+    def taken(slot, when):
+        d = str(when.date()) if (a.ahead or a.next) else str(date)
+        return (d, slot) in {(p["date"], p["slot"]) for p in state["posted"]}
     for slot, when in todo:
+        if not a.dry_run and not a.extra:
+            sync_state(state)
+            if taken(slot, when):
+                log(f"slot {when.date()} {slot} already posted (another run) — skipping"); continue
         q = [x for x in queue(state) if x not in dry_used]
         if not q:
             errors.append("queue empty — no ready scripts")
@@ -207,13 +278,13 @@ def main():
             except (TooLong, TooShort) as e:
                 log(f"script {sid} parked: {e}")
                 state["failed"].append({"id": sid, "reason": str(e), "at": now.isoformat(), "kind": "length"})
-                save_json(STATE, state); git_commit(f"park {sid}: length")
+                save_json(STATE, state); git_commit(f"park {sid}: length", state)
             except Exception as e:  # noqa
                 tb = traceback.format_exc(limit=3)
                 log(f"producing {sid} failed: {e}\n{tb}")
                 if "script invalid" in str(e) or "QA failed" in str(e):
                     state["failed"].append({"id": sid, "reason": str(e)[:400], "at": now.isoformat(), "kind": "script"})
-                    save_json(STATE, state); git_commit(f"park {sid}: invalid")
+                    save_json(STATE, state); git_commit(f"park {sid}: invalid", state)
                 else:
                     errors.append(f"{sid}: {e}")
                     raise
@@ -228,6 +299,11 @@ def main():
         meta = load_json(Path(odir) / "meta.json", {})
         rec = {"id": sid, "date": str(date), "slot": slot, "duration": meta.get("duration"), "title": script["youtube"]["title"]}
         schedule = not a.now and cfg.get("publish_mode") == "scheduled" and when > datetime.now(tz) + timedelta(minutes=20)
+        if not a.dry_run and not a.extra:
+            sync_state(state)                  # production took minutes: re-check right before uploading
+            if taken(slot, when) or sid in {p["id"] for p in state["posted"]}:
+                log(f"slot {slot} / script {sid} was posted by another run meanwhile — NOT uploading (no double post)")
+                continue
         if a.dry_run:
             rec["dry_run"] = True
             log(f"dry run: {video}")
@@ -258,12 +334,13 @@ def main():
             state["failed"].append({"id": sid, "reason": "all uploads failed: " + "; ".join(errors[-2:]), "at": now.isoformat(), "kind": "upload", "retry": True})
         state["last_run"] = {"at": datetime.now(tz).isoformat(), "errors": errors}
         save_json(STATE, state)
-        git_commit(f"{'dry-run' if a.dry_run else 'post'} {sid} for {date} {slot}")
+        git_commit(f"{'dry-run' if a.dry_run else 'post'} {sid} for {date} {slot}", state)
     remaining = len(queue(state))
     state["queue_remaining"] = remaining
     state["last_run"] = {"at": datetime.now(tz).isoformat(), "errors": errors, "queue_remaining": remaining}
     save_json(STATE, state)
-    git_commit(f"daily run {date}")
+    state.pop("_run_started", None)
+    git_commit(f"daily run {date}", state)
     log(f"queue remaining: {remaining}")
     if remaining < cfg["posts_per_day"] * 3:
         log("WARNING: script queue is running low")
