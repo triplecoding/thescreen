@@ -1,0 +1,42 @@
+name: Remove YouTube duplicate
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_a:
+        description: "YouTube video id A"
+        required: true
+      video_b:
+        description: "YouTube video id B"
+        required: true
+
+concurrency:
+  group: publish-videos        # never runs at the same time as a publish run
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Dhaka
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests
+      - name: Keep the copy with more views, delete the other
+        run: |
+          git config user.name "The Screen Bot"
+          git config user.email "bot@thescreen.local"
+          python pipeline/yt_dedupe.py "${{ github.event.inputs.video_a }}" "${{ github.event.inputs.video_b }}"
