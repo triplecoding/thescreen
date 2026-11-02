@@ -118,10 +118,11 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T14:30:04.375747+06:00",
-    "errors": []
+    "at": "2026-11-02T14:30:06.406774+06:00",
+    "errors": [],
+    "queue_remaining": 26
   },
-  "queue_remaining": 28,
+  "queue_remaining": 26,
   "_run_started": "2026-11-02T14:16:40.483112+06:00",
   "dry_runs": []
 }
