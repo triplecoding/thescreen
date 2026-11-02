@@ -149,6 +149,17 @@
       "playlist": true,
       "facebook": "1454545720154421",
       "scheduled_for": "2026-11-04T20:00:00+06:00"
+    },
+    {
+      "id": "014",
+      "date": "2026-11-05",
+      "slot": "10:00",
+      "duration": 143.06,
+      "title": "যে খামের গায়ে লেখা ‘কোনো কিছুর জন্য না’— সেটাই বাঁচাল ভাইকে ✉️ | The Psychology of Money",
+      "youtube": "9R0agyQ9Ozc",
+      "playlist": true,
+      "facebook": "1167824942857190",
+      "scheduled_for": "2026-11-05T10:00:00+06:00"
     }
   ],
   "failed": [],
@@ -162,11 +173,10 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T16:17:10.913867+06:00",
-    "errors": [],
-    "queue_remaining": 22
+    "at": "2026-11-02T16:30:25.320106+06:00",
+    "errors": []
   },
   "queue_remaining": 22,
-  "_run_started": "2026-11-02T16:05:57.011989+06:00",
+  "_run_started": "2026-11-02T16:25:30.169985+06:00",
   "dry_runs": []
 }
