@@ -127,6 +127,17 @@
       "playlist": true,
       "facebook": "1434664791507495",
       "scheduled_for": "2026-11-04T13:30:00+06:00"
+    },
+    {
+      "id": "012",
+      "date": "2026-11-04",
+      "slot": "17:30",
+      "duration": 145.29,
+      "title": "বান্ধবীর সাফল্যে জ্বলছিল সাথী, ভোর চারটায় জানল আসল সত্যি 🍱 | The Laws of Human Nature বাংলা",
+      "youtube": "31AOWw9YE9M",
+      "playlist": true,
+      "facebook": "2169254370372417",
+      "scheduled_for": "2026-11-04T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -140,11 +151,10 @@
     "Animal Farm": "PLVdr_fxg17H8"
   },
   "last_run": {
-    "at": "2026-11-02T16:03:20.191165+06:00",
-    "errors": [],
-    "queue_remaining": 24
+    "at": "2026-11-02T16:11:41.636897+06:00",
+    "errors": []
   },
   "queue_remaining": 24,
-  "_run_started": "2026-11-02T15:50:33.725679+06:00",
+  "_run_started": "2026-11-02T16:05:57.011989+06:00",
   "dry_runs": []
 }
