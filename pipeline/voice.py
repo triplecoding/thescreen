@@ -14,6 +14,7 @@ from pathlib import Path
 
 import requests
 
+from bn_voice import fix_lo
 from common import CACHE, CONFIG, channel, env, load_json, log, plain, save_json, tokens
 
 API = "https://api.elevenlabs.io"
@@ -210,7 +211,7 @@ def word_times(say, alignment, dur, lead_trim=0.0):
 
 
 def tts_text(beat, cfg):
-    t = plain(beat.get("say", ""))
+    t = fix_lo(plain(beat.get("say", "")))
     tone = beat.get("tone")
     if tone and cfg["elevenlabs"].get("audio_tags") and tone in cfg["elevenlabs"].get("allowed_tags", []):
         t = f"[{tone}] {t}"
@@ -240,13 +241,13 @@ def generate(script, workdir, provider="elevenlabs"):
     results = []
     for i, b in enumerate(beats):
         role = role_for(script, b.get("voice"))
-        text = tts_text(b, cfg) if provider == "elevenlabs" else plain(b.get("say", ""))
+        text = tts_text(b, cfg) if provider == "elevenlabs" else fix_lo(plain(b.get("say", "")))
         if provider == "elevenlabs":
             vid = voices[role]["voice_id"]
             settings = dict(cfg["elevenlabs"]["default_settings"])
             settings.update(cfg["voices"].get(role, {}).get("settings", {}))
-            prev_t = plain(beats[i - 1]["say"]) if i and role_for(script, beats[i - 1].get("voice")) == role else None
-            next_t = plain(beats[i + 1]["say"]) if i + 1 < len(beats) and role_for(script, beats[i + 1].get("voice")) == role else None
+            prev_t = fix_lo(plain(beats[i - 1]["say"])) if i and role_for(script, beats[i - 1].get("voice")) == role else None
+            next_t = fix_lo(plain(beats[i + 1]["say"])) if i + 1 < len(beats) and role_for(script, beats[i + 1].get("voice")) == role else None
             key = hashlib.sha1(json.dumps([text, vid, el.model(), settings, prev_t, next_t], ensure_ascii=False).encode()).hexdigest()[:20]
         else:
             key = hashlib.sha1(json.dumps(["edge", text, role]).encode()).hexdigest()[:20]
