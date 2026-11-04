@@ -151,7 +151,9 @@
       "youtube": "31AOWw9YE9M",
       "playlist": true,
       "facebook": "2169254370372417",
-      "scheduled_for": "2026-11-04T17:30:00+06:00"
+      "scheduled_for": "2026-11-04T17:30:00+06:00",
+      "yt_comment": "UgzaqXkdHhS6TeskFJB4AaABAg",
+      "fb_comment": "2169254370372417_2750378922043820"
     },
     {
       "id": "013",
@@ -196,6 +198,17 @@
       "playlist": true,
       "facebook": "2945715522458791",
       "scheduled_for": "2026-11-05T17:30:00+06:00"
+    },
+    {
+      "id": "017",
+      "date": "2026-11-05",
+      "slot": "20:00",
+      "duration": 138.89,
+      "title": "রোজ যাত্রীর সাথে ঝগড়া করত মকবুল, এক বৃষ্টির রাতে বদলে গেল সব 🛺 | The Book of Five Rings বাংলা",
+      "youtube": "Cz51UBb5yyo",
+      "playlist": true,
+      "facebook": "1903855737643668",
+      "scheduled_for": "2026-11-05T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -207,14 +220,14 @@
     "Thinking, Fast and Slow": "PLEGQPM39e2RQ",
     "Influence: The Psychology of Persuasion": "PLZf68dtHdWh8",
     "Animal Farm": "PLVdr_fxg17H8",
-    "Mastery": "PLbqUW4qBrso8"
+    "Mastery": "PLbqUW4qBrso8",
+    "The Book of Five Rings": "PLFT3vBebPx4I"
   },
   "last_run": {
-    "at": "2026-11-02T16:40:30.969465+06:00",
-    "errors": [],
-    "queue_remaining": 19
+    "at": "2026-11-04T19:02:10.156201+06:00",
+    "errors": []
   },
   "queue_remaining": 19,
-  "_run_started": "2026-11-02T16:25:30.169985+06:00",
+  "_run_started": "2026-11-04T18:56:11.603386+06:00",
   "dry_runs": []
 }
