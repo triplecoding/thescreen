@@ -1,0 +1,437 @@
+{
+ "id": "147",
+ "status": "ready",
+ "title_bn": "ছবি আঁকা অংক",
+ "theme": "school",
+ "source": {
+  "book": "The Book of Five Rings",
+  "author": "Miyamoto Musashi",
+  "author_bn": "মিয়ামোতো মুসাশি",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Know the ways of all professions",
+  "title_bn": "নিজের পথে শেখা"
+ },
+ "cast": {
+  "rumi": {
+   "name": "রুমি ম্যাডাম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "tuhin": {
+   "name": "তুহিন",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "abba": {
+   "name": "তুহিনের আব্বা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নরসিংদীর এক স্কুল। ক্লাস সেভেনের তুহিন অংকে টানা তিনবার ফেল। আর অংকের খাতার পেছনের পাতায় *চল্লিশটা ছবি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নরসিংদী, ক্লাস সেভেন",
+    "props": [
+     "signboard",
+     "sign:ক্লাস সেভেন — অংক"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তুহিনের অংক",
+       "value": "৩ বার ফেল",
+       "red": true
+      },
+      {
+       "label": "খাতার পেছনের ছবি",
+       "value": "৪০টার বেশি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নতুন ম্যাডাম রুমি খাতা জমা নিলেন। সামনের পাতায় লাল কালির দাগ। তারপর অভ্যাসবশে খাতা উল্টালেন। আর *থেমে গেলেন*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "তুহিন, এই নৌকাটা তুমি আঁকছো? পালের ভাঁজ, পানির ঢেউ… *এত নিখুঁত*?",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rumi": "surprised"
+    },
+    "arms": {
+     "rumi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "জি ম্যাডাম। মাফ কইরেন। আব্বা কয়, ছবি আঁকলে *পেট চলবো না*। অংক না পারলে আমি গাধা।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "down"
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "গাধা কেউ জন্মায় না, তুহিন। কেউ কেউ খালি *অন্য দরজা* দিয়া ঢোকে। দেখি, তোমার দরজাটা কোনটা।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rumi": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তুহিনের তিন বছর",
+   "card": {
+    "title": "যা শুনতে হয়েছে",
+    "items": [
+     {
+      "t": "‘মাথা মোটা’",
+      "mark": "x"
+     },
+     {
+      "t": "‘ছবি আঁকা সময় নষ্ট’",
+      "mark": "x"
+     },
+     {
+      "t": "‘অংকে ফেল মানে জীবনে ফেল’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ছুটির পর রুমি ম্যাডাম তুহিনকে বসালেন। ভগ্নাংশের বই না খুলে খুললেন তুহিনের আঁকার খাতা। একটা ছবি বের করলেন। *একটা পিৎজা*, আট টুকরো।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ছুটির পর",
+    "props": [
+     "signboard",
+     "sign:ক্লাস সেভেন — অংক"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "তুহিন, এই পিৎজার তিন টুকরা খাইলে কত বাকি থাকে? *আঁইকা* দেখাও।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rumi": "point"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "পাঁচ টুকরা, ম্যাডাম। আট ভাগের… পাঁচ। এইটাই তো *ভগ্নাংশ*?",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tuhin": "thinking"
+    },
+    "arms": {
+     "tuhin": "hold"
+    }
+   }
+  },
+  {
+   "say": "তুহিন থমকে গেল। তিন বছর যে জিনিস মাথায় ঢোকেনি, একটা আঁকা পিৎজায় ঢুকে গেল *দশ সেকেন্ডে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এরপর তিন মাস। প্রতি বিকেলে বিশ মিনিট। ত্রিভুজ মানে নৌকার পাল। ক্ষেত্রফল মানে বাজারের মেঝে। আর প্রতিটা অংকের পাশে *একটা ছবি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তিন মাস, প্রতি বিকেলে",
+    "props": [
+     "signboard",
+     "sign:ক্লাস সেভেন — অংক"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "তুহিনের নতুন অংকের খাতা",
+     "lines": [
+      "ত্রিভুজ— নৌকার পাল",
+      "ক্ষেত্রফল— বাজারের মেঝে",
+      "শতকরা— মায়ের তরকারির ভাগ"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "অংক তো আসলে ছবি, তুহিন। তুমি এতদিন খালি *উল্টা দিক থেকে* দেখতেছিলা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rumi": "talk"
+    }
+   }
+  },
+  {
+   "say": "বার্ষিক পরীক্ষা। তুহিনের অংকে চুয়াত্তর। আব্বা রেজাল্ট কার্ডটা তিনবার দেখলেন। তারপর খাতাটা চাইলেন। *পেছন থেকে* খুললেন।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তুহিনের অংক",
+       "from": "২৮",
+       "value": "৭৪"
+      },
+      {
+       "label": "ক্লাসে অবস্থান",
+       "from": "৪১",
+       "value": "১২"
+      }
+     ]
+    },
+    "set": "home",
+    "light": "night",
+    "chip": "বার্ষিক পরীক্ষার ফল",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এই ছবিগুলা দিয়া অংক শিখছস? যেইগুলার জন্য আমি তোরে *বকতাম*?",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "moods": {
+     "abba": "surprised"
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "জি আব্বা। ম্যাডাম কইছে, ছবি আঁকা আমার দোষ না। এইটা আমার *রাস্তা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আমিও ছোটবেলায় আঁকতাম, জানস? তোর দাদা খাতা ছিঁড়া ফালাইছিল। আমি ভাবছিলাম, *ওইটাই নিয়ম*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "আব্বা অনেকক্ষণ চুপ। তারপর পকেট থেকে টাকা বের করে দিলেন। বললেন, কাল বাজারে গিয়ে *রং কিনে আনিস*। ভালো দেখে।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমি ম্যাডামের ক্লাসের দেয়ালে এখন একটা চার্ট। তুহিনের আঁকা। শিরোনাম— *‘যে অংক বোঝো না, আগে আঁকো।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই এক রাস্তায় শেখে না… *কেউ শেখে ছবির রাস্তায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই এক রাস্তায় শেখে না…",
+    "line2": "কেউ শেখে\nছবির রাস্তায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "অংকে ফেল, কিন্তু খাতার পেছনে অসাধারণ ছবি… নতুন ম্যাডাম অংক শেখালেন ছবি দিয়ে ✏️",
+  "description": "নরসিংদীর এক স্কুলে ক্লাস সেভেনের তুহিন অংকে টানা তিনবার ফেল। খাতার সামনে শূন্য, পেছনের পাতা ভর্তি আঁকা— পাখি, নৌকা, বাজার। আব্বা মারতে চান, স্যাররা বলেন ‘মাথা মোটা’। নতুন ম্যাডাম রুমি খাতাটা উল্টে পেছন থেকে খুললেন…",
+  "tags": [
+   "স্কুলের গল্প",
+   "অংক ভীতি",
+   "শিক্ষিকা",
+   "আঁকা",
+   "ছাত্রের প্রতিভা",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই দেখত অংকের খাতায় শূন্য। রুমি ম্যাডাম দেখলেন খাতার পেছনের ছবি। 🎨\nস্কুলে কোন বিষয়ে তুমি সবচেয়ে ভয় পেতে, আর কে সেই ভয় কাটিয়েছিল? 👇 #শিক্ষক #অংক"
+ },
+ "thumbnail": {
+  "text": "অংকে ফেল",
+  "sub": "খাতার পেছনে ছবি"
+ }
+}

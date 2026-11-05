@@ -1,0 +1,384 @@
+{
+ "id": "150",
+ "status": "ready",
+ "title_bn": "বুড়িগঙ্গার শেষ মাঝি",
+ "theme": "struggle",
+ "source": {
+  "book": "On War",
+  "author": "Carl von Clausewitz",
+  "author_bn": "কার্ল ফন ক্লাউজেভিৎস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Adapt the plan when the ground changes",
+  "title_bn": "মাঠ বদলালে কৌশল বদলাও"
+ },
+ "cast": {
+  "soleman": {
+   "name": "সোলেমান মাঝি",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "nati": {
+   "name": "নাতি জিসান",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "tourist": {
+   "name": "পর্যটক আপা",
+   "type": "young_woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বুড়িগঙ্গার এক ছোট ঘাট। চল্লিশ বছর ধরে সোলেমান মাঝি এখানে মানুষ পার করেন। আগে দিনে দুইশো যাত্রী। এখন— *দুই-তিনজন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পুরান ঢাকা, সদরঘাটের পাশের ছোট ঘাট",
+    "chars": [
+     {
+      "id": "soleman",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাঝিগিরি",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "আগে দিনে যাত্রী",
+       "value": "২০০+"
+      },
+      {
+       "label": "এখন",
+       "value": "২-৩ জন",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পাশেই নতুন সেতু। মানুষ গাড়িতে, রিকশায় পার হয় পাঁচ মিনিটে। কারও আর *নৌকার দরকার* নেই।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "soleman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "soleman",
+   "say": "জিসান, নৌকাটা বেইচা দিমু। আঠারো হাজার দিবো কইছে। আর কী হইবো, *নদীর দিন* শেষ।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সোলেমান মাঝির ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "soleman",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "nati",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "soleman": "down"
+    }
+   }
+  },
+  {
+   "voice": "nati",
+   "say": "দাদু, মানুষ পার হইতে আসে না। কিন্তু দেখো, আমার ফোনে সবাই *নদীর ছবি* দেয়। বুড়িগঙ্গার সূর্যাস্ত। হাজার লাইক।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "nati",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nati": "phone"
+    }
+   }
+  },
+  {
+   "say": "সোলেমান মাঝি ফোনের দিকে তাকালেন। তাঁর ঘাট, তাঁর নদী, অন্য কারও তোলা ছবিতে। মানুষ নদী *দেখতে* চায়। শুধু পার হতে না।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "soleman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "জিসানের বুদ্ধি",
+   "card": {
+    "title": "নৌকার নতুন কাজ",
+    "items": [
+     {
+      "t": "বিকেলের সূর্যাস্ত ভ্রমণ, এক ঘণ্টা",
+      "mark": "x"
+     },
+     {
+      "t": "দাদুর চল্লিশ বছরের গল্প, সাথে ফ্রি",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুক পেজে বুকিং",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রথম শুক্রবার জিসান পেজে পোস্ট দিল— *বুড়িগঙ্গায় সূর্যাস্ত, চল্লিশ বছরের মাঝির সাথে*। এক ঘণ্টা, তিনশো টাকা। প্রথম দিন বুকিং— *দুইটা*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "প্রথম শুক্রবার বিকেল",
+    "chars": [
+     {
+      "id": "soleman",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "nati",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সূর্য ডুবছে বুড়িগঙ্গায়। নৌকায় দুইজন তরুণী, ঢাকার অন্য প্রান্ত থেকে আসা। আর সোলেমান মাঝি বৈঠা টানতে টানতে বলছেন *গল্প*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সূর্যাস্তে নৌকায়",
+    "chars": [
+     {
+      "id": "soleman",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "tourist",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "voice": "soleman",
+   "say": "চুরাশি সালের বন্যায় এই নৌকায় একরাতে বাইশজন মানুষ পার করছিলাম। একটা গর্ভবতী মা ছিল। ওপারে গিয়া *ছেলে হইছিল*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "soleman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "soleman": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tourist",
+   "say": "চাচা, এই নদী নিয়া আপনার এত গল্প? আমরা তো খালি *ময়লা নদী* ভাবতাম।",
+   "scene": {
+    "cam": {
+     "focus": "tourist",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tourist": "surprised"
+    },
+    "arms": {
+     "tourist": "down"
+    }
+   }
+  },
+  {
+   "voice": "soleman",
+   "say": "ময়লা আমরা করছি, মা। নদী তো চল্লিশ বছর আমারে *খাওয়াইছে*। নদী খারাপ না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "soleman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "soleman": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক ঘণ্টা শেষ। কেউ নামতে চাইল না। একজন তরুণী ভিডিও করল, পোস্ট করল। আর সেই রাতে জিসানের ফোনে *একশো বারোটা মেসেজ*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন মাস পর সপ্তাহে চৌত্রিশটা ভ্রমণ। ঘাটের আরও তিনজন পুরোনো মাঝি যোগ দিয়েছেন। আর নৌকার গায়ে নতুন রং, *জিসানের আঁকা*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "তিন মাস পর",
+    "chars": [
+     {
+      "id": "soleman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "nati",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সপ্তাহে ভ্রমণ",
+       "from": "২",
+       "value": "৩৪টা"
+      },
+      {
+       "label": "আয়",
+       "from": "দিনে ৩০০",
+       "value": "মাসে ৩২,০০০ টাকা"
+      },
+      {
+       "label": "নৌকা",
+       "value": "বিক্রি হয়নি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nati",
+   "say": "দাদু, এক আপা লিখছে, ঢাকায় সবচেয়ে সুন্দর জিনিস সোলেমান মাঝির *গল্প*। সূর্যাস্ত দুই নম্বরে।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "nati",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nati": "phone"
+    }
+   }
+  },
+  {
+   "say": "সোলেমান মাঝির নৌকার গায়ে এখন একটা নাম লেখা, লাল-সবুজে— *‘চল্লিশ বছর। আর গল্প বাকি আছে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সেতু পথ কমায়… *নদীর গল্প কমায় না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সেতু পথ কমায়…",
+    "line2": "নদীর গল্প\nকমায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নতুন সেতুতে কেউ আর নৌকায় পার হয় না, ৪০ বছরের মাঝি সোলেমান চাচার আয় শূন্য… নাতির একটা বুদ্ধি 🚣",
+  "description": "চল্লিশ বছর বুড়িগঙ্গায় মানুষ পার করেছেন সোলেমান মাঝি। নতুন সেতু হওয়ার পর ঘাট ফাঁকা। দিনে দুই-তিনজন যাত্রী। নৌকা বেচে দেওয়ার কথা ভাবছেন। নাতি জিসান একদিন বলল, দাদু, মানুষ পার হতে না আসুক, নদী দেখতে তো আসবে…",
+  "tags": [
+   "মাঝির গল্প",
+   "বুড়িগঙ্গা",
+   "নৌকা",
+   "পুরান ঢাকা",
+   "সংগ্রামের গল্প",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সেতু কেড়ে নিয়েছিল যাত্রী। নাতি ফিরিয়ে দিল দাদুর নৌকার নতুন অর্থ— সূর্যাস্ত আর গল্প। 🚣\nপুরান ঢাকায় নৌকায় বুড়িগঙ্গা পার হয়েছ কখনো? 👇 #বুড়িগঙ্গা #মাঝি"
+ },
+ "thumbnail": {
+  "text": "সেতু হয়েছে",
+  "sub": "মাঝি বেকার"
+ }
+}

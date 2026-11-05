@@ -1,0 +1,389 @@
+{
+ "id": "152",
+ "status": "ready",
+ "title_bn": "আব্বার রাতের চাকরি",
+ "theme": "parents",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "The Law of Role-playing: see through masks",
+  "title_bn": "মুখোশের পেছনের মানুষ"
+ },
+ "cast": {
+  "shakil": {
+   "name": "শাকিল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#2B2B2B",
+   "color2": "#2B2B2B",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "friend": {
+   "name": "বন্ধু ইমন",
+   "type": "young_man",
+   "skin": "light",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকার এক শপিং মল। রাত ন’টা। গেটে দাঁড়ানো একজন দারোয়ান, বয়স বাষট্টি। নীল ইউনিফর্ম, হাতে *একটা লাঠি*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ঢাকা, শপিং মলের গেট, রাত ৯টা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বার বয়স",
+       "value": "৬২"
+      },
+      {
+       "label": "‘অফিসের নাইট ডিউটি’",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "শাকিলের পড়া",
+       "value": "প্রাইভেট ইউনিভার্সিটি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে শাকিল এসেছে বন্ধুদের সাথে, জন্মদিনের ট্রিট। গেটে ঢুকতে গিয়ে থমকে গেল। দারোয়ানের মুখ। *আব্বা*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "friend",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "friend",
+   "say": "শাকিল, চল চল! ফুড কোর্ট তিনতলায়। দাঁড়াইয়া আছস ক্যান? *কাউরে চিনস*?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "friend",
+     "zoom": 1.4
+    },
+    "arms": {
+     "friend": "talk"
+    }
+   }
+  },
+  {
+   "say": "আব্বা ছেলেকে দেখলেন। চোখে একটা ঝলক, তারপর দ্রুত নামিয়ে নিলেন। আর শাকিল, এক সেকেন্ডের সিদ্ধান্তে, *মুখ ঘুরিয়ে* নিল।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "না… কাউরে না। *চল*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শাকিল যা জানত না",
+   "card": {
+    "title": "তিন বছরের ‘নাইট ডিউটি’",
+    "items": [
+     {
+      "t": "রিটায়ারের পেনশন— ভাড়াতেই শেষ",
+      "mark": "x"
+     },
+     {
+      "t": "ইউনিভার্সিটির সেমিস্টার ফি— এই চাকরির টাকায়",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মাকেও বলা হয়েছিল ‘অফিস’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সারারাত শাকিল ফুড কোর্টে বসে কিছু খেতে পারল না। বাসায় ফিরে দেখল, আম্মা টেবিলে রেখেছেন আব্বার টিফিন বাটি। গায়ে লেখা— *‘নাইট ডিউটি’*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত একটা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিন বছর। প্রতিটা সেমিস্টার ফি। প্রতিটা নতুন জামা। আর আজকের জন্মদিনের ট্রিটের টাকাও, এই *ইউনিফর্মের* বেতনে।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভোর পাঁচটা। শিফট শেষ। আব্বা গেট থেকে বেরোচ্ছেন। আর গেটের বাইরে, ফুটপাতে বসে আছে শাকিল। *সারারাত* বসে ছিল।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ভোর পাঁচটা, মলের গেট",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shakil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "শাকিল? তুই… এইখানে? বাসায় যা। কাউরে কিছু কইস না। আমি তো জানি, বন্ধুদের সামনে *লজ্জা* লাগে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আব্বা, লজ্জা আপনার জন্য না। লজ্জা আমার জন্য। আপনি রাত জাগেন, আমি আপনার টাকায় বন্ধুদের *পিৎজা* খাওয়াই, আর আপনারে চিনি না বলি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "face"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "চল, চা খাই। রাস্তার দোকানে। এই সময়ের চা-টা *সবচেয়ে ভালো* হয়।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hug"
+    }
+   }
+  },
+  {
+   "say": "পরের শুক্রবার শাকিল আবার এল মলে, একই বন্ধুদের নিয়ে। এবার গেটে থেমে দাঁড়াল। *আব্বার পাশে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের শুক্রবার",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "friend",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ইমন, সবাই শোন। ইনি আমার আব্বা। রাতে এই গেট পাহারা দেন, আর আমার *ইউনিভার্সিটির ফি* দেন। আমি এখানে যা খাই, এই মানুষটার রাত দিয়া খাই।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "voice": "friend",
+   "say": "আসসালামু আলাইকুম, আংকেল। আমার আব্বাও ট্রাক চালায়। কোনোদিন কাউরে *কই নাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "friend",
+     "zoom": 1.4
+    },
+    "arms": {
+     "friend": "down"
+    }
+   }
+  },
+  {
+   "say": "এখন সপ্তাহে তিন রাত আব্বা ডিউটি করেন। বাকি তিন রাতের টাকা দেয় শাকিলের টিউশনি। আর ভোর পাঁচটায় মলের গেটের বাইরে, প্রতি শুক্রবার, *দুই কাপ চা*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বাবার কাজ দেখে লজ্জা পেলে… *আসলে লজ্জাটা নিজের*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "বাবার কাজ দেখে লজ্জা পেলে…",
+    "line2": "আসলে লজ্জাটা\nনিজের।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বা বলেন ‘অফিসে নাইট ডিউটি’, আসলে শপিং মলের দারোয়ান… বন্ধুদের সামনে চিনতে চাইল না শাকিল 🌙",
+  "description": "শাকিলের আব্বা রিটায়ার্ড কেরানি, সবাই জানে বাড়ির পাশের এক অফিসে নাইট ডিউটি করেন। এক রাতে বন্ধুদের সাথে শপিং মলে গিয়ে শাকিল দেখল, গেটে ইউনিফর্ম পরা দারোয়ান— আব্বা। বন্ধুরা পাশে। শাকিল মুখ ঘুরিয়ে নিল…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "দারোয়ান বাবা",
+   "লজ্জা",
+   "সম্মান",
+   "ছাত্রজীবন",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বন্ধুদের সামনে আব্বাকে চিনতে চায়নি শাকিল। আব্বা চুপচাপ মেনে নিয়েছিলেন। সেই রাতের লজ্জা এখনো ভোলেনি সে। 🌙\nবাবা-মায়ের কোন কষ্টটা তুমি অনেক দেরিতে জেনেছিলে? 👇 #বাবা #সম্মান"
+ },
+ "thumbnail": {
+  "text": "মুখ ঘুরিয়ে নিল",
+  "sub": "গেটে আব্বা"
+ }
+}

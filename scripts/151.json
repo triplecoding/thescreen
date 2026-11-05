@@ -1,0 +1,394 @@
+{
+ "id": "151",
+ "status": "ready",
+ "title_bn": "স্যারের ভুল, আমার নম্বর",
+ "theme": "honesty",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Commitment and consistency: who we say we are",
+  "title_bn": "নিজের সাথে নিজের কথা রাখা"
+ },
+ "cast": {
+  "arnob": {
+   "name": "অর্ণব",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "sir": {
+   "name": "হাবিব স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  },
+  "rafi": {
+   "name": "রাফি",
+   "type": "teen_boy",
+   "skin": "tan",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "সিলেটের এক স্কুল। টেস্ট পরীক্ষার অংক খাতা ফেরত দিলেন হাবিব স্যার। অর্ণব ছিয়াশি। ক্লাসে *প্রথম*। বন্ধু রাফি বিরাশি, দ্বিতীয়।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সিলেট, ক্লাস নাইন, খাতা ফেরত",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "sir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "arnob",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ণবের নম্বর",
+       "value": "৮৬"
+      },
+      {
+       "label": "রাফির নম্বর",
+       "value": "৮২"
+      },
+      {
+       "label": "ক্লাসে প্রথম",
+       "value": "অর্ণব"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "অর্ণব খাতা উল্টাতে উল্টাতে থামল। সাত নম্বর প্রশ্ন। উত্তর ভুল। নিজেই জানে, শেষ লাইনে যোগ ভুল করেছিল। তবু পাশে স্যারের টিক, আর লেখা— *আট*।",
+   "pause": 0.9,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "arnob",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দোস্ত, কংগ্রাচুলেশনস! এইবার তুই জিতলি। পরেরবার *আমি*, দেইখা নিস।",
+   "tone": "laughs",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ছুটির পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "arnob",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rafi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "arnob",
+   "say": "হুম… *থ্যাংকস*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "arnob",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arnob": "down"
+    }
+   }
+  },
+  {
+   "say": "রাফি আর অর্ণব ক্লাস ওয়ান থেকে একসাথে। প্রতিবার রাফি প্রথম, অর্ণব দ্বিতীয়। এবার প্রথমবার উল্টো। আর সেটা *আট নম্বরের* জন্য।",
+   "scene": {
+    "cam": {
+     "focus": "arnob",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "অর্ণবের মাথায় সেই রাতে",
+   "card": {
+    "title": "চুপ থাকার যুক্তি",
+    "items": [
+     {
+      "t": "স্যারের ভুল, আমার তো না",
+      "mark": "x"
+     },
+     {
+      "t": "কেউ জানবে না",
+      "mark": "x"
+     },
+     {
+      "t": "বাবা-মা কত খুশি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে বাসায় আব্বা মিষ্টি আনলেন। আম্মা আত্মীয়দের ফোন দিলেন। আর অর্ণব নিজের ঘরে, খাতা খোলা, *সাত নম্বর প্রশ্নের* দিকে তাকিয়ে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arnob",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রাত একটা। দুইটা। ঘুম আসছে না। যতবার চোখ বন্ধ করে, দেখে রাফির হাসি। *কংগ্রাচুলেশনস দোস্ত*। আর আট নম্বর, যেটা তার না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "arnob",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arnob",
+   "say": "স্যার, সাত নম্বর প্রশ্নে আমার উত্তর ভুল। আপনি ভুল কইরা *আট দিছেন*। এইটা কাইটা দেন।",
+   "tone": "softly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল, শিক্ষকদের রুম",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "arnob",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "arnob": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sir",
+   "say": "তুমি জানো, এইটা কাটলে তুমি *দ্বিতীয়* হইয়া যাবা? রাফি প্রথম?",
+   "scene": {
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    },
+    "moods": {
+     "sir": "surprised"
+    },
+    "arms": {
+     "sir": "down"
+    }
+   }
+  },
+  {
+   "voice": "arnob",
+   "say": "জানি, স্যার। কিন্তু রাতে ঘুমাইতে পারি নাই। প্রথম হইয়া যদি *ঘুম না আসে*, তাইলে ওই প্রথম দিয়া কী করমু?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "arnob",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arnob": "down"
+    }
+   }
+  },
+  {
+   "say": "হাবিব স্যার অনেকক্ষণ চুপ। বাইশ বছর শিক্ষকতা। নম্বর কম পেলে অনেকে এসেছে বাড়াতে। নম্বর বেশি পেয়ে *কমাতে* এই প্রথম।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sir",
+   "say": "সবাই শোনো। গতকালের ফলাফলে আমার একটা ভুল ছিল। প্রথম রাফি, বিরাশি। দ্বিতীয় অর্ণব, আটাত্তর। আর ভুলটা *ধরছে অর্ণব নিজে*।",
+   "tone": "proudly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সেদিন ক্লাসে",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "sir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "arnob",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sir": "talk"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস চুপ। তারপর রাফি উঠে দাঁড়াল। হাততালি দিল। একা। তারপর পুরো ক্লাস। নম্বরের জন্য না, *একটা রাতের ঘুমের* জন্য।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দোস্ত, এইবারের প্রথম আসলে *তুই*। আমি খালি নম্বরে প্রথম।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafi": "hug"
+    }
+   }
+  },
+  {
+   "say": "হাবিব স্যারের ডায়েরিতে এখন একটা নোট, প্রতি বছর নতুন ক্লাসকে পড়ে শোনান— *‘যে ছাত্র নিজের নম্বর কমাতে এসেছিল, সে-ই আমার সেরা ছাত্র।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কেউ না জানলে ভুল চলে যায়… *নিজে জানলে ঘুম চলে যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কেউ না জানলে ভুল চলে যায়…",
+    "line2": "নিজে জানলে\nঘুম চলে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "স্যারের ভুলে খাতায় ৮ নম্বর বেশি, ক্লাসে প্রথম হয়ে গেল অর্ণব… রাতে ঘুম এল না 📝",
+  "description": "সিলেটের এক স্কুলে টেস্ট পরীক্ষার খাতা ফেরত দিলেন হাবিব স্যার। অর্ণব দেখল, একটা অংকের উত্তর ভুল, তবু পুরো আট নম্বর। ওই আট নম্বরেই সে ক্লাসে প্রথম, বন্ধু রাফি দ্বিতীয়। কেউ জানে না। রাতে ঘুম এল না অর্ণবের…",
+  "tags": [
+   "সততার গল্প",
+   "পরীক্ষা",
+   "শিক্ষক ছাত্র",
+   "স্কুলের গল্প",
+   "সিলেট",
+   "bangla golpo",
+   "student motivation bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আট নম্বর বেশি ছিল, কেউ জানত না। অর্ণব জানত— আর সেটাই যথেষ্ট ছিল। 📝\nভুল করে বেশি নম্বর পেয়ে কখনো স্যারকে জানিয়েছ? 👇 #সততা #পরীক্ষা"
+ },
+ "thumbnail": {
+  "text": "৮ নম্বর বেশি",
+  "sub": "কেউ জানে না"
+ }
+}

@@ -1163,6 +1163,54 @@
    "relation": "migrant father / bride daughter / uncle",
    "set": "home",
    "hook": "a father in Saudi can't get leave for his daughter's wedding; at the farewell the uncle holds up the phone so the father can 'give her hand' and say the words himself"
+  },
+  {
+   "id": "147",
+   "book": "The Book of Five Rings",
+   "item": "Know the ways of all professions",
+   "relation": "new teacher / weak-in-maths artistic boy / father",
+   "set": "shop",
+   "hook": "a boy failing maths fills the back of his notebook with drawings; the teacher teaches fractions and geometry through his drawings and he passes"
+  },
+  {
+   "id": "148",
+   "book": "The Psychology of Money",
+   "item": "The seduction of pessimism vs. silent debt",
+   "relation": "husband / wife / friend",
+   "set": "home",
+   "hook": "a husband pays only the credit card minimum for two years believing all is fine; his wife finds the statement; they make a plan together, pay it off in 14 months and celebrate 'zero'"
+  },
+  {
+   "id": "149",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Halo Effect",
+   "relation": "fair elder sister / dark younger sister / aunt",
+   "set": "home",
+   "hook": "relatives keep comparing a dark-skinned engineering student to her fair sister; at a family dinner the elder sister publicly lists who her sister actually is and refuses the comparison"
+  },
+  {
+   "id": "150",
+   "book": "On War",
+   "item": "Adapt the plan when the ground changes",
+   "relation": "old ferryman / grandson / tourist",
+   "set": "street",
+   "hook": "a new bridge empties the ferry ghat; the grandson suggests sunset river rides with the old boatman's stories; city visitors start booking"
+  },
+  {
+   "id": "151",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Commitment and consistency: who we say we are",
+   "relation": "student / teacher / best friend",
+   "set": "shop",
+   "hook": "a teacher's marking error gives a boy 8 extra marks and first place over his best friend; he can't sleep, tells the teacher, drops to second, and the teacher honours him in class"
+  },
+  {
+   "id": "152",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Role-playing: see through masks",
+   "relation": "university son / father secretly working as a mall guard / friend",
+   "set": "street",
+   "hook": "the son discovers his father's 'night office job' is a mall security post and pretends not to know him in front of friends; that night he learns the job pays his tuition and returns to introduce him proudly"
   }
  ]
 }

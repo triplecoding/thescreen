@@ -1,0 +1,465 @@
+{
+ "id": "148",
+ "status": "ready",
+ "title_bn": "মিনিমাম ডিউ",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 14",
+  "chapter_bn": "১৪ নম্বর অধ্যায়",
+  "title": "The seduction of pessimism vs. silent debt",
+  "title_bn": "চুপচাপ বাড়তে থাকা ঋণ"
+ },
+ "cast": {
+  "rahat": {
+   "name": "রাহাত",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "mitu": {
+   "name": "মিতু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "friend": {
+   "name": "বন্ধু সজল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মিরপুরের এক বাসা। রাহাতের বেতন পঞ্চান্ন হাজার। প্রতি মাসের পাঁচ তারিখে ক্রেডিট কার্ডের বিল আসে। আর রাহাত দেন শুধু *মিনিমাম ডিউ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মিরপুর, মাসের শেষ",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rahat",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "৫৫,০০০ টাকা"
+      },
+      {
+       "label": "প্রতি মাসে কার্ডে দেন",
+       "value": "মিনিমাম ডিউ, ৪,২০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "friend",
+   "say": "রাহাত, নতুন ফোন! আবার? কার্ডে?",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "অফিস শেষে",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "friend",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "rahat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "friend": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "হ্যাঁ। মাসে মাত্র চার হাজার দুইশো। মিনিমাম দিলেই *চলে*। টেনশনের কিছু নাই।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahat": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই বছরে কার্ডে কেনা",
+   "card": {
+    "title": "‘মাত্র মিনিমাম’",
+    "items": [
+     {
+      "t": "ফোন, ৮৫ হাজার",
+      "mark": "x"
+     },
+     {
+      "t": "টিভি, ৬২ হাজার",
+      "mark": "x"
+     },
+     {
+      "t": "দুই ঈদের শপিং আর রেস্টুরেন্ট",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক শনিবার রাহাত বাজারে গেছেন। মিতু টেবিলে পেল একটা খাম, ব্যাংকের। খুলল। পাতার পর পাতা। আর শেষ লাইনে একটা সংখ্যা, *লাল কালিতে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক শনিবার",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিন লাখ বারো হাজার। আর নিচে ছোট অক্ষরে একটা লাইন— শুধু মিনিমাম দিলে শোধ হতে লাগবে *প্রায় এগারো বছর*।",
+   "pause": 1.2,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "কার্ডের স্টেটমেন্ট",
+     "lines": [
+      "মোট বকেয়া: ৩,১২,০০০ টাকা",
+      "বার্ষিক সুদ: প্রায় ২৫%",
+      "শুধু মিনিমাম দিলে শোধ হবে: প্রায় ১১ বছরে"
+     ]
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "রাহাত, এগারো বছর। আমাদের মেয়ের বয়স তখন *চৌদ্দ*। তুমি আমারে কোনোদিন কও নাই।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rahat",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "mitu": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "আমি ভাবছি সব ঠিক। মিনিমাম তো দিতেছি। ব্যাংক তো কোনোদিন *ফোন দেয় নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahat": "face"
+    }
+   }
+  },
+  {
+   "say": "মিতু হিসাবটা দেখাল। দুই বছরে রাহাত দিয়েছেন প্রায় এক লাখ টাকা। তার বেশিরভাগই গেছে *সুদে*। আসল ঋণ প্রায় একই জায়গায়।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "ব্যাংক ফোন দিবো ক্যান? তুমি তো ওদের সবচেয়ে ভালো কাস্টমার। চিরকাল *সুদ* দিবা।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mitu": "talk"
+    }
+   }
+  },
+  {
+   "say": "রাহাত চুপ। দুই বছর তিনি ভেবেছিলেন, মিনিমাম মানে নিরাপদ। আসলে মিনিমাম মানে ছিল *ধীরে ধীরে ডোবা*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে দুইজন বসল একটা খাতা নিয়ে। প্রথম কাজ— কার্ডটা *কাঁচি দিয়ে* কাটা। তারপর প্রতি মাসে মিনিমাম না, *বাইশ হাজার*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পরের সপ্তাহ, পরিকল্পনা",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rahat",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "চৌদ্দ মাসের পরিকল্পনা",
+     "items": [
+      {
+       "t": "কার্ড কাঁচি দিয়ে কাটা",
+       "mark": "check"
+      },
+      {
+       "t": "রেস্টুরেন্ট মাসে একবার",
+       "mark": "check"
+      },
+      {
+       "t": "মিতুর টিউশনির আয় সব কার্ডে",
+       "mark": "check"
+      },
+      {
+       "t": "মাসে ২২,০০০ টাকা শোধ",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "আমি সন্ধ্যায় দুইটা টিউশনি নিমু। ওইটাও যাবে কার্ডে। এইটা তোমার ঋণ না, রাহাত। *আমাদের*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mitu": "hold"
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দ মাস পর। ব্যাংকের অ্যাপে একটা সংখ্যা। *শূন্য*। রাহাত স্ক্রিনশট নিলেন। মিতু বানাল দুই কাপ চা। উদযাপন বলতে এটুকুই।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বকেয়া",
+       "from": "৩,১২,০০০",
+       "value": "০"
+      },
+      {
+       "label": "সময় লাগল",
+       "value": "১১ বছর না, ১৪ মাস"
+      }
+     ]
+    },
+    "set": "home",
+    "light": "night",
+    "chip": "চৌদ্দ মাস পর",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rahat",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "মিতু, শূন্য দেইখা এত খুশি কোনোদিন *হই নাই*। স্কুলে শূন্য পাইলে তো মাইর খাইতাম!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahat": "phone"
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "এইবার একটা নতুন কার্ড বানাব। *সঞ্চয়ের কার্ড*। প্রতি মাসে বাইশ হাজার, এইবার নিজেদের জন্য।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mitu": "hold"
+    }
+   }
+  },
+  {
+   "say": "রাহাতের মানিব্যাগে এখন একটা ভাঁজ করা কাগজ। পুরোনো স্টেটমেন্টের শেষ লাইন, কাঁচি দিয়ে কাটা— *‘শুধু মিনিমাম দিলে: ১১ বছর।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মিনিমাম দিলে মনে হয় সব ঠিক… *আসলে ঋণটা চুপচাপ বড় হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মিনিমাম দিলে মনে হয় সব ঠিক…",
+    "line2": "আসলে ঋণটা\nচুপচাপ বড় হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুই বছর শুধু ‘মিনিমাম ডিউ’ দিয়েছেন রাহাত, ভেবেছিলেন সব ঠিক আছে… তারপর বউয়ের হাতে পড়ল স্টেটমেন্ট 💳",
+  "description": "রাহাতের বেতন পঞ্চান্ন হাজার। ক্রেডিট কার্ডে কেনা ফোন, টিভি, ঈদের শপিং। প্রতি মাসে শুধু মিনিমাম ডিউ দেন, মনে হয় সব ঠিক। দুই বছর পর একদিন স্ত্রী মিতুর হাতে পড়ল একটা খাম। স্টেটমেন্টের শেষ লাইনে একটা সংখ্যা…",
+  "tags": [
+   "ক্রেডিট কার্ড",
+   "ঋণের ফাঁদ",
+   "টাকার গল্প",
+   "স্বামী স্ত্রী",
+   "সঞ্চয়",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সংসারের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "প্রতি মাসে ‘মিনিমাম’ দিয়েছিলেন। দুই বছর পর ঋণটা আর মিনিমাম ছিল না। 💳\nক্রেডিট কার্ডের ‘মিনিমাম ডিউ’ নিয়ে তোমার কোনো অভিজ্ঞতা আছে? 👇 #টাকারগল্প #সঞ্চয়"
+ },
+ "thumbnail": {
+  "text": "শুধু মিনিমাম",
+  "sub": "২ বছর পর"
+ }
+}
