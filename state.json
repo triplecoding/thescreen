@@ -384,6 +384,17 @@
       "playlist": true,
       "facebook": "2016940232313071",
       "scheduled_for": "2026-11-08T13:30:00+06:00"
+    },
+    {
+      "id": "033",
+      "date": "2026-11-08",
+      "slot": "15:30",
+      "duration": 133.15,
+      "title": "বাড়িওয়ালার সাথে ১৯টা ঝগড়া, সব হার— তারপর একটা বাল্ব 💡 | The 33 Strategies of War বাংলা",
+      "youtube": "CJp9rqCFIHw",
+      "playlist": true,
+      "facebook": "2024805031559271",
+      "scheduled_for": "2026-11-08T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -407,10 +418,11 @@
     "The Wealth of Nations": "PLB6DgZYxX61g",
     "The Republic": "PLIYzytq-E1g0",
     "On War": "PLB7loe6INN4s",
-    "The Open Society and Its Enemies": "PLNXUg5iIRpr4"
+    "The Open Society and Its Enemies": "PLNXUg5iIRpr4",
+    "The 33 Strategies of War": "PLB3eGsLlxhY8"
   },
   "last_run": {
-    "at": "2026-11-05T22:21:05.962770+06:00",
+    "at": "2026-11-05T22:27:32.995006+06:00",
     "errors": []
   },
   "queue_remaining": 15,
