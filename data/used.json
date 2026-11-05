@@ -1787,6 +1787,54 @@
    "relation": "teenage cricketer / old shopkeeper / developer's man",
    "set": "street",
    "hook": "teens' angry protests fail to save a playground; an old shopkeeper tells them the land was donated for play decades ago; they gather documents and signatures and present them calmly to the municipality"
+  },
+  {
+   "id": "225",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking through shared identity",
+   "relation": "dishwasher migrant / head chef / mother",
+   "set": "kitchen",
+   "hook": "a Bangladeshi dishwasher in a Malaysian hotel steps in when the chef is ill and cooks his mother's kacchi for a Bangladeshi community order; he is promoted to cook and calls his mother"
+  },
+  {
+   "id": "226",
+   "book": "The Righteous Mind",
+   "item": "Small discipline compounds",
+   "relation": "son / father / mechanic",
+   "set": "home",
+   "hook": "a son plans to sell his father's old scooter to buy him a new bike; the mechanic reveals the father bought it on instalments to take the son to school through his childhood and kept it running himself; the son restores it instead"
+  },
+  {
+   "id": "227",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Scarcity and urgency tricks",
+   "relation": "new salesman / shop owner / customer",
+   "set": "shop",
+   "hook": "a salesman refuses the owner's fake-scarcity and fake-discount tactics; he shows honest prices and lets customers take time; returning customers make his sales the highest by Eid"
+  },
+  {
+   "id": "228",
+   "book": "Mastery",
+   "item": "The master teaches beyond the subject",
+   "relation": "retiring headmaster / former student / current student",
+   "set": "shop",
+   "hook": "on his last day a headmaster asks the class \"who helped you today without being asked?\"; former students arrive and answer the same question about him"
+  },
+  {
+   "id": "229",
+   "book": "The Social Contract",
+   "item": "Honesty without witnesses",
+   "relation": "CNG driver / wife / wallet owner",
+   "set": "street",
+   "hook": "a CNG driver who needs money for his daughter's admission finds a wallet with Tk 48,000; he returns it at night; the owner, a young NGO officer, connects the daughter with a scholarship rather than paying a reward"
+  },
+  {
+   "id": "230",
+   "book": "The Daily Laws",
+   "item": "Things we keep, people we keep",
+   "relation": "son / daughter-in-law / mother",
+   "set": "home",
+   "hook": "a mother moved into her son's new flat can't sleep in the new bed; the daughter-in-law realises she misses the old wooden bed and secretly brings it from the village"
   }
  ]
 }

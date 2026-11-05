@@ -1,0 +1,403 @@
+{
+ "id": "227",
+ "status": "ready",
+ "title_bn": "শাড়ির দোকানের সেলসম্যান",
+ "theme": "money",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Scarcity and urgency tricks",
+  "title_bn": "‘শেষ দুইটা’"
+ },
+ "cast": {
+  "liton": {
+   "name": "লিটন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "owner": {
+   "name": "দোকানমালিক শফিক ভাই",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "customer": {
+   "name": "ক্রেতা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকা, নিউমার্কেট। ঈদের দশ দিন আগে। শাড়ির দোকানে ভিড়। নতুন সেলসম্যান লিটন। আর মালিক শফিক ভাই প্রথম দিনেই শেখালেন *তিনটা কৌশল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নিউমার্কেট, শাড়ির দোকান, ঈদের দশ দিন আগে",
+    "props": [
+     "signboard",
+     "sign:শফিক শাড়ি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "liton",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঈদের আগে দৈনিক ক্রেতা",
+       "value": "২০০+"
+      },
+      {
+       "label": "লিটনের চাকরি",
+       "value": "প্রথম সপ্তাহ"
+      },
+      {
+       "label": "মালিকের কৌশল",
+       "value": "‘শেষ দুইটা’"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "শোন, প্রতিটা শাড়িতে কবি ‘আপা, এই ডিজাইন শেষ দুইটা আছে’। দাম কবি পাঁচ হাজার, তারপর ছাড় দিয়া সাড়ে তিন। মানুষ *তাড়াহুড়ায়* কিনে।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "point"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শফিক ভাইয়ের তিন কৌশল",
+   "card": {
+    "title": "যা শেখালেন",
+    "items": [
+     {
+      "t": "‘শেষ দুইটা’— আসলে গুদামে ৪০টা",
+      "mark": "x"
+     },
+     {
+      "t": "দাম বাড়িয়ে বলা, তারপর ‘ছাড়’",
+      "mark": "x"
+     },
+     {
+      "t": "‘আজকের পর এই দাম পাবেন না’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রথম দিন লিটন চেষ্টা করল। এক আপা এলেন, মেয়ের জন্য শাড়ি। লিটন বলল, শেষ দুইটা। আপা তাড়াহুড়ায় কিনলেন। আর যাওয়ার সময় বললেন একটা কথা।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "প্রথম দিন",
+    "props": [
+     "signboard",
+     "sign:শফিক শাড়ি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "liton",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "ভাই, টিউশনির টাকা জমাইয়া মেয়ের জন্য কিনলাম। ভালো তো? শেষ দুইটা কইলেন, তাই আর *দেখি নাই*।",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "moods": {
+     "customer": "worried"
+    },
+    "arms": {
+     "customer": "hold"
+    }
+   }
+  },
+  {
+   "say": "লিটন জানে, গুদামে এই শাড়ি চল্লিশটা। আর দাম বাড়িয়ে বলে ছাড় দেওয়া। সেই রাতে তার ঘুম এল না। মায়ের মুখটা মনে পড়ল। *মা-ও টিউশনি করেন*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "liton",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দ্বিতীয় দিন থেকে লিটন বদলাল। ‘শেষ দুইটা’ বলল না। আসল দাম বলল, প্রথমেই। আর বলল একটা কথা, যেটা নিউমার্কেটে *কেউ বলে না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দ্বিতীয় দিন থেকে",
+    "props": [
+     "signboard",
+     "sign:শফিক শাড়ি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "liton",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "liton",
+   "say": "আপা, তাড়াহুড়া কইরেন না। দশটা দেখেন। পছন্দ না হইলে অন্য দোকানে দেখেন। আর এই দামটাই শেষ দাম, বাড়াইয়া কই নাই। *আবার আসলেও* এই দামই পাবেন।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "liton",
+     "zoom": 1.4
+    },
+    "arms": {
+     "liton": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "লিটন! তুই কাস্টমার অন্য দোকানে পাঠাস? শেষ দুইটা কস না? এমনে *ব্যবসা* হয়?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পাঁচ দিন পর",
+    "props": [
+     "signboard",
+     "sign:শফিক শাড়ি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "liton",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "owner": "angry"
+    },
+    "arms": {
+     "owner": "point"
+    }
+   }
+  },
+  {
+   "voice": "liton",
+   "say": "শফিক ভাই, খাতাটা দেখেন। পাঁচ দিনে আমার বিক্রি বত্রিশটা। বাকিদের গড় বাইশ। কারণ যারা অন্য দোকানে যায়, তারা *ফিরা আসে*। আর সাথে আরেকজন নিয়া আসে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "liton",
+     "zoom": 1.4
+    },
+    "arms": {
+     "liton": "down"
+    }
+   }
+  },
+  {
+   "say": "চাঁদরাত। সেই প্রথম দিনের আপা ফিরে এলেন। সাথে তিনজন। আর সোজা লিটনের কাছে। বললেন, ‘ভাই, শুনলাম আপনি *সত্যি দাম কন*।’",
+   "pause": 1.2,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পাঁচ দিনে লিটনের বিক্রি",
+       "value": "৩২টা শাড়ি"
+      },
+      {
+       "label": "অন্য সেলসম্যানের গড়",
+       "value": "২২টা"
+      },
+      {
+       "label": "ফেরত আসা ক্রেতা",
+       "value": "১১ জন"
+      }
+     ]
+    },
+    "set": "shop",
+    "light": "day",
+    "chip": "চাঁদরাত",
+    "props": [
+     "signboard",
+     "sign:শফিক শাড়ি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "owner",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আমার বোন, ভাবি, আর কলিগ। সবার জন্য আপনি দেখান। আর প্রথম দিন যে ‘শেষ দুইটা’ কইছিলেন, ওইটা আমি মাপ কইরা দিছি। *পরে বুঝছি*।",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "moods": {
+     "customer": "happy"
+    },
+    "arms": {
+     "customer": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "লিটন, ঈদের পর থাইকা দোকানে ‘শেষ দুইটা’ বন্ধ। তুই সবাইরে শিখাবি *কেমনে* বেচতে হয়।",
+   "tone": "sighs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "শফিক শাড়ি ঘরের কাউন্টারে এখন একটা ছোট্ট কাগজ— *‘এখানে শেষ দুইটা বলে কিছু নেই। সময় নিন, তারপর কিনুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তাড়াহুড়ায় বেচলে একবার বিক্রি… *বিশ্বাসে বেচলে বারবার*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তাড়াহুড়ায় বেচলে একবার বিক্রি…",
+    "line2": "বিশ্বাসে বেচলে\nবারবার।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ঈদের আগে মালিক শেখালেন ‘বলবি শেষ দুইটা আছে’… সেলসম্যান লিটন বলল না, বিক্রি করল অন্যভাবে 🛍️",
+  "description": "ঢাকার নিউমার্কেটের এক শাড়ির দোকান। ঈদের ভিড়। মালিক শফিক ভাই নতুন সেলসম্যান লিটনকে শেখালেন— প্রতিটা ক্রেতাকে বলবি শেষ দুইটা, দাম বাড়ায়ে বলবি, তারপর ছাড় দিবি। লিটন প্রথম দিন চেষ্টা করল। তারপর…",
+  "tags": [
+   "ঈদ শপিং",
+   "সেলসম্যান",
+   "সৎ ব্যবসা",
+   "নিউমার্কেট",
+   "ক্রেতা",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সততার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মালিক বলেছিলেন ‘শেষ দুইটা’ বলে চাপ দিতে। লিটন চাপ দিল না, ক্রেতাকে সময় দিল। ঈদের শেষে তার বিক্রিই সবচেয়ে বেশি। 🛍️\n‘শেষ দুইটা আছে’ শুনে কি কখনো তাড়াহুড়োয় কিছু কিনেছ? 👇 #ঈদশপিং #ক্রেতা"
+ },
+ "thumbnail": {
+  "text": "‘বলবি শেষ দুইটা’",
+  "sub": "লিটনের উল্টো পথ"
+ }
+}

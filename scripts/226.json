@@ -1,0 +1,410 @@
+{
+ "id": "226",
+ "status": "ready",
+ "title_bn": "আব্বার পুরোনো স্কুটার",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Small discipline compounds",
+  "title_bn": "ছোট অভ্যাস"
+ },
+ "cast": {
+  "imran": {
+   "name": "ইমরান",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "mechanic": {
+   "name": "মেকানিক কালাম",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাজশাহীর এক বাড়ি। সকাল সাতটা। আব্বা উঠানে একটা পুরোনো স্কুটার মুছছেন। পঁচিশ বছর। রং উঠে গেছে, স্টার্ট নিতে তিনবার কিক। আর প্রতিদিন সকালে *যত্ন করে মোছা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "রাজশাহী, সকাল সাতটা",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "স্কুটারের বয়স",
+       "value": "২৫ বছর"
+      },
+      {
+       "label": "আব্বা রোজ মোছেন",
+       "value": "সকাল ৭টায়"
+      },
+      {
+       "label": "বেচে দাও বলেছে",
+       "value": "সবাই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "আব্বা, প্রথম বোনাস পাইছি। চলেন নতুন একটা বাইক কিনি আপনার জন্য। ওই স্কুটারটা বেইচা দেন, ওইটা *চলে না* ঠিকমতো।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "নাস্তার টেবিল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "imran": "talk"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "চলে। আমার জন্য চলে। নতুন কিছু লাগবো না। তুই টাকাটা *জমা* রাখ।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ইমরানের বোঝানোর চেষ্টা",
+   "card": {
+    "title": "যা কাজ করেনি",
+    "items": [
+     {
+      "t": "‘রাস্তায় বন্ধ হয়ে যায়’",
+      "mark": "x"
+     },
+     {
+      "t": "‘পার্টস পাওয়া যায় না’",
+      "mark": "x"
+     },
+     {
+      "t": "‘লোকে কী বলবে’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ইমরান ভাবল, আব্বা জেদ করছেন। টাকা খরচের ভয়ে। তাই একদিন আব্বা বাজারে গেলে স্কুটারটা নিয়ে গেল *মেকানিকের দোকানে*, বেচার দাম জানতে।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mechanic",
+   "say": "এইটা তো মাস্টার সাহেবের স্কুটার! এইটা বেচবা? তুমি জানো না, এইটার *গল্প*?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মেকানিক কালামের দোকান",
+    "props": [
+     "signboard",
+     "sign:কালাম মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "mechanic",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "imran",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "mechanic": "surprised"
+    },
+    "arms": {
+     "mechanic": "hold"
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "গল্প? কালাম ভাই, এইটা তো একটা পুরান স্কুটার। দাম কত পামু, *সেইটা কন*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    },
+    "arms": {
+     "imran": "talk"
+    }
+   }
+  },
+  {
+   "voice": "mechanic",
+   "say": "পঁচিশ বছর আগে মাস্টার সাহেব এইটা কিনছিলেন কিস্তিতে, তিন বছরে। কারণ তোমার স্কুল ছিল ছয় কিলোমিটার দূরে। বাসে তুমি *বমি করতা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "mechanic",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mechanic": "talk"
+    }
+   }
+  },
+  {
+   "say": "ইমরান চুপ। ছয় কিলোমিটার। প্রতিদিন। স্কুটারের সামনে দাঁড়িয়ে, আব্বার দুই হাতের মাঝে। সে ভুলে গিয়েছিল। *আব্বা ভোলেননি*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mechanic",
+   "say": "আর পার্টস পাওয়া যায় না বইলা উনি নিজে শিখছেন ঠিক করতে। আমার কাছে আইসা বইসা থাকতেন। কইতেন, ‘ছেলেটারে স্কুলে নিতে হইবো, *বন্ধ হইলে চলবো না*।’",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mechanic",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mechanic": "hold"
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "কালাম ভাই, বেচমু না। বোনাসের টাকায় এইটা পুরা ঠিক করেন। রং, ইঞ্জিন, সিট, সব। আর রংটা *আগের মতো*, নীল।",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সেই বিকেল",
+    "props": [
+     "signboard",
+     "sign:কালাম মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "mechanic",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "imran": "point"
+    }
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর। সকাল সাতটা। আব্বা উঠানে এসে দাঁড়ালেন। সামনে তাঁর স্কুটার। নতুন নীল। এক কিকে স্টার্ট। আর সামনে সেই ছোট্ট হাতলটা, যেটা ধরে ইমরান *স্কুলে যেত*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "কালাম মোটরসের কাজের তালিকা",
+     "lines": [
+      "ইঞ্জিন ওভারহোলিং",
+      "নতুন সিট, পুরোনো রঙের নীল",
+      "সামনে ছোট্ট একটা হাতল— ‘বাচ্চার জন্য’, আগের মতো"
+     ]
+    },
+    "set": "home",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "imran",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "তুই… কালামের কাছে গেছিলি? হাতলটাও লাগাইছস? এইটা তো তুই ক্লাস ফাইভের পর *আর ধরস নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "আব্বা, এইবার আপনি পিছনে বসেন। আমি চালাই। পঁচিশ বছর আপনি আমারে নিছেন। এখন *আমার পালা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    },
+    "arms": {
+     "imran": "hold"
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার বিকেলে রাজশাহীর পদ্মার পাড়ে একটা নীল স্কুটার দেখা যায়। সামনে ছেলে, পেছনে বাবা। আর সামনের ছোট্ট হাতলে বাঁধা একটা ফিতে— *‘ছয় কিলোমিটার, পঁচিশ বছর।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পুরোনো জিনিস আমরা বেচতে চাই… *তার গল্প জানলে যত্ন করতে চাই*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পুরোনো জিনিস আমরা বেচতে চাই…",
+    "line2": "তার গল্প জানলে\nযত্ন করতে চাই।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বার ২৫ বছরের পুরোনো স্কুটার, সবাই বলে বেচে দাও… ইমরান জানল আব্বা কেন রোজ সকালে এটা মোছেন 🛵",
+  "description": "রাজশাহীর ইমরান নতুন চাকরি পেয়ে আব্বাকে নতুন বাইক কিনে দিতে চায়। আব্বার পঁচিশ বছরের পুরোনো স্কুটার, রং উঠে গেছে, স্টার্ট নিতে সময় লাগে। আব্বা রাজি না। রোজ সকালে স্কুটারটা মোছেন। ইমরান স্কুটারটা গোপনে মেকানিকের কাছে নিল বেচতে…",
+  "tags": [
+   "বাবার গল্প",
+   "পুরোনো স্কুটার",
+   "স্মৃতি",
+   "রাজশাহী",
+   "বাবা ছেলে",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছেলে চেয়েছিল আব্বার পুরোনো স্কুটারটা বেচে নতুন বাইক কিনে দিতে। মেকানিক বললেন স্কুটারটার গল্প, আর ছেলে সেটা বেচল না। 🛵\nতোমার বাবার কোন পুরোনো জিনিস তিনি কখনো ফেলতে চান না? 👇 #বাবা #স্মৃতি"
+ },
+ "thumbnail": {
+  "text": "২৫ বছরের স্কুটার",
+  "sub": "আব্বা কেন রাখেন"
+ }
+}
