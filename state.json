@@ -527,6 +527,17 @@
       "playlist": false,
       "facebook": "1091628390498651",
       "scheduled_for": "2026-11-10T15:30:00+06:00"
+    },
+    {
+      "id": "046",
+      "date": "2026-11-10",
+      "slot": "17:30",
+      "duration": 143.78,
+      "title": "‘সবাই তো দিচ্ছে!’ সমিতিতে ২ লাখ দিতে যাচ্ছিলেন মামা… তারপর 😮",
+      "youtube": "C2qs_7kpvHI",
+      "playlist": false,
+      "facebook_error": "Facebook upload failed: 400 {\"error\":{\"message\":\"We limit how often you can post, comment or do other things in a given amount of time in order to help protect the community from spam. You can try again later. Learn More\",\"type\":\"OAuthException\",\"code\":368,\"error_data\":{\"sentry_block_data\":\"Aesq48W0",
+      "scheduled_for": "2026-11-10T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -558,8 +569,10 @@
     "theme:money": "PLE4xM922HB78"
   },
   "last_run": {
-    "at": "2026-11-06T00:36:42.476594+06:00",
-    "errors": []
+    "at": "2026-11-06T00:44:44.772132+06:00",
+    "errors": [
+      "facebook 046: Facebook upload failed: 400 {\"error\":{\"message\":\"We limit how often you can post, comment or do other things in a given amount of time in order to help protect the community from spam. You can try again later. Learn More\",\"type\":\"OAuthException\",\"code\":368,\"error_data\":{\"sentry_block_data\":\"Aesq48W0VcyeGJtCzyI62N48SuduljmCsgO-TlvVjCUOw1PFxG6M_fx-aXtYdRVx_ZhHNujufBplJA20xiS-u5vCPFJ1MqfUQPi4zORBN9TcdwcJ3wPhq5dIbF4_YxzOiUK0uZfW"
+    ]
   },
   "queue_remaining": 15,
   "_run_started": "2026-11-06T00:10:04.179811+06:00",
