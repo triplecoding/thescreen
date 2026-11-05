@@ -69,7 +69,8 @@ def _hashtag(s):
 def youtube_meta(script, seed=0):
     yt = script["youtube"]
     src = script["source"]
-    title = yt["title"].strip()
+    title = re.sub(r"\s*\|\s*[^|]*$", "", yt["title"].strip()) if "|" in yt["title"] else yt["title"].strip()
+    title = (title + " | বাংলা গল্প") if len(title) < 80 else title
     if len(title) > 100:
         title = title[:97].rstrip() + "…"
     book_tag = _hashtag(src["book"].split(":")[0])
@@ -77,7 +78,7 @@ def youtube_meta(script, seed=0):
     q = _ask_quote(script)
     lines = [
         yt["description"].strip().split("\n")[0],                       # line 1 = hook (shown in search)
-        f"📖 {src['book']} — {src['author']} | {src.get('title', '')} — বাংলায়, জীবনের গল্পে।",
+        "🎬 একটি মৌলিক বাংলা জীবনের গল্প — The Screen",
         "",
         "\n".join(yt["description"].strip().split("\n")[1:]).strip(),
         "",
@@ -87,9 +88,9 @@ def youtube_meta(script, seed=0):
         SHARE_LINES[seed % len(SHARE_LINES)],
         "🔔 প্রতিদিন নতুন গল্প — The Screen ফলো করো।",
         "",
-        "✍️ বইয়ের ধারণা থেকে অনুপ্রাণিত একটি মৌলিক গল্প। সব চরিত্র কাল্পনিক।",
+        f"✍️ সব চরিত্র ও ঘটনা কাল্পনিক। ভাবনার অনুপ্রেরণা: {src['book']} ({src['author']})।",
         "",
-        " ".join(tags3 + ["#TheScreen", "#জীবনেরগল্প", "#BookSummaryBangla"]),
+        " ".join(["#Shorts", "#বাংলাগল্প", "#জীবনেরগল্প", "#TheScreen", "#গল্প"]),
     ]
     desc = "\n".join(l for l in lines if l is not None)
     desc = re.sub(r"\n{3,}", "\n\n", desc).strip()
@@ -113,11 +114,11 @@ def facebook_caption(script, seed=0):
     body = "\n".join(l.rstrip() for l in body.split("\n") if not l.strip().startswith("📖")).strip()
     body = re.sub(r"\n{3,}", "\n\n", body)
     tags = []
-    for t in own_tags + ["#TheScreen", "#বাংলাগল্প", _hashtag(src["book"].split(":")[0]), "#জীবনেরগল্প"]:
+    for t in own_tags + ["#TheScreen", "#বাংলাগল্প", "#জীবনেরগল্প", "#গল্প"]:
         norm = lambda x: re.sub(r"^#the", "#", x.lower())
         if norm(t) not in [norm(x) for x in tags]:
             tags.append(t)
-    return f"{body}\n\n{SHARE_LINES[(seed + 1) % len(SHARE_LINES)]}\n\n📖 {src['book']} — {src['author']}\n{' '.join(tags[:5])}".strip()
+    return f"{body}\n\n{SHARE_LINES[(seed + 1) % len(SHARE_LINES)]}\n\n{' '.join(tags[:5])}".strip()
 
 
 def first_comment(script):

@@ -158,5 +158,6 @@
     "volume_db": -21,
     "duck": 0.55
   },
-  "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately."
+  "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately.",
+  "story_only": true
 }

@@ -90,13 +90,16 @@ def check(path):
     if s["source"].get("book") == "The 48 Laws of Power":
         errs.append("owner rule: no stories from The 48 Laws of Power")
     story_c = sum(len(plain(b.get("say", ""))) for b in s["beats"] if b.get("kind", "story") in ("story", "list", "statement"))
-    if chars_total and story_c / chars_total < 0.66:
-        warns.append(f"story is only {story_c / chars_total:.0%} of narration — owner wants ~70–75 % story, short lesson")
-    for need in ("book", "takeaways", "ask", "outro"):
-        if need not in kinds: errs.append(f"structure: missing '{need}' beat")
+
+    if "outro" not in kinds: errs.append("structure: missing 'outro' beat (the 2-line closing)")
+    lesson = [k for k in kinds if k in ("book", "concept", "takeaways", "ask")]
+    if lesson: warns.append(f"{len(lesson)} lesson beats (book/concept/takeaways/ask) — not used anymore; they are cut at production")
     if kinds and kinds[-1] != "outro": errs.append("structure: last beat must be outro")
-    est = chars_total / CHARS_PER_SEC + 0.5 * len(s["beats"]) + 4   # speech + lead-ins/pauses + outro hold
+    spoken = [b for b in s["beats"] if b.get("kind", "story") not in ("book", "concept", "takeaways", "ask")]
+    chars_spoken = sum(len(plain(b.get("say", ""))) for b in spoken)
+    est = chars_spoken / CHARS_PER_SEC + 0.5 * len(spoken) + 4   # speech + lead-ins/pauses + outro hold (story-only video)
     d = channel()["duration"]
+    if est < d["min"] - 4: errs.append(f"estimated {est:.0f}s — too short for {d['min']:.0f}-{d['max']:.0f}s: make the story longer (no lesson part)")
     if est < d["min"] - 10: warns.append(f"estimated {est:.0f}s — probably too short (target {d['min']:.0f}-{d['max']:.0f}s)")
     if est > d["max"] + 4: errs.append(f"estimated {est:.0f}s — too long (target {d['min']:.0f}-{d['max']:.0f}s); cut narration")
     if len(s["youtube"].get("title", "")) > 100: errs.append("youtube title > 100 chars")

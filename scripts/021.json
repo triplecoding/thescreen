@@ -1,485 +1,579 @@
 {
-  "id": "021",
-  "status": "ready",
-  "title_bn": "ছাদের দুই কাপ চা",
-  "source": {
-    "book": "Thinking, Fast and Slow",
-    "author": "Daniel Kahneman",
-    "author_bn": "ড্যানিয়েল কাহনেম্যান",
-    "chapter": "SUNK COST",
-    "chapter_bn": "মনের একটা ফাঁদ",
-    "title": "Sunk Cost",
-    "title_bn": "যা গেছে, তা দিয়ে সামনের সিদ্ধান্ত নয়"
+ "id": "021",
+ "status": "ready",
+ "title_bn": "ছাদের দুই কাপ চা",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "SUNK COST",
+  "chapter_bn": "মনের একটা ফাঁদ",
+  "title": "Sunk Cost",
+  "title_bn": "যা গেছে, তা দিয়ে সামনের সিদ্ধান্ত নয়"
+ },
+ "cast": {
+  "rana": {
+   "name": "রানা",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#5B6B7A",
+   "hair": "curly",
+   "beard": "stubble",
+   "voice": "young_man"
   },
-  "cast": {
-    "rana": {
-      "name": "রানা",
-      "type": "young_man",
-      "skin": "brown",
-      "outfit": "shirt",
-      "color": "#5B6B7A",
-      "hair": "curly",
-      "beard": "stubble",
-      "voice": "young_man"
-    },
-    "shimul": {
-      "name": "শিমুল",
-      "type": "young_man",
-      "skin": "wheat",
-      "outfit": "tshirt",
-      "color": "#C4473A",
-      "hair": "short",
-      "voice": "young_man"
-    },
-    "ammu": {
-      "name": "আম্মা",
-      "type": "old_woman",
-      "skin": "tan",
-      "outfit": "sari",
-      "color": "#6C3A5C",
-      "color2": "#E8A33D",
-      "hair": "grey_bun",
-      "voice": "old_woman"
-    }
+  "shimul": {
+   "name": "শিমুল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "young_man"
   },
-  "beats": [
-    {
-      "say": "চার বছর, তিনবার বিসিএস, কোচিংয়ে খরচ *তিন লাখ টাকা*। প্রিলিতে প্রতিবার অল্পের জন্য বাদ।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "নীলক্ষেতের মেস",
-        "props": [
-          "table",
-          "bed"
-        ],
-        "chars": [
-          {
-            "id": "rana",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "worried",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "বছর",
-              "value": "৪",
-              "from": "১"
-            },
-            {
-              "label": "খরচ",
-              "value": "৩ লাখ ৳",
-              "from": "০",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "rana",
-      "tone": "frustrated",
-      "say": "এত বছর দিয়েছি। এখন ছাড়লে *সব জলে যাবে*।",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "গ্রামে আম্মা গাভী বিক্রি করে টাকা পাঠান। প্রতিবার ফোনে বলেন একটাই কথা—",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "গ্রামের বাড়ি",
-        "props": [
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "ammu",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "smile",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "ammu",
-      "tone": "warmly",
-      "say": "চিন্তা করিস না, বাবা। এবার *হবেই*।",
-      "scene": {
-        "cam": {
-          "focus": "ammu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "নতুন কোচিং, নতুন গাইড, রাত তিনটা পর্যন্ত পড়া। চতুর্থবারও *অল্পের জন্য* বাদ।",
-      "card": {
-        "title": "আরেকবার, আরেকবার…",
-        "items": [
-          {
-            "t": "নতুন কোচিং",
-            "mark": "x"
-          },
-          {
-            "t": "নতুন গাইড",
-            "mark": "x"
-          },
-          {
-            "t": "রাত তিনটা পর্যন্ত পড়া",
-            "mark": "x"
-          }
-        ],
-        "footer": "ফল: আবার বাদ"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "রেজাল্টের রাতে রানা ছাদে একা বসে রইল। ফোনে আম্মার মিসড কল— *সাতটা*।",
-      "pause": 0.9,
-      "scene": {
-        "set": "balcony",
-        "light": "night",
-        "chip": "মেসের ছাদ",
-        "props": [
-          "plants"
-        ],
-        "chars": [
-          {
-            "id": "rana",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "বন্ধু শিমুল এসে পাশে বসল। হাতে দুই কাপ চা।",
-      "scene": {
-        "chars": [
-          {
-            "id": "rana",
-            "x": 0.32,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "shimul",
-            "x": 0.68,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "tea"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "shimul",
-      "tone": "gently",
-      "say": "একটা প্রশ্ন, দোস্ত। আজ যদি প্রথম দিন হতো, *তুই কি এই পথ বাছতি*?",
-      "scene": {
-        "cam": {
-          "focus": "shimul",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "rana",
-      "tone": "upset",
-      "say": "কিন্তু চার বছর… তিন লাখ টাকা… *ওগুলোর কী হবে*?",
-      "scene": {
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "shimul",
-      "say": "ওগুলো আর ফেরত আসবে না। প্রশ্ন শুধু— *সামনের চার বছর* কোথায় দিবি?",
-      "scene": {
-        "arms": {
-          "shimul": "talk"
-        },
-        "cam": {
-          "focus": "shimul",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "পেছনের খরচ দিয়ে নয়— সিদ্ধান্ত হবে *সামনের পথ* দেখে।",
-      "pause": 0.7,
-      "card": {
-        "text": "পেছনের খরচ নয়—\n*সামনের পথ* দেখে সিদ্ধান্ত।"
-      }
-    },
-    {
-      "say": "রানার মনে পড়ল, মেসের বাচ্চাদের অঙ্ক বোঝানোর সময়ই সে থাকে *সবচেয়ে খুশি*।",
-      "pause": 0.6,
-      "scene": {
-        "moods": {
-          "rana": "thinking"
-        },
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "voice": "rana",
-      "tone": "hopeful",
-      "say": "আমি পড়াতে ভালোবাসি, শিমুল। *সত্যিই* ভালোবাসি।",
-      "scene": {
-        "moods": {
-          "rana": "smile"
-        },
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "দুই মাস পর, গলির মোড়ে ছোট্ট একটা কোচিং ঘর। প্রথম দিন ছাত্র *সাতজন*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "দুই মাস পর",
-        "props": [
-          "signboard",
-          "sign:রানা স্যারের পাঠশালা"
-        ],
-        "chars": [
-          {
-            "id": "rana",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "talk",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ছাত্র",
-              "value": "৭",
-              "from": "০"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "প্রথম মাসেই এক মা এসে বললেন, ছেলে এখন নিজে থেকে *অঙ্ক করতে বসে*।",
-      "scene": {
-        "cam": {
-          "focus": "rana",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "say": "এক বছরে ছাত্র একশো বিশ। এবার টাকা গেল উল্টো দিকে— *রানা পাঠাল আম্মাকে*।",
-      "scene": {
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ছাত্র",
-              "value": "১২০",
-              "from": "৭"
-            },
-            {
-              "label": "আম্মাকে পাঠানো",
-              "value": "প্রতি মাসে"
-            }
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "ammu",
-      "tone": "tearful",
-      "say": "বাবা, তোর গলায় এত খুশি আমি *কখনো শুনিনি*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "গ্রামের বাড়ি",
-        "props": [
-          "window"
-        ],
-        "widget": null,
-        "chars": [
-          {
-            "id": "ammu",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "ammu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "চার বছরের জেদ যা পারেনি, *একটা সৎ প্রশ্ন* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"
-    },
-    {
-      "kind": "book",
-      "say": "মনের একটা ফাঁদ— *সাঙ্ক কস্ট*, ডুবে যাওয়া খরচ।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "যা খরচ হয়ে গেছে, তা ফেরে না। তবু আঁকড়ে থাকি, কারণ ছাড়লে *হারের মতো* লাগে।",
-      "card": {
-        "title": "কোনটা দিয়ে সিদ্ধান্ত?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "clock",
-            "t": "পেছনের চার বছর",
-            "sub": "ফেরত আসবে না",
-            "bad": true
-          },
-          "right": {
-            "icon": "bulb",
-            "t": "সামনের চার বছর",
-            "sub": "এখনো আমার হাতে"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, জিজ্ঞেস করো— *আজ শুরু হলে* কী বাছতাম?",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "জিজ্ঞেস করো: আজ শুরু হলে?",
-            "sub": "পেছনের খরচ বাদ দিয়ে",
-            "icon": "bulb"
-          },
-          {
-            "t": "যা গেছে, তা গেছে",
-            "sub": "শোক নয়, শিক্ষা",
-            "icon": "clock"
-          },
-          {
-            "t": "পথ বদলানো হার নয়",
-            "sub": "নিজের জায়গা খোঁজা",
-            "icon": "star"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, যা গেছে, তা *গেছে*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, পথ বদলানো মানে *হার নয়*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *পেছনের খরচে* আটকে আছি, নাকি *সামনের পথ* দেখছি?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি *পেছনের খরচে* আটকে আছি,\nনাকি *সামনের পথ* দেখছি?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "অতীতের খরচ ফেরত আসে না… *ভবিষ্যৎটা এখনো খরচ হয়নি*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "অতীতের খরচ ফেরত আসে না…",
-        "line2": "ভবিষ্যৎটা এখনো\nখরচ হয়নি।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "চার বছর, তিন লাখ টাকা— বন্ধুর একটা প্রশ্ন বদলে দিল রানার পথ ☕ | Thinking, Fast and Slow বাংলা",
-    "description": "চার বছর, তিনবার বিসিএস, কোচিংয়ে তিন লাখ টাকা। ছাড়লে সব জলে যাবে— এই ভয়েই আটকে ছিল রানা। তারপর এক রাতে ছাদে বন্ধু শিমুল একটা প্রশ্ন করল…\nড্যানিয়েল কাহনেম্যান-এর Thinking, Fast and Slow — Sunk Cost — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "thinking fast and slow bangla",
-      "daniel kahneman bangla",
-      "sunk cost bangla",
-      "বন্ধুর গল্প",
-      "ক্যারিয়ার",
-      "বাংলা গল্প",
-      "সিদ্ধান্ত নেওয়া",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "চার বছরের জেদ যা পারেনি, একটা সৎ প্রশ্ন তা পারল। ☕\n\nকোন জিনিস ছেড়ে দিয়ে পরে বুঝেছ, ঠিক কাজই করেছিলে? 👇\n\n📖 Thinking, Fast and Slow — Daniel Kahneman\n#বন্ধু #ক্যারিয়ার"
-  },
-  "thumbnail": {
-    "text": "তিন লাখ টাকা",
-    "sub": "ছাড়ব, নাকি আরেকবার?"
+  "ammu": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#6C3A5C",
+   "color2": "#E8A33D",
+   "hair": "grey_bun",
+   "voice": "old_woman"
   }
+ },
+ "beats": [
+  {
+   "say": "চার বছর, তিনবার বিসিএস, কোচিংয়ে খরচ *তিন লাখ টাকা*। প্রিলিতে প্রতিবার অল্পের জন্য বাদ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "নীলক্ষেতের মেস",
+    "props": [
+     "table",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বছর",
+       "value": "৪",
+       "from": "১"
+      },
+      {
+       "label": "খরচ",
+       "value": "৩ লাখ ৳",
+       "from": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rana",
+   "tone": "frustrated",
+   "say": "এত বছর দিয়েছি। এখন ছাড়লে *সব জলে যাবে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "গ্রামে আম্মা গাভী বিক্রি করে টাকা পাঠান। প্রতিবার ফোনে বলেন একটাই কথা—",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "গ্রামের বাড়ি",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "warmly",
+   "say": "চিন্তা করিস না, বাবা। এবার *হবেই*।",
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফোন রেখে রানা মেসের টেবিলে মাথা গুঁজে বসে থাকে। রুমমেটরা ঘুমায়, আর তার টেবিল ল্যাম্প জ্বলে *ভোর পর্যন্ত*।",
+   "pause": 0.5,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেসের ঘর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নতুন কোচিং, নতুন গাইড, রাত তিনটা পর্যন্ত পড়া। চতুর্থবারও *অল্পের জন্য* বাদ।",
+   "card": {
+    "title": "আরেকবার, আরেকবার…",
+    "items": [
+     {
+      "t": "নতুন কোচিং",
+      "mark": "x"
+     },
+     {
+      "t": "নতুন গাইড",
+      "mark": "x"
+     },
+     {
+      "t": "রাত তিনটা পর্যন্ত পড়া",
+      "mark": "x"
+     }
+    ],
+    "footer": "ফল: আবার বাদ"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "রেজাল্টের রাতে রানা ছাদে একা বসে রইল। ফোনে আম্মার মিসড কল— *সাতটা*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "মেসের ছাদ",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বন্ধু শিমুল এসে পাশে বসল। হাতে দুই কাপ চা।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shimul",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "shimul",
+   "tone": "gently",
+   "say": "একটা প্রশ্ন, দোস্ত। আজ যদি প্রথম দিন হতো, *তুই কি এই পথ বাছতি*?",
+   "scene": {
+    "cam": {
+     "focus": "shimul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rana",
+   "tone": "upset",
+   "say": "কিন্তু চার বছর… তিন লাখ টাকা… *ওগুলোর কী হবে*?",
+   "scene": {
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimul",
+   "say": "ওগুলো আর ফেরত আসবে না। প্রশ্ন শুধু— *সামনের চার বছর* কোথায় দিবি?",
+   "scene": {
+    "arms": {
+     "shimul": "talk"
+    },
+    "cam": {
+     "focus": "shimul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পেছনের খরচ দিয়ে নয়— সিদ্ধান্ত হবে *সামনের পথ* দেখে।",
+   "pause": 0.7,
+   "card": {
+    "text": "পেছনের খরচ নয়—\n*সামনের পথ* দেখে সিদ্ধান্ত।"
+   }
+  },
+  {
+   "say": "রানার মনে পড়ল, মেসের বাচ্চাদের অঙ্ক বোঝানোর সময়ই সে থাকে *সবচেয়ে খুশি*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "rana": "thinking"
+    },
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "rana",
+   "tone": "hopeful",
+   "say": "আমি পড়াতে ভালোবাসি, শিমুল। *সত্যিই* ভালোবাসি।",
+   "scene": {
+    "moods": {
+     "rana": "smile"
+    },
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rana",
+   "tone": "sighs",
+   "say": "কিন্তু আম্মাকে কী বলব? উনি তো সবাইকে বলে রেখেছেন, ছেলে *ক্যাডার* হবে।",
+   "scene": {
+    "moods": {
+     "rana": "worried"
+    },
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimul",
+   "tone": "warmly",
+   "say": "সত্যিটা বল, দোস্ত। মায়েরা পোস্ট চায় না রে, চায় *ছেলেটা ভালো থাকুক*।",
+   "scene": {
+    "cam": {
+     "focus": "shimul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর, গলির মোড়ে ছোট্ট একটা কোচিং ঘর। প্রথম দিন ছাত্র *সাতজন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:রানা স্যারের পাঠশালা"
+    ],
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছাত্র",
+       "value": "৭",
+       "from": "০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম মাসেই এক মা এসে বললেন, ছেলে এখন নিজে থেকে *অঙ্ক করতে বসে*।",
+   "scene": {
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "এক বছরে ছাত্র একশো বিশ। এবার টাকা গেল উল্টো দিকে— *রানা পাঠাল আম্মাকে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছাত্র",
+       "value": "১২০",
+       "from": "৭"
+      },
+      {
+       "label": "আম্মাকে পাঠানো",
+       "value": "প্রতি মাসে"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "প্রথম বেতনের দিন রানা নিজেই ফোন দিল গ্রামে।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rana",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rana",
+   "tone": "warmly",
+   "say": "আম্মা, এই মাসে গাভী বেচতে হবে না। এবার টাকাটা *আমি পাঠালাম*।",
+   "scene": {
+    "cam": {
+     "focus": "rana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "tearful",
+   "say": "বাবা, তোর গলায় এত খুশি আমি *কখনো শুনিনি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "গ্রামের বাড়ি",
+    "props": [
+     "window"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "tearful",
+   "say": "পরীক্ষার কথা আর জিগামু না। শুধু রোজ রাতে *একবার ফোন দিস*।",
+   "scene": {
+    "moods": {
+     "ammu": "crying"
+    },
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "চার বছরের জেদ যা পারেনি, *একটা সৎ প্রশ্ন* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"
+  },
+  {
+   "kind": "book",
+   "say": "মনের একটা ফাঁদ— *সাঙ্ক কস্ট*, ডুবে যাওয়া খরচ।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "যা খরচ হয়ে গেছে, তা ফেরে না। তবু আঁকড়ে থাকি, কারণ ছাড়লে *হারের মতো* লাগে।",
+   "card": {
+    "title": "কোনটা দিয়ে সিদ্ধান্ত?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "clock",
+      "t": "পেছনের চার বছর",
+      "sub": "ফেরত আসবে না",
+      "bad": true
+     },
+     "right": {
+      "icon": "bulb",
+      "t": "সামনের চার বছর",
+      "sub": "এখনো আমার হাতে"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, জিজ্ঞেস করো— *আজ শুরু হলে* কী বাছতাম?",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "জিজ্ঞেস করো: আজ শুরু হলে?",
+      "sub": "পেছনের খরচ বাদ দিয়ে",
+      "icon": "bulb"
+     },
+     {
+      "t": "যা গেছে, তা গেছে",
+      "sub": "শোক নয়, শিক্ষা",
+      "icon": "clock"
+     },
+     {
+      "t": "পথ বদলানো হার নয়",
+      "sub": "নিজের জায়গা খোঁজা",
+      "icon": "star"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, যা গেছে, তা *গেছে*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, পথ বদলানো মানে *হার নয়*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *পেছনের খরচে* আটকে আছি, নাকি *সামনের পথ* দেখছি?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *পেছনের খরচে* আটকে আছি,\nনাকি *সামনের পথ* দেখছি?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অতীতের খরচ ফেরত আসে না… *ভবিষ্যৎটা এখনো খরচ হয়নি*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অতীতের খরচ ফেরত আসে না…",
+    "line2": "ভবিষ্যৎটা এখনো\nখরচ হয়নি।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চার বছর, তিন লাখ টাকা— বন্ধুর একটা প্রশ্ন বদলে দিল রানার পথ ☕ | Thinking, Fast and Slow বাংলা",
+  "description": "চার বছর, তিনবার বিসিএস, কোচিংয়ে তিন লাখ টাকা। ছাড়লে সব জলে যাবে— এই ভয়েই আটকে ছিল রানা। তারপর এক রাতে ছাদে বন্ধু শিমুল একটা প্রশ্ন করল…\nড্যানিয়েল কাহনেম্যান-এর Thinking, Fast and Slow — Sunk Cost — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "thinking fast and slow bangla",
+   "daniel kahneman bangla",
+   "sunk cost bangla",
+   "বন্ধুর গল্প",
+   "ক্যারিয়ার",
+   "বাংলা গল্প",
+   "সিদ্ধান্ত নেওয়া",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "চার বছরের জেদ যা পারেনি, একটা সৎ প্রশ্ন তা পারল। ☕\n\nকোন জিনিস ছেড়ে দিয়ে পরে বুঝেছ, ঠিক কাজই করেছিলে? 👇\n\n📖 Thinking, Fast and Slow — Daniel Kahneman\n#বন্ধু #ক্যারিয়ার"
+ },
+ "thumbnail": {
+  "text": "তিন লাখ টাকা",
+  "sub": "ছাড়ব, নাকি আরেকবার?"
+ },
+ "_extended": "story-only v1"
 }

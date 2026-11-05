@@ -63,9 +63,21 @@ def qa(video, tl):
     return dur, problems
 
 
+LESSON_KINDS = {"book", "concept", "takeaways", "ask"}
+
+
+def story_only(script):
+    """Owner rule (Nov 2026): no book card, no lesson list, no 'screen turns to you' question in the video —
+    only the story and a 2-line closing (the outro). Older scripts that still contain those beats are trimmed here."""
+    if channel().get("story_only", True):
+        script = dict(script)
+        script["beats"] = [b for b in script["beats"] if b.get("kind", "story") not in LESSON_KINDS]
+    return script
+
+
 def produce(sid, tts="elevenlabs", workers=0, stills=False):
     path = SCRIPTS / f"{sid}.json"
-    script = load_json(path)
+    script = story_only(load_json(path))
     errs, warns, est = check(path)
     for w in warns: log("warn:", w)
     if errs:
