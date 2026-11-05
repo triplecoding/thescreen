@@ -1,0 +1,397 @@
+{
+ "id": "183",
+ "status": "ready",
+ "title_bn": "আম্মার পুরোনো ফোন",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Sanctity: what we hold sacred",
+  "title_bn": "পবিত্র স্মৃতি"
+ },
+ "cast": {
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "tania": {
+   "name": "তানিয়া",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "mechanic": {
+   "name": "মোবাইল মিস্ত্রি রাজু",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ময়মনসিংহের এক বাসা। আম্মার হাতে একটা ফোন। স্ক্রিন ভাঙা, ব্যাটারি ফুলে উঠেছে, চার্জ থাকে দুই ঘণ্টা। আর তানিয়ার হাতে একটা প্যাকেট, *নতুন ফোন*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ময়মনসিংহ, আম্মার ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "tania",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আম্মার ফোন",
+       "value": "৬ বছরের পুরোনো"
+      },
+      {
+       "label": "স্ক্রিন",
+       "value": "ভাঙা"
+      },
+      {
+       "label": "চার্জ থাকে",
+       "value": "২ ঘণ্টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "আম্মা, তিন মাস ধইরা বলতেছি। এইটা কবে *ফাইটা* যাইবো। নতুনটা নেন, প্লিজ।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "রাইখা দে। আমার এইটাই *চলে*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "say": "এক রাতে দুইটায় তানিয়া পানি খেতে উঠল। আম্মার ঘরের দরজা আধখোলা। অন্ধকারে আম্মা বসে, ফোনটা কানে ধরে। আর ফোন থেকে আসছে *একটা গলা*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাত, দুইটা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আব্বার গলা। দুই বছর আগে আব্বা মারা গেছেন। আর ফোন থেকে ভেসে আসছে— *শাহানা, ভাত খাইছো? আমি একটু দেরি করব*।",
+   "pause": 1.5,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "আম্মা… এইগুলা আব্বার *ভয়েস*? এই ফোনে?",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tania": "down"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "দুইশো চৌদ্দটা। ছয় বছরের। বাজারের লিস্ট, দেরির খবর, ঈদের দোয়া। নতুন ফোনে নিলে যদি *হারাইয়া যায়*? আমি তো কিছু বুঝি না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "say": "তানিয়া পুরোনো ফোনটার দিকে তাকাল। ভাঙা স্ক্রিন, ফোলা ব্যাটারি। তিন মাস যেটাকে সে *আবর্জনা* ভেবেছে, সেটাই আম্মার কাছে আব্বার শেষ গলা।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "ভাই, এই ফোনের ভয়েস মেসেজগুলা, দুইশো চৌদ্দটা, সব নিরাপদে বের করা যাবে? একটাও যেন *না হারায়*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন, মোবাইল সার্ভিসিং",
+    "props": [
+     "signboard",
+     "sign:রাজু মোবাইল কেয়ার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "mechanic",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "tania",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "tania": "worried"
+    },
+    "arms": {
+     "tania": "talk"
+    }
+   }
+  },
+  {
+   "voice": "mechanic",
+   "say": "ব্যাটারি ফোলা, সাবধানে করতে হবে। দুই ঘণ্টা দেন। আর আপা, একটা কপি ক্লাউডে, একটা মেমোরি কার্ডে। *তিন জায়গায়* রাখমু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "mechanic",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mechanic": "phone"
+    }
+   }
+  },
+  {
+   "say": "দুই ঘণ্টা। রাজু খুব সাবধানে ব্যাটারি বদলাল, ফোন চালু রাখল, প্রতিটা ভয়েস ফাইল কপি করল। তারপর গুনল। *দুইশো চৌদ্দটা*। একটাও কম না।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই রাতে তানিয়া নতুন ফোনটা খুলল। আম্মার পাশে বসল। স্ক্রিনে একটা ফোল্ডার, নাম দেওয়া— *‘আব্বার গলা’*। ভেতরে দুইশো চৌদ্দটা ফাইল, তারিখ অনুযায়ী সাজানো।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "আম্মা, সব আছে। এই ফোনেও, আর আরও দুই জায়গায়। কোনোদিন *হারাবে না*। আর পুরান ফোনটাও থাকবে, আলমারিতে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "phone"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুই… তুই তিন মাস ঝগড়া করলি। একবারও *জিগাইলি না* কেন রাখি?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "ভুল হইছে, আম্মা। ফোনটা দেখছি, *ভিতরে কী* দেখি নাই।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "hug"
+    }
+   }
+  },
+  {
+   "say": "আম্মার নতুন ফোনের প্রথম পাতায় এখন একটাই আইকন বড় করে রাখা। নাম— *‘আব্বার গলা’*। আর প্রতি রাতে ঘুমানোর আগে, একটা করে।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে জিনিস আমাদের কাছে পুরোনো… *কারও কাছে সেটাই শেষ গলা*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে জিনিস আমাদের কাছে পুরোনো…",
+    "line2": "কারও কাছে\nসেটাই শেষ গলা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "স্ক্রিন ভাঙা, ব্যাটারি ফোলা, তবু আম্মা নতুন ফোন নেবেন না… ভেতরে আব্বার ২১৪টা ভয়েস মেসেজ 📱",
+  "description": "তানিয়ার আম্মার ফোনের স্ক্রিন ভাঙা, ব্যাটারি ফুলে গেছে, চার্জ থাকে দুই ঘণ্টা। তানিয়া নতুন ফোন কিনে আনল, আম্মা ছুঁয়েও দেখলেন না। রাগারাগি, অভিমান। তারপর এক রাতে তানিয়া শুনল, আম্মা অন্ধকারে ফোনটা কানে ধরে আছেন…",
+  "tags": [
+   "মায়ের গল্প",
+   "বাবার স্মৃতি",
+   "ভয়েস মেসেজ",
+   "শোক",
+   "মা মেয়ের গল্প",
+   "bangla golpo",
+   "mayer golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ভাঙা ফোনটা আম্মা ছাড়তে পারছিলেন না। কারণ ভেতরে ছিল আব্বার গলা— দুইশো চৌদ্দবার। 📱\nতোমার কাছে কি প্রিয় কারও কোনো ভয়েস মেসেজ যত্ন করে রাখা আছে? 👇 #মা #স্মৃতি"
+ },
+ "thumbnail": {
+  "text": "ভাঙা ফোন",
+  "sub": "আব্বার গলা"
+ }
+}

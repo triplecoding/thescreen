@@ -1451,6 +1451,54 @@
    "relation": "educated bookseller on buses / mocking passenger / student",
    "set": "street",
    "hook": "a master's graduate sells books on local buses; a passenger mocks him; he replies with dignity; a student who buys from him later shows him she passed her BCS preliminary using his books"
+  },
+  {
+   "id": "183",
+   "book": "The Righteous Mind",
+   "item": "Sanctity: what we hold sacred",
+   "relation": "widowed mother / daughter / phone mechanic",
+   "set": "home",
+   "hook": "a mother refuses to replace a broken phone; the daughter learns it holds her late father's 214 voice notes, gets them transferred and saved, and gives them back in the new phone"
+  },
+  {
+   "id": "184",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocation: the debt that lifts both",
+   "relation": "widowed elder sister / engineer brother / customer",
+   "set": "home",
+   "hook": "a widowed sister funds her brother's engineering degree by sewing blouses at night; with his first savings he rents and fits out a tailoring shop in her name"
+  },
+  {
+   "id": "185",
+   "book": "The Wealth of Nations",
+   "item": "Public works that no single man will build",
+   "relation": "retired teacher / schoolgirl / boatman",
+   "set": "street",
+   "hook": "a river crossing's bamboo bridge is washed away; after years of unanswered petitions, a retired teacher rallies the village to give one bamboo per household and build it themselves in a day"
+  },
+  {
+   "id": "186",
+   "book": "The Psychology of Money",
+   "item": "Saving is the gap between ego and income",
+   "relation": "rickshaw puller / wife / garage owner",
+   "set": "street",
+   "hook": "a puller paying 150 taka daily rent for 14 years saves 50 taka a day at his wife's insistence; in three years he buys his own rickshaw and keeps the 150 for himself"
+  },
+  {
+   "id": "187",
+   "book": "The Wealth of Nations",
+   "item": "Fair dealing and the reputation of a market",
+   "relation": "fruit seller / regular customer / rival seller",
+   "set": "shop",
+   "hook": "a fruit seller refuses to ripen mangoes with carbide while the next stall's bright yellow fruit draws buyers; a customer's child's reaction and his honest board win back trust"
+  },
+  {
+   "id": "188",
+   "book": "The Social Contract",
+   "item": "Strangers bound by a common pact",
+   "relation": "first-time migrant / veteran migrant / immigration officer",
+   "set": "shop",
+   "hook": "a first-time migrant who can't read English panics over forms at the airport; a 12-year veteran migrant helps him, walks him through every step, and gives him his number in Malaysia"
   }
  ]
 }

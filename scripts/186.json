@@ -1,0 +1,414 @@
+{
+ "id": "186",
+ "status": "ready",
+ "title_bn": "নিজের রিকশা",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Saving is the gap between ego and income",
+  "title_bn": "সঞ্চয় মানে নিজের সাথে চুক্তি"
+ },
+ "cast": {
+  "kalam": {
+   "name": "কালাম",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  },
+  "wife": {
+   "name": "কালামের বউ সুফিয়া",
+   "type": "woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "mohajon": {
+   "name": "গ্যারেজ মালিক",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কামরাঙ্গীরচরের এক গ্যারেজ। ভোর ছয়টা। কালাম জমা দিলেন দেড়শো টাকা, নিলেন রিকশা। চৌদ্দ বছর, *প্রতিদিন একই কাজ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকা, কামরাঙ্গীরচর গ্যারেজ",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "mohajon",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রিকশা চালানো",
+       "value": "১৪ বছর"
+      },
+      {
+       "label": "প্রতিদিন জমা",
+       "value": "১৫০ টাকা"
+      },
+      {
+       "label": "১৪ বছরে মহাজনকে",
+       "value": "প্রায় ৬ লাখ টাকা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দ বছরে মহাজনকে দিয়েছেন প্রায় ছয় লাখ টাকা। একটা নতুন রিকশার দাম পঁয়ষট্টি হাজার। অথচ নিজের নামে *একটা চাকাও নেই*।",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "কালাম, এই ব্যাংকটা নেন। মাটির। রোজ পঞ্চাশ টাকা। যত কষ্টই হোক, *পঞ্চাশ টাকা*।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "বাসা",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "wife",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "kalam",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "wife": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "পঞ্চাশ টাকায় কী হইবো, সুফিয়া? চা আর সিগারেটেই তো *যায়*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "down"
+    }
+   }
+  },
+  {
+   "say": "সুফিয়া মাটির ব্যাংকটা টেবিলে রাখলেন। গায়ে কাঁচা হাতে লেখা— *‘নিজের রিকশা’*। তিনি মানুষের বাসায় কাজ করেন, হিসাব শিখেছেন বাজারে।",
+   "scene": {
+    "cam": {
+     "focus": "wife",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "তাইলে সিগারেট বাদ। পঞ্চাশ গুণ তিনশো পঁয়ষট্টি। এক বছরে আঠারো হাজার। তিন বছরে *একটা রিকশা*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "wife",
+     "zoom": 1.4
+    },
+    "arms": {
+     "wife": "talk"
+    }
+   }
+  },
+  {
+   "say": "কালাম সুফিয়ার দিকে তাকালেন। চৌদ্দ বছরে এই হিসাবটা কেউ করেনি। তিনি নিজেও না। *পঞ্চাশ টাকা গুণ তিনশো পঁয়ষট্টি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন বছরের পঞ্চাশ টাকা",
+   "card": {
+    "title": "যা ছাড়তে হলো",
+    "items": [
+     {
+      "t": "দিনে দুইটা সিগারেট",
+      "mark": "x"
+     },
+     {
+      "t": "চায়ের দোকানের আড্ডায় বিস্কুট",
+      "mark": "x"
+     },
+     {
+      "t": "ঈদে নিজের নতুন লুঙ্গি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দ্বিতীয় বছর। এক বৃষ্টির রাতে আয় হলো একশো আশি টাকা। জমা দেড়শো। হাতে ত্রিশ। ব্যাংকে পঞ্চাশ দেওয়ার *উপায় নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বৃষ্টির রাত, দ্বিতীয় বছর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "ত্রিশই দেন। আর কাল সত্তর। গড় রাখলেই হইবো। ভাঙা যাইবো না, *থামা যাইবো না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন বছর পর এক রাতে সুফিয়া ব্যাংকটা ভাঙলেন। টাকা গুনতে লাগল দুই ঘণ্টা। খুচরা, নোট, কয়েন। মোট— *পঞ্চান্ন হাজার ছয়শো*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তিন বছর পর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "wife",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তিন বছরে জমা",
+       "value": "৫৫,৬০০ টাকা"
+      },
+      {
+       "label": "পুরোনো রিকশার দাম",
+       "value": "৫২,০০০ টাকা"
+      },
+      {
+       "label": "বাকি",
+       "value": "৩,৬০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "সুফিয়া… এইটা… এইটা আমাগো *নিজের রিকশা*?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরদিন ভোর ছয়টা। কালাম গ্যারেজে গেলেন। জমা দিতে না। শেষবারের মতো *মহাজনকে সালাম দিতে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন ভোর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "mohajon",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mohajon",
+   "say": "কালাম, রিকশা নিবা না? জমা দিবা না?",
+   "scene": {
+    "cam": {
+     "focus": "mohajon",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mohajon": "surprised"
+    },
+    "arms": {
+     "mohajon": "down"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "না, মহাজন। চৌদ্দ বছর আপনারে দিছি। আজ থেকে দেড়শো টাকা *আমার বউয়ের হাতে*। আমার নিজের রিকশা আছে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "hold"
+    }
+   }
+  },
+  {
+   "say": "সেদিন কালামের রিকশার পেছনে নতুন রং। আর আয় হলো আগের মতোই। তফাত একটাই— *দেড়শো টাকা* বাড়ি এল।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কালামের রিকশার পেছনের টিনে এখন একটা লেখা, সুফিয়ার বলা কথায়— *‘রোজ পঞ্চাশ টাকা। তিন বছর। নিজের চাকা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অল্প টাকা চোখে পড়ে না… *প্রতিদিন রাখলে চাকা হয়ে যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অল্প টাকা চোখে পড়ে না…",
+    "line2": "প্রতিদিন রাখলে\nচাকা হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৪ বছর অন্যের রিকশা, রোজ ৫০ টাকা জমিয়ে তিন বছরে কালামের নিজের রিকশা 🛺",
+  "description": "কালাম চৌদ্দ বছর ঢাকায় রিকশা চালান, প্রতিদিন মহাজনকে জমা দেড়শো টাকা। একদিন বউ সুফিয়া একটা মাটির ব্যাংক দিলেন, বললেন— রোজ পঞ্চাশ টাকা। কালাম হাসলেন, পঞ্চাশ টাকায় কী হয়? তিন বছর পর…",
+  "tags": [
+   "রিকশাওয়ালার গল্প",
+   "সঞ্চয়",
+   "নিজের রিকশা",
+   "টাকার গল্প",
+   "স্বামী স্ত্রী",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সংগ্রামের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চৌদ্দ বছর অন্যের রিকশা। তিন বছর রোজ পঞ্চাশ টাকা। তারপর একদিন গ্যারেজে না গিয়ে কালাম সোজা গেলেন নিজের রিকশার কাছে। 🛺\nছোট্ট কোনো সঞ্চয়ের অভ্যাস তোমার জীবনে কী বদলে দিয়েছে? 👇 #সঞ্চয় #রিকশা"
+ },
+ "thumbnail": {
+  "text": "রোজ ৫০ টাকা",
+  "sub": "৩ বছর পর"
+ }
+}

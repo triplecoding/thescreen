@@ -1,0 +1,423 @@
+{
+ "id": "184",
+ "status": "ready",
+ "title_bn": "সেলাই মেশিনের টাকায় ইঞ্জিনিয়ার",
+ "theme": "siblings",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Reciprocation: the debt that lifts both",
+  "title_bn": "উপকারের ফেরত"
+ },
+ "cast": {
+  "rubina": {
+   "name": "রুবিনা আপা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "shamim": {
+   "name": "শামীম",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "customer": {
+   "name": "দোকানের কাস্টমার",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "পাবনা, ছয় বছর আগে। রাত একটা। একটা পুরোনো সেলাই মেশিন, *ঘরঘর* শব্দ। রুবিনা আপা ব্লাউজ সেলাই করছেন, আশি টাকা পিস।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পাবনা, ছয় বছর আগে",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rubina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রুবিনা আপার সেলাই",
+       "value": "রাত ১টা পর্যন্ত"
+      },
+      {
+       "label": "ব্লাউজের মজুরি",
+       "value": "৮০ টাকা পিস"
+      },
+      {
+       "label": "ভাইয়ের পড়ার খরচ",
+       "value": "মাসে ৭,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বিয়ের দুই বছরের মাথায় স্বামী মারা গেছেন। ফিরে এসেছেন বাপের বাড়ি। আর ছোট ভাই শামীম তখন সবে ইঞ্জিনিয়ারিংয়ে চান্স পেয়েছে। *খরচ জোগানোর মানুষ নেই*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "আপা, আমি ছাইড়া দেই। একটা চাকরি নেই। তুমি সারা রাত সেলাই কইরা চোখ *নষ্ট করতেছ*।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shamim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rubina",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shamim": "down"
+    }
+   }
+  },
+  {
+   "voice": "rubina",
+   "say": "চোখ নষ্ট হইলে চশমা নিমু। তুই ইঞ্জিনিয়ার না হইলে আমার আর কোনো *স্বপ্ন* থাকবো না। যা, ঘুমা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubina": "hold"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পাঁচ বছরে রুবিনা আপার মেশিন",
+   "card": {
+    "title": "যা যা সেলাই হলো",
+    "items": [
+     {
+      "t": "প্রায় নয় হাজার ব্লাউজ",
+      "mark": "x"
+     },
+     {
+      "t": "দুইবার মেশিনের মোটর বদল",
+      "mark": "x"
+     },
+     {
+      "t": "চোখে চশমা, তৃতীয় বছরে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ছয় বছর পর। শামীম এখন একটা কোম্পানিতে ইঞ্জিনিয়ার। প্রথম লম্বা ছুটিতে বাড়ি এল। হাতে একটা খাম। আর মুখে একটা *চাপা হাসি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ছয় বছর পর",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rubina",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shamim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "আপা, চলো। একটু বাজারে যাই। একটা জিনিস *দেখামু*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shamim": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rubina",
+   "say": "এই দুপুরে? আমার তো তিনটা অর্ডার *বাকি*…",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubina": "down"
+    }
+   }
+  },
+  {
+   "say": "বাজারের মোড়ে একটা নতুন দোকান। শাটার নামানো। সাইনবোর্ডে নতুন রঙে লেখা— *রুবিনা টেইলার্স*। শামীম খাম থেকে বের করল একটা চাবি।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বাজারের মোড়ে একটা নতুন দোকান",
+    "props": [
+     "signboard_new",
+     "sign:রুবিনা টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rubina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shamim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "আপা, ভাড়ার চুক্তি তোমার নামে। ভেতরে তিনটা নতুন মেশিন, একটা কাটিং টেবিল। আর দুইজন সহকারী, বেতন *আমি দিমু* প্রথম এক বছর।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shamim": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rubina",
+   "say": "শামীম… তুই… এইগুলা কেমনে? তোর তো মাত্র *চাকরি* হইছে…",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubina": "face"
+    }
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "এক বছর ধইরা জমাইছি, আপা। তুমি পাঁচ বছর রাত জাগছো আমার জন্য। এখন থেকে তুমি সেলাই করবা *দিনের আলোয়*, নিজের দোকানে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shamim": "talk"
+    }
+   }
+  },
+  {
+   "say": "রুবিনা আপা চাবিটা হাতে নিলেন। শাটার তুললেন। ভেতরে তিনটা ঝকঝকে মেশিন। আর দেয়ালে বাঁধানো একটা ছবি— পুরোনো মেশিনের সামনে তিনি, রাত একটায়। শামীম লুকিয়ে তুলেছিল, *পাঁচ বছর আগে*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আপা, আপনার দোকানে খালি বিধবা মেয়েরা কাজ করে কেন? *বিশেষ কারণ* আছে?",
+   "tone": "curious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard_new",
+     "sign:রুবিনা টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rubina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের অর্ডার",
+       "value": "মাসে ৩০০+"
+      },
+      {
+       "label": "সহকারী",
+       "value": "২ জন, দুইজনই বিধবা"
+      },
+      {
+       "label": "রুবিনা আপার কাজের সময়",
+       "value": "সকাল ৯টা–সন্ধ্যা ৬টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rubina",
+   "say": "আছে। একজন ইঞ্জিনিয়ার আমারে শিখাইছে, কারও রাত জাগা থামানোর সবচেয়ে ভালো উপায়, তারে *দিনের আলোয় একটা জায়গা* দেওয়া।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rubina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubina": "hold"
+    }
+   }
+  },
+  {
+   "say": "রুবিনা টেইলার্সের এক কোণে পুরোনো সেলাই মেশিনটা রাখা, এখন আর চলে না। গায়ে একটা কাগজ— *‘এই মেশিন একজন ইঞ্জিনিয়ার বানিয়েছে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে রাত জেগে আরেকজনের দিন বানায়… *তার পাওনা একটা আলোকিত দিন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে রাত জেগে আরেকজনের দিন বানায়…",
+    "line2": "তার পাওনা\nএকটা আলোকিত দিন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছোট ভাইয়ের ইঞ্জিনিয়ারিংয়ের খরচ চলেছে বড় বোনের সেলাই মেশিনে… ছয় বছর পর ভাই এল একটা চাবি নিয়ে 🧵",
+  "description": "রুবিনা আপা বিয়ের পর স্বামীকে হারিয়ে ফিরে এসেছিলেন বাপের বাড়ি। একটা সেলাই মেশিন আর ছোট ভাই শামীমের পড়া— এই ছিল জীবন। রাত জেগে ব্লাউজ সেলাই করে চালিয়েছেন ভাইয়ের পাঁচ বছরের ইঞ্জিনিয়ারিং। শামীম এখন চাকরি পেয়েছে। প্রথম ছুটিতে বাড়ি এল…",
+  "tags": [
+   "বোনের ত্যাগ",
+   "ভাই বোনের গল্প",
+   "সেলাই",
+   "ইঞ্জিনিয়ার",
+   "কৃতজ্ঞতা",
+   "bangla golpo",
+   "vai boner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পাঁচ বছর রাত জেগে বোন সেলাই করেছিলেন ভাইয়ের পড়ার খরচ। ভাই ফিরিয়ে দিল একটা দোকানের চাবি, বোনের নামে। 🧵\nতোমার পড়াশোনার পেছনে কার নীরব পরিশ্রম ছিল? 👇 #বোন #কৃতজ্ঞতা"
+ },
+ "thumbnail": {
+  "text": "সেলাই মেশিন",
+  "sub": "একটা চাবি"
+ }
+}
