@@ -9,9 +9,9 @@ Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs
 ## How the system runs
 ```
 GitHub Actions — .github/workflows/daily.yml  ("Publish videos")   ← runs on GitHub's own cron, no Claude session needed
-   cron 4× a day (~35 min before 10:00 · 13:30 · 17:30 · 20:00 Dhaka) + an hourly safety net → 4 videos a day
+   cron 6× a day (~35 min before 09:00 · 11:30 · 13:30 · 15:30 · 17:30 · 20:00 Dhaka) + an hourly safety net → 6 videos a day
    → "Plan" step (20 s): is any slot of the next ~26 h unfilled? if not → only first comments/playlists, exit
-   → pipeline/daily.py --ahead 4: produces + schedules EVERY unfilled slot of the next ~26 h, so YouTube/Facebook
+   → pipeline/daily.py --ahead 6: produces + schedules EVERY unfilled slot of the next ~26 h, so YouTube/Facebook
      publish at the exact slot time themselves even if later GitHub crons are late or dropped
        produce.py: ElevenLabs voice (eleven_v4_turbo ONLY, bn ONLY, owner's voice ids) → timeline (auto-fit 120–150 s)
                    → renderer (HTML/SVG, Playwright, 30 fps) → original score + SFX → mux → QA → thumbnails
@@ -44,7 +44,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backu
 
 ## Locked rules (owner must approve changes)
 1. Voice: ElevenLabs pay-as-you-go, model `eleven_v4_turbo` ONLY, language `bn` ONLY, voices = the owner's ids in `config/voices.json` (never design, swap or fall back).
-2. Format: 1080×1920, 30 fps, **120–150 s**, 4 videos a day (10:00, 13:30, 17:30, 20:00 Dhaka). QA rejects anything else. **Story only** (since 5 Nov 2026): no book/concept/takeaways/ask beats, no book named in the video, ending = a 2-line `outro` summary. See STORY_GUIDE "UPDATE 5 Nov 2026".
+2. Format: 1080×1920, 30 fps, **120–150 s**, 6 videos a day (09:00, 11:30, 13:30, 15:30, 17:30, 20:00 Dhaka; from 7 Nov 2026 — see config/channel.json slot_schedule). QA rejects anything else. **Story only** (since 5 Nov 2026): no book/concept/takeaways/ask beats, no book named in the video, ending = a 2-line `outro` summary. See STORY_GUIDE "UPDATE 5 Nov 2026".
 3. Logo always from `assets/brand/logo.png` (transparent), top-LEFT corner with no box behind it, same outro lockup in every video.
 3b. Never write stories from The 48 Laws of Power. Never copy any plot/scenario from the reference videos — every story original.
 4. Never write secrets in code, logs, chat or commits. They live only in GitHub → Settings → Secrets → Actions.

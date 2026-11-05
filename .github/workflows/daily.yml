@@ -13,14 +13,15 @@ on:
         description: "Date YYYY-MM-DD (blank = today, Asia/Dhaka)"
         default: ""
   schedule:
-    # 4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka (UTC+6). Every run schedules ALL unfilled slots of the
-    # next ~26 h on YouTube (publishAt) and Facebook (scheduled_publish_time), so the platforms publish at the exact
-    # time even if later GitHub crons are late or skipped. A run with nothing to do exits in ~20 s.
-    - cron: "25 3 * * *"    # 09:25 Dhaka
-    - cron: "55 6 * * *"    # 12:55 Dhaka
-    - cron: "55 10 * * *"   # 16:55 Dhaka
-    - cron: "25 13 * * *"   # 19:25 Dhaka
-    - cron: "13 * * * *"    # hourly safety net (GitHub sometimes delays or drops scheduled runs)
+    # 6 videos/day at 09:00, 11:30, 13:30, 15:30, 17:30, 20:00 Asia/Dhaka (UTC+6). Every run schedules ALL unfilled
+    # slots of the next ~26 h on YouTube (publishAt) and Facebook (scheduled_publish_time). Idle runs exit in ~20 s.
+    - cron: "25 2 * * *"    # 08:25 Dhaka
+    - cron: "55 4 * * *"    # 10:55
+    - cron: "55 6 * * *"    # 12:55
+    - cron: "55 8 * * *"    # 14:55
+    - cron: "55 10 * * *"   # 16:55
+    - cron: "25 13 * * *"   # 19:25
+    - cron: "13 * * * *"    # hourly safety net
 
 concurrency:
   group: publish-videos
@@ -60,7 +61,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.mode }}" != "scheduled" -o "${{ github.event.inputs.count }}" != "0" -o "${{ github.event.inputs.date }}" != "" ]; then
             echo "work=1" >> "$GITHUB_OUTPUT"; echo "manual run"
           else
-            python pipeline/daily.py --plan --ahead 4
+            python pipeline/daily.py --plan --ahead 6
           fi
       - name: First comments / playlists (nothing to produce)
         if: steps.plan.outputs.work == '0'
@@ -92,7 +93,7 @@ jobs:
         run: |
           git config user.name "The Screen Bot"
           git config user.email "bot@thescreen.local"
-          ARGS="--ahead 4"
+          ARGS="--ahead 6"
           [ "${{ github.event.inputs.count }}" != "" ] && [ "${{ github.event.inputs.count }}" != "0" ] && ARGS="--count ${{ github.event.inputs.count }}"
           [ "${{ github.event.inputs.mode }}" = "now" ] && ARGS="$ARGS --now"
           [ "${{ github.event.inputs.mode }}" = "extra" ] && ARGS="--extra"

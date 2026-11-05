@@ -2,10 +2,12 @@
   "brand": "The Screen",
   "tagline_bn": "গল্পে দেখি জীবন",
   "timezone": "Asia/Dhaka",
-  "posts_per_day": 4,
+  "posts_per_day": 6,
   "slots": [
-    "10:00",
+    "09:00",
+    "11:30",
     "13:30",
+    "15:30",
     "17:30",
     "20:00"
   ],
@@ -159,5 +161,38 @@
     "duck": 0.55
   },
   "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately.",
-  "story_only": true
+  "story_only": true,
+  "slot_schedule": [
+    {
+      "from": "2026-11-01",
+      "slots": [
+        "10:00",
+        "13:30",
+        "17:30",
+        "20:00"
+      ]
+    },
+    {
+      "from": "2026-11-06",
+      "slots": [
+        "10:00",
+        "11:30",
+        "13:30",
+        "15:30",
+        "17:30",
+        "20:00"
+      ]
+    },
+    {
+      "from": "2026-11-07",
+      "slots": [
+        "09:00",
+        "11:30",
+        "13:30",
+        "15:30",
+        "17:30",
+        "20:00"
+      ]
+    }
+  ]
 }

@@ -111,7 +111,11 @@ def queue(state):
 def slot_times(date, cfg):
     tz = ZoneInfo(cfg["timezone"])
     out = []
-    for hhmm in cfg["slots"][: cfg["posts_per_day"]]:
+    slots = cfg["slots"]
+    for rule in cfg.get("slot_schedule", []):          # owner can change the daily slots from a given date on
+        if str(date) >= rule["from"]:
+            slots = rule["slots"]
+    for hhmm in slots:
         h, m = map(int, hhmm.split(":"))
         out.append((hhmm, datetime(date.year, date.month, date.day, h, m, tzinfo=tz)))
     return sorted(out, key=lambda x: x[1])
@@ -128,7 +132,7 @@ def next_slot(now, cfg, done, grace_min=100):
     return cands[0] if cands else None
 
 
-def upcoming(now, cfg, done, hours=26, grace_min=100, limit=4):
+def upcoming(now, cfg, done, hours=26, grace_min=100, limit=6):
     """All unfilled slots from (now - grace) to (now + hours), earliest first — so one successful run
     schedules a whole day ahead and a missed cron never means a missed post."""
     out = []
