@@ -318,6 +318,17 @@
       "playlist": true,
       "facebook": "1873354210500599",
       "scheduled_for": "2026-11-07T13:30:00+06:00"
+    },
+    {
+      "id": "027",
+      "date": "2026-11-07",
+      "slot": "15:30",
+      "duration": 137.94,
+      "title": "আঠারো বছরে তিন দিন ছুটি নিয়েছিলেন আব্বা, তারপর ছেলের এক পাতা কাগজ 📄 | Animal Farm বাংলা",
+      "youtube": "TkX9D8GAF8o",
+      "playlist": true,
+      "facebook": "1474212314566592",
+      "scheduled_for": "2026-11-07T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -340,7 +351,7 @@
     "The Righteous Mind": "PLWqwkhPxmHKs"
   },
   "last_run": {
-    "at": "2026-11-05T20:52:30.532127+06:00",
+    "at": "2026-11-05T20:59:02.541672+06:00",
     "errors": []
   },
   "queue_remaining": 21,
