@@ -1,0 +1,436 @@
+{
+ "id": "223",
+ "status": "ready",
+ "title_bn": "বোনের মোবাইলের পাসওয়ার্ড",
+ "theme": "siblings",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "The Law of Defensiveness: lower their guard",
+  "title_bn": "পাহারা না, পাশে থাকা"
+ },
+ "cast": {
+  "rifat": {
+   "name": "ভাইয়া রিফাত",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "mou": {
+   "name": "ছোট বোন মৌ",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "সিরাজগঞ্জের এক বাসা। আব্বা নেই চার বছর। রিফাতই এখন বাড়ির অভিভাবক। আর ছোট বোন মৌ, ক্লাস ইলেভেন। প্রতি রাতে একই *যুদ্ধ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সিরাজগঞ্জ, রাত",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rifat",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "mou",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বা নেই",
+       "value": "৪ বছর"
+      },
+      {
+       "label": "মৌ",
+       "value": "ক্লাস ইলেভেন"
+      },
+      {
+       "label": "ফোন চেক",
+       "value": "সপ্তাহে ৩–৪ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "পাসওয়ার্ড বদলাইছস কেন? দে। কার সাথে চ্যাট করস? আমি *দেখমু*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rifat": "angry"
+    },
+    "arms": {
+     "rifat": "point"
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "ভাইয়া, আমি কি চোর? প্রতিদিন চেক করো। আমার কোনো *প্রাইভেসি* নাই?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mou": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রিফাতের পাহারার ফল",
+   "card": {
+    "title": "যা হলো",
+    "items": [
+     {
+      "t": "মৌ দুইটা অ্যাকাউন্ট খুলল",
+      "mark": "x"
+     },
+     {
+      "t": "বাসায় কথা বন্ধ",
+      "mark": "x"
+     },
+     {
+      "t": "সব কথা এখন বান্ধবীদের সাথে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুই ভয় পাস, জানি। কিন্তু তুই এমন পাহারা দিলে ও তোরে আর কিছু কইবো না। বিপদ হইলেও *কইবো না*। তখন তুই জানবি কেমনে?",
+   "tone": "gently",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আম্মা আর রিফাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "rifat",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "say": "রিফাত চুপ। আম্মা ঠিক বলছেন। যে বোন ছোটবেলায় স্কুলের প্রতিটা ঘটনা ওকে বলত, সে এখন *কিছুই বলে না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "মৌ, আর ফোন চাইমু না। পাসওয়ার্ডও না। খালি একটা কথা। কোনোদিন কোনো ঝামেলা হইলে, যত বড়ই হোক, আমারে কইস। আমি *বকমু না*। কথা দিলাম।",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পরের রাত, মৌয়ের দরজায়",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rifat",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "mou",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rifat": "down"
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "সত্যি? কোনো বকা না? আম্মারেও *কইবা না*?",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mou": "phone"
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "আগে তোর পাশে দাঁড়ামু। তারপর তুই চাইলে আম্মারে কমু। *তুই* ঠিক করবি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rifat": "down"
+    }
+   }
+  },
+  {
+   "say": "তিন সপ্তাহ। রিফাত সত্যিই ফোন চাইল না। আর মৌ ধীরে ধীরে আবার রাতের খাবারের পর *গল্প করতে* শুরু করল। কলেজ, বান্ধবী, ক্রিকেট।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দেড় মাস পর। রাত এগারোটা। মৌ কাঁদতে কাঁদতে ভাইয়ার দরজায়। একটা ‘ফ্রি গিফট’ লিংকে ক্লিক। অ্যাকাউন্ট *হ্যাক*। আর হ্যাকার টাকা চাইছে।",
+   "pause": 1.2,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাত, দেড় মাস পর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "rifat",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "ভাইয়া… তুমি কইছিলা বকবা না। আমার আইডি নিয়া গেছে। কয় পাঁচ হাজার না দিলে আমার সব চ্যাট *সবারে পাঠাইবো*।",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mou": "crying"
+    },
+    "arms": {
+     "mou": "phone"
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "শোন। একটা ভুল ক্লিক, আর কিছু না। একটা টাকাও দিবি না। স্ক্রিনশট নে, বন্ধুদের জানা। কালকে সকালে থানায় যামু, *সাইবার সাপোর্টে*। আমি আছি।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rifat": "down"
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর। অ্যাকাউন্ট ফেরত এসেছে। পুলিশের সাইবার টিম ব্যবস্থা নিয়েছে। আর রাতের খাবারের টেবিলে মৌ বলল একটা কথা, যেটা রিফাতকে *চুপ করিয়ে দিল*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "mou",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হ্যাক হওয়া অ্যাকাউন্ট",
+       "value": "ফেরত, নতুন পাসওয়ার্ড"
+      },
+      {
+       "label": "টাকা দেওয়া",
+       "value": "০"
+      },
+      {
+       "label": "মৌ ভাইয়াকে প্রথম বলেছে",
+       "value": "ঘটনার ১০ মিনিটের মধ্যে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "ভাইয়া, তুমি যদি আগের মতো থাকতা, আমি তোমারে কইতাম না। ভয়ে টাকা দিয়া দিতাম। তুমি পাহারা ছাড়ছ বইলাই *আমি বাঁচছি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mou": "hold"
+    }
+   }
+  },
+  {
+   "say": "মৌয়ের ফোনের ইমার্জেন্সি কন্টাক্টে এখন প্রথম নাম— *‘ভাইয়া (বকে না)’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পাহারা দিলে মানুষ লুকায়… *ভরসা দিলে বিপদে প্রথমে আসে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পাহারা দিলে মানুষ লুকায়…",
+    "line2": "ভরসা দিলে\nবিপদে প্রথমে আসে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ভাইয়া রোজ বোনের ফোন চেক করতেন… মৌ সব লুকাতে শুরু করল, যতদিন না বিপদ এল 📵",
+  "description": "সিরাজগঞ্জের রিফাত, ছোট বোন মৌ ক্লাস ইলেভেনে। আব্বা নেই, রিফাতই অভিভাবক। ভয়ে বোনের ফোন চেক করে, পাসওয়ার্ড চায়, বন্ধুদের নিয়ে প্রশ্ন। মৌ সব লুকাতে শুরু করে। একদিন একটা ভুয়া লিংকে ক্লিক করে মৌয়ের অ্যাকাউন্ট হ্যাক হয়ে গেল…",
+  "tags": [
+   "ভাইবোন",
+   "কিশোরী",
+   "অনলাইন নিরাপত্তা",
+   "বিশ্বাস",
+   "সিরাজগঞ্জ",
+   "bangla golpo",
+   "ভাইবোনের গল্প",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ভাইয়া পাহারা দিতেন, বোন লুকাত। যেদিন বিপদ এল, বোন প্রথম ফোনটা দিল ভাইয়াকেই, কারণ ভাইয়া তার আগেই বদলে গিয়েছিলেন। 📵\nবাবা-মা বা বড় ভাইবোনের সাথে তুমি কি সব কথা বলতে পারো? 👇 #ভাইবোন #বিশ্বাস"
+ },
+ "thumbnail": {
+  "text": "পাসওয়ার্ড দে!",
+  "sub": "বোন লুকাতে শুরু করল"
+ }
+}

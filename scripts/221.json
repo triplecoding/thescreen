@@ -1,0 +1,420 @@
+{
+ "id": "221",
+ "status": "ready",
+ "title_bn": "মাছবাজারের ওজন",
+ "theme": "honesty",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Honest measure builds lasting trade",
+  "title_bn": "ন্যায্য মাপ"
+ },
+ "cast": {
+  "babul": {
+   "name": "বাবুল",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  },
+  "father": {
+   "name": "বাবুলের আব্বা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "customer": {
+   "name": "খালাম্মা ক্রেতা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#8A6A4F",
+   "hair": "hijab",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চাঁদপুর, বড়স্টেশন মাছবাজার। ইলিশের গন্ধ, চিৎকার, দরদাম। বাবুল আব্বার আঠাশ বছরের দোকানে। আর পাশের দোকানে একই মাছ, *কেজিতে চল্লিশ টাকা কম*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চাঁদপুর, বড়স্টেশন মাছবাজার",
+    "props": [
+     "signboard",
+     "sign:বাবুল মৎস্য ভান্ডার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাবুলের দোকান",
+       "value": "আব্বার, ২৮ বছর"
+      },
+      {
+       "label": "পাশের দোকানের দাম",
+       "value": "কেজিতে ৪০ টাকা কম",
+       "red": true
+      },
+      {
+       "label": "বাবুলের বিক্রি, ৬ মাসে",
+       "value": "৩৫% কম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাবুল জানে কীভাবে কম। পাল্লার নিচে চুম্বক, পানিতে ভেজানো মাছ, এক কেজি আসলে আটশো পঞ্চাশ গ্রাম। কিন্তু ক্রেতা দেখে শুধু *দাম*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "আব্বা, ছয় মাসে বিক্রি পঁয়ত্রিশ পার্সেন্ট কম। সবাই চুম্বক লাগায়। আমিও না লাগাইলে দোকান *বন্ধ হইবো*।",
+   "tone": "annoyed",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বাবুলের ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     },
+     {
+      "id": "father",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "babul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "চুম্বক লাগাইলে তুই ওদের মতো হবি। মানুষ তখন তোরে বাছবো কেন? তুই *উল্টাটা* কর।",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "moods": {
+     "father": "thinking"
+    },
+    "arms": {
+     "father": "talk"
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "উল্টা মানে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "babul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "একটা ডিজিটাল পাল্লা কিন। দোকানের সামনে রাখ। ক্রেতার দিকে মুখ কইরা। সবাই *নিজের চোখে* ওজন দেখুক। আর দাম কমাইস না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "point"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "বাবুলের ভয়",
+   "card": {
+    "title": "যা মনে হলো",
+    "items": [
+     {
+      "t": "ডিজিটাল পাল্লা ৪,৫০০ টাকা",
+      "mark": "x"
+     },
+     {
+      "t": "দাম বেশি দেখলে ক্রেতা চলে যাবে",
+      "mark": "x"
+     },
+     {
+      "t": "পাশের দোকানিরা হাসবে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরের সপ্তাহ। দোকানের সামনে একটা ডিজিটাল পাল্লা। বড় লাল অক্ষর, ক্রেতার দিকে। নতুন সাইনবোর্ড— *ওজন নিজে দেখুন*। আর প্রথম সপ্তাহ, বিক্রি আরও কম।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "প্রথম সপ্তাহ",
+    "props": [
+     "signboard",
+     "sign:বাবুল মৎস্য ভান্ডার — ওজন নিজে দেখুন",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "এইটা কী? দাম তো বেশি। পাশে তো কেজি সাড়ে আটশো। তুমি নয়শো চাও *কেন*?",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "hold"
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "খালাম্মা, পাশেরটা কিনেন, তারপর বাসায় গিয়া মাইপা দেখেন। কম পাইলে আইসা আমারটা কিনেন। আমার পাল্লা তো *আপনার সামনেই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "babul": "hold"
+    }
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর সেই খালাম্মা ফিরলেন। হাতে একটা ব্যাগ। মুখ লাল। বাসায় রান্নাঘরের পাল্লায় মেপেছেন। এক কেজির মাছ, *আটশো চল্লিশ গ্রাম*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:বাবুল মৎস্য ভান্ডার — ওজন নিজে দেখুন",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "babul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "তুমি ঠিক কইছিলা। পাশের দোকান আমারে দুই বছর ঠকাইছে! আইজ থেইকা খালি তোমার দোকান। আর আমার *মহিলা সমিতির* বিশজনরে কমু।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "hold"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর। বাবুলের দোকানের সামনে লাইন। ফোনে অর্ডার আসে, ‘ওই পাল্লাওয়ালা দোকান’। আর পাশের দুই দোকানেও এখন *ডিজিটাল পাল্লা*, ক্রেতার দিকে মুখ করে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "signboard",
+     "sign:বাবুল মৎস্য ভান্ডার — ওজন নিজে দেখুন",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "father",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছয় মাস পর বিক্রি",
+       "value": "আগের চেয়ে ৫২% বেশি"
+      },
+      {
+       "label": "ফোনে অর্ডার",
+       "value": "দিনে ২০টা"
+      },
+      {
+       "label": "পাশের দুই দোকান",
+       "value": "এখন তারাও ডিজিটাল পাল্লা রাখে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "দেখলি? তুই খালি নিজের দোকান ঠিক করস নাই। পুরা বাজারের *পাল্লা* ঠিক কইরা দিছস।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "talk"
+    }
+   }
+  },
+  {
+   "say": "বাবুলের পাল্লার পাশে আব্বা নিজের হাতে একটা কাগজ সেঁটে দিয়েছেন— *‘দামে কম না, ওজনে ঠিক। আঠাশ বছর আর আজীবন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ওজনে ঠকালে এক দিনের লাভ… *ওজনে ঠিক দিলে সারাজীবনের ক্রেতা*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ওজনে ঠকালে এক দিনের লাভ…",
+    "line2": "ওজনে ঠিক দিলে\nসারাজীবনের ক্রেতা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মাছবাজারে সবাই পাল্লায় চুম্বক লাগায়, বাবুলের বিক্রি কম… আব্বা বললেন ‘তুই উল্টাটা কর’ ⚖️",
+  "description": "চাঁদপুরের বড়স্টেশন মাছবাজার। বাবুল আব্বার কাছ থেকে দোকান পেয়েছে। পাশের দোকানিরা পাল্লায় কারসাজি করে, দাম কম দেখায়, ক্রেতা টানে। বাবুলের বিক্রি কমছে। আব্বা দিলেন একটা উল্টো বুদ্ধি…",
+  "tags": [
+   "মাছবাজার",
+   "সৎ ব্যবসা",
+   "ওজন",
+   "চাঁদপুর",
+   "বাবা ছেলে",
+   "bangla golpo",
+   "সততার গল্প",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বাজারে সবাই পাল্লায় কারসাজি করে। বাবুল দোকানের সামনে রাখল একটা ডিজিটাল পাল্লা, ক্রেতার দিকে মুখ করে। ⚖️\nবাজারে ওজনে কম পাওয়ার অভিজ্ঞতা হয়েছে কখনো? 👇 #সততা #বাজার"
+ },
+ "thumbnail": {
+  "text": "সবাই ওজনে কম দেয়",
+  "sub": "বাবুলের উল্টো পথ"
+ }
+}

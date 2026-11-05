@@ -1739,6 +1739,54 @@
    "relation": "son who lost his job / mother / old jeweller",
    "set": "home",
    "hook": "a son hides his job loss; his mother, sensing it, brings her 30-year-old earrings to pawn; the jeweller tells the son she had them made from her own mother's wedding gold for a crisis; the son refuses, finds work, and later buys back nothing—she keeps wearing them"
+  },
+  {
+   "id": "219",
+   "book": "Mastery",
+   "item": "Learning late is still learning",
+   "relation": "grandmother / granddaughter / scam caller",
+   "set": "home",
+   "hook": "a 72-year-old grandmother learns mobile money from her granddaughter including the rule never to share a PIN; months later she recognises and defeats a scam call"
+  },
+  {
+   "id": "220",
+   "book": "The Book of Five Rings",
+   "item": "The way of strategy is the way of nature",
+   "relation": "child brick-kiln worker / his father / NGO teacher",
+   "set": "street",
+   "hook": "a teacher starts an evening class beside a brick kiln, persuades the father with a stipend scheme and a debt plan, and the boy returns to school full-time next season"
+  },
+  {
+   "id": "221",
+   "book": "The Social Contract",
+   "item": "Honest measure builds lasting trade",
+   "relation": "fish seller / his father / regular customer",
+   "set": "shop",
+   "hook": "in a market where scales are rigged, a young fish seller follows his father's advice to put a customer-facing digital scale out front; at first sales are slower, then housewives spread word and he becomes the busiest stall"
+  },
+  {
+   "id": "222",
+   "book": "The Prince",
+   "item": "Win loyalty, not fear",
+   "relation": "young team lead / senior colleague passed over / junior",
+   "set": "shop",
+   "hook": "a young new manager faces a resentful veteran; instead of reporting him she asks him to teach her the port process and credits him publicly; he becomes her strongest ally"
+  },
+  {
+   "id": "223",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Defensiveness: lower their guard",
+   "relation": "protective elder brother / teenage sister / mother",
+   "set": "home",
+   "hook": "a brother who polices his sister's phone realises she now hides everything; he changes approach and promises no scolding; weeks later she comes to him first when her account is hacked and the hacker demands money, and they report it"
+  },
+  {
+   "id": "224",
+   "book": "The Art of War",
+   "item": "Unity of purpose wins",
+   "relation": "teenage cricketer / old shopkeeper / developer's man",
+   "set": "street",
+   "hook": "teens' angry protests fail to save a playground; an old shopkeeper tells them the land was donated for play decades ago; they gather documents and signatures and present them calmly to the municipality"
   }
  ]
 }
