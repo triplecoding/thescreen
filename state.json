@@ -362,6 +362,17 @@
       "playlist": true,
       "facebook": "1984686159199898",
       "scheduled_for": "2026-11-08T09:00:00+06:00"
+    },
+    {
+      "id": "031",
+      "date": "2026-11-08",
+      "slot": "11:30",
+      "duration": 131.0,
+      "title": "বসের এক ধমকে রাত একটায় পদত্যাগপত্র, তারপর তিন দিনের ড্রয়ার ✉️ | The Laws of Human Nature বাংলা",
+      "youtube": "cgkn8BWmeJA",
+      "playlist": true,
+      "facebook": "1151648287824165",
+      "scheduled_for": "2026-11-08T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -387,7 +398,7 @@
     "On War": "PLB7loe6INN4s"
   },
   "last_run": {
-    "at": "2026-11-05T22:08:24.897184+06:00",
+    "at": "2026-11-05T22:14:25.650631+06:00",
     "errors": []
   },
   "queue_remaining": 15,
