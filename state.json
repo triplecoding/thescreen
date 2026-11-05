@@ -351,6 +351,17 @@
       "playlist": true,
       "facebook": "2388773998627841",
       "scheduled_for": "2026-11-07T20:00:00+06:00"
+    },
+    {
+      "id": "030",
+      "date": "2026-11-08",
+      "slot": "09:00",
+      "duration": 135.83,
+      "title": "ছয় মাসে ফুচকার গাড়ি একটা থেকে চারটা, তারপর নানার একটা কথা 🥟 | On War বাংলা",
+      "youtube": "9UsvE5UJjXE",
+      "playlist": true,
+      "facebook": "1984686159199898",
+      "scheduled_for": "2026-11-08T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -372,14 +383,14 @@
     "Propaganda": "PLGCk3gankBoE",
     "The Righteous Mind": "PLWqwkhPxmHKs",
     "The Wealth of Nations": "PLB6DgZYxX61g",
-    "The Republic": "PLIYzytq-E1g0"
+    "The Republic": "PLIYzytq-E1g0",
+    "On War": "PLB7loe6INN4s"
   },
   "last_run": {
-    "at": "2026-11-05T21:11:43.962967+06:00",
-    "errors": [],
-    "queue_remaining": 15
+    "at": "2026-11-05T22:08:24.897184+06:00",
+    "errors": []
   },
   "queue_remaining": 15,
-  "_run_started": "2026-11-05T20:33:05.824843+06:00",
+  "_run_started": "2026-11-05T22:01:30.478304+06:00",
   "dry_runs": []
 }
