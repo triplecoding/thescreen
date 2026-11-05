@@ -1,501 +1,548 @@
 {
-  "id": "029",
-  "status": "ready",
-  "title_bn": "ভুল নাম্বারের পঁচিশ হাজার",
-  "source": {
-    "book": "The Republic",
-    "author": "Plato",
-    "author_bn": "প্লেটো",
-    "chapter": "BOOK II",
-    "chapter_bn": "দ্বিতীয় খণ্ড",
-    "title": "The Ring of Gyges",
-    "title_bn": "কেউ না দেখলে তুমি কে?"
+ "id": "029",
+ "status": "ready",
+ "title_bn": "ভুল নাম্বারের পঁচিশ হাজার",
+ "source": {
+  "book": "The Republic",
+  "author": "Plato",
+  "author_bn": "প্লেটো",
+  "chapter": "BOOK II",
+  "chapter_bn": "দ্বিতীয় খণ্ড",
+  "title": "The Ring of Gyges",
+  "title_bn": "কেউ না দেখলে তুমি কে?"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2F7D6D",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
   },
-  "cast": {
-    "arif": {
-      "name": "আরিফ",
-      "type": "young_man",
-      "skin": "wheat",
-      "outfit": "shirt",
-      "color": "#2F7D6D",
-      "hair": "side",
-      "beard": "stubble",
-      "voice": "young_man"
-    },
-    "mamun": {
-      "name": "মামুন",
-      "type": "young_man",
-      "skin": "tan",
-      "outfit": "tshirt",
-      "color": "#E8A33D",
-      "hair": "curly",
-      "voice": "young_man"
-    },
-    "saleha": {
-      "name": "সালেহা নানু",
-      "type": "old_woman",
-      "skin": "brown",
-      "outfit": "sari",
-      "color": "#FFFFFF",
-      "color2": "#5FA8A0",
-      "hair": "grey_bun",
-      "voice": "old_woman"
-    }
+  "mamun": {
+   "name": "মামুন",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "curly",
+   "voice": "young_man"
   },
-  "beats": [
-    {
-      "say": "অচেনা নাম্বার থেকে একটা মেসেজ— আরিফের অ্যাকাউন্টে এসেছে *পঁচিশ হাজার টাকা*।",
-      "scene": {
-        "set": "shop",
-        "light": "night",
-        "chip": "নরসিংদী",
-        "props": [
-          "signboard",
-          "sign:আরিফ টেলিকম · মোবাইল ব্যাংকিং",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "surprised",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ভুল করে জমা",
-              "value": "২৫,০০০ ৳",
-              "from": "০"
-            },
-            {
-              "label": "দোকানের ধার",
-              "value": "৪০,০০০ ৳",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "দোকানে তখন শুধু বন্ধু মামুন। আর মাস শেষে ভাড়া দেওয়ার টাকা *নেই*।",
-      "scene": {
-        "widget": null,
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "worried",
-            "arm": "phone",
-            "hold": "phone"
-          },
-          {
-            "id": "mamun",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "talk"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "mamun",
-      "tone": "excited",
-      "say": "দোস্ত, কেউ জানবে না। ভাগ্য দিয়েছে, *রেখে দে*!",
-      "scene": {
-        "cam": {
-          "focus": "mamun",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "arif",
-      "tone": "softly",
-      "say": "কেউ জানবে না… কিন্তু *আমি তো জানব*।",
-      "scene": {
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "নাম্বারে ফোন— বন্ধ। মেসেজ— উত্তর নেই। কোম্পানি বলল— *অপেক্ষা করুন*।",
-      "card": {
-        "title": "মালিক খোঁজা",
-        "items": [
-          {
-            "t": "ফোন — বন্ধ",
-            "mark": "x"
-          },
-          {
-            "t": "মেসেজ — উত্তর নেই",
-            "mark": "x"
-          },
-          {
-            "t": "কোম্পানি — অপেক্ষা করুন",
-            "mark": "x"
-          }
-        ],
-        "footer": "দুই দিন, কোনো খোঁজ নেই"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "দুই রাত আরিফ ঘুমাতে পারল না। টাকাটা ফোনে, *একটা চাপ* দূরে।",
-      "pause": 0.9,
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "রাত ৩টা",
-        "props": [
-          "bed",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "thinking",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "চোখ বন্ধ করলেই মনে হয়, ওপাশে কেউ একজন *কাঁদছে*।",
-      "scene": {
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.5
-        }
-      }
-    },
-    {
-      "say": "তৃতীয় দিন সকালে দোকানে এলেন এক বৃদ্ধা। হাতে ভাঁজ করা কাগজ, চোখ *লাল*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "তৃতীয় দিন",
-        "props": [
-          "signboard",
-          "sign:আরিফ টেলিকম · মোবাইল ব্যাংকিং",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "surprised",
-            "arm": "down"
-          },
-          {
-            "id": "saleha",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "crying",
-            "arm": "hold",
-            "hold": "envelope"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "saleha",
-      "tone": "tearful",
-      "say": "বাবা, নাতির ভর্তির টাকা পাঠাইছিলাম। *একটা সংখ্যা ভুল*, সব শেষ…",
-      "scene": {
-        "cam": {
-          "focus": "saleha",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "কাগজের নাম্বারটা দেখে আরিফ চমকে উঠল। শুধু শেষ সংখ্যাটা আলাদা— *তার নিজের নাম্বার*।",
-      "pause": 0.6,
-      "scene": {
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.45
-        },
-        "moods": {
-          "arif": "surprised"
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "কেউ দেখছে না। নানু কিছুই জানেন না। প্রশ্ন একটাই— *সে কে*?",
-      "pause": 0.7,
-      "card": {
-        "text": "কেউ দেখছে না।\nপ্রশ্ন একটাই— *সে কে*?"
-      }
-    },
-    {
-      "voice": "arif",
-      "tone": "gently",
-      "say": "নানু, বসেন। আপনার টাকা *আমার কাছেই* আছে। এক টাকাও কমেনি।",
-      "scene": {
-        "moods": {
-          "arif": "smile"
-        },
-        "arms": {
-          "arif": "talk"
-        },
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "নানু কিছু বলতে পারলেন না। আরিফের মাথায় হাত রেখে *অনেকক্ষণ কাঁদলেন*।",
-      "pause": 0.7,
-      "scene": {
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.35,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "saleha",
-            "x": 0.62,
-            "pose": "stand",
-            "face": "left",
-            "mood": "crying",
-            "arm": "hug"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "saleha",
-      "tone": "warmly",
-      "say": "তোর মতো ছেলে যার ঘরে, তার মায়ের *কোনো অভাব নাই*, বাবা।",
-      "scene": {
-        "moods": {
-          "saleha": "happy"
-        },
-        "cam": {
-          "focus": "saleha",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "সেদিন বিকেলে নানু ফিরে এলেন, সাথে গ্রামের *দশজন*। সবাই খুলল নতুন অ্যাকাউন্ট।",
-      "scene": {
-        "light": "evening",
-        "chip": "সেই বিকেলে",
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "নতুন গ্রাহক",
-              "value": "১০",
-              "from": "০"
-            }
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "mamun",
-      "tone": "laughs",
-      "say": "দোস্ত, তুই তো এখন *পুরো বাজারের ভরসা*!",
-      "scene": {
-        "widget": null,
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          },
-          {
-            "id": "mamun",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "wave"
-          }
-        ],
-        "cam": {
-          "focus": "mamun",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "চার মাসে নতুন গ্রাহক দুশো দশ। যে টাকা নিলে ধার শুধু শোধ হতো, তা না নিয়েই *দোকান দাঁড়াল*।",
-      "scene": {
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "নতুন গ্রাহক",
-              "value": "২১০",
-              "from": "১০"
-            },
-            {
-              "label": "দোকানের ধার",
-              "value": "০",
-              "from": "৪০,০০০"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "say": "পঁচিশ হাজার টাকা যা দিতে পারত না, *একটা অদেখা সততা* তা দিল।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— প্লেটোর *দ্য রিপাবলিক*।"
-    },
-    {
-      "kind": "book",
-      "say": "দ্বিতীয় খণ্ড— *জাইজিসের আংটি*, কেউ না দেখলে তুমি কে?",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "গল্পের আংটি পরলে মানুষ অদৃশ্য। প্লেটোর প্রশ্ন— তখনও কি সে *সৎ থাকবে*?",
-      "card": {
-        "title": "আসল চরিত্র কোথায়?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "eye",
-            "t": "কেউ দেখলে সৎ",
-            "sub": "ভয়ের সততা",
-            "bad": true
-          },
-          "right": {
-            "icon": "heart",
-            "t": "না দেখলেও সৎ",
-            "sub": "চরিত্রের সততা"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, অদেখা মুহূর্তই *আসল পরীক্ষা*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "অদেখা মুহূর্তই আসল পরীক্ষা",
-            "sub": "কেউ না দেখলে তুমি কে?",
-            "icon": "eye"
-          },
-          {
-            "t": "সততার খরচ আছে",
-            "sub": "লাভটা দীর্ঘ",
-            "icon": "bank"
-          },
-          {
-            "t": "নিজের চোখে ছোট হয়ো না",
-            "sub": "নিজেকে তুমি সবসময় দেখো",
-            "icon": "heart"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, সততার *খরচ* আছে, লাভটা দীর্ঘ।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, নিজের চোখে *ছোট হয়ো না*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— কেউ না দেখলে, আমি কি *একই মানুষ*, নাকি *অন্য কেউ*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "কেউ না দেখলে, আমি কি *একই মানুষ*,\nনাকি *অন্য কেউ*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "সবাই দেখলে সবাই ভালো… *কেউ না দেখলে বোঝা যায় কে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "সবাই দেখলে সবাই ভালো…",
-        "line2": "কেউ না দেখলে\nবোঝা যায় কে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "ভুল নাম্বারে এল ২৫ হাজার টাকা, কেউ জানত না— তারপর এক বৃদ্ধা এলেন 💸 | The Republic বাংলা",
-    "description": "অচেনা নাম্বার থেকে আরিফের অ্যাকাউন্টে এল পঁচিশ হাজার টাকা। দোকানে ধার চল্লিশ হাজার, বন্ধু বলল রেখে দে— কেউ জানবে না। তারপর তৃতীয় দিন সকালে…\nপ্লেটো-এর The Republic — The Ring of Gyges — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "the republic bangla",
-      "plato bangla",
-      "সততার গল্প",
-      "ring of gyges bangla",
-      "বাংলা গল্প",
-      "মোবাইল ব্যাংকিং",
-      "নানুর গল্প",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "পঁচিশ হাজার টাকা যা দিতে পারত না, একটা অদেখা সততা তা দিল। 💸\n\nকেউ না দেখলেও তুমি কোন কাজটা সবসময় ঠিকভাবে করো? 👇\n\n📖 The Republic — Plato\n#সততা #বাংলাগল্প"
-  },
-  "thumbnail": {
-    "text": "২৫ হাজার টাকা",
-    "sub": "কেউ জানত না"
+  "saleha": {
+   "name": "সালেহা নানু",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#FFFFFF",
+   "color2": "#5FA8A0",
+   "hair": "grey_bun",
+   "voice": "old_woman"
   }
+ },
+ "beats": [
+  {
+   "say": "অচেনা নাম্বার থেকে একটা মেসেজ— আরিফের অ্যাকাউন্টে এসেছে *পঁচিশ হাজার টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "নরসিংদী",
+    "props": [
+     "signboard",
+     "sign:আরিফ টেলিকম · মোবাইল ব্যাংকিং",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ভুল করে জমা",
+       "value": "২৫,০০০ ৳",
+       "from": "০"
+      },
+      {
+       "label": "দোকানের ধার",
+       "value": "৪০,০০০ ৳",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দোকানে তখন শুধু বন্ধু মামুন। আর মাস শেষে ভাড়া দেওয়ার টাকা *নেই*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "mamun",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "mamun",
+   "tone": "excited",
+   "say": "দোস্ত, কেউ জানবে না। ভাগ্য দিয়েছে, *রেখে দে*!",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "tone": "softly",
+   "say": "কেউ জানবে না… কিন্তু *আমি তো জানব*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "tone": "excited",
+   "say": "পঁচিশ হাজার, দোস্ত! তোর *তিন মাসের ভাড়া*।",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নাম্বারে ফোন— বন্ধ। মেসেজ— উত্তর নেই। কোম্পানি বলল— *অপেক্ষা করুন*।",
+   "card": {
+    "title": "মালিক খোঁজা",
+    "items": [
+     {
+      "t": "ফোন — বন্ধ",
+      "mark": "x"
+     },
+     {
+      "t": "মেসেজ — উত্তর নেই",
+      "mark": "x"
+     },
+     {
+      "t": "কোম্পানি — অপেক্ষা করুন",
+      "mark": "x"
+     }
+    ],
+    "footer": "দুই দিন, কোনো খোঁজ নেই"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "দুই রাত আরিফ ঘুমাতে পারল না। টাকাটা ফোনে, *একটা চাপ* দূরে।",
+   "pause": 0.9,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত ৩টা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চোখ বন্ধ করলেই মনে হয়, ওপাশে কেউ একজন *কাঁদছে*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "তৃতীয় রাতে আম্মার ফোন— ভাড়ার টাকা জোগাড় হলো, বাবা? আরিফ বলল, হবে আম্মা। তারপর তাকিয়ে রইল *সেই পঁচিশ হাজারের* দিকে।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "তৃতীয় দিন সকালে দোকানে এলেন এক বৃদ্ধা। হাতে ভাঁজ করা কাগজ, চোখ *লাল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তৃতীয় দিন",
+    "props": [
+     "signboard",
+     "sign:আরিফ টেলিকম · মোবাইল ব্যাংকিং",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "saleha",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "saleha",
+   "tone": "tearful",
+   "say": "বাবা, নাতির ভর্তির টাকা পাঠাইছিলাম। *একটা সংখ্যা ভুল*, সব শেষ…",
+   "scene": {
+    "cam": {
+     "focus": "saleha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কাগজের নাম্বারটা দেখে আরিফ চমকে উঠল। শুধু শেষ সংখ্যাটা আলাদা— *তার নিজের নাম্বার*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.45
+    },
+    "moods": {
+     "arif": "surprised"
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "কেউ দেখছে না। নানু কিছুই জানেন না। প্রশ্ন একটাই— *সে কে*?",
+   "pause": 0.7,
+   "card": {
+    "text": "কেউ দেখছে না।\nপ্রশ্ন একটাই— *সে কে*?"
+   }
+  },
+  {
+   "voice": "arif",
+   "tone": "gently",
+   "say": "নানু, বসেন। আপনার টাকা *আমার কাছেই* আছে। এক টাকাও কমেনি।",
+   "scene": {
+    "moods": {
+     "arif": "smile"
+    },
+    "arms": {
+     "arif": "talk"
+    },
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "saleha",
+   "tone": "tearful",
+   "say": "সত্যি বলছিস, বাবা? *বিশ্বাস* হয় না…",
+   "scene": {
+    "cam": {
+     "focus": "saleha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "tone": "warmly",
+   "say": "এই নেন, নানু। গুনে নেন— পঁচিশ হাজার, *পুরোটাই*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানু কিছু বলতে পারলেন না। আরিফের মাথায় হাত রেখে *অনেকক্ষণ কাঁদলেন*।",
+   "pause": 0.7,
+   "scene": {
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "saleha",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সন্ধ্যায় মামুন এসে চুপচাপ পাশে বসল। তারপর আস্তে বলল— দোস্ত, সেদিনের কথার জন্য *সরি*।"
+  },
+  {
+   "voice": "saleha",
+   "tone": "warmly",
+   "say": "তোর মতো ছেলে যার ঘরে, তার মায়ের *কোনো অভাব নাই*, বাবা।",
+   "scene": {
+    "moods": {
+     "saleha": "happy"
+    },
+    "cam": {
+     "focus": "saleha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে নানু ফিরে এলেন, সাথে গ্রামের *দশজন*। সবাই খুলল নতুন অ্যাকাউন্ট।",
+   "scene": {
+    "light": "evening",
+    "chip": "সেই বিকেলে",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন গ্রাহক",
+       "value": "১০",
+       "from": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "mamun",
+   "tone": "laughs",
+   "say": "দোস্ত, তুই তো এখন *পুরো বাজারের ভরসা*!",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "mamun",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চার মাসে নতুন গ্রাহক দুশো দশ। যে টাকা নিলে ধার শুধু শোধ হতো, তা না নিয়েই *দোকান দাঁড়াল*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন গ্রাহক",
+       "value": "২১০",
+       "from": "১০"
+      },
+      {
+       "label": "দোকানের ধার",
+       "value": "০",
+       "from": "৪০,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পঁচিশ হাজার টাকা যা দিতে পারত না, *একটা অদেখা সততা* তা দিল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— প্লেটোর *দ্য রিপাবলিক*।"
+  },
+  {
+   "kind": "book",
+   "say": "দ্বিতীয় খণ্ড— *জাইজিসের আংটি*, কেউ না দেখলে তুমি কে?",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "গল্পের আংটি পরলে মানুষ অদৃশ্য। প্লেটোর প্রশ্ন— তখনও কি সে *সৎ থাকবে*?",
+   "card": {
+    "title": "আসল চরিত্র কোথায়?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "eye",
+      "t": "কেউ দেখলে সৎ",
+      "sub": "ভয়ের সততা",
+      "bad": true
+     },
+     "right": {
+      "icon": "heart",
+      "t": "না দেখলেও সৎ",
+      "sub": "চরিত্রের সততা"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, অদেখা মুহূর্তই *আসল পরীক্ষা*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "অদেখা মুহূর্তই আসল পরীক্ষা",
+      "sub": "কেউ না দেখলে তুমি কে?",
+      "icon": "eye"
+     },
+     {
+      "t": "সততার খরচ আছে",
+      "sub": "লাভটা দীর্ঘ",
+      "icon": "bank"
+     },
+     {
+      "t": "নিজের চোখে ছোট হয়ো না",
+      "sub": "নিজেকে তুমি সবসময় দেখো",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, সততার *খরচ* আছে, লাভটা দীর্ঘ।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, নিজের চোখে *ছোট হয়ো না*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— কেউ না দেখলে, আমি কি *একই মানুষ*, নাকি *অন্য কেউ*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "কেউ না দেখলে, আমি কি *একই মানুষ*,\nনাকি *অন্য কেউ*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই দেখলে সবাই ভালো… *কেউ না দেখলে বোঝা যায় কে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই দেখলে সবাই ভালো…",
+    "line2": "কেউ না দেখলে\nবোঝা যায় কে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ভুল নাম্বারে এল ২৫ হাজার টাকা, কেউ জানত না— তারপর এক বৃদ্ধা এলেন 💸 | The Republic বাংলা",
+  "description": "অচেনা নাম্বার থেকে আরিফের অ্যাকাউন্টে এল পঁচিশ হাজার টাকা। দোকানে ধার চল্লিশ হাজার, বন্ধু বলল রেখে দে— কেউ জানবে না। তারপর তৃতীয় দিন সকালে…\nপ্লেটো-এর The Republic — The Ring of Gyges — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "the republic bangla",
+   "plato bangla",
+   "সততার গল্প",
+   "ring of gyges bangla",
+   "বাংলা গল্প",
+   "মোবাইল ব্যাংকিং",
+   "নানুর গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "পঁচিশ হাজার টাকা যা দিতে পারত না, একটা অদেখা সততা তা দিল। 💸\n\nকেউ না দেখলেও তুমি কোন কাজটা সবসময় ঠিকভাবে করো? 👇\n\n📖 The Republic — Plato\n#সততা #বাংলাগল্প"
+ },
+ "thumbnail": {
+  "text": "২৫ হাজার টাকা",
+  "sub": "কেউ জানত না"
+ },
+ "_extended": "story-only v1"
 }

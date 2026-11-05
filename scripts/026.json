@@ -1,557 +1,615 @@
 {
-  "id": "026",
-  "status": "ready",
-  "title_bn": "এক বাটি নারকেল-চিংড়ি",
-  "source": {
-    "book": "The Righteous Mind",
-    "author": "Jonathan Haidt",
-    "author_bn": "জোনাথন হাইট",
-    "chapter": "IDEA",
-    "chapter_bn": "একটা ভাবনা",
-    "title": "The Elephant and the Rider",
-    "title_bn": "আগে মন, পরে যুক্তি"
+ "id": "026",
+ "status": "ready",
+ "title_bn": "এক বাটি নারকেল-চিংড়ি",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA",
+  "chapter_bn": "একটা ভাবনা",
+  "title": "The Elephant and the Rider",
+  "title_bn": "আগে মন, পরে যুক্তি"
+ },
+ "cast": {
+  "rehana": {
+   "name": "রেহানা ভাবি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#6C3A5C",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
   },
-  "cast": {
-    "rehana": {
-      "name": "রেহানা ভাবি",
-      "type": "woman",
-      "skin": "wheat",
-      "outfit": "sari",
-      "color": "#6C3A5C",
-      "color2": "#E8A33D",
-      "hair": "long_bun",
-      "voice": "woman"
-    },
-    "lipi": {
-      "name": "লিপি",
-      "type": "young_woman",
-      "skin": "tan",
-      "outfit": "salwar",
-      "color": "#E07A3F",
-      "color2": "#2F7D6D",
-      "hair": "long_braid",
-      "voice": "young_woman"
-    },
-    "dadi": {
-      "name": "শাশুড়ি আম্মা",
-      "type": "old_woman",
-      "skin": "wheat",
-      "outfit": "sari",
-      "color": "#FFFFFF",
-      "color2": "#8E9AAF",
-      "hair": "grey_bun",
-      "glasses": true,
-      "voice": "old_woman"
-    }
+  "lipi": {
+   "name": "লিপি",
+   "type": "young_woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#E07A3F",
+   "color2": "#2F7D6D",
+   "hair": "long_braid",
+   "voice": "young_woman"
   },
-  "beats": [
-    {
-      "say": "এক রান্নাঘর, দুই জা। দুই বছরে ঝগড়া *একশো বারোবার*।",
-      "scene": {
-        "set": "kitchen",
-        "light": "day",
-        "chip": "পুরান ঢাকা",
-        "props": [
-          "stove",
-          "pot"
-        ],
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "angry",
-            "arm": "cross"
-          },
-          {
-            "id": "lipi",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "angry",
-            "arm": "cross"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ঝগড়া",
-              "value": "১১২",
-              "from": "১",
-              "red": true
-            },
-            {
-              "label": "সমাধান",
-              "value": "০",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "কে আগে চুলা পাবে, কার হাঁড়ি কোথায়— প্রতিদিন *একই তর্ক*।",
-      "scene": {
-        "widget": null,
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "rehana",
-      "tone": "annoyed",
-      "say": "আমি ভোর ছয়টায় উঠি। সকালের চুলা *আমার*, এটাই নিয়ম।",
-      "scene": {
-        "arms": {
-          "rehana": "point"
-        },
-        "cam": {
-          "focus": "rehana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "lipi",
-      "tone": "frustrated",
-      "say": "নিয়ম কে বানাল, ভাবি? আমার মেয়ের টিফিন কি *দেরিতে* যাবে?",
-      "scene": {
-        "arms": {
-          "lipi": "talk"
-        },
-        "cam": {
-          "focus": "lipi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "কাগজে যুক্তি, ঘড়ি ধরে হিসাব, শাশুড়ির কাছে নালিশ। কেউ এক ইঞ্চিও *সরল না*।",
-      "card": {
-        "title": "যুক্তির লড়াই",
-        "items": [
-          {
-            "t": "কাগজে যুক্তি",
-            "mark": "x"
-          },
-          {
-            "t": "ঘড়ি ধরে হিসাব",
-            "mark": "x"
-          },
-          {
-            "t": "শাশুড়ির কাছে নালিশ",
-            "mark": "x"
-          }
-        ],
-        "footer": "তর্ক ↑"
-      }
-    },
-    {
-      "voice": "dadi",
-      "tone": "sighs",
-      "say": "তোমরা দুজনেই ঠিক, দুজনেই *জেদি*। আমি আর কিছু বলব না।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "বসার ঘর",
-        "props": [
-          "sofa"
-        ],
-        "chars": [
-          {
-            "id": "dadi",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "dadi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "শেষে কথাই বন্ধ। বড় ছেলে বলল, রান্নাঘরে বসবে *আলাদা চুলা*।",
-      "pause": 0.9,
-      "scene": {
-        "set": "kitchen",
-        "light": "evening",
-        "chip": "এক মাস কথা নেই",
-        "props": [
-          "stove",
-          "pot"
-        ],
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.25,
-            "pose": "stand",
-            "face": "left",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "lipi",
-            "x": 0.75,
-            "pose": "stand",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          }
-        ],
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "এক টেবিলে খায়, চোখে চোখ পড়ে না। বাচ্চারাও এখন *ফিসফিস করে* কথা বলে।",
-      "scene": {
-        "cam": "static"
-      }
-    },
-    {
-      "say": "এক রাতে রেহানা শুনল, পাশের ঘরে লিপি ফোনে মায়ের সাথে কথা বলছে।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "এক রাতে",
-        "props": [
-          "bed",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "lipi",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "lipi",
-      "tone": "tearful",
-      "say": "আম্মা, বরিশালের নারকেল-চিংড়ির *গন্ধটা* পর্যন্ত মনে পড়ে।",
-      "scene": {
-        "cam": {
-          "focus": "lipi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "রেহানা কিছু বলল না। কিন্তু পরদিন, লুকিয়ে ফোন করল *লিপির মাকে*।",
-      "scene": {
-        "set": "kitchen",
-        "light": "day",
-        "chip": "পরদিন",
-        "props": [
-          "stove",
-          "pot"
-        ],
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "thinking",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "rehana",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "এবার সে যুক্তি দিয়ে নয়— ছুঁতে চাইল *মনটা*।",
-      "pause": 0.7,
-      "card": {
-        "text": "যুক্তি দিয়ে নয়—\nএবার ছুঁতে চাইল *মনটা*।"
-      }
-    },
-    {
-      "say": "তিন দিন পর লিপির জন্মদিন। টেবিলে ঢাকনা দেওয়া *একটা বাটি*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "জন্মদিন",
-        "props": [
-          "table"
-        ],
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "hold",
-            "hold": "plate"
-          },
-          {
-            "id": "lipi",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "down"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "rehana",
-      "tone": "warmly",
-      "say": "খেয়ে দেখো তো। তোমার আম্মা শিখিয়েছেন— *তিনবার ফোন করে*।",
-      "scene": {
-        "cam": {
-          "focus": "rehana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "এক চামচ মুখে দিয়েই লিপি *কেঁদে ফেলল*।",
-      "pause": 0.6,
-      "scene": {
-        "moods": {
-          "lipi": "crying"
-        },
-        "arms": {
-          "lipi": "face"
-        },
-        "cam": {
-          "focus": "lipi",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "voice": "lipi",
-      "tone": "tearful",
-      "say": "ভাবি… এ তো *আমার আম্মার হাতের* স্বাদ!",
-      "scene": {
-        "arms": {
-          "lipi": "hug",
-          "rehana": "hug"
-        },
-        "cam": {
-          "focus": "lipi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "পরদিন সকালে আলাদা চুলার কথা কেউ তুলল না। লিপি নিজেই বলল—",
-      "scene": {
-        "set": "kitchen",
-        "light": "day",
-        "chip": "পরদিন সকাল",
-        "props": [
-          "stove",
-          "pot"
-        ],
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "lipi",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "talk"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "lipi",
-      "tone": "warmly",
-      "say": "সকালের চুলা তোমার, ভাবি। রাতেরটা আমি রাঁধব— *দুজনের জন্যই*।",
-      "scene": {
-        "cam": {
-          "focus": "lipi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "dadi",
-      "tone": "laughs",
-      "say": "যাক! এতদিনে আমার রান্নাঘরে *শান্তি* এল।",
-      "scene": {
-        "chars": [
-          {
-            "id": "rehana",
-            "x": 0.22,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          },
-          {
-            "id": "dadi",
-            "x": 0.5,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "wave"
-          },
-          {
-            "id": "lipi",
-            "x": 0.78,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "down"
-          }
-        ],
-        "cam": {
-          "focus": "dadi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "দুই বছরের যুক্তি যা পারেনি, এক বাটি *মায়ের রান্না* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— জোনাথন হাইটের *দ্য রাইচাস মাইন্ড*।"
-    },
-    {
-      "kind": "book",
-      "say": "একটা ভাবনা— *হাতি আর মাহুত*, আগে মন, পরে যুক্তি।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "মন একটা হাতি, যুক্তি তার পিঠে ছোট্ট মাহুত। হাতি না সরলে, *মাহুতের তর্কে* কিছু হয় না।",
-      "card": {
-        "title": "হাতি আর মাহুত",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "brain",
-            "t": "মাহুত = যুক্তি",
-            "sub": "তর্কে হাতি সরে না",
-            "bad": true
-          },
-          "right": {
-            "icon": "heart",
-            "t": "হাতি = অনুভূতি",
-            "sub": "মন সরলে পথ খোলে"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, যুক্তির আগে *মনটা* ছোঁও।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "যুক্তির আগে মনটা ছোঁও",
-            "sub": "অনুভূতি আগে, যুক্তি পরে",
-            "icon": "heart"
-          },
-          {
-            "t": "ওর ভালোবাসার জিনিস খোঁজো",
-            "sub": "মা, গ্রাম, পুরনো স্বাদ",
-            "icon": "star"
-          },
-          {
-            "t": "জেতার চেয়ে কাছে থাকা বড়",
-            "sub": "ঠিক হওয়া নয়, একসাথে থাকা",
-            "icon": "people"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, খোঁজো ওর *ভালোবাসার জিনিস*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, জেতার চেয়ে *কাছে থাকা* বড়।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি মানুষটার *যুক্তির* সাথে লড়ছি, নাকি তার *মনটা* ছুঁতে চাইছি?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি মানুষটার *যুক্তির* সাথে লড়ছি,\nনাকি তার *মনটা* ছুঁতে চাইছি?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "তর্ক মাথা পর্যন্ত যায়… *মায়া যায় বুক পর্যন্ত*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "তর্ক মাথা পর্যন্ত যায়…",
-        "line2": "মায়া যায়\nবুক পর্যন্ত।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "এক রান্নাঘরে দুই জা, ১১২ ঝগড়া— তারপর এক বাটি নারকেল-চিংড়ি 🍤 | The Righteous Mind বাংলা",
-    "description": "এক রান্নাঘর, দুই জা, দুই বছরে একশো বারো ঝগড়া। যুক্তি, হিসাব, নালিশ— কিছুই কাজ করল না। তারপর এক রাতে রেহানা শুনল লিপির একটা ফোন…\nজোনাথন হাইট-এর The Righteous Mind — The Elephant and the Rider — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "righteous mind bangla",
-      "jonathan haidt bangla",
-      "যৌথ পরিবার",
-      "জা",
-      "বাংলা গল্প",
-      "পারিবারিক গল্প",
-      "মায়ের রান্না",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "দুই বছরের যুক্তি যা পারেনি, এক বাটি মায়ের রান্না তা পারল। 🍤\n\nতোমার আম্মার হাতের কোন রান্নাটা সবচেয়ে বেশি মনে পড়ে? 👇\n\n📖 The Righteous Mind — Jonathan Haidt\n#যৌথপরিবার #মায়েররান্না"
-  },
-  "thumbnail": {
-    "text": "১১২টা ঝগড়া",
-    "sub": "এক বাটিতে শেষ"
+  "dadi": {
+   "name": "শাশুড়ি আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#FFFFFF",
+   "color2": "#8E9AAF",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
   }
+ },
+ "beats": [
+  {
+   "say": "এক রান্নাঘর, দুই জা। দুই বছরে ঝগড়া *একশো বারোবার*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পুরান ঢাকা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "cross"
+     },
+     {
+      "id": "lipi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঝগড়া",
+       "value": "১১২",
+       "from": "১",
+       "red": true
+      },
+      {
+       "label": "সমাধান",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কে আগে চুলা পাবে, কার হাঁড়ি কোথায়— প্রতিদিন *একই তর্ক*।",
+   "scene": {
+    "widget": null,
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "annoyed",
+   "say": "আমি ভোর ছয়টায় উঠি। সকালের চুলা *আমার*, এটাই নিয়ম।",
+   "scene": {
+    "arms": {
+     "rehana": "point"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "tone": "frustrated",
+   "say": "নিয়ম কে বানাল, ভাবি? আমার মেয়ের টিফিন কি *দেরিতে* যাবে?",
+   "scene": {
+    "arms": {
+     "lipi": "talk"
+    },
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "কাগজে যুক্তি, ঘড়ি ধরে হিসাব, শাশুড়ির কাছে নালিশ। কেউ এক ইঞ্চিও *সরল না*।",
+   "card": {
+    "title": "যুক্তির লড়াই",
+    "items": [
+     {
+      "t": "কাগজে যুক্তি",
+      "mark": "x"
+     },
+     {
+      "t": "ঘড়ি ধরে হিসাব",
+      "mark": "x"
+     },
+     {
+      "t": "শাশুড়ির কাছে নালিশ",
+      "mark": "x"
+     }
+    ],
+    "footer": "তর্ক ↑"
+   }
+  },
+  {
+   "voice": "dadi",
+   "tone": "sighs",
+   "say": "তোমরা দুজনেই ঠিক, দুজনেই *জেদি*। আমি আর কিছু বলব না।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বসার ঘর",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "শেষে কথাই বন্ধ। বড় ছেলে বলল, রান্নাঘরে বসবে *আলাদা চুলা*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "এক মাস কথা নেই",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "lipi",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক টেবিলে খায়, চোখে চোখ পড়ে না। বাচ্চারাও এখন *ফিসফিস করে* কথা বলে।",
+   "scene": {
+    "cam": "static"
+   }
+  },
+  {
+   "say": "লিপির ছোট মেয়ে একদিন জিজ্ঞেস করল, বড় আম্মু আমাদের সাথে *কথা বলে না কেন*? কেউ উত্তর দিল না।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক রাতে রেহানা শুনল, পাশের ঘরে লিপি ফোনে মায়ের সাথে কথা বলছে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "lipi",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lipi",
+   "tone": "tearful",
+   "say": "আম্মা, বরিশালের নারকেল-চিংড়ির *গন্ধটা* পর্যন্ত মনে পড়ে।",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "tone": "tearful",
+   "say": "এখানে সবাই আছে, আম্মা। তবু মাঝে মাঝে মনে হয়, *আমি একা*।",
+   "scene": {
+    "moods": {
+     "lipi": "crying"
+    },
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "রেহানা কিছু বলল না। কিন্তু পরদিন, লুকিয়ে ফোন করল *লিপির মাকে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরদিন",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "softly",
+   "say": "খালাম্মা, আমি রেহানা। লিপিকে কিছু বলবেন না, শুধু *রেসিপিটা একটু বলবেন*?",
+   "scene": {
+    "arms": {
+     "rehana": "call"
+    },
+    "holds": {
+     "rehana": "phone"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "এবার সে যুক্তি দিয়ে নয়— ছুঁতে চাইল *মনটা*।",
+   "pause": 0.7,
+   "card": {
+    "text": "যুক্তি দিয়ে নয়—\nএবার ছুঁতে চাইল *মনটা*।"
+   }
+  },
+  {
+   "say": "তিন দিন পর লিপির জন্মদিন। টেবিলে ঢাকনা দেওয়া *একটা বাটি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "জন্মদিন",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "lipi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "warmly",
+   "say": "খেয়ে দেখো তো। তোমার আম্মা শিখিয়েছেন— *তিনবার ফোন করে*।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক চামচ মুখে দিয়েই লিপি *কেঁদে ফেলল*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "lipi": "crying"
+    },
+    "arms": {
+     "lipi": "face"
+    },
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রেহানা অস্বস্তিতে চোখ সরাল। বলল, লবণ কম হলে বোলো, *পরেরবার ঠিক করব*।",
+   "voice": "rehana",
+   "tone": "softly"
+  },
+  {
+   "voice": "lipi",
+   "tone": "tearful",
+   "say": "ভাবি… এ তো *আমার আম্মার হাতের* স্বাদ!",
+   "scene": {
+    "arms": {
+     "lipi": "hug",
+     "rehana": "hug"
+    },
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে আলাদা চুলার কথা কেউ তুলল না। লিপি নিজেই বলল—",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "lipi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "lipi",
+   "tone": "warmly",
+   "say": "সকালের চুলা তোমার, ভাবি। রাতেরটা আমি রাঁধব— *দুজনের জন্যই*।",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "laughs",
+   "say": "আর বৃহস্পতিবার রাতে দুজনে মিলে *নারকেল-চিংড়ি*। ডিল?",
+   "scene": {
+    "moods": {
+     "rehana": "happy"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "tone": "laughs",
+   "say": "যাক! এতদিনে আমার রান্নাঘরে *শান্তি* এল।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.22,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "dadi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "lipi",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই বছরের যুক্তি যা পারেনি, এক বাটি *মায়ের রান্না* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— জোনাথন হাইটের *দ্য রাইচাস মাইন্ড*।"
+  },
+  {
+   "kind": "book",
+   "say": "একটা ভাবনা— *হাতি আর মাহুত*, আগে মন, পরে যুক্তি।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "মন একটা হাতি, যুক্তি তার পিঠে ছোট্ট মাহুত। হাতি না সরলে, *মাহুতের তর্কে* কিছু হয় না।",
+   "card": {
+    "title": "হাতি আর মাহুত",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "brain",
+      "t": "মাহুত = যুক্তি",
+      "sub": "তর্কে হাতি সরে না",
+      "bad": true
+     },
+     "right": {
+      "icon": "heart",
+      "t": "হাতি = অনুভূতি",
+      "sub": "মন সরলে পথ খোলে"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, যুক্তির আগে *মনটা* ছোঁও।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "যুক্তির আগে মনটা ছোঁও",
+      "sub": "অনুভূতি আগে, যুক্তি পরে",
+      "icon": "heart"
+     },
+     {
+      "t": "ওর ভালোবাসার জিনিস খোঁজো",
+      "sub": "মা, গ্রাম, পুরনো স্বাদ",
+      "icon": "star"
+     },
+     {
+      "t": "জেতার চেয়ে কাছে থাকা বড়",
+      "sub": "ঠিক হওয়া নয়, একসাথে থাকা",
+      "icon": "people"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, খোঁজো ওর *ভালোবাসার জিনিস*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, জেতার চেয়ে *কাছে থাকা* বড়।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি মানুষটার *যুক্তির* সাথে লড়ছি, নাকি তার *মনটা* ছুঁতে চাইছি?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি মানুষটার *যুক্তির* সাথে লড়ছি,\nনাকি তার *মনটা* ছুঁতে চাইছি?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তর্ক মাথা পর্যন্ত যায়… *মায়া যায় বুক পর্যন্ত*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তর্ক মাথা পর্যন্ত যায়…",
+    "line2": "মায়া যায়\nবুক পর্যন্ত।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এক রান্নাঘরে দুই জা, ১১২ ঝগড়া— তারপর এক বাটি নারকেল-চিংড়ি 🍤 | The Righteous Mind বাংলা",
+  "description": "এক রান্নাঘর, দুই জা, দুই বছরে একশো বারো ঝগড়া। যুক্তি, হিসাব, নালিশ— কিছুই কাজ করল না। তারপর এক রাতে রেহানা শুনল লিপির একটা ফোন…\nজোনাথন হাইট-এর The Righteous Mind — The Elephant and the Rider — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "righteous mind bangla",
+   "jonathan haidt bangla",
+   "যৌথ পরিবার",
+   "জা",
+   "বাংলা গল্প",
+   "পারিবারিক গল্প",
+   "মায়ের রান্না",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "দুই বছরের যুক্তি যা পারেনি, এক বাটি মায়ের রান্না তা পারল। 🍤\n\nতোমার আম্মার হাতের কোন রান্নাটা সবচেয়ে বেশি মনে পড়ে? 👇\n\n📖 The Righteous Mind — Jonathan Haidt\n#যৌথপরিবার #মায়েররান্না"
+ },
+ "thumbnail": {
+  "text": "১১২টা ঝগড়া",
+  "sub": "এক বাটিতে শেষ"
+ },
+ "_extended": "story-only v1"
 }
