@@ -340,6 +340,17 @@
       "playlist": true,
       "facebook": "1821224552243479",
       "scheduled_for": "2026-11-07T17:30:00+06:00"
+    },
+    {
+      "id": "029",
+      "date": "2026-11-07",
+      "slot": "20:00",
+      "duration": 139.02,
+      "title": "ভুল নাম্বারে এল ২৫ হাজার টাকা, কেউ জানত না— তারপর এক বৃদ্ধা এলেন 💸 | The Republic বাংলা",
+      "youtube": "xxucGLkHtlY",
+      "playlist": true,
+      "facebook": "2388773998627841",
+      "scheduled_for": "2026-11-07T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -360,10 +371,11 @@
     "1984": "PLK7cGEwvm_Dk",
     "Propaganda": "PLGCk3gankBoE",
     "The Righteous Mind": "PLWqwkhPxmHKs",
-    "The Wealth of Nations": "PLB6DgZYxX61g"
+    "The Wealth of Nations": "PLB6DgZYxX61g",
+    "The Republic": "PLIYzytq-E1g0"
   },
   "last_run": {
-    "at": "2026-11-05T21:05:12.553957+06:00",
+    "at": "2026-11-05T21:11:41.728422+06:00",
     "errors": []
   },
   "queue_remaining": 21,
