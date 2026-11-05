@@ -1,0 +1,437 @@
+{
+ "id": "096",
+ "status": "ready",
+ "title_bn": "ঝড়ের রাতের সোলার",
+ "theme": "community",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The General Will",
+  "title_bn": "সবার ভালো, সবার দায়"
+ },
+ "cast": {
+  "monir": {
+   "name": "মনির",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  },
+  "sathi": {
+   "name": "সাথী",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "boro": {
+   "name": "বড় মিয়া",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "পটুয়াখালীর উপকূল। ঘূর্ণিঝড়ের পর তিন দিন বিদ্যুৎ নেই। পুরো এলাকা অন্ধকার, আর সবার মোবাইল *বন্ধ*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পটুয়াখালী, কলাপাড়া, ঝড়ের পরের রাত",
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিদ্যুৎ নাই",
+       "value": "৩ দিন"
+      },
+      {
+       "label": "বাজারে সোলার",
+       "value": "১টা",
+       "red": true
+      }
+     ]
+    },
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "পুরো বাজারে একটাই সোলার প্যানেল। মনিরের মুদি দোকানের ছাদে। দুই বছর আগে কিনেছিলেন, *কিস্তিতে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "boro",
+   "say": "মনির, এইবার কামাই করার সময়। এক ফোন চার্জ *পঞ্চাশ টাকা*। ঢাকায় তো একশো নেয়!",
+   "tone": "teasing",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "মনিরের দোকান",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "boro",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "boro": "talk"
+    }
+   }
+  },
+  {
+   "say": "দোকানের সামনে ততক্ষণে ভিড়। হাতে হাতে বন্ধ মোবাইল। সবাই জানতে চায়, ঢাকায়, চট্টগ্রামে, সাগরে থাকা মানুষগুলো *কেমন আছে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "মনির ভাই, আমার আব্বা ট্রলারে সাগরে গেছিল। তিন দিন খবর নাই। ফোনটা একটু চালু করা গেলে… *টাকা পরে দিমু*।",
+   "tone": "tearful",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "sathi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sathi": "phone"
+    }
+   }
+  },
+  {
+   "say": "মনির মেয়েটার মুখের দিকে তাকালেন। তারপর ভিড়ের দিকে। প্রত্যেকের মুখে একই প্রশ্ন। আর একটা *টাকার হিসাব* নয়।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মনিরের সামনে তিনটা রাস্তা",
+   "card": {
+    "title": "যা সবাই করত",
+    "items": [
+     {
+      "t": "পঞ্চাশ টাকা করে— ‘ব্যবসা তো ব্যবসা’",
+      "mark": "x"
+     },
+     {
+      "t": "আগে আসলে আগে— ঝগড়া, ধাক্কাধাক্কি",
+      "mark": "x"
+     },
+     {
+      "t": "শুধু চেনা মানুষ— বাকিরা অন্ধকারে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দশ মিনিট পর মনির দোকানের সামনে একটা কাগজ টাঙালেন। চকের মতো সাদা কালিতে, *বড় বড় অক্ষরে*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "দশ মিনিট পর",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "যার মানুষ সাগরে, সে আগে। তারপর বাকি সবাই, সিরিয়াল ধইরা। *বিশ মিনিট* করে। কেউ টাকা দিবেন না।",
+   "tone": "serious",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মনির স্টোরের নোটিশ",
+     "lines": [
+      "ফোন চার্জ— বিনা টাকায়",
+      "প্রতি ফোন ২০ মিনিট, তারপর পরের জন",
+      "আগে: সাগরে যাদের মানুষ আছে"
+     ]
+    },
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "monir": "point"
+    }
+   }
+  },
+  {
+   "say": "রাত এগারোটায় সাথীর ফোন চালু হলো। তিনটা মিসড কল। আর একটা মেসেজ। *আব্বার নম্বর থেকে*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত এগারোটা",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "sathi",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "monir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "আব্বা ভালো আছে! মনির ভাই, *আব্বা ভালো আছে*!",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আব্বা",
+     "msgs": [
+      {
+       "who": "আব্বা",
+       "t": "মা, ট্রলার চরে আটকাইছিল। সবাই ভালো। কাল আসতেছি।"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "sathi": "crying"
+    },
+    "arms": {
+     "sathi": "phone"
+    }
+   }
+  },
+  {
+   "say": "ভিড়ের মধ্যে কেউ হাততালি দিল। তারপর সবাই। অন্ধকার বাজারে একটা মুদি দোকানের সামনে হাততালি, *রাত এগারোটায়*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন রাত মনির ঘুমালেন না। চারশো বারোটা ফোন। আর তৃতীয় রাতে সেই বড় মিয়া এলেন, হাতে *ফ্লাস্ক ভর্তি চা*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "তিন রাত, সারারাত",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "boro",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তিন রাতে চার্জ",
+       "value": "৪১২টা ফোন"
+      },
+      {
+       "label": "নেওয়া টাকা",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "boro",
+   "say": "মনির, পঞ্চাশ টাকার কথা কইছিলাম, মনে রাখিস না। এই চা খা। আর কাল থেকে আমার দোকানের ব্যাটারিটাও *দিয়া যামু*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "boro",
+     "zoom": 1.4
+    },
+    "arms": {
+     "boro": "hold"
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর বাজারের দোকানদাররা চাঁদা তুলে কিনলেন আরও তিনটা সোলার প্যানেল। বসানো হলো বাজারের *তিন কোণে*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:মনির স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রতিটা প্যানেলের খুঁটিতে একটা টিনের প্লেট, একই লেখা— *‘ঝড়ের রাতে চার্জ ফ্রি। আগে সাগরের মানুষ।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বিপদের দিনে সুযোগ খোঁজা সহজ… *আলো ভাগ করলে অন্ধকার ছোট হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "বিপদের দিনে সুযোগ খোঁজা সহজ…",
+    "line2": "আলো ভাগ করলে\nঅন্ধকার ছোট হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ঘূর্ণিঝড়ে তিন দিন বিদ্যুৎ নাই, পুরো গ্রামের মোবাইল বন্ধ… মনিরের দোকানের ছাদে একটা সোলার প্যানেল ⚡",
+  "description": "পটুয়াখালীর উপকূলে ঘূর্ণিঝড়ের পর তিন দিন বিদ্যুৎ নেই। কারও খবর নেই কারও। পুরো বাজারে একটাই সোলার প্যানেল, মনিরের মুদি দোকানের ছাদে। পাশের দোকানদার বলল, ফোন চার্জ পঞ্চাশ টাকা নাও, এই সুযোগ। মনির একটা কাগজে কিছু লিখে টাঙালেন…",
+  "tags": [
+   "ঘূর্ণিঝড়",
+   "উপকূলের গল্প",
+   "পটুয়াখালী",
+   "সোলার",
+   "প্রতিবেশী",
+   "পাড়ার গল্প",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ঝড়ের রাতে পুরো বাজারে আলো ছিল একটাই। মনির সেটা বেচলেন না, ভাগ করলেন। ⚡\nবিপদের দিনে তোমার এলাকায় কে প্রথম এগিয়ে আসে? 👇 #ঘূর্ণিঝড় #উপকূল"
+ },
+ "thumbnail": {
+  "text": "৩ দিন বিদ্যুৎ নাই",
+  "sub": "একটাই সোলার"
+ }
+}

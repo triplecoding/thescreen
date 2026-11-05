@@ -1,0 +1,495 @@
+{
+ "id": "097",
+ "status": "ready",
+ "title_bn": "লাইন চিফ মুকুল",
+ "theme": "work",
+ "source": {
+  "book": "The Prince",
+  "author": "Niccolò Machiavelli",
+  "author_bn": "নিকোলো ম্যাকিয়াভেলি",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Whether it is better to be loved than feared",
+  "title_bn": "ভয় না সম্মান"
+ },
+ "cast": {
+  "mukul": {
+   "name": "মুকুল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "rokeya2": {
+   "name": "হালিমা খালা",
+   "type": "woman",
+   "skin": "dark",
+   "outfit": "salwar",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "gm": {
+   "name": "জিএম স্যার",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাজীপুরের এক গার্মেন্টস, লাইন সাত। লাইন চিফ মুকুলের পদ্ধতি একটাই— *চিৎকার*। টার্গেট না মিললে আরও জোরে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "গাজীপুর, গার্মেন্টস, লাইন ৭",
+    "props": [
+     "signboard",
+     "sign:লাইন ৭ — টার্গেট ঘণ্টায় ৬০"
+    ],
+    "chars": [
+     {
+      "id": "mukul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "টার্গেট",
+       "value": "ঘণ্টায় ৬০ পিস"
+      },
+      {
+       "label": "লাইন ৭",
+       "value": "ঘণ্টায় ৫১ পিস",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mukul",
+   "say": "হালিমা খালা! আবার আটত্রিশ? এই লাইনে *আপনার জন্য* বোনাস যায় সবার!",
+   "scene": {
+    "cam": {
+     "focus": "mukul",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mukul": "angry"
+    },
+    "arms": {
+     "mukul": "point"
+    }
+   }
+  },
+  {
+   "say": "হালিমা খালা চল্লিশ বছর বয়স, এগারো বছর এই লাইনে। কিছু বলেন না। শুধু আরও নিচু হয়ে সেলাই করেন। *আরও ধীরে*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "signboard",
+     "sign:লাইন ৭ — টার্গেট ঘণ্টায় ৬০"
+    ],
+    "chars": [
+     {
+      "id": "rokeya2",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "rokeya2",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "gm",
+   "say": "মুকুল, লাইন সাতের গড় একান্ন। হালিমারে কাল থেকে বাদ দাও। *নতুন মেয়ে* নাও।",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "জিএমের অফিস",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "gm",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "mukul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "gm": "point"
+    }
+   }
+  },
+  {
+   "say": "মুকুল মাথা নাড়লেন। এই কাজ তিনি আগেও করেছেন। একটা কাগজ, একটা সই, তারপর একজন মানুষ *গেটের বাইরে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "mukul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মুকুলের পুরোনো নিয়ম",
+   "card": {
+    "title": "যা দিয়ে লাইন চালাতেন",
+    "items": [
+     {
+      "t": "জোরে চিৎকার",
+      "mark": "x"
+     },
+     {
+      "t": "বোনাস কাটার ভয়",
+      "mark": "x"
+     },
+     {
+      "t": "না পারলে বাদ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শেষ দিন বিকেলে মুকুল চিঠি হাতে খালার মেশিনের পাশে দাঁড়ালেন। আর তখনই *প্রথমবার* খেয়াল করলেন।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "শেষ দিন, বিকেল",
+    "props": [
+     "signboard",
+     "sign:লাইন ৭ — টার্গেট ঘণ্টায় ৬০"
+    ],
+    "chars": [
+     {
+      "id": "mukul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "rokeya2",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "খালা সেলাই করছেন চোখ প্রায় কাপড়ে ঠেকিয়ে। সুই-সুতা পরাতে তিনবার ভুল। তারপর আঙুল দিয়ে *ছুঁয়ে ছুঁয়ে*।",
+   "scene": {
+    "cam": {
+     "focus": "rokeya2",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mukul",
+   "say": "খালা… আপনি কি *চোখে কম দেখেন*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mukul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mukul": "down"
+    }
+   }
+  },
+  {
+   "voice": "rokeya2",
+   "say": "দুই বছর ধইরা ঝাপসা, স্যার। কইলে যদি *চাকরি যায়*? তাই হাতে মাইপা সেলাই করি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "rokeya2",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rokeya2": "face"
+    }
+   }
+  },
+  {
+   "say": "মুকুলের হাতে চিঠিটা। দুই বছর তিনি এই মানুষটার ওপর চিৎকার করেছেন। কোনোদিন *জিজ্ঞেস করেননি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "mukul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mukul",
+   "say": "স্যার, এক সপ্তাহ সময় দেন। খালা অলস না। উনি *দেখেন না*। ফ্যাক্টরিতে চোখ পরীক্ষার ক্যাম্প হয় না কেন?",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "জিএমের অফিস, সেই বিকেল",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "gm",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "mukul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "mukul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "gm",
+   "say": "এক সপ্তাহ। তারপর আটত্রিশ থাকলে, *দুইজনই* আমার অফিসে।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "gm",
+     "zoom": 1.4
+    },
+    "arms": {
+     "gm": "cross"
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে দুইটা ছোট পরিবর্তন। খালার মেশিন সরল জানালার পাশে, *দিনের আলোয়*। আর ফ্যাক্টরিতে প্রথম চোখ পরীক্ষার ক্যাম্প।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "signboard",
+     "sign:লাইন ৭ — টার্গেট ঘণ্টায় ৬০"
+    ],
+    "chars": [
+     {
+      "id": "rokeya2",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "mukul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rokeya2",
+   "say": "স্যার, দুই বছর পর সুতার রং দেখতেছি! এইটা তো *নীল*, আমি ভাবছি কালো!",
+   "tone": "laughs",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চশমা",
+       "value": "৬০০ টাকা"
+      },
+      {
+       "label": "হালিমা খালার সেলাই",
+       "from": "৩৮",
+       "value": "৬১ পিস"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "rokeya2",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rokeya2": "hold"
+    }
+   }
+  },
+  {
+   "say": "চশমা পরার এক সপ্তাহে হালিমা খালার সেলাই আটত্রিশ থেকে *একষট্টি*। লাইনের সবচেয়ে বেশি।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "gm",
+   "say": "মুকুল, লাইন সাতের গড় এখন ছেষট্টি। কী জাদু করছো? *আরও জোরে* চিৎকার?",
+   "tone": "curious",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "signboard",
+     "sign:লাইন ৭ — টার্গেট ঘণ্টায় ৬০"
+    ],
+    "chars": [
+     {
+      "id": "gm",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "mukul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "gm": "down"
+    }
+   }
+  },
+  {
+   "voice": "mukul",
+   "say": "না স্যার। এখন চিৎকারের আগে *একটা প্রশ্ন* করি। কী সমস্যা, খালা?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "mukul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mukul": "talk"
+    }
+   }
+  },
+  {
+   "say": "লাইন সাতের বোর্ডে টার্গেটের পাশে এখন আরেকটা লাইন, মুকুলের হাতে লেখা— *‘ধীর হাত দেখলে, আগে চোখটা দেখো।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ক্যাম্পে চশমা পেল",
+       "value": "৪৭ জন শ্রমিক"
+      },
+      {
+       "label": "লাইন ৭-এর গড়",
+       "from": "৫১",
+       "value": "৬৬"
+      }
+     ]
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভয়ে কাজ চলে কিছুদিন… *সম্মানে চলে বহুদিন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভয়ে কাজ চলে কিছুদিন…",
+    "line2": "সম্মানে চলে\nবহুদিন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "টার্গেট মেলে না, হালিমা খালাকে বাদ দিতে বলল জিএম… লাইন চিফ খেয়াল করলেন একটা জিনিস 🧵",
+  "description": "গাজীপুরের এক গার্মেন্টসে লাইন চিফ মুকুলের নিয়ম একটাই— চিৎকার। টার্গেট ঘণ্টায় ষাট পিস, হালিমা খালা পারেন আটত্রিশ। জিএম বললেন, কাল থেকে বের করে দাও। শেষ দিনে মুকুল খেয়াল করলেন, খালা সেলাই করছেন চোখ প্রায় কাপড়ে ঠেকিয়ে…",
+  "tags": [
+   "গার্মেন্টসের গল্প",
+   "লাইন চিফ",
+   "শ্রমিকের সম্মান",
+   "অফিসের গল্প",
+   "গাজীপুর",
+   "bangla golpo",
+   "office story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চিৎকারে টার্গেট মেলেনি। একটা চশমা আর একটা জানালার পাশের সিটে মিলে গেল। 🧵\nকাজের জায়গায় কখনো কেউ তোমার আসল সমস্যাটা খুঁজে বের করেছিল? 👇 #গার্মেন্টস #সম্মান"
+ },
+ "thumbnail": {
+  "text": "৩৮ পিস",
+  "sub": "বের করে দাও"
+ }
+}

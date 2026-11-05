@@ -1,0 +1,440 @@
+{
+ "id": "095",
+ "status": "ready",
+ "title_bn": "পাঁচশো টাকার ডিপিএস",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Compounding: the most powerful force",
+  "title_bn": "ছোট টাকার বড় শক্তি"
+ },
+ "cast": {
+  "rokeya": {
+   "name": "রোকেয়া",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "lima": {
+   "name": "লিমা",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "mitu": {
+   "name": "মিতু আপা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "আশুলিয়া, দুই হাজার ষোলো। প্রথম বেতনের দিনে রোকেয়া লাইনের সবাইকে অবাক করে খুলল একটা ব্যাংক বই। *মাসে পাঁচশো টাকার ডিপিএস*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "আশুলিয়া, গার্মেন্টস, ২০১৬",
+    "props": [
+     "signboard",
+     "sign:সানরাইজ অ্যাপারেলস — লাইন ১২"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রথম বেতন",
+       "value": "৫,৩০০ টাকা"
+      },
+      {
+       "label": "ডিপিএস",
+       "value": "মাসে ৫০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "পাঁচশো টাকায় কী হইবো রে? *ঈদের একটা জামাও* হয় না!",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mitu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "এখন হয় না, আপা। দশ বছর পর *হইবো*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rokeya": "hold"
+    }
+   }
+  },
+  {
+   "say": "লাইনের সবাই হাসল। ঈদে নতুন জামা, মেলায় চুড়ি, মোবাইলে নতুন প্যাকেজ। রোকেয়ার পাঁচশো টাকা প্রতি মাসে *আলাদা*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দশ বছরে যা যা হয়েছিল",
+   "card": {
+    "title": "রোকেয়ার পরীক্ষাগুলো",
+    "items": [
+     {
+      "t": "বন্ধুর ধার চাওয়া— ‘ডিপিএস ভাঙা যায় না’",
+      "mark": "x"
+     },
+     {
+      "t": "করোনায় বেতন অর্ধেক— তবু পাঁচশো",
+      "mark": "x"
+     },
+     {
+      "t": "নিজের বিয়ে— বাপের বাড়ির সাহায্যে, ডিপিএসে হাত না দিয়ে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "কিছু মাসে পাঁচশো টাকা জোগাড় করাও ছিল যুদ্ধ। এক মাসে সে দুপুরে খেয়েছিল শুধু *মুড়ি আর চা*। তবু বইয়ে সিল পড়েছিল।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "এক রাতে, ছুটির পর",
+    "props": [
+     "signboard",
+     "sign:সানরাইজ অ্যাপারেলস — লাইন ১২"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দশ বছর পর। দুই হাজার ছাব্বিশ। জ্যৈষ্ঠের ঝড়ে গ্রামের বাড়িতে মায়ের ঘরের টিনের চাল *উড়ে গেছে*। সামনে বর্ষা।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দশ বছর পর, ২০২৬, বর্ষার আগে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "আম্মা, কাঁইদেন না। কত লাগবো? মিস্ত্রি কী কইলো?",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rokeya": "worried"
+    },
+    "arms": {
+     "rokeya": "phone"
+    }
+   }
+  },
+  {
+   "say": "নতুন টিন, কাঠ, মিস্ত্রি। লাগবে *পঁচাশি হাজার*। লাইনের বেশিরভাগ মেয়ের হাতে এমন বিপদে একটাই রাস্তা— *এনজিওর ঋণ*।",
+   "pause": 0.8
+  },
+  {
+   "say": "পরের দিন রোকেয়া ব্যাংকে গেল। দশ বছরে জমা দিয়েছিল ষাট হাজার। মুনাফাসহ হাতে এল— *ছিয়ানব্বই হাজার আটশো*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ব্যাংক, পরের দিন",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ডিপিএস কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মোট জমা",
+       "value": "৬০,০০০"
+      },
+      {
+       "label": "মুনাফাসহ পেল",
+       "value": "৯৬,৮০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "ছত্রিশ হাজার বেশি? আমি তো কিছুই *করি নাই*, খালি দিছি আর ভুলছি!",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rokeya": "surprised"
+    },
+    "arms": {
+     "rokeya": "hold"
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর মায়ের ঘরে নতুন টিনের চাল। বর্ষার প্রথম বৃষ্টিতে আম্মা ফোনে বললেন— *এক ফোঁটা পানিও পড়ে নাই রে*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "এক মাস পর, গ্রামের বাড়ি",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "রোকেয়া, দশ বছর আগে আমিও যদি পাঁচশো টাকা রাখতাম… এখন তো *কিস্তির* বই তিনটা।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mitu": "down"
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "আপা, দশ বছর আগে শুরু করা ভালো ছিল। *তারপর ভালো সময়টা কখন জানেন*? আজকে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rokeya": "talk"
+    }
+   }
+  },
+  {
+   "say": "সেই মাসে লাইনে এল নতুন একটা মেয়ে, লিমা। প্রথম বেতনের দিন রোকেয়া তার পাশে দাঁড়াল। *দশ বছর আগের নিজের মতো*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "লাইন ১২, নতুন মেয়ে",
+    "props": [
+     "signboard",
+     "sign:সানরাইজ অ্যাপারেলস — লাইন ১২"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "lima",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "আপা, পাঁচশো টাকায় কী হয়? সবাই তো *হাসে*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lima": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "হাসুক। দশ বছর পর ওদের মা-র ঘরের চাল উড়লে, *তোর কাছে* আসবো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rokeya": "hold"
+    }
+   }
+  },
+  {
+   "say": "লাইন বারোর নোটিশ বোর্ডে এখন একটা পুরোনো ব্যাংক বইয়ের ফটোকপি। নিচে রোকেয়ার হাতে লেখা— *‘পাঁচশো টাকায় কী হয়? দশ বছরে একটা ছাদ।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লাইন ১২-এ ডিপিএস",
+       "from": "১",
+       "value": "১৪ জন"
+      }
+     ]
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ছোট টাকা আজ চোখে পড়ে না… *দশ বছর পর ছাদ হয়ে দাঁড়ায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ছোট টাকা আজ চোখে পড়ে না…",
+    "line2": "দশ বছর পর\nছাদ হয়ে দাঁড়ায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গার্মেন্টসে প্রথম চাকরি, মাসে ৫০০ টাকার ডিপিএস… সহকর্মীরা হাসল ‘৫০০ টাকায় কী হয়?’— দশ বছর পর ⏳",
+  "description": "আশুলিয়ার গার্মেন্টসে প্রথম চাকরির মাসে রোকেয়া ব্যাংকে খুলল পাঁচশো টাকার ডিপিএস। সহকর্মীরা হাসল— পাঁচশো টাকায় কী হবে? দশ বছর পর, এক বর্ষার আগে মায়ের ঘরের চাল উড়ে গেল…",
+  "tags": [
+   "গার্মেন্টস কর্মী",
+   "সঞ্চয়",
+   "ডিপিএস",
+   "টাকার গল্প",
+   "আশুলিয়া",
+   "bangla golpo",
+   "টাকা জমানো",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পাঁচশো টাকায় কিছু হয় না— সবাই বলেছিল। দশ বছর পর সেই পাঁচশো টাকাই বাঁচাল মায়ের ঘর। ⏳\nতুমি প্রথম কবে টাকা জমাতে শুরু করেছিলে? 👇 #সঞ্চয় #টাকারগল্প"
+ },
+ "thumbnail": {
+  "text": "মাসে ৫০০ টাকা",
+  "sub": "১০ বছর পর"
+ }
+}

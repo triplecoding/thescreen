@@ -1,0 +1,487 @@
+{
+ "id": "098",
+ "status": "ready",
+ "title_bn": "পেছনের বেঞ্চের হাবিব",
+ "theme": "school",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "The Halo Effect",
+  "title_bn": "প্রথম দেখায় বিচার"
+ },
+ "cast": {
+  "nasrin": {
+   "name": "নাসরিন ম্যাডাম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "habib": {
+   "name": "হাবিব",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "parent": {
+   "name": "ফার্স্ট বেঞ্চের অভিভাবক",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার এক স্কুল। ক্লাস নাইনে ছাপান্নজন। আর শেষ বেঞ্চের একটা নাম আছে, সবাই জানে— *ফেলের বেঞ্চ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খুলনা, স্কুল, ক্লাস নাইন",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ক্লাসে ছাত্র",
+       "value": "৫৬ জন"
+      },
+      {
+       "label": "পেছনের বেঞ্চের নাম",
+       "value": "‘ফেলের বেঞ্চ’",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নতুন শিক্ষিকা নাসরিন প্রথম সপ্তাহেই দেখলেন, পেছনের বেঞ্চের একটা ছেলে কোনোদিন হাত তোলে না। নাম *হাবিব*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "হাবিব, বলো তো, পানির রাসায়নিক সংকেত কী?",
+   "tone": "gently",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ক্লাসরুম",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘খ’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "habib",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nasrin": "point"
+    }
+   }
+  },
+  {
+   "say": "হাবিব উঠে দাঁড়াল। চুপ। তারপর বসে পড়ল। পেছন থেকে কেউ হাসল— *ফেলের বেঞ্চ, আর কী*!",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন বছরে হাবিবের ‘পরিচয়’",
+   "card": {
+    "title": "সবাই যা জানত",
+    "items": [
+     {
+      "t": "পড়া পারে না",
+      "mark": "x"
+     },
+     {
+      "t": "প্রশ্ন শুনেও উত্তর দেয় না",
+      "mark": "x"
+     },
+     {
+      "t": "অমনোযোগী, তাই পেছনে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরের সোমবার নাসরিন ম্যাডাম একটা নতুন নিয়ম দিলেন। প্রতি সোমবার সবাই এক বেঞ্চ *সামনে* আসবে। প্রথম বেঞ্চের জন যাবে *সবার পেছনে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সোমবার",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘খ’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "এই ক্লাসে কোনো বেঞ্চ কারও নামে লেখা না। *সব বেঞ্চ সবার*।",
+   "tone": "serious",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নতুন নিয়ম",
+     "lines": [
+      "প্রতি সোমবার বেঞ্চ বদল",
+      "কোনো বেঞ্চ কারও নামে নয়",
+      "‘ফেলের বেঞ্চ’ শব্দ নিষেধ"
+     ]
+    },
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasrin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "parent",
+   "say": "আমার মেয়ে ক্লাসে ফার্স্ট। ওরে পেছনে বসাইবেন? *পেছনের পোলাপানের* সাথে?",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "দুই দিন পর, অফিস রুম",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "parent",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "parent": "angry"
+    },
+    "arms": {
+     "parent": "point"
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "আপা, এক সপ্তাহ। আপনার মেয়ে পেছন থেকে পারলে, সত্যিই ভালো। আর যদি না পারে, তাইলে বুঝবেন *পেছনের বেঞ্চে* সমস্যা কোথায়।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasrin": "talk"
+    }
+   }
+  },
+  {
+   "say": "তৃতীয় সোমবার। জীবনে প্রথম হাবিব বসল *প্রথম বেঞ্চে*। ম্যাডামের ঠিক সামনে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তৃতীয় সোমবার",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘খ’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "point"
+     },
+     {
+      "id": "habib",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "হাবিব, পানির রাসায়নিক সংকেত?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasrin": "point"
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "এইচ টু ও, ম্যাডাম। দুইটা হাইড্রোজেন, *একটা অক্সিজেন*।",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    },
+    "moods": {
+     "habib": "surprised"
+    },
+    "arms": {
+     "habib": "talk"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস চুপ। তারপর পুরো সপ্তাহ। হাবিব প্রতিটা প্রশ্নের উত্তর দিল। প্রতিটা। *একটাও ভুল না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "হাবিব, তিন বছর পেছনে বসে তুমি উত্তর দাও নাই কেন? আজকে তো *সব পারলা*।",
+   "tone": "softly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ছুটির পর",
+    "props": [
+     "signboard",
+     "sign:ক্লাস নাইন — ‘খ’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "habib",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nasrin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "ম্যাডাম, ছোটবেলায় জ্বরের পর থেকে এক কানে কম শুনি। পেছন থেকে স্যারের কথা আসে না। কাউরে কইলে *হাসবো*, তাই কই নাই।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "habib": "face"
+    }
+   }
+  },
+  {
+   "say": "তিন বছর। ‘ফেলের বেঞ্চ’। ‘অমনোযোগী’। অথচ ছেলেটা শুধু *শুনতে পাচ্ছিল না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "আজ থেকে তোমার জায়গা সামনে। বেঞ্চ বদলাবে সবার, *তোমার না*। আর কাল তোমার আব্বুকে নিয়া আসবা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasrin": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক বছর পর হাবিবের নম্বর একচল্লিশ থেকে ছিয়াশি। আর সেই অভিভাবক আপা নিজে এসে বললেন, তাঁর মেয়েও এখন *পেছন থেকে* পড়া পারে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "parent",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হাবিবের ফল",
+       "from": "৪১%",
+       "value": "৮৬%"
+      },
+      {
+       "label": "‘ফেলের বেঞ্চ’",
+       "value": "বিলুপ্ত"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "খুলনার সেই স্কুলে এখন প্রতিটা ক্লাসে প্রতি সোমবার বেঞ্চ বদল হয়। আর ক্লাস শুরুর আগে শিক্ষকরা জিজ্ঞেস করেন— *‘পেছন থেকে শুনতে পাচ্ছ?’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পেছনের বেঞ্চ মেধা ঠিক করে না… *শুধু দূরত্ব বাড়ায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পেছনের বেঞ্চ মেধা ঠিক করে না…",
+    "line2": "শুধু দূরত্ব\nবাড়ায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘পেছনের বেঞ্চ মানে ফেল’— নতুন ম্যাডাম প্রতি সপ্তাহে বেঞ্চ বদলালেন, আর জানা গেল হাবিবের এক গোপন কথা 🪑",
+  "description": "খুলনার এক স্কুলে ক্লাস নাইনের পেছনের বেঞ্চের নাম ‘ফেলের বেঞ্চ’। হাবিব তিন বছর সেখানে, কোনোদিন প্রশ্নের উত্তর দেয় না। নতুন ম্যাডাম নাসরিন নিয়ম করলেন, প্রতি সোমবার সবার বেঞ্চ বদল। ফার্স্ট বেঞ্চের অভিভাবকরা রাগ করলেন। তারপর দ্বিতীয় সপ্তাহে প্রথম বেঞ্চে বসে হাবিব…",
+  "tags": [
+   "স্কুলের গল্প",
+   "শিক্ষিকা",
+   "পেছনের বেঞ্চ",
+   "ছাত্রের গল্প",
+   "খুলনা",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন বছর সবাই ভেবেছিল হাবিব পড়া পারে না। আসলে সে পেছন থেকে শুনতেই পেত না। 🪑\nস্কুলে তুমি কোন বেঞ্চে বসতে— আর সেটা কি তোমার সম্পর্কে মানুষের ধারণা বদলে দিয়েছিল? 👇 #স্কুল #শিক্ষক"
+ },
+ "thumbnail": {
+  "text": "ফেলের বেঞ্চ",
+  "sub": "হাবিবের গোপন কথা"
+ }
+}

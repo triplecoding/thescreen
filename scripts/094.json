@@ -1,0 +1,493 @@
+{
+ "id": "094",
+ "status": "ready",
+ "title_bn": "ফ্রিজের গায়ে লিস্ট",
+ "theme": "family",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "Harried",
+  "title_bn": "ঘরের অদৃশ্য কাজ"
+ },
+ "cast": {
+  "rafiq": {
+   "name": "রফিক",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "shima": {
+   "name": "সীমা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "putul": {
+   "name": "পুতুল",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "kid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "voice": "rafiq",
+   "say": "আমি সারাদিন অফিসে খাটি। আর তুমি তো ঘরে *বইসা থাকো*। এক কাপ চা দিতেও দেরি!",
+   "tone": "annoyed",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মিরপুর, রাত ১০টা",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "shima",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rafiq": "talk"
+    }
+   }
+  },
+  {
+   "say": "বারো বছরের সংসার। তিন বাচ্চা। আর এই কথাটা সীমা শুনেছেন, হিসাব করলে, *অন্তত চারশোবার*।"
+  },
+  {
+   "say": "সেই রাতে সীমা কোনো উত্তর দিলেন না। শুধু ব্যাগ গোছালেন। বারো বছরে প্রথম, তিন দিনের জন্য *বাপের বাড়ি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shima",
+   "say": "মা অসুস্থ। তিন দিন থাকব। বাচ্চাদের *দেখে রাইখো*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shima": "down"
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "যাও যাও। তিন দিন তো। এইটা আর এমন কী, *ঘর সামলানো*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafiq": "wave"
+    }
+   }
+  },
+  {
+   "say": "প্রথম দিন, সকাল ছয়টা। তিনটা টিফিন বাক্স। একটায় ডিম চলে না, একটায় রুটি চলে না, আর একটা বাচ্চা *শুধু নুডলস* খায়।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "প্রথম দিন, সকাল ৬টা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "৬:০০",
+     "label": "সকাল ছয়টা, প্রথম দিন"
+    }
+   }
+  },
+  {
+   "voice": "putul",
+   "say": "আব্বু, আমার স্কুল ড্রেস কই? আম্মু তো আগের রাতে *ইস্ত্রি* কইরা রাখে!",
+   "tone": "upset",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "সকাল ৭টা ৩০",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "putul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "putul": "point"
+    }
+   }
+  },
+  {
+   "say": "সাড়ে সাতটায় তিনজন তিন দিকে। একজনের জুতা নেই, একজনের হোমওয়ার্কে সই লাগবে, একজন *কাঁদছে*। রফিক অফিসে ফোন দিলেন— *দেরি হবে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দ্বিতীয় রাত দুইটা। ছোট ছেলে পানি চাইল। রফিক উঠলেন। গ্লাস খুঁজলেন। তারপর বিছানার পাশে দেখলেন, *আগে থেকেই* একটা গ্লাস রাখা। সীমা রেখে গেছেন, যাওয়ার আগে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দ্বিতীয় রাত, ২টা",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রফিক অন্ধকারে বসে রইলেন। বারো বছর এই গ্লাসটা কে রাখে, তিনি *কোনোদিন ভাবেননি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তৃতীয় রাতে রফিক একটা কাজ করলেন। কাগজ-কলম নিলেন। আর লিখতে লাগলেন, সীমা সারাদিন কী কী করেন। *যা মনে পড়ে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "তৃতীয় রাত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক পাতা শেষ। দুই পাতা। তিন পাতায় গিয়ে রফিক থামলেন। লিস্ট শেষ হয়নি। *হাত ব্যথা* হয়ে গেছে।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "সীমার এক দিন (রফিকের লেখা)",
+     "lines": [
+      "৫:৩০ ঘুম থেকে ওঠা",
+      "তিন রকম টিফিন",
+      "দুই স্কুল, দুই ব্যাগ, এক কান্না",
+      "বাজার, রান্না, কাপড়",
+      "রাত ২টায় পানির গ্লাস",
+      "…লিস্ট শেষ হয় না"
+     ]
+    },
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চতুর্থ দিন সকালে সীমা ফিরলেন। দরজা খুলেই দেখলেন, রফিকের হাতে *এক কাপ চা*। তাঁর জন্য।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "চতুর্থ দিন সকাল",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shima",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rafiq",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "বসো। আজকে চা আমি দিব। আর… একটু দেরি হইছে, *মাফ কইরো*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafiq": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shima",
+   "say": "কী হইছে তোমার? *জ্বর*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "shima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shima": "down"
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "ফ্রিজের দিকে তাকাও।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafiq": "point"
+    }
+   }
+  },
+  {
+   "say": "ফ্রিজের গায়ে চুম্বক দিয়ে আটকানো তিন পাতার একটা লিস্ট। আর সবার নিচে, রফিকের হাতে বড় করে লেখা— *‘থ্যাংক ইউ। আর সরি।’*",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "shima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shima",
+   "say": "বারো বছর… তুমি এইটা *তিন দিনে* বুঝলা?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shima": "face"
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "তিন দিনে বুঝি নাই। তিন দিনে খালি *বুঝতে শুরু* করছি।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafiq": "talk"
+    }
+   }
+  },
+  {
+   "voice": "putul",
+   "say": "আম্মু, আব্বুর ডিমভাজা এখন *গোল* হয়!",
+   "tone": "laughs",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক মাস পর, শুক্রবার",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "putul",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shima",
+      "x": 0.82,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শুক্রবার রান্না",
+       "value": "আব্বু"
+      },
+      {
+       "label": "টিফিন",
+       "value": "আব্বু"
+      },
+      {
+       "label": "‘বসে থাকো’",
+       "value": "০ বার"
+      }
+     ]
+    },
+    "arms": {
+     "putul": "point"
+    }
+   }
+  },
+  {
+   "say": "ফ্রিজের লিস্টটা এখনো আছে। শুধু নিচে নতুন একটা লাইন যোগ হয়েছে— *‘শুক্রবার: সব কাজ রফিকের।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে কাজ চোখে পড়ে না… *সেটাই সংসারটা ধরে রাখে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে কাজ চোখে পড়ে না…",
+    "line2": "সেটাই সংসারটা\nধরে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘তুমি তো ঘরে বসে থাকো’— বউ তিন দিনের জন্য বাপের বাড়ি গেলেন, তারপর… 🧺",
+  "description": "রফিকের ধারণা, তিনি সারাদিন অফিসে খাটেন আর বউ সীমা ঘরে ‘বসে থাকে’। বারো বছরে প্রথমবার সীমা তিন দিনের জন্য বাপের বাড়ি গেলেন। তিন বাচ্চা, স্কুল, রান্না, বাজার— প্রথম দিনেই রফিক বুঝলেন ‘বসে থাকা’ কাকে বলে…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "সংসারের গল্প",
+   "গৃহিণী",
+   "বাবার দায়িত্ব",
+   "হাসির গল্প",
+   "bangla golpo",
+   "sonsar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘তুমি তো ঘরে বসেই থাকো’— এই কথাটা ফেরত নিতে রফিকের লাগল তিন দিন আর একটা লম্বা লিস্ট। 🧺\nতোমার মায়ের সারাদিনের কাজের লিস্ট লিখলে কয়টা হবে, কখনো ভেবেছ? 👇 #মা #সংসার"
+ },
+ "thumbnail": {
+  "text": "‘তুমি তো বসে থাকো’",
+  "sub": "তিন দিন পর"
+ }
+}

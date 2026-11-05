@@ -731,6 +731,54 @@
    "relation": "woman motorbike rider / father / passenger",
    "set": "street",
    "hook": "daughter earns as a ride-share biker; father is ashamed; on a strike morning with no transport she takes him to his doctor's appointment"
+  },
+  {
+   "id": "093",
+   "book": "The Art of Worldly Wisdom",
+   "item": "A man of integrity",
+   "relation": "phone repairman / his friend / customer's father",
+   "set": "shop",
+   "hook": "a repairman refuses his friend's urge to browse a college girl's unlocked phone and puts up a privacy promise; later a father brings all his family's phones to him after hearing of leaks elsewhere"
+  },
+  {
+   "id": "094",
+   "book": "Games People Play",
+   "item": "Harried",
+   "relation": "husband / homemaker wife / daughter",
+   "set": "home",
+   "hook": "husband says his wife 'sits at home'; she visits her parents for 3 days for the first time in 12 years; he runs the house, writes a list of her invisible work and pins it on the fridge"
+  },
+  {
+   "id": "095",
+   "book": "The Psychology of Money",
+   "item": "Compounding: the most powerful force",
+   "relation": "garment worker / new young worker / colleague",
+   "set": "shop",
+   "hook": "garment worker starts a 500-taka monthly deposit at her first job while colleagues laugh; ten years later it rebuilds her mother's roof before monsoon; she teaches a new girl"
+  },
+  {
+   "id": "096",
+   "book": "The Social Contract",
+   "item": "The General Will",
+   "relation": "coastal shopkeeper / young woman / elder",
+   "set": "street",
+   "hook": "after a cyclone with no power for days, the only solar panel in the market belongs to a grocer who offers free phone charging by turn instead of charging fees"
+  },
+  {
+   "id": "097",
+   "book": "The Prince",
+   "item": "Whether it is better to be loved than feared",
+   "relation": "garment line chief / slow older operator / general manager",
+   "set": "shop",
+   "hook": "a shouting line chief is told to fire a slow 40-year-old operator; he notices she can barely see; a window seat and an eye camp take her output from 38 to 61"
+  },
+  {
+   "id": "098",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Halo Effect",
+   "relation": "new teacher / backbencher / front-bench parent",
+   "set": "street",
+   "hook": "teacher rotates seats weekly despite parents' protest; the 'failing' backbencher answers from the front bench—he had a hearing problem nobody noticed"
   }
  ]
 }

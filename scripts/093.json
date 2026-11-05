@@ -1,0 +1,419 @@
+{
+ "id": "093",
+ "status": "ready",
+ "title_bn": "আপনার ফোন, আপনার গোপনীয়তা",
+ "theme": "honesty",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "A man of integrity",
+  "title_bn": "কেউ না দেখলেও নীতি"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "sabbir": {
+   "name": "সাব্বির",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "father": {
+   "name": "হাসান সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাজশাহীর সাহেব বাজার। চার ফুট বাই পাঁচ ফুটের একটা দোকান। আরিফ দিনে সারায় পনেরোটা ফোন। প্রতিটা ফোনে একজন মানুষের *পুরো জীবন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "রাজশাহী, সাহেব বাজার",
+    "props": [
+     "signboard",
+     "sign:আরিফ মোবাইল কেয়ার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকান",
+       "value": "৪ × ৫ ফুট"
+      },
+      {
+       "label": "দিনে ফোন সারাই",
+       "value": "১৫টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দুপুরে এক কলেজছাত্রী একটা ফোন দিয়ে গেল। স্ক্রিন ভাঙা। তাড়াহুড়োয় পাসওয়ার্ডটাও *খুলে রেখে গেল*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "দোস্ত, পাসওয়ার্ড খোলা! দেখি না, গ্যালারিতে *কী আছে*। কেউ তো জানবে না।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "phone"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "না। ফোনটা আমারে বিশ্বাস কইরা দিয়া গেছে, *গ্যালারি* না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "আরে, সবাই দেখে! অর্ধেক দোকানে তো ছবি *কপি* কইরা রাখে।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "wave"
+    }
+   }
+  },
+  {
+   "say": "কথাটা মিথ্যা না। আরিফ জানে। এই বাজারেই শোনা যায়, কোন দোকান থেকে কার ছবি *বেরিয়ে গেছে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আরিফ ফোনটা উল্টে রাখল, স্ক্রিন নিচে। স্ক্রিন বদলানোর পুরো সময়টা ফোনটা ছিল *উল্টো*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় আরিফ একটা কাগজে বড় করে কিছু লিখল। তারপর টেপ দিয়ে লাগাল কাউন্টারের সামনে, *সবার চোখের সামনে*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "সেই সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:আরিফ মোবাইল কেয়ার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "এইসব লেইখা কাস্টমার পাবি? মানুষ দেখে *দাম*, নোটিশ না।",
+   "tone": "laughs",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "কাউন্টারের নোটিশ",
+     "lines": [
+      "আপনার ফোন, আপনার গোপনীয়তা",
+      "পাসওয়ার্ড লাগলে— আপনার সামনেই খুলব",
+      "গ্যালারি খোলা হয় না, কখনো না"
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন সপ্তাহ পর এক মধ্যবয়সী ভদ্রলোক এলেন। হাতে একটা ব্যাগ। ব্যাগে চারটা ফোন। *পুরো পরিবারের*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "তিন সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:আরিফ মোবাইল কেয়ার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "father",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "father",
+   "say": "আপনিই আরিফ? আমার মেয়ে বলছিল, আপনি ওর ফোন *উল্টা কইরা* সারাইছিলেন।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "hold"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আপনার মেয়ে… দেখছিল?",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "moods": {
+     "arif": "surprised"
+    },
+    "arms": {
+     "arif": "down"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "দোকানের কাচ দিয়া দেখছিল। আর গত সপ্তাহে ওর এক বান্ধবীর ছবি ছড়াইছে, *অন্য এক দোকান থেকে*। মেয়েটা এখন কলেজে যায় না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "talk"
+    }
+   }
+  },
+  {
+   "say": "দোকানে নীরবতা। সাব্বির মাথা নিচু করে ফেলল। তিন সপ্তাহ আগের সেই দুপুর। একটা উল্টে রাখা ফোন। একটা *না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "আজ থেকে আমাদের পরিবারের সব ফোন আপনার কাছে। আর আমার অফিসের *বত্রিশজনের*ও।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "point"
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "দোস্ত, সেদিন যদি তুই দেখতি… আর কোনোদিন যদি *বাইর হইত*…",
+   "tone": "sad",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন নিয়মিত কাস্টমার",
+       "value": "৩২ জন"
+      },
+      {
+       "label": "নোটিশের পর বিক্রি",
+       "value": "দ্বিগুণ"
+      }
+     ]
+    },
+    "set": "shop",
+    "light": "evening",
+    "chip": "সেই সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:আরিফ মোবাইল কেয়ার",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "sabbir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sabbir": "down"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "দেখি নাই বইলাই আজকে মাথা উঁচা কইরা কথা কইতে পারতেছি। তুইও পারবি। নোটিশটা *তোর দোকানেও* লাগা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "talk"
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে সাহেব বাজারে আরও চারটা দোকানে একই নোটিশ। কারও হাতের লেখা সুন্দর, কারওটা কাঁচা। *কথাটা এক*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আরিফের দোকানে এখন সবচেয়ে বেশি আসেন মেয়েরা আর তাঁদের মায়েরা। কাউন্টারে ফোন রেখে তাঁরা বলেন— *‘উল্টা কইরা রাইখেন, ভাই।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পাসওয়ার্ড খোলা থাকলেও… *নীতি বন্ধ রাখতে হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পাসওয়ার্ড খোলা থাকলেও…",
+    "line2": "নীতি\nবন্ধ রাখতে হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মোবাইল সারাতে দিয়ে গেল কলেজের মেয়ে, বন্ধু বলল ‘দেখি তো কী আছে’… আরিফ যা করল 📱",
+  "description": "রাজশাহীর সাহেব বাজারে আরিফের ছোট্ট মোবাইল সারাইয়ের দোকান। এক কলেজছাত্রী ফোন দিয়ে গেল, পাসওয়ার্ড খুলে। দোকানের বন্ধু সাব্বির হাসতে হাসতে বলল— দেখি তো গ্যালারিতে কী আছে। আরিফ ফোনটা ঘুরিয়ে রাখল, তারপর…",
+  "tags": [
+   "সততার গল্প",
+   "মোবাইল সার্ভিসিং",
+   "গোপনীয়তা",
+   "সাইবার নিরাপত্তা",
+   "রাজশাহী",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সচেতনতার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ফোনের পাসওয়ার্ড খোলা ছিল। আরিফের নীতি বন্ধ ছিল না। 📱\nফোন সারাতে দেওয়ার আগে তুমি কী কী সাবধানতা নাও? 👇 #সচেতনতা #মোবাইল"
+ },
+ "thumbnail": {
+  "text": "পাসওয়ার্ড খোলা",
+  "sub": "দেখবে কি?"
+ }
+}
