@@ -1307,6 +1307,54 @@
    "relation": "brother / sister / mother",
    "set": "home",
    "hook": "siblings fought over the TV remote for 20 years; at her wedding farewell he gives her the old remote wrapped as a gift with a note; the empty sofa side after she leaves"
+  },
+  {
+   "id": "165",
+   "book": "The Righteous Mind",
+   "item": "The hive switch: moments that bond",
+   "relation": "Dubai labourer father / wife / teenage son",
+   "set": "street",
+   "hook": "wife and son secretly save two years for visit visas and surprise the father at his labour camp gate on his 50th birthday"
+  },
+  {
+   "id": "166",
+   "book": "The Psychology of Money",
+   "item": "Compounding: the eighth wonder",
+   "relation": "little girl / grandmother / cousin",
+   "set": "home",
+   "hook": "at Eid a 9-year-old spends her salami on a goat kid with her grandmother while cousins buy toys; in three years the herd grows to seven and pays her school fees and her grandmother's spectacles"
+  },
+  {
+   "id": "167",
+   "book": "The Open Society and Its Enemies",
+   "item": "Education as the key to an open society",
+   "relation": "garment worker mother / teenage daughter / night-school teacher",
+   "set": "shop",
+   "hook": "a 38-year-old garment worker joins a workers' night school; her daughter teases, then becomes her tutor; both pass their exams the same year"
+  },
+  {
+   "id": "168",
+   "book": "The Art of War",
+   "item": "The truce: when to stop fighting",
+   "relation": "daughter / separated father / separated mother",
+   "set": "home",
+   "hook": "parents separated for ten years; relatives schedule them apart at her wedding; she asks both for just one photo together; they stand side by side for her"
+  },
+  {
+   "id": "169",
+   "book": "The Wealth of Nations",
+   "item": "Fair dealing builds lasting trade",
+   "relation": "rental broker / newly-wed couple",
+   "set": "home",
+   "hook": "a broker tells a young couple the cheap ground-floor flat floods in monsoon despite the landlord's instruction, losing his commission; they refer many clients later"
+  },
+  {
+   "id": "170",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocation: small gifts, big returns",
+   "relation": "sanitation worker / small boy / worker's daughter",
+   "set": "stairs",
+   "hook": "a boy sticks a daily thank-you note on the trash bag for the waste collector; after two years the collector's daughter passes HSC and the family brings sweets to the boy"
   }
  ]
 }

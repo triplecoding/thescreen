@@ -1,0 +1,422 @@
+{
+ "id": "166",
+ "status": "ready",
+ "title_bn": "সালামির ছাগল",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Compounding: the eighth wonder",
+  "title_bn": "একটু একটু করে বাড়া"
+ },
+ "cast": {
+  "tuli": {
+   "name": "তুলি",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "nanu": {
+   "name": "নানু",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "cousin": {
+   "name": "কাজিন রাফি",
+   "type": "child_boy",
+   "skin": "light",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "kid",
+   "voice": "child_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "বগুড়ায় নানুর বাড়ি, ঈদের দিন। দুপুরের মধ্যে নয় বছরের তুলির হাতে সালামি *দুই হাজার পাঁচশো টাকা*। কাজিনরা তখনই ছুটল মেলায়।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বগুড়া, নানুর বাড়ি, ঈদের দিন",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tuli",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "cousin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তুলির ঈদ সালামি",
+       "value": "২,৫০০ টাকা"
+      },
+      {
+       "label": "কাজিনদের সালামি",
+       "value": "খেলনায় শেষ, ২ ঘণ্টায়",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "cousin",
+   "say": "তুলি, চল! খেলনা বন্দুক, বেলুন, চিপস! টাকা রাইখা *কী করবি*?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "cousin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "cousin": "hold"
+    }
+   }
+  },
+  {
+   "say": "তুলি টাকাটা মুঠো করে দাঁড়িয়ে রইল। তারপর মেলায় না গিয়ে গেল উঠানে, নানুর কাছে। নানু তখন *ছাগলকে কাঁঠালপাতা* দিচ্ছেন।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "নানু, এই টাকায় এমন কিছু কেনা যায়, যেটা খেলনার মতো *ভাঙে না*?",
+   "tone": "curious",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "উঠান",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "tuli",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tuli": "hold"
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "যায়। চল, একটা ছাগলছানা কিনি। তুই রোজ পাতা দিবি, আমি পানি দিমু। এক বছরে বড় হইবো, তারপর *বাচ্চা দিবো*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nanu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "নানু, ছাগল কি খেলনার চেয়ে *বেশি মজা*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuli": "hold"
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "খেলনা তোরে চিনবো না। ছাগল তোরে চিনবো। ডাক দিলে *দৌড়াইয়া* আসবো।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nanu": "talk"
+    }
+   }
+  },
+  {
+   "say": "মেলা থেকে ফিরে কাজিনরা দেখল তুলির হাতে দড়ি। দড়ির মাথায় একটা ছোট্ট সাদা ছাগলছানা। সবাই হাসল। *সালামির ছাগল*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম বছর তুলির কাজ",
+   "card": {
+    "title": "প্রতিদিন, স্কুলের পর",
+    "items": [
+     {
+      "t": "কাঁঠালপাতা জোগাড়",
+      "mark": "x"
+     },
+     {
+      "t": "বৃষ্টিতে ছাগল ঘরে তোলা",
+      "mark": "x"
+     },
+     {
+      "t": "নানুকে ফোন— ‘রানী কেমন আছে?’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক বছর পর পরের ঈদ। তুলির ছাগলছানা এখন বড়, নাম রানী। আর তার পাশে *দুইটা নতুন বাচ্চা*। কাজিনদের খেলনা বন্দুক তখন কোথায়, কেউ জানে না।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "এক বছর পর, ঈদ",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "tuli",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "nanu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রানী",
+       "value": "বড় হয়েছে"
+      },
+      {
+       "label": "প্রথম বাচ্চা",
+       "value": "২টা"
+      },
+      {
+       "label": "কাজিনদের খেলনা",
+       "value": "সব ভাঙা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "cousin",
+   "say": "তুলি, তোর একটা ছাগল থেকে *তিনটা* হইয়া গেছে? আমার সালামি তো খালি চিপস হইছিল!",
+   "scene": {
+    "cam": "wide",
+    "moods": {
+     "cousin": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "এইবারের সালামিও দিমু রানীর জন্য। আর তুই চাইলে, তোর সালামি দিয়া একটা *তোর নামেও* কিনি।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuli": "hold"
+    }
+   }
+  },
+  {
+   "say": "তিন বছর পর। একটা ছাগলছানা থেকে সাতটা ছাগল। দুইটা বিক্রি হলো, ষোলো হাজার টাকা। তুলি টাকাটা ভাগ করল *দুই ভাগে*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "তিন বছর পর",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tuli",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "৩ বছরে ছাগল",
+       "from": "১",
+       "value": "৭টা"
+      },
+      {
+       "label": "দুইটা বিক্রি",
+       "value": "১৬,০০০ টাকা"
+      },
+      {
+       "label": "খরচ",
+       "value": "তুলির স্কুলের বেতন + নানুর চশমা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "নানু, অর্ধেক দিয়া আমার স্কুলের বেতন। আর অর্ধেক দিয়া *আপনার নতুন চশমা*। আপনি তো পাতা কাটতে গিয়া চোখে দেখেন না।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuli": "talk"
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "পাগলি… এই চশমা দিয়া আমি *তোর বিয়া পর্যন্ত* দেখমু।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nanu": "hold"
+    }
+   }
+  },
+  {
+   "say": "আর এবারের ঈদে কাজিন রাফি নিজের সালামি নিয়ে এল তুলির কাছে। খেলনার দোকানে না। জিজ্ঞেস করল একটাই প্রশ্ন— *একটা ছাগলছানা কত*?",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানুর উঠানে এখন একটা ছোট খোঁয়াড়। গায়ে একটা টিনের প্লেট, তুলির রং করা— *‘সালামির খামার। সদস্য: ৩ জন কাজিন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খেলনা এক দিনের আনন্দ… *যত্ন করলে টাকা বাড়ে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "খেলনা এক দিনের আনন্দ…",
+    "line2": "যত্ন করলে\nটাকা বাড়ে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ঈদের সালামির ২,৫০০ টাকায় কাজিনরা কিনল খেলনা, ৯ বছরের তুলি নানুর সাথে কিনল একটা ছাগলছানা 🐐",
+  "description": "ঈদের সালামি পেয়ে কাজিনরা ছুটল বাজারে— খেলনা বন্দুক, চিপস, বেলুন। নয় বছরের তুলি দুই হাজার পাঁচশো টাকা নিয়ে গেল নানুর কাছে। নানু বললেন, চল, একটা ছাগলছানা কিনি। কাজিনরা হাসল। তিন বছর পর…",
+  "tags": [
+   "ঈদ সালামি",
+   "সঞ্চয়",
+   "ছাগল পালন",
+   "নানুর গল্প",
+   "গ্রামের গল্প",
+   "টাকার গল্প",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ঈদের সালামিতে সবাই কিনেছিল খেলনা। তুলি কিনেছিল একটা ছাগলছানা। তিন বছর পর সেই ছাগলছানা হয়ে গেল সাতটা ছাগল। 🐐\nছোটবেলায় ঈদের সালামি দিয়ে তুমি কী করতে? 👇 #ঈদসালামি #সঞ্চয়"
+ },
+ "thumbnail": {
+  "text": "সালামির ২,৫০০",
+  "sub": "একটা ছাগলছানা"
+ }
+}
