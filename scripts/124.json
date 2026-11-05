@@ -1,0 +1,387 @@
+{
+ "id": "124",
+ "status": "ready",
+ "title_bn": "ব্যাংকের কাউন্টারে এক বৃদ্ধ",
+ "theme": "work",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "System 1 and System 2: slow down the hurried mind",
+  "title_bn": "তাড়ার মধ্যে থামা"
+ },
+ "cast": {
+  "priya": {
+   "name": "প্রিয়া",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "mokhles": {
+   "name": "মোখলেস সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "manager": {
+   "name": "ম্যানেজার",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "সিলেটের এক ব্যাংক, দুপুর একটা। ক্যাশ কাউন্টার তিনে প্রিয়া। লাইনে তেইশজন। ম্যানেজারের নির্দেশ— *দ্রুত*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সিলেট, ব্যাংকের শাখা, দুপুর",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ক্যাশ কাউন্টার ৩"
+    ],
+    "chars": [
+     {
+      "id": "priya",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লাইনে",
+       "value": "২৩ জন"
+      },
+      {
+       "label": "প্রিয়ার টার্গেট",
+       "value": "প্রতি গ্রাহক ৪ মিনিট"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পঁচাত্তর বছরের মোখলেস সাহেব কাউন্টারে এলেন। কানে মোবাইল, হাত কাঁপছে। চেক বই খুলে লিখলেন— *আট লাখ টাকা*। পুরো অ্যাকাউন্ট।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ক্যাশ কাউন্টার ৩"
+    ],
+    "chars": [
+     {
+      "id": "mokhles",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "priya",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mokhles",
+   "say": "মা, তাড়াতাড়ি দেন। আমার নাতি বিপদে। *এক ঘণ্টার মধ্যে* টাকা লাগবো।",
+   "scene": {
+    "cam": {
+     "focus": "mokhles",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mokhles": "worried"
+    },
+    "arms": {
+     "mokhles": "call"
+    }
+   }
+  },
+  {
+   "say": "প্রিয়া চেকটা দেখল। সই ঠিক। টাকা আছে। নিয়ম বলে, দিয়ে দাও। কিন্তু লোকটার কানের মোবাইল থেকে একটা তাড়া দেওয়া গলা আসছে, *একটানা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "priya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "priya",
+   "say": "চাচা, ফোনটা একটু রাখেন। এক মিনিট। আপনার নাতির *নাম কী*? কোথায় থাকে?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "priya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "priya": "talk"
+    }
+   }
+  },
+  {
+   "voice": "mokhles",
+   "say": "রাফি। ঢাকায়, পড়ে। ফোনে এক ভদ্রলোক কইলেন, রাফি এক্সিডেন্ট করছে, পুলিশ ধরছে। টাকা না দিলে *জেলে* দিবো। রাফি নিজেও কানতেছিল ফোনে।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "mokhles",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokhles": "call"
+    }
+   }
+  },
+  {
+   "say": "প্রিয়ার মনে পড়ল গত মাসের ব্যাংকের সতর্কবার্তা। একই গল্প। নাতি, এক্সিডেন্ট, পুলিশ, *এক ঘণ্টা*। আর একটা ফোন যেটা কাটতে দেয় না।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "priya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "প্রিয়া, কী সমস্যা? চেক ঠিক থাকলে দিয়া দাও। *লাইন* দেখো।",
+   "tone": "annoyed",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "একই সময়",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ক্যাশ কাউন্টার ৩"
+    ],
+    "chars": [
+     {
+      "id": "manager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "priya",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "manager": "point"
+    }
+   }
+  },
+  {
+   "voice": "priya",
+   "say": "স্যার, দুই মিনিট দেন। আমার মনে হয় উনি *প্রতারকের* ফোনে আছেন।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "priya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "priya": "talk"
+    }
+   }
+  },
+  {
+   "voice": "priya",
+   "say": "চাচা, রাফির নিজের নাম্বারটা দেন। ওই ফোনটা কাটেন, আমার ফোন থেকে *রাফিরে* সরাসরি দেই।",
+   "tone": "gently",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মিনিট",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ক্যাশ কাউন্টার ৩"
+    ],
+    "chars": [
+     {
+      "id": "mokhles",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "priya",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "priya": "phone"
+    }
+   }
+  },
+  {
+   "say": "মোখলেস সাহেব দ্বিধায়। ফোনের গলাটা বলছে, ফোন কাটলে নাতির ক্ষতি হবে। প্রিয়া শান্ত গলায় শুধু বলল— *আমি পাশে আছি, চাচা*।"
+  },
+  {
+   "say": "তিনি ফোন কাটলেন। প্রিয়া রাফির নাম্বারে ফোন দিল। দুইবার রিং। তারপর একটা ঘুমঘুম গলা— *হ্যালো? নানা?*",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "mokhles",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mokhles",
+   "say": "রাফি? তুই… তুই ঠিক আছস? *জেলে* না?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "mokhles",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokhles": "face"
+    }
+   }
+  },
+  {
+   "say": "রাফি হোস্টেলের রুমে দুপুরে ঘুমাচ্ছিল। কোনো এক্সিডেন্ট নেই, পুলিশ নেই। ফোনের ‘কান্নার গলা’ ছিল *অন্য কারও*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "প্রিয়া, আমি তাড়া দিছিলাম। তুমি থামছিলা। আজকে থেকে নতুন নিয়ম— বয়স্ক কেউ হঠাৎ বড় টাকা তুলতে চাইলে, *পরিবারকে ফোন*। দুই মিনিট।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "বিকেল",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — ক্যাশ কাউন্টার ৩"
+    ],
+    "chars": [
+     {
+      "id": "manager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "priya",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "manager": "talk"
+    }
+   }
+  },
+  {
+   "voice": "mokhles",
+   "say": "মা, তুমি দুই মিনিট দেরি করছিলা। ওই দুই মিনিটে আমার *বাকি জীবনটা* বাঁচাইছো।",
+   "tone": "warmly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ক্যাশ কাউন্টার তিনের কাচে এখন একটা ছোট কাগজ, প্রিয়ার হাতে লেখা— *‘কেউ তাড়া দিলে, আগে থামুন। তারপর ফোন করুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "প্রতারক বেঁচে থাকে তাড়ার ওপর… *দুই মিনিট থামলেই সে হারে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "প্রতারক বেঁচে থাকে তাড়ার ওপর…",
+    "line2": "দুই মিনিট থামলেই\nসে হারে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সারাজীবনের সঞ্চয় ৮ লাখ তুলতে এলেন বৃদ্ধ, কানে ফোন… ক্যাশিয়ার প্রিয়া থামালেন 🏦",
+  "description": "সিলেটের এক ব্যাংকে পঁচাত্তর বছরের মোখলেস সাহেব এলেন সারাজীবনের সঞ্চয় আট লাখ টাকা তুলতে। হাত কাঁপছে, মোবাইল কানে। কেউ একজন ফোনে বলছে— তাড়াতাড়ি, নাতি বিপদে। ক্যাশিয়ার প্রিয়ার সামনে লাইন, ম্যানেজার বলছেন দ্রুত করো। প্রিয়া একটা প্রশ্ন করল…",
+  "tags": [
+   "ব্যাংকের গল্প",
+   "প্রতারণা",
+   "সচেতনতা",
+   "বয়স্কদের সুরক্ষা",
+   "সিলেট",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "লাইন লম্বা, নিয়ম ছিল দ্রুত টাকা দেওয়া। প্রিয়া থামল দুই মিনিট— আর বাঁচাল একজন বৃদ্ধের আট লাখ টাকা। 🏦\nতোমার পরিবারের বয়স্কদের কি ফোন প্রতারণা নিয়ে সাবধান করেছ? 👇 #সচেতনতা #ব্যাংক"
+ },
+ "thumbnail": {
+  "text": "৮ লাখ তুলতে চান",
+  "sub": "ফোন কানে"
+ }
+}

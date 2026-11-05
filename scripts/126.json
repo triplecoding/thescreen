@@ -1,0 +1,394 @@
+{
+ "id": "126",
+ "status": "ready",
+ "title_bn": "খামটা নিলেন না নতুন ইঞ্জিনিয়ার",
+ "theme": "honesty",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Corruption needs silent accomplices",
+  "title_bn": "চুপ থাকলে দুর্নীতি বাঁচে"
+ },
+ "cast": {
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "thikadar": {
+   "name": "ঠিকাদার মজনু",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "villager": {
+   "name": "কৃষক রহমত চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "এক উপজেলা অফিস। নতুন সহকারী প্রকৌশলী তানভীর, বয়স ছাব্বিশ। টেবিলে একটা ফাইল— গ্রামের দুই কিলোমিটারের রাস্তা। কাজ শেষ। *বিল পাসের অপেক্ষা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "উপজেলা প্রকৌশলীর অফিস",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তানভীরের চাকরি",
+       "value": "৪ মাস"
+      },
+      {
+       "label": "রাস্তা",
+       "value": "২.৩ কিলোমিটার, গ্রামের"
+      },
+      {
+       "label": "বাজেট",
+       "value": "৮৭ লাখ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পরিদর্শনে গিয়ে তানভীর তিন জায়গায় রাস্তা খোঁড়ালেন। ইটের নিচে বালুর স্তর থাকার কথা ছয় ইঞ্চি। আছে *তিন ইঞ্চি*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "রাস্তা পরিদর্শন",
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "villager",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "villager",
+   "say": "স্যার, আগের রাস্তাটাও এই ঠিকাদারের আছিল। এক বর্ষায় শেষ। আমার ধান হাটে নিতে পারি নাই, *ভ্যান উল্টাইছিল*।",
+   "tone": "softly",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "তানভীরের মাপ",
+     "lines": [
+      "নকশায় বালুর স্তর: ৬ ইঞ্চি",
+      "বাস্তবে: ৩ ইঞ্চি",
+      "ফল: প্রথম বর্ষাতেই ধসবে"
+     ]
+    },
+    "cam": {
+     "focus": "villager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "villager": "down"
+    }
+   }
+  },
+  {
+   "voice": "thikadar",
+   "say": "ইঞ্জিনিয়ার সাহেব, আপনি নতুন মানুষ। এইটা রাখেন, পঞ্চাশ হাজার। সবাই রাখে। বিলটা *পাস* কইরা দেন।",
+   "tone": "warmly",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "সেই বিকেল, অফিস",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "thikadar",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "thikadar": "hold"
+    }
+   }
+  },
+  {
+   "say": "খামটা টেবিলে। পঞ্চাশ হাজার। তানভীরের বেতনের প্রায় দ্বিগুণ। আর অফিসের পুরোনো একজন আগেই বলে দিয়েছে— *না নিলে বদলি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তানভীরের সামনে যা ছিল",
+   "card": {
+    "title": "নেওয়ার যুক্তিগুলো",
+    "items": [
+     {
+      "t": "সবাই নেয়",
+      "mark": "x"
+     },
+     {
+      "t": "না নিলে বদলি",
+      "mark": "x"
+     },
+     {
+      "t": "একা সৎ থেকে কী বদলাবে?",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "খামটা ফেরত নেন, মজনু সাহেব। আর বালু ছয় ইঞ্চি না হওয়া পর্যন্ত বিল *পাস হবে না*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "down"
+    }
+   }
+  },
+  {
+   "voice": "thikadar",
+   "say": "নতুন আইছেন তো, এই জন্য। ছয় মাস পর দেখবেন, আপনিও *রাখবেন*। না রাখলে… এইখানে থাকতে পারবেন না।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "thikadar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "thikadar": "point"
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "থাকি না থাকি, এই রাস্তা দিয়া রহমত চাচার ধান যাবে। ওইটা ধসলে আমার *সইটা* থাকবে ফাইলে। আমি সেই সই দিতে পারব না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "talk"
+    }
+   }
+  },
+  {
+   "say": "তানভীর লিখিত প্রতিবেদন দিলেন ছবিসহ, মাপসহ। গ্রামের মানুষ সাক্ষী দিল। আর পরের মাসে ঠিকাদারকে রাস্তার অর্ধেক *আবার বানাতে* হলো, নিজের খরচে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের মাস",
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "villager",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বর্ষা গেল। পাশের ইউনিয়নের রাস্তা ধসে গেছে তিন জায়গায়। আর এই রাস্তা দিয়ে রহমত চাচার ভ্যান যাচ্ছে হাটে, *ধান ভর্তি*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বালুর স্তর",
+       "from": "৩",
+       "value": "৬ ইঞ্চি"
+      },
+      {
+       "label": "ঠিকাদারের অতিরিক্ত খরচ",
+       "value": "নিজের"
+      },
+      {
+       "label": "তানভীর",
+       "value": "বদলি হয়নি"
+      }
+     ]
+    },
+    "set": "street",
+    "light": "day",
+    "chip": "বর্ষার পর",
+    "chars": [
+     {
+      "id": "villager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "villager",
+   "say": "স্যার, এইবার ভ্যান উল্টায় নাই! ধান হাটে, দামও পাইছি। আপনার *খামটা না নেওয়ার* দাম এইটা।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "villager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "villager": "wave"
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "চাচা, খাম নিলে আজকে আপনার সামনে দাঁড়াইতে পারতাম না। এইটুকুই *আমার লাভ*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "down"
+    }
+   }
+  },
+  {
+   "say": "রাস্তার শুরুতে এখন একটা ছোট সাইনবোর্ড, গ্রামবাসীর বানানো— *‘ছয় ইঞ্চি বালুর রাস্তা। খাম ছাড়া বানানো।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খাম নিলে এক মাসের বেতন… *না নিলে সারাজীবনের মাথা উঁচু*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "খাম নিলে এক মাসের বেতন…",
+    "line2": "না নিলে সারাজীবনের\nমাথা উঁচু।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘বিলটা পাস কইরা দেন’— টেবিলে ৫০ হাজারের খাম… নতুন ইঞ্জিনিয়ার যা করলেন 🛣️",
+  "description": "উপজেলায় নতুন সহকারী প্রকৌশলী তানভীর, বয়স ছাব্বিশ। গ্রামের রাস্তার কাজ শেষ, এখন বিল পাসের পালা। কিন্তু খুঁড়ে দেখা গেল, ইটের নিচে যে বালু থাকার কথা, তার অর্ধেক নেই। ঠিকাদার টেবিলে রাখলেন একটা খাম…",
+  "tags": [
+   "সততার গল্প",
+   "দুর্নীতি",
+   "ঘুষ",
+   "গ্রামের রাস্তা",
+   "ইঞ্জিনিয়ার",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সৎ মানুষ"
+  ]
+ },
+ "facebook": {
+  "caption": "খামে পঞ্চাশ হাজার, রাস্তায় অর্ধেক বালু। তানভীর খামটা ফেরত দিলেন, আর রাস্তাটা আবার বানানো হলো। 🛣️\nঘুষ ফিরিয়ে দেওয়ার মতো সাহসী কাউকে কি তুমি চেনো? 👇 #সততা #দুর্নীতি"
+ },
+ "thumbnail": {
+  "text": "৫০ হাজারের খাম",
+  "sub": "অর্ধেক বালু"
+ }
+}

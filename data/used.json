@@ -971,6 +971,54 @@
    "relation": "grumpy old neighbour / teenage batsman / small boy",
    "set": "street",
    "hook": "lane cricket breaks the grumpy neighbour's window for the third time; the batsman stays, apologises and pays from savings; he learns the old man once captained a club; he becomes their umpire"
+  },
+  {
+   "id": "123",
+   "book": "The Social Contract",
+   "item": "Man is born free, yet everywhere in chains",
+   "relation": "groom teacher / bride's father / groom's mother",
+   "set": "home",
+   "hook": "groom discovers on the wedding day that his mother demanded a motorbike and the bride's father mortgaged land; he returns the envelope publicly on the stage"
+  },
+  {
+   "id": "124",
+   "book": "Thinking, Fast and Slow",
+   "item": "System 1 and System 2: slow down the hurried mind",
+   "relation": "bank cashier / elderly customer / branch manager",
+   "set": "shop",
+   "hook": "an old man rushes to withdraw his 8-lakh savings while a caller says his grandson is in trouble; the cashier slows down, asks a question and calls the family; it's a scam"
+  },
+  {
+   "id": "125",
+   "book": "The Social Contract",
+   "item": "The social pact: each gives, all receive",
+   "relation": "widowed mother / elder son / daughter",
+   "set": "home",
+   "hook": "after the father's death three siblings argue who must take their mother; she says she wants to stay in her own house and asks them to come to her by monthly turns"
+  },
+  {
+   "id": "126",
+   "book": "The Dictator's Handbook",
+   "item": "Corruption needs silent accomplices",
+   "relation": "young upazila engineer / contractor / farmer",
+   "set": "shop",
+   "hook": "a new engineer finds a village road built with half the specified sand; the contractor offers a bribe envelope; he refuses, makes him rebuild it, and the road survives the monsoon"
+  },
+  {
+   "id": "127",
+   "book": "The Righteous Mind",
+   "item": "The hive switch: we are groupish",
+   "relation": "migrant camp cook / first-Eid worker / roommate",
+   "set": "home",
+   "hook": "in a Dubai labour camp with duty on Eid day, the camp cook wakes at 3 am to make vermicelli for 400 men; homesick workers video-call home with bowls in hand"
+  },
+  {
+   "id": "128",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Know your beginnings",
+   "relation": "son / father / mother",
+   "set": "home",
+   "hook": "son wears his father's 30-year-old shirt to his first interview and finds the father's own first appointment letter as a clerk in the pocket; after getting the job he buys the father a new shirt and keeps the old one"
   }
  ]
 }

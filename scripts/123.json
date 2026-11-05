@@ -1,0 +1,407 @@
+{
+ "id": "123",
+ "status": "ready",
+ "title_bn": "বিয়ের মঞ্চে ফেরত খাম",
+ "theme": "money",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Man is born free, yet everywhere in chains",
+  "title_bn": "সমাজের শিকল ভাঙা"
+ },
+ "cast": {
+  "shakil": {
+   "name": "শাকিল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2C14E",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "father": {
+   "name": "কনের বাবা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "teep": true,
+   "voice": "man"
+  },
+  "ma": {
+   "name": "শাকিলের মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "পাবনা। স্কুলশিক্ষক শাকিলের বিয়ের দিন সকাল। চাচাতো ভাই ফিসফিস করে বলল একটা কথা। শাকিল প্রথমে বিশ্বাস করেনি, তারপর *ফোন দিয়ে* নিশ্চিত হলো।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পাবনা, বিয়ের দিন সকাল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাওয়া",
+       "value": "মোটরসাইকেল"
+      },
+      {
+       "label": "দাম",
+       "value": "২,৪০,০০০ টাকা"
+      },
+      {
+       "label": "কনের বাবা",
+       "value": "জমি বন্ধক",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মা কনের বাবার কাছে চেয়েছেন একটা মোটরসাইকেল। ‘ছেলে স্কুলে যাবে কীভাবে?’ আর কনের বাবা জমি বন্ধক রেখে দিয়েছেন *দুই লাখ চল্লিশ হাজার*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আম্মা, আপনি মোটরসাইকেল *চাইছেন*? আমারে না জানাইয়া?",
+   "tone": "upset",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "মায়ের ঘর",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "shakil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "চাই নাই, ওরা খুশি হইয়া দিছে। সবাই দেয়। তোর বড় ভাইয়ের বিয়াতে কী দিছিল ভুইলা গেছস? এইটা *নিয়ম*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "hold"
+    }
+   }
+  },
+  {
+   "say": "বিকেলে বিয়ের মঞ্চ। দুই গ্রামের মানুষ। শাকিলের হাতে একটা খাম, যেটা দুপুরে মায়ের আলমারি থেকে নিয়েছে। *না বলে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কনের বাড়ি, বিয়ের মঞ্চ",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "father",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "কাজি সাহেব, বিয়া পড়ানোর আগে আমি *দুইটা কথা* কইতে চাই।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "say": "কনের বাবার মুখ সাদা হয়ে গেল। মঞ্চে বর মাইক চাইলে সাধারণত একটা কথাই হয়— *আরও কিছু চাই*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "চাচা, এই খামে আপনার জমি বন্ধকের টাকা। মোটরসাইকেলের টাকা। এইটা আমি নিতে পারব না। *ফেরত নেন*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "hold"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "বাবা… আমি তো… খুশি হইয়া *দিছিলাম*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "down"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "চাচা, আমি স্কুলে পোলাপানরে পড়াই, যৌতুক অন্যায়। কাল যদি ওরা জানে ওদের স্যার জমি বন্ধকের টাকায় বাইক চালায়, *আমি কোন মুখে* ক্লাসে দাঁড়াব?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "say": "মঞ্চের চারপাশ চুপ। তারপর পেছন থেকে কেউ হাততালি দিল। তারপর আরেকজন। তারপর *পুরো উঠান*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "সবার সামনে আমার মান রাখলি না, শাকিল।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "একই সন্ধ্যা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shakil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "ma": "down"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আম্মা, আপনার মান রাখছি। আজকে সবাই বলতেছে, *শাকিলের মা* কেমন ছেলে মানুষ করছে। খুশি হন।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "say": "মা অনেকক্ষণ চুপ। তারপর উঠে গেলেন কনের মায়ের কাছে। কী বললেন কেউ শোনেনি। শুধু দেখা গেল, দুই মা *জড়িয়ে ধরে কাঁদছেন*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর শাকিল স্কুলে যায় বাইসাইকেলে। আর তার শ্বশুর, সেই বর্গাচাষি, জমি ছাড়িয়ে নিয়ে প্রথম ধান তুলে পাঠিয়েছেন *এক বস্তা চাল*। জামাইয়ের জন্য।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "school_gate",
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "যৌতুক",
+       "from": "২,৪০,০০০",
+       "value": "০"
+      },
+      {
+       "label": "কনের বাবার জমি",
+       "value": "ফেরত"
+      },
+      {
+       "label": "শাকিলের বাহন",
+       "value": "বাইসাইকেল"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আব্বা কইছে, যৌতুক না। এইটা *খুশি হইয়া* দিছে। এইবার সত্যি সত্যি।",
+   "tone": "playfully",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "শাকিলের ক্লাসরুমের দেয়ালে এখন একটা কাগজ, ছাত্রদের লেখা— *‘আমাদের স্যার যৌতুক নেননি। আমরাও নেব না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে প্রথা মানুষকে বন্ধক রাখে… *তা ভাঙতে লাগে একজনের সাহস*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে প্রথা মানুষকে বন্ধক রাখে…",
+    "line2": "তা ভাঙতে লাগে\nএকজনের সাহস।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "কনের বাবা জমি বন্ধক রেখে দিলেন মোটরসাইকেলের টাকা, বর জানত না… বিয়ের মঞ্চে শাকিল খুলল একটা খাম 💍",
+  "description": "পাবনার স্কুলশিক্ষক শাকিলের বিয়ে। বিয়ের দিন সকালে সে জানল, মা কনের বাবার কাছে মোটরসাইকেল চেয়েছেন, আর কনের বাবা জমি বন্ধক রেখে দুই লাখ চল্লিশ হাজার টাকা দিয়েছেন। শাকিল কাউকে কিছু বলল না। বিয়ের মঞ্চে সে চাইল মাইকটা…",
+  "tags": [
+   "যৌতুক",
+   "বিয়ের গল্প",
+   "সামাজিক সচেতনতা",
+   "শিক্ষক",
+   "পাবনা",
+   "টাকার গল্প",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যৌতুকের খাম ফেরত দিল বর নিজেই, বিয়ের মঞ্চে, সবার সামনে। 💍\nতোমার দেখা কোনো বিয়েতে কেউ কি যৌতুকের বিরুদ্ধে দাঁড়িয়েছিল? 👇 #যৌতুক #বিয়ে"
+ },
+ "thumbnail": {
+  "text": "জমি বন্ধকের টাকা",
+  "sub": "বিয়ের মঞ্চে"
+ }
+}
