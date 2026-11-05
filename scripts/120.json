@@ -1,0 +1,402 @@
+{
+ "id": "120",
+ "status": "ready",
+ "title_bn": "ট্র্যাকস্যুটের ফুটবল দল",
+ "theme": "school",
+ "source": {
+  "book": "The 50th Law",
+  "author": "Robert Greene & 50 Cent",
+  "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Be fearless: turn shit into sugar",
+  "title_bn": "বাধাকে শক্তি বানানো"
+ },
+ "cast": {
+  "shathi": {
+   "name": "সাথী ম্যাডাম",
+   "type": "young_woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#2B2B2B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "rupa": {
+   "name": "রূপা",
+   "type": "teen_girl",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "chairman": {
+   "name": "রূপার আব্বা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঠাকুরগাঁওয়ের এক স্কুল। খেলার শিক্ষিকা সাথী ম্যাডাম বানালেন স্কুলের প্রথম *মেয়েদের ফুটবল দল*। আঠারোজন মেয়ে, একটা পুরোনো বল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঠাকুরগাঁও, স্কুল মাঠ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "shathi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেয়েদের দল",
+       "value": "১৮ জন"
+      },
+      {
+       "label": "অভিভাবকের আপত্তি",
+       "value": "১১ জন",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "chairman",
+   "say": "আমার মেয়ে হাফপ্যান্ট পইরা মাঠে দৌড়াইবো? গ্রামের মানুষ দেখবো। *কাল থেকে বন্ধ*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "পরের দিন, স্কুল অফিস",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "chairman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "shathi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "chairman": "angry"
+    },
+    "arms": {
+     "chairman": "point"
+    }
+   }
+  },
+  {
+   "say": "আরও দশজন অভিভাবক একই কথা বললেন। সাথী ম্যাডাম চুপচাপ শুনলেন। তারপর একটা প্রশ্ন করলেন, যেটা কেউ আশা করেনি।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "ভাই, আপত্তি কি খেলায়, নাকি *পোশাকে*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shathi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "chairman",
+   "say": "খেলা… খেলায় সমস্যা কী? আমিও তো খেলছি। *পোশাকে* সমস্যা।",
+   "scene": {
+    "cam": {
+     "focus": "chairman",
+     "zoom": 1.4
+    },
+    "moods": {
+     "chairman": "thinking"
+    },
+    "arms": {
+     "chairman": "down"
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "তাইলে পোশাক বদলাই, খেলা না। লম্বা ট্র্যাকস্যুট, ফুলহাতা জার্সি। যারা চায়, *হিজাবও*। চলবে?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shathi": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ট্র্যাকস্যুটের হিসাব",
+   "card": {
+    "title": "আঠারোজনের পোশাক",
+    "items": [
+     {
+      "t": "প্রতি সেট ৮০০ টাকা",
+      "mark": "x"
+     },
+     {
+      "t": "স্কুলের তহবিলে টাকা নাই",
+      "mark": "x"
+     },
+     {
+      "t": "সাথী ম্যাডাম দিলেন নিজের এক মাসের বেতন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক মাস পর মাঠে আঠারোটা মেয়ে। লম্বা ট্র্যাকস্যুট, ফুলহাতা লাল জার্সি। আর সবার আগে দৌড়াচ্ছে *রূপা*, সেই কড়া আব্বার মেয়ে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর, অনুশীলন",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "ম্যাডাম, ট্র্যাকস্যুটে দৌড়াইতে *আরও ভালো* লাগে! পায়ে কাঁটা লাগে না!",
+   "tone": "excited",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "মাঠের পাশ দিয়ে যাচ্ছিলেন রূপার আব্বা। থামলেন। মেয়ে একটা বল নিয়ে তিনজনকে কাটিয়ে গোল দিল। আব্বা *অজান্তেই* হাত মুঠো করলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মাঠের পাশে, বিকেল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "chairman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "shathi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "কী ভাই, এখনো *বন্ধ* করবেন?",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shathi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "chairman",
+   "say": "ম্যাডাম… ও আমার মতোই বাম পায়ে মারে। আমি *জানতামই না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "chairman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chairman": "down"
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "জানবেন কেমনে, ভাই? মেয়েরা তো কোনোদিন মাঠে নামার *সুযোগই* পায় নাই। পাইলে দেখবেন, অনেকের পায়েই আপনার মতো জোর।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shathi": "talk"
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর জেলা স্কুল ফুটবলের ফাইনাল। গ্যালারির সামনের সারিতে একজন মানুষ চিৎকার করছেন সবচেয়ে জোরে— *রূপা! বাম পা! বাম পা!*",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জেলা স্কুল প্রতিযোগিতা",
+       "value": "প্রথমবার অংশ"
+      },
+      {
+       "label": "প্রতিপক্ষ",
+       "value": "শহরের নামকরা স্কুল"
+      }
+     ]
+    },
+    "set": "street",
+    "light": "day",
+    "chip": "জেলা ফাইনাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "chairman",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "খেলার শেষ মিনিটে রূপার বাম পায়ের শট। গোল। গ্রামের স্কুল জিতল জেলা চ্যাম্পিয়নশিপ। আর রূপার আব্বা মাঠে নেমে মেয়েকে *কাঁধে তুললেন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "chairman",
+   "say": "আমার মাইয়া! আমার বাম পা! ম্যাডাম, সামনের বছর সব জার্সির টাকা *আমি দিমু*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "chairman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chairman": "wave"
+    }
+   }
+  },
+  {
+   "say": "স্কুলের অফিসে এখন একটা ট্রফি। পাশে একটা লাল ট্র্যাকস্যুট, ফ্রেমে বাঁধানো। নিচে লেখা— *‘আপত্তি ছিল পোশাকে। খেলায় না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘না’ শুনলে থেমে যাওয়া সহজ… *‘কিসে না’ জানলে রাস্তা খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘না’ শুনলে থেমে যাওয়া সহজ…",
+    "line2": "‘কিসে না’ জানলে\nরাস্তা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গ্রামের স্কুলে মেয়েদের ফুটবল দল, অভিভাবকরা বললেন ‘হাফপ্যান্টে মাঠে নামবে না’… তারপর ট্র্যাকস্যুট ⚽",
+  "description": "ঠাকুরগাঁওয়ের এক স্কুলে খেলার শিক্ষিকা সাথী ম্যাডাম বানালেন মেয়েদের ফুটবল দল। প্রথম দিনেই অভিভাবকরা আপত্তি করলেন— মেয়েরা হাফপ্যান্ট পরে মাঠে নামবে না। রূপার আব্বা সবচেয়ে কড়া। সাথী ম্যাডাম তর্ক না করে খুঁজলেন একটা মাঝামাঝি পথ…",
+  "tags": [
+   "মেয়েদের ফুটবল",
+   "স্কুলের গল্প",
+   "ঠাকুরগাঁও",
+   "নারী খেলোয়াড়",
+   "অভিভাবক",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "অভিভাবকদের আপত্তি ছিল পোশাকে, খেলায় না। সাথী ম্যাডাম সমস্যাটা ঠিক জায়গায় ধরলেন। ⚽\nতোমার এলাকায় মেয়েরা কি খেলাধুলায় সুযোগ পায়? কী বাধা দেখেছ? 👇 #মেয়েদেরফুটবল #স্কুল"
+ },
+ "thumbnail": {
+  "text": "হাফপ্যান্ট না",
+  "sub": "মেয়েদের দল"
+ }
+}

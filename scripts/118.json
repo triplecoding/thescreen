@@ -1,0 +1,436 @@
+{
+ "id": "118",
+ "status": "ready",
+ "title_bn": "কুয়েতফেরত হাফিজ চাচার ক্লাস",
+ "theme": "probashi",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "If you know the enemy and know yourself",
+  "title_bn": "যাওয়ার আগে জেনে যাও"
+ },
+ "cast": {
+  "hafiz": {
+   "name": "হাফিজ চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "teep": true,
+   "voice": "old_man"
+  },
+  "robiul": {
+   "name": "রবিউল",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "dalal": {
+   "name": "দালাল জাকির",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মাদারীপুরের এক বাজার। বাইশ বছর কুয়েতে মালির কাজ করে হাফিজ চাচা ফিরেছেন। এখন বাজারে একটা ছোট্ট *চায়ের দোকান*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মাদারীপুর, বাজারের চা দোকান",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল"
+    ],
+    "chars": [
+     {
+      "id": "hafiz",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হাফিজ চাচা কুয়েতে",
+       "value": "২২ বছর"
+      },
+      {
+       "label": "কাজ",
+       "value": "বাগানের মালি"
+      },
+      {
+       "label": "জমানো",
+       "value": "মাঝারি একটা বাড়ি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "চাচা, ভিসা পাইছি! ইতালি! জাকির ভাই কইছে, মাসে দুই লাখ টাকা বেতন। খালি *পাঁচ লাখ* দিতে হইবো, পরশু।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল"
+    ],
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "robiul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "ইতালি? কী কাজ? কোম্পানির নাম? *চুক্তিপত্র* দেখছস?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "hold"
+    }
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "চুক্তি গিয়া দিবো, চাচা। জাকির ভাই আমাদের গ্রামেরই মানুষ। *বিশ্বাস* করেন না?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robiul": "wave"
+    }
+   }
+  },
+  {
+   "say": "হাফিজ চাচার মনে পড়ল বাইশ বছর আগের নিজেকে। একই কথা। একই হাসি। আর কুয়েতে গিয়ে প্রথম ছয় মাস— *বেতন নেই, পাসপোর্ট মালিকের হাতে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই শুক্রবার হাফিজ চাচা দোকানের বেঞ্চে বসালেন গ্রামের বিশজন ছেলেকে। চা ফ্রি। আর সাইনবোর্ডে নতুন একটা লাইন— *প্রবাস ক্লাস*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শুক্রবার বিকেল",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল — প্রবাস ক্লাস"
+    ],
+    "chars": [
+     {
+      "id": "hafiz",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "robiul",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "চারটা প্রশ্ন। একটারও উত্তর ‘না’ হইলে, এক টাকাও দিবা না। *জমি একবারই বেচা যায়*।",
+   "tone": "serious",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "হাফিজ চাচার চার প্রশ্ন",
+     "items": [
+      {
+       "t": "চুক্তিপত্র আছে, নিজের ভাষায় পড়েছ?",
+       "mark": "x"
+      },
+      {
+       "t": "কোম্পানির নাম অনলাইনে খুঁজেছ?",
+       "mark": "x"
+      },
+      {
+       "t": "সরকারি নিবন্ধিত এজেন্সি?",
+       "mark": "x"
+      },
+      {
+       "t": "দালালের নাম কেউ চেনে?",
+       "mark": "x"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "point"
+    }
+   }
+  },
+  {
+   "say": "রবিউল মোবাইলে কোম্পানির নামটা খুঁজল। ইতালির কোথাও এই নামে *কিছু নেই*। জাকির ভাইয়ের দেওয়া ভিসার কাগজের নম্বর মেলাল সরকারি ওয়েবসাইটে। *ভুয়া*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "একই বিকেল",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল — প্রবাস ক্লাস"
+    ],
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "চাচা… নাই। কোম্পানি নাই। ভিসাও… আমার আব্বা কাল *জমি রেজিস্ট্রি* করতে যাইতেছে।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robiul": "phone"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "জমি বেচা থামা। এখনই। আর কাল থেকে আমার দোকানে আয়, *সত্যি রাস্তা* দেখাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "down"
+    }
+   }
+  },
+  {
+   "voice": "dalal",
+   "say": "চাচা, আপনি আমার কাস্টমার ভাগাইতেছেন! চা বেচেন, *চা-ই বেচেন*!",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল — প্রবাস ক্লাস"
+    ],
+    "chars": [
+     {
+      "id": "dalal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "dalal": "angry"
+    },
+    "arms": {
+     "dalal": "point"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "জাকির, বাইশ বছর আগে তোর মতো একজন আমারে বেচছিল। আমি চা বেচি, কিন্তু *মানুষ বেচি না*। কাগজ সত্যি হইলে আইসো, আমি নিজে সই দিমু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "cross"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর রবিউল যাচ্ছে মালয়েশিয়া। সরকারি নিবন্ধিত এজেন্সি, লিখিত চুক্তি, খরচ এক লাখ বিশ হাজার। আর জমিটা আছে, *আব্বার নামেই*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "superstore",
+     "sign:হাফিজ টি স্টল — প্রবাস ক্লাস"
+    ],
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রবিউলের খরচ",
+       "from": "৫ লাখ",
+       "value": "১ লাখ ২০ হাজার, সরকারি পথে"
+      },
+      {
+       "label": "কাজ",
+       "value": "মালয়েশিয়া, চুক্তিসহ"
+      },
+      {
+       "label": "জমি",
+       "value": "বিক্রি হয়নি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "হাফিজ চাচার দোকানে প্রতি শুক্রবার এখন ক্লাস বসে। শিক্ষক কয়েকজন, সবাই প্রবাসফেরত। আর বোর্ডে চক দিয়ে লেখা— *‘যাওয়ার আগে জানো। জানার পরে যাও।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "স্বপ্ন বেচতে পারে যে কেউ… *সত্যি বলে শুধু যে ফিরে এসেছে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "স্বপ্ন বেচতে পারে যে কেউ…",
+    "line2": "সত্যি বলে\nশুধু যে ফিরে এসেছে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "২২ বছর কুয়েতে কাটিয়ে চা দোকানে খুললেন ‘প্রবাস ক্লাস’… বাঁচালেন এক তরুণকে ✈️",
+  "description": "বাইশ বছর কুয়েতে মালির কাজ করে হাফিজ চাচা ফিরলেন মাদারীপুরে। গ্রামের তরুণরা বিদেশ যাওয়ার জন্য পাগল, দালালের কথায় জমি বেচছে। হাফিজ চাচা বাজারের চা দোকানে প্রতি শুক্রবার বসালেন একটা ক্লাস— প্রবাসের সত্যি কথা। রবিউল তখন দালাল জাকিরকে পাঁচ লাখ দেওয়ার পথে…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "বিদেশ যাওয়া",
+   "দালাল প্রতারণা",
+   "কুয়েত প্রবাসী",
+   "সচেতনতা",
+   "bangla golpo",
+   "probashi golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বাইশ বছরের প্রবাস জীবন থেকে হাফিজ চাচা এনেছিলেন একটা জিনিস— সত্যি কথা। সেই সত্যিই বাঁচাল রবিউলকে। ✈️\nবিদেশ যাওয়ার আগে কোন তিনটা জিনিস অবশ্যই জানা উচিত বলে তোমার মনে হয়? 👇 #প্রবাসী #সচেতনতা"
+ },
+ "thumbnail": {
+  "text": "৫ লাখের ভিসা",
+  "sub": "সত্যি কথা"
+ }
+}

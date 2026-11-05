@@ -1,0 +1,429 @@
+{
+ "id": "121",
+ "status": "ready",
+ "title_bn": "কারওয়ান বাজারের রাবেয়া আপা",
+ "theme": "struggle",
+ "source": {
+  "book": "The 50th Law",
+  "author": "Robert Greene & 50 Cent",
+  "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+  "chapter": "CHAPTER 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Self-reliance",
+  "title_bn": "নিজের পায়ে দাঁড়ানো"
+ },
+ "cast": {
+  "rabeya": {
+   "name": "রাবেয়া আপা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "kader": {
+   "name": "পাশের মাছওয়ালা কাদের",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "customer": {
+   "name": "হোটেলের বাবুর্চি",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ভোর চারটা, কারওয়ান বাজার। ছিয়াশিটা মাছের দোকান। সাতাশ নম্বরে বসে আছেন রাবেয়া আপা। পুরো বাজারে *একমাত্র নারী*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "কারওয়ান বাজার, ভোর ৪টা",
+    "props": [
+     "signboard",
+     "sign:সালাম ফিশ — দোকান নং ২৭"
+    ],
+    "chars": [
+     {
+      "id": "rabeya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাছের দোকান",
+       "value": "৮৬টা"
+      },
+      {
+       "label": "নারী বিক্রেতা",
+       "value": "১ জন"
+      },
+      {
+       "label": "ঘরে সন্তান",
+       "value": "৩ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তিন মাস আগে স্বামী সালাম মারা গেছেন। দোকানটা বেচে দিলে টাকা আসে এককালীন। রাখলে তিন সন্তানের ভাত *প্রতিদিন*।",
+   "scene": {
+    "cam": {
+     "focus": "rabeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "ভাবি, মাছ কাটতে পারেন? *আঙুল কাইটা* ফালাইবেন। বাসায় যান, রান্না করেন।",
+   "tone": "teasing",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "night",
+    "chip": "একই ভোর",
+    "props": [
+     "signboard",
+     "sign:সালাম ফিশ — দোকান নং ২৭"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "rabeya",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "kader": "point"
+    }
+   }
+  },
+  {
+   "say": "আশেপাশে হাসি। পাইকার এসে দাম বলল অর্ধেক। ভাবল, মেয়েমানুষ, দাম বোঝে না। প্রথম সপ্তাহে রাবেয়া আপা লস দিলেন *চার হাজার টাকা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম মাসের ধাক্কা",
+   "card": {
+    "title": "বাজারের নিয়ম",
+    "items": [
+     {
+      "t": "পাইকার দাম কম দেয়",
+      "mark": "x"
+     },
+     {
+      "t": "কাস্টমার তাঁকে দেখে পাশের দোকানে যায়",
+      "mark": "x"
+     },
+     {
+      "t": "বাসি মাছ ‘চালিয়ে দেওয়ার’ পরামর্শ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে রাবেয়া আপা হিসাব নিয়ে বসলেন। সবাই বলে, বাসি মাছ বরফ দিয়ে তাজা বলে চালাও, বাজারের নিয়ম। তিনি ঠিক করলেন *উল্টোটা* করবেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত, বাসা",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rabeya",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rabeya",
+   "say": "সালাম কইতো, মাছের বাজারে সবাই ঠকায়, তাই কেউ কাউরে বিশ্বাস করে না। আমি *বিশ্বাস* বেচমু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rabeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rabeya": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরের ভোরে মাছের উপর ছোট ছোট কাগজ। সবুজ মানে আজকের। *লাল মানে গতকালের*। পুরো বাজারে এমন জিনিস কেউ দেখেনি।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "পরের ভোর",
+    "props": [
+     "signboard",
+     "sign:সালাম ফিশ — দোকান নং ২৭"
+    ],
+    "chars": [
+     {
+      "id": "rabeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "রাবেয়া আপার কাগজ",
+     "lines": [
+      "আজকের মাছ— সবুজ কাগজ",
+      "গতকালের— লাল কাগজ, দাম কম",
+      "লাল কাগজের মাছ হোটেলে নিবেন না"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আপা, নিজের মাছরে নিজে *বাসি* কইতেছেন? এমন দোকানদার তো জীবনে দেখি নাই!",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "down"
+    }
+   }
+  },
+  {
+   "voice": "rabeya",
+   "say": "এই রুই গতকালের। হোটেলে দিলে কাস্টমারের পেট খারাপ হইবো, আপনার *বদনাম* হইবো। আজকেরটা নেন, দশ টাকা বেশি।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rabeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rabeya": "point"
+    }
+   }
+  },
+  {
+   "say": "বাবুর্চি অনেকক্ষণ তাকিয়ে রইলেন। বিশ বছর এই বাজারে মাছ কেনেন। প্রথম কেউ নিজে থেকে বলল, *এইটা নিয়েন না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর সাতাশ নম্বরের সামনে ভোর চারটায় লাইন। চৌদ্দটা হোটেলের বাবুর্চি। তাঁদের একটাই কথা— *আপা যা কয়, তাই নিমু*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:সালাম ফিশ — দোকান নং ২৭"
+    ],
+    "chars": [
+     {
+      "id": "rabeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নিয়মিত হোটেল কাস্টমার",
+       "from": "০",
+       "value": "১৪টা"
+      },
+      {
+       "label": "লাল কাগজের মাছ",
+       "value": "কম দামে, বাসার জন্য"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আপা, আমাদের হোটেলের মালিক এখন বলে, মাছ কিনবি খালি *লাল-সবুজের দোকান* থেকে!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "ভাবি, কাগজগুলা কোথায় পাইছেন? আমারেও কয়টা দিবেন? কাস্টমার কয়, *আপনার মতো* কাগজ লাগাও।",
+   "tone": "softly",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard",
+     "sign:সালাম ফিশ — দোকান নং ২৭"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rabeya",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "kader": "down"
+    }
+   }
+  },
+  {
+   "voice": "rabeya",
+   "say": "নেন, কাদের ভাই। কাগজ সস্তা। খালি লাল কাগজটা *সত্যি* লাগাইতে হয়, এইটাই দামি।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rabeya",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rabeya": "talk"
+    }
+   }
+  },
+  {
+   "say": "কারওয়ান বাজারের মাছের সারিতে এখন এগারোটা দোকানে লাল-সবুজ কাগজ। বাজারের লোকে এই নিয়মের একটা নাম দিয়েছে— *‘রাবেয়া আপার নিয়ম’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই ঠকালে কেউ বিশ্বাস করে না… *একজন সত্য বললে বাজার বদলায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই ঠকালে কেউ বিশ্বাস করে না…",
+    "line2": "একজন সত্য বললে\nবাজার বদলায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "স্বামীর মৃত্যুর পর মাছের বাজারে একমাত্র নারী, সবাই হাসল… তারপর লাল-সবুজ কাগজ 🐟",
+  "description": "ভোর চারটায় কারওয়ান বাজার। স্বামীর মাছের দোকানে এখন বসেন রাবেয়া আপা, কারণ ঘরে তিন সন্তান। পাশের দোকানদাররা হাসে, পাইকাররা দাম কম দেয়, কাস্টমার তাঁকে দেখে চলে যায়। তিনি ঠিক করলেন একটা নিয়ম— কোনো মাছ বাসি হলে, সেটা সবার আগে বলবেন…",
+  "tags": [
+   "সংগ্রামের গল্প",
+   "নারী ব্যবসায়ী",
+   "মাছের বাজার",
+   "কারওয়ান বাজার",
+   "বিধবা",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মাছের বাজারে একমাত্র নারী। তাঁর অস্ত্র ছিল একটাই— ‘এই মাছ আজকের না, নিয়েন না।’ 🐟\nতোমার দেখা সবচেয়ে সাহসী নারী কে, যিনি সংসার একা টেনেছেন? 👇 #সংগ্রাম #নারী"
+ },
+ "thumbnail": {
+  "text": "মাছের বাজারে একা",
+  "sub": "ভোর ৪টা"
+ }
+}

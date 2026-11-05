@@ -923,6 +923,54 @@
    "relation": "night-coach driver / bus owner / helper",
    "set": "street",
    "hook": "before Eid the owner orders a third trip after 18 sleepless hours; the driver refuses and risks his job; a near-miss involving another tired driver changes the owner's rules"
+  },
+  {
+   "id": "117",
+   "book": "The Righteous Mind",
+   "item": "Happiness comes from between",
+   "relation": "retired father / working daughter / colleague",
+   "set": "street",
+   "hook": "retired father waits at the bus stop every night with an umbrella for his 28-year-old daughter; embarrassed, she tells him to stop; the empty stop teaches her his waiting was his day's purpose"
+  },
+  {
+   "id": "118",
+   "book": "The Art of War",
+   "item": "If you know the enemy and know yourself",
+   "relation": "returned migrant / young aspirant / local broker",
+   "set": "street",
+   "hook": "a migrant back after 22 years in Kuwait runs a Friday 'migration class' at a tea stall; he helps a youth check a 5-lakh broker offer and finds the visa and job are fake"
+  },
+  {
+   "id": "119",
+   "book": "The Art of Seduction",
+   "item": "The Ideal Lover: create a memory",
+   "relation": "grandparents / granddaughter",
+   "set": "home",
+   "hook": "grandparents married in 1976 with no photograph; the granddaughter organises a surprise 50th-anniversary 'wedding' in the yard with the grandmother's old red sari and a photographer"
+  },
+  {
+   "id": "120",
+   "book": "The 50th Law",
+   "item": "Be fearless: turn shit into sugar",
+   "relation": "sports teacher / schoolgirl / strict father",
+   "set": "street",
+   "hook": "village parents object to girls playing football in shorts; the teacher arranges full-length tracksuits; the strict father ends up cheering at the district final"
+  },
+  {
+   "id": "121",
+   "book": "The 50th Law",
+   "item": "Self-reliance",
+   "relation": "widowed fishmonger / rival male seller / restaurant cook",
+   "set": "shop",
+   "hook": "a widow takes over her husband's fish stall; men mock her; her rule of openly labelling yesterday's fish wins the loyalty of restaurant cooks"
+  },
+  {
+   "id": "122",
+   "book": "The Daily Laws",
+   "item": "Turn enemies into friends",
+   "relation": "grumpy old neighbour / teenage batsman / small boy",
+   "set": "street",
+   "hook": "lane cricket breaks the grumpy neighbour's window for the third time; the batsman stays, apologises and pays from savings; he learns the old man once captained a club; he becomes their umpire"
   }
  ]
 }

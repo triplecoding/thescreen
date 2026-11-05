@@ -1,0 +1,403 @@
+{
+ "id": "117",
+ "status": "ready",
+ "title_bn": "বাসস্ট্যান্ডের ছাতা",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Happiness comes from between",
+  "title_bn": "সম্পর্কের ভেতরের অর্থ"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "teep": true,
+   "voice": "old_man"
+  },
+  "lima": {
+   "name": "লিমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "colleague": {
+   "name": "সহকর্মী রিয়া",
+   "type": "young_woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ময়মনসিংহের চরপাড়া। রাত ন’টা। অফিসের মাইক্রোবাস থামলে লিমা প্রতিদিন দেখে একই দৃশ্য— বাসস্ট্যান্ডে আব্বা। হাতে *ছাতা আর টর্চ*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ময়মনসিংহ, চরপাড়া বাসস্ট্যান্ড, রাত ৯টা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বার অপেক্ষা",
+       "value": "রোজ রাত ৯টা"
+      },
+      {
+       "label": "বছর",
+       "value": "৩ বছর, একদিনও বাদ নেই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "colleague",
+   "say": "লিমা আপু, আজকে তো আকাশে তারা! তোমার বডিগার্ড আবার *ছাতা* নিয়া আসছে?",
+   "tone": "teasing",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "lima",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "colleague",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "colleague": "talk"
+    }
+   }
+  },
+  {
+   "say": "গাড়ির সবাই হাসল। লিমা মাথা নিচু করে নামল। আটাশ বছর, ব্যাংকের অফিসার। আর প্রতিদিন রাতে *স্কুলের মেয়ের মতো* আব্বার হাত ধরে বাড়ি।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আজকে অফিস কেমন গেল? দুপুরে খাইছস? রাস্তায় একটা নতুন *ঝালমুড়িওয়ালা* বসছে, খাবি?",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "বাড়ির পথে",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "lima",
+      "x": 0.7,
+      "pose": "walk",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "আব্বা, আপনি আর আইসেন না। আমি এখন বড়। সবাই *হাসে*। আমি একা আসতে পারি।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lima": "talk"
+    }
+   }
+  },
+  {
+   "say": "আব্বা কিছু বললেন না। শুধু ছাতাটা একটু শক্ত করে ধরলেন। বাকি পথ দুইজন *চুপচাপ*। ঝালমুড়ি কেনা হলো না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের রাতে মাইক্রোবাস থামল। লিমা নামল। বাসস্ট্যান্ড *খালি*। তিন বছরে প্রথমবার।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পরের রাত, ৯টা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "lima",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বাসায় ঢুকে লিমা দেখল, আব্বা সোফায় বসে। জামা পরা, জুতা পরা। পাশে রাখা ছাতা আর টর্চ। *বেরোনোর জন্য তৈরি*, কিন্তু বেরোননি।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বাসায়",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "lima",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "আব্বা… আপনি তো রেডি হইয়া বইসা আছেন। *গেলেন না কেন*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lima": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "তুই না করছস। কিন্তু সাড়ে আটটা বাজলে হাত-পা নিজে নিজেই রেডি হইয়া যায় রে মা। তিন বছরের *অভ্যাস*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "রিটায়ারের পর সারাদিন কোনো কাজ নাই। খালি একটা কাজ ছিল। *তোরে আনা*। ওই দশ মিনিট মনে হইতো, আমি এখনো কারও কাজে লাগি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "লিমা আব্বার পাশে বসে পড়ল। সে ভেবেছিল আব্বা তাকে পাহারা দেন। আসলে ওই বাসস্ট্যান্ডটাই ছিল আব্বার *সারাদিনের অপেক্ষা*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "আব্বা, কাল থেকে আবার আসবেন। আর একটা শর্ত— *ঝালমুড়ি* আপনি খাওয়াবেন।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lima": "hug"
+    }
+   }
+  },
+  {
+   "say": "পরের রাতে মাইক্রোবাস থামল। বাসস্ট্যান্ডে আব্বা, হাতে ছাতা আর টর্চ। আর লিমা এবার নামল *হাসতে হাসতে*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পরের রাত",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "lima",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "colleague",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "হ্যাঁ, রিয়া। আমার আব্বা। শহরের সবচেয়ে *দামি বডিগার্ড*। ঝালমুড়ি খাবা? আব্বা খাওয়াইতেছে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lima": "hold"
+    }
+   }
+  },
+  {
+   "say": "চরপাড়ার নতুন ঝালমুড়িওয়ালা এখন জানে, রাত ন’টা দশে দুইটা ঠোঙা রেডি রাখতে হয়। একটায় *ঝাল বেশি*, একটায় *আব্বার জন্য কম*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "আমরা ভাবি বাবা-মা আমাদের পাহারা দেন… *আসলে তাঁরা একটু দরকার হতে চান*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "আমরা ভাবি বাবা-মা আমাদের পাহারা দেন…",
+    "line2": "আসলে তাঁরা\nএকটু দরকার হতে চান।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মেয়ের বয়স ২৮, চাকরি করে, তবু আব্বা রোজ রাত ন’টায় ছাতা নিয়ে বাসস্ট্যান্ডে দাঁড়ান ☂️",
+  "description": "লিমা আটাশ বছর, ব্যাংকে চাকরি করে। রোজ রাত ন’টায় অফিসের গাড়ি থেকে নামলে দেখে, বাসস্ট্যান্ডে আব্বা দাঁড়িয়ে— হাতে ছাতা আর টর্চ, বৃষ্টি থাকুক বা না থাকুক। সহকর্মীরা হাসে। লিমা একদিন বলে ফেলল— আব্বা, আর আসবেন না। পরের রাতে বাসস্ট্যান্ড খালি…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "অবসরপ্রাপ্ত বাবা",
+   "অপেক্ষা",
+   "ছাতা",
+   "চাকরিজীবী মেয়ে",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মেয়ে ভেবেছিল আব্বা পাহারা দিতে আসেন। আসলে ওই দশ মিনিটই ছিল আব্বার সারাদিনের অপেক্ষা। ☂️\nতোমার বাবা-মা তোমার জন্য রোজ কোন ছোট্ট কাজটা করেন, যেটা তুমি কোনোদিন খেয়াল করোনি? 👇 #বাবা #অপেক্ষা"
+ },
+ "thumbnail": {
+  "text": "রোজ রাত ন’টা",
+  "sub": "আব্বার ছাতা"
+ }
+}

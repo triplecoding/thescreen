@@ -1,0 +1,388 @@
+{
+ "id": "122",
+ "status": "ready",
+ "title_bn": "খিটখিটে চাচার জানালা",
+ "theme": "community",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Turn enemies into friends",
+  "title_bn": "শত্রুকে বন্ধু বানানো"
+ },
+ "cast": {
+  "chacha": {
+   "name": "হামিদ চাচা",
+   "type": "old_man",
+   "skin": "light",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "piash": {
+   "name": "পিয়াস",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "rony": {
+   "name": "রনি",
+   "type": "child_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "kid",
+   "voice": "child_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "পুরান ঢাকার সূত্রাপুর। চিকন গলি, দুই পাশে পুরোনো বাড়ি। প্রতি বিকেলে ক্রিকেট। আর গলির শেষ বাড়ি— *হামিদ চাচার*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পুরান ঢাকা, সূত্রাপুরের গলি, বিকেল",
+    "chars": [
+     {
+      "id": "piash",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "rony",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গলির ক্রিকেট",
+       "value": "রোজ বিকেল"
+      },
+      {
+       "label": "হামিদ চাচার জানালার কাচ ভাঙা",
+       "value": "২ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "হামিদ চাচা একা থাকেন। সত্তর বছর। ছেলেমেয়ে বিদেশে। গলির বাচ্চাদের কাছে তিনি *সবচেয়ে ভয়ের মানুষ*। উঠানে এগারোটা বল আটকে আছে।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরের বিকেলে পিয়াসের ছক্কা। বল উড়ে গিয়ে *ঝনঝন*। হামিদ চাচার জানালার কাচ। তৃতীয়বার।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের বিকেল",
+    "chars": [
+     {
+      "id": "piash",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "pulse"
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "পালা! পালা! চাচা আইতেছে!",
+   "tone": "upset",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সবাই দৌড়ে পালাল। পিয়াসের পা-ও দৌড়াতে চাইল। কিন্তু সে দাঁড়িয়ে রইল। আগের দুইবারও তারাই ভেঙেছিল, আর পালিয়েছিল। *এবার না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "piash",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "piash",
+   "say": "চাচা, কাচটা আমি ভাঙছি। সরি। আমার জমানো টাকা আছে, তিনশো। কাচ আমি *লাগাইয়া দিমু*।",
+   "tone": "softly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "হামিদ চাচার দরজা",
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "piash",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "piash": "down"
+    }
+   }
+  },
+  {
+   "say": "হামিদ চাচা চিৎকার করার জন্য মুখ খুলেছিলেন। থেমে গেলেন। এই গলিতে তিন বছরে কেউ তাঁর দরজায় এসে *সরি* বলেনি।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "তুই… পালাইলি না ক্যান? সবাই তো *পালাইছে*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chacha": "down"
+    }
+   }
+  },
+  {
+   "voice": "piash",
+   "say": "আব্বা কয়, ভুল কইরা পালাইলে ভুলটা *দুইটা* হয়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "piash",
+     "zoom": 1.4
+    },
+    "arms": {
+     "piash": "talk"
+    }
+   }
+  },
+  {
+   "say": "কাচ লাগাতে গিয়ে পিয়াস চাচার ঘরে ঢুকল। আর থমকে গেল। দেয়ালে একটা পুরোনো ছবি— সাদা পোশাকে একটা ক্রিকেট দল। মাঝখানে, হাতে ট্রফি, *তরুণ হামিদ চাচা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চাচার ঘর, কাচ লাগানোর দিন",
+    "props": [
+     "window",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "piash",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "piash",
+   "say": "চাচা! আপনি… *ক্যাপ্টেন* আছিলেন?",
+   "scene": {
+    "cam": {
+     "focus": "piash",
+     "zoom": 1.4
+    },
+    "moods": {
+     "piash": "surprised"
+    },
+    "arms": {
+     "piash": "point"
+    }
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "উনসত্তর সালে। ক্লাব ক্রিকেট। এক ম্যাচে বাষট্টি রান। তারপর চাকরি, সংসার, আর এখন… এখন খালি *জানালা* ভাঙার শব্দ শুনি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chacha": "down"
+    }
+   }
+  },
+  {
+   "say": "পিয়াস বুঝল, চাচা ক্রিকেট ঘৃণা করেন না। ঘৃণা করেন একা বসে *বাইরের খেলার শব্দ* শুনতে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরের বিকেলে গলির বাচ্চারা অবাক। হামিদ চাচা বেরিয়ে এলেন। হাতে একটা বাক্স। ভেতরে *এগারোটা বল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের বিকেল",
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "piash",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rony",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "তোগো বল। নে। আর আজকে থেকে আম্পায়ার আমি। *নো বল* দিলে কিন্তু রান কাটমু!",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chacha": "wave"
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "চাচা আম্পায়ার! চাচা আম্পায়ার! আর জানালা ভাঙলে?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rony": "wave"
+    }
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "জানালা ভাঙলে ছক্কা না, *আউট*। আর ব্যাটসম্যান কাচ লাগাইবো, পিয়াসের মতো।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chacha": "point"
+    }
+   }
+  },
+  {
+   "say": "হামিদ চাচার জানালার পাশে এখন একটা প্লাস্টিকের চেয়ার। বিকেল চারটায় সেখানে বসেন আম্পায়ার। আর গলির নতুন নিয়ম— *‘জানালা মানে আউট।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খিটখিটে মানুষকে আমরা এড়িয়ে চলি… *অনেক সময় তাঁরা শুধু একা থাকেন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "খিটখিটে মানুষকে আমরা এড়িয়ে চলি…",
+    "line2": "অনেক সময় তাঁরা\nশুধু একা থাকেন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গলির ক্রিকেটে তৃতীয়বার ভাঙল খিটখিটে হামিদ চাচার জানালা… এবার পিয়াস পালাল না 🏏",
+  "description": "পুরান ঢাকার গলিতে প্রতি বিকেলে ক্রিকেট। আর গলির শেষ বাড়ির হামিদ চাচা সবচেয়ে বড় শত্রু— বল গেলে ফেরত দেন না, চিৎকার করেন। একদিন তৃতীয়বার তাঁর জানালার কাচ ভাঙল। সবাই পালাল। শুধু পিয়াস দাঁড়িয়ে রইল…",
+  "tags": [
+   "পাড়ার ক্রিকেট",
+   "পুরান ঢাকা",
+   "প্রতিবেশী",
+   "খিটখিটে বুড়ো",
+   "শৈশব",
+   "bangla golpo",
+   "পাড়ার গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "গলির সবচেয়ে খিটখিটে মানুষটা হয়ে গেলেন গলির ক্রিকেটের আম্পায়ার। শুরুটা একটা ভাঙা কাচ আর একটা ‘সরি’। 🏏\nছোটবেলার পাড়ার ক্রিকেটে কার জানালা সবচেয়ে বেশি ভেঙেছিলে? 👇 #পাড়ারক্রিকেট #শৈশব"
+ },
+ "thumbnail": {
+  "text": "তৃতীয়বার কাচ ভাঙল",
+  "sub": "কেউ পালাল না"
+ }
+}

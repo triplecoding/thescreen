@@ -1,0 +1,418 @@
+{
+ "id": "119",
+ "status": "ready",
+ "title_bn": "পঞ্চাশ বছরের বিয়ের ছবি",
+ "theme": "family",
+ "source": {
+  "book": "The Art of Seduction",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Ideal Lover: create a memory",
+  "title_bn": "একটা স্মৃতি তৈরি"
+ },
+ "cast": {
+  "dadu": {
+   "name": "দাদু",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "dadi": {
+   "name": "দাদি",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "mim": {
+   "name": "মীম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "যশোরের এক বাড়ি। পুরোনো অ্যালবাম খুলে বসেছে নাতনি মীম। আব্বার বিয়ে, চাচার বিয়ে, ফুপুর বিয়ে। কিন্তু *দাদা-দাদির* বিয়ের একটাও ছবি নেই।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "যশোর, দাদুর বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "dadi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিয়ে",
+       "value": "১৯৭৬ সাল"
+      },
+      {
+       "label": "সংসার",
+       "value": "৫০ বছর"
+      },
+      {
+       "label": "বিয়ের ছবি",
+       "value": "০টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "দাদি, আপনাদের বিয়ের ছবি কই? একটাও *নাই*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mim": "hold"
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "ছিয়াত্তর সালে কে ছবি তুলত রে? তোর দাদার তখন একটা সাইকেল আর *একটা পাঞ্জাবি*। ছবি দিয়া কী হইবো।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadi": "down"
+    }
+   }
+  },
+  {
+   "say": "দাদি হাসলেন। কিন্তু মীম খেয়াল করল, অ্যালবামের পাতা উল্টাতে গিয়ে দাদি ফুপুর বিয়ের ছবিটায় হাত বুলালেন। অনেকক্ষণ। *লাল শাড়ির* ওপর।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন মীম দাদির আলমারি গোছাতে সাহায্য করল। নিচের তাকে একটা পুরোনো পোঁটলা। ভেতরে একটা লাল শাড়ি, রং জ্বলে গেছে। *বিয়ের শাড়ি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দাদির আলমারি",
+    "props": [
+     "almirah",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "বিয়ার দিন এইটা পরছিলাম। তোর দাদা ধার কইরা কিনছিল। পঞ্চাশ বছরে আর *একবারও* পরি নাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "দাদু, আপনি দাদিরে আবার বিয়া করবেন? এইবার *ছবিসহ*?",
+   "tone": "playfully",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "দাদুর সাথে গোপন কথা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "dadu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "mim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": null,
+    "arms": {
+     "mim": "talk"
+    }
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "এই বয়সে? লোকে কী বলবো! *পাগল*…",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadu": "hold"
+    }
+   }
+  },
+  {
+   "say": "তারপর দাদু থেমে গেলেন। চায়ের কাপ নামালেন। খুব আস্তে বললেন একটা কথা, পঞ্চাশ বছর যেটা *কাউকে বলেননি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "তোর দাদিরে একটা ছবিও দিতে পারি নাই। বিয়ার শাড়িটাও ধার কইরা কিনছিলাম। সারাজীবন মনে কাঁটা হইয়া আছে। *কর, মীম। লোকে যা বলে বলুক*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadu": "down"
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর এক বিকেল। দাদিকে বলা হলো, উঠানে চা খাওয়া হবে। দাদি বেরিয়ে দেখলেন— মরিচবাতি, গাঁদা ফুল, এগারোজন নাতি-নাতনি, আর *একজন ফটোগ্রাফার*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "এক মাস পর, উঠানে",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "dadu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "এইসব কী? তোরা… তোরা কী *পাগল* হইছস?",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "dadi": "surprised"
+    },
+    "arms": {
+     "dadi": "face"
+    }
+   }
+  },
+  {
+   "say": "দাদি বেরিয়ে এলেন লাল শাড়িতে। রং জ্বলা, তবু লাল। দাদু মালাটা পরালেন। হাত কাঁপছিল দুইজনেরই। ক্যামেরার *ক্লিক*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "কিছুক্ষণ পর",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hug"
+     },
+     {
+      "id": "dadu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "শাহেদা, পঞ্চাশ বছর পর একটা কথা কই। লোকজনের সামনে। *ভালোবাসি*। এইটাও ছবিতে থাকুক।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadu": "hug"
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "বুড়া মানুষ… নাতিদের সামনে… *লজ্জা নাই*?",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "dadi": "crying"
+    },
+    "arms": {
+     "dadi": "hug"
+    }
+   }
+  },
+  {
+   "say": "উঠানে হাততালি। এগারোজন নাতি-নাতনি চিৎকার করছে। আর দাদি, লজ্জায় মুখ ঢেকে, *হাসছেন*। পঞ্চাশ বছরের সবচেয়ে সুন্দর হাসি।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিয়ের ছবি",
+       "from": "০",
+       "value": "২১৪টা"
+      },
+      {
+       "label": "‘ভালোবাসি’ শোনা",
+       "value": "৫০ বছরে ১ বার"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দাদির ঘরের দেয়ালে এখন একটাই বাঁধানো ছবি। লাল শাড়ি, ফুলের মালা, দুইটা কাঁপা হাত। নিচে লেখা— *‘বিয়ে: ১৯৭৬। ছবি: ২০২৬।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু ছবি তোলা হয় না সময়মতো… *তবু ভালোবাসা অপেক্ষা করে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু ছবি তোলা হয় না সময়মতো…",
+    "line2": "তবু ভালোবাসা\nঅপেক্ষা করে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পঞ্চাশ বছরের সংসার, অথচ বিয়ের একটাও ছবি নেই… নাতনি মীম ঠিক করল, এবার হবে দাদা-দাদির ‘বিয়ে’ 📸",
+  "description": "দাদা-দাদির বিয়ে হয়েছিল ১৯৭৬ সালে, গরিবের ঘরে, একটা ছবিও তোলা হয়নি। পঞ্চাশ বছর পর অ্যালবাম দেখতে গিয়ে নাতনি মীম জানল কথাটা। দাদি হাসলেন, ‘ছবি দিয়া কী হইবো’। কিন্তু মীম দেখল, দাদির চোখে একটা পুরোনো আফসোস…",
+  "tags": [
+   "দাদা দাদির গল্প",
+   "বিয়ের ছবি",
+   "পঞ্চাশ বছর",
+   "ভালোবাসার গল্প",
+   "পরিবার",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "সংসারের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পঞ্চাশ বছর একসাথে, কিন্তু বিয়ের একটা ছবিও ছিল না। নাতনি এক বিকেলে সেই আফসোস মুছে দিল। 📸\nতোমার দাদা-দাদি বা নানা-নানির বিয়ের গল্প কি কখনো শুনেছ? 👇 #দাদাদাদি #ভালোবাসা"
+ },
+ "thumbnail": {
+  "text": "৫০ বছর, ০ ছবি",
+  "sub": "দাদির বিয়ে"
+ }
+}
