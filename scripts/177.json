@@ -1,0 +1,418 @@
+{
+ "id": "177",
+ "status": "ready",
+ "title_bn": "থালাবাসন ধোয়া ছেলেটার রান্না",
+ "theme": "work",
+ "source": {
+  "book": "The Book of Five Rings",
+  "author": "Miyamoto Musashi",
+  "author_bn": "মিয়ামোতো মুসাশি",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Observe the way of every craft",
+  "title_bn": "দেখে দেখে শেখা"
+ },
+ "cast": {
+  "sumon": {
+   "name": "সুমন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "chef": {
+   "name": "হেড শেফ বাবুল ওস্তাদ",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "cap": true,
+   "voice": "man"
+  },
+  "owner": {
+   "name": "রেস্টুরেন্টের মালিক",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "পুরান ঢাকার এক নামকরা রেস্টুরেন্ট। পেছনের রান্নাঘরে সিঙ্কের পাশে সুমন। তিন বছর ধরে *থালাবাসন*। কেউ তার নাম ডাকে না, ডাকে— *এই, প্লেট*!",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "পুরান ঢাকা, রেস্টুরেন্টের পেছনের রান্নাঘর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "chef",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সুমনের কাজ",
+       "value": "থালাবাসন, ৩ বছর"
+      },
+      {
+       "label": "বেতন",
+       "value": "৯,০০০ টাকা"
+      },
+      {
+       "label": "রান্না শেখার অনুমতি",
+       "value": "নেই",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কিন্তু সিঙ্কটা ঠিক হেড শেফ বাবুল ওস্তাদের চুলার পাশে। আর তিন বছর ধরে সুমন দেখে, প্রতিদিন। কখন ঘি, কখন জাফরান, কতক্ষণ দম, *কোন গন্ধে* বোঝা যায় হয়ে গেছে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "chef",
+   "say": "এই, চুলার দিকে চাইয়া থাকস ক্যান? প্লেট ধো। রান্না *তোর কাম না*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "chef",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chef": "point"
+    }
+   }
+  },
+  {
+   "say": "ঈদের আগের রাত। তিনশো প্লেট কাচ্চির অর্ডার, সকাল দশটায় ডেলিভারি। আর বাবুল ওস্তাদ প্রচণ্ড জ্বরে *বাসায় শোয়া*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "ঈদের আগের রাত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "sumon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "অন্য কোনো বাবুর্চি নাই? তিনশো প্লেট! অগ্রিম নিছি। কাস্টমারের *ঈদ নষ্ট* হইবো, আমার নাম নষ্ট হইবো!",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "phone"
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "মালিক… আমি পারব। *ওস্তাদের মতো*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumon": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "তুই? থালাবাসন ধোস, তুই কাচ্চি রানবি? মাথা ঠিক আছে?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "talk"
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "তিন বছর প্রতিদিন দেখছি। এক হাঁড়ি রাইন্ধা দেখি। ভালো না হইলে আমারে *বের কইরা দিয়েন*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumon": "talk"
+    }
+   }
+  },
+  {
+   "say": "মালিকের আর কোনো উপায় নেই। মাথা নাড়লেন। আর সুমন, জীবনে প্রথম, দাঁড়াল *চুলার সামনে*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটা। প্রথম হাঁড়ি। ঘি, মাংস, আলু, চাল। জাফরান দুধে ভেজানো। ঢাকনা আটা দিয়ে বন্ধ, উপরে কয়লা। পঁয়তাল্লিশ মিনিট। সুমনের হাত *কাঁপছে না*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "২:১০",
+     "label": "প্রথম হাঁড়ির দম চলছে"
+    },
+    "fx": "dust"
+   }
+  },
+  {
+   "say": "রাত তিনটা। ঢাকনা খোলা হলো। একটা গন্ধ ছড়াল পুরো রান্নাঘরে। মালিক চামচ নিলেন। মুখে দিলেন। তারপর *চুপ*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "রাত তিনটা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "sumon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "এইটা… এইটা তো বাবুল ওস্তাদের হাতের *একদম এক*। কেমনে?",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "moods": {
+     "owner": "surprised"
+    },
+    "arms": {
+     "owner": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "সিঙ্কটা চুলার পাশে, মালিক। তিন বছর। *চোখ তো বন্ধ ছিল না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumon": "down"
+    }
+   }
+  },
+  {
+   "say": "ঈদের পরে বাবুল ওস্তাদ ফিরলেন। মালিক সব বললেন। ওস্তাদ অনেকক্ষণ সুমনের দিকে তাকিয়ে রইলেন। তিন বছর যাকে বলেছেন, *রান্না তোর কাম না*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সেই রাতে রান্না",
+       "value": "৩০০ প্লেট"
+      },
+      {
+       "label": "কাস্টমারের অভিযোগ",
+       "value": "০"
+      },
+      {
+       "label": "প্রশংসা",
+       "value": "১৪টা ফোন"
+      }
+     ]
+    },
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ঈদের পরে",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "chef",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "sumon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "chef",
+   "say": "আমারে আমার ওস্তাদ ষোলো বছর বয়সে এমনেই ধরছিল। সিঙ্কের পাশ থেকে। কাল থেকে তুই *আমার পাশে*, চুলায়। থালা ধোবে নতুন ছেলে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "chef",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chef": "talk"
+    }
+   }
+  },
+  {
+   "say": "রেস্টুরেন্টের পেছনের রান্নাঘরে এখন সিঙ্কটা সরানো হয়েছে। নতুন জায়গা— চুলার একদম পাশে। বাবুল ওস্তাদের নির্দেশ— *‘যে ধোয়, সে যেন দেখতে পায়।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যাকে আমরা শুধু কাজের লোক ভাবি… *সে হয়তো চুপচাপ ওস্তাদ হয়ে উঠছে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যাকে আমরা শুধু কাজের লোক ভাবি…",
+    "line2": "সে হয়তো চুপচাপ\nওস্তাদ হয়ে উঠছে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন বছর থালাবাসন ধোয়, কেউ খেয়াল করে না… হেড শেফ অসুস্থ, ঈদের দিন ৩০০ প্লেট কাচ্চি কে রাঁধবে? 🍛",
+  "description": "পুরান ঢাকার এক নামকরা রেস্টুরেন্টের পেছনে সুমন তিন বছর থালাবাসন ধোয়। সিঙ্কের পাশ থেকে প্রতিদিন দেখে হেড শেফ বাবুল ওস্তাদের হাত— কখন ঘি, কখন জাফরান, কতক্ষণ দম। ঈদের আগের রাতে ওস্তাদের প্রচণ্ড জ্বর। তিনশো প্লেটের অর্ডার। মালিক অস্থির…",
+  "tags": [
+   "রান্নার গল্প",
+   "কাচ্চি",
+   "পুরান ঢাকা",
+   "রেস্টুরেন্ট",
+   "দক্ষতা",
+   "অফিসের গল্প",
+   "bangla golpo",
+   "office story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন বছর সিঙ্কের পাশে দাঁড়িয়ে দেখেছিল সুমন। ঈদের রাতে সেই দেখাই হয়ে গেল তিনশো প্লেট কাচ্চি। 🍛\nচুপচাপ দেখে দেখে কোন কাজ তুমি শিখেছিলে? 👇 #রান্না #দক্ষতা"
+ },
+ "thumbnail": {
+  "text": "থালাবাসনের ছেলে",
+  "sub": "৩০০ প্লেট কাচ্চি"
+ }
+}

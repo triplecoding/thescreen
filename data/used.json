@@ -1403,6 +1403,54 @@
    "relation": "elderly landlady / tenant's son / widowed mother",
    "set": "home",
    "hook": "a landlady kept a widow's rent unchanged for ten years; the son, newly employed, tries to pay the difference; she declines money and asks him to visit every Friday instead"
+  },
+  {
+   "id": "177",
+   "book": "The Book of Five Rings",
+   "item": "Observe the way of every craft",
+   "relation": "dishwasher / head chef / owner",
+   "set": "kitchen",
+   "hook": "a dishwasher who watched the head chef for three years cooks 300 plates of kacchi when the chef falls ill on Eid eve; the chef makes him his apprentice"
+  },
+  {
+   "id": "178",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocation of honesty",
+   "relation": "new cashier / elderly customer / manager",
+   "set": "shop",
+   "hook": "a new supershop cashier gives an old woman 1,000 taka too much change and faces a pay cut; next morning the woman walks 3 km to return it"
+  },
+  {
+   "id": "179",
+   "book": "The Art of Seduction",
+   "item": "The power of the symbolic gift",
+   "relation": "Saudi migrant son / mother / roommate",
+   "set": "home",
+   "hook": "a mother couriers winter rice cakes to her son in Saudi; they arrive crushed after 11 days; he eats every crumb and shares with roommates, and calls her saying they were perfect"
+  },
+  {
+   "id": "180",
+   "book": "The Art of War",
+   "item": "Turn an opponent into an ally",
+   "relation": "father-in-law / working daughter-in-law / son",
+   "set": "home",
+   "hook": "a father-in-law disapproves of his daughter-in-law's bank job; when online pension rules trap him for weeks, she sorts it in an evening; he starts calling her his 'banker'"
+  },
+  {
+   "id": "181",
+   "book": "The Righteous Mind",
+   "item": "We are 90% chimp, 10% bee: building a hive",
+   "relation": "primary teacher / quiet pupil / pupil's mother",
+   "set": "shop",
+   "hook": "a teacher's 'good news board' reveals through one child's line that her mother rarely smiles; the teacher gently visits and connects the mother to a women's tailoring group"
+  },
+  {
+   "id": "182",
+   "book": "The 50th Law",
+   "item": "Do not be afraid of looking ridiculous",
+   "relation": "educated bookseller on buses / mocking passenger / student",
+   "set": "street",
+   "hook": "a master's graduate sells books on local buses; a passenger mocks him; he replies with dignity; a student who buys from him later shows him she passed her BCS preliminary using his books"
   }
  ]
 }
