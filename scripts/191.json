@@ -1,0 +1,452 @@
+{
+ "id": "191",
+ "status": "ready",
+ "title_bn": "গেমার ছেলে আর আব্বার কন্ট্রোলার",
+ "theme": "family",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Law of Empathy: enter their world",
+  "title_bn": "ওর দুনিয়ায় ঢোকো"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "ishan": {
+   "name": "ঈশান",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাত দুইটা। ঈশানের ঘরে মোবাইলের আলো, হেডফোনে চিৎকার। ক্লাস টেন। আর পাশের ঘরে আব্বা, *ঘুম নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ishan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঈশানের গেম",
+       "value": "রাত ২টা পর্যন্ত"
+      },
+      {
+       "label": "বাবা-ছেলের কথা",
+       "value": "৩ মাসে প্রায় ০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আবার? রাত দুইটা! মোবাইল দে। এসএসসি সামনে, আর তুই *মারামারির খেলা* খেলস!",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "ishan",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "abba": "angry"
+    },
+    "arms": {
+     "abba": "point"
+    }
+   }
+  },
+  {
+   "voice": "ishan",
+   "say": "মারামারি না, আব্বা! টিম গেম! আপনি তো কিছুই *বোঝেন না*!",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "ishan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ishan": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাসে আব্বার চেষ্টা",
+   "card": {
+    "title": "যা কাজ করেনি",
+    "items": [
+     {
+      "t": "বকা",
+      "mark": "x"
+     },
+     {
+      "t": "ফোন কেড়ে আলমারিতে",
+      "mark": "x"
+     },
+     {
+      "t": "ওয়াইফাই বন্ধ— ঈশান বন্ধুর বাসায়",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তিন মাস। প্রতিটা চেষ্টার পর দরজাটা আরও শক্ত করে বন্ধ হয়। আর বাবা-ছেলের কথা নেমে আসে *শূন্যে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুমি বলো, তুমি ছোটবেলায় ক্যারম খেলতা রাত জাইগা, তোমার আব্বা কী করতেন?",
+   "tone": "gently",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে, আব্বা-আম্মা",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মারতেন। আর আমি আরও লুকাইয়া খেলতাম। *ছাদে*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "আব্বা চুপ। ত্রিশ বছর আগের ছাদ, ক্যারমের গুটি, আর বাবার লাঠি। তিনি বুঝলেন, তিনি এখন *ঠিক সেই লাঠিটা*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের রাতে আব্বা ঈশানের দরজায় নক করলেন। ঈশান মোবাইল লুকাল, তৈরি হলো আরেকটা ঝগড়ার জন্য। কিন্তু আব্বা বললেন *অন্য কিছু*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পরের রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ishan",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ঈশান… খেলাটা আমারে শিখাবি? তুই কী খেলস, *আমি দেখতে চাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "ishan",
+   "say": "আপনি? আপনি… *গেম খেলবেন*?",
+   "scene": {
+    "cam": {
+     "focus": "ishan",
+     "zoom": 1.4
+    },
+    "moods": {
+     "ishan": "surprised"
+    },
+    "arms": {
+     "ishan": "phone"
+    }
+   }
+  },
+  {
+   "say": "এক ঘণ্টা পর। আব্বার হাতে মোবাইল, ঈশান পাশে বসে শেখাচ্ছে। আব্বা প্রতি দুই মিনিটে *মারা যাচ্ছেন*। ঈশান হাসছে, তিন মাসে প্রথম।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক ঘণ্টা পর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ishan",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ishan",
+   "say": "আব্বা, ওইদিকে না! টিমের সাথে থাকতে হয়! একা দৌড়াইলে *শেষ*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "ishan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ishan": "point"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "টিমের সাথে থাকতে হয়, একা দৌড়াইলে শেষ… এইটা তো জীবনের কথা রে। তোর এই খেলায় এত *হিসাব* আছে?",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "moods": {
+     "abba": "thinking"
+    },
+    "arms": {
+     "abba": "phone"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে বাবা-ছেলে দুইটা পর্যন্ত জেগে রইল। খেলা না, *কথা*। গেমের টিম, স্কুলের বন্ধু, এসএসসির ভয়। তিন মাসের জমানো সব।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর বাবা-ছেলে বসল একটা কাগজ নিয়ে। নিয়ম বানাল। আব্বা চাপিয়ে দিলেন না, *দুইজনে মিলে* লিখল। আর দুইজনে সই করল।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ishan",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বাবা-ছেলের চুক্তি",
+     "lines": [
+      "গেম: রাত ১০টা থেকে ১১টা, শুধু",
+      "শুক্রবার: আব্বার সাথে এক ম্যাচ",
+      "এসএসসি পর্যন্ত: রাত ১১টার পর ফোন আম্মার কাছে"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "ishan",
+   "say": "আব্বা, শুক্রবারের ম্যাচে আপনি আমার টিমে। কিন্তু প্লিজ, *একা দৌড়াইয়েন না*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "ishan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ishan": "hold"
+    }
+   }
+  },
+  {
+   "say": "ঈশানের এসএসসিতে জিপিএ পাঁচ। আর রেজাল্টের রাতে বাবা-ছেলে খেলল এক ম্যাচ। আব্বা এবারও হারলেন, কিন্তু *টিমের সাথেই* ছিলেন।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দরজা বন্ধ করলে সন্তান দূরে যায়… *পাশে বসলে দরজা খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দরজা বন্ধ করলে সন্তান দূরে যায়…",
+    "line2": "পাশে বসলে\nদরজা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছেলে রাত দুইটা পর্যন্ত গেম খেলে, তিন মাস কথা নেই… তারপর আব্বা বললেন ‘শিখাবি?’ 🎮",
+  "description": "ঈশান ক্লাস টেন, রাত জেগে মোবাইলে গেম। আব্বা বকেন, ফোন কেড়ে নেন, ইন্টারনেট বন্ধ করেন। কিছুই কাজ করে না, শুধু কথা বন্ধ হয়। একদিন আব্বা নিজেই এক অদ্ভুত কাজ করলেন। ছেলের দরজায় দাঁড়িয়ে বললেন— আমারে শিখাবি?",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "মোবাইল গেম",
+   "কিশোর",
+   "পরিবার",
+   "সহমর্মিতা",
+   "bangla golpo",
+   "পরিবারের গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বকা, শাসন, ফোন কাড়া— কিছুতেই কাজ হয়নি। আব্বা যেদিন ছেলের পাশে বসে গেম শিখতে চাইলেন, সেদিন থেকে দরজা খুলল। 🎮\nসন্তানের শখ বুঝতে কখনো তার পাশে বসেছ? 👇 #বাবাছেলে #পরিবার"
+ },
+ "thumbnail": {
+  "text": "রাত ২টা পর্যন্ত গেম",
+  "sub": "আব্বা বললেন ‘শিখা’"
+ }
+}

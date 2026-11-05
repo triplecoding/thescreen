@@ -1499,6 +1499,54 @@
    "relation": "first-time migrant / veteran migrant / immigration officer",
    "set": "shop",
    "hook": "a first-time migrant who can't read English panics over forms at the airport; a 12-year veteran migrant helps him, walks him through every step, and gives him his number in Malaysia"
+  },
+  {
+   "id": "189",
+   "book": "The Art of Worldly Wisdom",
+   "item": "A noble rival honours the contest",
+   "relation": "top student / rival / invigilator",
+   "set": "shop",
+   "hook": "two rivals since class one; in an exam one girl's only pen dies; the rival hands over her spare and loses time herself; they become friends"
+  },
+  {
+   "id": "190",
+   "book": "The Art of War",
+   "item": "Knowledge of the ground decides the battle",
+   "relation": "newspaper delivery man / mother of a missing child / child",
+   "set": "street",
+   "hook": "a 22-year newspaper man who knows every lane's children finds a lost 6-year-old in a hidden spot children use, after the official search fails"
+  },
+  {
+   "id": "191",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Empathy: enter their world",
+   "relation": "father / teenage gamer son / mother",
+   "set": "home",
+   "hook": "the father's scolding and confiscating fail with his gaming son; he asks the son to teach him the game, learns its teamwork, and they negotiate a schedule together"
+  },
+  {
+   "id": "192",
+   "book": "On War",
+   "item": "Danger is part of the terrain",
+   "relation": "Sundarbans honey collector / educated son / wife",
+   "set": "street",
+   "hook": "a honey collector doesn't want his HSC-pass son in the risky trade; the son joins one season, learns the craft, and starts selling certified forest honey online with fair prices"
+  },
+  {
+   "id": "193",
+   "book": "Mastery",
+   "item": "The true craft is often invisible to others",
+   "relation": "retired teacher father / photographer son / bride's mother",
+   "set": "home",
+   "hook": "a father dismisses his son's wedding photography; at a village wedding he watches his son capture an absent grandmother's blessing via video and hears the family's gratitude"
+  },
+  {
+   "id": "194",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Consistency: a reputation earned in private",
+   "relation": "online saree seller / customer / mother",
+   "set": "home",
+   "hook": "a seller notices a flaw in a saree after the customer left a five-star review; she calls, apologises and sends a replacement; the customer tells her office group and orders pour in"
   }
  ]
 }
