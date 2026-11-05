@@ -211,6 +211,17 @@
       "playlist": true,
       "facebook": "1903855737643668",
       "scheduled_for": "2026-11-05T20:00:00+06:00"
+    },
+    {
+      "id": "018",
+      "date": "2026-11-06",
+      "slot": "10:00",
+      "duration": 142.65,
+      "title": "সব কিছু সাত দিনে ছেড়ে দিত রুহি, নানুর পুরনো খাতা বদলে দিল তাকে 🌱 | The Daily Laws বাংলা",
+      "youtube": "9lSQ0EhU_QA",
+      "playlist": true,
+      "facebook": "1434934898163287",
+      "scheduled_for": "2026-11-06T10:00:00+06:00"
     }
   ],
   "failed": [],
@@ -223,14 +234,14 @@
     "Influence: The Psychology of Persuasion": "PLZf68dtHdWh8",
     "Animal Farm": "PLVdr_fxg17H8",
     "Mastery": "PLbqUW4qBrso8",
-    "The Book of Five Rings": "PLFT3vBebPx4I"
+    "The Book of Five Rings": "PLFT3vBebPx4I",
+    "The Daily Laws": "PLV002FrxsI-Y"
   },
   "last_run": {
-    "at": "2026-11-04T19:02:12.434379+06:00",
-    "errors": [],
-    "queue_remaining": 27
+    "at": "2026-11-05T08:27:52.680687+06:00",
+    "errors": []
   },
   "queue_remaining": 27,
-  "_run_started": "2026-11-04T18:56:11.603386+06:00",
+  "_run_started": "2026-11-05T08:22:54.889970+06:00",
   "dry_runs": []
 }
