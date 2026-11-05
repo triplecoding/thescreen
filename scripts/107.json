@@ -1,0 +1,411 @@
+{
+ "id": "107",
+ "status": "ready",
+ "title_bn": "সাইট ইঞ্জিনিয়ার নুসরাত",
+ "theme": "work",
+ "source": {
+  "book": "The 33 Strategies of War",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STRATEGY 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Counterbalance Strategy",
+  "title_bn": "চাপে স্থির থাকা"
+ },
+ "cast": {
+  "nusrat": {
+   "name": "নুসরাত",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#F2C14E",
+   "color2": "#2F7A6B",
+   "hair": "hijab",
+   "glasses": true,
+   "voice": "young_woman"
+  },
+  "kalu": {
+   "name": "কালু ফোরম্যান",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "full_black",
+   "cap": true,
+   "voice": "man"
+  },
+  "owner": {
+   "name": "বাড়ির মালিক",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার এক ছয়তলা ভবনের সাইট। চৌত্রিশজন শ্রমিক, পঁচিশ বছরের ফোরম্যান কালু মিয়া। আর নতুন সাইট ইঞ্জিনিয়ার, *নুসরাত*। বয়স পঁচিশ।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খুলনা, ছয়তলা ভবনের সাইট",
+    "chars": [
+     {
+      "id": "nusrat",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kalu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাইটে শ্রমিক",
+       "value": "৩৪ জন"
+      },
+      {
+       "label": "মেয়ে",
+       "value": "১ জন"
+      },
+      {
+       "label": "কালু মিয়ার অভিজ্ঞতা",
+       "value": "২৫ বছর"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kalu",
+   "say": "আপা, রোদে কষ্ট হইবো। আপনে অফিসে বসেন, ড্রয়িং দেখেন। *সাইট আমরা বুঝি*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalu": "cross"
+    }
+   }
+  },
+  {
+   "say": "পাঁচতলার ছাদ ঢালাইয়ের দিন। ভোর ছয়টা। মিক্সার মেশিন চালু। ঢালাই শুরু হবে *সাড়ে ছয়টায়*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "ছাদ ঢালাইয়ের দিন, ভোর ছয়টা",
+    "chars": [
+     {
+      "id": "nusrat",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নুসরাত নিচে নামল, শাটারিংয়ের নিচে। বাঁশের খুঁটিগুলো গুনল। তারপর আবার গুনল। ড্রয়িংয়ে আছে বিয়াল্লিশটা। এখানে *একত্রিশটা*।",
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "কালু ভাই, ঢালাই থামান। খুঁটি এগারোটা কম। মাঝখানের দুই সারি *ভার নিতে পারবে না*।",
+   "tone": "serious",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "নুসরাতের খাতা",
+     "lines": [
+      "ড্রয়িং অনুযায়ী খুঁটি: ৪২টা",
+      "আছে: ৩১টা",
+      "মাঝখানের দুই সারিতে ফাঁক বেশি"
+     ]
+    },
+    "set": "street",
+    "light": "day",
+    "chip": "সাড়ে ছয়টা",
+    "chars": [
+     {
+      "id": "nusrat",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "kalu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nusrat": "point"
+    }
+   }
+  },
+  {
+   "voice": "kalu",
+   "say": "আপা, পঁচিশ বছর এমনেই ঢালাই করি। কিছু হয় নাই। মালিক বাঁশের খরচ বাঁচাইতে কইছে। *থামানো যাইবো না*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalu": "cross"
+    }
+   }
+  },
+  {
+   "say": "চৌত্রিশজন শ্রমিক তাকিয়ে আছে। মালিক ফোনে চাপ দিচ্ছেন। নুসরাত জানে, এখন পিছালে আর কোনোদিন কেউ *তার কথা শুনবে না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "ঠিক আছে। একটা পরীক্ষা। মাঝখানে খালি দশ বস্তা সিমেন্ট রাখেন। দেখি শাটার কী করে। পারলে আমি *চুপ*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nusrat": "talk"
+    }
+   }
+  },
+  {
+   "say": "দশ বস্তা সিমেন্ট। পুরো ঢালাইয়ের ভারের একটা ছোট্ট অংশ। পনেরো মিনিটের মধ্যে মাঝখানের শাটার *দুই ইঞ্চি নিচে বসে গেল*। একটা বাঁশে ফাটল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পনেরো মিনিট পর",
+    "chars": [
+     {
+      "id": "kalu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "nusrat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সাইট চুপ। কালু মিয়া ফাটা বাঁশটার দিকে তাকিয়ে রইলেন। নিচে সেই জায়গায় প্রতিদিন দুপুরে বসে ভাত খায় *ছয়জন শ্রমিক*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "এক দিন দেরি মানে মিক্সার ভাড়া, শ্রমিকের মজুরি! কে দিবে এই *লস*?",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সেই দুপুর",
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     },
+     {
+      "id": "nusrat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "owner": "angry"
+    },
+    "arms": {
+     "owner": "talk"
+    }
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "স্যার, এক দিনের লস বিশ হাজার। ছাদ ভাঙলে লস কত, আর কয়টা *জীবন*, সেটা আমি হিসাব করতে চাই না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nusrat": "talk"
+    }
+   }
+  },
+  {
+   "say": "মালিক চুপ। তারপর ফাটা বাঁশটা দেখে শুধু বললেন— *যা যা লাগে, কিনেন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন বিয়াল্লিশটা খুঁটি। ঢালাই হলো নিরাপদে। আর বিকেলে কালু মিয়া এলেন, হাতে *দুই কাপ চা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের দিন",
+    "chars": [
+     {
+      "id": "kalu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "nusrat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খুঁটি",
+       "from": "৩১",
+       "value": "৪২"
+      },
+      {
+       "label": "ঢালাই",
+       "value": "নিরাপদে শেষ"
+      },
+      {
+       "label": "সাইটে দুর্ঘটনা",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kalu",
+   "say": "ইঞ্জিনিয়ার সাহেব, চা খান। আর কাল থেকে হেলমেট ছাড়া কেউ সাইটে *ঢুকবো না*। আমি নিজে দেখমু।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalu": "hold"
+    }
+   }
+  },
+  {
+   "say": "সাইটের গেটে এখন একটা বোর্ড, কালু মিয়ার নির্দেশে লাগানো— *‘ঢালাইয়ের আগে খুঁটি গুনবেন ইঞ্জিনিয়ার। আপত্তি চলবে না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অভিজ্ঞতা বলে ‘এভাবেই হয়’… *হিসাব বলে ‘এভাবে হবে না’*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অভিজ্ঞতা বলে ‘এভাবেই হয়’…",
+    "line2": "হিসাব বলে\n‘এভাবে হবে না’।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘আপা, অফিসে বসেন’— বলেছিল ফোরম্যান… ছাদ ঢালাইয়ের দিন নুসরাত বলল ‘থামেন!’ 🏗️",
+  "description": "খুলনার এক ছয়তলা ভবনের সাইটে প্রথম মেয়ে ইঞ্জিনিয়ার নুসরাত। পঁচিশ বছরের অভিজ্ঞ ফোরম্যান কালু মিয়া তার কথা শোনেন না। ছাদ ঢালাইয়ের দিন সকালে নুসরাত শাটারিংয়ে দেখল একটা জিনিস, আর চিৎকার করে বলল— থামেন…",
+  "tags": [
+   "অফিসের গল্প",
+   "নারী ইঞ্জিনিয়ার",
+   "নির্মাণ নিরাপত্তা",
+   "ফোরম্যান",
+   "খুলনা",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘আপা, আপনি অফিসে বসেন’— বলেছিলেন ফোরম্যান। ঢালাইয়ের দিন সেই আপার একটা ‘থামেন’ বাঁচিয়ে দিল সবাইকে। 🏗️\nমেয়ে বলে কাজের জায়গায় তোমাকে কখনো ছোট করে দেখা হয়েছে? 👇 #নারী #কাজ"
+ },
+ "thumbnail": {
+  "text": "‘থামেন!’",
+  "sub": "ঢালাইয়ের দিন"
+ }
+}

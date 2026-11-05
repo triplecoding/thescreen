@@ -1,0 +1,434 @@
+{
+ "id": "109",
+ "status": "ready",
+ "title_bn": "তোতলা আসিফের ভাষণ",
+ "theme": "school",
+ "source": {
+  "book": "The 50th Law",
+  "author": "Robert Greene & 50 Cent",
+  "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Become an Agent of Change",
+  "title_bn": "ভয় পেরোনোর অনুশীলন"
+ },
+ "cast": {
+  "asif": {
+   "name": "আসিফ",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "monir": {
+   "name": "মনির স্যার",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "glasses": true,
+   "voice": "man"
+  },
+  "tamim": {
+   "name": "তামিম",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "চাঁদপুরের এক স্কুল। ক্লাস এইটের আসিফ কথা বলতে গেলে প্রথম অক্ষরে আটকে যায়। আর ক্লাসের সবাই তার একটা নাম দিয়েছে— *তো-তো*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চাঁদপুর, ক্লাস এইট",
+    "props": [
+     "signboard",
+     "sign:ক্লাস এইট — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "asif",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আসিফের ক্লাসে কথা",
+       "value": "০"
+      },
+      {
+       "label": "ডাকনাম",
+       "value": "‘তো-তো’",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "আসিফ, তুমি বলো তো, *মাতৃভাষা* মানে কী?",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "নতুন স্যারের ক্লাস",
+    "props": [
+     "signboard",
+     "sign:ক্লাস এইট — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "asif",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "monir": "point"
+    }
+   }
+  },
+  {
+   "voice": "asif",
+   "say": "মা… মা… মা…",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "asif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "asif": "down"
+    }
+   }
+  },
+  {
+   "say": "ক্লাসে হাসি। পেছন থেকে তামিম জোরে বলল— *তো-তো আবার শুরু করছে*! আসিফ বসে পড়ল। খাতায় মাথা নিচু।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "মনির স্যার কিছু বললেন না। ক্লাস শেষে একটা কাগজ টাঙালেন নোটিশ বোর্ডে। বিজয় দিবসের অনুষ্ঠান। দুই মিনিটের ভাষণ। *প্রথম নাম: আসিফ*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "asif",
+   "say": "স্-স্যার, আমার নাম ক্যান? সবাই *হা-হাসবো*। আপনি আমারে অপমান করতে চান?",
+   "tone": "upset",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "ছুটির পর",
+    "props": [
+     "signboard",
+     "sign:ক্লাস এইট — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "asif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "monir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "asif": "down"
+    }
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "না। আমি চাই তুমি জানো, তোমার কথার *দাম আছে*। আটকায়, তাতে কী? নদীও তো পাথরে আটকায়, তবু সাগরে যায়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "monir": "talk"
+    }
+   }
+  },
+  {
+   "say": "এরপর এক মাস। প্রতিদিন ছুটির পর খালি ক্লাসরুমে দুইজন। মনির স্যার শেখালেন একটা কৌশল— *তাড়া না, তাল*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "প্রতিদিন ছুটির পর, এক মাস",
+    "props": [
+     "signboard",
+     "sign:ক্লাস এইট — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "asif",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "প্রথম শব্দের আগে একটা নিঃশ্বাস। তারপর কথাটা গানের মতো টেনে বলো। কে বলছে তাড়াতাড়ি বলতে হবে? *তোমার সময়, তোমার কথা*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "monir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "monir": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক মাস। প্রতিদিন দুই মিনিট। কোনোদিন আটকায়, কোনোদিন কম। আর একদিন পেছনের দরজায় দাঁড়িয়ে চুপচাপ শুনছিল *তামিম*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "কালকে আসিফ যখন বলবে, কেউ যদি হাসে, আমি না, তোমরা নিজেরাই *তাকে থামাবা*। পারবা?",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বিজয় দিবসের আগের দিন",
+    "props": [
+     "signboard",
+     "sign:ক্লাস এইট — ‘ক’ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "monir",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "tamim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "monir": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tamim",
+   "say": "স্যার… আমি পিছের দরজায় শুনছি ও কেমনে প্র্যাকটিস করে। কালকে কেউ হাসলে *আমি দেখমু*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tamim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tamim": "down"
+    }
+   }
+  },
+  {
+   "say": "বিজয় দিবস। মাঠে পাঁচশো ছাত্র, শিক্ষক, অভিভাবক। মাইকের সামনে আসিফ। হাতে কাগজ কাঁপছে। প্রথম শব্দে *আটকে গেল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিজয় দিবস, স্কুল মাঠ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "asif",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মাঠে কয়েকজন হাসতে শুরু করল। আর ঠিক তখন সামনের সারিতে উঠে দাঁড়াল তামিম। পেছনে ফিরে ঠোঁটে আঙুল রাখল— *শশশ*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "asif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মাঠ চুপ। আসিফ একটা নিঃশ্বাস নিল। তারপর বলল, ধীরে, গানের মতো— *আমার ভাষা আমার মা, আর এই দেশ আমাদের সবার*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "monir",
+   "say": "আটকানো লজ্জা না, আসিফ। *থেমে যাওয়া* লজ্জা। তুমি থামো নাই।",
+   "tone": "proudly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই সকাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "asif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "monir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আসিফের ভাষণ",
+       "value": "২ মিনিট ১৪ সেকেন্ড"
+      },
+      {
+       "label": "হাততালি",
+       "value": "সবচেয়ে বেশি"
+      }
+     ]
+    },
+    "arms": {
+     "monir": "talk"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস এইটের সেই নোটিশ বোর্ডে এখন নতুন একটা নিয়ম, ছাত্রদের নিজেদের লেখা— *‘কেউ কথা বলার সময় অপেক্ষা করো। সময়টা তার।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তাড়া দিলে কথা আটকে যায়… *অপেক্ষা করলে কথা ফোটে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তাড়া দিলে কথা আটকে যায়…",
+    "line2": "অপেক্ষা করলে\nকথা ফোটে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "কথা আটকে যায়, ক্লাস হাসে, তাই আসিফ কোনোদিন মুখ খোলেনি… বাংলা স্যার নাম লিখলেন বিজয় দিবসের ভাষণে 🎤",
+  "description": "চাঁদপুরের এক স্কুলে ক্লাস এইটের আসিফ কথা বলতে গেলে আটকে যায়। ক্লাসে হাসি, নাম হয়ে গেছে ‘তো-তো’। তাই সে আট বছর ধরে মুখ খোলে না। নতুন বাংলা শিক্ষক মনির স্যার বিজয় দিবসের অনুষ্ঠানে দুই মিনিটের ভাষণের তালিকায় লিখলেন তার নাম…",
+  "tags": [
+   "স্কুলের গল্প",
+   "তোতলামি",
+   "আত্মবিশ্বাস",
+   "শিক্ষক ছাত্র",
+   "বিজয় দিবস",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আট বছর যে ছেলে মুখ খোলেনি, বিজয় দিবসে সে দুই মিনিট কথা বলল। ধীরে, কিন্তু কেউ হাসেনি। 🎤\nতোমার জীবনে কোন শিক্ষক তোমার ভয় কাটিয়ে দিয়েছিলেন? 👇 #শিক্ষক #আত্মবিশ্বাস"
+ },
+ "thumbnail": {
+  "text": "আট বছর চুপ",
+  "sub": "দুই মিনিটের ভাষণ"
+ }
+}

@@ -1,0 +1,395 @@
+{
+ "id": "105",
+ "status": "ready",
+ "title_bn": "ফোনের ভেতরের আব্বু",
+ "theme": "probashi",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Liking: familiarity breeds liking",
+  "title_bn": "চেনা গলার টান"
+ },
+ "cast": {
+  "mitu": {
+   "name": "মিতু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "sajjad": {
+   "name": "সাজ্জাদ",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "dadi": {
+   "name": "দাদি",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুমিল্লা, দেড় বছর আগে। সাজ্জাদের সৌদির ভিসা হয়েছে, ড্রাইভারের চাকরি। ফ্লাইট এমন দিনে, যেদিন মিতুর ডেলিভারির *তিন দিন আগে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কুমিল্লা, দেড় বছর আগে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sajjad",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফ্লাইট",
+       "value": "ছেলের জন্মের ৩ দিন আগে"
+      },
+      {
+       "label": "ছুটি পাবে",
+       "value": "৩ বছর পর",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sajjad",
+   "say": "মিতু, তিন বছর পর ছুটি। পোলা তখন হাঁটবো, কথা কইবো। আমারে *চিনবো তো*?",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "sajjad",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajjad": "hold"
+    }
+   }
+  },
+  {
+   "say": "মিতু উত্তর দিতে পারেনি। তিন দিন পর ছেলে হলো। নাম রাখা হলো আয়ান। বাবা দেখলেন *ভিডিও কলে*, চার ইঞ্চির স্ক্রিনে।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর মিতু খেয়াল করল, আয়ান ভিডিও কলে বাবার মুখ দেখলে কাঁদে। চেনে না। স্ক্রিনের মানুষটা তার কাছে *অচেনা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "ভিডিওতে চেনে না, বউ। ছোট বাচ্চা গলা চিনে আগে, মুখ চিনে *পরে*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দাদির কথাটা মাথায় গেঁথে গেল। সেই রাতে মিতু সাজ্জাদকে একটা মেসেজ দিল।",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিয়াদে রাত দুইটায় ডিউটি শেষে গাড়িতে বসে সাজ্জাদ রেকর্ড করলেন এক মিনিটের একটা *ভয়েস*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "মিতু → সাজ্জাদ",
+     "msgs": [
+      {
+       "who": "মিতু",
+       "t": "একটা ভয়েস পাঠান। পোলার জন্য। রোজ রাতে যা বলেন, সেইটাই।"
+      },
+      {
+       "who": "সাজ্জাদ",
+       "t": "কী বলব?"
+      }
+     ]
+    },
+    "set": "home",
+    "light": "night",
+    "chip": "সৌদি, রিয়াদ, গাড়ির ভেতর",
+    "chars": [
+     {
+      "id": "sajjad",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sajjad",
+   "say": "আয়ান, আব্বু বলতেছি। আব্বু তোমারে অনেক ভালোবাসে। তুমি ঘুমাও, *আব্বু পাহারা দিতেছে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "sajjad",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajjad": "phone"
+    }
+   }
+  },
+  {
+   "say": "এরপর এক বছর। প্রতি রাতে ঘুমানোর আগে একই ভয়েস। এক মিনিট। আয়ানের বালিশের পাশে মোবাইল, আর মোবাইলে *আব্বুর গলা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "প্রতি রাতে, এক বছর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "dadi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক বিকেলে সাজ্জাদের ভিডিও কল। এবার আয়ান কাঁদল না। স্ক্রিনের দিকে তাকিয়ে রইল অনেকক্ষণ। তারপর ঠোঁট নড়ল।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দেড় বছর পর, এক বিকেল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "dadi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sajjad",
+   "say": "আয়ান, বাবা… আমি কে, কও তো? *আমি কে*?",
+   "tone": "softly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঘর চুপ। দাদি নিঃশ্বাস বন্ধ করে আছেন। মিতুর হাত কাঁপছে। আর আয়ান মোবাইলে ছোট্ট হাত রেখে বলল— *আ… ব্বু*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "শুনছেন? শুনছেন? ওর প্রথম কথা! ও প্রথম *আপনারে ডাকছে*!",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mitu": "crying"
+    },
+    "arms": {
+     "mitu": "phone"
+    }
+   }
+  },
+  {
+   "voice": "sajjad",
+   "say": "আল্লাহ… আমার পোলা আমারে *চিনছে*। এক দিনও কোলে নেই নাই, তবু চিনছে।",
+   "scene": {
+    "cam": "wide",
+    "moods": {
+     "sajjad": "crying"
+    }
+   }
+  },
+  {
+   "say": "দেড় বছর পর ছুটি। সাজ্জাদ ঢুকলেন বাড়িতে। আয়ান প্রথমে মায়ের আঁচলে লুকাল। তারপর সাজ্জাদ বললেন— *আয়ান, আব্বু বলতেছি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দেড় বছর পর, ছুটিতে বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sajjad",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ভয়েসের সেই লাইন। আয়ান মুখ বের করল। একটু তাকাল। তারপর দুই হাত বাড়িয়ে দিল, *সোজা আব্বুর দিকে*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "sajjad",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাজ্জাদের মোবাইলে সেই এক মিনিটের ভয়েসটা এখনো আছে। নাম দেওয়া— *‘আয়ানের ঘুমের গান। বাজানো হয়েছে ৫৪৭ বার।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দূরত্ব মুখ ভুলিয়ে দিতে পারে… *গলা ভোলাতে পারে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দূরত্ব মুখ ভুলিয়ে দিতে পারে…",
+    "line2": "গলা ভোলাতে\nপারে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছেলের জন্মের ৩ দিন আগে বাবা গেলেন সৌদি… দেড় বছর পর ছেলের প্রথম শব্দ, ফোনের দিকে তাকিয়ে 📱",
+  "description": "সাজ্জাদ সৌদিতে গাড়ি চালান। ছেলে আয়ানের জন্মের তিন দিন আগে তাঁর ফ্লাইট। দেড় বছর ছেলেকে কোলে নেননি। মিতু ভয় পেত, ছেলে বাবাকে চিনবে না। তাই রোজ রাতে সে মোবাইলে বাজাত সাজ্জাদের পাঠানো একটা ভয়েস মেসেজ…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "সৌদি প্রবাসী",
+   "বাবা ছেলের গল্প",
+   "প্রথম শব্দ",
+   "ভয়েস মেসেজ",
+   "bangla golpo",
+   "probashi golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বাবাকে কোনোদিন সামনে দেখেনি আয়ান। তবু তার প্রথম শব্দ ছিল ‘আব্বু’— একটা মোবাইলের দিকে তাকিয়ে। 📱\nপ্রবাসে থাকা প্রিয় মানুষের গলা শুনতে তুমি কী করো? 👇 #প্রবাসী #বাবা"
+ },
+ "thumbnail": {
+  "text": "প্রথম শব্দ",
+  "sub": "ফোনের দিকে তাকিয়ে"
+ }
+}

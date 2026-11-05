@@ -827,6 +827,54 @@
    "relation": "schoolgirl / retired electrician / mother",
    "set": "street",
    "hook": "a lane without streetlights for 4 years scares girls returning from coaching; a schoolgirl and a retired electrician collect 20 taka per house and install six LED lamps"
+  },
+  {
+   "id": "105",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking: familiarity breeds liking",
+   "relation": "probashi father / wife / grandmother",
+   "set": "home",
+   "hook": "father leaves for Saudi 3 days before his son's birth; wife plays his voice note to the baby every night; the baby's first word is 'Abbu' to the phone"
+  },
+  {
+   "id": "106",
+   "book": "The Dictator's Handbook",
+   "item": "Pay your supporters first",
+   "relation": "small factory owner / workers' representative / owner's driver",
+   "set": "shop",
+   "hook": "an order is cancelled and the owner can't pay Eid bonus; workers offer to wait; he sells his own car to pay before Eid"
+  },
+  {
+   "id": "107",
+   "book": "The 33 Strategies of War",
+   "item": "The Counterbalance Strategy",
+   "relation": "young woman site engineer / veteran foreman / building owner",
+   "set": "street",
+   "hook": "foreman dismisses the new female engineer; on slab-casting day she stops the pour after spotting under-supported shuttering; a test proves her right"
+  },
+  {
+   "id": "108",
+   "book": "Thinking, Fast and Slow",
+   "item": "Reference points: we judge by comparison",
+   "relation": "father / daughter / mother",
+   "set": "home",
+   "hook": "on SSC results day the neighbour's son gets golden A+ and the daughter 3.83; mother cries; father brings sweets and reveals he failed SSC twice"
+  },
+  {
+   "id": "109",
+   "book": "The 50th Law",
+   "item": "Become an Agent of Change",
+   "relation": "stammering student / Bangla teacher / classmate",
+   "set": "shop",
+   "hook": "a stammering boy who never speaks is listed for the Victory Day speech; the teacher trains him to speak slowly with rhythm and the class learns to wait"
+  },
+  {
+   "id": "110",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Generational Myopia",
+   "relation": "grandfather with memory loss / granddaughter / son",
+   "set": "home",
+   "hook": "family keeps correcting a grandfather with dementia and he gets agitated; granddaughter stops correcting and plays an old radio request programme he loved; he sings and calls her by name"
   }
  ]
 }

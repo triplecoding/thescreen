@@ -1,0 +1,427 @@
+{
+ "id": "110",
+ "status": "ready",
+ "title_bn": "দাদুর রেডিওর গান",
+ "theme": "family",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 16",
+  "chapter_bn": "১৬ নম্বর অধ্যায়",
+  "title": "The Law of Generational Myopia",
+  "title_bn": "প্রজন্মের সেতু"
+ },
+ "cast": {
+  "dadu": {
+   "name": "দাদু",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "ritu": {
+   "name": "ঋতু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাজশাহীর এক বাড়ি। আটাত্তর বছরের দাদু, দুই বছর ধরে স্মৃতি হারাচ্ছেন। প্রতিদিন একটু একটু করে, *নিঃশব্দে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "রাজশাহী, দাদুর ঘর",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "dadu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "ritu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দাদুর বয়স",
+       "value": "৭৮"
+      },
+      {
+       "label": "চেনেন",
+       "value": "প্রায় কাউকে না",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "আপনি কে? আমার ঘরে *কেন* আসছেন? যান!",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadu": "down"
+    }
+   }
+  },
+  {
+   "voice": "ritu",
+   "say": "দাদু, আমি ঋতু। আপনার নাতনি। আপনার জন্য *খিচুড়ি* আনছি।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "ritu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ritu": "hold"
+    }
+   }
+  },
+  {
+   "say": "প্রতিদিন একই কথা। পরিবার শুধরে দেয়, আমি ঋতু, আমি আপনার ছেলে। আর প্রতিবার দাদু আরও রেগে যান। আরও *ভয় পান*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আব্বা আজকে আমারে *ভাই* ডাকছে। আমার চাচা মারা গেছেন বিশ বছর আগে।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "ritu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "ঋতু অনেকক্ষণ ভাবল। শুধরে দিলে দাদু ভয় পান। কারণ তাঁর মাথায় পৃথিবীটা অন্য সময়ে আটকে আছে। হয়তো ভুলটা *আমাদের*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "ritu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ritu",
+   "say": "আব্বা, দাদু ছোটবেলায় কী শুনতেন? রেডিওতে? দাদি বলতেন, দাদু শুক্রবার দুপুরে একটা অনুষ্ঠানের জন্য *বাজার ফেলে* বাড়ি আসতেন।",
+   "scene": {
+    "cam": {
+     "focus": "ritu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "ritu": "thinking"
+    },
+    "arms": {
+     "ritu": "phone"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "অনুরোধের আসর। শুক্রবার দুপুর। আব্বা গানের অনুরোধ লিখে চিঠি পাঠাইতেন। *একবার নাম পড়ছিল* রেডিওতে।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "moods": {
+     "abba": "thinking"
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "say": "পরের শুক্রবার দুপুরে ঋতু দাদুর পাশে বসল। নাম বলল না। কিছু শুধরাল না। শুধু মোবাইলে চালু করল পুরোনো রেডিওর একটা *রেকর্ডিং*, পঞ্চাশ বছর আগের।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শুক্রবার দুপুর",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "dadu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ritu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ঘোষকের গলা। তারপর একটা পুরোনো সুর। দাদুর আঙুল নড়ে উঠল। তারপর মাথা দোলাতে লাগলেন। আর ঠোঁটে, *গানের কথা*। একটাও ভুল না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "এইটা… এইটা শুক্রবারের গান! শাহানারে কও, *ভাত বাড়তে*। গান শেষ হইলে খামু।",
+   "scene": {
+    "cam": {
+     "focus": "dadu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "dadu": "happy"
+    },
+    "arms": {
+     "dadu": "talk"
+    }
+   }
+  },
+  {
+   "say": "শাহানা, দাদি। দুই বছর হলো নেই। ঋতু শুধরে দিল না। শুধু বলল— *আচ্ছা দাদু, কইতেছি*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "dadu",
+   "say": "তুমি… তুমি তো ঋতু না? ঋতু, আমার *বড় নাতনি*। এত বড় হইছস কবে?",
+   "tone": "curious",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "গান শেষে",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "dadu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "ritu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "dadu": "talk"
+    }
+   }
+  },
+  {
+   "say": "দুই বছরে প্রথম। এক বিকেলের জন্য। একটা পুরোনো সুর দাদুকে ফিরিয়ে আনল, আর তিনি ডাকলেন *নাম ধরে*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "ritu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ritu",
+   "say": "হ্যাঁ দাদু, ঋতু। খিচুড়ি খাবেন? আপনার প্রিয়, *ঘি দিয়া*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "ritu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ritu": "down"
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি শুক্রবার দুপুর দুইটায় দাদুর ঘরে রেডিওর আসর বসে। কেউ নাম শুধরায় না। সবাই *দাদুর সময়ে* ঢুকে যায়, এক ঘণ্টার জন্য।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "প্রতি শুক্রবার",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "dadu",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "ritu",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "abba",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রতি শুক্রবার",
+       "value": "দুপুর ২টা, রেডিওর আসর"
+      },
+      {
+       "label": "দাদুর রাগ",
+       "value": "অনেক কম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দাদুর বালিশের পাশে এখন একটা পুরোনো রেডিও, নাতনির কেনা। ভেতরে মোবাইলের স্পিকার লুকানো। গায়ে লেখা— *‘শুক্রবার, অনুরোধের আসর। অনুরোধকারী: ঋতু।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শুধরে দিলে স্মৃতি ভয় পায়… *সুর বাজালে ঘরে ফেরে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "শুধরে দিলে স্মৃতি ভয় পায়…",
+    "line2": "সুর বাজালে\nঘরে ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দাদু এখন কাউকে চেনেন না, নাতনিকে ডাকেন ‘আপনি কে?’… তারপর ঋতু বাজাল ১৯৭৫ সালের রেডিওর একটা অনুষ্ঠান 📻",
+  "description": "আটাত্তর বছরের দাদু স্মৃতিভ্রমে ভুগছেন। ছেলেকে ডাকেন ভাই, নাতনি ঋতুকে বলেন ‘আপনি কে?’। পরিবার রোজ শুধরে দেয়— আমি ঋতু, আপনার নাতনি! দাদু আরও রেগে যান। একদিন ঋতু থামল, আর খুঁজে বের করল দাদুর পুরোনো রেডিওর একটা অনুষ্ঠান…",
+  "tags": [
+   "দাদুর গল্প",
+   "স্মৃতিভ্রম",
+   "পরিবারের গল্প",
+   "পুরোনো রেডিও",
+   "নাতনি",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "প্রবীণদের যত্ন"
+  ]
+ },
+ "facebook": {
+  "caption": "দাদু নাতনির নাম ভুলে গেছেন। কিন্তু পঞ্চাশ বছর আগের রেডিওর সুর ভোলেননি— আর সেই সুরেই ফিরলেন এক বিকেলের জন্য। 📻\nতোমার দাদা-দাদি বা নানা-নানির কোন প্রিয় জিনিস তুমি আজও মনে রেখেছ? 👇 #দাদু #পরিবার"
+ },
+ "thumbnail": {
+  "text": "‘আপনি কে?’",
+  "sub": "দাদুর রেডিও"
+ }
+}

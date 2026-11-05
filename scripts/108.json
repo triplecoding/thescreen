@@ -1,0 +1,421 @@
+{
+ "id": "108",
+ "status": "ready",
+ "title_bn": "তিন দশমিক আট তিন",
+ "theme": "parents",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Reference points: we judge by comparison",
+  "title_bn": "তুলনার ফাঁদ"
+ },
+ "cast": {
+  "nila": {
+   "name": "নীলা",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "এসএসসির রেজাল্টের দুপুর। পাশের বাসা থেকে চিৎকার— *গোল্ডেন এ-প্লাস*! রাফি। আর এই বাসায় নীলার মোবাইলে একটা সংখ্যা। *তিন দশমিক আট তিন*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ময়মনসিংহ, রেজাল্টের দুপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "nila",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পাশের বাসার রাফি",
+       "value": "গোল্ডেন এ-প্লাস"
+      },
+      {
+       "label": "নীলা",
+       "value": "৩.৮৩",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "রাফির মা এখনই ফোন দিবো। আমি কী কমু? *মুখ দেখাব কেমনে*?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "say": "নীলা দরজা বন্ধ করে দিল। সারা বছর রাত দুইটা পর্যন্ত পড়েছে। অংকে ভয় ছিল, তবু *পাস করেছে*। কিন্তু এখন সেটা কেউ বলছে না।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাত আটটায় আব্বা ফিরলেন অফিস থেকে। হাতে দুইটা বড় প্যাকেট। *দুই কেজি মিষ্টি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত আটটা",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "মিষ্টি? কিসের মিষ্টি? মেয়ে তো *এ-প্লাসও* পায় নাই!",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "moods": {
+     "amma": "surprised"
+    },
+    "arms": {
+     "amma": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মেয়ে পাস করছে। তিন দশমিক আট তিন। অংকে *বি গ্রেড*। ও অংকে ভয় পাইত, মনে আছে? এইটা উৎসব না?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "আম্মা চুপ। আব্বা মিষ্টির প্যাকেট খুললেন, আর নিজে গিয়ে দাঁড়ালেন *নীলার দরজায়*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "নীলা মা, দরজা খোল। আব্বা মিষ্টি আনছে। আমার মেয়ে *পাস* করছে।",
+   "tone": "gently",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "নীলার দরজা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "nila",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "nila",
+   "say": "আব্বা, রাফি গোল্ডেন পাইছে। আমি… *আমি পারি নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nila": "face"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "শোন, একটা গোপন কথা কই। তোর আব্বা এসএসসিতে ফেল করছিল। *দুইবার*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "say": "নীলা মাথা তুলল। আব্বা? ব্যাংকের অফিসার আব্বা? যিনি রাতে খবরের কাগজের *অংক* মেলান?",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "দুইবার ফেল, তৃতীয়বার থার্ড ডিভিশন। নম্বর দিয়া মানুষ মাপলে তোর আব্বা তো *শূন্য*। কিন্তু দেখ, আজকে মিষ্টি কিনতে পারি।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "talk"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আর তোর রেজাল্ট আমার চেয়ে *চার গুণ* ভালো। আমার মেয়ে আমারে হারাইয়া দিছে। চল, পাড়ায় মিষ্টি দেই।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "point"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে বাবা-মেয়ে পাড়ায় মিষ্টি দিল। প্রথম বাসা— *রাফিদের*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পাড়ায় মিষ্টি",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "nila",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ভাবি, আমার মেয়ে পাস করছে। তিন দশমিক আট তিন। আর রাফিরে অভিনন্দন, *গোল্ডেন* পাইছে মাশাআল্লাহ।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "রাফির মা মিষ্টি নিলেন, একটু অবাক হয়ে। আর পেছনে দাঁড়িয়ে রাফি নিজে নীলাকে বলল— অংকে বি? *আমি তো ভাবছিলাম তুই ফেল করবি*। দুইজনই হেসে ফেলল।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "নীলা… দুপুরে যা কইছি, মাফ কইরা দিস। আমি তোরে না, *রাফির মারে* দেখতেছিলাম।",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত, শেষে",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "nila",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "down"
+    }
+   }
+  },
+  {
+   "say": "নীলার পড়ার টেবিলে এখন একটা ছোট কাগজ সাঁটা, আব্বার হাতে লেখা— *‘তুলনা করলে তুমি কম। নিজের সাথে মাপলে তুমি জিতেছ।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পাশের বাড়ির রেজাল্ট দিয়ে মাপলে… *নিজের সন্তান সবসময় হারে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পাশের বাড়ির রেজাল্ট দিয়ে মাপলে…",
+    "line2": "নিজের সন্তান\nসবসময় হারে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পাশের বাড়ির ছেলে গোল্ডেন এ-প্লাস, নীলা ৩.৮৩… মা কাঁদলেন, বাবা আনলেন মিষ্টি 🍬",
+  "description": "এসএসসির রেজাল্টের দিন। পাশের বাসার রাফি গোল্ডেন এ-প্লাস, আর নীলা পেল তিন দশমিক আট তিন। আম্মা কাঁদলেন, মুখ দেখাবেন কেমনে। নীলা দরজা বন্ধ করে বসে রইল। বিকেলে আব্বা ফিরলেন, হাতে দুই কেজি মিষ্টি…",
+  "tags": [
+   "এসএসসি রেজাল্ট",
+   "বাবা মেয়ের গল্প",
+   "তুলনা",
+   "পাশের বাড়ির ছেলে",
+   "পরীক্ষার ফল",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পাশের বাড়ির রেজাল্ট দিয়ে নিজের মেয়েকে মাপেননি আব্বা। মাপলেন তার পরিশ্রম দিয়ে। 🍬\nতোমার রেজাল্টের দিনে বাবা-মা কী বলেছিলেন, মনে আছে? 👇 #রেজাল্ট #বাবামেয়ে"
+ },
+ "thumbnail": {
+  "text": "৩.৮৩",
+  "sub": "আব্বা আনলেন মিষ্টি"
+ }
+}

@@ -1,0 +1,450 @@
+{
+ "id": "106",
+ "status": "ready",
+ "title_bn": "ঈদের বোনাস আর মালিকের গাড়ি",
+ "theme": "money",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Pay your supporters first",
+  "title_bn": "যাদের ওপর দাঁড়িয়ে, তারা আগে"
+ },
+ "cast": {
+  "rahim": {
+   "name": "রহিম সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "shapla": {
+   "name": "শাপলা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "driver": {
+   "name": "ড্রাইভার জসিম",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নারায়ণগঞ্জের এক ছোট কারখানা। একশো বিশজন শ্রমিক। ঈদ পাঁচ দিন পর। আর বিদেশি বায়ার বাতিল করেছে *সবচেয়ে বড় অর্ডারটা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নারায়ণগঞ্জ, ছোট গার্মেন্টস",
+    "props": [
+     "signboard",
+     "sign:রহিম নিটওয়্যার — ১২০ জনের কারখানা"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শ্রমিক",
+       "value": "১২০ জন"
+      },
+      {
+       "label": "ঈদ বোনাস লাগবে",
+       "value": "১৪ লাখ"
+      },
+      {
+       "label": "হাতে আছে",
+       "value": "৩ লাখ",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বোনাসে লাগবে চৌদ্দ লাখ। ব্যাংকে আছে তিন। লোন চেয়েছিলেন, ব্যাংক বলেছে *ঈদের পরে*।",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলে শ্রমিকদের প্রতিনিধি শাপলা এল। পনেরো বছর এই কারখানায়। খবর তার কাছেও পৌঁছেছে। *অর্ডার বাতিল*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "মালিকের রুম",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "স্যার, আমরা শুনছি। বোনাস ঈদের পরে দিয়েন। সবাই রাজি। আপনি *পনেরো বছরে* একবারও দেরি করেন নাই।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "talk"
+    }
+   }
+  },
+  {
+   "say": "রহিম সাহেব অবাক। একশো বিশজন মানুষ রাজি, নিজেদের ঈদ পিছিয়ে দিতে। *তাঁর জন্য*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "শাপলা, তোমাদের মেয়েরা ঈদের জামা পাবে না? তোমার ছেলেটা না এইবার *প্রথম রোজা* রাখল?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahim": "down"
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "পাবে না স্যার, এইবার। পরের ঈদে পাবে। আপনার কারখানা না বাঁচলে *পরের ঈদই* থাকবে না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রহিম সাহেবের সামনে খোলা রাস্তা",
+   "card": {
+    "title": "সবাই যা করে",
+    "items": [
+     {
+      "t": "বোনাস ঈদের পরে— শ্রমিকরা রাজি",
+      "mark": "x"
+     },
+     {
+      "t": "অর্ধেক এখন, অর্ধেক পরে",
+      "mark": "x"
+     },
+     {
+      "t": "‘অর্ডার বাতিল’— নোটিশ টাঙানো",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সেই রাতে রহিম সাহেব গ্যারেজে নামলেন। সাদা গাড়িটা। দশ বছর আগে কিনেছিলেন, *প্রথম বড় অর্ডারের* লাভে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "সেই রাতে, বাসার গ্যারেজ",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "driver",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "জসিম, কাল সকালে গাড়িটা শোরুমে নিয়া যাবা। *বেচব*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahim": "talk"
+    }
+   }
+  },
+  {
+   "voice": "driver",
+   "say": "স্যার! গাড়ি বেচবেন? তাইলে আপনি অফিসে যাবেন *কেমনে*?",
+   "scene": {
+    "cam": {
+     "focus": "driver",
+     "zoom": 1.4
+    },
+    "moods": {
+     "driver": "surprised"
+    },
+    "arms": {
+     "driver": "down"
+    }
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "রিকশায়, জসিম। একশো বিশজনের ঈদ রিকশায় চড়ে না। আমি *চড়তে পারি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahim": "talk"
+    }
+   }
+  },
+  {
+   "say": "ঈদের তিন দিন আগে, নিয়মমতো দিনে। একশো বিশটা খাম। পুরো বোনাস। *এক টাকাও কম না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঈদের তিন দিন আগে",
+    "props": [
+     "signboard",
+     "sign:রহিম নিটওয়্যার — ১২০ জনের কারখানা"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গাড়ি বিক্রি",
+       "value": "১১ লাখ"
+      },
+      {
+       "label": "বোনাস দেওয়া",
+       "value": "১২০ জন, পুরোটা"
+      },
+      {
+       "label": "দেরি",
+       "value": "০ দিন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "স্যার… আপনার গাড়ি? গেটে তো আইজ আপনি *রিকশা থেকে* নামলেন।",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shapla": "surprised"
+    },
+    "arms": {
+     "shapla": "down"
+    }
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "গাড়ি আবার হবে, শাপলা। তোমাদের ছেলেমেয়ের *এই ঈদ* আর হবে না।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahim": "hold"
+    }
+   }
+  },
+  {
+   "say": "শাপলা কিছু বলল না। খামটা বুকে চেপে ধরল। তারপর কারখানার ফ্লোরে গিয়ে খবরটা দিল। একশো বিশটা মেশিন একসাথে *থেমে গেল*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঈদের পর একটা নতুন অর্ডার এল, ছোট। ডেলিভারি দিতে হবে অসম্ভব কম সময়ে। শ্রমিকরা নিজেরাই ঠিক করল— *দুই শিফট*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঈদের পর",
+    "props": [
+     "signboard",
+     "sign:রহিম নিটওয়্যার — ১২০ জনের কারখানা"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "স্যার, এইটা ওভারটাইম না। এইটা আমাদের *গাড়ি কেনার* কিস্তি।",
+   "tone": "proudly",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন অর্ডার ডেলিভারি",
+       "value": "১২ দিনের কাজ ৮ দিনে"
+      },
+      {
+       "label": "বায়ারের রেটিং",
+       "value": "সর্বোচ্চ"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক বছর পর কারখানার গেটে আবার একটা গাড়ি থামল। পুরোনো, সেকেন্ড হ্যান্ড। পেছনের কাচে শ্রমিকদের লাগানো একটা স্টিকার— *‘আমাদের মালিকের গাড়ি।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মালিক বাঁচে কারখানা বাঁচালে… *কারখানা বাঁচে মানুষ বাঁচালে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মালিক বাঁচে কারখানা বাঁচালে…",
+    "line2": "কারখানা বাঁচে\nমানুষ বাঁচালে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "অর্ডার বাতিল, ঈদের বোনাস দিতে পারছে না ছোট গার্মেন্টস… শ্রমিকরা বলল ‘পরে দিয়েন’, মালিক যা করলেন 🚗",
+  "description": "নারায়ণগঞ্জের এক ছোট গার্মেন্টস, একশো বিশজন শ্রমিক। একটা বড় অর্ডার বাতিল, ঈদের বোনাসের টাকা নেই। শ্রমিকদের প্রতিনিধি শাপলা বলল— স্যার, ঈদের পরে দিয়েন, আমরা বুঝি। মালিক রহিম সাহেব সেই রাতে ড্রাইভারকে ডাকলেন…",
+  "tags": [
+   "গার্মেন্টসের গল্প",
+   "ঈদ বোনাস",
+   "মালিক শ্রমিক",
+   "সততা",
+   "নারায়ণগঞ্জ",
+   "টাকার গল্প",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "শ্রমিকরা বলেছিল, বোনাস পরে দিয়েন। মালিক বললেন, তোমাদের ঈদ পরে হবে না। 🚗\nতোমার দেখা সবচেয়ে মানবিক মালিক বা বস কে? 👇 #ঈদ #শ্রমিক"
+ },
+ "thumbnail": {
+  "text": "বোনাসের টাকা নাই",
+  "sub": "ঈদ ৫ দিন পর"
+ }
+}
