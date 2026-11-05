@@ -1355,6 +1355,54 @@
    "relation": "sanitation worker / small boy / worker's daughter",
    "set": "stairs",
    "hook": "a boy sticks a daily thank-you note on the trash bag for the waste collector; after two years the collector's daughter passes HSC and the family brings sweets to the boy"
+  },
+  {
+   "id": "171",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Role-playing: the mask of sacrifice",
+   "relation": "university sister / younger brother / mother",
+   "set": "home",
+   "hook": "the sister believes her brother studies at college and tutors; on the Eid launch home he serves her tea in the canteen—he quit study to fund her"
+  },
+  {
+   "id": "172",
+   "book": "The Righteous Mind",
+   "item": "Sacredness: objects that hold meaning",
+   "relation": "father / son / mother",
+   "set": "home",
+   "hook": "a father gives his old wind-up watch to his son on his first job; the son switches to a smartwatch; years later he finds his father has wound it every night so it would never stop"
+  },
+  {
+   "id": "173",
+   "book": "The 50th Law",
+   "item": "Fearlessness: step into the unknown",
+   "relation": "widow / old boatman / young son",
+   "set": "street",
+   "hook": "a haor widow decides to fish with her late husband's boat; villagers mock; an old boatman teaches her for a month; she feeds her family and others follow"
+  },
+  {
+   "id": "174",
+   "book": "The Social Contract",
+   "item": "The general will vs. private will",
+   "relation": "young neighbour / elderly woman / biker",
+   "set": "street",
+   "hook": "an ambulance can't enter a lane jammed with parked bikes at 2 am; young men lift bikes aside; afterwards the lane paints a no-parking strip"
+  },
+  {
+   "id": "175",
+   "book": "Mastery",
+   "item": "The apprenticeship of reading",
+   "relation": "Bangla teacher / mischievous boy / father",
+   "set": "home",
+   "hook": "a village school's 12-book library is locked away; the new teacher hands the key to the most troublesome boy and makes him librarian; he reads all twelve, collects more, and writes his first story"
+  },
+  {
+   "id": "176",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocation: the obligation to repay",
+   "relation": "elderly landlady / tenant's son / widowed mother",
+   "set": "home",
+   "hook": "a landlady kept a widow's rent unchanged for ten years; the son, newly employed, tries to pay the difference; she declines money and asks him to visit every Friday instead"
   }
  ]
 }

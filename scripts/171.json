@@ -1,0 +1,401 @@
+{
+ "id": "171",
+ "status": "ready",
+ "title_bn": "লঞ্চের ক্যান্টিনে ছোট ভাই",
+ "theme": "siblings",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "The Law of Role-playing: the mask of sacrifice",
+  "title_bn": "ত্যাগের মুখোশ"
+ },
+ "cast": {
+  "shimu": {
+   "name": "শিমু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "tuhin": {
+   "name": "তুহিন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকা বিশ্ববিদ্যালয়ের রোকেয়া হল। শিমুর মোবাইলে প্রতি মাসের পাঁচ তারিখে একটা মেসেজ। ছোট ভাই তুহিন পাঠায় *তিন হাজার টাকা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ঢাকা, রোকেয়া হল",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "তুহিন",
+     "msgs": [
+      {
+       "who": "তুহিন",
+       "t": "আপু, ৩,০০০ পাঠাইলাম। টিউশনির টাকা।"
+      },
+      {
+       "who": "তুহিন",
+       "t": "বই কিনিস। আর খাইস ঠিকমতো।"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তুহিন বরিশালের কলেজে পড়ে, ইন্টার। পাশাপাশি টিউশনি করে। শিমু তাই জানে। আম্মাও তাই বলেন। *দেড় বছর ধরে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "তুহিন, তুই নিজে পড়বি কখন? এত টিউশনি কইরা নিজের রেজাল্ট খারাপ করিস না, *কইলাম*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shimu": "phone"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আপু, আমি সব সামলাই। তুই খালি ভালো কইরা পড়। তুই আমাদের বংশের *প্রথম ভার্সিটি*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঈদের ছুটি। শিমু বাড়ি ফিরছে, রাতের লঞ্চে। তুহিনকে বলেনি, *সারপ্রাইজ*। ডেকে বসে ক্যান্টিনের ছেলেকে ডাকল, এক কাপ চা।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "ঈদের ছুটি, সদরঘাট–বরিশাল লঞ্চ",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চা নিয়ে এল একটা ছেলে। সাদা ইউনিফর্ম, কোমরে গামছা, হাতে ট্রে। কাপটা নামাতে গিয়ে চোখাচোখি। ট্রেটা হাত থেকে *প্রায় পড়ে গেল*।",
+   "pause": 1.5,
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "ডেকে",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "তুহিন? তুই… এইখানে? তুই তো… *কলেজে*…",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shimu": "surprised"
+    },
+    "arms": {
+     "shimu": "down"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আপু… চা-টা নে। ঠান্ডা হইয়া যাইবো। আমি… পরে কই, *কাস্টমার* আছে।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "hold"
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটা। লঞ্চের পেছনের ডেক। নদীতে অন্ধকার, শুধু ইঞ্জিনের শব্দ। তুহিন এল কাজ শেষে। আর বলল *সব*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "রাত দুইটা, লঞ্চের পেছনের ডেক",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "tuhin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "shimu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আব্বা মারা যাওয়ার পর দুইজনের পড়ার খরচ চলতো না, আপু। একজনরে থামতে হইতো। তুই প্রথম হইছিলি, *আমি না*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "face"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "তাই কলেজ ছাড়ছি। লঞ্চে চাকরি, মাসে আট হাজার। তিন হাজার তোরে, বাকিটা আম্মারে। আম্মারে কইছি, *তোরে কইবো না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "down"
+    }
+   }
+  },
+  {
+   "say": "শিমু কিছু বলতে পারল না। দেড় বছর। প্রতিটা বই, প্রতিটা ক্যান্টিনের খাবার, প্রতিটা ফটোকপি। সব এই লঞ্চের *চায়ের কাপ* থেকে।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "পাগল… তুই আমারে প্রথম বানাইলি, আর নিজে *শেষে* দাঁড়াইলি?",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shimu": "crying"
+    },
+    "arms": {
+     "shimu": "hug"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "তুহিন, তুই আবার কলেজে ভর্তি হবি। ওপেন ইউনিভার্সিটিতে, লঞ্চের কাজের সাথে। আর আমি এখন থেকে নিজে *টিউশনি* করব। তোর টাকা আর না।",
+   "tone": "serious",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের পরে, বাড়িতে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shimu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আপু, তোর পড়ার ক্ষতি হইবো…",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "down"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "হইবো না। তুই আমারে দেড় বছর পড়াইছস। এইবার আমি তোরে পড়াব। *হিসাব সমান*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shimu": "point"
+    }
+   }
+  },
+  {
+   "say": "তুহিন এখনো লঞ্চের ক্যান্টিনে চা দেয়। শুধু এখন ট্রের পাশে একটা বই রাখা থাকে। আর প্রতি ঈদে ডেকে একজন যাত্রী চায়ের অর্ডার দেয়— *‘দুই কাপ, একটা আমার ভাইয়ের জন্য।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কেউ কেউ নিজের স্বপ্ন থামিয়ে দেয়… *যাতে আরেকজনের স্বপ্ন না থামে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কেউ কেউ নিজের স্বপ্ন থামিয়ে দেয়…",
+    "line2": "যাতে আরেকজনের স্বপ্ন\nনা থামে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বোন জানত ছোট ভাই বরিশালে কলেজে পড়ে… ছুটিতে লঞ্চে উঠে চায়ের অর্ডার দিতেই সামনে এল তুহিন 🚢",
+  "description": "শিমু ঢাকা বিশ্ববিদ্যালয়ে পড়ে। প্রতি মাসে ছোট ভাই তুহিন বিকাশে পাঠায় তিন হাজার টাকা— বলে টিউশনির টাকা। শিমু জানে, তুহিন বরিশালে কলেজে পড়ে। ঈদের ছুটিতে বাড়ি ফিরছে লঞ্চে। ক্যান্টিনে চা চাইল। ট্রে হাতে যে ছেলেটা এল…",
+  "tags": [
+   "ভাই বোনের গল্প",
+   "ছোট ভাইয়ের ত্যাগ",
+   "লঞ্চ",
+   "বরিশাল",
+   "ঢাকা বিশ্ববিদ্যালয়",
+   "bangla golpo",
+   "vai boner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বোন ভাবত ভাই কলেজে পড়ে। লঞ্চের ক্যান্টিনে চা নিয়ে এল সেই ভাই, ইউনিফর্ম পরে। 🚢\nতোমার জন্য পরিবারের কেউ কি চুপচাপ নিজের স্বপ্ন ছেড়ে দিয়েছে? 👇 #ভাইবোন #ত্যাগ"
+ },
+ "thumbnail": {
+  "text": "চা দিল ছোট ভাই",
+  "sub": "কলেজ না, ক্যান্টিন"
+ }
+}

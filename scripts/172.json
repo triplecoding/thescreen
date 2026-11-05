@@ -1,0 +1,391 @@
+{
+ "id": "172",
+ "status": "ready",
+ "title_bn": "আব্বার পুরোনো হাতঘড়ি",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Sacredness: objects that hold meaning",
+  "title_bn": "জিনিসের ভেতরের অর্থ"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "আট বছর আগে। তানভীরের প্রথম চাকরির সকাল। আব্বা নিজের হাত থেকে খুলে দিলেন একটা পুরোনো ঘড়ি। চল্লিশ বছরের। *দম দেওয়া ঘড়ি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "আট বছর আগে, প্রথম চাকরির সকাল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঘড়ির বয়স",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "আব্বা পরেছেন",
+       "value": "প্রতিদিন, ৩২ বছরের চাকরিতে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা পইরা আমি বত্রিশ বছর অফিসে গেছি। একদিনও দেরি হয় নাই। এখন *তোর*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "তানভীর ঘড়িটা পরল। এক মাস। তারপর প্রথম বেতনে কিনল একটা স্মার্টওয়াচ। পুরোনো ঘড়িটা গেল বাড়ির ড্রয়ারে। আর ধীরে ধীরে *মন থেকেও*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "আট বছরে তানভীর",
+   "card": {
+    "title": "যা ভুলে গিয়েছিল",
+    "items": [
+     {
+      "t": "ঘড়িটা কোথায় রেখেছিল",
+      "mark": "x"
+     },
+     {
+      "t": "আব্বা কেন কখনো জিজ্ঞেস করেননি",
+      "mark": "x"
+     },
+     {
+      "t": "ঘড়িতে দম দিতে হয়",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আট বছর পর ঈদের ছুটি। বাড়ির নিজের পুরোনো ঘরে তানভীর। রাত বারোটা। হঠাৎ দরজা খোলার শব্দ। কেউ চুপিচুপি *ঘরে ঢুকল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আট বছর পর, ঈদের ছুটি, রাত বারোটা",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আব্বা। অন্ধকারে, পা টিপে টিপে। ড্রয়ার খুললেন। ঘড়িটা বের করলেন। আর আস্তে আস্তে *দম দিতে লাগলেন*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "একই মুহূর্ত",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আব্বা? আপনি… *কী করেন*?",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tanvir": "surprised"
+    },
+    "arms": {
+     "tanvir": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ও… জাইগা আছস? কিছু না। ঘড়িটা। দম না দিলে বন্ধ হইয়া যায়। *একবার বন্ধ হইলে* আর ঠিক চলে না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আপনি… এইটা কতদিন ধইরা কইরা আসতেছেন?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "talk"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আট বছর, বাবা। প্রতি রাতে। তুই ঘড়িটা রাইখা গেছস, সেই রাত থেকে। কইতো, আমার পোলার সময় যেন *কোনোদিন থাইমা না যায়*।",
+   "tone": "softly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তানভীর বসে রইল। আট বছর। প্রায় তিন হাজার রাত। তার হাতে স্মার্টওয়াচ, যেটা প্রতি রাতে চার্জে দেয়। আর এই ঘড়িটা, যেটায় দম দিয়েছেন *অন্য একজন*।",
+   "pause": 1.5,
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আব্বা, ঘড়িটা দেন। কালকে থেকে আমি পরব। আর দম *আমি দিমু*।",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "একই রাত",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tanvir": "hold"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "পরিস না, যদি অফিসে মানায় না। খালি রাখিস। আর মাঝে মাঝে *দম দিস*। ব্যস।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "তানভীর স্মার্টওয়াচ খুলে রাখল টেবিলে। আব্বার ঘড়িটা পরল। টিকটিক শব্দ। আট বছরে এই প্রথম, তার কব্জিতে আব্বার *হাতের দম* চলছে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক মাস পর। তানভীরের অফিসের ডেস্কে কেউ জিজ্ঞেস করল, এই পুরোনো ঘড়ি কেন? তানভীর হাসল। *এইটা চলে আব্বার দমে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক মাস পর, ঢাকার অফিস",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঘড়ি বন্ধ হয়েছে",
+       "value": "৪০ বছরে ০ বার"
+      },
+      {
+       "label": "তানভীরের নতুন অভ্যাস",
+       "value": "প্রতি রাতে দম, তারপর আব্বাকে ফোন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "প্রতি রাতে এখন তানভীর ঘড়িতে দম দেয়। তারপর আব্বাকে একটা মেসেজ পাঠায়, একই কথা প্রতিদিন— *‘দম দিলাম, আব্বা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু ঘড়ি সময় দেখায়… *কিছু ঘড়ি ভালোবাসা গোনে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু ঘড়ি সময় দেখায়…",
+    "line2": "কিছু ঘড়ি\nভালোবাসা গোনে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বার দেওয়া পুরোনো ঘড়ি ড্রয়ারে রেখেছিল ছেলে… আট বছর প্রতি রাতে কে দম দিত? ⌚",
+  "description": "তানভীরের প্রথম চাকরির দিন আব্বা হাতে পরিয়ে দিয়েছিলেন নিজের পুরোনো হাতঘড়ি, চল্লিশ বছরের। তানভীর এক মাস পরে কিনল স্মার্টওয়াচ। পুরোনো ঘড়িটা গেল ড্রয়ারে। আট বছর পর ঈদের ছুটিতে বাড়ি গিয়ে এক রাতে দেখল, আব্বা চুপিচুপি তার ঘরে…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "হাতঘড়ি",
+   "স্মৃতি",
+   "প্রথম চাকরি",
+   "বাবার ভালোবাসা",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছেলে ঘড়িটা ড্রয়ারে রেখে ভুলে গিয়েছিল। আব্বা আট বছর ধরে প্রতি রাতে সেটায় দম দিয়েছেন। ⌚\nবাবা বা মায়ের দেওয়া কোন জিনিসটা তুমি অযত্নে রেখে দিয়েছ? 👇 #বাবা #স্মৃতি"
+ },
+ "thumbnail": {
+  "text": "ড্রয়ারে ঘড়ি",
+  "sub": "প্রতি রাতে দম"
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "id": "175",
+ "status": "ready",
+ "title_bn": "বারোটা বইয়ের লাইব্রেরি",
+ "theme": "school",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The apprenticeship of reading",
+  "title_bn": "পড়ার অভ্যাস তৈরি"
+ },
+ "cast": {
+  "shafiq": {
+   "name": "শফিক স্যার",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "glasses": true,
+   "voice": "man"
+  },
+  "robin": {
+   "name": "রবিন",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "abba": {
+   "name": "রবিনের আব্বা",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুড়িগ্রামের এক স্কুল। লাইব্রেরি মানে অফিস ঘরের কোণে একটা কাঠের আলমারি। বারোটা বই। একটা তালা। আর দুই বছর ধরে *কেউ খোলেনি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কুড়িগ্রাম, স্কুলের লাইব্রেরি",
+    "props": [
+     "almirah",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shafiq",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লাইব্রেরির বই",
+       "value": "১২টা"
+      },
+      {
+       "label": "শেষ খোলা",
+       "value": "২ বছর আগে",
+       "red": true
+      },
+      {
+       "label": "চাবি",
+       "value": "হেডস্যারের ড্রয়ারে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নতুন বাংলার স্যার শফিক ক্লাস সেভেনে ঢুকলেন। প্রথম দিনেই চোখে পড়ল রবিন। পেছনের বেঞ্চ, কাগজের প্লেন, আর পুরো ক্লাসকে *হাসানোর* ক্ষমতা।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "ক্লাস সেভেন",
+    "props": [
+     "signboard",
+     "sign:ক্লাস সেভেন"
+    ],
+    "chars": [
+     {
+      "id": "shafiq",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "robin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "robin",
+   "say": "স্যার, আপনি নতুন? আগের স্যার এক মাস টিকছিল। আপনি কয় মাস *টিকবেন*?",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "robin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robin": "point"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস হাসল। শফিক স্যার হাসলেন না, রাগও করলেন না। শুধু ক্লাস শেষে রবিনকে ডাকলেন অফিস ঘরে। সবাই ভাবল, *আজ মার খাবে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "স্কুলে রবিনের পরিচয়",
+   "card": {
+    "title": "সবাই যা জানত",
+    "items": [
+     {
+      "t": "সবচেয়ে দুষ্টু",
+      "mark": "x"
+     },
+     {
+      "t": "পড়া পারে না",
+      "mark": "x"
+     },
+     {
+      "t": "বাবা ইটভাটায়, বাসায় বই নেই",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "রবিন, এই চাবিটা নাও। আজ থেকে তুমি স্কুলের *লাইব্রেরিয়ান*। আলমারি খোলা, বন্ধ, কে কোন বই নিল, সব তোমার দায়িত্ব।",
+   "tone": "serious",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "অফিস ঘর",
+    "props": [
+     "almirah",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shafiq",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "robin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shafiq": "hold"
+    }
+   }
+  },
+  {
+   "voice": "robin",
+   "say": "স্যার… আমি? আমি তো… আমি তো *বই পড়ি না*।",
+   "scene": {
+    "cam": {
+     "focus": "robin",
+     "zoom": 1.4
+    },
+    "moods": {
+     "robin": "surprised"
+    },
+    "arms": {
+     "robin": "down"
+    }
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "লাইব্রেরিয়ানরে তো জানতে হবে কোন বইয়ে কী আছে। নাইলে কাউরে বলবা কেমনে? বারোটা বই। *একটা একটা* কইরা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shafiq": "talk"
+    }
+   }
+  },
+  {
+   "say": "রবিন চাবিটা হাতে নিল। জীবনে প্রথম কেউ তাকে একটা দায়িত্ব দিল। পড়া না পারার জন্য বকা না। *বিশ্বাস*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "robin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে ইটভাটার পাশের ঘরে কুপির আলোয় রবিন খুলল প্রথম বই। একটা ছোটদের উপন্যাস। প্রথম পাতা পড়তে লাগল *আধা ঘণ্টা*। শেষ পাতা পড়ল ভোরে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রবিনের বাড়ি, কুপির আলো",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "robin",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "কী রে, সারারাত কী পড়স? *পরীক্ষা* নাকি?",
+   "tone": "curious",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "robin",
+   "say": "না আব্বা, গল্প! একটা ছেলে নদী দিয়া একা সমুদ্রে যায়! আব্বা, আমি এখন *লাইব্রেরিয়ান*!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "robin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robin": "hold"
+    }
+   }
+  },
+  {
+   "say": "এক বছর পর আলমারিতে একশো সাতাশিটা বই। রবিন গ্রামে গ্রামে ঘুরে পুরোনো বই জোগাড় করেছে। আর একটা খাতায় লেখা, কে কোন বই নিল, *কবে ফেরত দেবে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "almirah",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "robin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shafiq",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লাইব্রেরির বই",
+       "from": "১২",
+       "value": "১৮৭টা"
+      },
+      {
+       "label": "রবিনের পড়া",
+       "value": "১২টার সব, তারপর আরও ৬০টা"
+      },
+      {
+       "label": "বই নেওয়া ছাত্র",
+       "value": "মাসে ৮০+"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "robin",
+   "say": "স্যার, একটা জিনিস দেখবেন? আমি একটা গল্প *লিখছি*। একটা ইটভাটার ছেলে, যে লাইব্রেরির চাবি পায়।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "robin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robin": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "রবিন, লাইব্রেরিতে এখন একশো আটাশিটা বই হইলো। *সবচেয়ে নতুনটা* তোমার।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shafiq": "hold"
+    }
+   }
+  },
+  {
+   "say": "লাইব্রেরির আলমারির গায়ে এখন একটা কাগজ, রবিনের হাতে লেখা— *‘তালা নাই। চাবি লাগলে লাইব্রেরিয়ান রবিনকে বলুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দুষ্টু ছেলের হাতে বকা দিলে দূরত্ব বাড়ে… *চাবি দিলে দরজা খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দুষ্টু ছেলের হাতে বকা দিলে দূরত্ব বাড়ে…",
+    "line2": "চাবি দিলে\nদরজা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গ্রামের স্কুলের লাইব্রেরিতে মাত্র ১২টা বই, তালাবন্ধ… নতুন স্যার চাবিটা দিলেন সবচেয়ে দুষ্টু ছেলেকে 📚",
+  "description": "কুড়িগ্রামের এক স্কুলের লাইব্রেরি মানে একটা কাঠের আলমারি, বারোটা বই, আর একটা তালা। চাবি হেডস্যারের ড্রয়ারে। নতুন বাংলার স্যার শফিক চাবিটা চাইলেন। তারপর দিলেন ক্লাস সেভেনের সবচেয়ে দুষ্টু ছেলে রবিনের হাতে…",
+  "tags": [
+   "স্কুলের গল্প",
+   "লাইব্রেরি",
+   "বই পড়া",
+   "গ্রামের স্কুল",
+   "কুড়িগ্রাম",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বারোটা বই, একটা তালা, আর একটা দুষ্টু ছেলের হাতে চাবি। এক বছর পর সেই ছেলে লিখল তার জীবনের প্রথম গল্প। 📚\nতোমার জীবনের প্রথম পড়া গল্পের বইটা কোনটা ছিল? 👇 #বই #শিক্ষক"
+ },
+ "thumbnail": {
+  "text": "১২টা বই, তালাবন্ধ",
+  "sub": "চাবি দুষ্টু ছেলের হাতে"
+ }
+}
