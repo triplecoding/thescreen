@@ -30,8 +30,14 @@ def srt(tl):
 
 def thumbnails(tl_path, odir):
     stills = odir / "stills"
-    run(["node", ROOT / "pipeline" / "render.js", tl_path, stills, "1", "--frames", "0.05"])
-    src = next(stills.glob("f_0.05.png"))
+    stills.mkdir(parents=True, exist_ok=True)
+    src = stills / "thumb.png"
+    try:   # the most emotional moment of the story with the title on top
+        run(["node", ROOT / "pipeline" / "render.js", tl_path, src, "1", "--thumb"])
+    except Exception as e:  # noqa — never lose a video over a thumbnail
+        log("thumbnail moment failed, using the first frame:", e)
+        run(["node", ROOT / "pipeline" / "render.js", tl_path, stills, "1", "--frames", "0.05"])
+        src = next(stills.glob("f_0.05.png"))
     from PIL import Image, ImageFilter
     v = Image.open(src).convert("RGB")
     v.save(odir / "thumb_9x16.png")

@@ -231,13 +231,16 @@
     if (b.kind !== 'outro') html += UI.header(dark, chip, chipAnim);
     // caption
     const noCap = b.kind === 'statement' || b.kind === 'outro' || (b.kind === 'ask' && b.card && b.card.quote);
-    if (!noCap) html += UI.caption(b, lt, { dark: b.kind !== STORY && dark, top: b.kind === 'takeaways' ? 1490 : 1450 });
+    const THUMB = g.THUMB_MODE;
+    if (!noCap && !THUMB) html += UI.caption(b, lt, { dark: b.kind !== STORY && dark, top: b.kind === 'takeaways' ? 1490 : 1450 });
     // title flash (first frame doubles as the Shorts thumbnail)
     const th = SCRIPT.thumbnail;
-    if (i === 0 && th && lt < 1.9) {
-      const a = 1 - U.prog(lt, 1.25, 0.6);
-      html += `<div style="position:absolute;inset:0;opacity:${a};background:linear-gradient(180deg, rgba(18,10,14,.82) 0%, rgba(18,10,14,.55) 45%, rgba(18,10,14,0) 75%)"></div>
-        <div style="position:absolute;top:330px;left:50px;right:50px;text-align:center;opacity:${a};transform:scale(${1 + U.prog(lt, 0, 1.9) * 0.04})"><div style="display:inline-block;background:${TH.red};color:#fff;font:700 132px/1.15 ${TH.bn};padding:12px 44px 24px;border-radius:26px;box-shadow:0 18px 0 rgba(0,0,0,.25);transform:rotate(-2deg)">${U.esc(th.text)}</div><div style="margin-top:34px;font:700 64px ${TH.bn};color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.6)">${U.esc(th.sub || '')}</div></div>`;
+    if (th && (THUMB || (i === 0 && lt < 1.9))) {
+      const a = THUMB ? 1 : 1 - U.prog(lt, 1.25, 0.6);
+      if (THUMB) html += `<div style="position:absolute;inset:0;background:linear-gradient(0deg, rgba(18,10,14,.88) 0%, rgba(18,10,14,.6) 28%, rgba(18,10,14,0) 50%)"></div>
+        <div style="position:absolute;bottom:250px;left:40px;right:40px;text-align:center"><div style="display:inline-block;background:${TH.red};color:#fff;font:700 138px/1.15 ${TH.bn};padding:12px 44px 24px;border-radius:26px;box-shadow:0 18px 0 rgba(0,0,0,.3);transform:rotate(-2deg)">${U.esc(th.text)}</div><div style="margin-top:36px;font:700 70px ${TH.bn};color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.7)">${U.esc(th.sub || '')}</div></div>`;
+      else html += `<div style="position:absolute;inset:0;opacity:${a};background:linear-gradient(180deg, rgba(18,10,14,.82) 0%, rgba(18,10,14,.55) 45%, rgba(18,10,14,0) 75%)"></div>
+        <div style="position:absolute;top:330px;left:50px;right:50px;text-align:center;opacity:${a};transform:scale(${THUMB ? 1.02 : 1 + U.prog(lt, 0, 1.9) * 0.04})"><div style="display:inline-block;background:${TH.red};color:#fff;font:700 132px/1.15 ${TH.bn};padding:12px 44px 24px;border-radius:26px;box-shadow:0 18px 0 rgba(0,0,0,.25);transform:rotate(-2deg)">${U.esc(th.text)}</div><div style="margin-top:34px;font:700 64px ${TH.bn};color:#fff;text-shadow:0 4px 18px rgba(0,0,0,.6)">${U.esc(th.sub || '')}</div></div>`;
     }
     // finishing: vignette, grain, screen frame
     html += `<div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.22) 100%)"></div>`;
@@ -257,5 +260,26 @@
     return { duration: TL.duration, beats: R.map(b => [b.start, b.end]) };
   }
 
-  g.TS = { init, renderAt, resolve };
+  // the most emotional, uncluttered story moment (faces visible, no widget, close camera) for the thumbnail
+  function thumbTime() {
+    const W = { crying: 5, surprised: 4, sad: 3, worried: 3, happy: 2, angry: 2, smile: 1 };
+    const D = TL.duration;
+    let best = null, bs = -1;
+    R.forEach(b => {
+      if (b.kind !== STORY || !b.scene || !b.scene.chars || !b.scene.chars.length) return;
+      const mid = (b.start + b.end) / 2;
+      let sc = b.scene.chars.reduce((a, c) => a + (W[c.mood] || 0), 0);
+      if (b.scene.chars.length >= 2) sc += 2;
+      if (b.scene.cam && typeof b.scene.cam === 'object' && b.scene.cam.focus) sc += 2;
+      if (!b.scene.widget) sc += 3;
+      if (b.scene.bubble) sc -= 2;
+      if (mid > D * 0.2 && mid < D * 0.8) sc += 2;
+      if (mid > D * 0.9) sc -= 4;              // no spoilers from the ending
+      if (sc > bs) { bs = sc; best = b; }
+    });
+    if (!best) return 0.05;
+    return best.start + Math.min(0.9, (best.end - best.start) * 0.5);
+  }
+
+  g.TS = { init, renderAt, resolve, thumbTime };
 })(window);

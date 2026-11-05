@@ -31,6 +31,15 @@ async function frame(page, t, type = 'jpeg') {
   const tl = JSON.parse(fs.readFileSync(tlPath, 'utf8'));
   const fps = tl.fps || 30;
   const browser = await chromium.launch({ args: ['--disable-gpu', '--font-render-hinting=none'] });
+  const ti = rest.indexOf('--thumb');
+  if (ti >= 0) {   // thumbnail: the most emotional moment + the title overlay → <out> (png)
+    const page = await openPage(browser, tl);
+    const t = await page.evaluate(() => { window.THUMB_MODE = true; return window.TS.thumbTime(); });
+    fs.writeFileSync(out, await frame(page, t, 'png'));
+    console.log(`thumbnail at ${t.toFixed(2)}s`);
+    await browser.close();
+    return;
+  }
   const fi = rest.indexOf('--frames');
   if (fi >= 0) {   // stills mode for QA
     const times = rest[fi + 1].split(',').map(Number);
