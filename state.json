@@ -505,6 +505,17 @@
       "playlist": false,
       "facebook": "1426617506285763",
       "scheduled_for": "2026-11-10T11:30:00+06:00"
+    },
+    {
+      "id": "044",
+      "date": "2026-11-10",
+      "slot": "13:30",
+      "duration": 141.65,
+      "title": "ব্যাংকার মেয়ে, আর আম্মা টাকা রাখেন বালিশে— এক রাতে জানা গেল কেন 🌾",
+      "youtube": "VhDx-tQkcsQ",
+      "playlist": true,
+      "facebook": "902193042889038",
+      "scheduled_for": "2026-11-10T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -532,10 +543,11 @@
     "The 33 Strategies of War": "PLB3eGsLlxhY8",
     "The Dictator's Handbook": "PLP5oE_7fMspM",
     "The 50th Law": "PLHPj7wq0Ennw",
-    "theme:community": "PLTIVdSRBE7Ko"
+    "theme:community": "PLTIVdSRBE7Ko",
+    "theme:money": "PLE4xM922HB78"
   },
   "last_run": {
-    "at": "2026-11-06T00:23:34.404125+06:00",
+    "at": "2026-11-06T00:30:18.582491+06:00",
     "errors": []
   },
   "queue_remaining": 15,
