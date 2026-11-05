@@ -1,0 +1,536 @@
+{
+ "id": "058",
+ "status": "ready",
+ "title_bn": "দুইটা মাটির ব্যাংক",
+ "theme": "parents",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 8",
+  "chapter_bn": "৮ নম্বর অধ্যায়",
+  "title": "Wealth is What You Don't See",
+  "title_bn": "যে সম্পদ চোখে পড়ে না"
+ },
+ "cast": {
+  "kashem": {
+   "name": "কাশেম",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "rifat": {
+   "name": "রিফাত",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "ma": {
+   "name": "মা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বহদ্দারহাটের এক টিনের ঘর। রিকশাচালক কাশেম রোজ রাতে একটা মাটির ব্যাংকে ফেলেন *বিশ টাকা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বহদ্দারহাট, চট্টগ্রাম",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "ma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রোজের আয়",
+       "value": "৯০০ টাকা"
+      },
+      {
+       "label": "ব্যাংকে রোজ",
+       "value": "২০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "রিফাতের ল্যাপটপ। সরকারি ফ্রি ট্রেনিং পাইছে, খালি *ল্যাপটপটা* লাগে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kashem": "talk"
+    }
+   }
+  },
+  {
+   "say": "কিন্তু কয়েক মাস ধরে কাশেমের চোখে একটা *সাদা পর্দা*। রাতে হেডলাইট দেখলে সব ঝাপসা।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক রাতে একটা সিএনজির সাথে অল্পের জন্য *ধাক্কা* লাগেনি। বাসায় কাউকে বললেন না।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত দশটা",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশের ঘরে রিফাত জানে। ডাক্তার বলেছে ছানি। অপারেশনে লাগবে *চৌদ্দ হাজার*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "একই রাত, পাশের ঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rifat",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সে-ও খাটের নিচে রেখেছে একটা মাটির ব্যাংক। গায়ে লেখা— *আব্বার চোখ*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "রিফাতের হিসাব",
+     "lines": [
+      "টিউশনি: ২টা, মাসে ৪,০০০",
+      "জমা: ৯,৬০০",
+      "লাগবে: ১৪,০০০"
+     ]
+    },
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ছয় মাস, এক ঘরে দুইটা গোপন হিসাব",
+   "card": {
+    "title": "কেউ কারওটা জানে না",
+    "items": [
+     {
+      "t": "আব্বা: দুপুরে ভাত বাদ, চা-রুটি",
+      "mark": "x"
+     },
+     {
+      "t": "রিফাত: বাসের বদলে হেঁটে টিউশনি",
+      "mark": "x"
+     },
+     {
+      "t": "দুইজনই বলে— ‘টাকা লাগবে না’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে রিফাত দেখল, আব্বা চোখে পানি দিচ্ছেন বারবার। তারপর গুনে গুনে কয়েন ফেলছেন— *টুং, টুং*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মাঝরাত",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "আর দুই মাস। তারপর পোলাটা *ল্যাপটপ* পাইবো।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kashem": "hold"
+    }
+   }
+  },
+  {
+   "say": "ঈদের আগে ঘর মুছতে গিয়ে মা পেলেন— খাটের নিচে একটা, চালের ড্রামের পেছনে *আরেকটা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের আগে, ঘর পরিষ্কার",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দুইটার গায়ে দুই রকম লেখা। মা অনেকক্ষণ মেঝেতে বসে রইলেন। তারপর *কাউকে কিছু বললেন না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে ভাতের প্লেটের পাশে মা রেখে দিলেন দুইটা মাটির ব্যাংক। *পাশাপাশি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাতের খাওয়া",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rifat",
+      "x": 0.75,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "এইটা আমার। কিন্তু এইটা… *আব্বার চোখ*? এইটা কার?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "moods": {
+     "kashem": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "আমার, আব্বা। আপনি রাতে রিকশা চালান, *রাস্তা দেখেন না*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "না না, এইটা তোর ল্যাপটপের টাকা। আমার চোখ *পরে* দেখা যাইবো।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kashem": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "আব্বা, চোখে না দেখলে আমার ল্যাপটপে কাজ করা দেখবেন *কেমনে*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rifat": "talk"
+    }
+   }
+  },
+  {
+   "say": "কাশেম কিছু বলতে পারলেন না। মা একটা হাতুড়ি এনে রাখলেন *টেবিলে*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুইটা ব্যাংক ভাঙা হলো। একুশ হাজার চারশো টাকা। চোখের অপারেশন, আর *বাকিটা* আবার জমা।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দুই ব্যাংক মিলে",
+       "value": "২১,৪০০"
+      },
+      {
+       "label": "অপারেশন",
+       "value": "১৪,০০০"
+      },
+      {
+       "label": "বাকি",
+       "value": "৭,৪০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "আরে রিফাত! তোর গালে যে একটা *তিল আছে*, আগে তো দেখি নাই!",
+   "tone": "laughs",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "চক্ষু হাসপাতাল, এক মাস পর",
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rifat",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ma",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null,
+    "arms": {
+     "kashem": "point"
+    }
+   }
+  },
+  {
+   "voice": "rifat",
+   "say": "আব্বা, ওইটা *বিশ বছর* ধরেই আছে।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rifat",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rifat": "happy"
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর বাকি টাকায় এল একটা পুরোনো ল্যাপটপ। রিফাত রাতে কাজ করে, আব্বা পাশে বসে *চা বানান*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তিন মাস পর",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rifat",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "এইটা কী লিখলি? *ইংরেজি*? আমি এখন সব অক্ষর পরিষ্কার দেখি, পড়তে পারি না, এই যা!",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kashem": "point"
+    }
+   }
+  },
+  {
+   "say": "ঘরের তাকে এখন একটাই মাটির ব্যাংক। গায়ে দুই হাতের লেখা— *‘দুইজনের’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দুইজনই চুপচাপ জমাচ্ছিল… *দুইজনই  অন্যজনের জন্য*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দুইজনই চুপচাপ জমাচ্ছিল…",
+    "line2": "দুইজনই\nঅন্যজনের জন্য।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "একই ঘরে দুইটা মাটির ব্যাংক— বাবা জমায় ছেলের জন্য, ছেলে জমায় বাবার চোখের জন্য 🏺",
+  "description": "চট্টগ্রামের বহদ্দারহাটে এক রিকশাচালক বাবা প্রতিদিন কয়েন জমান ছেলের ল্যাপটপের জন্য। ছেলে লুকিয়ে টিউশনি করে জমায় বাবার চোখের অপারেশনের জন্য। এক ঘরে দুইটা মাটির ব্যাংক, কেউ কারওটা জানে না…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "রিকশাওয়ালার গল্প",
+   "চট্টগ্রাম",
+   "মাটির ব্যাংক",
+   "ছানি অপারেশন",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একই ঘরে দুইটা মাটির ব্যাংক। দুইজনই জমাচ্ছিল— অন্যজনের জন্য। 🏺\nতোমার বাবা-মা তোমার জন্য চুপচাপ কী জমিয়েছেন, তুমি জানো? 👇 #বাবাছেলে #রিকশা"
+ },
+ "thumbnail": {
+  "text": "দুইটা ব্যাংক",
+  "sub": "কেউ জানে না"
+ }
+}

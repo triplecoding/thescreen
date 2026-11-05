@@ -1,0 +1,515 @@
+{
+ "id": "057",
+ "status": "ready",
+ "title_bn": "মিমের স্যারের সিট",
+ "theme": "struggle",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Know how to oblige without humbling",
+  "title_bn": "সম্মান রেখে উপকার"
+ },
+ "cast": {
+  "majid": {
+   "name": "মজিদ মামা",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "shuvo": {
+   "name": "শুভ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "mim": {
+   "name": "মিম",
+   "type": "teen_girl",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "নীলক্ষেতের এক মেসে রাতের মিল চল্লিশ টাকা। শুধু একজন ছেলে প্রতিদিন দেয়— *পঁচিশ*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "নীলক্ষেত, ছাত্রদের মেস",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "majid",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সবার মিল",
+       "value": "৪০ টাকা"
+      },
+      {
+       "label": "শুভর মিল",
+       "value": "২৫ টাকা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শুভ। ইউনিভার্সিটির দ্বিতীয় বর্ষ। প্লেটে শুধু ভাত আর পাতলা ডাল। টানা *তিন মাস*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "শুভ, আজকে মুরগি রান্ধছি। এক পিস দেই, বাবা?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    },
+    "arms": {
+     "majid": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "না মামা, রাতে ভারী খাইলে পড়া হয় না। *ডালই* ভালো।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shuvo": "smile"
+    }
+   }
+  },
+  {
+   "say": "মজিদ মামা পঁচিশ বছর মেসে রাঁধেন। ছাত্রদের মিথ্যা তিনি *গন্ধে* চেনেন।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই রাতে গেটের বাইরে মামা শুনলেন, শুভ মাকে বলছে— *মাছ দিয়ে খেয়েছি*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত সাড়ে এগারোটা",
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "আম্মা",
+     "msgs": [
+      {
+       "who": "আম্মা",
+       "t": "বাবা, খাইছস?"
+      },
+      {
+       "who": "শুভ",
+       "t": "খাইছি আম্মা, মাছ দিয়া।"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বন্যায় বাবার ধান গেছে। টিউশনি ছিল দুইটা, এখন *একটা*।",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন মামা একটা কাজ করলেন। শুভর ভাতের *নিচে* চুপচাপ রেখে দিলেন একটা ডিম।",
+   "scene": {
+    "widget": null,
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরের দিন",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "majid",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এরপর দুই সপ্তাহ, মামার লুকানো চেষ্টা—",
+   "card": {
+    "title": "মামার গোপন উপকার",
+    "items": [
+     {
+      "t": "ভাতের নিচে একটা ডিম",
+      "mark": "x"
+     },
+     {
+      "t": "‘আজকে মাছ বেশি হইছে’",
+      "mark": "x"
+     },
+     {
+      "t": "‘হিসাবে ভুল’ বলে টাকা ফেরত",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "মামা, ডিমটা কে দিল? আমি কি আপনার কাছে *ভিক্ষা* চাইছি?",
+   "tone": "upset",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "majid",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shuvo": "point"
+    }
+   }
+  },
+  {
+   "say": "মামা কিছু বললেন না। শুভ প্লেট রেখে বেরিয়ে গেল। তিন দিন সে *মেসে খেতে এল না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চতুর্থ দিন মামা নিজেই উঠে এলেন শুভর রুমের সিঁড়িতে। হাতে একটা ছেঁড়া *অংক বই*।",
+   "scene": {
+    "set": "stairs",
+    "light": "evening",
+    "chip": "চতুর্থ দিন",
+    "chars": [
+     {
+      "id": "majid",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "আমার মাইয়া মিম। ক্লাস নাইন। অংকে পায় *একত্রিশ*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "আমি তো পড়াইতে পারি না। সপ্তাহে তিন দিন পড়াইবা? বেতন দিমু— *রাতের খাওন*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুভ অনেকক্ষণ চুপ। এটা দয়া না, এটা *কাজ*। এখানে মাথা নিচু করতে হয় না।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "মামা, মিমকে বলবেন— কাল থেকে *খাতা-কলম* নিয়ে বসতে।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shuvo": "smile"
+    }
+   }
+  },
+  {
+   "say": "এরপর ছয় মাস। সপ্তাহে তিন সন্ধ্যা। একজন ভাইয়া, একটা ক্লাস নাইনের মেয়ে আর *একটা ভাঙা টেবিল*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "মামার বাসা, কামরাঙ্গীরচর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "mim",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "ভাইয়া, এই অংকটা আমি একা একা করছি। *ঠিক হইছে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "একদম ঠিক! যা, এইবার তোর আব্বারে *দেখা*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shuvo": "point"
+    }
+   }
+  },
+  {
+   "say": "টেস্ট পরীক্ষায় মিম পেল ছিয়াশি। সেই রাতে শুভর প্লেটে ভাত, ডাল আর মাছ। এবার *কিছু লুকানো নেই*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "majid",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মিমের অংক",
+       "from": "৩১",
+       "value": "৮৬"
+      },
+      {
+       "label": "শুভর প্লেট",
+       "value": "ভাত-ডাল-মাছ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "খাও বাবা। এইটা দয়া না, *বেতন*। হিসাব একদম ঠিক।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    },
+    "arms": {
+     "majid": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "মামা, তাহলে আমার একটা *বোনাস* পাওনা। মিষ্টি আনছি, আপনার জন্য।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মেসের দেয়ালে এখন একটা কাগজ, মামার কাঁচা হাতে লেখা— *মিমের স্যারের সিট। কেউ বসবা না।*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দয়া মানুষকে ছোট করতে পারে… *সম্মান দিলে  বড় হয়ে ওঠে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দয়া মানুষকে ছোট করতে পারে…",
+    "line2": "সম্মান দিলে\nবড় হয়ে ওঠে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন মাস শুধু ডাল-ভাত, মাকে বলে ‘মাছ দিয়ে খেয়েছি’… মেসের মামা যা করলেন 🍛",
+  "description": "নীলক্ষেতের মেসে রাতের মিল চল্লিশ টাকা, শুভ দেয় পঁচিশ— শুধু ডাল-ভাত। মাকে ফোনে বলে মাছ দিয়ে খেয়েছে। মেসের রাঁধুনি মজিদ মামা লুকিয়ে ভাতের নিচে ডিম রাখলেন, আর তারপর…",
+  "tags": [
+   "মেসের গল্প",
+   "ছাত্র জীবনের গল্প",
+   "নীলক্ষেত",
+   "হৃদয়ছোঁয়া গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "সম্মানের গল্প",
+   "টিউশনি"
+  ]
+ },
+ "facebook": {
+  "caption": "দয়া দিলে শুভ মাথা নিচু করত। মামা দিলেন কাজ— আর একটা সম্মানের চেয়ার। 🍛\nতোমার ছাত্রজীবনে কেউ কি চুপচাপ এভাবে পাশে দাঁড়িয়েছিল? 👇 #ছাত্রজীবন #মেস"
+ },
+ "thumbnail": {
+  "text": "শুধু ডাল-ভাত",
+  "sub": "মাকে বলে মাছ"
+ }
+}

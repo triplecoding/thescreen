@@ -443,6 +443,54 @@
    "relation": "widow shopkeeper / neighbourhood teen + delivery rider",
    "set": "shop",
    "hook": "widow's tiny recharge shop; 'money sent by mistake' scam call; a schoolgirl and a rider stop her; the mohalla clears her baki khata"
+  },
+  {
+   "id": "057",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Know how to oblige without humbling",
+   "relation": "mess cook / poor student / cook's daughter",
+   "set": "kitchen",
+   "hook": "student eats only dal for 3 months and lies to mother; cook's hidden egg shames him; cook offers a tuition job for meals instead"
+  },
+  {
+   "id": "058",
+   "book": "The Psychology of Money",
+   "item": "Wealth is What You Don't See",
+   "relation": "rickshaw-puller father / son / mother",
+   "set": "home",
+   "hook": "father saves coins for son's laptop while son secretly tutors to save for father's cataract operation; mother puts both clay banks on the table"
+  },
+  {
+   "id": "059",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Defensiveness",
+   "relation": "young manager / old accountant / junior colleague",
+   "set": "shop",
+   "hook": "32-year hand ledger keeper resists new software; new manager asks him to teach her his error-proof checks and builds them into the software"
+  },
+  {
+   "id": "060",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocation: The Old Give and Take",
+   "relation": "nurse / muri seller at the school gate / father",
+   "set": "street",
+   "hook": "SSC form fee paid anonymously by the gate muri seller from her samity savings; ten years later nurse's first salary goes to her"
+  },
+  {
+   "id": "061",
+   "book": "Thinking, Fast and Slow",
+   "item": "What You See Is All There Is",
+   "relation": "cabin boy / businessman / retired teacher",
+   "set": "balcony",
+   "hook": "night launch to Barishal; businessman's cash bag missing; everyone blames the poor cabin boy; a retired teacher's questions show the man moved the bag himself"
+  },
+  {
+   "id": "062",
+   "book": "Mastery",
+   "item": "The Ideal Apprenticeship",
+   "relation": "CNG driver father / daughter / wife",
+   "set": "street",
+   "hook": "14-year CNG driver fails the licence written test 3 times; ashamed to learn from his class-8 daughter until she makes him her teacher too"
   }
  ]
 }

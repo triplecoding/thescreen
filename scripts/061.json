@@ -1,0 +1,521 @@
+{
+ "id": "061",
+ "status": "ready",
+ "title_bn": "লঞ্চের কেবিন বয়",
+ "theme": "honesty",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "What You See Is All There Is",
+  "title_bn": "যা চোখে দেখি, তাকেই সত্য ভাবা"
+ },
+ "cast": {
+  "rubel": {
+   "name": "রুবেল",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "helal": {
+   "name": "হেলাল সাহেব",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "master": {
+   "name": "মাস্টার সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকা থেকে বরিশালের রাতের লঞ্চ। কেবিন বয় রুবেল, বয়স সতেরো। ডেকে ডেকে চা দেয়, মাসে পায় *ছয় হাজার*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "ঢাকা–বরিশাল লঞ্চ, রাত ১১টা",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "master",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "master",
+   "say": "চা-টা ভালো বানাইছো, বাবা। পড়াশোনা করো?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "master",
+     "zoom": 1.4
+    },
+    "arms": {
+     "master": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "নাইন পর্যন্ত পড়ছি, স্যার। আব্বা মারা যাওয়ার পর *লঞ্চে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubel": "talk"
+    }
+   }
+  },
+  {
+   "say": "রাত একটায় চিৎকার। কেবিন দুইশো চোদ্দোর হেলাল সাহেবের ব্যাগ উধাও। ভেতরে *আশি হাজার* টাকা।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কেবিন নম্বর ২১৪",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "helal",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হারানো ব্যাগে",
+       "value": "৮০,০০০ টাকা"
+      },
+      {
+       "label": "কেবিনে ঢুকেছিল",
+       "value": "রুবেল",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "helal",
+   "say": "আর কেউ ঢোকে নাই! খালি ওই চা-ওয়ালা ছেলেটা ঢুকছিল। *ওরে ধরো*!",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "helal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "helal": "point"
+    }
+   }
+  },
+  {
+   "say": "মুহূর্তে ভিড়। কেউ কলার ধরল। কেউ বলল, এই বয়সের ছেলেরা এমনই। কেউ বলল— *পুলিশ ডাকো*।",
+   "scene": {
+    "widget": null,
+    "set": "balcony",
+    "light": "night",
+    "chip": "ডেক, রাত একটা",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "helal",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "rubel",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "master",
+      "x": 0.88,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "আমি খালি চা দিয়া আসছি, স্যার। আল্লাহর কসম, *ব্যাগ ছুঁই নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "helal",
+   "say": "তোর মতো পোলারা কসম খায় *রোজ*। পকেট দেখাও!",
+   "scene": {
+    "cam": {
+     "focus": "helal",
+     "zoom": 1.4
+    },
+    "moods": {
+     "helal": "angry"
+    },
+    "arms": {
+     "helal": "point"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সবার হাতে তখন একটাই ‘প্রমাণ’—",
+   "card": {
+    "title": "যা দেখে সবাই নিশ্চিত",
+    "items": [
+     {
+      "t": "ছেলেটা গরিব",
+      "mark": "x"
+     },
+     {
+      "t": "কেবিনে ঢুকেছিল",
+      "mark": "x"
+     },
+     {
+      "t": "কাঁদছে, মানে নিশ্চয়ই ভয় পাচ্ছে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ডেকের কোণে বসে থাকা মাস্টার সাহেব ধীরে ধীরে উঠে দাঁড়ালেন।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "master",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "master",
+   "say": "হেলাল সাহেব, একটা কথা। ব্যাগটা আপনি *শেষবার* কোথায় দেখছিলেন?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "master",
+     "zoom": 1.4
+    },
+    "arms": {
+     "master": "talk"
+    }
+   }
+  },
+  {
+   "voice": "helal",
+   "say": "খাটের পাশে। না… দাঁড়ান। ঘুমানোর আগে *উপরে* তুলছিলাম, মাথার কাছে।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "helal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "helal": "talk"
+    }
+   }
+  },
+  {
+   "voice": "master",
+   "say": "আর ছেলেটা চা দিতে আসছিল ঘুমানোর *আগে*, না পরে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "master",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "helal",
+   "say": "আগে… সাড়ে দশটায়। তখন তো ব্যাগ *নিচেই* ছিল।",
+   "scene": {
+    "cam": {
+     "focus": "helal",
+     "zoom": 1.4
+    },
+    "moods": {
+     "helal": "surprised"
+    }
+   }
+  },
+  {
+   "say": "সবাই চুপ। হেলাল সাহেব দৌড়ে কেবিনে গেলেন। উপরের বাঙ্কের বালিশ সরাতেই— *ব্যাগটা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আশি হাজার টাকা, এক টাকাও কম না। ঘুমের ঘোরে নিজেই তুলে রেখে *ভুলে গিয়েছিলেন*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কেবিন ২১৪",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "helal",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ব্যাগে",
+       "value": "৮০,০০০ টাকা"
+      },
+      {
+       "label": "খোয়া গেছে",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "helal",
+   "say": "বাবা, আমার ভুল হইছে। এই পাঁচ হাজার টাকা রাখো। *মাফ* কইরা দিও।",
+   "tone": "sad",
+   "scene": {
+    "widget": null,
+    "set": "balcony",
+    "light": "night",
+    "chip": "ডেক",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "helal",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rubel",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "master",
+      "x": 0.88,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "helal": "hold"
+    },
+    "holds": {
+     "helal": "envelope"
+    }
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "টাকা লাগবো না, স্যার। খালি সবাইরে বইলা দেন— *আমি চুরি করি নাই*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubel": "talk"
+    }
+   }
+  },
+  {
+   "say": "হেলাল সাহেব সারেংয়ের মাইক নিলেন। পুরো লঞ্চে, সবার সামনে তিনি কথাটা বললেন। *জোরে*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "helal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "master",
+   "say": "সন্দেহ খালি চেহারা দেখে, বাবা। সত্য দেখে *কখন, কোথায়, কে*।",
+   "tone": "warmly",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "ভোর, বরিশাল ঘাট",
+    "props": [
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "master",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "স্যার, আপনি কেমনে বুঝলেন আমি নেই নাই?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubel": "talk"
+    }
+   }
+  },
+  {
+   "voice": "master",
+   "say": "চল্লিশ বছর ক্লাসে পড়াইছি। যে ছাত্র চুরি করে, সে *চোখে চোখ* রাখে না। তুমি রাখছিলা।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "master",
+     "zoom": 1.4
+    },
+    "arms": {
+     "master": "talk"
+    }
+   }
+  },
+  {
+   "say": "সেই ভোরে রুবেলের ট্রেতে চা নিতে লাইন পড়ল। আর অনেকেই দাম দিল— *একটু বেশি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সন্দেহ খোঁজে চেহারা… *সত্য খোঁজে  প্রমাণ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সন্দেহ খোঁজে চেহারা…",
+    "line2": "সত্য খোঁজে\nপ্রমাণ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "লঞ্চে ৮০ হাজার টাকার ব্যাগ উধাও, সবাই আঙুল তুলল কেবিন বয়ের দিকে… তারপর এক বৃদ্ধের প্রশ্ন 🚢",
+  "description": "ঢাকা থেকে বরিশালের রাতের লঞ্চ। ব্যবসায়ী হেলাল সাহেবের আশি হাজার টাকার ব্যাগ উধাও। সবার সন্দেহ সতেরো বছরের কেবিন বয় রুবেলের দিকে, কারণ সে গরিব। ঠিক তখন ডেকে বসে থাকা এক রিটায়ার্ড স্কুল শিক্ষক একটা প্রশ্ন করলেন…",
+  "tags": [
+   "সততার গল্প",
+   "লঞ্চের গল্প",
+   "বরিশাল লঞ্চ",
+   "সন্দেহ",
+   "গরিবের সম্মান",
+   "bangla golpo",
+   "jiboner golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই দেখল একটা গরিব ছেলে। একজন বৃদ্ধ দেখলেন প্রমাণ। 🚢\nশুধু চেহারা দেখে কাউকে সন্দেহ করার পর কখনো ভুল ভেঙেছে তোমার? 👇 #সততা #লঞ্চ"
+ },
+ "thumbnail": {
+  "text": "৮০ হাজার উধাও",
+  "sub": "চোর কে?"
+ }
+}

@@ -1,0 +1,468 @@
+{
+ "id": "060",
+ "status": "ready",
+ "title_bn": "মুড়িওয়ালি খালার রসিদ",
+ "theme": "school",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Reciprocation: The Old Give and Take",
+  "title_bn": "ঋণ মনে রাখা"
+ },
+ "cast": {
+  "sumi": {
+   "name": "সুমি",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "scrub",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "rahima": {
+   "name": "রহিমা খালা",
+   "type": "old_woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুড়িগ্রামের চরের এক স্কুল। এসএসসির ফরম পূরণের ফি দুই হাজার দুইশো টাকা। শেষ দিন— *কাল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কুড়িগ্রাম, চরের স্কুল, ২০১৬",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rahima",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এসএসসি ফরম ফি",
+       "value": "২,২০০ টাকা"
+      },
+      {
+       "label": "শেষ দিন",
+       "value": "আগামীকাল",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "টাকা নাই, সুমি। মাইয়া মানুষ, এত পইড়া কী হইবো? *সামনের মাসে* বিয়া।",
+   "tone": "frustrated",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "sumi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null,
+    "arms": {
+     "abba": "talk"
+    }
+   }
+  },
+  {
+   "say": "সুমি সারারাত বইটা বুকে ধরে বসে রইল। ক্লাসে সে *প্রথম*। কিন্তু প্রথম হলেই তো ফি মাফ হয় না।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে স্কুল গেটে রহিমা খালার মুড়ির ঠোঙা নিয়ে সে কেঁদেছিল। খালা শুধু জিজ্ঞেস করেছিলেন— *কত লাগে রে*?"
+  },
+  {
+   "say": "পরদিন সুমি গেল শুধু বইগুলো ফেরত দিতে। হেডস্যার বললেন— তোর ফি *কেউ দিয়া গেছে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের দিন, স্কুল গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rahima",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "কে দিছে স্যার? নাম কন, *পায়ে ধরমু*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumi": "talk"
+    }
+   }
+  },
+  {
+   "say": "হেডস্যার শুধু হাসলেন। নাম বললেন না। গেটের পাশে রহিমা খালা মুড়ি মাখাচ্ছিলেন, *মুখ তুললেন না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এরপর দশ বছর—",
+   "card": {
+    "title": "সুমির পথ",
+    "items": [
+     {
+      "t": "এসএসসি, জিপিএ ফাইভ",
+      "mark": "x"
+     },
+     {
+      "t": "নার্সিং কলেজ, রংপুর",
+      "mark": "x"
+     },
+     {
+      "t": "আর একটা প্রশ্ন, কেউ উত্তর দেয়নি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "আব্বা, বেতন পাইছি! *উনত্রিশ হাজার চারশো*! আপনার চশমা কিনমু এইবার।",
+   "tone": "excited",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "রংপুর মেডিকেল, ২০২৬",
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "প্রথম বেতন",
+     "lines": [
+      "স্টাফ নার্স, সুমি আক্তার",
+      "২৯,৪০০ টাকা"
+     ]
+    },
+    "arms": {
+     "sumi": "call"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মা রে… সেদিন যদি তোরে বিয়া দিয়া দিতাম… *আল্লাহ মাফ করুক*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "বেতন নিয়ে সে প্রথমেই গেল চরের সেই পুরোনো স্কুলে। হেডস্যার এখন রিটায়ার্ড, কিন্তু *রেজিস্টার খাতা* আছে।",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খাতায় একটা নাম। *রহিমা বেগম*। স্কুল গেটের মুড়িওয়ালি খালা। সমিতির জমানো টাকা ভেঙে দিয়েছিলেন।",
+   "pause": 0.9,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ফি জমা, ২০১৬",
+     "lines": [
+      "সুমি আক্তার— ২,২০০",
+      "জমাদাতা: রহিমা বেগম",
+      "সমিতির কিস্তির টাকা থেকে"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "খালা, আপনি দিছিলেন? দশ বছর… *একবারও কইলেন না*?",
+   "tone": "tearful",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "evening",
+    "chip": "স্কুল গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rahima",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "sumi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sumi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "কইলে তো তুই মাথা নিচা কইরা পড়তি। আমি চাইছি তুই *মাথা উঁচা কইরা* পড়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rahima": "smile"
+    }
+   }
+  },
+  {
+   "say": "সুমি খামটা খালার হাতে দিল। খালা খুললেন না। আবার সুমির হাতেই *ফেরত* দিলেন।",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "আমারে দিস না। এই গেটে আরেকটা মাইয়া আছে, ফি নাই। *তারে দে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahima": "talk"
+    }
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "খালা, তাইলে আপনার সমিতির টাকা? আপনার *নিজের কিছু* লাগে নাই?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumi": "hug"
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "লাগছে তো। তোরে নার্সের কাপড়ে দেখা লাগছে। *দেখলাম*। হিসাব শেষ।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahima": "talk"
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে রেজিস্টারে আরেকটা লাইন উঠল। ক্লাস টেনের মিতালী। জমাদাতা— *সুমি আক্তার*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rahima",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "হেডস্যারের রেজিস্টার, ২০২৬",
+     "lines": [
+      "মিতালী— ২,২০০",
+      "জমাদাতা: সুমি আক্তার, নার্স"
+     ]
+    }
+   }
+  },
+  {
+   "say": "রহিমা খালা এখনো গেটে মুড়ি বেচেন। শুধু এখন তাঁর পাশে একটা টিনের বাক্স— *‘পরের মেয়ের ফি’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু ঋণ টাকা দিয়ে শোধ হয় না… *আরেকজনকে  দিয়ে শোধ হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু ঋণ টাকা দিয়ে শোধ হয় না…",
+    "line2": "আরেকজনকে\nদিয়ে শোধ হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "২,২০০ টাকার জন্য বন্ধ হচ্ছিল এসএসসি… দশ বছর পর নার্স সুমি জানল কে টাকাটা দিয়েছিল 🎓",
+  "description": "কুড়িগ্রামের চরের মেয়ে সুমি। এসএসসির ফরম পূরণের শেষ দিন, আব্বা বললেন টাকা নাই, মেয়ের বিয়ে দিবেন। পরদিন স্কুলে গিয়ে সুমি শুনল— তার ফি কেউ দিয়ে গেছে। দশ বছর পর প্রথম বেতনের দিন সে জানল মানুষটা কে…",
+  "tags": [
+   "স্কুলের গল্প",
+   "এসএসসি",
+   "কুড়িগ্রাম",
+   "নার্স",
+   "প্রথম বেতন",
+   "ঋণ শোধ",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "মেয়েদের পড়াশোনা"
+  ]
+ },
+ "facebook": {
+  "caption": "যে খালা স্কুল গেটে দশ টাকার মুড়ি বেচতেন, তিনিই একদিন সুমির জীবনের দরজা খুলে দিয়েছিলেন। 🎓\nতোমার জীবনে কে চুপচাপ এমন একটা ‘রসিদ’ রেখে গেছে? 👇 #স্কুল #কৃতজ্ঞতা"
+ },
+ "thumbnail": {
+  "text": "কে দিয়েছিল?",
+  "sub": "২,২০০ টাকার ফি"
+ }
+}

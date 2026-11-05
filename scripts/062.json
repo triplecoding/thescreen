@@ -1,0 +1,522 @@
+{
+ "id": "062",
+ "status": "ready",
+ "title_bn": "শিক্ষক: তানহা, ক্লাস এইট",
+ "theme": "parents",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "The Ideal Apprenticeship",
+  "title_bn": "শেখার প্রথম ধাপ"
+ },
+ "cast": {
+  "harun": {
+   "name": "হারুন",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "tanha": {
+   "name": "তানহা",
+   "type": "child_girl",
+   "skin": "tan",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "child_girl"
+  },
+  "shilpi": {
+   "name": "শিল্পী",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "মিরপুর দশের সিগন্যাল। হারুন চাচা চৌদ্দ বছর সিএনজি চালান। আর লাইসেন্সের লিখিত পরীক্ষায় ফেল— *তিনবার*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মিরপুর ১০, সিগন্যাল",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সিএনজি চালানো",
+       "value": "১৪ বছর"
+      },
+      {
+       "label": "লাইসেন্স পরীক্ষা",
+       "value": "৩ বার ফেল",
+       "red": true
+      },
+      {
+       "label": "মামলার জরিমানা",
+       "value": "মাসে ২,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "হাতে আবার মামলার কাগজ। এ মাসে *দুই হাজার* টাকা গেল জরিমানায়।",
+   "scene": {
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shilpi",
+   "say": "আবার মামলা? এইবার পরীক্ষাটা ভালো কইরা দেন। *বই* তো আনছেন।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "রাত, বাসা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shilpi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shilpi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "harun",
+   "say": "বই খুললে অক্ষরগুলা নাচে, শিল্পী। আমি তো *ফাইভ পর্যন্ত* পড়ছি।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    },
+    "arms": {
+     "harun": "face"
+    }
+   }
+  },
+  {
+   "say": "পাশের ঘরে বসে সব শুনছিল তানহা। ক্লাস এইট। ক্লাসে রোল *তিন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "shilpi",
+   "say": "অক্ষর নাচলে নাচুক। পরের মাসে আবার মামলা হইলে *বাসাভাড়া* দিবেন কী দিয়া?",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "shilpi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shilpi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "আব্বু, আমি পড়াই? রোজ রাতে *বিশ মিনিট*।",
+   "tone": "hopeful",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পাশের ঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "tanha",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tanha": "talk"
+    }
+   }
+  },
+  {
+   "voice": "harun",
+   "say": "যা, পড়তে বস। বাপে মাইয়ার কাছে পড়বো? লোকে শুনলে *হাসবো*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তানহা আর কিছু বলল না। কিন্তু সেই রাতে সে খাতা ছিঁড়ে বানাল *চল্লিশটা কার্ড*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "হারুনের তিনবার ফেল করার কারণ—",
+   "card": {
+    "title": "আসল সমস্যা",
+    "items": [
+     {
+      "t": "অক্ষর পড়তে সময় লাগে",
+      "mark": "x"
+     },
+     {
+      "t": "সাইনের নাম মুখস্থ, মানে জানা নাই",
+      "mark": "x"
+     },
+     {
+      "t": "আর সবচেয়ে বড়টা— লজ্জা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরদিন রাতে তানহা সিএনজির গ্যারেজে এল। পড়াতে না। একটা *অনুরোধ* নিয়ে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত, গ্যারেজের সামনে",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "tanha",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "আব্বু, আমারে সাইকেল চালানো শিখাবা? বদলে আমি তোমারে *সাইন* শিখাই। কাটাকাটি।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanha": "talk"
+    }
+   }
+  },
+  {
+   "say": "এবার আর বাবা-মেয়ের পড়া না। এটা *লেনদেন*। হারুন চাচা হেসে ফেললেন।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "harun",
+   "say": "আচ্ছা মাস্টার। কিন্তু বকা দিবা না, *কইয়া রাখলাম*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    },
+    "arms": {
+     "harun": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "বলো তো, গোল লাল দাগ মানে কী?",
+   "tone": "playfully",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক মাস, প্রতি রাতে বিশ মিনিট",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tanha",
+      "x": 0.58,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "shilpi",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "তানহার কার্ড",
+     "lines": [
+      "লাল ত্রিভুজ = সামনে বিপদ",
+      "গোল লাল দাগ = ঢোকা নিষেধ",
+      "‘জেব্রা’ = মানুষ আগে"
+     ]
+    },
+    "arms": {
+     "tanha": "point"
+    }
+   }
+  },
+  {
+   "voice": "harun",
+   "say": "ঢোকা নিষেধ! যেমন তোর মা রান্নাঘরে আমারে কয়— *ঢোকা নিষেধ*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    },
+    "arms": {
+     "harun": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক মাস। প্রতি রাতে বিশ মিনিট সাইন, আর বিশ মিনিট একটা ছোট্ট মেয়ে, একটা *সাইকেল* আর অনেক হাসি।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "shilpi",
+   "say": "দুই মাস্টার আর দুই ছাত্র। এই বাসায় এখন *স্কুল* চলে।",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "চতুর্থবার পরীক্ষা। হলে ঢুকে প্রথম প্রশ্ন— একটা গোল লাল দাগ। হারুন চাচা *মুচকি হাসলেন*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "বিআরটিএ, পরীক্ষার দিন",
+    "props": [
+     "signboard",
+     "sign:বিআরটিএ — লিখিত পরীক্ষা"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "harun",
+   "say": "পাস করছি রে! বিশে আঠারো! আমার মাস্টারের *ক্রেডিট*!",
+   "tone": "excited",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ফলাফলের রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tanha",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "shilpi",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লিখিত পরীক্ষা",
+       "value": "পাস"
+      },
+      {
+       "label": "নম্বর",
+       "value": "২০-এ ১৮"
+      }
+     ]
+    },
+    "arms": {
+     "harun": "hug"
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "আর আমার সাইকেলের ক্লাস? কাল সকালে, *ভুলবা না*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সিএনজির ড্যাশবোর্ডে এখন একটা ছোট কাগজ সাঁটা— *‘শিক্ষক: তানহা, ক্লাস এইট’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শেখার কোনো বয়স নেই… *বাধা শুধু  লজ্জা*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "শেখার কোনো বয়স নেই…",
+    "line2": "বাধা শুধু\nলজ্জা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চৌদ্দ বছর সিএনজি চালান, তিনবার লাইসেন্স পরীক্ষায় ফেল… শিক্ষক হলো ক্লাস এইটের মেয়ে 🚦",
+  "description": "হারুন চাচা চৌদ্দ বছর ঢাকার রাস্তায় সিএনজি চালান, অথচ ড্রাইভিং লাইসেন্সের লিখিত পরীক্ষায় তিনবার ফেল। প্রতি মাসে মামলার জরিমানা। মেয়ে তানহা বলল— আব্বু, আমি পড়াব। কিন্তু মেয়ের কাছে পড়তে বাবার যে লজ্জা…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "সিএনজি চালক",
+   "ড্রাইভিং লাইসেন্স",
+   "শেখার গল্প",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "ঢাকা"
+  ]
+ },
+ "facebook": {
+  "caption": "চৌদ্দ বছরের ড্রাইভার, চারবারের পরীক্ষার্থী। আর তাঁর শিক্ষক— ক্লাস এইটের মেয়ে। 🚦\nবড় হয়ে কোনো কিছু শিখতে গিয়ে তুমি কি কখনো লজ্জা পেয়েছ? 👇 #বাবামেয়ে #শেখা"
+ },
+ "thumbnail": {
+  "text": "তিনবার ফেল",
+  "sub": "শিক্ষক মেয়ে"
+ }
+}

@@ -1,0 +1,500 @@
+{
+ "id": "059",
+ "status": "ready",
+ "title_bn": "হাশেম সাহেবের খাতা",
+ "theme": "work",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "The Law of Defensiveness",
+  "title_bn": "মানুষের দেয়াল নরম করা"
+ },
+ "cast": {
+  "hashem": {
+   "name": "হাশেম সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "nabila": {
+   "name": "নাবিলা",
+   "type": "young_woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#E8A33D",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মতিঝিলের এক অফিস। বত্রিশ বছর ধরে হাতে খাতা লেখেন হাশেম সাহেব। নতুন সফটওয়্যারে তাঁর এন্ট্রি— *শূন্য*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মতিঝিল, ট্রেডিং অফিস",
+    "props": [
+     "signboard",
+     "sign:রহমান ট্রেডার্স — হিসাব বিভাগ",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হাতে লেখা খাতা",
+       "value": "৩২ বছর"
+      },
+      {
+       "label": "সফটওয়্যারে এন্ট্রি",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "ম্যাডাম, উনারে বলেন রিটায়ার করতে। উনি *মাউস* ধরেন কলমের মতো।",
+   "tone": "teasing",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "চা-বিরতি",
+    "props": [
+     "signboard",
+     "sign:রহমান ট্রেডার্স — হিসাব বিভাগ"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "nabila",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tanvir": "talk"
+    }
+   }
+  },
+  {
+   "say": "নাবিলার বয়স আঠাশ। এই অফিসে নতুন ম্যানেজার। এমডি বলে দিয়েছেন— *এক মাসে* সব সফটওয়্যারে চাই।",
+   "scene": {
+    "cam": {
+     "focus": "nabila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nabila",
+   "say": "তানভীর, উনি এই অফিসে আসছেন তোমার জন্মেরও *আগে*। কথাটা আস্তে বলো।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "nabila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nabila": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আস্তে বললেও সত্য বদলায় না, ম্যাডাম। এমডি স্যার কিন্তু *রেজাল্ট* চান।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "cross"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম দুই সপ্তাহ যা যা হলো—",
+   "card": {
+    "title": "জোর করে বদলানোর চেষ্টা",
+    "items": [
+     {
+      "t": "ট্রেনিং ক্লাস— হাশেম সাহেব চুপ",
+      "mark": "x"
+     },
+     {
+      "t": "লিখিত নোটিশ— খাতা আরও শক্ত করে ধরা",
+      "mark": "x"
+     },
+     {
+      "t": "‘আপনি পারবেন না’— সেদিন তিনি অফিসেই আসেননি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক সন্ধ্যায় সবাই চলে গেছে। নাবিলা দেখল, হাশেম সাহেব খাতার পাতায় *আঙুল বুলিয়ে* টাকা মেলাচ্ছেন।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "সন্ধ্যা ছয়টা",
+    "props": [
+     "signboard",
+     "sign:রহমান ট্রেডার্স — হিসাব বিভাগ",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nabila",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সে আর নোটিশ দিল না। চেয়ার টেনে পাশে বসল। তারপর একটা *প্রশ্ন* করল।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "nabila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nabila",
+   "say": "স্যার, বত্রিশ বছরে আপনার খাতায় একবারও *ভুল* ধরা পড়েনি। কীভাবে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "nabila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nabila": "talk"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "কেউ তো কোনোদিন *জিজ্ঞেস* করে নাই, মা।",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "moods": {
+     "hashem": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "চুরানব্বই সালে জয়েন করছিলাম। প্রথম মাসে আমার ভুলে *তিন হাজার* টাকা গেছিল। সেই রাতে বাসায় যাইতে পারি নাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "talk"
+    }
+   }
+  },
+  {
+   "say": "হাশেম সাহেব খাতা খুললেন। প্রতিটা পাতার নিচে লাল কালিতে *তিনটা ছোট দাগ*।",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "এই তিনটা দাগ না মিললে আমি *বাসায় যাই না*।",
+   "tone": "proudly",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "হাশেম সাহেবের তিন দাগ",
+     "items": [
+      {
+       "t": "প্রতিদিন ক্যাশ মেলানো",
+       "mark": "check"
+      },
+      {
+       "t": "পার্টির নামের পাশে আগের বাকি",
+       "mark": "check"
+      },
+      {
+       "t": "দশ হাজারের বেশি হলে দুই সই",
+       "mark": "check"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "point"
+    }
+   }
+  },
+  {
+   "voice": "nabila",
+   "say": "স্যার, আপনার এই তিন দাগ সফটওয়্যারে বসাইতে চাই। আমাকে *শিখাবেন*?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "nabila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বত্রিশ বছরে প্রথম কেউ তাঁর কাছে শিখতে চাইল। হাশেম সাহেবের চশমার কাচ *ঝাপসা* হয়ে গেল।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর অফিসের সবাই অবাক। হাশেম সাহেব নিজেই বসে আছেন *কম্পিউটারের* সামনে।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:রহমান ট্রেডার্স — হিসাব বিভাগ",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "তানভীর, তোমার এন্ট্রিতে আগের বাকিটা নাই। *লাল দাগ* উঠছে, দেখো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "point"
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "স্যার, আপনি তো এখন সফটওয়্যারের *চেয়েও কড়া*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাসে চারশো বারোটা এন্ট্রি। আর পুরো অফিসের হিসাবের ভুল নেমে এল *শূন্যে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হাশেম সাহেবের এন্ট্রি",
+       "from": "০",
+       "value": "৪১২"
+      },
+      {
+       "label": "হিসাবের ভুল",
+       "from": "১৯",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nabila",
+   "say": "এমডি স্যার, ক্রেডিট আমার না। নতুন সফটওয়্যারের *আসল ডিজাইনার* হাশেম সাহেব।",
+   "tone": "proudly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মাসিক মিটিং",
+    "props": [
+     "signboard",
+     "sign:রহমান ট্রেডার্স — হিসাব বিভাগ"
+    ],
+    "chars": [
+     {
+      "id": "nabila",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nabila": "talk"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "আমি আর ডিজাইনার! আমি খালি তিনটা *দাগ* দিছি, মা।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "wave"
+    }
+   }
+  },
+  {
+   "say": "সফটওয়্যারের প্রতিটা রিপোর্টের নিচে এখন একটা লাইন— *‘যাচাই: হাশেম পদ্ধতি’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "জোর করলে মানুষ দেয়াল তোলে… *সম্মান করলে  দরজা খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "জোর করলে মানুষ দেয়াল তোলে…",
+    "line2": "সম্মান করলে\nদরজা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৩২ বছর হাতে লেখা খাতা, নতুন সফটওয়্যারে শূন্য এন্ট্রি… নতুন বস যা করলেন 📒",
+  "description": "মতিঝিলের এক ট্রেডিং অফিসে বত্রিশ বছর হাতে খাতা লেখেন হাশেম সাহেব। নতুন সফটওয়্যার এল, তাঁর এন্ট্রি শূন্য। সবাই হাসে, কেউ বলে বিদায় দিয়ে দিন। আঠাশ বছরের নতুন ম্যানেজার নাবিলা করলেন একদম উল্টো কাজ…",
+  "tags": [
+   "অফিসের গল্প",
+   "নতুন বস",
+   "সিনিয়র কলিগ",
+   "অফিস পলিটিক্স",
+   "office story bangla",
+   "bangla golpo",
+   "সম্মানের গল্প",
+   "হিসাবরক্ষক"
+  ]
+ },
+ "facebook": {
+  "caption": "জোর করে বদলানো যায়নি। একটা প্রশ্ন আর একটু সম্মানে বদলে গেলেন হাশেম সাহেব। 📒\nতোমার অফিসে এমন কোনো ‘পুরোনো মানুষ’ আছেন, যাঁকে সবাই ভুল বোঝে? 👇 #অফিস #সম্মান"
+ },
+ "thumbnail": {
+  "text": "শূন্য এন্ট্রি",
+  "sub": "৩২ বছরের খাতা"
+ }
+}
