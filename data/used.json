@@ -1067,6 +1067,54 @@
    "relation": "elderly husband / wife / grandson",
    "set": "home",
    "hook": "husband forgets their 40th anniversary; wife's silent treatment for 3 days; grandson asks where they first met; husband travels to the same jhalmuri seller's spot near the college and brings a paper cone with a note"
+  },
+  {
+   "id": "135",
+   "book": "Mastery",
+   "item": "Find your own way of expressing",
+   "relation": "migrant father / daughter / art teacher",
+   "set": "street",
+   "hook": "a tongue-tied construction worker in Malaysia sends his daughter a hand-drawn picture of his day every week; her teacher holds a school exhibition of 200 drawings and the father joins by video"
+  },
+  {
+   "id": "136",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Empathy",
+   "relation": "elder sister / deaf younger brother / mother",
+   "set": "home",
+   "hook": "the family communicates with a deaf boy through five gestures for 14 years; his sister learns Bangla sign language and asks him about his dream; he wants to be a photographer"
+  },
+  {
+   "id": "137",
+   "book": "The Wealth of Nations",
+   "item": "Trust as the foundation of trade",
+   "relation": "home pickle seller / husband / loyal customer",
+   "set": "kitchen",
+   "hook": "fake cash-on-delivery orders and returns drain a homemaker's pickle business; she introduces a small advance with an honest explanation; customers respect it and orders grow"
+  },
+  {
+   "id": "138",
+   "book": "The Art of War",
+   "item": "Know the ground",
+   "relation": "veteran delivery man / young app-focused manager / old grandmother",
+   "set": "shop",
+   "hook": "a parcel addressed only by landmarks is about to be returned; the old delivery man finds the grandmother through village knowledge—it holds her granddaughter's first saree from abroad"
+  },
+  {
+   "id": "139",
+   "book": "Thinking, Fast and Slow",
+   "item": "The remembering self",
+   "relation": "retired teacher / CNG-driver ex-student / doctor ex-student",
+   "set": "street",
+   "hook": "teacher opens letters students wrote to their future selves ten years ago; a CNG driver who skipped the reunion learns his letter's real wish came true"
+  },
+  {
+   "id": "140",
+   "book": "The Righteous Mind",
+   "item": "Elephant and rider: feelings come first",
+   "relation": "reticent father / son in Dhaka / mother",
+   "set": "home",
+   "hook": "a father who only ever texts 'ok' is taught emojis by his son over Eid; a week later at midnight he sends his first red heart after practising for days"
   }
  ]
 }
