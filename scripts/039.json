@@ -1,493 +1,547 @@
 {
-  "id": "039",
-  "status": "ready",
-  "title_bn": "দর্জির পুরনো খাতা",
-  "source": {
-    "book": "Thinking, Fast and Slow",
-    "author": "Daniel Kahneman",
-    "author_bn": "ড্যানিয়েল কাহনেম্যান",
-    "chapter": "PLANNING FALLACY",
-    "chapter_bn": "মনের একটা ফাঁদ",
-    "title": "The Planning Fallacy",
-    "title_bn": "পরিকল্পনা সবসময় আশাবাদী"
+ "id": "039",
+ "status": "ready",
+ "title_bn": "দর্জির পুরনো খাতা",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "PLANNING FALLACY",
+  "chapter_bn": "মনের একটা ফাঁদ",
+  "title": "The Planning Fallacy",
+  "title_bn": "পরিকল্পনা সবসময় আশাবাদী"
+ },
+ "cast": {
+  "shohag": {
+   "name": "সোহাগ",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#4E6E58",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
   },
-  "cast": {
-    "shohag": {
-      "name": "সোহাগ",
-      "type": "man",
-      "skin": "brown",
-      "outfit": "shirt",
-      "color": "#4E6E58",
-      "hair": "short",
-      "beard": "moustache",
-      "voice": "man"
-    },
-    "rupa": {
-      "name": "রূপা",
-      "type": "woman",
-      "skin": "wheat",
-      "outfit": "sari",
-      "color": "#8E3B46",
-      "color2": "#E0B65A",
-      "hair": "long_bun",
-      "voice": "woman"
-    },
-    "jalil": {
-      "name": "জলিল চাচা",
-      "type": "old_man",
-      "skin": "tan",
-      "outfit": "panjabi",
-      "color": "#F1E9D2",
-      "hair": "side_grey",
-      "beard": "short_grey",
-      "cap": true,
-      "voice": "old_man"
-    }
+  "rupa": {
+   "name": "রূপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8E3B46",
+   "color2": "#E0B65A",
+   "hair": "long_bun",
+   "voice": "woman"
   },
-  "beats": [
-    {
-      "say": "তিন ঈদ, তিনবার দেরি। আর তেইশজন *রাগী কাস্টমার*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "রায়েরবাজার, ঈদের আগে",
-        "props": [
-          "signboard",
-          "sign:সোহাগ টেইলার্স",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "shohag",
-            "x": 0.32,
-            "pose": "stand",
-            "face": "right",
-            "mood": "worried",
-            "arm": "face"
-          },
-          {
-            "id": "jalil",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "angry",
-            "arm": "point"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ঈদ",
-              "value": "৩"
-            },
-            {
-              "label": "দেরি",
-              "value": "৩ বার",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "jalil",
-      "say": "গতবার চাঁদরাত বারোটায় পাঞ্জাবি দিলা! *ইস্ত্রিও* হয় নাই!",
-      "tone": "annoyed",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "jalil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "shohag",
-      "say": "চাচা, এবার কথা দিলাম। *দশ দিনেই* সব রেডি।",
-      "tone": "hopeful",
-      "scene": {
-        "moods": {
-          "shohag": "smile"
-        },
-        "arms": {
-          "shohag": "talk"
-        },
-        "cam": {
-          "focus": "shohag",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "এবার সোহাগ নিল ষাটটা অর্ডার। হিসাব সহজ— দিনে ছয়টা, দশ দিনে *ষাট*।",
-      "scene": {
-        "widget": {
-          "kind": "note",
-          "style": "notebook",
-          "title": "এবারের হিসাব",
-          "lines": [
-            "দিনে ৬টা পাঞ্জাবি",
-            "১০ দিনে ৬০টা",
-            "কোনো সমস্যা নেই"
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "রাতে রূপা আলমারি থেকে বের করল *পুরনো একটা খাতা*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "সেই রাতে",
-        "props": [
-          "almirah",
-          "table"
-        ],
-        "chars": [
-          {
-            "id": "shohag",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "down"
-          },
-          {
-            "id": "rupa",
-            "x": 0.68,
-            "pose": "sit",
-            "face": "left",
-            "mood": "thinking",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "rupa",
-      "say": "গত বছরও বলেছিলে দিনে ছয়টা। খাতা বলছে, চল্লিশটা শেষ হয়েছিল *উনিশ দিনে*।",
-      "tone": "gently",
-      "scene": {
-        "cam": {
-          "focus": "rupa",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "shohag",
-      "say": "গতবার কারেন্ট গেল, কাপড় দেরিতে এল! এবার *ওসব হবে না*!",
-      "tone": "annoyed",
-      "scene": {
-        "moods": {
-          "shohag": "angry"
-        },
-        "arms": {
-          "shohag": "cross"
-        },
-        "cam": {
-          "focus": "shohag",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "rupa",
-      "say": "প্রতি বছরই কিছু না কিছু হয়। সেটাই তো *আসল হিসাব*।",
-      "tone": "softly",
-      "pause": 0.6,
-      "scene": {
-        "cam": {
-          "focus": "rupa",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "সোহাগ খাতার পাতা উল্টাল। তিনটা ঈদ— প্রতিবার *নতুন কোনো কারণ*।",
-      "card": {
-        "title": "পুরনো খাতার সত্যি",
-        "items": [
-          {
-            "t": "লোডশেডিং",
-            "mark": "x"
-          },
-          {
-            "t": "কাপড় এল দেরিতে",
-            "mark": "x"
-          },
-          {
-            "t": "কারিগর অসুস্থ",
-            "mark": "x"
-          }
-        ],
-        "footer": "প্রতিবার: দেরি"
-      }
-    },
-    {
-      "say": "অনেকক্ষণ চুপ করে বসে রইল সোহাগ।",
-      "tone": "softly",
-      "pause": 0.9,
-      "scene": {
-        "chars": [
-          {
-            "id": "shohag",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "thinking",
-            "arm": "face"
-          },
-          {
-            "id": "rupa",
-            "x": 0.68,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "cam": {
-          "focus": "shohag",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "তারপর সে একটা অদ্ভুত কাজ করল— নিজের অর্ডার *নিজেই কমাল*।",
-      "pause": 0.7,
-      "card": {
-        "text": "অর্ডার বাড়ানো নয়,\n*কমানো*।"
-      }
-    },
-    {
-      "say": "পরদিন সকালে বিশজন কাস্টমারকে ফোন। প্রত্যেককে *সত্যিটা বলল*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "পরদিন সকাল",
-        "props": [
-          "signboard",
-          "sign:সোহাগ টেইলার্স",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "shohag",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "worried",
-            "arm": "call",
-            "hold": "phone"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "shohag",
-      "say": "ভাই, সময়মতো দিতে পারব না। অর্ডারটা *অন্য কোথাও* দেন, মাফ করবেন।",
-      "tone": "serious",
-      "scene": {
-        "cam": {
-          "focus": "shohag",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "হাত থেকে গেল প্রায় *বিশ হাজার টাকা*। তবু রাতে ঘুমটা হলো শান্ত।",
-      "scene": {
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "say": "চল্লিশটা অর্ডার, প্রতিদিন খাতায় হিসাব। ঈদের *পাঁচ দিন আগেই* সব শেষ।",
-      "scene": {
-        "chip": "ঈদের পাঁচ দিন আগে",
-        "chars": [
-          {
-            "id": "shohag",
-            "x": 0.32,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "bag"
-          },
-          {
-            "id": "jalil",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "down"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "অর্ডার",
-              "value": "৪০",
-              "from": "০"
-            },
-            {
-              "label": "দেরি",
-              "value": "০"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "jalil",
-      "say": "পাঁচ দিন আগে? বিশ্বাস হয় না! সামনের ঈদে পুরা পরিবারের অর্ডার *তোমার*।",
-      "tone": "laughs",
-      "scene": {
-        "widget": null,
-        "moods": {
-          "jalil": "happy"
-        },
-        "cam": {
-          "focus": "jalil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "পরের ঈদে অর্ডার এল আগের চেয়ে বেশি। কারণ সবাই জানে, সোহাগ *কথা রাখে*।",
-      "scene": {
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "তিন বছরের আশার হিসাব যা পারেনি, *একটা পুরনো খাতা* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— ড্যানিয়েল কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"
-    },
-    {
-      "kind": "book",
-      "say": "মনের একটা ফাঁদ— *পরিকল্পনার ভুল*। আমরা ভাবি, এবার সব ঠিকঠাক যাবে।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "মন হিসাব করে সবচেয়ে ভালো দিনটা ধরে। কিন্তু অতীত বলে, *বাধা আসবেই*।",
-      "card": {
-        "title": "কোন হিসাব ঠিক?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "bulb",
-            "t": "মনের হিসাব",
-            "sub": "দশ দিনে ষাটটা",
-            "bad": true
-          },
-          "right": {
-            "icon": "book",
-            "t": "খাতার হিসাব",
-            "sub": "উনিশ দিনে চল্লিশটা"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, পরিকল্পনার আগে *অতীতটা* দেখো।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "আগে অতীত দেখো",
-            "sub": "আগেরবার কত লেগেছিল?",
-            "icon": "clock"
-          },
-          {
-            "t": "বাধার জায়গা রাখো",
-            "sub": "কিছু না কিছু হবেই",
-            "icon": "shield"
-          },
-          {
-            "t": "কম কথা, পুরো কাজ",
-            "sub": "বিশ্বাস জন্মায় কথা রাখায়",
-            "icon": "check"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, রাখো *বাধার জন্য জায়গা*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, কম কথা দাও, *পুরোটা রাখো*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *ইচ্ছার হিসাবে* কথা দিই, নাকি *অভিজ্ঞতার হিসাবে*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি *ইচ্ছার হিসাবে* কথা দিই,\nনাকি *অভিজ্ঞতার হিসাবে*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "বড় প্রতিশ্রুতি মানুষ শোনে… *রাখা কথা মনে রাখে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "বড় প্রতিশ্রুতি মানুষ শোনে…",
-        "line2": "রাখা কথা\nমনে রাখে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "তিন ঈদে তিনবার দেরি— দর্জির ভুল ধরিয়ে দিল বউয়ের পুরনো খাতা 🧵 | Thinking, Fast and Slow বাংলা",
-    "description": "তিন ঈদে তিনবার দেরি, তেইশজন রাগী কাস্টমার। এবার সোহাগ ষাটটা অর্ডার নিল— দশ দিনেই সব রেডি হবে। তারপর রাতে রূপা আলমারি থেকে বের করল একটা পুরনো খাতা…\nড্যানিয়েল কাহনেম্যানের Thinking, Fast and Slow — The Planning Fallacy — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "thinking fast and slow bangla",
-      "kahneman bangla",
-      "planning fallacy",
-      "দর্জির গল্প",
-      "স্বামী স্ত্রীর গল্প",
-      "বাংলা গল্প",
-      "ছোট ব্যবসা",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "তিন বছরের আশার হিসাব যা পারেনি, একটা পুরনো খাতা তা পারল। 🧵\n\nতুমি শেষ কবে কোনো কাজ ভেবেছিলে এক সপ্তাহে শেষ হবে, কিন্তু লেগেছিল এক মাস? 👇\n\n📖 Thinking, Fast and Slow — Daniel Kahneman\n#ছোটব্যবসা #স্বামীস্ত্রী"
-  },
-  "thumbnail": {
-    "text": "৩ ঈদে ৩বার দেরি",
-    "sub": "তারপর পুরনো খাতা…"
+  "jalil": {
+   "name": "জলিল চাচা",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F1E9D2",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
   }
+ },
+ "beats": [
+  {
+   "say": "তিন ঈদ, তিনবার দেরি। আর তেইশজন *রাগী কাস্টমার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "রায়েরবাজার, ঈদের আগে",
+    "props": [
+     "signboard",
+     "sign:সোহাগ টেইলার্স",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "shohag",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     },
+     {
+      "id": "jalil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঈদ",
+       "value": "৩"
+      },
+      {
+       "label": "দেরি",
+       "value": "৩ বার",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jalil",
+   "say": "গতবার চাঁদরাত বারোটায় পাঞ্জাবি দিলা! *ইস্ত্রিও* হয় নাই!",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jalil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shohag",
+   "say": "চাচা, এবার কথা দিলাম। *দশ দিনেই* সব রেডি।",
+   "tone": "hopeful",
+   "scene": {
+    "moods": {
+     "shohag": "smile"
+    },
+    "arms": {
+     "shohag": "talk"
+    },
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এবার সোহাগ নিল ষাটটা অর্ডার। হিসাব সহজ— দিনে ছয়টা, দশ দিনে *ষাট*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "এবারের হিসাব",
+     "lines": [
+      "দিনে ৬টা পাঞ্জাবি",
+      "১০ দিনে ৬০টা",
+      "কোনো সমস্যা নেই"
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাত জেগে মেশিন চলে। ছোট ছেলে ঘুমের মধ্যে বলে, আব্বু, *মেশিনটা চুপ করাও*।",
+   "pause": 0.4
+  },
+  {
+   "say": "রাতে রূপা আলমারি থেকে বের করল *পুরনো একটা খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "almirah",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shohag",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rupa",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "গত বছরও বলেছিলে দিনে ছয়টা। খাতা বলছে, চল্লিশটা শেষ হয়েছিল *উনিশ দিনে*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shohag",
+   "say": "গতবার কারেন্ট গেল, কাপড় দেরিতে এল! এবার *ওসব হবে না*!",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "shohag": "angry"
+    },
+    "arms": {
+     "shohag": "cross"
+    },
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "প্রতি বছরই কিছু না কিছু হয়। সেটাই তো *আসল হিসাব*।",
+   "tone": "softly",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shohag",
+   "tone": "sighs",
+   "say": "রূপা, এইবার না পারলে দোকানের নামটাই *নষ্ট হয়ে যাবে*।",
+   "scene": {
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "tone": "gently",
+   "say": "তাহলে এবার কম কথা দাও। কিন্তু যা দাও, *পুরোটা রাখো*।",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সোহাগ খাতার পাতা উল্টাল। তিনটা ঈদ— প্রতিবার *নতুন কোনো কারণ*।",
+   "card": {
+    "title": "পুরনো খাতার সত্যি",
+    "items": [
+     {
+      "t": "লোডশেডিং",
+      "mark": "x"
+     },
+     {
+      "t": "কাপড় এল দেরিতে",
+      "mark": "x"
+     },
+     {
+      "t": "কারিগর অসুস্থ",
+      "mark": "x"
+     }
+    ],
+    "footer": "প্রতিবার: দেরি"
+   }
+  },
+  {
+   "say": "অনেকক্ষণ চুপ করে বসে রইল সোহাগ।",
+   "tone": "softly",
+   "pause": 0.9,
+   "scene": {
+    "chars": [
+     {
+      "id": "shohag",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "face"
+     },
+     {
+      "id": "rupa",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "তারপর সে একটা অদ্ভুত কাজ করল— নিজের অর্ডার *নিজেই কমাল*।",
+   "pause": 0.7,
+   "card": {
+    "text": "অর্ডার বাড়ানো নয়,\n*কমানো*।"
+   }
+  },
+  {
+   "say": "পরদিন সকালে বিশজন কাস্টমারকে ফোন। প্রত্যেককে *সত্যিটা বলল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:সোহাগ টেইলার্স",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "shohag",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shohag",
+   "say": "ভাই, সময়মতো দিতে পারব না। অর্ডারটা *অন্য কোথাও* দেন, মাফ করবেন।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কেউ রাগ করল, কেউ ফোন কেটে দিল। এক কাস্টমার বলল, আপনার মতো *সোজা কথা* কোনো দর্জি বলে না।",
+   "pause": 0.4
+  },
+  {
+   "say": "হাত থেকে গেল প্রায় *বিশ হাজার টাকা*। তবু রাতে ঘুমটা হলো শান্ত।",
+   "scene": {
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "say": "রাতে খাতায় লিখল— ষাট না, *চল্লিশ*। দিনে চারটা। কারেন্ট গেলেও চলবে।",
+   "scene": {
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "চল্লিশটা অর্ডার, প্রতিদিন খাতায় হিসাব। ঈদের *পাঁচ দিন আগেই* সব শেষ।",
+   "scene": {
+    "chip": "ঈদের পাঁচ দিন আগে",
+    "chars": [
+     {
+      "id": "shohag",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "jalil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ডার",
+       "value": "৪০",
+       "from": "০"
+      },
+      {
+       "label": "দেরি",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jalil",
+   "say": "পাঁচ দিন আগে? বিশ্বাস হয় না! সামনের ঈদে পুরা পরিবারের অর্ডার *তোমার*।",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "jalil": "happy"
+    },
+    "cam": {
+     "focus": "jalil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shohag",
+   "tone": "proudly",
+   "say": "চাচা, এবারের পাঞ্জাবিটা ইস্ত্রি করে, *ভাঁজ করে* রেখেছি।",
+   "scene": {
+    "moods": {
+     "shohag": "happy"
+    },
+    "cam": {
+     "focus": "shohag",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের ঈদে অর্ডার এল আগের চেয়ে বেশি। কারণ সবাই জানে, সোহাগ *কথা রাখে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন বছরের আশার হিসাব যা পারেনি, *একটা পুরনো খাতা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— ড্যানিয়েল কাহনেম্যানের *থিংকিং, ফাস্ট অ্যান্ড স্লো*।"
+  },
+  {
+   "kind": "book",
+   "say": "মনের একটা ফাঁদ— *পরিকল্পনার ভুল*। আমরা ভাবি, এবার সব ঠিকঠাক যাবে।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "মন হিসাব করে সবচেয়ে ভালো দিনটা ধরে। কিন্তু অতীত বলে, *বাধা আসবেই*।",
+   "card": {
+    "title": "কোন হিসাব ঠিক?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "bulb",
+      "t": "মনের হিসাব",
+      "sub": "দশ দিনে ষাটটা",
+      "bad": true
+     },
+     "right": {
+      "icon": "book",
+      "t": "খাতার হিসাব",
+      "sub": "উনিশ দিনে চল্লিশটা"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, পরিকল্পনার আগে *অতীতটা* দেখো।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "আগে অতীত দেখো",
+      "sub": "আগেরবার কত লেগেছিল?",
+      "icon": "clock"
+     },
+     {
+      "t": "বাধার জায়গা রাখো",
+      "sub": "কিছু না কিছু হবেই",
+      "icon": "shield"
+     },
+     {
+      "t": "কম কথা, পুরো কাজ",
+      "sub": "বিশ্বাস জন্মায় কথা রাখায়",
+      "icon": "check"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, রাখো *বাধার জন্য জায়গা*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, কম কথা দাও, *পুরোটা রাখো*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *ইচ্ছার হিসাবে* কথা দিই, নাকি *অভিজ্ঞতার হিসাবে*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *ইচ্ছার হিসাবে* কথা দিই,\nনাকি *অভিজ্ঞতার হিসাবে*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বড় প্রতিশ্রুতি মানুষ শোনে… *রাখা কথা মনে রাখে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "বড় প্রতিশ্রুতি মানুষ শোনে…",
+    "line2": "রাখা কথা\nমনে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন ঈদে তিনবার দেরি— দর্জির ভুল ধরিয়ে দিল বউয়ের পুরনো খাতা 🧵 | Thinking, Fast and Slow বাংলা",
+  "description": "তিন ঈদে তিনবার দেরি, তেইশজন রাগী কাস্টমার। এবার সোহাগ ষাটটা অর্ডার নিল— দশ দিনেই সব রেডি হবে। তারপর রাতে রূপা আলমারি থেকে বের করল একটা পুরনো খাতা…\nড্যানিয়েল কাহনেম্যানের Thinking, Fast and Slow — The Planning Fallacy — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "thinking fast and slow bangla",
+   "kahneman bangla",
+   "planning fallacy",
+   "দর্জির গল্প",
+   "স্বামী স্ত্রীর গল্প",
+   "বাংলা গল্প",
+   "ছোট ব্যবসা",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন বছরের আশার হিসাব যা পারেনি, একটা পুরনো খাতা তা পারল। 🧵\n\nতুমি শেষ কবে কোনো কাজ ভেবেছিলে এক সপ্তাহে শেষ হবে, কিন্তু লেগেছিল এক মাস? 👇\n\n📖 Thinking, Fast and Slow — Daniel Kahneman\n#ছোটব্যবসা #স্বামীস্ত্রী"
+ },
+ "thumbnail": {
+  "text": "৩ ঈদে ৩বার দেরি",
+  "sub": "তারপর পুরনো খাতা…"
+ },
+ "_extended": "story-only v1"
 }

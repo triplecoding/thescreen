@@ -1,511 +1,570 @@
 {
-  "id": "040",
-  "status": "ready",
-  "title_bn": "তিরিশ দোকানের খাতা",
-  "source": {
-    "book": "The Art of War",
-    "author": "Sun Tzu",
-    "author_bn": "সান জু",
-    "chapter": "CHAPTER 4",
-    "chapter_bn": "চার নম্বর অধ্যায়",
-    "title": "Tactical Dispositions — win first, then fight",
-    "title_bn": "আগে জিতে নাও, তারপর লড়াই"
+ "id": "040",
+ "status": "ready",
+ "title_bn": "তিরিশ দোকানের খাতা",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "CHAPTER 4",
+  "chapter_bn": "চার নম্বর অধ্যায়",
+  "title": "Tactical Dispositions — win first, then fight",
+  "title_bn": "আগে জিতে নাও, তারপর লড়াই"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#37474F",
+   "hair": "short",
+   "voice": "young_man"
   },
-  "cast": {
-    "arif": {
-      "name": "আরিফ",
-      "type": "young_man",
-      "skin": "tan",
-      "outfit": "shirt",
-      "color": "#37474F",
-      "hair": "short",
-      "voice": "young_man"
-    },
-    "mim": {
-      "name": "মিম",
-      "type": "young_woman",
-      "skin": "wheat",
-      "outfit": "salwar",
-      "color": "#E57373",
-      "color2": "#FFF3E0",
-      "hair": "long_braid",
-      "voice": "young_woman"
-    },
-    "bablu": {
-      "name": "বাবলু ভাই",
-      "type": "man",
-      "skin": "dark",
-      "outfit": "tshirt",
-      "color": "#F9A825",
-      "hair": "curly",
-      "beard": "full_black",
-      "voice": "man"
-    }
+  "mim": {
+   "name": "মিম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#E57373",
+   "color2": "#FFF3E0",
+   "hair": "long_braid",
+   "voice": "young_woman"
   },
-  "beats": [
-    {
-      "say": "সাতটা ইন্টারভিউ, সাতটা *না*। অষ্টমটা পরশু সকালে।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "মোহাম্মদপুর",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.35,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "ইন্টারভিউ",
-              "value": "৭"
-            },
-            {
-              "label": "চাকরি",
-              "value": "০",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "arif",
-      "say": "আবার সেই প্রশ্ন— *নিজের সম্পর্কে বলুন*। আর আমি আটকে যাই।",
-      "tone": "frustrated",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "ছোট বোন মিম দরজায় দাঁড়িয়ে সব শুনছিল।",
-      "scene": {
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.32,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          },
-          {
-            "id": "mim",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "worried",
-            "arm": "down"
-          }
-        ],
-        "cam": "wide"
-      }
-    },
-    {
-      "kind": "list",
-      "say": "আরিফের প্রস্তুতি সবসময় এক— গাইড বই মুখস্থ, নতুন শার্ট, রাত জেগে *টেনশন*।",
-      "card": {
-        "title": "সাতবারের প্রস্তুতি",
-        "items": [
-          {
-            "t": "গাইড বই মুখস্থ",
-            "mark": "x"
-          },
-          {
-            "t": "নতুন শার্ট",
-            "mark": "x"
-          },
-          {
-            "t": "রাত জেগে টেনশন",
-            "mark": "x"
-          }
-        ],
-        "footer": "ফল: ০"
-      }
-    },
-    {
-      "voice": "mim",
-      "say": "ভাইয়া, কোম্পানিটা কী বানায়? ওদের *দোকানদাররা* কী বলে?",
-      "tone": "curious",
-      "scene": {
-        "cam": {
-          "focus": "mim",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "arif",
-      "say": "এটা জেনে কী হবে? ওরা তো *পড়াশোনার প্রশ্ন* করে।",
-      "tone": "annoyed",
-      "scene": {
-        "moods": {
-          "arif": "angry"
-        },
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "mim",
-      "say": "পরীক্ষায় যে জেতে, সে জেতে *হলে ঢোকার আগেই*। কাল সকালে চলো।",
-      "tone": "gently",
-      "scene": {
-        "moods": {
-          "mim": "smile"
-        },
-        "cam": {
-          "focus": "mim",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "অনেক রাত পর্যন্ত আরিফ জেগে রইল। এবার মুখস্থ না, *একটা পরিকল্পনা*।",
-      "tone": "softly",
-      "pause": 0.7,
-      "scene": {
-        "moods": {
-          "arif": "thinking"
-        },
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "পরদিন আরিফ গাইড বই রেখে বের হলো *বাজারে*।",
-      "pause": 0.7,
-      "card": {
-        "text": "বই নয়,\nএবার *বাজার*।"
-      }
-    },
-    {
-      "say": "তিরিশটা দোকান। প্রতিটায় একটাই প্রশ্ন— ওই কোম্পানির বিস্কুট *কেমন চলে*?",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "পরদিন, বাজারে",
-        "props": [
-          "signboard",
-          "sign:বাবলু স্টোর",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "hold",
-            "hold": "book"
-          },
-          {
-            "id": "bablu",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "cross"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "bablu",
-      "say": "চলে তো ভালোই। কিন্তু মাল আসে দেরিতে, ছোট প্যাকেট *পাওয়াই যায় না*।",
-      "tone": "frustrated",
-      "scene": {
-        "cam": {
-          "focus": "bablu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "arif",
-      "say": "আর কিছু? যা আপনি কোম্পানিকে *বলতে চান*?",
-      "tone": "curious",
-      "scene": {
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "bablu",
-      "say": "আজ পর্যন্ত কেউ তো *জিজ্ঞেসই করে নাই*, ভাই।",
-      "tone": "laughs",
-      "scene": {
-        "moods": {
-          "bablu": "happy"
-        },
-        "arms": {
-          "bablu": "talk"
-        },
-        "cam": {
-          "focus": "bablu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "রাতে আরিফের খাতায় তিরিশ দোকানের *একই তিনটা কথা*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "সেই রাতে",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "thinking",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "note",
-          "style": "notebook",
-          "title": "৩০ দোকানের কথা",
-          "lines": [
-            "মাল আসে দেরিতে",
-            "ছোট প্যাকেট নেই",
-            "কেউ খোঁজ নেয় না"
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "arif",
-      "say": "স্যার, আপনাদের তিরিশজন দোকানদারের সাথে কথা বলেছি। তিনটা সমস্যা, আর *আমার তিনটা সমাধান*।",
-      "tone": "proudly",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "ইন্টারভিউ রুম",
-        "props": [
-          "table"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "talk",
-            "hold": "book"
-          }
-        ],
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "রুমটা কয়েক সেকেন্ড চুপ। তারপর বোর্ডের তিনজনই *খাতাটা চাইলেন*।",
-      "pause": 0.6,
-      "scene": {
-        "cam": "static"
-      }
-    },
-    {
-      "say": "সন্ধ্যায় ফোন এল— *চাকরিটা হয়েছে*।",
-      "scene": {
-        "set": "home",
-        "light": "evening",
-        "chip": "সেদিন সন্ধ্যা",
-        "props": [
-          "sofa",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "arif",
-            "x": 0.32,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hug"
-          },
-          {
-            "id": "mim",
-            "x": 0.68,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "hug"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "arif",
-      "say": "সাতবার গিয়েছিলাম লড়তে। এবার গিয়েছিলাম *জিতে নিয়ে*।",
-      "tone": "warmly",
-      "scene": {
-        "cam": {
-          "focus": "arif",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "সাত রাতের মুখস্থ যা পারেনি, *তিন দিনের বাজার ঘোরা* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— সান জুর *দ্য আর্ট অফ ওয়ার*।"
-    },
-    {
-      "kind": "book",
-      "say": "চার নম্বর অধ্যায়— আগে *জিতে নাও*, তারপর লড়াই।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "বিজয়ী মাঠে নামার আগেই জানে মাঠটা কেমন। যে হারে, সে আগে নামে, *তারপর খোঁজে* কীভাবে জিতবে।",
-      "card": {
-        "title": "জয়টা আসলে কোথায়?",
-        "widget": {
-          "type": "iceberg",
-          "top": [
-            {
-              "icon": "star",
-              "t": "দশ মিনিটের ইন্টারভিউ"
-            }
-          ],
-          "bottom": [
-            {
-              "icon": "people",
-              "t": "তিরিশ দোকান"
-            },
-            {
-              "icon": "ear",
-              "t": "মন দিয়ে শোনা"
-            },
-            {
-              "icon": "book",
-              "t": "খাতার হিসাব"
-            }
-          ],
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, নামার আগে *মাঠটা চেনো*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "মাঠটা আগে চেনো",
-            "sub": "কার সমস্যা, কোথায়?",
-            "icon": "eye"
-          },
-          {
-            "t": "মুখস্থ নয়, প্রমাণ",
-            "sub": "নিজের চোখে দেখা কথা",
-            "icon": "check"
-          },
-          {
-            "t": "সমাধান নিয়ে যাও",
-            "sub": "শুধু চাওয়া নয়",
-            "icon": "bulb"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, মুখস্থ নয়, *নিজের দেখা প্রমাণ*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, চাওয়ার সাথে নিয়ে যাও *সমাধান*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *ভাগ্যের ভরসায়* মাঠে নামি, নাকি *আগেই জিতে নিয়ে*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি *ভাগ্যের ভরসায়* নামি,\nনাকি *আগেই জিতে নিয়ে*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "লড়াইয়ের দিনটা সবাই দেখে… *জয়টা হয় তার অনেক আগে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "লড়াইয়ের দিনটা সবাই দেখে…",
-        "line2": "জয়টা হয়\nতার অনেক আগে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "সাত ইন্টারভিউতে ফেল, অষ্টমবার বোনের এক বুদ্ধিতে চাকরি 💼 | The Art of War বাংলা",
-    "description": "সাতটা ইন্টারভিউ, সাতটা না। প্রতিবার সেই গাইড বই মুখস্থ আর রাত জাগা টেনশন। অষ্টমটার আগে ছোট বোন মিম একটা অদ্ভুত প্রশ্ন করল— কোম্পানির দোকানদাররা কী বলে…\nসান জুর The Art of War — Win first, then go to war — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "art of war bangla",
-      "sun tzu bangla",
-      "আর্ট অফ ওয়ার",
-      "চাকরির ইন্টারভিউ",
-      "ভাই বোনের গল্প",
-      "বাংলা গল্প",
-      "প্রস্তুতি",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "সাত রাতের মুখস্থ যা পারেনি, তিন দিনের বাজার ঘোরা তা পারল। 💼\n\nতোমার পরের বড় পরীক্ষা বা ইন্টারভিউয়ের আগে তুমি কী জানতে চাও? 👇\n\n📖 The Art of War — Sun Tzu\n#চাকরি #ভাইবোন"
-  },
-  "thumbnail": {
-    "text": "৭টা ইন্টারভিউ",
-    "sub": "৭টাই না, তারপর…"
+  "bablu": {
+   "name": "বাবলু ভাই",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#F9A825",
+   "hair": "curly",
+   "beard": "full_black",
+   "voice": "man"
   }
+ },
+ "beats": [
+  {
+   "say": "সাতটা ইন্টারভিউ, সাতটা *না*। অষ্টমটা পরশু সকালে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মোহাম্মদপুর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ইন্টারভিউ",
+       "value": "৭"
+      },
+      {
+       "label": "চাকরি",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আবার সেই প্রশ্ন— *নিজের সম্পর্কে বলুন*। আর আমি আটকে যাই।",
+   "tone": "frustrated",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "tone": "sad",
+   "say": "সাতবারই মনে হয়, ওরা যা চায়, আমি *সেটা না*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "ছোট বোন মিম দরজায় দাঁড়িয়ে সব শুনছিল।",
+   "scene": {
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "mim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "আরিফের প্রস্তুতি সবসময় এক— গাইড বই মুখস্থ, নতুন শার্ট, রাত জেগে *টেনশন*।",
+   "card": {
+    "title": "সাতবারের প্রস্তুতি",
+    "items": [
+     {
+      "t": "গাইড বই মুখস্থ",
+      "mark": "x"
+     },
+     {
+      "t": "নতুন শার্ট",
+      "mark": "x"
+     },
+     {
+      "t": "রাত জেগে টেনশন",
+      "mark": "x"
+     }
+    ],
+    "footer": "ফল: ০"
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "ভাইয়া, কোম্পানিটা কী বানায়? ওদের *দোকানদাররা* কী বলে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "এটা জেনে কী হবে? ওরা তো *পড়াশোনার প্রশ্ন* করে।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "arif": "angry"
+    },
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "পরীক্ষায় যে জেতে, সে জেতে *হলে ঢোকার আগেই*। কাল সকালে চলো।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "mim": "smile"
+    },
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অনেক রাত পর্যন্ত আরিফ জেগে রইল। এবার মুখস্থ না, *একটা পরিকল্পনা*।",
+   "tone": "softly",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "arif": "thinking"
+    },
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রাত তিনটায় খাতায় লিখল তিনটা প্রশ্ন— মাল কেমন চলে? সমস্যা কী? *দোকানদার খুশি তো*?",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পরদিন আরিফ গাইড বই রেখে বের হলো *বাজারে*।",
+   "pause": 0.7,
+   "card": {
+    "text": "বই নয়,\nএবার *বাজার*।"
+   }
+  },
+  {
+   "say": "তিরিশটা দোকান। প্রতিটায় একটাই প্রশ্ন— ওই কোম্পানির বিস্কুট *কেমন চলে*?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন, বাজারে",
+    "props": [
+     "signboard",
+     "sign:বাবলু স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "bablu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কেউ হাসল, কেউ ভাবল সে সেলসম্যান। এক দোকানদার তো বলেই ফেললেন, ভাই, *কী বেচতে আসছেন*?",
+   "pause": 0.4
+  },
+  {
+   "voice": "bablu",
+   "say": "চলে তো ভালোই। কিন্তু মাল আসে দেরিতে, ছোট প্যাকেট *পাওয়াই যায় না*।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "bablu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আর কিছু? যা আপনি কোম্পানিকে *বলতে চান*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "bablu",
+   "say": "আজ পর্যন্ত কেউ তো *জিজ্ঞেসই করে নাই*, ভাই।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "bablu": "happy"
+    },
+    "arms": {
+     "bablu": "talk"
+    },
+    "cam": {
+     "focus": "bablu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "tone": "warmly",
+   "say": "ভাই, আপনার কথাগুলো খাতায় লিখে নিলাম। *আপনার নামসহ*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে আরিফের খাতায় তিরিশ দোকানের *একই তিনটা কথা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "৩০ দোকানের কথা",
+     "lines": [
+      "মাল আসে দেরিতে",
+      "ছোট প্যাকেট নেই",
+      "কেউ খোঁজ নেয় না"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "স্যার, আপনাদের তিরিশজন দোকানদারের সাথে কথা বলেছি। তিনটা সমস্যা, আর *আমার তিনটা সমাধান*।",
+   "tone": "proudly",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ইন্টারভিউ রুম",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমটা কয়েক সেকেন্ড চুপ। তারপর বোর্ডের তিনজনই *খাতাটা চাইলেন*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": "static"
+   }
+  },
+  {
+   "say": "একজন জিজ্ঞেস করলেন, এগুলো কেউ বলে দিয়েছে? আরিফ বলল, না স্যার, *তিন দিন বাজারে* ঘুরেছি।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় ফোন এল— *চাকরিটা হয়েছে*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "mim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mim",
+   "tone": "excited",
+   "say": "ভাইয়া! মিষ্টি কই? *বাবলু ভাইয়ের দোকান* থেকেই আনবা কিন্তু!",
+   "scene": {
+    "moods": {
+     "mim": "happy"
+    },
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "সাতবার গিয়েছিলাম লড়তে। এবার গিয়েছিলাম *জিতে নিয়ে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাত রাতের মুখস্থ যা পারেনি, *তিন দিনের বাজার ঘোরা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— সান জুর *দ্য আর্ট অফ ওয়ার*।"
+  },
+  {
+   "kind": "book",
+   "say": "চার নম্বর অধ্যায়— আগে *জিতে নাও*, তারপর লড়াই।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "বিজয়ী মাঠে নামার আগেই জানে মাঠটা কেমন। যে হারে, সে আগে নামে, *তারপর খোঁজে* কীভাবে জিতবে।",
+   "card": {
+    "title": "জয়টা আসলে কোথায়?",
+    "widget": {
+     "type": "iceberg",
+     "top": [
+      {
+       "icon": "star",
+       "t": "দশ মিনিটের ইন্টারভিউ"
+      }
+     ],
+     "bottom": [
+      {
+       "icon": "people",
+       "t": "তিরিশ দোকান"
+      },
+      {
+       "icon": "ear",
+       "t": "মন দিয়ে শোনা"
+      },
+      {
+       "icon": "book",
+       "t": "খাতার হিসাব"
+      }
+     ],
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, নামার আগে *মাঠটা চেনো*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "মাঠটা আগে চেনো",
+      "sub": "কার সমস্যা, কোথায়?",
+      "icon": "eye"
+     },
+     {
+      "t": "মুখস্থ নয়, প্রমাণ",
+      "sub": "নিজের চোখে দেখা কথা",
+      "icon": "check"
+     },
+     {
+      "t": "সমাধান নিয়ে যাও",
+      "sub": "শুধু চাওয়া নয়",
+      "icon": "bulb"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, মুখস্থ নয়, *নিজের দেখা প্রমাণ*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, চাওয়ার সাথে নিয়ে যাও *সমাধান*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *ভাগ্যের ভরসায়* মাঠে নামি, নাকি *আগেই জিতে নিয়ে*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *ভাগ্যের ভরসায়* নামি,\nনাকি *আগেই জিতে নিয়ে*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "লড়াইয়ের দিনটা সবাই দেখে… *জয়টা হয় তার অনেক আগে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "লড়াইয়ের দিনটা সবাই দেখে…",
+    "line2": "জয়টা হয়\nতার অনেক আগে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সাত ইন্টারভিউতে ফেল, অষ্টমবার বোনের এক বুদ্ধিতে চাকরি 💼 | The Art of War বাংলা",
+  "description": "সাতটা ইন্টারভিউ, সাতটা না। প্রতিবার সেই গাইড বই মুখস্থ আর রাত জাগা টেনশন। অষ্টমটার আগে ছোট বোন মিম একটা অদ্ভুত প্রশ্ন করল— কোম্পানির দোকানদাররা কী বলে…\nসান জুর The Art of War — Win first, then go to war — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "art of war bangla",
+   "sun tzu bangla",
+   "আর্ট অফ ওয়ার",
+   "চাকরির ইন্টারভিউ",
+   "ভাই বোনের গল্প",
+   "বাংলা গল্প",
+   "প্রস্তুতি",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "সাত রাতের মুখস্থ যা পারেনি, তিন দিনের বাজার ঘোরা তা পারল। 💼\n\nতোমার পরের বড় পরীক্ষা বা ইন্টারভিউয়ের আগে তুমি কী জানতে চাও? 👇\n\n📖 The Art of War — Sun Tzu\n#চাকরি #ভাইবোন"
+ },
+ "thumbnail": {
+  "text": "৭টা ইন্টারভিউ",
+  "sub": "৭টাই না, তারপর…"
+ },
+ "_extended": "story-only v1"
 }

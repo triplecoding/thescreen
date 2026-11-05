@@ -1,541 +1,616 @@
 {
-  "id": "042",
-  "status": "ready",
-  "title_bn": "ক্লাবের প্রথম পাতা",
-  "source": {
-    "book": "Animal Farm",
-    "author": "George Orwell",
-    "author_bn": "জর্জ অরওয়েল",
-    "chapter": "IDEA 2",
-    "chapter_bn": "দ্বিতীয় ভাবনা",
-    "title": "Rules quietly rewritten after the fact",
-    "title_bn": "নিয়ম বদলায় চুপিচুপি"
+ "id": "042",
+ "status": "ready",
+ "title_bn": "ক্লাবের প্রথম পাতা",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 2",
+  "chapter_bn": "দ্বিতীয় ভাবনা",
+  "title": "Rules quietly rewritten after the fact",
+  "title_bn": "নিয়ম বদলায় চুপিচুপি"
+ },
+ "cast": {
+  "nila": {
+   "name": "নীলা",
+   "type": "teen_girl",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#00897B",
+   "color2": "#FFE082",
+   "hair": "long_braid",
+   "voice": "teen_girl"
   },
-  "cast": {
-    "nila": {
-      "name": "নীলা",
-      "type": "teen_girl",
-      "skin": "tan",
-      "outfit": "salwar",
-      "color": "#00897B",
-      "color2": "#FFE082",
-      "hair": "long_braid",
-      "voice": "teen_girl"
-    },
-    "rony": {
-      "name": "রনি",
-      "type": "teen_boy",
-      "skin": "wheat",
-      "outfit": "tshirt",
-      "color": "#D32F2F",
-      "hair": "side",
-      "voice": "teen_boy"
-    },
-    "shuvo": {
-      "name": "শুভ",
-      "type": "child_boy",
-      "skin": "brown",
-      "outfit": "tshirt",
-      "color": "#1976D2",
-      "hair": "kid",
-      "voice": "child_boy"
-    }
+  "rony": {
+   "name": "রনি",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#D32F2F",
+   "hair": "side",
+   "voice": "teen_boy"
   },
-  "beats": [
-    {
-      "say": "চাঁদা দেয় বারোজন। ব্যাট ধরে *একজনই*।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "কল্যাণপুর, মাঠের পাশে",
-        "props": [
-          "school_gate"
-        ],
-        "chars": [
-          {
-            "id": "rony",
-            "x": 0.32,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "cross"
-          },
-          {
-            "id": "shuvo",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "sad",
-            "arm": "down"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "চাঁদা দেয়",
-              "value": "১২ জন"
-            },
-            {
-              "label": "ব্যাট করে",
-              "value": "১ জন",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "shuvo",
-      "say": "রনি ভাই, আজ একটু ব্যাট করি? *তিন মাস* ধরে শুধু বল কুড়াই।",
-      "tone": "softly",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "shuvo",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "rony",
-      "say": "নিয়ম জানিস না? নতুনরা আগে *ফিল্ডিং শেখে*।",
-      "tone": "teasing",
-      "scene": {
-        "arms": {
-          "rony": "point"
-        },
-        "cam": {
-          "focus": "rony",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "নিয়মটা কবে হলো, কেউ মনে করতে পারল না। তবু সবাই *মেনে নিল*।",
-      "scene": {
-        "cam": "wide"
-      }
-    },
-    {
-      "kind": "list",
-      "say": "এক বছরে নিয়ম বদলেছে চুপিচুপি— ক্যাপ্টেন দুবার ব্যাট, চাঁদা দ্বিগুণ, ব্যাট থাকে *রনির বাসায়*।",
-      "card": {
-        "title": "নতুন নিয়ম",
-        "items": [
-          {
-            "t": "ক্যাপ্টেন দুবার ব্যাট",
-            "mark": "x"
-          },
-          {
-            "t": "চাঁদা ৫০ থেকে ১০০",
-            "mark": "x"
-          },
-          {
-            "t": "ব্যাট রনির বাসায়",
-            "mark": "x"
-          }
-        ],
-        "footer": "কেউ প্রশ্ন করেনি"
-      }
-    },
-    {
-      "voice": "nila",
-      "say": "রনি, এই নিয়মগুলো আমরা *কবে ঠিক করলাম*?",
-      "tone": "curious",
-      "scene": {
-        "chars": [
-          {
-            "id": "rony",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "cross"
-          },
-          {
-            "id": "nila",
-            "x": 0.68,
-            "pose": "stand",
-            "face": "left",
-            "mood": "thinking",
-            "arm": "talk"
-          }
-        ],
-        "cam": {
-          "focus": "nila",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "rony",
-      "say": "ক্যাপ্টেন আমি, নিয়মও আমি জানি। খেলবি না তো *বাড়ি যা*।",
-      "tone": "annoyed",
-      "scene": {
-        "moods": {
-          "rony": "angry"
-        },
-        "arms": {
-          "rony": "point"
-        },
-        "cam": {
-          "focus": "rony",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "শুভ মাঠের কোণে বসে রইল। হাতে পুরনো টেনিস বল, চোখ *ভেজা*।",
-      "tone": "softly",
-      "pause": 0.9,
-      "scene": {
-        "light": "evening",
-        "chip": "সেদিন সন্ধ্যা",
-        "chars": [
-          {
-            "id": "shuvo",
-            "x": 0.5,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "face"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "say": "সেই রাতে নীলা খুঁজে বের করল এক বছর আগের *একটা খাতা*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "সেই রাতে",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "nila",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "surprised",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "note",
-          "style": "notebook",
-          "title": "ক্লাবের প্রথম দিনের নিয়ম",
-          "lines": [
-            "সবাই সমান চাঁদা — ৫০ টাকা",
-            "সবাই পালা করে ব্যাট",
-            "ব্যাট থাকবে ক্লাবঘরে",
-            "— বারোজনের সই"
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "nila",
-      "say": "প্রথম দিন সবাই সই করেছিল। *রনিও*।",
-      "tone": "whispers",
-      "scene": {
-        "cam": {
-          "focus": "nila",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "পরদিন নীলা ঝগড়া করল না। সে শুধু *খাতাটা খুলল*।",
-      "pause": 0.7,
-      "card": {
-        "text": "ঝগড়া নয়,\nশুধু *খাতাটা খোলো*।"
-      }
-    },
-    {
-      "say": "সবার সামনে সে প্রথম পাতাটা *জোরে পড়ল*।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "পরদিন বিকেল",
-        "props": [
-          "school_gate"
-        ],
-        "chars": [
-          {
-            "id": "rony",
-            "x": 0.25,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "cross"
-          },
-          {
-            "id": "nila",
-            "x": 0.52,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "book"
-          },
-          {
-            "id": "shuvo",
-            "x": 0.8,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "down"
-          }
-        ],
-        "widget": {
-          "kind": "note",
-          "style": "notebook",
-          "title": "ক্লাবের প্রথম দিনের নিয়ম",
-          "lines": [
-            "সবাই সমান চাঁদা — ৫০ টাকা",
-            "সবাই পালা করে ব্যাট",
-            "ব্যাট থাকবে ক্লাবঘরে",
-            "— বারোজনের সই"
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "nila",
-      "say": "সবাই সমান চাঁদা। সবাই পালা করে ব্যাট। নিচে বারোজনের সই— *রনিরও*।",
-      "tone": "serious",
-      "scene": {
-        "cam": {
-          "focus": "nila",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "মাঠটা চুপ। বারোজোড়া চোখ ঘুরল *রনির দিকে*।",
-      "pause": 0.7,
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "rony",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "voice": "rony",
-      "say": "আমি… ভেবেছিলাম ক্যাপ্টেন মানে *একটু বেশি*।",
-      "tone": "softly",
-      "scene": {
-        "moods": {
-          "rony": "sad"
-        },
-        "arms": {
-          "rony": "down"
-        },
-        "cam": {
-          "focus": "rony",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "nila",
-      "say": "ক্যাপ্টেন মানে সবার আগে *নিয়ম মানা*, রনি।",
-      "tone": "gently",
-      "scene": {
-        "moods": {
-          "nila": "smile"
-        },
-        "cam": {
-          "focus": "nila",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "রনি ব্যাটটা এগিয়ে দিল শুভর দিকে। *প্রথম বল*, প্রথম ছক্কা!",
-      "scene": {
-        "moods": {
-          "rony": "smile",
-          "shuvo": "happy"
-        },
-        "arms": {
-          "rony": "point",
-          "shuvo": "wave"
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "shuvo",
-      "say": "নীলা আপু, দেখলে? *ছক্কা*!",
-      "tone": "excited",
-      "scene": {
-        "cam": {
-          "focus": "shuvo",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "এখন খাতাটা থাকে ক্লাবঘরে। নিয়ম বদলাতে হলে লাগে *সবার সই*।",
-      "scene": {
-        "chip": "এক মাস পর",
-        "widget": {
-          "kind": "checklist",
-          "title": "ক্লাবের নিয়ম",
-          "items": [
-            {
-              "t": "সমান চাঁদা",
-              "mark": "check"
-            },
-            {
-              "t": "পালা করে ব্যাট",
-              "mark": "check"
-            },
-            {
-              "t": "বদলাতে সবার সই",
-              "mark": "check"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "এক বছরের চুপ থাকা যা পারেনি, *পুরনো খাতার এক পাতা* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— জর্জ অরওয়েলের *অ্যানিমেল ফার্ম*।"
-    },
-    {
-      "kind": "book",
-      "say": "বইয়ের ভাবনা— নিয়ম বদলায় *চুপিচুপি*, কেউ খেয়াল করে না।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "যে কথা লেখা থাকে না, তা বদলানো সহজ। মানুষ ভুলে যায়, *প্রথমে কী কথা* ছিল।",
-      "card": {
-        "title": "নিয়ম কীভাবে বদলায়",
-        "widget": {
-          "type": "flow",
-          "nodes": [
-            {
-              "icon": "book",
-              "t": "প্রথম দিনের কথা"
-            },
-            {
-              "icon": "clock",
-              "t": "সময় যায়"
-            },
-            {
-              "icon": "x",
-              "t": "চুপিচুপি বদল"
-            },
-            {
-              "icon": "people",
-              "t": "সবাই ভুলে যায়"
-            }
-          ],
-          "show": 4
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, কথাটা *লিখে রাখো*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "লিখে রাখো",
-            "sub": "প্রথম দিনের কথা",
-            "icon": "book"
-          },
-          {
-            "t": "প্রশ্ন করো",
-            "sub": "নিয়মটা কে ঠিক করল?",
-            "icon": "chat"
-          },
-          {
-            "t": "ঝগড়া নয়, প্রমাণ",
-            "sub": "সবার সামনে, শান্তভাবে",
-            "icon": "shield"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, প্রশ্ন করো— নিয়মটা *কে ঠিক করল*?",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, ঝগড়া নয়, শান্তভাবে *প্রমাণ* দেখাও।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার চারপাশে কোন নিয়ম *চুপিচুপি বদলেছে*, আর আমি *মেনে নিয়েছি*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "কোন নিয়ম *চুপিচুপি বদলেছে*,\nআর আমি *মেনে নিয়েছি*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "মানুষের স্মৃতি বদলে যায়… *লেখা কথা বদলায় না*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "মানুষের স্মৃতি বদলে যায়…",
-        "line2": "লেখা কথা\nবদলায় না।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "চাঁদা দেয় ১২ জন, ব্যাট করে একজন— নীলার পুরনো খাতায় বদলে গেল ক্লাব 🏏 | Animal Farm বাংলা",
-    "description": "পাড়ার ক্রিকেট ক্লাবে চাঁদা দেয় বারোজন, ব্যাট ধরে শুধু ক্যাপ্টেন। এক বছরে নিয়ম বদলেছে চুপিচুপি, কেউ প্রশ্ন করেনি। তারপর এক রাতে নীলা খুঁজে পেল প্রথম দিনের একটা খাতা…\nজর্জ অরওয়েলের Animal Farm — Rules quietly rewritten — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "animal farm bangla",
-      "george orwell bangla",
-      "অ্যানিমেল ফার্ম",
-      "পাড়ার ক্রিকেট",
-      "বন্ধুদের গল্প",
-      "বাংলা গল্প",
-      "ন্যায্যতা",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "এক বছরের চুপ থাকা যা পারেনি, পুরনো খাতার এক পাতা তা পারল। 🏏\n\nতোমার চারপাশে কোন নিয়ম চুপিচুপি বদলে গেছে, কেউ খেয়াল করেনি? 👇\n\n📖 Animal Farm — George Orwell\n#পাড়ারক্রিকেট #বন্ধুত্ব"
-  },
-  "thumbnail": {
-    "text": "১২ জনের চাঁদা",
-    "sub": "ব্যাট করে একজন…"
+  "shuvo": {
+   "name": "শুভ",
+   "type": "child_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#1976D2",
+   "hair": "kid",
+   "voice": "child_boy"
   }
+ },
+ "beats": [
+  {
+   "say": "চাঁদা দেয় বারোজন। ব্যাট ধরে *একজনই*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কল্যাণপুর, মাঠের পাশে",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "cross"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাঁদা দেয়",
+       "value": "১২ জন"
+      },
+      {
+       "label": "ব্যাট করে",
+       "value": "১ জন",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "রনি ভাই, আজ একটু ব্যাট করি? *তিন মাস* ধরে শুধু বল কুড়াই।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "নিয়ম জানিস না? নতুনরা আগে *ফিল্ডিং শেখে*।",
+   "tone": "teasing",
+   "scene": {
+    "arms": {
+     "rony": "point"
+    },
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "tone": "sad",
+   "say": "আমিও তো প্রতি মাসে চাঁদা দেই, রনি ভাই। *টিফিনের টাকা* বাঁচিয়ে।",
+   "scene": {
+    "moods": {
+     "shuvo": "sad"
+    },
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নিয়মটা কবে হলো, কেউ মনে করতে পারল না। তবু সবাই *মেনে নিল*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক বছরে নিয়ম বদলেছে চুপিচুপি— ক্যাপ্টেন দুবার ব্যাট, চাঁদা দ্বিগুণ, ব্যাট থাকে *রনির বাসায়*।",
+   "card": {
+    "title": "নতুন নিয়ম",
+    "items": [
+     {
+      "t": "ক্যাপ্টেন দুবার ব্যাট",
+      "mark": "x"
+     },
+     {
+      "t": "চাঁদা ৫০ থেকে ১০০",
+      "mark": "x"
+     },
+     {
+      "t": "ব্যাট রনির বাসায়",
+      "mark": "x"
+     }
+    ],
+    "footer": "কেউ প্রশ্ন করেনি"
+   }
+  },
+  {
+   "voice": "nila",
+   "say": "রনি, এই নিয়মগুলো আমরা *কবে ঠিক করলাম*?",
+   "tone": "curious",
+   "scene": {
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "cross"
+     },
+     {
+      "id": "nila",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "ক্যাপ্টেন আমি, নিয়মও আমি জানি। খেলবি না তো *বাড়ি যা*।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "rony": "angry"
+    },
+    "arms": {
+     "rony": "point"
+    },
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুভ মাঠের কোণে বসে রইল। হাতে পুরনো টেনিস বল, চোখ *ভেজা*।",
+   "tone": "softly",
+   "pause": 0.9,
+   "scene": {
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা",
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "say": "সন্ধ্যায় বাসায় ফিরে শুভ বলল, আম্মু, কাল থেকে আর *ক্লাবে যাব না*। কারণ জিজ্ঞেস করতেই চুপ।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে নীলা খুঁজে বের করল এক বছর আগের *একটা খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nila",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ক্লাবের প্রথম দিনের নিয়ম",
+     "lines": [
+      "সবাই সমান চাঁদা — ৫০ টাকা",
+      "সবাই পালা করে ব্যাট",
+      "ব্যাট থাকবে ক্লাবঘরে",
+      "— বারোজনের সই"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nila",
+   "say": "প্রথম দিন সবাই সই করেছিল। *রনিও*।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nila",
+   "tone": "softly",
+   "say": "বারোজনের সই। এই খাতাটার কথা আমরা *সবাই ভুলে গিয়েছিলাম*।",
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পরদিন নীলা ঝগড়া করল না। সে শুধু *খাতাটা খুলল*।",
+   "pause": 0.7,
+   "card": {
+    "text": "ঝগড়া নয়,\nশুধু *খাতাটা খোলো*।"
+   }
+  },
+  {
+   "say": "সবার সামনে সে প্রথম পাতাটা *জোরে পড়ল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন বিকেল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "cross"
+     },
+     {
+      "id": "nila",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ক্লাবের প্রথম দিনের নিয়ম",
+     "lines": [
+      "সবাই সমান চাঁদা — ৫০ টাকা",
+      "সবাই পালা করে ব্যাট",
+      "ব্যাট থাকবে ক্লাবঘরে",
+      "— বারোজনের সই"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nila",
+   "say": "সবাই সমান চাঁদা। সবাই পালা করে ব্যাট। নিচে বারোজনের সই— *রনিরও*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কেউ কেউ নিজের নামটা খুঁজে আঙুল রাখল। কেউ মাথা নিচু করল।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "মাঠটা চুপ। বারোজোড়া চোখ ঘুরল *রনির দিকে*।",
+   "pause": 0.7,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "আমি… ভেবেছিলাম ক্যাপ্টেন মানে *একটু বেশি*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "rony": "sad"
+    },
+    "arms": {
+     "rony": "down"
+    },
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "tone": "softly",
+   "say": "সরি, শুভ। আর সবাইকেও *সরি*।",
+   "scene": {
+    "moods": {
+     "rony": "sad"
+    },
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nila",
+   "say": "ক্যাপ্টেন মানে সবার আগে *নিয়ম মানা*, রনি।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "nila": "smile"
+    },
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রনি ব্যাটটা এগিয়ে দিল শুভর দিকে। *প্রথম বল*, প্রথম ছক্কা!",
+   "scene": {
+    "moods": {
+     "rony": "smile",
+     "shuvo": "happy"
+    },
+    "arms": {
+     "rony": "point",
+     "shuvo": "wave"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "নীলা আপু, দেখলে? *ছক্কা*!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রনি হাততালি দিল সবার আগে। মাঠের কোণের পুরনো টেনিস বলটা শুভ সেদিন *পকেটে করে* বাড়ি নিয়ে গেল।",
+   "pause": 0.4
+  },
+  {
+   "voice": "rony",
+   "tone": "laughs",
+   "say": "কাল থেকে ব্যাটিং অর্ডার *লটারিতে*। আর ক্যাপ্টেনও বদলাবে, প্রতি মাসে।",
+   "scene": {
+    "moods": {
+     "rony": "happy"
+    },
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন খাতাটা থাকে ক্লাবঘরে। নিয়ম বদলাতে হলে লাগে *সবার সই*।",
+   "scene": {
+    "chip": "এক মাস পর",
+    "widget": {
+     "kind": "checklist",
+     "title": "ক্লাবের নিয়ম",
+     "items": [
+      {
+       "t": "সমান চাঁদা",
+       "mark": "check"
+      },
+      {
+       "t": "পালা করে ব্যাট",
+       "mark": "check"
+      },
+      {
+       "t": "বদলাতে সবার সই",
+       "mark": "check"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক বছরের চুপ থাকা যা পারেনি, *পুরনো খাতার এক পাতা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— জর্জ অরওয়েলের *অ্যানিমেল ফার্ম*।"
+  },
+  {
+   "kind": "book",
+   "say": "বইয়ের ভাবনা— নিয়ম বদলায় *চুপিচুপি*, কেউ খেয়াল করে না।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "যে কথা লেখা থাকে না, তা বদলানো সহজ। মানুষ ভুলে যায়, *প্রথমে কী কথা* ছিল।",
+   "card": {
+    "title": "নিয়ম কীভাবে বদলায়",
+    "widget": {
+     "type": "flow",
+     "nodes": [
+      {
+       "icon": "book",
+       "t": "প্রথম দিনের কথা"
+      },
+      {
+       "icon": "clock",
+       "t": "সময় যায়"
+      },
+      {
+       "icon": "x",
+       "t": "চুপিচুপি বদল"
+      },
+      {
+       "icon": "people",
+       "t": "সবাই ভুলে যায়"
+      }
+     ],
+     "show": 4
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, কথাটা *লিখে রাখো*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "লিখে রাখো",
+      "sub": "প্রথম দিনের কথা",
+      "icon": "book"
+     },
+     {
+      "t": "প্রশ্ন করো",
+      "sub": "নিয়মটা কে ঠিক করল?",
+      "icon": "chat"
+     },
+     {
+      "t": "ঝগড়া নয়, প্রমাণ",
+      "sub": "সবার সামনে, শান্তভাবে",
+      "icon": "shield"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, প্রশ্ন করো— নিয়মটা *কে ঠিক করল*?",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, ঝগড়া নয়, শান্তভাবে *প্রমাণ* দেখাও।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার চারপাশে কোন নিয়ম *চুপিচুপি বদলেছে*, আর আমি *মেনে নিয়েছি*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "কোন নিয়ম *চুপিচুপি বদলেছে*,\nআর আমি *মেনে নিয়েছি*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষের স্মৃতি বদলে যায়… *লেখা কথা বদলায় না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষের স্মৃতি বদলে যায়…",
+    "line2": "লেখা কথা\nবদলায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চাঁদা দেয় ১২ জন, ব্যাট করে একজন— নীলার পুরনো খাতায় বদলে গেল ক্লাব 🏏 | Animal Farm বাংলা",
+  "description": "পাড়ার ক্রিকেট ক্লাবে চাঁদা দেয় বারোজন, ব্যাট ধরে শুধু ক্যাপ্টেন। এক বছরে নিয়ম বদলেছে চুপিচুপি, কেউ প্রশ্ন করেনি। তারপর এক রাতে নীলা খুঁজে পেল প্রথম দিনের একটা খাতা…\nজর্জ অরওয়েলের Animal Farm — Rules quietly rewritten — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "animal farm bangla",
+   "george orwell bangla",
+   "অ্যানিমেল ফার্ম",
+   "পাড়ার ক্রিকেট",
+   "বন্ধুদের গল্প",
+   "বাংলা গল্প",
+   "ন্যায্যতা",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "এক বছরের চুপ থাকা যা পারেনি, পুরনো খাতার এক পাতা তা পারল। 🏏\n\nতোমার চারপাশে কোন নিয়ম চুপিচুপি বদলে গেছে, কেউ খেয়াল করেনি? 👇\n\n📖 Animal Farm — George Orwell\n#পাড়ারক্রিকেট #বন্ধুত্ব"
+ },
+ "thumbnail": {
+  "text": "১২ জনের চাঁদা",
+  "sub": "ব্যাট করে একজন…"
+ },
+ "_extended": "story-only v1"
 }

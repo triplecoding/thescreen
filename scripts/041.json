@@ -1,542 +1,612 @@
 {
-  "id": "041",
-  "status": "ready",
-  "title_bn": "বিশ মিনিটের শোনা",
-  "source": {
-    "book": "The Laws of Human Nature",
-    "author": "Robert Greene",
-    "author_bn": "রবার্ট গ্রিন",
-    "chapter": "CHAPTER 2",
-    "chapter_bn": "দুই নম্বর অধ্যায়",
-    "title": "The Law of Narcissism",
-    "title_bn": "নিজের প্রতি টানকে সহমর্মিতায় বদলাও"
+ "id": "041",
+ "status": "ready",
+ "title_bn": "বিশ মিনিটের শোনা",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 2",
+  "chapter_bn": "দুই নম্বর অধ্যায়",
+  "title": "The Law of Narcissism",
+  "title_bn": "নিজের প্রতি টানকে সহমর্মিতায় বদলাও"
+ },
+ "cast": {
+  "jamil": {
+   "name": "জামিল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#1565C0",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
   },
-  "cast": {
-    "jamil": {
-      "name": "জামিল",
-      "type": "man",
-      "skin": "wheat",
-      "outfit": "shirt",
-      "color": "#1565C0",
-      "hair": "side",
-      "beard": "stubble",
-      "voice": "man"
-    },
-    "shathi": {
-      "name": "শাথী",
-      "type": "woman",
-      "skin": "tan",
-      "outfit": "sari",
-      "color": "#2E7D32",
-      "color2": "#F8BBD0",
-      "hair": "long_bun",
-      "voice": "woman"
-    },
-    "tushi": {
-      "name": "তুশি",
-      "type": "child_girl",
-      "skin": "wheat",
-      "outfit": "uniform",
-      "color": "#FFFFFF",
-      "color2": "#1A237E",
-      "hair": "kid",
-      "voice": "child_girl"
-    }
+  "shathi": {
+   "name": "শাথী",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2E7D32",
+   "color2": "#F8BBD0",
+   "hair": "long_bun",
+   "voice": "woman"
   },
-  "beats": [
-    {
-      "say": "বারো বছরের সংসার। রাতের খাবারে কথা বলে *একজনই*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "খিলগাঁও",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "jamil",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "talk"
-          },
-          {
-            "id": "shathi",
-            "x": 0.7,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "plate"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "বছর",
-              "value": "১২"
-            },
-            {
-              "label": "শাথীর কথা",
-              "value": "০ মিনিট",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "jamil",
-      "say": "বুঝলে, আজ মিটিংয়ে বস আমার আইডিয়াটাই নিল। পুরো ফ্লোর *চুপ*!",
-      "tone": "proudly",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "শাথী হাসল, মাথা নাড়ল। তার নিজের দিনটা পড়ে রইল *প্লেটের পাশে*।",
-      "scene": {
-        "cam": {
-          "focus": "shathi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "shathi",
-      "say": "জানো, আজ ক্লাসে একটা মেয়ে—",
-      "tone": "softly",
-      "scene": {
-        "cam": {
-          "focus": "shathi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jamil",
-      "say": "দাঁড়াও দাঁড়াও, আসল কথাই তো বলিনি! *প্রমোশনের* ব্যাপারে…",
-      "tone": "excited",
-      "scene": {
-        "arms": {
-          "jamil": "point"
-        },
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "শাথী কথাটা শেষ করল না। *অনেকদিন* ধরেই করে না।",
-      "tone": "softly",
-      "pause": 0.9,
-      "scene": {
-        "moods": {
-          "shathi": "sad"
-        },
-        "cam": {
-          "focus": "shathi",
-          "zoom": 1.5
-        }
-      }
-    },
-    {
-      "say": "শুক্রবার মেয়ে তুশি এল স্কুলের *একটা কাগজ* নিয়ে।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "শুক্রবার সকাল",
-        "props": [
-          "sofa",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "jamil",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "tushi",
-            "x": 0.66,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "note",
-          "style": "paper",
-          "title": "বাড়ির কাজ: মা-বাবাকে চেনো",
-          "lines": [
-            "প্রিয় রং?",
-            "প্রিয় খাবার?",
-            "সবচেয়ে বড় চিন্তা?"
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "tushi",
-      "say": "আব্বু, আম্মুর প্রিয় রং কী? আর আম্মু *কী নিয়ে চিন্তা* করে?",
-      "tone": "curious",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "tushi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jamil",
-      "say": "প্রিয় রং… লাল? না, নীল… আসলে… *দাঁড়া*, ভেবে বলি।",
-      "scene": {
-        "moods": {
-          "jamil": "worried"
-        },
-        "arms": {
-          "jamil": "face"
-        },
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "রং, খাবার, চিন্তা— একটারও উত্তর জানে না জামিল। অথচ শাথী তার সবকিছু জানে *মুখস্থ*।",
-      "card": {
-        "title": "তুশির প্রশ্ন",
-        "items": [
-          {
-            "t": "আম্মুর প্রিয় রং",
-            "mark": "x"
-          },
-          {
-            "t": "আম্মুর প্রিয় খাবার",
-            "mark": "x"
-          },
-          {
-            "t": "আম্মুর বড় চিন্তা",
-            "mark": "x"
-          }
-        ],
-        "footer": "আব্বুর উত্তর: ০"
-      }
-    },
-    {
-      "say": "সারাদিন মাথায় একটাই কথা— বারো বছর, অথচ *আমি কিছুই জানি না*।",
-      "pause": 0.8,
-      "scene": {
-        "light": "evening",
-        "chars": [
-          {
-            "id": "jamil",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "সেই রাতে জামিল একটা অদ্ভুত কাজ করল।",
-      "pause": 0.7,
-      "card": {
-        "text": "বলা নয়,\nএবার *শোনা*।"
-      }
-    },
-    {
-      "say": "খাবার টেবিলে সে একটা প্রশ্ন করল। তারপর *চুপ করে রইল*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "সেই রাতে",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "jamil",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "down"
-          },
-          {
-            "id": "shathi",
-            "x": 0.7,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "plate"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "jamil",
-      "say": "সেদিন তোমার ক্লাসের মেয়েটার কথা বলছিলে… *কী হয়েছিল*?",
-      "tone": "gently",
-      "scene": {
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "শাথী অবাক হয়ে তাকাল। তারপর বলল— *বিশ মিনিট*, একটানা।",
-      "scene": {
-        "moods": {
-          "shathi": "surprised"
-        },
-        "cam": {
-          "focus": "shathi",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "voice": "shathi",
-      "say": "মেয়েটার বাবা নেই। ফি বাকি বলে ওকে বের করে দিতে চায়। আমি *একা লড়ছি*।",
-      "tone": "tearful",
-      "scene": {
-        "moods": {
-          "shathi": "crying"
-        },
-        "cam": {
-          "focus": "shathi",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jamil",
-      "say": "একা কেন? কাল আমি তোমার সাথে *হেডস্যারের কাছে* যাব।",
-      "tone": "softly",
-      "scene": {
-        "arms": {
-          "jamil": "talk"
-        },
-        "cam": {
-          "focus": "jamil",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "বহুদিন পর কেউ শাথীর দিনটা *নিজের করে* শুনল।",
-      "pause": 0.7,
-      "scene": {
-        "moods": {
-          "shathi": "smile"
-        },
-        "cam": "static"
-      }
-    },
-    {
-      "say": "এক মাস পর তুশির কাগজে আব্বুর সব উত্তর *ঠিক*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "এক মাস পর",
-        "props": [
-          "sofa",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "jamil",
-            "x": 0.28,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          },
-          {
-            "id": "shathi",
-            "x": 0.5,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          },
-          {
-            "id": "tushi",
-            "x": 0.75,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "wave"
-          }
-        ],
-        "widget": {
-          "kind": "checklist",
-          "title": "আম্মুকে চেনো",
-          "items": [
-            {
-              "t": "প্রিয় রং: সবুজ",
-              "mark": "check"
-            },
-            {
-              "t": "প্রিয় খাবার: শুঁটকি ভর্তা",
-              "mark": "check"
-            },
-            {
-              "t": "চিন্তা: ক্লাসের মেয়েটা",
-              "mark": "check"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "বারো বছরের বলে যাওয়া যা পারেনি, *বিশ মিনিটের শোনা* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য লজ অফ হিউম্যান নেচার*।"
-    },
-    {
-      "kind": "book",
-      "say": "দুই নম্বর অধ্যায়— নিজের প্রতি টানকে *সহমর্মিতায়* বদলাও।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "সবাই নিজের গল্পটাই আগে বলতে চায়। যে মনটা *অন্যের দিকে ঘোরাতে* পারে, সম্পর্ক বাঁচে তার কাছে।",
-      "card": {
-        "title": "কাছে টানে কোনটা?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "chat",
-            "t": "শুধু নিজের গল্প",
-            "sub": "পাশের মানুষ দূরে সরে",
-            "bad": true
-          },
-          "right": {
-            "icon": "ear",
-            "t": "প্রশ্ন করে শোনা",
-            "sub": "পাশের মানুষ কাছে আসে"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, প্রতিদিন *একটা প্রশ্ন* করো।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "একটা প্রশ্ন করো",
-            "sub": "তোমার দিনটা কেমন গেল?",
-            "icon": "chat"
-          },
-          {
-            "t": "থামিয়ে দিও না",
-            "sub": "শেষ পর্যন্ত শোনো",
-            "icon": "ear"
-          },
-          {
-            "t": "ছোট কথা মনে রাখো",
-            "sub": "সেটাই ভালোবাসার প্রমাণ",
-            "icon": "heart"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, কথার মাঝে *থামিয়ে দিও না*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, *ছোট কথাগুলো* মনে রাখো।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— কাছের মানুষটা কি শুধু আমার *শ্রোতা*, নাকি আমিও *তার*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "কাছের মানুষটা কি শুধু\nআমার *শ্রোতা*,\nনাকি আমিও *তার*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "নিজের গল্প মুগ্ধ করে… *অন্যের গল্প শোনা কাছে টানে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "নিজের গল্প মুগ্ধ করে…",
-        "line2": "অন্যের গল্প শোনা\nকাছে টানে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "বারো বছর শুধু নিজের গল্প বলল স্বামী— মেয়ের এক প্রশ্নে চুপ 💚 | The Laws of Human Nature বাংলা",
-    "description": "বারো বছরের সংসার, রাতের খাবারে কথা বলে একজনই। শাথী কথা শুরু করলেই থামিয়ে দেয় জামিল। তারপর একদিন মেয়ে তুশি স্কুলের একটা কাগজ নিয়ে এল— আম্মুর প্রিয় রং কী…\nরবার্ট গ্রিনের The Laws of Human Nature — The Law of Narcissism — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "laws of human nature bangla",
-      "robert greene bangla",
-      "স্বামী স্ত্রীর গল্প",
-      "সংসারের গল্প",
-      "বাংলা গল্প",
-      "শোনা",
-      "সম্পর্ক",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "বারো বছরের বলে যাওয়া যা পারেনি, বিশ মিনিটের শোনা তা পারল। 💚\n\nতোমার কাছের মানুষটার প্রিয় রং কি তুমি জানো? 👇\n\n📖 The Laws of Human Nature — Robert Greene\n#সংসার #সম্পর্ক"
-  },
-  "thumbnail": {
-    "text": "আম্মুর প্রিয় রং?",
-    "sub": "১২ বছরেও জানে না…"
+  "tushi": {
+   "name": "তুশি",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#FFFFFF",
+   "color2": "#1A237E",
+   "hair": "kid",
+   "voice": "child_girl"
   }
+ },
+ "beats": [
+  {
+   "say": "বারো বছরের সংসার। রাতের খাবারে কথা বলে *একজনই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "খিলগাঁও",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "shathi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বছর",
+       "value": "১২"
+      },
+      {
+       "label": "শাথীর কথা",
+       "value": "০ মিনিট",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "বুঝলে, আজ মিটিংয়ে বস আমার আইডিয়াটাই নিল। পুরো ফ্লোর *চুপ*!",
+   "tone": "proudly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাথী হাসল, মাথা নাড়ল। তার নিজের দিনটা পড়ে রইল *প্লেটের পাশে*।",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "জানো, আজ ক্লাসে একটা মেয়ে—",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "দাঁড়াও দাঁড়াও, আসল কথাই তো বলিনি! *প্রমোশনের* ব্যাপারে…",
+   "tone": "excited",
+   "scene": {
+    "arms": {
+     "jamil": "point"
+    },
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাথী কথাটা শেষ করল না। *অনেকদিন* ধরেই করে না।",
+   "tone": "softly",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "shathi": "sad"
+    },
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "রাতে প্লেট ধুতে ধুতে শাথী ভাবে, শেষ কবে কেউ জিজ্ঞেস করেছে— *তোমার দিনটা কেমন গেল*?",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার মেয়ে তুশি এল স্কুলের *একটা কাগজ* নিয়ে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শুক্রবার সকাল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "tushi",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বাড়ির কাজ: মা-বাবাকে চেনো",
+     "lines": [
+      "প্রিয় রং?",
+      "প্রিয় খাবার?",
+      "সবচেয়ে বড় চিন্তা?"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tushi",
+   "say": "আব্বু, আম্মুর প্রিয় রং কী? আর আম্মু *কী নিয়ে চিন্তা* করে?",
+   "tone": "curious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tushi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "প্রিয় রং… লাল? না, নীল… আসলে… *দাঁড়া*, ভেবে বলি।",
+   "scene": {
+    "moods": {
+     "jamil": "worried"
+    },
+    "arms": {
+     "jamil": "face"
+    },
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tushi",
+   "tone": "curious",
+   "say": "আব্বু, আম্মু তো তোমার সব জানে। তুমি *আম্মুর* কিছু জানো না?",
+   "scene": {
+    "cam": {
+     "focus": "tushi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রং, খাবার, চিন্তা— একটারও উত্তর জানে না জামিল। অথচ শাথী তার সবকিছু জানে *মুখস্থ*।",
+   "card": {
+    "title": "তুশির প্রশ্ন",
+    "items": [
+     {
+      "t": "আম্মুর প্রিয় রং",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মুর প্রিয় খাবার",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মুর বড় চিন্তা",
+      "mark": "x"
+     }
+    ],
+    "footer": "আব্বুর উত্তর: ০"
+   }
+  },
+  {
+   "say": "সারাদিন মাথায় একটাই কথা— বারো বছর, অথচ *আমি কিছুই জানি না*।",
+   "pause": 0.8,
+   "scene": {
+    "light": "evening",
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "অফিসের মিটিংয়ে বসে জামিল খেয়াল করল, সে সবার কথা *অর্ধেক শুনেই* উত্তর দেয়।",
+   "scene": {
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সেই রাতে জামিল একটা অদ্ভুত কাজ করল।",
+   "pause": 0.7,
+   "card": {
+    "text": "বলা নয়,\nএবার *শোনা*।"
+   }
+  },
+  {
+   "say": "খাবার টেবিলে সে একটা প্রশ্ন করল। তারপর *চুপ করে রইল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "shathi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "সেদিন তোমার ক্লাসের মেয়েটার কথা বলছিলে… *কী হয়েছিল*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাথী অবাক হয়ে তাকাল। তারপর বলল— *বিশ মিনিট*, একটানা।",
+   "scene": {
+    "moods": {
+     "shathi": "surprised"
+    },
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "say": "মেয়েটার বাবা নেই। ফি বাকি বলে ওকে বের করে দিতে চায়। আমি *একা লড়ছি*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "shathi": "crying"
+    },
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "একা কেন? কাল আমি তোমার সাথে *হেডস্যারের কাছে* যাব।",
+   "tone": "softly",
+   "scene": {
+    "arms": {
+     "jamil": "talk"
+    },
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shathi",
+   "tone": "curious",
+   "say": "সত্যি যাবে? অফিস কামাই করে?",
+   "scene": {
+    "moods": {
+     "shathi": "surprised"
+    },
+    "cam": {
+     "focus": "shathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "tone": "warmly",
+   "say": "অফিস রোজ থাকবে। মেয়েটার *ভর্তিটা* থাকবে না।",
+   "scene": {
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বহুদিন পর কেউ শাথীর দিনটা *নিজের করে* শুনল।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "shathi": "smile"
+    },
+    "cam": "static"
+   }
+  },
+  {
+   "say": "এক মাস পর তুশির কাগজে আব্বুর সব উত্তর *ঠিক*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shathi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "tushi",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "আম্মুকে চেনো",
+     "items": [
+      {
+       "t": "প্রিয় রং: সবুজ",
+       "mark": "check"
+      },
+      {
+       "t": "প্রিয় খাবার: শুঁটকি ভর্তা",
+       "mark": "check"
+      },
+      {
+       "t": "চিন্তা: ক্লাসের মেয়েটা",
+       "mark": "check"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tushi",
+   "tone": "excited",
+   "say": "আম্মুর প্রিয় রং *সবুজ*! আব্বু এবার ফুল মার্ক্স!",
+   "scene": {
+    "moods": {
+     "tushi": "happy"
+    },
+    "cam": {
+     "focus": "tushi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বারো বছরের বলে যাওয়া যা পারেনি, *বিশ মিনিটের শোনা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— রবার্ট গ্রিনের *দ্য লজ অফ হিউম্যান নেচার*।"
+  },
+  {
+   "kind": "book",
+   "say": "দুই নম্বর অধ্যায়— নিজের প্রতি টানকে *সহমর্মিতায়* বদলাও।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "সবাই নিজের গল্পটাই আগে বলতে চায়। যে মনটা *অন্যের দিকে ঘোরাতে* পারে, সম্পর্ক বাঁচে তার কাছে।",
+   "card": {
+    "title": "কাছে টানে কোনটা?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "chat",
+      "t": "শুধু নিজের গল্প",
+      "sub": "পাশের মানুষ দূরে সরে",
+      "bad": true
+     },
+     "right": {
+      "icon": "ear",
+      "t": "প্রশ্ন করে শোনা",
+      "sub": "পাশের মানুষ কাছে আসে"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, প্রতিদিন *একটা প্রশ্ন* করো।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "একটা প্রশ্ন করো",
+      "sub": "তোমার দিনটা কেমন গেল?",
+      "icon": "chat"
+     },
+     {
+      "t": "থামিয়ে দিও না",
+      "sub": "শেষ পর্যন্ত শোনো",
+      "icon": "ear"
+     },
+     {
+      "t": "ছোট কথা মনে রাখো",
+      "sub": "সেটাই ভালোবাসার প্রমাণ",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, কথার মাঝে *থামিয়ে দিও না*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, *ছোট কথাগুলো* মনে রাখো।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— কাছের মানুষটা কি শুধু আমার *শ্রোতা*, নাকি আমিও *তার*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "কাছের মানুষটা কি শুধু\nআমার *শ্রোতা*,\nনাকি আমিও *তার*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "নিজের গল্প মুগ্ধ করে… *অন্যের গল্প শোনা কাছে টানে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "নিজের গল্প মুগ্ধ করে…",
+    "line2": "অন্যের গল্প শোনা\nকাছে টানে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বারো বছর শুধু নিজের গল্প বলল স্বামী— মেয়ের এক প্রশ্নে চুপ 💚 | The Laws of Human Nature বাংলা",
+  "description": "বারো বছরের সংসার, রাতের খাবারে কথা বলে একজনই। শাথী কথা শুরু করলেই থামিয়ে দেয় জামিল। তারপর একদিন মেয়ে তুশি স্কুলের একটা কাগজ নিয়ে এল— আম্মুর প্রিয় রং কী…\nরবার্ট গ্রিনের The Laws of Human Nature — The Law of Narcissism — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "laws of human nature bangla",
+   "robert greene bangla",
+   "স্বামী স্ত্রীর গল্প",
+   "সংসারের গল্প",
+   "বাংলা গল্প",
+   "শোনা",
+   "সম্পর্ক",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "বারো বছরের বলে যাওয়া যা পারেনি, বিশ মিনিটের শোনা তা পারল। 💚\n\nতোমার কাছের মানুষটার প্রিয় রং কি তুমি জানো? 👇\n\n📖 The Laws of Human Nature — Robert Greene\n#সংসার #সম্পর্ক"
+ },
+ "thumbnail": {
+  "text": "আম্মুর প্রিয় রং?",
+  "sub": "১২ বছরেও জানে না…"
+ },
+ "_extended": "story-only v1"
 }

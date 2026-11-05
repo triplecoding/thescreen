@@ -107,7 +107,13 @@ def check(path):
 
 
 if __name__ == "__main__":
-    files = sys.argv[1:] or sorted(str(p) for p in SCRIPTS.glob("*.json"))
+    files = sys.argv[1:]
+    if not files:   # whole queue: already-posted scripts are history (older formats), skip them
+        try:
+            posted = {r["id"] for r in json.loads((SCRIPTS.parent / "state.json").read_text(encoding="utf-8")).get("posted", [])}
+        except Exception:  # noqa
+            posted = set()
+        files = [str(p) for p in sorted(SCRIPTS.glob("*.json")) if p.stem not in posted]
     bad = 0
     for f in files:
         e, w, est = check(f)

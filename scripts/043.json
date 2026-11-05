@@ -1,515 +1,579 @@
 {
-  "id": "043",
-  "status": "ready",
-  "title_bn": "সাতজনের সকাল",
-  "source": {
-    "book": "The Social Contract",
-    "author": "Jean-Jacques Rousseau",
-    "author_bn": "জঁ-জাক রুসো",
-    "chapter": "BOOK 1",
-    "chapter_bn": "প্রথম খণ্ড",
-    "title": "Freedom includes obeying rules we made together",
-    "title_bn": "নিজেদের বানানো নিয়মেই মুক্তি"
+ "id": "043",
+ "status": "ready",
+ "title_bn": "সাতজনের সকাল",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জঁ-জাক রুসো",
+  "chapter": "BOOK 1",
+  "chapter_bn": "প্রথম খণ্ড",
+  "title": "Freedom includes obeying rules we made together",
+  "title_bn": "নিজেদের বানানো নিয়মেই মুক্তি"
+ },
+ "cast": {
+  "dada": {
+   "name": "দাদা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#FFFFFF",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
   },
-  "cast": {
-    "dada": {
-      "name": "দাদা",
-      "type": "old_man",
-      "skin": "wheat",
-      "outfit": "panjabi",
-      "color": "#FFFFFF",
-      "hair": "side_grey",
-      "beard": "short_grey",
-      "glasses": true,
-      "voice": "old_man"
-    },
-    "riya": {
-      "name": "রিয়া",
-      "type": "teen_girl",
-      "skin": "light",
-      "outfit": "uniform",
-      "color": "#FFFFFF",
-      "color2": "#283593",
-      "hair": "long_braid",
-      "voice": "teen_girl"
-    },
-    "selim": {
-      "name": "সেলিম চাচ্চু",
-      "type": "man",
-      "skin": "tan",
-      "outfit": "shirt",
-      "color": "#6D4C41",
-      "hair": "short",
-      "beard": "moustache",
-      "voice": "man"
-    }
+  "riya": {
+   "name": "রিয়া",
+   "type": "teen_girl",
+   "skin": "light",
+   "outfit": "uniform",
+   "color": "#FFFFFF",
+   "color2": "#283593",
+   "hair": "long_braid",
+   "voice": "teen_girl"
   },
-  "beats": [
-    {
-      "say": "এক বাথরুম, সাতজন মানুষ। সকাল সাড়ে সাতটায় রোজ *একটা যুদ্ধ*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "পুরান ঢাকা, যৌথ পরিবার",
-        "props": [
-          "door_closed",
-          "almirah"
-        ],
-        "chars": [
-          {
-            "id": "riya",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "angry",
-            "arm": "hold",
-            "hold": "bag"
-          },
-          {
-            "id": "selim",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "angry",
-            "arm": "point"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "মানুষ",
-              "value": "৭"
-            },
-            {
-              "label": "বাথরুম",
-              "value": "১",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "selim",
-      "say": "রিয়া! বিশ মিনিট ভেতরে কী করিস? আমার *অফিসের বাস* চলে যাবে!",
-      "tone": "annoyed",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "selim",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "riya",
-      "say": "চাচ্চু, আজ আমার *পরীক্ষা*! আর কাল আপনি কী করেছিলেন?",
-      "tone": "upset",
-      "scene": {
-        "cam": {
-          "focus": "riya",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "দাদা সব শুনলেন। এই চিৎকার *দুই বছরের পুরনো*।",
-      "scene": {
-        "chars": [
-          {
-            "id": "riya",
-            "x": 0.25,
-            "pose": "stand",
-            "face": "right",
-            "mood": "angry",
-            "arm": "cross",
-            "hold": "bag"
-          },
-          {
-            "id": "dada",
-            "x": 0.5,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          },
-          {
-            "id": "selim",
-            "x": 0.77,
-            "pose": "stand",
-            "face": "left",
-            "mood": "angry",
-            "arm": "cross"
-          }
-        ],
-        "cam": {
-          "focus": "dada",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "দাদা একবার রুটিন টাঙিয়েছিলেন। দুই দিন চলল, তারপর *সবাই ভুলে গেল*।",
-      "card": {
-        "title": "আগের চেষ্টা",
-        "items": [
-          {
-            "t": "দাদার টাঙানো রুটিন",
-            "mark": "x"
-          },
-          {
-            "t": "বকাঝকা",
-            "mark": "x"
-          },
-          {
-            "t": "আগে উঠলে আগে পাবে",
-            "mark": "x"
-          }
-        ],
-        "footer": "টিকল: ২ দিন"
-      }
-    },
-    {
-      "say": "সেদিন রিয়া পরীক্ষায় ঢুকল দেরিতে। রাতে বাসায় কেউ *কারো সাথে কথা* বলল না।",
-      "tone": "softly",
-      "pause": 0.9,
-      "scene": {
-        "light": "night",
-        "chip": "সেদিন রাতে",
-        "chars": [
-          {
-            "id": "riya",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "face"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "শুক্রবার রাতে দাদা সবাইকে ডাকলেন। কিন্তু এবার *আদেশ নয়*।",
-      "pause": 0.7,
-      "card": {
-        "text": "আদেশ নয়,\n*সবার কথা*।"
-      }
-    },
-    {
-      "say": "সাতজন এক ঘরে। মাঝখানে একটা সাদা কাগজ আর *একটা কলম*।",
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "শুক্রবার রাত",
-        "props": [
-          "sofa",
-          "table"
-        ],
-        "chars": [
-          {
-            "id": "dada",
-            "x": 0.25,
-            "pose": "sit",
-            "face": "right",
-            "mood": "smile",
-            "arm": "talk"
-          },
-          {
-            "id": "riya",
-            "x": 0.52,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "down"
-          },
-          {
-            "id": "selim",
-            "x": 0.78,
-            "pose": "sit",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "cross"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "dada",
-      "say": "নিয়ম আমি বানাব না। তোমরা বলো— কার *কখন, কতক্ষণ* দরকার?",
-      "tone": "warmly",
-      "scene": {
-        "cam": {
-          "focus": "dada",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "selim",
-      "say": "আমার বাস সাতটা পঞ্চাশে। সাতটা বিশে *দশ মিনিট* হলেই চলবে।",
-      "scene": {
-        "arms": {
-          "selim": "talk"
-        },
-        "cam": {
-          "focus": "selim",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "riya",
-      "say": "আমি তাহলে রাতেই গোসল করব। সকালে শুধু *পাঁচ মিনিট*।",
-      "tone": "hopeful",
-      "scene": {
-        "moods": {
-          "riya": "smile"
-        },
-        "cam": {
-          "focus": "riya",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "কেউ ছাড়ল একটু, কেউ নিল একটু। কাগজটা ভরে উঠল *সাতজনের হাতে*।",
-      "scene": {
-        "widget": {
-          "kind": "note",
-          "style": "paper",
-          "title": "আমাদের সকালের নিয়ম",
-          "lines": [
-            "৬:৩০ — দাদা-দাদি",
-            "৭:০০ — রিয়া, ৫ মিনিট",
-            "৭:২০ — সেলিম, ১০ মিনিট",
-            "— সাতজনের সই"
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "dada",
-      "say": "নিয়মটা তোমাদের। এবার মানবে কি না, *সেটাও তোমাদের*।",
-      "tone": "gently",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "dada",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "এক সপ্তাহ পর, সকাল সাড়ে সাতটা। দরজার সামনে *কোনো চিৎকার নেই*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "এক সপ্তাহ পর",
-        "props": [
-          "door_closed",
-          "almirah"
-        ],
-        "chars": [
-          {
-            "id": "riya",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "bag"
-          },
-          {
-            "id": "selim",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "smile",
-            "arm": "down"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "শান্ত সকাল",
-              "value": "৭",
-              "from": "০"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "selim",
-      "say": "রিয়া, তোর পাঁচ মিনিট শেষ! না না, *আরও দুই মিনিট* আছে, নে।",
-      "tone": "laughs",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "selim",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "riya",
-      "say": "চাচ্চু, এটা তো *আমাদের নিয়ম*! আমি নিজেই মানব।",
-      "tone": "playfully",
-      "scene": {
-        "cam": {
-          "focus": "riya",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "বারান্দায় চা হাতে দাদা হাসলেন। *দুই বছরে* প্রথম শান্ত সকাল।",
-      "scene": {
-        "set": "balcony",
-        "light": "day",
-        "chip": "বারান্দা",
-        "props": [
-          "plants",
-          "tea"
-        ],
-        "chars": [
-          {
-            "id": "dada",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "tea"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "say": "দাদার টাঙানো রুটিন যা পারেনি, *সবার হাতে লেখা কাগজ* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— জঁ-জাক রুসোর *দ্য সোশ্যাল কন্ট্র্যাক্ট*।"
-    },
-    {
-      "kind": "book",
-      "say": "প্রথম খণ্ড— নিজেদের বানানো নিয়মেই *মুক্তি*।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "চাপিয়ে দেওয়া নিয়ম মানুষ এড়িয়ে চলে। নিজের হাতে বানানো নিয়ম সে *নিজেই পাহারা* দেয়।",
-      "card": {
-        "title": "কোন নিয়ম টেকে?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "hand",
-            "t": "চাপিয়ে দেওয়া নিয়ম",
-            "sub": "দুই দিনে ভেঙে যায়",
-            "bad": true
-          },
-          "right": {
-            "icon": "people",
-            "t": "সবাই মিলে বানানো",
-            "sub": "সবাই নিজেই মানে"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, নিয়মের আগে *সবাইকে বলতে দাও*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "সবাইকে বলতে দাও",
-            "sub": "কার কী দরকার?",
-            "icon": "ear"
-          },
-          {
-            "t": "একটু ছাড়ো, একটু নাও",
-            "sub": "সমঝোতাই নিয়মের ভিত",
-            "icon": "heart"
-          },
-          {
-            "t": "লিখে সই করো",
-            "sub": "নিয়মটা হোক সবার",
-            "icon": "book"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, একটু ছাড়ো, *একটু নাও*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, লিখে ফেলো— নিয়মটা হোক *সবার*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার ঘরের নিয়মগুলো কি *আমার আদেশ*, নাকি *সবার কথা*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমার ঘরের নিয়ম কি\n*আমার আদেশ*,\nনাকি *সবার কথা*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "চাপানো নিয়ম মানুষ এড়িয়ে চলে… *নিজের নিয়ম আগলে রাখে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "চাপানো নিয়ম মানুষ এড়িয়ে চলে…",
-        "line2": "নিজের নিয়ম\nআগলে রাখে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "এক বাথরুম, সাতজন— দুই বছরের সকালের যুদ্ধ থামাল দাদার এক কাগজ 🌅 | The Social Contract বাংলা",
-    "description": "যৌথ পরিবার, এক বাথরুম, সাতজন মানুষ— সকাল সাড়ে সাতটায় রোজ চিৎকার। দাদার টাঙানো রুটিন দুই দিনও টেকেনি। তারপর এক শুক্রবার রাতে দাদা সবাইকে ডাকলেন, কিন্তু কোনো আদেশ দিলেন না…\nজঁ-জাক রুসোর The Social Contract — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "social contract bangla",
-      "rousseau bangla",
-      "যৌথ পরিবার",
-      "দাদা নাতনির গল্প",
-      "পরিবারের গল্প",
-      "বাংলা গল্প",
-      "পারিবারিক নিয়ম",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "দাদার টাঙানো রুটিন যা পারেনি, সবার হাতে লেখা কাগজ তা পারল। 🌅\n\nতোমার বাসায় কোন জিনিস নিয়ে রোজ সকালে ঝগড়া হয়? 👇\n\n📖 The Social Contract — Jean-Jacques Rousseau\n#যৌথপরিবার #পরিবার"
-  },
-  "thumbnail": {
-    "text": "১ বাথরুম, ৭ জন",
-    "sub": "রোজ সকালের যুদ্ধ…"
+  "selim": {
+   "name": "সেলিম চাচ্চু",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#6D4C41",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
   }
+ },
+ "beats": [
+  {
+   "say": "এক বাথরুম, সাতজন মানুষ। সকাল সাড়ে সাতটায় রোজ *একটা যুদ্ধ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পুরান ঢাকা, যৌথ পরিবার",
+    "props": [
+     "door_closed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "selim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মানুষ",
+       "value": "৭"
+      },
+      {
+       "label": "বাথরুম",
+       "value": "১",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "রিয়া! বিশ মিনিট ভেতরে কী করিস? আমার *অফিসের বাস* চলে যাবে!",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "চাচ্চু, আজ আমার *পরীক্ষা*! আর কাল আপনি কী করেছিলেন?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "tone": "annoyed",
+   "say": "পরীক্ষা কি শুধু তোর? দেরি করলে আমার বস কি *চাকরি রাখবে*?",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দাদা সব শুনলেন। এই চিৎকার *দুই বছরের পুরনো*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "cross",
+      "hold": "bag"
+     },
+     {
+      "id": "dada",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "selim",
+      "x": 0.77,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দাদা একবার রুটিন টাঙিয়েছিলেন। দুই দিন চলল, তারপর *সবাই ভুলে গেল*।",
+   "card": {
+    "title": "আগের চেষ্টা",
+    "items": [
+     {
+      "t": "দাদার টাঙানো রুটিন",
+      "mark": "x"
+     },
+     {
+      "t": "বকাঝকা",
+      "mark": "x"
+     },
+     {
+      "t": "আগে উঠলে আগে পাবে",
+      "mark": "x"
+     }
+    ],
+    "footer": "টিকল: ২ দিন"
+   }
+  },
+  {
+   "say": "সেদিন রিয়া পরীক্ষায় ঢুকল দেরিতে। রাতে বাসায় কেউ *কারো সাথে কথা* বলল না।",
+   "tone": "softly",
+   "pause": 0.9,
+   "scene": {
+    "light": "night",
+    "chip": "সেদিন রাতে",
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "say": "দশ মিনিট দেরিতে ঢোকায় একটা প্রশ্ন আর লেখাই হলো না। রেজাল্টে কাটা গেল *বারো নম্বর*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "শুক্রবার রাতে দাদা সবাইকে ডাকলেন। কিন্তু এবার *আদেশ নয়*।",
+   "pause": 0.7,
+   "card": {
+    "text": "আদেশ নয়,\n*সবার কথা*।"
+   }
+  },
+  {
+   "say": "সাতজন এক ঘরে। মাঝখানে একটা সাদা কাগজ আর *একটা কলম*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "শুক্রবার রাত",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "riya",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "selim",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "নিয়ম আমি বানাব না। তোমরা বলো— কার *কখন, কতক্ষণ* দরকার?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "tone": "flatly",
+   "say": "আব্বা, মিটিং করে কী হবে? রুটিন তো *একবার দিলেনই*।",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "tone": "gently",
+   "say": "দিয়েছিলাম আমি। এবার দেবে *তোমরা*।",
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "আমার বাস সাতটা পঞ্চাশে। সাতটা বিশে *দশ মিনিট* হলেই চলবে।",
+   "scene": {
+    "arms": {
+     "selim": "talk"
+    },
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "আমি তাহলে রাতেই গোসল করব। সকালে শুধু *পাঁচ মিনিট*।",
+   "tone": "hopeful",
+   "scene": {
+    "moods": {
+     "riya": "smile"
+    },
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কেউ ছাড়ল একটু, কেউ নিল একটু। কাগজটা ভরে উঠল *সাতজনের হাতে*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আমাদের সকালের নিয়ম",
+     "lines": [
+      "৬:৩০ — দাদা-দাদি",
+      "৭:০০ — রিয়া, ৫ মিনিট",
+      "৭:২০ — সেলিম, ১০ মিনিট",
+      "— সাতজনের সই"
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ছোট চাচি বললেন, যিনি ভোরে রান্নাঘরে যান, সকালে তাঁর জন্য *আগে পানি গরম* হবে। সবাই একসাথে বলল— ঠিক।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "নিয়মটা তোমাদের। এবার মানবে কি না, *সেটাও তোমাদের*।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর, সকাল সাড়ে সাতটা। দরজার সামনে *কোনো চিৎকার নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "door_closed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "selim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শান্ত সকাল",
+       "value": "৭",
+       "from": "০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "রিয়া, তোর পাঁচ মিনিট শেষ! না না, *আরও দুই মিনিট* আছে, নে।",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "চাচ্চু, এটা তো *আমাদের নিয়ম*! আমি নিজেই মানব।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বারান্দায় চা হাতে দাদা হাসলেন। *দুই বছরে* প্রথম শান্ত সকাল।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "বারান্দা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dada",
+   "tone": "softly",
+   "say": "চল্লিশ বছর সংসার চালালাম আদেশ দিয়ে। এখন দেখি, *জিজ্ঞেস করলে* সংসার নিজেই চলে।",
+   "scene": {
+    "moods": {
+     "dada": "happy"
+    },
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "দাদার টাঙানো রুটিন যা পারেনি, *সবার হাতে লেখা কাগজ* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— জঁ-জাক রুসোর *দ্য সোশ্যাল কন্ট্র্যাক্ট*।"
+  },
+  {
+   "kind": "book",
+   "say": "প্রথম খণ্ড— নিজেদের বানানো নিয়মেই *মুক্তি*।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "চাপিয়ে দেওয়া নিয়ম মানুষ এড়িয়ে চলে। নিজের হাতে বানানো নিয়ম সে *নিজেই পাহারা* দেয়।",
+   "card": {
+    "title": "কোন নিয়ম টেকে?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "hand",
+      "t": "চাপিয়ে দেওয়া নিয়ম",
+      "sub": "দুই দিনে ভেঙে যায়",
+      "bad": true
+     },
+     "right": {
+      "icon": "people",
+      "t": "সবাই মিলে বানানো",
+      "sub": "সবাই নিজেই মানে"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, নিয়মের আগে *সবাইকে বলতে দাও*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "সবাইকে বলতে দাও",
+      "sub": "কার কী দরকার?",
+      "icon": "ear"
+     },
+     {
+      "t": "একটু ছাড়ো, একটু নাও",
+      "sub": "সমঝোতাই নিয়মের ভিত",
+      "icon": "heart"
+     },
+     {
+      "t": "লিখে সই করো",
+      "sub": "নিয়মটা হোক সবার",
+      "icon": "book"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, একটু ছাড়ো, *একটু নাও*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, লিখে ফেলো— নিয়মটা হোক *সবার*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার ঘরের নিয়মগুলো কি *আমার আদেশ*, নাকি *সবার কথা*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমার ঘরের নিয়ম কি\n*আমার আদেশ*,\nনাকি *সবার কথা*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "চাপানো নিয়ম মানুষ এড়িয়ে চলে… *নিজের নিয়ম আগলে রাখে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "চাপানো নিয়ম মানুষ এড়িয়ে চলে…",
+    "line2": "নিজের নিয়ম\nআগলে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এক বাথরুম, সাতজন— দুই বছরের সকালের যুদ্ধ থামাল দাদার এক কাগজ 🌅 | The Social Contract বাংলা",
+  "description": "যৌথ পরিবার, এক বাথরুম, সাতজন মানুষ— সকাল সাড়ে সাতটায় রোজ চিৎকার। দাদার টাঙানো রুটিন দুই দিনও টেকেনি। তারপর এক শুক্রবার রাতে দাদা সবাইকে ডাকলেন, কিন্তু কোনো আদেশ দিলেন না…\nজঁ-জাক রুসোর The Social Contract — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "social contract bangla",
+   "rousseau bangla",
+   "যৌথ পরিবার",
+   "দাদা নাতনির গল্প",
+   "পরিবারের গল্প",
+   "বাংলা গল্প",
+   "পারিবারিক নিয়ম",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "দাদার টাঙানো রুটিন যা পারেনি, সবার হাতে লেখা কাগজ তা পারল। 🌅\n\nতোমার বাসায় কোন জিনিস নিয়ে রোজ সকালে ঝগড়া হয়? 👇\n\n📖 The Social Contract — Jean-Jacques Rousseau\n#যৌথপরিবার #পরিবার"
+ },
+ "thumbnail": {
+  "text": "১ বাথরুম, ৭ জন",
+  "sub": "রোজ সকালের যুদ্ধ…"
+ },
+ "_extended": "story-only v1"
 }
