@@ -1,0 +1,406 @@
+{
+ "id": "116",
+ "status": "ready",
+ "title_bn": "ঘুমের নিয়ম",
+ "theme": "work",
+ "source": {
+  "book": "On War",
+  "author": "Carl von Clausewitz",
+  "author_bn": "কার্ল ফন ক্লাউজেভিৎস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Friction: fatigue in war",
+  "title_bn": "ক্লান্তির ঘর্ষণ"
+ },
+ "cast": {
+  "shafiq": {
+   "name": "শফিক ড্রাইভার",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "owner": {
+   "name": "বাসের মালিক",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "helper": {
+   "name": "হেলপার বিল্লাল",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাবতলী, ঈদের তিন দিন আগে। নাইট কোচের ড্রাইভার শফিক। ঢাকা থেকে রংপুর, রংপুর থেকে ঢাকা, টানা দুই ট্রিপ। *আঠারো ঘণ্টা* না ঘুমিয়ে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "গাবতলী বাস টার্মিনাল, ঈদের আগে",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shafiq",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "টানা জাগা",
+       "value": "১৮ ঘণ্টা",
+       "red": true
+      },
+      {
+       "label": "ট্রিপ",
+       "value": "২টা, ঢাকা–রংপুর–ঢাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "শফিক, আরেকটা ট্রিপ। রাত এগারোটায় ছাড়বো। যাত্রী ভর্তি, ঈদের ভাড়া। আজকে *ডাবল টাকা* তোমার।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "night",
+    "chip": "মালিকের কাউন্টার",
+    "props": [
+     "cashbox",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "shafiq",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "owner": "point"
+    }
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "মালিক, আঠারো ঘণ্টা ঘুমাই নাই। আরেকটা টানলে চোখ *আমার কথা শুনবো না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shafiq": "down"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "সবাই টানে। ঈদের সময় ঘুম কিসের? না পারলে চাবি রাইখা যাও। *লাইনে* ড্রাইভারের অভাব নাই।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "talk"
+    }
+   }
+  },
+  {
+   "say": "শফিক চাবিটা হাতে নিলেন। পঁচিশ বছর স্টিয়ারিং ধরেছেন। ঈদের ডাবল টাকা মানে ছেলের জন্য নতুন জামা। তারপর চাবিটা রাখলেন *টেবিলে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "shafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "চাবি রাইখা গেলাম, মালিক। চাকরি গেলে যাক। চল্লিশটা মানুষ বাড়িতে ঈদ করতে যাইতেছে। আমার ঘুমের জন্য কেউ *রাস্তায় ঈদ* করবো না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shafiq",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shafiq": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শফিকের সেই রাতের হিসাব",
+   "card": {
+    "title": "না বলার দাম",
+    "items": [
+     {
+      "t": "ঈদের ডাবল টাকা— নাই",
+      "mark": "x"
+     },
+     {
+      "t": "চাকরি— অনিশ্চিত",
+      "mark": "x"
+     },
+     {
+      "t": "ছেলের নতুন জামা— হয়তো না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত এগারোটায় বাস ছাড়ল, অন্য ড্রাইভার নিয়ে। তিনিও টানা দুই ট্রিপ চালিয়েছেন। হেলপার বিল্লাল উঠল, *ভয়ে ভয়ে*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত এগারোটা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "helper",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রাত সাড়ে তিনটা। সিরাজগঞ্জের কাছে। ড্রাইভারের চোখ এক সেকেন্ডের জন্য বন্ধ। বাস রাস্তার কিনারা ছুঁয়ে ফেলল। বিল্লাল চিৎকার দিল— *ওস্তাদ*!",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত সাড়ে তিনটা, সিরাজগঞ্জ মহাসড়ক",
+    "props": [
+     "car",
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "helper",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "pulse"
+   }
+  },
+  {
+   "say": "স্টিয়ারিং ঘুরল। বাস থামল খাদের *দুই হাত আগে*। চল্লিশজন যাত্রী জেগে উঠল চিৎকারে। কেউ আহত হয়নি। কিন্তু কেউ আর *ঘুমাল না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "helper",
+   "say": "মালিক, দুই হাত। *খালি দুই হাত*। শফিক ওস্তাদ ঠিকই কইছিল।",
+   "tone": "tearful",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল, মালিকের কাউন্টার",
+    "props": [
+     "cashbox",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "helper",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "helper": "down"
+    }
+   }
+  },
+  {
+   "say": "মালিক অনেকক্ষণ চুপ। চল্লিশটা পরিবার। একটা বাস। আর একটা না-নেওয়া ঘুম। তারপর তিনি ফোন তুললেন। *শফিককে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "শফিক, চাবি নিতে আসো। আর একটা নিয়ম লিখা দিমু, তুমি বানাও। *ঘুমের নিয়ম*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "phone"
+    }
+   }
+  },
+  {
+   "voice": "shafiq",
+   "say": "মালিক, এইটা আপনার লস না। একটা দুর্ঘটনায় যে লস, তা দিয়া *বিশটা ঈদের* বেতন হয়।",
+   "tone": "warmly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "cashbox",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "shafiq",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "owner",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "কাউন্টারের নতুন নিয়ম",
+     "lines": [
+      "এক ট্রিপের পর কমপক্ষে ৮ ঘণ্টা বিশ্রাম",
+      "লম্বা রুটে দুইজন ড্রাইভার",
+      "ড্রাইভার ‘না’ বললে— কোনো শাস্তি নাই"
+     ]
+    },
+    "arms": {
+     "shafiq": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "বুঝছি, শফিক। দুই হাতের দূরত্বে বুঝছি। *দেরিতে* বুঝছি।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "down"
+    }
+   }
+  },
+  {
+   "say": "শফিকের বাসের স্টিয়ারিংয়ের পাশে এখন একটা ছোট স্টিকার, বিল্লালের লাগানো— *‘ঘুমন্ত চোখে ঈদ নয়। ওস্তাদের নিয়ম।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "এক ট্রিপ বেশি মানে টাকা বেশি… *কিন্তু এক সেকেন্ডের ঘুম সব শেষ করে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "এক ট্রিপ বেশি মানে টাকা বেশি…",
+    "line2": "কিন্তু এক সেকেন্ডের ঘুম\nসব শেষ করে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৮ ঘণ্টা না ঘুমিয়ে মালিক বলল ‘আরেকটা ট্রিপ’, ড্রাইভার রাখলেন চাবি 🚌",
+  "description": "ঢাকা–রংপুর রুটের নাইট কোচের ড্রাইভার শফিক। ঈদের আগে টানা দুই ট্রিপ, আঠারো ঘণ্টা না ঘুমিয়ে। মালিক বললেন, আরেকটা ট্রিপ, ডাবল টাকা। শফিক চাবিটা টেবিলে রাখলেন। চাকরি যায় যায়…",
+  "tags": [
+   "বাস ড্রাইভারের গল্প",
+   "সড়ক নিরাপত্তা",
+   "ঘুম",
+   "ঈদের যাত্রা",
+   "মালিক শ্রমিক",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মালিক চেয়েছিলেন আরেকটা ট্রিপ। শফিক চেয়েছিলেন চল্লিশজন যাত্রী যেন বাড়ি পৌঁছায়। 🚌\nতুমি কি কখনো ক্লান্ত ড্রাইভারের বাসে উঠেছ? কী করেছিলে? 👇 #সড়কনিরাপত্তা #ড্রাইভার"
+ },
+ "thumbnail": {
+  "text": "১৮ ঘণ্টা জাগা",
+  "sub": "আরেকটা ট্রিপ?"
+ }
+}

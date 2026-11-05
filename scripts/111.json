@@ -1,0 +1,407 @@
+{
+ "id": "111",
+ "status": "ready",
+ "title_bn": "রেফারি চাচার পেনাল্টি",
+ "theme": "honesty",
+ "source": {
+  "book": "The Republic",
+  "author": "Plato",
+  "author_bn": "প্লেটো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Justice is giving each what is due",
+  "title_bn": "যার যা প্রাপ্য"
+ },
+ "cast": {
+  "barek": {
+   "name": "বারেক চাচা",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "sujon": {
+   "name": "সুজন",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "captain": {
+   "name": "পাশের গ্রামের ক্যাপ্টেন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "শেরপুরের স্কুল মাঠ। ইউনিয়ন ফুটবলের ফাইনাল। মাঠের চারপাশে দুই গ্রামের তিন হাজার মানুষ। রেফারি *বারেক চাচা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শেরপুর, ইউনিয়ন ফুটবল ফাইনাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "barek",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "স্কোর",
+       "value": "১–০"
+      },
+      {
+       "label": "সময় বাকি",
+       "value": "১ মিনিট"
+      },
+      {
+       "label": "রেফারি",
+       "value": "বারেক চাচা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আর আজকের সবচেয়ে কঠিন কথা— এক দলের অধিনায়ক বারেক চাচার নিজের ছেলে, *সুজন*।",
+   "scene": {
+    "cam": {
+     "focus": "barek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sujon",
+   "say": "আব্বা, আজকে একটু *আমাগো দিকে* দেইখেন। পুরা গ্রাম আশা কইরা আছে।",
+   "tone": "playfully",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "খেলার আগে",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "barek",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sujon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sujon": "talk"
+    }
+   }
+  },
+  {
+   "voice": "barek",
+   "say": "মাঠে আমি তোর আব্বা না, সুজন। আমি *বাঁশি*। বাঁশির কোনো ছেলে নাই।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "barek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "barek": "down"
+    }
+   }
+  },
+  {
+   "say": "শেষ মিনিট। পাশের গ্রামের খেলোয়াড় বল নিয়ে বক্সে ঢুকল। আর সুজনের দলের ডিফেন্ডার পেছন থেকে পা দিয়ে *ফেলে দিল*। পরিষ্কার ফাউল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শেষ মিনিট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "captain",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "barek",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "dust"
+   }
+  },
+  {
+   "voice": "captain",
+   "say": "রেফারি! পেনাল্টি! *সবাই দেখছে*!",
+   "scene": {
+    "cam": {
+     "focus": "captain",
+     "zoom": 1.4
+    },
+    "moods": {
+     "captain": "angry"
+    },
+    "arms": {
+     "captain": "point"
+    }
+   }
+  },
+  {
+   "say": "তিন হাজার মানুষ চুপ। একদিকে নিজের গ্রাম, নিজের ছেলে, ট্রফি। অন্যদিকে একটা বাঁশি। বারেক চাচা বাঁশি মুখে তুললেন। আর *বাজালেন*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "barek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "barek",
+   "say": "পেনাল্টি।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "barek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "barek": "point"
+    }
+   }
+  },
+  {
+   "voice": "sujon",
+   "say": "আব্বা! আপনি… আপনি *আমাগো বিরুদ্ধে*?",
+   "tone": "upset",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই মুহূর্ত",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "sujon",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "barek",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sujon": "point"
+    }
+   }
+  },
+  {
+   "say": "মাঠের এক পাশ থেকে চিৎকার— বেইমান! নিজের গ্রামের সাথে বেইমানি! পেনাল্টিতে গোল। এক–এক। তারপর টাইব্রেকারে সুজনের দল *হেরে গেল*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই রাতে বারেক চাচার বাড়ির সামনে দিয়ে যে গেল, সে-ই কিছু একটা বলে গেল। আর ঘরের ভেতরে ছেলে কথা বলছে না *বাবার সাথে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "barek",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "sujon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sujon",
+   "say": "পুরা গ্রাম আমারে কয়, তোর আব্বা ট্রফি বেইচা দিছে। একবার চোখ বন্ধ রাখলে *কী হইতো*?",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "sujon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sujon": "cross"
+    }
+   }
+  },
+  {
+   "voice": "barek",
+   "say": "চোখ বন্ধ রাখলে ট্রফিটা পাইতি। কিন্তু সারাজীবন জানতি, ওইটা *তোর না*। চল্লিশ বছর বাঁশি বাজাই, একবারও কারও দিকে দেখি নাই। আজকে নিজের পোলার দিকে দেখলে, *কাল থেকে বাঁশির দাম শেষ*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "barek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "barek": "down"
+    }
+   }
+  },
+  {
+   "say": "তিন দিন পর পাশের গ্রামের অধিনায়ক এল বারেক চাচার বাড়ি। হাতে ট্রফি। সাথে *এক হাঁড়ি মিষ্টি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন দিন পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "captain",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "barek",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "captain",
+   "say": "চাচা, ট্রফি আমরা জিতছি। কিন্তু আমাদের গ্রামের সবাই কইতেছে, আসল জিতছে *আপনার বাঁশি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "captain",
+     "zoom": 1.4
+    },
+    "arms": {
+     "captain": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sujon",
+   "say": "আব্বা… সামনের বছর আবার ফাইনাল হইলে, রেফারি আপনিই থাইকেন। এইবার আমরা *ফাউল ছাড়া* জিতমু।",
+   "tone": "softly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরের বছর ফাইনালের আগে দুই দলের অধিনায়ক একসাথে গেলেন বারেক চাচার কাছে। একটাই অনুরোধ— *‘বাঁশিটা আপনি ধরবেন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "আপন মানুষের জন্য চোখ বন্ধ করা সহজ… *কিন্তু তাতে বাঁশির দাম শেষ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "আপন মানুষের জন্য চোখ বন্ধ করা সহজ…",
+    "line2": "কিন্তু তাতে\nবাঁশির দাম শেষ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ফাইনালের শেষ মিনিটে রেফারি পেনাল্টি দিলেন নিজের ছেলের দলের বিরুদ্ধে ⚽",
+  "description": "শেরপুরের ইউনিয়ন ফুটবল ফাইনাল। রেফারি বারেক চাচা, আর এক দলের অধিনায়ক তাঁর নিজের ছেলে সুজন। খেলার শেষ মিনিটে সুজনের দলের এক খেলোয়াড় বক্সে ফাউল করল। পুরো গ্রাম তাকিয়ে আছে, বারেক চাচা বাঁশি মুখে তুললেন…",
+  "tags": [
+   "সততার গল্প",
+   "গ্রামের ফুটবল",
+   "রেফারি",
+   "বাবা ছেলের গল্প",
+   "ন্যায়বিচার",
+   "bangla golpo",
+   "jiboner golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "গ্রামের সবাই চেয়েছিল চোখ বন্ধ রাখুন। বারেক চাচা বাঁশি বাজালেন— নিজের ছেলের বিরুদ্ধে। ⚽\nআপন মানুষের বিরুদ্ধে সত্য বলার মতো কঠিন মুহূর্ত কি তোমার জীবনে এসেছে? 👇 #সততা #ফুটবল"
+ },
+ "thumbnail": {
+  "text": "ছেলের বিরুদ্ধে পেনাল্টি",
+  "sub": "শেষ মিনিট"
+ }
+}

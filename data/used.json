@@ -875,6 +875,54 @@
    "relation": "grandfather with memory loss / granddaughter / son",
    "set": "home",
    "hook": "family keeps correcting a grandfather with dementia and he gets agitated; granddaughter stops correcting and plays an old radio request programme he loved; he sings and calls her by name"
+  },
+  {
+   "id": "111",
+   "book": "The Republic",
+   "item": "Justice is giving each what is due",
+   "relation": "village referee father / captain son / rival captain",
+   "set": "street",
+   "hook": "in a union football final the referee gives a last-minute penalty against his own son's team; the village calls him a traitor; next year both teams ask for him"
+  },
+  {
+   "id": "112",
+   "book": "The Open Society and Its Enemies",
+   "item": "The Open Society: trust between strangers",
+   "relation": "retired teacher / teen helper / commuter /",
+   "set": "street",
+   "hook": "a retired teacher puts an unlocked shelf of 40 books at a highway bus shelter; it empties in a week; then books come back with extra books and notes"
+  },
+  {
+   "id": "113",
+   "book": "The Wealth of Nations",
+   "item": "Of the Division of Labour",
+   "relation": "older day labourer / young labourer / contractor",
+   "set": "street",
+   "hook": "at a dawn labour market contractors pick only young men; a young worker insists the 58-year-old ex-mason comes too; the older measures, the younger carries; contractors start asking for 'the pair'"
+  },
+  {
+   "id": "114",
+   "book": "Games People Play",
+   "item": "Pastimes and the hunger for strokes",
+   "relation": "lonely mother / three siblings in three cities",
+   "set": "home",
+   "hook": "mother's 'phone keeps breaking' so each child has to call to fix it; the siblings realise she is lonely and start a Friday family video adda"
+  },
+  {
+   "id": "115",
+   "book": "The Psychology of Money",
+   "item": "Room for Error",
+   "relation": "young freelancer / mother / friend",
+   "set": "home",
+   "hook": "freelancer earning 1.2 lakh a month spends it all; mother quietly saves the 10k he gives her each month; when his main client leaves and income is zero for 5 months, her envelope carries him"
+  },
+  {
+   "id": "116",
+   "book": "On War",
+   "item": "Friction: fatigue in war",
+   "relation": "night-coach driver / bus owner / helper",
+   "set": "street",
+   "hook": "before Eid the owner orders a third trip after 18 sleepless hours; the driver refuses and risks his job; a near-miss involving another tired driver changes the owner's rules"
   }
  ]
 }

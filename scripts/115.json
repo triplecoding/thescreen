@@ -1,0 +1,477 @@
+{
+ "id": "115",
+ "status": "ready",
+ "title_bn": "আম্মার আলাদা খাম",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "Room for Error",
+  "title_bn": "ভুলের জন্য জায়গা রাখা"
+ },
+ "cast": {
+  "shawon": {
+   "name": "শাওন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "nabil": {
+   "name": "নাবিল",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার বাইশ বছরের শাওন। ফ্রিল্যান্সার। গ্রাফিক ডিজাইন। ডলারে আয়, মাসে প্রায় *এক লাখ বিশ হাজার*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "খুলনা, শাওনের ঘর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসের আয়",
+       "value": "১,২০,০০০ টাকা"
+      },
+      {
+       "label": "মাসের খরচ",
+       "value": "১,১৫,০০০ টাকা",
+       "red": true
+      },
+      {
+       "label": "জমা",
+       "value": "৫,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nabil",
+   "say": "দোস্ত, নতুন আইফোন! নতুন বাইক! আজকে রেস্টুরেন্টের বিল কিন্তু *তোর*!",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "রেস্টুরেন্ট, শুক্রবার",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "nabil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nabil": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shawon",
+   "say": "আরে, টাকা তো আসতেছেই। ডলারের রেট বাড়তেছে। *জীবন একটাই*, দোস্ত।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shawon": "wave"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শাওনের এক বছর",
+   "card": {
+    "title": "কামানো আর খরচ",
+    "items": [
+     {
+      "t": "১ লাখ ৬০ হাজারের আইফোন",
+      "mark": "x"
+     },
+     {
+      "t": "২ লাখ ৪০ হাজারের বাইক, কিস্তিতে",
+      "mark": "x"
+     },
+     {
+      "t": "প্রতি শুক্রবার রেস্টুরেন্ট, ৮–১০ হাজার",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রতি মাসের প্রথম দিন শাওন আম্মার হাতে দেয় দশ হাজার টাকা। আম্মা কিছু বলেন না। টাকা নিয়ে চলে যান *আলমারির দিকে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বাসা, প্রতি মাসের প্রথম দিন",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shawon",
+   "say": "আম্মা, যা খুশি কিনেন। শাড়ি, গয়না। আপনার ছেলে এখন *ডলার* কামায়।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shawon": "hold"
+    }
+   }
+  },
+  {
+   "say": "আম্মা শাড়ি কেনেন না। গয়না না। প্রতি মাসের দশ হাজার যায় একটা বাদামি খামে। খামের গায়ে লেখা— *‘শাওনের ঝড়ের দিন’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দ মাস পর এক রাতে একটা মেসেজ। সবচেয়ে বড় ক্লায়েন্ট, আয়ের সত্তর ভাগ, *আর কাজ দেবে না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "চৌদ্দ মাস পর, এক রাতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "ক্লায়েন্ট",
+     "msgs": [
+      {
+       "who": "ক্লায়েন্ট",
+       "t": "We are moving our design work in-house."
+      },
+      {
+       "who": "ক্লায়েন্ট",
+       "t": "This will be our last project. Thank you."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে আয় আট হাজার। তারপরের মাসে চার। বাইকের কিস্তি চৌদ্দ হাজার। আর শুক্রবারের বন্ধুরা *হঠাৎ ব্যস্ত*।",
+   "pause": 1.0,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পরের মাসের আয়",
+       "from": "১,২০,০০০",
+       "value": "৮,০০০",
+       "red": true
+      },
+      {
+       "label": "বাইকের কিস্তি",
+       "value": "মাসে ১৪,০০০"
+      },
+      {
+       "label": "জমা",
+       "value": "প্রায় শূন্য"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shawon",
+   "say": "আম্মা, বাইক বেচতে হইবো। কিস্তি দিতে পারতেছি না। আর… আপনারে এই মাসে কিছু *দিতে পারুম না*।",
+   "tone": "tearful",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "পঞ্চম মাস",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shawon": "face"
+    }
+   }
+  },
+  {
+   "say": "আম্মা কিছু বললেন না। আলমারি খুললেন। একটা মোটা বাদামি খাম এনে রাখলেন ছেলের হাতে। *‘শাওনের ঝড়ের দিন’*।"
+  },
+  {
+   "voice": "shawon",
+   "say": "আম্মা… আপনি একটা টাকাও খরচ করেন নাই? *চৌদ্দ মাস*?",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "শাওনের ঝড়ের দিন",
+     "lines": [
+      "চৌদ্দ মাস × ১০,০০০ টাকা",
+      "মোট: ১,৪০,০০০ টাকা",
+      "খরচ হয়নি এক টাকাও"
+     ]
+    },
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    },
+    "moods": {
+     "shawon": "surprised"
+    },
+    "arms": {
+     "shawon": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "যে আয় হঠাৎ আসে, হঠাৎ যায়ও, বাবা। তোর আব্বার দোকান একবার পুড়ছিল, *মনে নাই*? সেদিন থেকে আমি খাম রাখি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "say": "শাওন খামটা ধরে রইল। চৌদ্দ মাস সে ভেবেছিল, আম্মা টাকাটা খরচ করেন। আসলে আম্মা কিনছিলেন *পাঁচ মাসের নিঃশ্বাস*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর শাওনের চারটা ছোট ক্লায়েন্ট। আয় কম, কিন্তু *একজনের ওপর নির্ভর না*। আর এখন সে নিজেই একটা খাম রাখে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shawon",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন ক্লায়েন্ট",
+       "value": "৪ জন, ছোট"
+      },
+      {
+       "label": "আয়",
+       "value": "মাসে ৮০,০০০"
+      },
+      {
+       "label": "নিজের ঝড়ের খাম",
+       "value": "মাসে ২৫,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shawon",
+   "say": "আম্মা, এইবার দুইটা খাম। একটা আমার ঝড়ের দিন। আরেকটা *আপনার শাড়ি*। এইটা খরচ না করলে রাগ করমু।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shawon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shawon": "phone"
+    }
+   }
+  },
+  {
+   "say": "শাওনের আলমারিতে এখন দুইটা বাদামি খাম পাশাপাশি। মোটাটার গায়ে আম্মার হাতের লেখা, পাতলাটার গায়ে শাওনের— *‘ঝড় আসবেই।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "হঠাৎ আসা টাকা ভাবায় সব সময় থাকবে… *জমানো টাকা ঝড়ের দিনে বাঁচায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "হঠাৎ আসা টাকা ভাবায় সব সময় থাকবে…",
+    "line2": "জমানো টাকা\nঝড়ের দিনে বাঁচায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ফ্রিল্যান্সিংয়ে মাসে ১.২ লাখ, খরচও তাই… তারপর আয় শূন্য পাঁচ মাস 💻",
+  "description": "বাইশ বছরের শাওন ফ্রিল্যান্সিং করে মাসে এক লাখ বিশ হাজার কামায়। আইফোন, নতুন বাইক, বন্ধুদের নিয়ে রেস্টুরেন্ট। আম্মাকে প্রতি মাসে দেয় দশ হাজার, আর আম্মা সেটা চুপচাপ রাখেন একটা খামে। তারপর একদিন সবচেয়ে বড় ক্লায়েন্ট চলে গেল…",
+  "tags": [
+   "ফ্রিল্যান্সার",
+   "টাকার গল্প",
+   "সঞ্চয়",
+   "মায়ের গল্প",
+   "অনলাইন আয়",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "তরুণদের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছেলে কামাত লাখ টাকা, খরচও করত লাখ। আম্মা শুধু একটা খামে রেখে দিতেন ছেলের দেওয়া দশ হাজার। পাঁচ মাস পর সেই খামই সব। 💻\nতোমার আয় হঠাৎ বন্ধ হলে কয় মাস চলতে পারবে— কখনো হিসাব করেছ? 👇 #ফ্রিল্যান্সিং #সঞ্চয়"
+ },
+ "thumbnail": {
+  "text": "মাসে ১.২ লাখ",
+  "sub": "তারপর শূন্য"
+ }
+}

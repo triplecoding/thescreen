@@ -1,0 +1,393 @@
+{
+ "id": "112",
+ "status": "ready",
+ "title_bn": "যাত্রীছাউনির লাইব্রেরি",
+ "theme": "community",
+ "source": {
+  "book": "The Open Society and Its Enemies",
+  "author": "Karl Popper",
+  "author_bn": "কার্ল পপার",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Open Society: trust between strangers",
+  "title_bn": "অচেনার প্রতি ভরসা"
+ },
+ "cast": {
+  "aziz": {
+   "name": "আজিজ স্যার",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "shanto": {
+   "name": "শান্ত",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "konika": {
+   "name": "কণিকা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নওগাঁর এক মহাসড়কের পাশে একটা যাত্রীছাউনি। বাসের অপেক্ষায় রোজ শ’খানেক মানুষ, হাতে শুধু *মোবাইল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "নওগাঁ, মহাসড়কের যাত্রীছাউনি",
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বই",
+       "value": "৪০টা"
+      },
+      {
+       "label": "তালা",
+       "value": "০"
+      },
+      {
+       "label": "খরচ",
+       "value": "তাকসহ ৩,২০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এক সকালে অবসরপ্রাপ্ত শিক্ষক আজিজ স্যার সেখানে বসালেন একটা কাঠের তাক। চল্লিশটা বই। *কোনো তালা নেই*।",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shanto",
+   "say": "স্যার, তালা ছাড়া? এক সপ্তাহে সব বই *ভাঙারির দোকানে* যাবে। কেজি বিশ টাকা।",
+   "tone": "teasing",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "একই সকাল",
+    "chars": [
+     {
+      "id": "shanto",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "aziz",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shanto": "talk"
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "যাক। কেজি দরে গেলেও, কারও না কারও হাতে তো যাবে। আর যদি একজনও *পড়ে*?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "aziz": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম সপ্তাহের হিসাব",
+   "card": {
+    "title": "সবার কথাই যেন সত্যি হলো",
+    "items": [
+     {
+      "t": "৪০টা বইয়ের ৩৪টা উধাও",
+      "mark": "x"
+     },
+     {
+      "t": "কাগজে কেউ লিখে গেল ‘বুড়া পাগল’",
+      "mark": "x"
+     },
+     {
+      "t": "তাক একপাশে কাত",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর তাকে মাত্র ছয়টা বই। আজিজ স্যার অনেকক্ষণ দাঁড়িয়ে রইলেন। তারপর বাড়ি গেলেন। আর ফিরলেন আরও *বিশটা* বই নিয়ে।",
+   "pause": 0.9,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shanto",
+   "say": "স্যার, আবার? আপনি *হারবেন* না?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "shanto",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shanto": "talk"
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "বই তো চুরি হয় না, শান্ত। খালি *জায়গা বদলায়*। দেখি, কোথায় যায়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "aziz": "hold"
+    }
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর এক ভোরে শান্ত দেখল, একটা মেয়ে তাকে একটা বই রাখছে। কণিকা। ঢাকার এক কলেজে পড়ে, প্রতি সপ্তাহে বাড়ি আসে *এই বাসে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর, ভোর",
+    "chars": [
+     {
+      "id": "konika",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shanto",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "konika",
+   "say": "গত সপ্তাহে একটা উপন্যাস নিছিলাম। বাসে বসে শেষ করছি। আর এইটা আমার নিজের একটা বই, *বাড়তি*। এইখানে থাকুক।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "konika",
+     "zoom": 1.4
+    },
+    "arms": {
+     "konika": "hold"
+    }
+   }
+  },
+  {
+   "say": "তারপর এল আরেকজন। একজন বাস ড্রাইভার, দুইটা পুরোনো ম্যাগাজিন। তারপর একজন বাচ্চার মা, তিনটা *ছড়ার বই*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন মাস পর তাকে একশো বাইশটা বই। আর বইয়ের ফাঁকে ফাঁকে ছোট ছোট চিরকুট। অচেনা মানুষের, *অচেনা মানুষের জন্য*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shanto",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "তিন মাসে তাকে বই",
+       "from": "৪০",
+       "value": "১২২টা"
+      },
+      {
+       "label": "ফেরত আসা চিঠি",
+       "value": "২৯টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "একটা চিরকুট পড়ে আজিজ স্যার থমকে গেলেন। কেউ বই বেচেছিল। তারপর ফেরত এসেছে। *দুইটা* বই নিয়ে।",
+   "pause": 1.0,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "বইয়ের ফাঁকের চিরকুট",
+     "lines": [
+      "‘এই বইটা পড়ে মায়ের সাথে কথা বলেছি, দুই বছর পর।’",
+      "‘ভাঙারিতে বেচেছিলাম। মাফ করবেন। এই নিন দুইটা।’"
+     ]
+    },
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shanto",
+   "say": "স্যার, আপনি ঠিক কইছিলেন। বই চুরি হয় না, *জায়গা বদলায়*। আর ফেরার সময় সাথে *আরেকটা* নিয়া আসে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shanto",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shanto": "point"
+    }
+   }
+  },
+  {
+   "say": "এক বছর পর মহাসড়কের আরও চারটা ছাউনিতে একই তাক। কেউ জানে না কারা বসিয়েছে। প্রতিটায় একই কাগজ। *নিন, পড়ুন, ফেরত দিন*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "chars": [
+     {
+      "id": "shanto",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম তাকের গায়ে এখন একটা ছোট পিতলের প্লেট, শান্তর জমানো টাকায় বানানো— *‘তালা নেই। দরকারও নেই।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তালা দিলে বই বাঁচে… *বিশ্বাস দিলে বই বাড়ে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "তালা দিলে বই বাঁচে…",
+    "line2": "বিশ্বাস দিলে\nবই বাড়ে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বাসস্ট্যান্ডের ছাউনিতে ৪০টা বই, কোনো তালা নেই… সবাই বলল ‘এক সপ্তাহে সব চুরি যাবে’ 📚",
+  "description": "নওগাঁর এক মহাসড়কের পাশে যাত্রীছাউনি। অবসরপ্রাপ্ত শিক্ষক আজিজ স্যার সেখানে বসালেন একটা কাঠের তাক, চল্লিশটা বই, আর একটা কাগজ— ‘নিন, পড়ুন, ফেরত দিন’। সবাই হাসল। এক সপ্তাহ পর তাক প্রায় খালি…",
+  "tags": [
+   "বইয়ের গল্প",
+   "লাইব্রেরি",
+   "বাসস্ট্যান্ড",
+   "বিশ্বাস",
+   "অবসরপ্রাপ্ত শিক্ষক",
+   "পাড়ার গল্প",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তালা ছাড়া চল্লিশটা বই। সবাই বলেছিল চুরি যাবে। তিন মাস পর তাকে বই একশো বাইশটা। 📚\nতুমি শেষ কোন বইটা কাউকে ধার দিয়ে আর ফেরত পাওনি— বা নিজে ফেরত দাওনি? 👇 #বই #বিশ্বাস"
+ },
+ "thumbnail": {
+  "text": "তালা নেই",
+  "sub": "৪০টা বই"
+ }
+}

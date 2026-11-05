@@ -1,0 +1,409 @@
+{
+ "id": "113",
+ "status": "ready",
+ "title_bn": "কামলা হাটের জোড়া",
+ "theme": "struggle",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Of the Division of Labour",
+  "title_bn": "কাজ ভাগ করলে শক্তি বাড়ে"
+ },
+ "cast": {
+  "alauddin": {
+   "name": "আলাউদ্দিন চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "rasel": {
+   "name": "রাসেল",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "contractor": {
+   "name": "ঠিকাদার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মিরপুর এক নম্বরের মোড়, ভোর পাঁচটা। দুইশো মানুষ, হাতে কোদাল, ঝুড়ি, গামছা। এটা *কামলা হাট*। ঠিকাদার আসে, বেছে নেয়, চলে যায়।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মিরপুর ১, ভোর ৫টা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "alauddin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rasel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হাটে শ্রমিক",
+       "value": "২০০ জন"
+      },
+      {
+       "label": "কাজ পায়",
+       "value": "৮০ জন"
+      },
+      {
+       "label": "আলাউদ্দিন চাচার কাজ",
+       "value": "৩ সপ্তাহে ০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আটান্ন বছরের আলাউদ্দিন চাচা প্রতিদিন আসেন। প্রতিদিন সবার আগে। আর তিন সপ্তাহে একবারও কেউ *তাঁর দিকে আঙুল তোলেনি*।",
+   "scene": {
+    "cam": {
+     "focus": "alauddin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "contractor",
+   "say": "তুই, তুই, আর তুই। জোয়ান পোলা লাগবো। ছাদের ঢালাই, *ইট টানা*।",
+   "tone": "flatly",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "একই ভোর",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "contractor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "rasel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "contractor": "point"
+    }
+   }
+  },
+  {
+   "say": "ঠিকাদার রাসেলকে বেছে নিল। পঁচিশ বছর, শক্ত কাঁধ। রাসেল গাড়ির দিকে হাঁটল। তারপর পেছনে তাকাল। আলাউদ্দিন চাচা *আবার মাটিতে বসে পড়ছেন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "ঠিকাদার সাব, আমারে নিলে চাচারেও নিতে হইবো। *দুইজনের* মজুরি না দিলেও চলবো, আমারটা ভাগ কইরা নিমু।",
+   "tone": "serious",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "গাড়ির কাছে",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "contractor",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rasel": "talk"
+    }
+   }
+  },
+  {
+   "voice": "contractor",
+   "say": "বুড়া মানুষ ইট টানতে পারবো? পইড়া গেলে *কে দেখবো*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "contractor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "contractor": "cross"
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "ইট আমি টানমু। চাচা তিরিশ বছর রাজমিস্ত্রি আছিলেন। দেয়াল *সোজা* আছে কিনা, চাচা চোখে দেইখা কইয়া দেয়। আপনার মিস্ত্রি তো পরশু ভুল করছিল।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rasel": "point"
+    }
+   }
+  },
+  {
+   "say": "ঠিকাদার থামলেন। পরশু সত্যিই একটা দেয়াল বাঁকা হয়েছিল। ভাঙতে হয়েছিল। *সাত হাজার টাকা* লস।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "contractor",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "contractor",
+   "say": "ঠিক আছে। আজকে দুইজন। *ভুল হইলে* কাল থেকে কেউ না।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "contractor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "contractor": "wave"
+    }
+   }
+  },
+  {
+   "say": "সাইটে রাসেল ইট টানল। আর আলাউদ্দিন চাচা দাঁড়ালেন দেয়ালের পাশে। সুতা টানলেন, এক চোখ বন্ধ করে দেখলেন। তারপর বললেন— *এই কোণা আধা ইঞ্চি বাইরে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সাইটে, দুপুর",
+    "chars": [
+     {
+      "id": "alauddin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "point"
+     },
+     {
+      "id": "rasel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "alauddin",
+   "say": "মিস্ত্রি, আগে এইটা ঠিক করো। নাইলে তিন তলা উঠলে *ফাটবো*। তিরিশ বছরে বহুত দেখছি।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "alauddin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "alauddin": "point"
+    }
+   }
+  },
+  {
+   "voice": "contractor",
+   "say": "ওই যে, জোড়াটা! চাচা আর রাসেল। আজকে থেকে আমার সাইটে *জোড়া* ছাড়া চলবো না।",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের ভোর, কামলা হাট",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "contractor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "alauddin",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rasel",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "contractor": "point"
+    }
+   }
+  },
+  {
+   "say": "এরপর থেকে কামলা হাটে ঠিকাদাররা আঙুল তোলেন না, নাম ধরে ডাকেন— *জোড়াটা কই?* আর আরও কয়েকজন ঠিকাদার এসে খোঁজ নেয়, *পুরোনো মিস্ত্রি আর জোয়ান হাত*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আলাউদ্দিন চাচার কাজ",
+       "from": "৩ সপ্তাহে ০",
+       "value": "মাসে ২৬ দিন"
+      },
+      {
+       "label": "সাইটে বাঁকা দেয়াল",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "alauddin",
+   "say": "রাসেল, তুই সেদিন তোর মজুরি ভাগ করতে চাইছিলি। ক্যান?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "alauddin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "alauddin": "down"
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "চাচা, আমার আব্বাও কামলা আছিলেন। শেষ বয়সে কেউ নিত না। তখন কেউ আমার মতো *কয় নাই*। আমি কইলাম।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rasel": "talk"
+    }
+   }
+  },
+  {
+   "say": "মিরপুর এক নম্বরের কামলা হাটে এখন একটা নতুন শব্দ চালু হয়েছে। ঠিকাদাররা গাড়ি থেকে নেমে বলেন— *‘দুইটা জোড়া লাগবো।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "জোয়ান কাঁধ ইট টানে… *পুরোনো চোখ দেয়াল সোজা রাখে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "জোয়ান কাঁধ ইট টানে…",
+    "line2": "পুরোনো চোখ\nদেয়াল সোজা রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "কামলা হাটে ঠিকাদার নেয় শুধু জোয়ান ছেলে, ৫৮ বছরের চাচা কাজ পান না… 🧱",
+  "description": "মিরপুর এক নম্বরের মোড়ে ভোর পাঁচটায় বসে কামলার হাট। ঠিকাদাররা গাড়ি থেকে নেমে বেছে নেন জোয়ান ছেলেদের। আটান্ন বছরের আলাউদ্দিন চাচা তিন সপ্তাহ একটাও কাজ পাননি। এক ভোরে তরুণ রাসেল ঠিকাদারকে বলল— আমারে নিলে, চাচারেও নিতে হইবো…",
+  "tags": [
+   "দিনমজুরের গল্প",
+   "শ্রমিক",
+   "কামলা হাট",
+   "মিরপুর",
+   "সংগ্রামের গল্প",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ঠিকাদার নিত শুধু জোয়ান কাঁধ। রাসেল দেখিয়ে দিল, পুরোনো চোখ ছাড়া দেয়াল সোজা হয় না। 🧱\nতোমার কাজের জায়গায় কে সবচেয়ে পুরোনো মানুষ, আর তাঁর কাছে কী শিখেছ? 👇 #শ্রমিক #সংগ্রাম"
+ },
+ "thumbnail": {
+  "text": "৩ সপ্তাহ কাজ নাই",
+  "sub": "৫৮ বছর"
+ }
+}
