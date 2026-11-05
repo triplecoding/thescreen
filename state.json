@@ -329,6 +329,17 @@
       "playlist": true,
       "facebook": "1474212314566592",
       "scheduled_for": "2026-11-07T15:30:00+06:00"
+    },
+    {
+      "id": "028",
+      "date": "2026-11-07",
+      "slot": "17:30",
+      "duration": 132.37,
+      "title": "একা হাতে ৪০টা টিফিন, তারপর ভাইয়ের স্কুলের বই বদলে দিল ব্যবসা 🍱 | The Wealth of Nations বাংলা",
+      "youtube": "VtbFXBl34Y4",
+      "playlist": true,
+      "facebook": "1821224552243479",
+      "scheduled_for": "2026-11-07T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -348,10 +359,11 @@
     "The Prince": "PLJjXUsSTRMuM",
     "1984": "PLK7cGEwvm_Dk",
     "Propaganda": "PLGCk3gankBoE",
-    "The Righteous Mind": "PLWqwkhPxmHKs"
+    "The Righteous Mind": "PLWqwkhPxmHKs",
+    "The Wealth of Nations": "PLB6DgZYxX61g"
   },
   "last_run": {
-    "at": "2026-11-05T20:59:02.541672+06:00",
+    "at": "2026-11-05T21:05:12.553957+06:00",
     "errors": []
   },
   "queue_remaining": 21,
