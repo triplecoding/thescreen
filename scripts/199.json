@@ -1,0 +1,377 @@
+{
+ "id": "199",
+ "status": "ready",
+ "title_bn": "হাসপাতালের নার্স আর নামের তালিকা",
+ "theme": "work",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "The Law of Grandiosity vs quiet attention",
+  "title_bn": "ছোট মনোযোগ"
+ },
+ "cast": {
+  "josna": {
+   "name": "জোছনা সিস্টার",
+   "type": "woman",
+   "skin": "dark",
+   "outfit": "salwar",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "doctor": {
+   "name": "ডা. ফারহান",
+   "type": "young_man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "oldman": {
+   "name": "রোগী মতিন দাদু",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনা মেডিকেলের পুরুষ ওয়ার্ড। চল্লিশটা বেড, রাতে দুইজন নার্স। আর চল্লিশজন মানুষের কোনো নাম নেই। শুধু *নম্বর*। বেড বারো, বেড সাত।",
+   "scene": {
+    "set": "hospital",
+    "light": "night",
+    "chip": "খুলনা মেডিকেল, পুরুষ ওয়ার্ড",
+    "chars": [
+     {
+      "id": "josna",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ওয়ার্ডে বেড",
+       "value": "৪০"
+      },
+      {
+       "label": "নার্স, রাতের শিফটে",
+       "value": "২ জন"
+      },
+      {
+       "label": "রোগীদের ডাকা হয়",
+       "value": "বেড নম্বরে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "doctor",
+   "say": "সিস্টার, বেড বারো আবার ওষুধ খায় নাই। তিনবার বলছি। এইভাবে *ছুটি হবে না*।",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "set": "hospital",
+    "light": "night",
+    "chip": "রাত এগারোটা",
+    "chars": [
+     {
+      "id": "doctor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "oldman",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "doctor": "point"
+    }
+   }
+  },
+  {
+   "voice": "oldman",
+   "say": "খামু না! কেউ কথা কয় না, খালি আসে, ‘বেড বারো, হাঁ করেন’। আমি কি *গরু*?",
+   "scene": {
+    "cam": {
+     "focus": "oldman",
+     "zoom": 1.4
+    },
+    "moods": {
+     "oldman": "angry"
+    },
+    "arms": {
+     "oldman": "cross"
+    }
+   }
+  },
+  {
+   "say": "জোছনা সিস্টার বিশ বছর নার্স। তিনি ট্রে নামিয়ে রাখলেন। চেয়ার টেনে বসলেন। আর ওষুধের কথা না বলে জিজ্ঞেস করলেন *একটা অন্য প্রশ্ন*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "josna",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "josna",
+   "say": "চাচা, আপনার নামটা কী? আর বাড়ি কোথায়? এত দিন এই বেডে, আমি তো *জিগাই নাই*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "josna",
+     "zoom": 1.4
+    },
+    "arms": {
+     "josna": "down"
+    }
+   }
+  },
+  {
+   "voice": "oldman",
+   "say": "নাম? মতিন। আব্দুল মতিন। বাগেরহাট, মোংলার কাছে। চল্লিশ বছর *নৌকা* চালাইছি।",
+   "scene": {
+    "cam": {
+     "focus": "oldman",
+     "zoom": 1.4
+    },
+    "moods": {
+     "oldman": "surprised"
+    },
+    "arms": {
+     "oldman": "down"
+    }
+   }
+  },
+  {
+   "say": "মতিন দাদু কথা বললেন বিশ মিনিট। নৌকা, নদী, নাতির কথা। তারপর নিজেই হাত বাড়ালেন— *‘দেও, ওষুধটা দেও’*।",
+   "scene": {
+    "cam": {
+     "focus": "oldman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সকালে জোছনা সিস্টার একটা কাজ শুরু করলেন। প্রতিটা বেডের কার্ডে নম্বরের নিচে নাম। আর ছোট্ট করে একটা লাইন, *মানুষটার সম্পর্কে*।",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "পরের সকাল",
+    "chars": [
+     {
+      "id": "josna",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "যা লাগল",
+   "card": {
+    "title": "খরচ",
+    "items": [
+     {
+      "t": "একটা মার্কার",
+      "mark": "x"
+     },
+     {
+      "t": "প্রতি রোগীর জন্য দুই মিনিট",
+      "mark": "x"
+     },
+     {
+      "t": "আর কিছু না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর ডা. ফারহান খেয়াল করলেন, ওয়ার্ডে চিৎকার কম। ওষুধ নিয়ে ঝামেলা কম। আর রোগীরা নার্সদের সাথে *গল্প করছে*।",
+   "scene": {
+    "widget": null,
+    "set": "hospital",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "chars": [
+     {
+      "id": "doctor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "josna",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "doctor",
+   "say": "সিস্টার, কী জাদু করলেন? বেড বারো, মানে… মতিন চাচা আজকে নিজে ওষুধ চাইয়া নিছেন।",
+   "scene": {
+    "cam": {
+     "focus": "doctor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "doctor": "surprised"
+    },
+    "arms": {
+     "doctor": "hold"
+    }
+   }
+  },
+  {
+   "voice": "josna",
+   "say": "জাদু না, স্যার। মানুষ অসুস্থ হইলে নিজের নামটাও হারায়। আমরা খালি *ফেরত দিছি*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "josna",
+     "zoom": 1.4
+    },
+    "arms": {
+     "josna": "down"
+    }
+   }
+  },
+  {
+   "voice": "doctor",
+   "say": "সিস্টার, আমি পাঁচ বছর ডাক্তার। এই ওয়ার্ডে একটা রোগীরও নাম আমি জানি না। কাল থেকে রাউন্ডে আমিও *নাম ধইরা* ডাকমু।",
+   "scene": {
+    "cam": {
+     "focus": "doctor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "doctor": "thinking"
+    },
+    "arms": {
+     "doctor": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরদিন রাউন্ডে ডা. ফারহান প্রতিটা বেডে থামলেন। কার্ড পড়লেন। তারপর বললেন, ‘সুলতান চাচা, চা খাইছেন?’ আর পুরো ওয়ার্ড অবাক হয়ে *তাকিয়ে রইল*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "oldman",
+   "say": "সিস্টার, মোংলায় আসলে আমার নৌকায় উঠবা। পয়সা লাগবো না। তুমিই একমাত্র যে *নাম ধইরা* ডাকছ।",
+   "tone": "laughs",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "মতিন দাদুর ছুটির দিন",
+    "chars": [
+     {
+      "id": "oldman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "josna",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "oldman": "wave"
+    }
+   }
+  },
+  {
+   "say": "খুলনা মেডিকেলের সেই ওয়ার্ডে এখন প্রতিটা বেডে নামের কার্ড। আর নার্সদের রুমের দেয়ালে একটা লাইন— *‘প্রথমে নাম, তারপর ওষুধ।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অসুখ মানুষকে নম্বর বানিয়ে দেয়… *একটা নাম তাকে মানুষ বানায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অসুখ মানুষকে নম্বর বানিয়ে দেয়…",
+    "line2": "একটা নাম তাকে\nমানুষ বানায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ওয়ার্ডের ৪০ জন রোগী, কেউ নাম জানে না, সবাই ‘বেড ১২’… জোছনা সিস্টার শুধু একটা কাজ বদলালেন 🏥",
+  "description": "খুলনা মেডিকেলের পুরুষ ওয়ার্ড। চল্লিশটা বেড। রোগীদের ডাকা হয় নম্বরে— বেড বারো, বেড সাত। জোছনা সিস্টার বিশ বছর নার্স। এক রাতে বেড বারোর বৃদ্ধ মতিন দাদু ওষুধ খেতে চাইছিলেন না। জোছনা সিস্টার একটা জিনিস জিজ্ঞেস করলেন…",
+  "tags": [
+   "নার্স",
+   "হাসপাতাল",
+   "রোগী",
+   "মানবিকতা",
+   "মর্যাদা",
+   "খুলনা",
+   "bangla golpo",
+   "অনুপ্রেরণার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চল্লিশজন রোগী, সবাই ছিলেন বেড নম্বর। এক নার্স প্রত্যেকের নাম জিজ্ঞেস করলেন, আর ওয়ার্ডটা বদলে গেল। 🏥\nহাসপাতালে কোনো নার্স বা ওয়ার্ডবয়ের ছোট্ট যত্ন কি তোমার মনে আছে? 👇 #নার্স #মানবিকতা"
+ },
+ "thumbnail": {
+  "text": "‘বেড ১২’ না",
+  "sub": "ওনার নাম মতিন"
+ }
+}

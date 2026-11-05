@@ -1,0 +1,388 @@
+{
+ "id": "195",
+ "status": "ready",
+ "title_bn": "ভিডিও কলে বিয়ে",
+ "theme": "probashi",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Presence is the rarest gift",
+  "title_bn": "উপস্থিতি"
+ },
+ "cast": {
+  "jamal": {
+   "name": "জামাল",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  },
+  "rima": {
+   "name": "মেয়ে রিমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "boss": {
+   "name": "সুপারভাইজার খালিদ",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মালয়েশিয়া, জোহর। একটা কারখানা। জামাল নয় বছর এখানে। শুক্রবার একমাত্র মেয়ে রিমার বিয়ে, কুমিল্লায়। আর ছুটির দরখাস্তে লেখা— *অর্ডারের চাপ, মঞ্জুর নয়*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মালয়েশিয়া, জোহর, কারখানা",
+    "props": [
+     "signboard",
+     "sign:FACTORY — SHIFT B"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "boss",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রবাসে",
+       "value": "৯ বছর"
+      },
+      {
+       "label": "মেয়ের বিয়ে",
+       "value": "শুক্রবার, কুমিল্লা"
+      },
+      {
+       "label": "ছুটি",
+       "value": "মঞ্জুর হয়নি",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "স্যার, এক সপ্তাহ না, তিন দিন। মেয়ের বিয়া, স্যার। নয় বছরে একটা ছুটি *চাই নাই*।",
+   "tone": "upset",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jamal": "talk"
+    }
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "জামাল, জানি। কিন্তু শুক্রবার জাহাজের অর্ডার, পুরা শিফট লাগবে। আমার হাতেও *কিছু নাই*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    },
+    "arms": {
+     "boss": "hold"
+    }
+   }
+  },
+  {
+   "say": "কুমিল্লায় বিয়ের আগের রাত। মেহেদি হাতে রিমা। চারপাশে গান, আর রিমার চোখ ফোনে। *আব্বুর কল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কুমিল্লা, বিয়ের আগের রাত",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rima",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rima",
+   "say": "আব্বু, আপনি না থাকলে কবুল কেমনে বলমু? আমি চাইছিলাম আপনি আমার *হাত ধইরা* দিবেন।",
+   "scene": {
+    "cam": {
+     "focus": "rima",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rima": "crying"
+    },
+    "arms": {
+     "rima": "phone"
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "মা রে, আব্বু থাকমু। ফোনে থাকমু, কিন্তু থাকমু। দুপুর দুইটায় আমার বিরতি, ওই সময় কবুলটা রাখিস, পারবি?",
+   "tone": "tearful",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "শুক্রবার, দুপুর দুইটা। কারখানার মেঝেতে বসে জামাল। ফোনের পর্দায় কুমিল্লার বিয়ের মঞ্চ। *লাল শাড়ি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বিয়ের দিন, দুপুর দুইটা",
+    "props": [
+     "signboard",
+     "sign:FACTORY — SHIFT B"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বিরতি মাত্র পনেরো মিনিট। কাজি সাহেব আসতে দেরি করছেন। দশ মিনিট গেল। জামালের চোখ ঘড়িতে, ফোনে, আবার *ঘড়িতে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পেছনে পায়ের শব্দ। সুপারভাইজার খালিদ। জামাল ভাবলেন, এবার বকা। কিন্তু খালিদ বললেন *অন্য কিছু*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "signboard",
+     "sign:FACTORY — SHIFT B"
+    ],
+    "chars": [
+     {
+      "id": "boss",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "jamal",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "বসো, জামাল। তোমার মেশিনে রাজু আর সেলিম আছে, এক ঘণ্টা। পুরা বিয়া দেখো। শিফটের হিসাব *আমি দিমু*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    },
+    "arms": {
+     "boss": "down"
+    }
+   }
+  },
+  {
+   "say": "জামাল ফিরে তাকালেন। পেছনে দাঁড়িয়ে আরও সাত-আটজন, বাংলাদেশি, নেপালি, ইন্দোনেশিয়ান। কেউ কিছু বলছে না। শুধু *দাঁড়িয়ে আছে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কুমিল্লায় রিমার সামনে মামা ফোনটা ধরে আছেন। পর্দায় আব্বু। কাজি সাহেব জিজ্ঞেস করলেন। রিমা আব্বুর চোখের দিকে তাকিয়ে বলল— *কবুল*।",
+   "pause": 1.2,
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কুমিল্লা, বিয়ের মঞ্চ",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rima",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rima",
+   "say": "আব্বু, আপনার পিছনে এত মানুষ কারা?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "rima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rima": "phone"
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "আমার এইখানের *পরিবার*, মা। সবাই তোর বিয়া দেখতে আসছে। দোয়া কর, সবার জন্য।",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই সন্ধ্যায় মেসে জামাল সবাইকে খাওয়ালেন। নিজের হাতে রাঁধা *খিচুড়ি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সেই সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:FACTORY — SHIFT B"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "boss",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রিমার বিয়ের অ্যালবামের প্রথম পাতায় একটা স্ক্রিনশট। কারখানার মেঝেতে বসা আব্বু, পেছনে নয়জন বিদেশি সহকর্মী। নিচে রিমা লিখেছে— *‘আমার বিয়ের সবচেয়ে বড় অতিথিরা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দূরত্ব কাছে থাকতে দেয় না… *ভালোবাসা ঠিকই পাশে এনে দাঁড় করায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দূরত্ব কাছে থাকতে দেয় না…",
+    "line2": "ভালোবাসা ঠিকই\nপাশে এনে দাঁড় করায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মেয়ের বিয়ে শুক্রবার, বাবা মালয়েশিয়ায়, ছুটি মেলেনি… কারখানার মেঝেতে বসে ভিডিও কলে কন্যাদান 💍",
+  "description": "জামাল নয় বছর মালয়েশিয়ার এক কারখানায়। একমাত্র মেয়ে রিমার বিয়ে শুক্রবার, কুমিল্লায়। ছুটি চাইলেন, মিলল না— অর্ডারের চাপ। বিয়ের দিন দুপুরে শিফট। জামাল ঠিক করলেন, মেয়ের বিয়ে দেখবেন, যেভাবেই হোক…",
+  "tags": [
+   "প্রবাসী বাবা",
+   "মেয়ের বিয়ে",
+   "মালয়েশিয়া",
+   "ভিডিও কল",
+   "বাবা মেয়ের গল্প",
+   "bangla golpo",
+   "probashi golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মেয়ের বিয়েতে বাবা ছিলেন না। ছিলেন ফোনের পর্দায়, কারখানার মেঝেতে বসে। আর পুরো কারখানা সেদিন দাঁড়িয়ে ছিল তাঁর পাশে। 💍\nপ্রবাসে থাকা কোনো প্রিয় মানুষ কি তোমার বড় দিনে পাশে থাকতে পারেননি? 👇 #প্রবাসী #বাবামেয়ে"
+ },
+ "thumbnail": {
+  "text": "মেয়ের বিয়ে আজ",
+  "sub": "বাবা কারখানায়"
+ }
+}

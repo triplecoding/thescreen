@@ -1547,6 +1547,54 @@
    "relation": "online saree seller / customer / mother",
    "set": "home",
    "hook": "a seller notices a flaw in a saree after the customer left a five-star review; she calls, apologises and sends a replacement; the customer tells her office group and orders pour in"
+  },
+  {
+   "id": "195",
+   "book": "The Daily Laws",
+   "item": "Presence is the rarest gift",
+   "relation": "probashi father / daughter / supervisor",
+   "set": "shop",
+   "hook": "a Malaysia factory worker denied leave for his daughter's wedding watches by video call on his break; his co-workers and supervisor cover his shift and stand with him for the kabul moment"
+  },
+  {
+   "id": "196",
+   "book": "The Psychology of Money",
+   "item": "Small debts, big trust",
+   "relation": "tea-stall owner / former student / wife",
+   "set": "street",
+   "hook": "an old tea-seller near a university must close for illness; a former student finds the debt book, photographs each page, and posts in the alumni group; dozens repay"
+  },
+  {
+   "id": "197",
+   "book": "The 50th Law",
+   "item": "Turn the weakness into a weapon",
+   "relation": "younger sister who failed SSC / doctor elder sister / mother",
+   "set": "home",
+   "hook": "relatives compare a sewing younger sister with her medical-student elder sister; she secretly embroiders the sister's wedding sari; guests ask for her work and she starts her own orders"
+  },
+  {
+   "id": "198",
+   "book": "Animal Farm",
+   "item": "Equal rules for all, or none",
+   "relation": "residents / building secretary",
+   "set": "stairs",
+   "hook": "in a Mirpur apartment block every flat pays for the generator but power goes only to the secretary's floor; two residents collect a written, signed record and propose transparent rules at the AGM"
+  },
+  {
+   "id": "199",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Grandiosity vs quiet attention",
+   "relation": "senior nurse / young doctor / elderly patient",
+   "set": "hospital",
+   "hook": "a nurse notices patients are called by bed numbers; she learns each name and one detail and writes it on the bed card; an angry old patient starts cooperating, and the doctor adopts it"
+  },
+  {
+   "id": "200",
+   "book": "The Dictator's Handbook",
+   "item": "Writing captures what memory loses",
+   "relation": "son / elderly mother / daughter-in-law",
+   "set": "home",
+   "hook": "a son records his ageing mother's unwritten recipes during Eid by measuring her handfuls; the notebook becomes a family heirloom and his wife cooks it for his mother when her hands shake"
   }
  ]
 }

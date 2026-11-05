@@ -1,0 +1,403 @@
+{
+ "id": "200",
+ "status": "ready",
+ "title_bn": "আম্মার রান্নার খাতা",
+ "theme": "parents",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Writing captures what memory loses",
+  "title_bn": "লিখে রাখা"
+ },
+ "cast": {
+  "sohel": {
+   "name": "সোহেল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "wife": {
+   "name": "বউ লিমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকা। সোহেলের বাসা। লিমা আজ আবার আম্মার মতো গরুর মাংস রান্না করেছে। এগারোতম চেষ্টা। সোহেল এক লোকমা খেল। কিছু বলল না। কিন্তু চোখে বোঝা গেল— *মেলেনি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঢাকা, সোহেলের বাসা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "wife",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আম্মার রান্নার রেসিপি",
+       "value": "কোথাও লেখা নেই"
+      },
+      {
+       "label": "চেষ্টা করেও মেলেনি",
+       "value": "১১ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "আম্মারে এগারোবার ফোন দিছি। খালি কন, ‘এক মুঠ এইটা, আন্দাজে ওইটা’। *আন্দাজ* তো আমার হাতে নাই।",
+   "tone": "upset",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "wife",
+     "zoom": 1.4
+    },
+    "arms": {
+     "wife": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আম্মার আন্দাজটাই তো রেসিপি, লিমা। আর আম্মার বয়স সত্তর। হাত কাঁপে। এই আন্দাজ একদিন *হারায়া যাবে*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sohel": "hold"
+    }
+   }
+  },
+  {
+   "say": "ঈদের আগের দিন। ময়মনসিংহ। আম্মার রান্নাঘর। সোহেল ঢুকল হাতে একটা খাতা, একটা রান্নার মাপের চামচ, আর ফোন। আম্মা হাসলেন— *‘এইগুলা কী রে?’*",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ময়মনসিংহ, ঈদের আগের দিন",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "মাপ? রান্না মাপে হয় নাকি? চোখে দেখবি, নাকে শুঁকবি, তাইলেই *হইয়া যায়*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আম্মা, আপনি যেমনে রান্ধেন রান্ধেন। আপনি মুঠ দিবেন, আমি আগে মুঠটা মাপমু। ব্যাস, আর *কিছু না*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sohel": "phone"
+    }
+   }
+  },
+  {
+   "say": "আম্মার প্রতিটা মুঠ সোহেল চামচে ঢেলে মাপল। প্রতিটা ‘একটু’ গ্রামে। আর প্রতিটা ‘যখন গন্ধ বদলায়’ লিখে রাখল *ঘড়ি ধরে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রান্নার মাঝখানে আম্মা একটা জিনিস করলেন, যেটা কোনো রেসিপিতে নেই। এক চিমটি চিনি। চুপচাপ। সোহেল *ধরে ফেলল*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আম্মার গরুর মাংস",
+     "lines": [
+      "এক মুঠ রসুন বাটা = ৩ টেবিল চামচ",
+      "‘তেল ছাড়লে’ = ১৮ মিনিট",
+      "‘আন্দাজে গরম মসলা’ = আধা চা-চামচ, শেষে, চুলা বন্ধ করে"
+     ]
+    },
+    "set": "kitchen",
+    "light": "day",
+    "chip": "রান্নার মাঝখানে",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আম্মা! চিনি? এগারো বছর জিগাইছি, কোনোদিন *কন নাই*!",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "moods": {
+     "sohel": "surprised"
+    },
+    "arms": {
+     "sohel": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তোর নানি দিত। কারণ জিগাই নাই কোনোদিন। ভাবছি, এইটা তো রেসিপি না, এইটা *অভ্যাস*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "down"
+    }
+   }
+  },
+  {
+   "say": "সোহেল খাতায় লিখল, লাল কালিতে। তারপর অনেকক্ষণ আম্মার হাতের দিকে তাকিয়ে রইল। কাঁপছে, কিন্তু *মুঠ এখনো ঠিক*।",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন দিনে খাতায় যা উঠল",
+   "card": {
+    "title": "আম্মার রান্না",
+    "items": [
+     {
+      "t": "গরুর মাংস",
+      "mark": "x"
+     },
+     {
+      "t": "শুঁটকি ভর্তা",
+      "mark": "x"
+     },
+     {
+      "t": "পাটিসাপটা, নারকেলের পুর",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক বছর পর। আম্মার হাত এখন বেশি কাঁপে, চুলার কাছে দাঁড়াতে পারেন না। ঈদের দিন লিমা খাতা খুলে রান্না করল। আম্মা প্রথম লোকমা মুখে দিলেন। তারপর *চুপ*।",
+   "pause": 1.2,
+   "scene": {
+    "widget": null,
+    "set": "kitchen",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "wife",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "এইটা তো… আমার মায়ের হাতের স্বাদ। লিমা, তুই *চিনি* দিছস?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "hold"
+    }
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "খাতায় লেখা আছে, আম্মা। লাল কালিতে। ‘এক চিমটি চিনি— *নানির অভ্যাস*।’",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "wife",
+     "zoom": 1.4
+    },
+    "arms": {
+     "wife": "hold"
+    }
+   }
+  },
+  {
+   "say": "সোহেলের খাতাটা এখন বাঁধানো। প্রথম পাতায় আম্মার হাতে লেখা কাঁপা কাঁপা অক্ষর— *‘আন্দাজটা এখন তোদের।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মায়ের হাতের স্বাদ চিরকাল থাকে না… *লিখে রাখলে থেকে যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মায়ের হাতের স্বাদ চিরকাল থাকে না…",
+    "line2": "লিখে রাখলে\nথেকে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আম্মার রান্নার রেসিপি? ‘আন্দাজে দেই’… ছেলে ঠিক করল, এবার লিখে রাখবে 📒",
+  "description": "ময়মনসিংহের সোহেল ঢাকায় চাকরি করে। আম্মার হাতের গরুর মাংস, শুঁটকি ভর্তা, পাটিসাপটা— কেউ পারে না। রেসিপি জিজ্ঞেস করলে আম্মা বলেন, আন্দাজে। আম্মার বয়স সত্তর, হাত কাঁপে। সোহেল এক ঈদে একটা খাতা আর ফোন নিয়ে রান্নাঘরে ঢুকল…",
+  "tags": [
+   "মায়ের রান্না",
+   "মায়ের গল্প",
+   "রেসিপি",
+   "স্মৃতি",
+   "পরিবার",
+   "bangla golpo",
+   "mayer golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আম্মা বলতেন, রান্না হয় আন্দাজে। ছেলে প্রতিটা আন্দাজ মেপে লিখে রাখল। এখন সেই খাতায় তিন প্রজন্মের স্বাদ। 📒\nতোমার মায়ের কোন রান্নার রেসিপিটা তুমি আজও জানো না? 👇 #মায়েররান্না #মা"
+ },
+ "thumbnail": {
+  "text": "‘আন্দাজে দেই’",
+  "sub": "আম্মার রান্নার খাতা"
+ }
+}
