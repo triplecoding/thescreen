@@ -8,6 +8,20 @@ Every video = one *touching, specific, Bangladeshi* family/work/neighbourhood st
 lesson the viewer can use tonight. Viewers should feel something in the first 5 seconds and want to send it to someone.
 
 ## Owner rules (absolute)
+
+> **UPDATE 5 Nov 2026 — overrides everything below about the lesson part.**
+> - The video is **only the story**. No `book`, `concept`, `takeaways` or `ask` beats; never name the book, author or
+>   theory in the narration; no "কী শিখলাম", no "পর্দাটা তোমার দিকে", no closing voice-over that explains the lesson.
+> - The story ends smoothly with its own after-scene (show the change — a small moment, a line of dialogue), then the
+>   `outro` beat: **one beautiful 2-line summary** (`line1…` / `line2`) — that is the whole ending.
+> - Length stays **2:00–2:30**: the time the lesson used now goes to the story — more scenes, more dialogue, a real
+>   after-scene. ≈ 1,450–1,560 narration characters, 26–32 beats, 8–12 dialogue lines, 2–3 speaking characters.
+> - **More realistic:** real Bangladeshi places, money, jobs, phones, bKash, CNG, mess life, office talk; small true
+>   details; no fairy-tale endings. **Natural mixed language** like people really talk: everyday English words in Bangla
+>   script (অফিস, সরি, প্লিজ, ফাইল, টেনশন, ম্যাডাম, ওকে), a touch of regional speech where it fits (খাইছি, যামু, কইলাম)
+>   — still written in Bangla script (voice is Bangla only).
+> - Retention: hook in the first 3 seconds (a number + a problem), a new turn every 15–20 seconds, no slow ending.
+> - Metadata: titles are story hooks (no "| Book বাংলা"); the book is only credited in the YouTube description.
 - **Never** write a story from *The 48 Laws of Power*. Use the other books in `data/books.json`.
 - **Every story and every scenario is original.** The reference videos the owner shared were only to show the style —
   never reuse their plots, situations, turning points, props or lines (e.g. no grandmother-refusing-doctor, no child's
