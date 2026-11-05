@@ -1,0 +1,485 @@
+{
+ "id": "066",
+ "status": "ready",
+ "title_bn": "সার্টিফিকেটে ভাইয়ার নাম",
+ "theme": "siblings",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 10",
+  "chapter_bn": "১০ নম্বর অধ্যায়",
+  "title": "The Law of Envy",
+  "title_bn": "কাছের মানুষের হিংসা"
+ },
+ "cast": {
+  "rasel": {
+   "name": "রাসেল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "shakil": {
+   "name": "শাকিল",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "ma": {
+   "name": "মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "যশোরের এক বাড়িতে মিষ্টির প্যাকেট। ছোট ছেলে শাকিল পেয়েছে জাপানের *ফুল স্কলারশিপ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "যশোর, মিষ্টির দিন",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "ma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "স্কলারশিপ",
+     "lines": [
+      "ফুল ফান্ডেড, টোকিও",
+      "মাস্টার্স, ইঞ্জিনিয়ারিং"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "তোর আব্বা থাকলে আজকে *পুরা পাড়ায়* মিষ্টি দিত রে।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "hug"
+    }
+   }
+  },
+  {
+   "say": "সারা পাড়া এল। খালি একজন এল না। বড় ভাই রাসেল। দোকান থেকে ফিরল *রাত বারোটায়*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "বারো বছর আগে বাবা মারা গেলেন। রাসেল তখন ইন্টারে। পরদিন থেকেই সে বসেছিল *বাবার মুদি দোকানে*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাসেল স্টোর, বাজার",
+    "props": [
+     "signboard",
+     "sign:রাসেল জেনারেল স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সেই দোকানের টাকায় শাকিলের স্কুল, কলেজ, *ইউনিভার্সিটি*। আজ সেই ভাই যাচ্ছে টোকিও।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রাসেলের পড়া",
+       "value": "ইন্টার পর্যন্ত",
+       "red": true
+      },
+      {
+       "label": "দোকান চালানো",
+       "value": "১২ বছর"
+      },
+      {
+       "label": "শাকিলের পড়ার খরচ",
+       "value": "দোকান থেকে"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ভাইয়া, মিষ্টি খাও! পরশু ফ্লাইট। তুমি *এয়ারপোর্টে* যাবা তো?",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "রাত বারোটা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "shakil",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "দোকান খোলা রাখতে হইবো। *মাসের শেষ*, মাল আসবো।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rasel": "cross"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ভাইয়া, এক দিন দোকান বন্ধ রাখলে কী হয়? আমি তো *দুই বছরের* জন্য যাইতেছি।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "say": "রাসেল ঘরে চলে গেল। শাকিল দাঁড়িয়ে রইল। ভাইয়া খুশি না, এটা সে *প্রথম* বুঝল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "রাগ করিস না। ওর তো স্বপ্ন ছিল *ইঞ্জিনিয়ার* হওয়ার। তোর কাগজটা দেইখা পুরান কষ্ট জাগছে।",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পাশের ঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shakil",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শাকিল সারারাত ভাবল, কী বলবে",
+   "card": {
+    "title": "যা বলা যায় না",
+    "items": [
+     {
+      "t": "‘ভাইয়া, খুশি হও’— এটা আদেশ",
+      "mark": "x"
+     },
+     {
+      "t": "‘তোমার টাকা ফেরত দিব’— এটা হিসাব",
+      "mark": "x"
+     },
+     {
+      "t": "‘সরি’— কিসের জন্য?",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ফ্লাইটের দিন ভোর ছয়টা। রাসেল দোকানের শাটার তুলছে। শাকিল এসে পাশে বসল। হাতে একটা *ফটোকপি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ফ্লাইটের দিন, ভোর ছয়টা",
+    "props": [
+     "signboard",
+     "sign:রাসেল জেনারেল স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shakil",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ভাইয়া, স্কলারশিপের কাগজের একটা কপি। তোমার জন্য। *নিচে দেখো*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "এইটা কী লিখছস?",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "স্কলারশিপ সার্টিফিকেট (কপি)",
+     "lines": [
+      "শাকিল আহমেদ",
+      "নিচে হাতে লেখা: ‘আসল খরচ দিয়েছেন— রাসেল আহমেদ’"
+     ]
+    },
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rasel": "surprised"
+    },
+    "arms": {
+     "rasel": "down"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "সত্যটা। তুমি দোকান না ধরলে আমি *ক্লাস টেনেই* থামতাম। এই কাগজ অর্ধেক তোমার।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বারো বছরের জমানো রাগ। একটা লাইনে গলে গেল। রাসেল মুখ ফেরাল, যাতে ভাই *চোখটা না দেখে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "যা, ব্যাগ গোছা। আমি দোকান বন্ধ কইরা *এয়ারপোর্টে* আসতেছি।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rasel": "face"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর টোকিও থেকে প্রতি শুক্রবার ভিডিও কল আসে। রাসেল দোকানে বসেই ধরে। *কাস্টমার অপেক্ষা* করে।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "signboard",
+     "sign:রাসেল জেনারেল স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rasel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rasel",
+   "say": "ভাই আমার জাপানে। হ, *ইঞ্জিনিয়ার* হইতেছে। আমরা দুই ভাই মিল্লা।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "rasel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rasel": "phone"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ভাইয়া, এখানে সবাই জিগায় তোমার স্পনসর কে। আমি কই— *রাসেল জেনারেল স্টোর*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দোকানের ক্যাশবাক্সের উপরে এখন ফ্রেমে বাঁধানো একটা ফটোকপি। নিচের হাতের লেখাটাই *সবচেয়ে বড়*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "হিংসা জন্মায় না-বলা কষ্ট থেকে… *ভাঙে একটা  স্বীকৃতিতে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "হিংসা জন্মায় না-বলা কষ্ট থেকে…",
+    "line2": "ভাঙে একটা\nস্বীকৃতিতে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছোট ভাই জাপানে স্কলারশিপ পেল, বড় ভাই বিদায় দিতেও এল না… ফ্লাইটের ভোরে যা হলো ✈️",
+  "description": "বাবা মারা যাওয়ার পর রাসেল পড়াশোনা ছেড়ে ধরেছিল বাবার মুদি দোকান। ছোট ভাই শাকিল আজ জাপানে স্কলারশিপ পেয়েছে। সবাই মিষ্টি খাচ্ছে, শুধু বড় ভাই দোকান থেকে ফেরে না। ফ্লাইটের ভোরে শাকিল গেল দোকানে…",
+  "tags": [
+   "ভাই ভাইয়ের গল্প",
+   "বড় ভাইয়ের ত্যাগ",
+   "স্কলারশিপ",
+   "জাপান",
+   "অভিমান",
+   "bangla golpo",
+   "vai er golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছোট ভাইয়ের স্কলারশিপে সবাই খুশি। বড় ভাই শুধু চুপ। কারণটা ছিল একটা না-বলা কষ্ট। ✈️\nপরিবারের জন্য যে মানুষটা নিজের স্বপ্ন ছেড়েছে, তাকে কখনো ধন্যবাদ বলেছ? 👇 #ভাই #ত্যাগ"
+ },
+ "thumbnail": {
+  "text": "বড় ভাই আসেনি",
+  "sub": "স্কলারশিপের দিন"
+ }
+}

@@ -1,0 +1,510 @@
+{
+ "id": "068",
+ "status": "ready",
+ "title_bn": "চাঁদরাতের দুই দর্জি",
+ "theme": "community",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Never compete with someone who has nothing to lose",
+  "title_bn": "প্রতিযোগীর বিপদে পাশে"
+ },
+ "cast": {
+  "kalam": {
+   "name": "কালাম ওস্তাদ",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  },
+  "babul": {
+   "name": "বাবুল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#C4473A",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "tutul": {
+   "name": "টুটুল",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "লক্ষ্মীবাজারের এক গলিতে মুখোমুখি দুই দর্জির দোকান। বারো বছর ধরে চলছে *দামের যুদ্ধ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পুরান ঢাকা, লক্ষ্মীবাজারের গলি",
+    "props": [
+     "signboard",
+     "sign:কালাম টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tutul",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মুখোমুখি দুই দোকান",
+       "value": "১২ বছর"
+      },
+      {
+       "label": "দামের যুদ্ধ",
+       "from": "পাঞ্জাবি ৬৫০",
+       "value": "৪৫০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "ওস্তাদ, বাবুল আবার দাম কমাইছে। পাঞ্জাবি *চারশো পঞ্চাশ*!",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tutul": "point"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "কমাক। মানুষ শেষে সেলাই দেখে, *দাম না*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "cross"
+    }
+   }
+  },
+  {
+   "say": "চাঁদরাত। রাত নয়টা। হঠাৎ বাবুলের দোকানে চিৎকার। বাবুল মাথা ধরে *বসে পড়েছেন*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "চাঁদরাত, রাত নয়টা",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রেশার উঠেছে। লোকজন ধরাধরি করে রিকশায় তুলল। মিটফোর্ড হাসপাতাল। দোকানে *তালা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "বাবুলের দোকানের সামনে কাস্টমারের ভিড়। তেতাল্লিশটা পাঞ্জাবি বাকি। কাল সকালে *ঈদ*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত দশটা",
+    "props": [
+     "signboard",
+     "sign:বাবুল টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tutul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "বাবুলের অর্ডার খাতা",
+     "lines": [
+      "পাঞ্জাবি বাকি: ৪৩টা",
+      "ডেলিভারি: কাল সকাল ৮টা",
+      "কাস্টমারের অগ্রিম: নেওয়া"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "ওস্তাদ, আল্লাহ বিচার করছে! কাল থেকে বাবুলের সব কাস্টমার *আমাগো*।",
+   "tone": "laughs",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "কালাম টেইলার্স",
+    "props": [
+     "signboard",
+     "sign:কালাম টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "tutul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tutul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "চুপ কর। মানুষটা হাসপাতালে, আর তুই *কাস্টমার* গুনস?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "cross"
+    }
+   }
+  },
+  {
+   "say": "কালাম ওস্তাদ সেলাই থামালেন। অনেকক্ষণ চুপ। জানালা দিয়ে দেখলেন— একটা শিশু কাঁদছে, *বাবার পাঞ্জাবি* পায়নি।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "কালাম ওস্তাদের সামনে তিনটা রাস্তা ছিল",
+   "card": {
+    "title": "সহজ রাস্তাগুলো",
+    "items": [
+     {
+      "t": "বাবুলের কাস্টমার নিজের দোকানে টানা",
+      "mark": "x"
+     },
+     {
+      "t": "চুপচাপ নিজের কাজ শেষ করা",
+      "mark": "x"
+     },
+     {
+      "t": "‘এইটা আমার ব্যাপার না’ বলে ঘুমিয়ে পড়া",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "টুটুল, বাবুলের খাতা আর তালার চাবি আন। *সারারাত* কাজ।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "point"
+    }
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "ওস্তাদ! নিজের দোকানেই তো চল্লিশটা বাকি। আমরা *তিনজন*!",
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tutul": "surprised"
+    },
+    "arms": {
+     "tutul": "down"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "তাইলে ঘুম বাদ। মানুষের ঈদ বাকি থাকবে, *আর আমরা ঘুমামু*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটা। দুই দোকানে তিনটা মেশিন। কালাম ওস্তাদ বাবুলের খাতা দেখে দেখে মাপ মেলাচ্ছেন— *বাবুলের মতো করেই*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "signboard",
+     "sign:বাবুল টেইলার্স",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tutul",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "২:১০",
+     "label": "রাত দুইটা, সেলাই চলছে"
+    }
+   }
+  },
+  {
+   "say": "সকাল সাতটা। তেতাল্লিশটা পাঞ্জাবি ভাঁজ করা। প্রতিটার ট্যাগে লেখা— *বাবুল টেইলার্স*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "ঈদের সকাল, সাতটা",
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tutul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "ওস্তাদ, নিজের নাম দিলেন না কেন? *আমাগো কাজ*!",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tutul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "কাস্টমার তো বাবুলরে বিশ্বাস কইরা দিছিল। বিশ্বাসটা *বাবুলেরই থাকুক*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kalam": "talk"
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "কালাম ভাই, কাস্টমাররা ফোন দিয়া কইতেছে, এইবার সেলাই *আরও সুন্দর* হইছে!",
+   "tone": "tearful",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "ঈদের দুপুর, মিটফোর্ড",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "kalam",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "babul": "phone"
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "তাইলে ঈদের পরে দাম আর কমাইস না। *সেলাই* দেখাস।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "ভাই, বারো বছর আপনারে শত্রু ভাবছি। আজকে বুঝলাম, *সামনের দোকানটাই* আমার আপন।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "babul": "phone"
+    }
+   }
+  },
+  {
+   "say": "কালাম ওস্তাদ কিছু বললেন না। শুধু বাবুলের হাতে দিলেন এক বাটি *সেমাই*, নিজের বাসার।",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের রোজার ঈদে লক্ষ্মীবাজারের গলিতে একটা জেনারেটর। দুই দোকানে একটাই *তার*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "প্রতিযোগিতা ব্যবসার নিয়ম… *বিপদের রাতের নিয়ম  আলাদা*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "প্রতিযোগিতা ব্যবসার নিয়ম…",
+    "line2": "বিপদের রাতের নিয়ম\nআলাদা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চাঁদরাতে প্রতিদ্বন্দ্বী দর্জি হাসপাতালে, ৪৩টা পাঞ্জাবি বাকি… সামনের দোকানের ওস্তাদ যা করলেন 🧵",
+  "description": "পুরান ঢাকার এক গলিতে মুখোমুখি দুই দর্জির দোকান— কালাম টেইলার্স আর বাবুল টেইলার্স। বারো বছর দামের যুদ্ধ। চাঁদরাতে বাবুলের প্রেশার উঠে হাসপাতালে, তেতাল্লিশটা পাঞ্জাবি বাকি। কালামের কারিগর বলল— ভালো হইছে। কালাম ওস্তাদ উঠে দাঁড়ালেন…",
+  "tags": [
+   "দর্জির গল্প",
+   "চাঁদরাত",
+   "ঈদের গল্প",
+   "পুরান ঢাকা",
+   "প্রতিবেশী",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বারো বছরের প্রতিদ্বন্দ্বীর জন্য এক রাত না ঘুমিয়ে ছিলেন কালাম ওস্তাদ। 🧵\nতোমার কোনো প্রতিযোগী বিপদে পড়লে তুমি কী করতে? 👇 #চাঁদরাত #দর্জি"
+ },
+ "thumbnail": {
+  "text": "৪৩ পাঞ্জাবি বাকি",
+  "sub": "চাঁদরাত"
+ }
+}

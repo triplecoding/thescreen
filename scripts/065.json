@@ -1,0 +1,472 @@
+{
+ "id": "065",
+ "status": "ready",
+ "title_bn": "মালেকের পুরোনো রসিদ",
+ "theme": "struggle",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "All animals are equal, but some are more equal",
+  "title_bn": "ক্ষমতা পেলে মানুষ বদলায়"
+ },
+ "cast": {
+  "malek": {
+   "name": "মালেক মহাজন",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "jobbar": {
+   "name": "জব্বার চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "raju": {
+   "name": "রাজু",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কামরাঙ্গীরচরের এক গ্যারেজে বিয়াল্লিশটা রিকশা। সকালে নোটিশ— কাল থেকে রোজের জমা একশো না, *দেড়শো*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কামরাঙ্গীরচর, রিকশার গ্যারেজ",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "raju",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রোজের জমা",
+       "from": "১০০",
+       "value": "১৫০"
+      },
+      {
+       "label": "গ্যারেজে রিকশা",
+       "value": "৪২টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "মহাজন, দিনে কামাই সাতশো, তার উপর পঞ্চাশ বাড়াইলেন? *বাচ্চা খাইবো কী*?",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    },
+    "moods": {
+     "raju": "angry"
+    },
+    "arms": {
+     "raju": "point"
+    }
+   }
+  },
+  {
+   "say": "মালেক মহাজন এখন সাদা পাঞ্জাবি পরেন, হাতে দামি মোবাইল। গ্যারেজের সামনে নিজের *প্রাইভেট কার*।",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "না পারলে রিকশা জমা দিয়া যা। লাইনে *বিশজন* দাঁড়াইয়া আছে।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "malek": "cross"
+    }
+   }
+  },
+  {
+   "say": "সবাই চুপ। কারণ কথাটা সত্য। আর সবচেয়ে কষ্টের কথা— মালেক নিজেও একদিন *এই লাইনে* দাঁড়াতেন।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাতে গ্যারেজের কোণে বসে রাজু হিসাব করছিল। বাসা ভাড়া, ছেলের স্কুল, মায়ের ওষুধ। *মেলে না*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত, গ্যারেজের কোণে",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "raju",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "jobbar",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শ্রমিকরা যা যা ভাবল",
+   "card": {
+    "title": "সব রাস্তা বন্ধ",
+    "items": [
+     {
+      "t": "ধর্মঘট— না খেয়ে থাকবে কে",
+      "mark": "x"
+     },
+     {
+      "t": "অন্য গ্যারেজ— সেখানেও দেড়শো",
+      "mark": "x"
+     },
+     {
+      "t": "ঝগড়া— রিকশা কেড়ে নেবে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "jobbar",
+   "say": "রাজু, ঝগড়া কইরা লাভ নাই। মালেকরে আমি *চিনি*। ওরে খালি একটা জিনিস মনে করাইতে হইবো।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jobbar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jobbar": "talk"
+    }
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "কী জিনিস, চাচা? উনি তো এখন কারও কথা *শোনেন না*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    },
+    "arms": {
+     "raju": "talk"
+    }
+   }
+  },
+  {
+   "voice": "jobbar",
+   "say": "কথা শোনে না, কিন্তু *কাগজ* দেখে। কাল সকালে দেখিস।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jobbar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jobbar": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে জমা দিতে এসে সত্তর বছরের জব্বার চাচা টেবিলে রাখলেন একটা হলুদ হয়ে যাওয়া *কাগজ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরের দিন, গ্যারেজের অফিস",
+    "props": [
+     "cashbox",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jobbar",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "এইটা… এইটা তো আমার নাম। *সতেরো নম্বর*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "জমার রসিদ, ২০০৯",
+     "lines": [
+      "নাম: মালেক, রিকশা নং ১৭",
+      "জমা: ৬০ টাকা",
+      "বাকি: ২ দিনের"
+     ]
+    },
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    },
+    "moods": {
+     "malek": "surprised"
+    },
+    "arms": {
+     "malek": "down"
+    }
+   }
+  },
+  {
+   "voice": "jobbar",
+   "say": "হ। তুই তখন জমা দিতে না পাইরা কানছিলি। আমি *দুই দিনের টাকা* দিছিলাম, মনে আছে?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "jobbar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jobbar": "point"
+    }
+   }
+  },
+  {
+   "say": "মালেক কাগজটা হাতে নিলেন। সতেরো বছর আগের একটা বিকেল ফিরে এল। বৃষ্টি, জ্বর, আর জমার টাকার জন্য *কান্না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "চাচা, আমি তো ভুলেই গেছিলাম আমি *কোথা থেকে* আসছি।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "malek": "face"
+    }
+   }
+  },
+  {
+   "voice": "jobbar",
+   "say": "মালিক হওয়া দোষ না, বাবা। খালি *রসিদের* কথা ভুলিস না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jobbar",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "নোটিশ বাতিল। জমা একশোই। আর যে মাসে ঈদ, সেই মাসে *তিন দিন জমা মাফ*।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "সেদিন দুপুর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "raju",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "jobbar",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "malek": "talk"
+    }
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "মহাজন… সত্যি? *লিইখা দিবেন*?",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    },
+    "moods": {
+     "raju": "surprised"
+    },
+    "arms": {
+     "raju": "down"
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "লিইখা দিমু। রসিদ ছাড়া এই গ্যারেজে আর *কিছু হয় না*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    },
+    "arms": {
+     "malek": "point"
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে গ্যারেজে চা এল সবার জন্য। মালেক নিজের হাতে কাপ দিলেন, *জব্বার চাচাকে আগে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রোজের জমা",
+       "value": "১০০"
+      },
+      {
+       "label": "ঈদের মাসে মাফ",
+       "value": "৩ দিন"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "গ্যারেজের অফিসের দেয়ালে এখন ফ্রেমে বাঁধানো একটা হলুদ কাগজ— *রিকশা নং ১৭, মালেক*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "চেয়ার বদলালে মানুষ বদলায়… *রসিদ রাখলে  মানুষ থাকে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "চেয়ার বদলালে মানুষ বদলায়…",
+    "line2": "রসিদ রাখলে\nমানুষ থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নিজে রিকশা চালাতেন, মালিক হয়ে জমা বাড়ালেন ১৫০… তারপর জব্বার চাচা দেখালেন একটা পুরোনো রসিদ 🛺",
+  "description": "কামরাঙ্গীরচরের গ্যারেজ মালিক মালেক একসময় নিজেই রিকশা চালাতেন। আজ তিনি জমা বাড়ালেন একশো থেকে দেড়শো। প্রতিবাদ করলে রিকশা নাই। সবাই চুপ। শুধু সত্তর বছরের জব্বার চাচা পকেট থেকে বের করলেন একটা হলুদ হয়ে যাওয়া কাগজ…",
+  "tags": [
+   "রিকশাওয়ালার গল্প",
+   "গ্যারেজ",
+   "মালিক শ্রমিক",
+   "ক্ষমতার গল্প",
+   "সংগ্রামের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যে মানুষ একদিন জমার টাকা জোগাড় করতে কাঁদত, মালিক হয়ে সেই কান্না ভুলে গিয়েছিল। একটা রসিদ মনে করিয়ে দিল। 🛺\nক্ষমতা পেয়ে বদলে যাওয়া মানুষ তুমি দেখেছ? 👇 #রিকশা #সংগ্রাম"
+ },
+ "thumbnail": {
+  "text": "জমা ১৫০",
+  "sub": "পুরোনো রসিদ"
+ }
+}

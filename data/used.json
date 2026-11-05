@@ -491,6 +491,54 @@
    "relation": "CNG driver father / daughter / wife",
    "set": "street",
    "hook": "14-year CNG driver fails the licence written test 3 times; ashamed to learn from his class-8 daughter until she makes him her teacher too"
+  },
+  {
+   "id": "063",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Role-playing",
+   "relation": "probashi son / mother / village neighbour",
+   "set": "home",
+   "hook": "Malaysia worker shows mother a borrowed nice room on video calls for 2 years; mother already knows from his voice and asks him to turn the camera"
+  },
+  {
+   "id": "064",
+   "book": "The Psychology of Money",
+   "item": "Man in the Car Paradox",
+   "relation": "daughter / father / mother",
+   "set": "home",
+   "hook": "father plans an 800-guest wedding with 6 lakh debt to beat his cousin; daughter asks what was cooked at the cousin's wedding and what happened to the uncle's land"
+  },
+  {
+   "id": "065",
+   "book": "Animal Farm",
+   "item": "All animals are equal, but some are more equal",
+   "relation": "garage owner who was once a puller / old puller / young puller",
+   "set": "street",
+   "hook": "ex-rickshaw puller turned garage owner raises daily rent; the oldest puller shows him his own 2009 rent receipt"
+  },
+  {
+   "id": "066",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Envy",
+   "relation": "elder brother / younger brother / mother",
+   "set": "home",
+   "hook": "elder brother left study to run father's shop; younger gets a Japan scholarship; envy and hurt; younger writes brother's name on the certificate copy at dawn"
+  },
+  {
+   "id": "067",
+   "book": "The Art of War",
+   "item": "Know the Terrain",
+   "relation": "coaching teacher / top student / tea-stall father",
+   "set": "shop",
+   "hook": "top student sleeps in class; teacher humiliates him, then finds him studying under a street lamp at his father's tea stall; opens a night study corner"
+  },
+  {
+   "id": "068",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Never compete with someone who has nothing to lose",
+   "relation": "rival tailors / apprentice",
+   "set": "shop",
+   "hook": "two rival tailors facing each other in Old Dhaka; on chandraat one is hospitalised with 43 orders pending; the rival sews all night and delivers under the other's name"
   }
  ]
 }
