@@ -406,6 +406,17 @@
       "playlist": true,
       "facebook": "1848903786303603",
       "scheduled_for": "2026-11-08T17:30:00+06:00"
+    },
+    {
+      "id": "035",
+      "date": "2026-11-08",
+      "slot": "20:00",
+      "duration": 137.29,
+      "title": "রাত দশটায় বিয়ে বাতিল, হাঁড়িতে ২০০ জনের কাচ্চি— তারপর বাপ-ছেলে যা করল 🍛 | The 50th Law",
+      "youtube": "UeXjVij543k",
+      "playlist": true,
+      "facebook": "1749613852776406",
+      "scheduled_for": "2026-11-08T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -431,10 +442,11 @@
     "On War": "PLB7loe6INN4s",
     "The Open Society and Its Enemies": "PLNXUg5iIRpr4",
     "The 33 Strategies of War": "PLB3eGsLlxhY8",
-    "The Dictator's Handbook": "PLP5oE_7fMspM"
+    "The Dictator's Handbook": "PLP5oE_7fMspM",
+    "The 50th Law": "PLHPj7wq0Ennw"
   },
   "last_run": {
-    "at": "2026-11-05T22:34:32.442702+06:00",
+    "at": "2026-11-05T22:41:14.430183+06:00",
     "errors": []
   },
   "queue_remaining": 15,
