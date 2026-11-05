@@ -1,0 +1,448 @@
+{
+ "id": "100",
+ "status": "ready",
+ "title_bn": "আব্বার খাতায় আমার রান",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Hive Switch: shared joy",
+  "title_bn": "একসাথে আনন্দের শক্তি"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "shuvo": {
+   "name": "শুভ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "এক বাসা, দুইজন পুরুষ। রিটায়ার্ড আব্বা আর পঁচিশ বছরের শুভ। দিনে কথা হয় *দুইটা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ঢাকা, রাতের খাবার",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দিনে কথা",
+       "value": "২টা"
+      },
+      {
+       "label": "‘খাইছস?’ আর ‘ঘুমা’",
+       "value": ""
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "খাইছস?",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "হুম।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shuvo": "phone"
+    }
+   }
+  },
+  {
+   "say": "ব্যস। এরপর আব্বা টিভিতে খবর, শুভ মোবাইলে। শুভ ভাবে, আব্বা তার জীবনের *কিছুই জানেন না*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক শুক্রবার আম্মা বললেন আলমারি গোছাতে। নিচের তাকে পুরোনো কাগজের নিচে শুভ পেল একটা *মোটা খাতা*। মলাটে আব্বার হাতের লেখা।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক শুক্রবার",
+    "props": [
+     "almirah",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাতার পর পাতা। শুভর প্রতিটা ম্যাচ, প্রতিটা রান, তারিখসহ। আর ফাইনালের পাশে একটা লাইন— *আমি গাছের পেছন থেকে দেখেছি*।",
+   "pause": 0.9,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আব্বার খাতা",
+     "lines": [
+      "২০১২, স্কুল মাঠ: শুভ ২৩ রান",
+      "২০১৩, আন্তঃস্কুল: শুভ ৪৭, ছক্কা ২টা",
+      "২০১৪, ফাইনাল: শুভ ৬১ — আমি গাছের পেছন থেকে দেখেছি"
+     ]
+    },
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "আম্মা… আব্বা ফাইনালে *আসছিল*? আমি তো ভাবছি আসেনি!",
+   "tone": "tearful",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "almirah",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shuvo": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আসছিল। অফিস থেকে ছুটি নিয়া। কিন্তু মাঠে ঢোকে নাই। কইছিল, আমি সামনে থাকলে পোলাটা *নার্ভাস* হইবো।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "জেলা দলে না যাইতে দিয়া রাতে কানছিল। টাকা আছিল না, তোর স্কুলের খরচ চালাইতে হইতো। তোরে কয় নাই, *কোনোদিন কইবো না*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পনেরো বছর শুভ ভেবেছিল, আব্বা তার খেলা দেখেননি। অথচ আব্বা দেখেছেন সব। *গাছের আড়াল থেকে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে শুভ খাতাটা নিয়ে আব্বার পাশে বসল। টিভির খবর তখনো চলছে। আব্বা খাতা দেখে *চায়ের কাপ নামিয়ে রাখলেন*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা… তোর আম্মা দিছে? *ধুর*, পুরান কাগজ।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "moods": {
+     "abba": "surprised"
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "আব্বা, ফাইনালের একষট্টি রান। আপনি গাছের পিছনে ছিলেন। আমারে *কোনোদিন কইলেন না*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shuvo": "hold"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "কইলে কী হইতো? জেলা দলে তো পাঠাইতে পারি নাই। যে বাপ খেলতে দেয় নাই, তার *তালি দেওয়ার* অধিকার নাই।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "আব্বার গলা ভেঙে গেল। পঁচিশ বছরে শুভ প্রথম দেখল, আব্বার চোখেও *পানি আসে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর শুভ দুইটা টিকিট কাটল। আব্বা জীবনে কোনোদিন স্টেডিয়ামে যাননি। আজ প্রথম, *মিরপুরের গ্যালারিতে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর, মিরপুর স্টেডিয়াম",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shuvo",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "আব্বা, আজকে গাছের পিছনে না। *একদম সামনে* বসবেন। আর তালি দিবেন, জোরে।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shuvo": "point"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ছক্কা! ছক্কা মারছে! শুভ, দেখছস? *লিইখা রাখ*, লিইখা রাখ!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "wave"
+    }
+   }
+  },
+  {
+   "say": "চৌষট্টি বছরের একজন মানুষ গ্যালারিতে লাফাচ্ছেন। পাশে ছেলে, হাতে সেই পুরোনো খাতা। *নতুন পাতায় লিখছে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বার প্রথম স্টেডিয়াম",
+       "value": "৬৪ বছর বয়সে"
+      },
+      {
+       "label": "তালি",
+       "value": "গুনে শেষ করা যায়নি"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আব্বার খাতায় এখন একটা নতুন লাইন, শুভর হাতে লেখা— *‘২০২৬, মিরপুর: আব্বা সামনের সারিতে। আমি পাশে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু বাবা মাঠে আসেন না… *গাছের আড়াল থেকে সব দেখেন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু বাবা মাঠে আসেন না…",
+    "line2": "গাছের আড়াল থেকে\nসব দেখেন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বাবার সাথে কথা হয় শুধু ‘খাইছস?’… আলমারিতে পাওয়া গেল একটা খাতা, তাতে ছেলের স্কুলের প্রতিটা রান 🏏",
+  "description": "পঁচিশ বছরের শুভ আর রিটায়ার্ড আব্বা— এক বাসায় থাকেন, কথা হয় দিনে দুইটা: ‘খাইছস?’ আর ‘ঘুমা’। শুভ ভাবে, আব্বা তার কিছুই জানেন না। একদিন আলমারি গোছাতে গিয়ে পাওয়া গেল একটা পুরোনো খাতা…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "ক্রিকেট",
+   "নীরব ভালোবাসা",
+   "বাবার ডায়েরি",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "স্টেডিয়াম"
+  ]
+ },
+ "facebook": {
+  "caption": "আব্বা কোনোদিন মাঠে আসেননি— শুভ তাই ভাবত। খাতাটা বলল উল্টো কথা। 🏏\nতোমার বাবা তোমার কোন ছোট্ট জিনিস চুপচাপ মনে রেখেছেন বলে তোমার মনে হয়? 👇 #বাবাছেলে #ক্রিকেট"
+ },
+ "thumbnail": {
+  "text": "আব্বার খাতা",
+  "sub": "প্রতিটা রান"
+ }
+}

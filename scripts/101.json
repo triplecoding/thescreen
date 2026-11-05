@@ -1,0 +1,440 @@
+{
+ "id": "101",
+ "status": "ready",
+ "title_bn": "খালি পায়ে আব্বার গোল",
+ "theme": "probashi",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 12",
+  "chapter_bn": "১২ নম্বর অধ্যায়",
+  "title": "The Law of Aimlessness: return to your purpose",
+  "title_bn": "হারানো জায়গায় ফেরা"
+ },
+ "cast": {
+  "mokbul": {
+   "name": "মকবুল",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "rony": {
+   "name": "রনি",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "shilpi": {
+   "name": "শিল্পী",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চৌদ্দ বছর ওমানে। মকবুল ফিরলেন চাঁদপুরে। বাড়ি পাকা, দুইতলা। কিন্তু ঢুকে মনে হলো, তিনি *নিজের বাড়িতে অতিথি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চাঁদপুর, ফেরার প্রথম সপ্তাহ",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mokbul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "rony",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ওমানে",
+       "value": "১৪ বছর"
+      },
+      {
+       "label": "বাড়ি",
+       "value": "পাকা, দুইতলা"
+      },
+      {
+       "label": "ছেলের সাথে কথা",
+       "value": "দিনে ৩ বাক্য",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mokbul",
+   "say": "রনি, স্কুল কেমন চলে, বাবা? কোন *ক্লাসে* যেন?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokbul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "টেন। আব্বা, খাইছেন? আম্মা ডাকতেছে।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rony": "phone"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস টেন। চৌদ্দ বছর আগে যখন গিয়েছিলেন, রনি ছিল এক বছরের। হামাগুড়ি দিত। আজ ছেলেটা তাঁর চেয়ে *লম্বা*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mokbul",
+   "say": "শিল্পী, পোলাটা আমারে চিনে না। টাকা চিনে, *আব্বারে না*।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mokbul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shilpi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "mokbul": "down"
+    }
+   }
+  },
+  {
+   "voice": "shilpi",
+   "say": "চিনবো কেমনে? চৌদ্দ বছর ও আপনারে দেখছে ফোনের স্ক্রিনে। আপনার *গলা* চিনে, আপনারে না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shilpi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shilpi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shilpi",
+   "say": "ও রোজ বিকালে স্কুল মাঠে ফুটবল খেলে। আপনিও তো খেলতেন, *ইউনিয়ন দলে*, ভুইলা গেছেন?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shilpi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মকবুল ভুলে যাননি। উনিশশো নিরানব্বই। ইউনিয়নের ফাইনাল। খালি পায়ে *তিন গোল*। তারপর সংসার, ঋণ, আর ওমানের ভিসা।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন বিকেলে মকবুল গেলেন স্কুলের মাঠে। ছেলেরা খেলছে। তিনি এক কোণে দাঁড়িয়ে দেখলেন। তারপর স্যান্ডেল খুলে রাখলেন *পাশে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের বিকেল, স্কুল মাঠ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "mokbul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mokbul",
+   "say": "এক দলে একজন কম মনে হয়। বুড়া মানুষ নিবা? *গোলকিপার* হইলেও চলবো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokbul": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "আব্বা… আপনে? এইখানে? *সবাই দেখতেছে*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rony": "down"
+    }
+   }
+  },
+  {
+   "say": "খেলা দুই-দুই। শেষ পাঁচ মিনিট। বল এল মকবুলের পায়ে। পঞ্চাশ বছরের পা, খালি। কিন্তু পায়ের কাছে বল আসতেই শরীরটা মনে করল *উনিশশো নিরানব্বই*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খেলার শেষ পাঁচ মিনিট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "mokbul",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "dust"
+   }
+  },
+  {
+   "say": "তিনজনকে কাটালেন। গোলকিপার এগিয়ে এল। মকবুল বলটা আলতো করে তুলে দিলেন মাথার ওপর দিয়ে। *গোল*।"
+  },
+  {
+   "voice": "rony",
+   "say": "আব্বা! এইটা কী ছিল? *চিপ শট*! আপনে… আপনে খেলতে পারেন?",
+   "tone": "excited",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই বিকেল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "wave"
+     },
+     {
+      "id": "mokbul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rony": "wave"
+    }
+   }
+  },
+  {
+   "voice": "mokbul",
+   "say": "ইউনিয়ন ফাইনালে তিন গোল দিছিলাম। তোর আম্মারে জিগাইস। ওই খেলা দেইখাই তো *বিয়াতে রাজি হইছিল*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokbul": "talk"
+    }
+   }
+  },
+  {
+   "say": "রনির বন্ধুরা ঘিরে ধরল। চাচা, আবার! চাচা, শেখান! আর রনি দাঁড়িয়ে রইল, মুখে একটা অচেনা গর্ব। *আমার আব্বা*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "আব্বা, ওমানে খেলতেন? ওইখানে মাঠ আছে? কাল সকালে আমারে *ওই শটটা* শিখাইবেন?",
+   "tone": "curious",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mokbul",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rony",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rony": "talk"
+    }
+   }
+  },
+  {
+   "voice": "mokbul",
+   "say": "শিখামু। আর তুই আমারে শিখাবি, ওই নতুন মোবাইলে *ভিডিও কেমনে* করে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mokbul",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mokbul": "hug"
+    }
+   }
+  },
+  {
+   "say": "স্কুল মাঠের বিকেলের খেলায় এখন একজন নিয়মিত খেলোয়াড় আছেন, বয়স পঞ্চাশ। সবাই ডাকে— *‘রনির আব্বা, দশ নম্বর।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "টাকা পাঠালে সংসার চলে… *পাশে থাকলে চেনা হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "টাকা পাঠালে সংসার চলে…",
+    "line2": "পাশে থাকলে\nচেনা হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৪ বছর ওমানে, ফিরে দেখেন নিজের বাড়িতে তিনি অতিথি… ছেলের ফুটবল মাঠে খালি পায়ে নামলেন আব্বা ⚽",
+  "description": "চৌদ্দ বছর ওমানে কাটিয়ে মকবুল ফিরলেন চাঁদপুরে। বাড়ি পাকা হয়েছে, ছেলে-মেয়ে বড় হয়েছে, কিন্তু সবাই তাঁকে ডাকে অতিথির মতো ‘আব্বা, খাইছেন?’। পনেরো বছরের ছেলে রনি কথাই বলে না। এক বিকেলে মকবুল গেলেন স্কুলের মাঠে…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "ওমান প্রবাসী",
+   "বাবা ছেলের গল্প",
+   "ফুটবল",
+   "দেশে ফেরা",
+   "bangla golpo",
+   "probashi golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চৌদ্দ বছর টাকা পাঠিয়েছিলেন। ফিরে দেখলেন ছেলে তাঁকে চেনে না। চিনল একটা খালি পায়ের গোলে। ⚽\nপ্রবাস থেকে ফেরা মানুষটার সাথে তোমার দূরত্ব কীভাবে কমেছিল? 👇 #প্রবাসী #বাবাছেলে"
+ },
+ "thumbnail": {
+  "text": "নিজের বাড়িতে অতিথি",
+  "sub": "১৪ বছর পর"
+ }
+}

@@ -779,6 +779,54 @@
    "relation": "new teacher / backbencher / front-bench parent",
    "set": "street",
    "hook": "teacher rotates seats weekly despite parents' protest; the 'failing' backbencher answers from the front bench—he had a hearing problem nobody noticed"
+  },
+  {
+   "id": "099",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Know how to show gratitude",
+   "relation": "elder sister who raised her brothers / younger brother / aunt",
+   "set": "home",
+   "hook": "at his gaye holud relatives say the unmarried elder sister who raised him is inauspicious; he makes her apply the first turmeric and seats her in their mother's chair"
+  },
+  {
+   "id": "100",
+   "book": "The Righteous Mind",
+   "item": "The Hive Switch: shared joy",
+   "relation": "retired father / son / mother",
+   "set": "home",
+   "hook": "silent father and son; son finds a notebook where the father recorded every run he scored in school cricket from behind the fence; son takes him to his first stadium match"
+  },
+  {
+   "id": "101",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Aimlessness: return to your purpose",
+   "relation": "returned migrant father / teenage son / wife",
+   "set": "home",
+   "hook": "after 14 years in Oman, the father feels like a guest at home; his son ignores him until the father, once a village striker, joins the boys' evening football barefoot and scores"
+  },
+  {
+   "id": "102",
+   "book": "Mastery",
+   "item": "The Master: the craft that dignifies",
+   "relation": "footpath cobbler / job candidate / later the candidate's colleague",
+   "set": "street",
+   "hook": "cobbler mends a broke candidate's sole for free before an interview and tells him to walk with his head up; months later he returns every Friday and the office adopts the cobbler"
+  },
+  {
+   "id": "103",
+   "book": "The Wealth of Nations",
+   "item": "Of the Origin and Use of Money: trust in fair weights",
+   "relation": "honest grocer / son / retired teacher customer",
+   "set": "shop",
+   "hook": "neighbouring stalls cheat 50 g per kg and undercut prices; grocer refuses; a retired teacher checks shops with her own small scale and posts a fair-weight list in the neighbourhood group"
+  },
+  {
+   "id": "104",
+   "book": "The Dictator's Handbook",
+   "item": "When leaders don't deliver, the coalition must",
+   "relation": "schoolgirl / retired electrician / mother",
+   "set": "street",
+   "hook": "a lane without streetlights for 4 years scares girls returning from coaching; a schoolgirl and a retired electrician collect 20 taka per house and install six LED lamps"
   }
  ]
 }

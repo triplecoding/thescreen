@@ -1,0 +1,451 @@
+{
+ "id": "104",
+ "status": "ready",
+ "title_bn": "অন্ধকার গলির ছয়টা বাতি",
+ "theme": "community",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "When leaders don't deliver, the coalition must",
+  "title_bn": "নিজেরাই নিজের আলো"
+ },
+ "cast": {
+  "tisha": {
+   "name": "তিশা",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "kashem": {
+   "name": "কাশেম মিস্ত্রি",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "ammu": {
+   "name": "আম্মু",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "যশোরের এক গলি। চার বছর ধরে রাস্তায় একটাও বাতি নেই। সন্ধ্যা সাতটায় কোচিং শেষে তিশা ফেরে *মোবাইলের টর্চ* জ্বেলে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "যশোর, শংকরপুরের গলি, সন্ধ্যা ৭টা",
+    "chars": [
+     {
+      "id": "tisha",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গলিতে বাতি নাই",
+       "value": "৪ বছর"
+      },
+      {
+       "label": "আবেদন",
+       "value": "৯ বার"
+      },
+      {
+       "label": "উত্তর",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আর সে একা না। এই গলির এগারোটা মেয়ে প্রতিদিন একই সময়ে ফেরে। কেউ দৌড়ায়, কেউ বাবাকে ফোন দিয়ে *লাইনে রাখে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tisha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "কাল থেকে সন্ধ্যার কোচিং বাদ। ভাইয়া গিয়া *আনতে* না পারলে যাবি না।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তিশাদের বাসা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "tisha",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "ammu": "worried"
+    },
+    "arms": {
+     "ammu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tisha",
+   "say": "আম্মু, এসএসসি তিন মাস পর! গলিতে বাতি নাই বইলা *আমার পড়া* বন্ধ?",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "tisha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tisha": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চার বছরে মহল্লার চেষ্টা",
+   "card": {
+    "title": "সব আবেদন কাগজেই",
+    "items": [
+     {
+      "t": "নয়টা দরখাস্ত",
+      "mark": "x"
+     },
+     {
+      "t": "দুইবার সই সংগ্রহ",
+      "mark": "x"
+     },
+     {
+      "t": "একবার ‘কাজ হবে’— তারপর নীরবতা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরের সন্ধ্যায় তিশা গেল কাশেম চাচার বাসায়। রিটায়ার্ড ইলেকট্রিশিয়ান, চল্লিশ বছর *খুঁটিতে উঠেছেন*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "পরের সন্ধ্যা, কাশেম চাচার বারান্দা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tisha",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tisha",
+   "say": "চাচা, একটা হিসাব করছি। গলিতে ছয়টা খুঁটি আছে, খালি বাতি নাই। একটা এলইডি বাতি কত *লাগে*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "tisha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tisha": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "ভালো এলইডি, তার, টাইমার সুইচ… ছয়টায় ধর *নয় হাজার*। আর মিস্ত্রি ফ্রি, আমি *নিজে লাগামু*।",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "moods": {
+     "kashem": "thinking"
+    },
+    "arms": {
+     "kashem": "hold"
+    }
+   }
+  },
+  {
+   "voice": "tisha",
+   "say": "গলিতে আটচল্লিশটা বাসা। প্রত্যেকে মাসে বিশ টাকা দিলে এক বছরে *এগারো হাজার পাঁচশো*। বিলসহ চলবো!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tisha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tisha": "point"
+    }
+   }
+  },
+  {
+   "say": "কাশেম চাচা চা নামিয়ে রাখলেন। চার বছর সবাই অপেক্ষা করেছে কেউ এসে বাতি দেবে। এই মেয়েটা *অংক করে* এসেছে।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ দরজায় দরজায়। আম্মুও সাথে। বিয়াল্লিশটা বাসা রাজি। ছয়টা পরে জানাবে। প্রথম মাসের টাকা উঠল *এক দিনেই*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক সপ্তাহ, দরজায় দরজায়",
+    "chars": [
+     {
+      "id": "tisha",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "গলির গ্রুপ",
+     "msgs": [
+      {
+       "who": "তিশা",
+       "t": "বিশ টাকায় ছয়টা বাতি। কে কে আছেন?"
+      },
+      {
+       "who": "৪২টা বাসা",
+       "t": "আছি"
+      },
+      {
+       "who": "৬টা বাসা",
+       "t": "পরে জানাব"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার সন্ধ্যা ছয়টা। সত্তর বছরের কাশেম চাচা মই বেয়ে উঠলেন খুঁটিতে। নিচে পুরো গলি দাঁড়িয়ে। কেউ মই ধরে আছে, কেউ *টর্চ*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "শুক্রবার, সন্ধ্যা ছয়টা",
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kashem",
+   "say": "তিশা, সুইচ দে! দেখি তোর *অংক* কাজ করে কিনা!",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kashem": "point"
+    }
+   }
+  },
+  {
+   "say": "সুইচ। একটা বাতি। তারপর দ্বিতীয়টা। তারপর ছয়টাই। চার বছর পর শংকরপুরের গলিতে *আলো*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "একই সন্ধ্যা, আলো জ্বলল",
+    "chars": [
+     {
+      "id": "tisha",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "kashem",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "ammu",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "voice": "tisha",
+   "say": "আম্মু, দেখো! কাল থেকে কোচিং *বাদ না*!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tisha",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tisha": "wave"
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর ওয়ার্ড অফিস থেকে লোক এল। গলিটা দেখে অবাক। পরের মাসে পাশের দুই গলিতেও বাতি বসল, *এবার অফিসের খরচে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খরচ",
+       "value": "৯,২০০ টাকা"
+      },
+      {
+       "label": "বাসাপ্রতি",
+       "value": "মাসে ২০ টাকা"
+      },
+      {
+       "label": "সন্ধ্যার পর হাঁটা মেয়েরা",
+       "value": "১১ জন, ভয়=০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "গলির প্রথম খুঁটিতে এখন একটা ছোট টিনের প্লেট— *‘আটচল্লিশ বাড়ির আলো। হিসাব: তিশা। মিস্ত্রি: কাশেম চাচা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অপেক্ষা করলে অন্ধকার বাড়ে… *হাত মেলালে আলো আসে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অপেক্ষা করলে অন্ধকার বাড়ে…",
+    "line2": "হাত মেলালে\nআলো আসে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চার বছর গলিতে একটাও বাতি নেই, মেয়েরা ফেরে টর্চ জ্বেলে… তারপর তিশার একটা হিসাব 💡",
+  "description": "যশোরের এক গলিতে চার বছর ধরে রাস্তার বাতি নেই। আবেদন, স্বাক্ষর, অপেক্ষা— কিছুই হয়নি। সন্ধ্যার পর কোচিং থেকে ফেরা মেয়েরা মোবাইলের টর্চ জ্বেলে দৌড়ে হাঁটে। ক্লাস টেনের তিশা ঠিক করল, অপেক্ষা না, হিসাব…",
+  "tags": [
+   "পাড়ার গল্প",
+   "রাস্তার বাতি",
+   "মেয়েদের নিরাপত্তা",
+   "যশোর",
+   "প্রতিবেশী",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চার বছর আবেদনে আলো আসেনি। আটচল্লিশ বাড়ির বিশ টাকায় এল এক রাতেই। 💡\nতোমার এলাকার কোন সমস্যা সবাই মিলে নিজেরাই সমাধান করেছিলে? 👇 #পাড়া #একতা"
+ },
+ "thumbnail": {
+  "text": "৪ বছর অন্ধকার",
+  "sub": "৬টা বাতি"
+ }
+}

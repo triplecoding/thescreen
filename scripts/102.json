@@ -1,0 +1,453 @@
+{
+ "id": "102",
+ "status": "ready",
+ "title_bn": "ফুটপাতের জুতা পালিশ",
+ "theme": "struggle",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Master: the craft that dignifies",
+  "title_bn": "কাজের মর্যাদা"
+ },
+ "cast": {
+  "shombhu": {
+   "name": "শম্ভু দা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "farhan": {
+   "name": "ফারহান",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "sumi": {
+   "name": "সুমি",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ধানমন্ডি সাতাশের ফুটপাত। একটা ছাতা, একটা কাঠের বাক্স, আর চল্লিশ বছর ধরে *শম্ভু দা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ধানমন্ডি ২৭, সকাল ৯টা",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shombhu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "farhan",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শম্ভু দা ফুটপাতে",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "সেলাই",
+       "value": "৫০ টাকা"
+      },
+      {
+       "label": "পালিশ",
+       "value": "৩০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "farhan",
+   "say": "দাদা, আধা ঘণ্টা পর ইন্টারভিউ। জুতার তলা খুইলা গেছে। পকেটে… *বিশ টাকা* আছে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    },
+    "moods": {
+     "farhan": "worried"
+    },
+    "arms": {
+     "farhan": "down"
+    }
+   }
+  },
+  {
+   "say": "ফারহান। মাস্টার্স পাস, দুই বছর বেকার। আজ তার সতেরো নম্বর ইন্টারভিউ। আর জুতাটা বড় ভাইয়ের, *দুই সাইজ বড়*।",
+   "scene": {
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ফারহানের দুই বছর",
+   "card": {
+    "title": "সতেরোটা ইন্টারভিউয়ের আগে",
+    "items": [
+     {
+      "t": "ষোলোবার ‘আমরা জানাব’",
+      "mark": "x"
+     },
+     {
+      "t": "প্রতিবার মাথা নিচু করে ঢোকা",
+      "mark": "x"
+     },
+     {
+      "t": "আজ আবার— খোলা তলা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "shombhu",
+   "say": "বসো। জুতা খোলো। টাকার কথা *পরে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shombhu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shombhu": "hold"
+    }
+   }
+  },
+  {
+   "say": "পনেরো মিনিট। শম্ভু দা সেলাই করলেন। তারপর বিনা কথায় পালিশ। জুতাটা চকচক করছে, *নতুনের মতো*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পনেরো মিনিট",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shombhu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "farhan",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shombhu",
+   "say": "ইন্টারভিউয়ে কী দেখে জানো? জুতা না। মাথা দেখে। *উঁচা* নাকি নিচা।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shombhu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shombhu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "farhan",
+   "say": "দাদা, ষোলোবার ফেল করছি। মাথা আর *উঁচা থাকে না*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "farhan": "down"
+    }
+   }
+  },
+  {
+   "voice": "shombhu",
+   "say": "আমার বাপও মুচি আছিল। কইতো, শম্ভু, পায়ের কাছে বসলেই মানুষ ছোট হয় না। *ছোট হয় মন ছোট করলে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shombhu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shombhu": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shombhu",
+   "say": "চল্লিশ বছর মানুষের পায়ের দিকে চাইয়া কাজ করি। তবু মাথা নিচা করি নাই। তুমি তো *মাস্টার্স পাস*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shombhu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shombhu": "point"
+    }
+   }
+  },
+  {
+   "say": "ফারহান বিশ টাকা বাড়িয়ে দিল। শম্ভু দা নিলেন না। শুধু বললেন— *চাকরি হইলে পালিশ করাইতে আইসো*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সতেরো নম্বর ইন্টারভিউ। ফারহান ঢুকল সোজা হয়ে। চেয়ারে বসল পিঠ খাড়া করে। প্রথমবার উত্তর দিল *চোখে চোখ রেখে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ইন্টারভিউ বোর্ড",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "farhan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "farhan",
+   "say": "দাদা, পালিশ করাইতে আইছি। *চাকরি হইছে*!",
+   "tone": "playfully",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর, শুক্রবার",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "shombhu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "farhan",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "farhan": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shombhu",
+   "say": "আরে বাবা! কোন কোম্পানি? মিষ্টি কই? আজকে পালিশ *ডাবল* দাম!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shombhu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shombhu": "wave"
+    }
+   }
+  },
+  {
+   "say": "সেদিন ফারহান দিল একশো টাকা। শম্ভু দা ত্রিশ রাখলেন। বাকিটা ফেরত দিলেন। *নিয়ম তো নিয়ম*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "farhan",
+   "say": "দাদা, ইন্টারভিউয়ে জিগাইছিল, আপনার সবচেয়ে বড় শিক্ষক কে। আমি *আপনার নাম* কইছি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "farhan": "talk"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর প্রতি শুক্রবার ফারহান আসে। একা না। সাথে অফিসের তিন-চারজন, *জুতা হাতে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "shombhu",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "farhan",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "ফারহান ভাই, অফিসের পাশে এত দোকান থাকতে এইখানে কেন?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sumi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "farhan",
+   "say": "সুমি, এই মানুষটা আমার প্রথম *ইন্টারভিউ ট্রেইনার*। ফি নেন নাই, খালি জুতা পালিশ নেন।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "farhan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "farhan": "point"
+    }
+   }
+  },
+  {
+   "say": "শম্ভু দার ফুটপাতে এখন একটা নতুন ছাতা। নীল রঙের। তার কাপড়ে ছাপা ছোট্ট একটা লেখা— *‘মাথা উঁচা রাখো। জুতা আমি দেখব।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষ জুতা দেখে বিচার করে… *আসল মাপ মাথার উচ্চতায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষ জুতা দেখে বিচার করে…",
+    "line2": "আসল মাপ\nমাথার উচ্চতায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ইন্টারভিউয়ের আধা ঘণ্টা আগে জুতার তলা খুলে গেল… ফুটপাতের মুচি শম্ভু দা টাকা নিলেন না 👞",
+  "description": "ধানমন্ডির ফুটপাতে চল্লিশ বছর জুতা সেলাই করেন শম্ভু দা। এক সকালে হাঁপাতে হাঁপাতে এল ফারহান— ইন্টারভিউ আধা ঘণ্টা পর, জুতার তলা খুলে গেছে, পকেটে বিশ টাকা। শম্ভু দা জুতাটা নিলেন, আর বললেন একটা কথা…",
+  "tags": [
+   "সংগ্রামের গল্প",
+   "মুচি",
+   "চাকরির ইন্টারভিউ",
+   "সম্মান",
+   "ধানমন্ডি",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ইন্টারভিউয়ের আগে একজন মুচি সেলাই করেছিলেন একটা জুতা, আর একটা ভেঙে পড়া আত্মবিশ্বাস। 👞\nতোমার কঠিন দিনে কোন অচেনা মানুষ পাশে দাঁড়িয়েছিল? 👇 #সম্মান #সংগ্রাম"
+ },
+ "thumbnail": {
+  "text": "খোলা তলা",
+  "sub": "ইন্টারভিউ ৩০ মিনিট পর"
+ }
+}

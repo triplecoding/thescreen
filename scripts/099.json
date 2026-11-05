@@ -1,0 +1,430 @@
+{
+ "id": "099",
+ "status": "ready",
+ "title_bn": "মায়ের চেয়ারে বড় আপা",
+ "theme": "siblings",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Know how to show gratitude",
+  "title_bn": "কৃতজ্ঞতা দেখানোর সাহস"
+ },
+ "cast": {
+  "rumi": {
+   "name": "রুমি আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "tuhin": {
+   "name": "তুহিন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2C14E",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "chachi": {
+   "name": "চাচি",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নরসিংদী, দুই হাজার চার। মা মারা গেলেন। রুমির বয়স ষোলো। ঘরে দুই ভাই, নয় আর ছয়। পরদিন সকালে চুলায় ভাত বসাল *রুমি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নরসিংদী, ২০০৪",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রুমির বয়স",
+       "value": "১৬"
+      },
+      {
+       "label": "দুই ভাই",
+       "value": "৯ আর ৬ বছর"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাইশ বছর পর। ছোট ভাই তুহিন ইঞ্জিনিয়ার। আজ তার গায়ে হলুদ। বাড়ি ভর্তি আত্মীয়, *হলুদের গন্ধ*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "বাইশ বছর পর, তুহিনের গায়ে হলুদ",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tuhin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "chachi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "chachi",
+   "say": "তুহিন, একটা কথা। রুমির তো বিয়া হয় নাই। হলুদ দেওয়ার সময় ওরে *সামনে রাখিস না*। মুরুব্বিরা কয়, অশুভ।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "chachi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chachi": "talk"
+    }
+   }
+  },
+  {
+   "say": "তুহিন থমকে গেল। অশুভ। যে মানুষটা তার হাত ধরে প্রথম স্কুলে নিয়ে গিয়েছিল, সেই মানুষটা *অশুভ*?",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পাশের ঘরে রুমি আপা শুনেছেন। কিছু বললেন না। শুধু হলুদের বাটিটা নামিয়ে রাখলেন, আর সরে গেলেন *রান্নাঘরের দিকে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পেছনের ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "থাক। আমি পিছনে থাকি। রান্না দেখি। আমার তো অভ্যাস আছে, *পিছনে থাকার*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rumi": "down"
+    }
+   }
+  },
+  {
+   "say": "মঞ্চে সবাই অপেক্ষা করছে। কে প্রথম হলুদ দেবে? মা নেই, তাই *চাচি* এগিয়ে এলেন। তুহিন হাত তুলে থামাল।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "হলুদের মঞ্চ",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tuhin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "chachi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "চাচি, মাফ করবেন। প্রথম হলুদ দিবে আমার আপা। মা চলে যাওয়ার পর *উনিই আমার মা*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "chachi",
+   "say": "তুহিন! মানুষ কী *বলবো*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "chachi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "chachi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "মানুষ বাইশ বছর আগে কোথায় ছিল, চাচি? যখন আপা ষোলো বছরে *ভাত রান্ধা* শিখল?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "point"
+    }
+   }
+  },
+  {
+   "say": "পুরো বাড়ি চুপ। তুহিন নিজে গেল রান্নাঘরে। আপার হলুদমাখা হাত ধরে নিয়ে এল মঞ্চে, *সবার সামনে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "পাগল… সবাই দেখতেছে। আমার হাত তো *রান্নার হলুদে* মাখা।",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "মঞ্চে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rumi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "তাইলে তো আরও ভালো। বাইশ বছর ওই হাতের রান্নাই খাইছি। এইবার *ওই হাতের হলুদ*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "down"
+    }
+   }
+  },
+  {
+   "say": "রুমি আপা হলুদ ছোঁয়ালেন ভাইয়ের গালে। হাত কাঁপছিল। চোখ দিয়ে পানি পড়ছিল। আর তুহিনের চোখেও, *ছয় বছর বয়সের মতো*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিয়ের দিন মঞ্চে বরের পাশে দুইটা চেয়ার। একটা কনের। আর অন্যটার গায়ে কাগজে লেখা— *‘মা’*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বিয়ের দিন",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tuhin",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rumi",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আপা, বসেন। এই চেয়ার আজকে *আপনার নামে* রিজার্ভ।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuhin": "point"
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "say": "আমি কি তোর বিয়েতে *বর* নাকি?",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rumi": "face"
+    }
+   }
+  },
+  {
+   "say": "সেদিন যে চাচি ‘অশুভ’ বলেছিলেন, তিনিই সবার আগে এসে রুমি আপাকে জড়িয়ে ধরলেন। কিছু বললেন না। *বলার দরকারও ছিল না*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বিয়ের কার্ড (তুহিনের হাতে লেখা নতুন লাইন)",
+     "lines": [
+      "বরের মা: মরহুমা রাবেয়া খাতুন",
+      "‘মায়ের মতো যিনি’: রুমি আক্তার"
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তুহিনের ঘরে এখন একটা ছবি বাঁধানো। হলুদমাখা দুই হাত, একটা ভাইয়ের, একটা বোনের। নিচে লেখা— *‘প্রথম হলুদ, প্রথম মা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সমাজ খোঁজে কে অশুভ… *ভাই জানে কে আসল আশীর্বাদ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সমাজ খোঁজে কে অশুভ…",
+    "line2": "ভাই জানে কে\nআসল আশীর্বাদ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মায়ের পর দুই ভাইকে মানুষ করলেন বড় আপা… ভাইয়ের হলুদে আত্মীয়রা বলল ‘পেছনে রাখো’ 💛",
+  "description": "নরসিংদীর রুমি আপার বয়স তখন ষোলো, মা মারা গেলেন। দুই ছোট ভাইকে মানুষ করতে গিয়ে নিজের বিয়ে আর হলো না। আজ ছোট ভাই তুহিনের গায়ে হলুদ। চাচি কানে কানে বললেন— অবিবাহিত বড় বোনকে সামনে রাখিস না, অশুভ। তুহিন উঠে দাঁড়াল…",
+  "tags": [
+   "বোনের গল্প",
+   "বড় বোন",
+   "ভাই বোনের গল্প",
+   "গায়ে হলুদ",
+   "কুসংস্কার",
+   "bangla golpo",
+   "vai boner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যে বোন মায়ের জায়গা নিয়েছিল, ভাইয়ের বিয়েতে তাঁকে ‘পেছনে’ রাখতে বলেছিল সবাই। তুহিন রাখল মায়ের চেয়ারে। 💛\nতোমার জীবনে কি এমন কোনো বড় ভাই বা বোন আছেন, যিনি মা-বাবার জায়গা নিয়েছিলেন? 👇 #বড়বোন #ভাইবোন"
+ },
+ "thumbnail": {
+  "text": "‘পেছনে রাখো’",
+  "sub": "বড় আপা"
+ }
+}

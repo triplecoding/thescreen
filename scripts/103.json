@@ -1,0 +1,415 @@
+{
+ "id": "103",
+ "status": "ready",
+ "title_bn": "খালাম্মার দাঁড়িপাল্লা",
+ "theme": "honesty",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Of the Origin and Use of Money: trust in fair weights",
+  "title_bn": "ন্যায্য মাপের বাজার"
+ },
+ "cast": {
+  "jamal": {
+   "name": "জামাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  },
+  "shakil": {
+   "name": "শাকিল",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "khalamma": {
+   "name": "রাশিদা খালাম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "মোহাম্মদপুরের টাউন হল বাজার। জামালের চাল-ডালের দোকান, বাইশ বছর। গত তিন মাসে বিক্রি কমেছে *চল্লিশ ভাগ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মোহাম্মদপুর, টাউন হল বাজার",
+    "props": [
+     "signboard",
+     "sign:জামাল স্টোর — চাল ডাল তেল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "shakil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পাশের দোকানে চাল",
+       "value": "কেজি ৬৮ টাকা"
+      },
+      {
+       "label": "জামাল স্টোরে",
+       "value": "কেজি ৭০ টাকা",
+       "red": true
+      },
+      {
+       "label": "জামাল স্টোরের বিক্রি",
+       "value": "৪০% কম",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আব্বা, পাশের দোকান কেজিতে দুই টাকা কম রাখে। মানুষ ওইখানে যায়। আর ওরা কম রাখতে পারে কেন, *জানেন তো*।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "point"
+    }
+   }
+  },
+  {
+   "say": "জামাল জানেন। পাল্লার নিচে চুম্বক। কেজিতে পঞ্চাশ গ্রাম কম। কাস্টমার টের পায় না। দুই টাকা কম দাম দেখে *খুশি মনে* যায়।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আমরাও পাল্লায় একটু… সবাই তো করে, আব্বা। নাইলে দোকান *বন্ধ* করতে হইবো।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "talk"
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "বাইশ বছর এই পাল্লায় কেউ এক গ্রাম কম পায় নাই। দোকান বন্ধ হইলে হোক। *পাল্লা* বদলামু না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jamal": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাসে জামাল স্টোর",
+   "card": {
+    "title": "সৎ থাকার দাম",
+    "items": [
+     {
+      "t": "নিয়মিত কাস্টমার ২২ জন কমল",
+      "mark": "x"
+     },
+     {
+      "t": "ছেলের সাথে রোজ ঝগড়া",
+      "mark": "x"
+     },
+     {
+      "t": "দোকান ভাড়া বাকি পড়ল এক মাস",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক সকালে দোকানে এলেন রাশিদা খালাম্মা। অবসরপ্রাপ্ত অংকের শিক্ষিকা। দুই কেজি চাল নিলেন। তারপর ব্যাগ থেকে বের করলেন একটা *ছোট্ট ডিজিটাল পাল্লা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সকাল",
+    "props": [
+     "signboard",
+     "sign:জামাল স্টোর — চাল ডাল তেল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "khalamma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "jamal",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "khalamma",
+   "say": "কিছু মনে কইরো না, বাবা। অভ্যাস। অংকের মাস্টার তো, *না মেপে* শান্তি পাই না।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "khalamma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "khalamma": "hold"
+    }
+   }
+  },
+  {
+   "say": "দুই হাজার গ্রাম। এক গ্রামও কম না। খালাম্মা ভুরু কুঁচকালেন। তারপর পাশের দোকানের চালটাও মাপলেন। *এক হাজার নয়শো*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খালাম্মার পাল্লায় জামাল স্টোর",
+       "value": "২,০০০ গ্রাম"
+      },
+      {
+       "label": "পাশের দোকান",
+       "value": "১,৯০০ গ্রাম",
+       "red": true
+      }
+     ]
+    },
+    "cam": {
+     "focus": "khalamma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "khalamma",
+   "say": "কেজিতে দুই টাকা কম, কিন্তু পঞ্চাশ গ্রাম কম। মানে আসলে কেজিতে *দেড় টাকা বেশি*। অংকটা কেউ করে না।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "khalamma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "khalamma": "talk"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে খালাম্মা মহল্লার ফেসবুক গ্রুপে একটা পোস্ট দিলেন। কোনো দোকানের নাম খারাপ করে না। শুধু একটা *তালিকা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে, খালাম্মার বাসা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "khalamma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "khalamma",
+   "say": "দুই টাকা কম দেখলে খুশি হইয়েন না। আগে *মাইপা* খুশি হইয়েন।",
+   "tone": "playfully",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "খালাম্মার পোস্ট",
+     "lines": [
+      "আজ নিজে মেপেছি, নিজের পাল্লায়",
+      "জামাল স্টোর— ২ কেজিতে ২,০০০ গ্রাম ✓",
+      "সবাই নিজের ছোট পাল্লা নিয়ে যান, ১৫০ টাকা দাম"
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর। জামাল স্টোরের সামনে লাইন। অনেকের হাতে ছোট্ট পাল্লা। মাপে, হাসে, *আবার আসে*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:জামাল স্টোর — চাল ডাল তেল",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shakil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "আব্বা… সেদিন যদি পাল্লায় চুম্বক লাগাইতাম? আজকে খালাম্মার পোস্টে *আমাগো নামই* থাকত অন্যভাবে।",
+   "tone": "softly",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পোস্ট শেয়ার",
+       "value": "১,২০০ বার"
+      },
+      {
+       "label": "জামাল স্টোরের বিক্রি",
+       "from": "৪০% কম",
+       "value": "৬৫% বেশি"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shakil": "hold"
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "বাইশ বছর ধইরা একটা জিনিসই বেচি, বাবা। চাল না। *বিশ্বাস*। চাল তো সবাই বেচে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jamal": "talk"
+    }
+   }
+  },
+  {
+   "say": "জামাল স্টোরের কাউন্টারে এখন একটা দ্বিতীয় পাল্লা রাখা, কাস্টমারের জন্য। গায়ে লেখা— *‘নিজে মাপুন। আমরা চাই আপনি মাপুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কম মাপের লাভ এক দিনের… *সঠিক মাপের লাভ বাইশ বছরের*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কম মাপের লাভ এক দিনের…",
+    "line2": "সঠিক মাপের লাভ\nবাইশ বছরের।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পাশের দোকান কেজিতে ৫০ গ্রাম কম দেয়, তাই সস্তা… জামাল ভাই বললেন ‘না’, তারপর এক খালাম্মা ⚖️",
+  "description": "মোহাম্মদপুরের টাউন হল বাজারে জামালের চাল-ডালের দোকান। পাশের দোকান কেজিতে পঞ্চাশ গ্রাম কম মাপে, তাই দাম দুই টাকা কম। কাস্টমার চলে যাচ্ছে। ছেলে শাকিল বলল— আব্বা, সবাই করে। জামাল রাজি না। তারপর একদিন এলেন অবসরপ্রাপ্ত শিক্ষিকা রাশিদা খালাম্মা, ব্যাগে একটা ছোট্ট পাল্লা…",
+  "tags": [
+   "সততার গল্প",
+   "বাজারের গল্প",
+   "ওজনে কম",
+   "দোকানদার",
+   "ভোক্তা অধিকার",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "মোহাম্মদপুর"
+  ]
+ },
+ "facebook": {
+  "caption": "দুই টাকা কম দামে পঞ্চাশ গ্রাম কম। জামাল ভাই দাম কমাননি, মাপও না। শেষে জিতল সঠিক মাপ। ⚖️\nবাজারে ওজনে ঠকে গেছ কখনো? কীভাবে বুঝেছিলে? 👇 #সততা #বাজার"
+ },
+ "thumbnail": {
+  "text": "কেজিতে ৫০ গ্রাম কম",
+  "sub": "সঠিক মাপ"
+ }
+}
