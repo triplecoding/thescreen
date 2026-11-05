@@ -1019,6 +1019,54 @@
    "relation": "son / father / mother",
    "set": "home",
    "hook": "son wears his father's 30-year-old shirt to his first interview and finds the father's own first appointment letter as a clerk in the pocket; after getting the job he buys the father a new shirt and keeps the old one"
+  },
+  {
+   "id": "129",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Do favours without humiliating",
+   "relation": "rich boy / poor boy / rich boy's mother",
+   "set": "street",
+   "hook": "a well-off boy swaps tiffin daily with a poor classmate claiming he loves his mother's mash; years later the poor boy learns the rich boy's mother packed both boxes on purpose"
+  },
+  {
+   "id": "130",
+   "book": "The 50th Law",
+   "item": "Turn adversity into strength",
+   "relation": "one-legged bicycle mechanic / customer / apprentice",
+   "set": "street",
+   "hook": "customers pay extra out of pity; he returns the extra; an annoyed customer learns he wants fair pay not charity; he trains a jobless boy"
+  },
+  {
+   "id": "131",
+   "book": "The Righteous Mind",
+   "item": "Groupishness: the moral circle",
+   "relation": "restaurant owner / man who empties the fridge / volunteer",
+   "set": "shop",
+   "hook": "a community fridge is emptied nightly by one man; the owner follows him and finds he feeds six children of a slum; the neighbourhood adds a second fridge"
+  },
+  {
+   "id": "132",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Do not lie, but do not tell every truth",
+   "relation": "matchmaker / niece / niece's mother",
+   "set": "shop",
+   "hook": "a matchmaker who has exaggerated every groom for 30 years nearly sees his own niece married on another matchmaker's lies; he vows to tell only facts and his business grows"
+  },
+  {
+   "id": "133",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking: we like those who treat us with respect",
+   "relation": "hotel receptionist / elderly village couple",
+   "set": "shop",
+   "hook": "staff snigger at a rustic old couple on their first-ever trip to the sea; the receptionist treats them like VIPs and takes them to the sunset; their migrant son's review changes the hotel"
+  },
+  {
+   "id": "134",
+   "book": "Games People Play",
+   "item": "Intimacy beyond games",
+   "relation": "elderly husband / wife / grandson",
+   "set": "home",
+   "hook": "husband forgets their 40th anniversary; wife's silent treatment for 3 days; grandson asks where they first met; husband travels to the same jhalmuri seller's spot near the college and brings a paper cone with a note"
   }
  ]
 }

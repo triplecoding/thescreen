@@ -1,0 +1,391 @@
+{
+ "id": "129",
+ "status": "ready",
+ "title_bn": "টিফিন বাক্সের অদলবদল",
+ "theme": "school",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Do favours without humiliating",
+  "title_bn": "সম্মান রেখে সাহায্য"
+ },
+ "cast": {
+  "ayan": {
+   "name": "আয়ান",
+   "type": "child_boy",
+   "skin": "light",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "kid",
+   "voice": "child_boy"
+  },
+  "robi": {
+   "name": "রবি",
+   "type": "child_boy",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "kid",
+   "voice": "child_boy"
+  },
+  "ayanma": {
+   "name": "আয়ানের আম্মু",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার এক স্কুল, ক্লাস থ্রি। টিফিন পিরিয়ডে আয়ানের বাক্সে স্যান্ডউইচ, ডিম, আপেল। পাশের বেঞ্চের রবির বাক্সে দুইটা রুটি আর *আলু ভর্তা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খুলনা, স্কুলের টিফিন পিরিয়ড",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "ayan",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "robi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আয়ানের টিফিন",
+       "value": "স্যান্ডউইচ, ডিম, আপেল"
+      },
+      {
+       "label": "রবির টিফিন",
+       "value": "২টা রুটি, আলু ভর্তা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রবি বাক্সটা একটু আড়াল করে খায়। ক্লাসের দুই-একজন একবার হেসেছিল। সেই থেকে *আড়াল করেই* খায়।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "robi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "রবি, চল টিফিন বদলাই! তোর আম্মুর ভর্তার *ঘ্রাণ* আসতেছে, আমার আর স্যান্ডউইচ ভাল্লাগে না।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayan": "talk"
+    }
+   }
+  },
+  {
+   "voice": "robi",
+   "say": "সত্যি? তুই রুটি খাবি? আর আমি… *তোর ডিম*?",
+   "scene": {
+    "cam": {
+     "focus": "robi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "robi": "surprised"
+    },
+    "arms": {
+     "robi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "হ! কাল থেকে রোজ। *কাটাকাটি*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayan": "hold"
+    }
+   }
+  },
+  {
+   "say": "সেই থেকে প্রতিদিন। দুইটা বাক্স, দুই দিকে। ক্লাসের কেউ আর হাসে না, কারণ ‘বড়লোকের ছেলে’ নিজে চেয়ে নিয়ে খায় *রুটি আর ভর্তা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আর প্রতিদিন রাতে আয়ানের আম্মু রান্নাঘরে একটা কাজ করতেন। আয়ানের বাক্সে দিতেন ডাবল ডিম, বাড়তি আপেল। কারণ জানতেন, এই বাক্স যাবে *অন্য একটা ছেলের কাছে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আয়ানদের বাসা, রাত",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ayanma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ayanma",
+   "say": "আয়ান, রবিরে কিছু কইস না। ও যেন ভাবে, তুই *ভর্তার জন্য* বদলাস। ছেলেটার মাথা নিচু যেন না হয়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ayanma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayanma": "hold"
+    }
+   }
+  },
+  {
+   "say": "পাঁচ বছর পর, ক্লাস সেভেন। একদিন আয়ান অসুস্থ, স্কুলে এল না। দুপুরে আয়ানের আম্মু নিজে এলেন স্কুলে। হাতে একটা টিফিন বাক্স। *রবির জন্য*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পাঁচ বছর পর, ক্লাস সেভেন",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "robi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "ayan",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ayanma",
+   "say": "রবি, আয়ান আজকে আসে নাই। তোর টিফিনটা নে, বাবা। আর তোর আম্মুর *ভর্তাটা* দে, আয়ান বাসায় খাইবো।",
+   "tone": "gently",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "ayanma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "robi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "ayanma": "hold"
+    }
+   }
+  },
+  {
+   "say": "রবি বাক্সটা খুলল। ডাবল ডিম, দুইটা আপেল, একটা বাড়তি মিষ্টি। আর হঠাৎ সে বুঝল। পাঁচ বছর ধরে এই বাক্স *তার জন্যই* ভরা হতো।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "robi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "robi",
+   "say": "আন্টি… আয়ান তো কোনোদিন ভর্তা খাইতে *চায় নাই*, না? আপনি… পাঁচ বছর…",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "robi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "robi": "down"
+    }
+   }
+  },
+  {
+   "voice": "ayanma",
+   "say": "চাইতো, বাবা। সত্যি চাইতো। তোর আম্মুর ভর্তা আমার ছেলে সত্যিই ভালোবাসে। আমি খালি *বাক্সটা একটু ভারী* করতাম।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ayanma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayanma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "robi",
+   "say": "তুই জানতি? *পাঁচ বছর*?",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সেই বিকেল, আয়ানের ঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "ayan",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "robi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "robi": "down"
+    }
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "প্রথম দিন জানতাম না। আম্মু পরে কইছিল। কিন্তু ভর্তাটা সত্যিই মজা, দোস্ত। এইটা *মিথ্যা না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayan": "hold"
+    }
+   }
+  },
+  {
+   "say": "রবি হাসল, কাঁদতে কাঁদতে। দুইজন বসে আয়ানের বিছানায় রবির আম্মুর ভর্তা আর রুটি খেল। *ভাগ করে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রবির আম্মু এখন প্রতি শুক্রবার একটা আলাদা বাক্সে ভর্তা পাঠান, আয়ানের নামে। বাক্সের ঢাকনায় লেখা— *‘বদলানোর দরকার নাই। এটা আয়ানের।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সাহায্য দিলে কেউ কেউ মাথা নিচু করে… *সম্মান দিয়ে দিলে মাথা উঁচুই থাকে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সাহায্য দিলে কেউ কেউ মাথা নিচু করে…",
+    "line2": "সম্মান দিয়ে দিলে\nমাথা উঁচুই থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ধনী বন্ধু রোজ টিফিন বদলাত গরিব বন্ধুর সাথে… আসল কারণ জানা গেল পাঁচ বছর পর 🍱",
+  "description": "খুলনার এক স্কুলে ক্লাস থ্রির আয়ান রোজ টিফিনে আনে স্যান্ডউইচ, ডিম, ফল। পাশের বেঞ্চের রবি আনে শুধু রুটি আর আলু ভর্তা। একদিন আয়ান বলল, চল টিফিন বদলাই, তোর আম্মুর ভর্তা বেশি মজা। এরপর পাঁচ বছর, প্রতিদিন…",
+  "tags": [
+   "স্কুলের গল্প",
+   "বন্ধুত্ব",
+   "টিফিন",
+   "মায়ের ভালোবাসা",
+   "খুলনা",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "শৈশবের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পাঁচ বছর রোজ টিফিন বদলেছিল দুই বন্ধু। একজনের মা চুপচাপ দুইটা বাক্স ভরতেন— একটা বেশি যত্নে। 🍱\nস্কুলের টিফিনে কার সাথে খাবার ভাগ করে খেতে? 👇 #বন্ধুত্ব #স্কুল"
+ },
+ "thumbnail": {
+  "text": "রোজ টিফিন বদল",
+  "sub": "৫ বছর"
+ }
+}

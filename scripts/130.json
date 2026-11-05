@@ -1,0 +1,434 @@
+{
+ "id": "130",
+ "status": "ready",
+ "title_bn": "এক পায়ের সাইকেল মিস্ত্রি",
+ "theme": "struggle",
+ "source": {
+  "book": "The 50th Law",
+  "author": "Robert Greene & 50 Cent",
+  "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Turn adversity into strength",
+  "title_bn": "বাধাকেই শক্তি বানানো"
+ },
+ "cast": {
+  "kamal": {
+   "name": "কামাল ভাই",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "lady": {
+   "name": "পথচারী আপা",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "sabbir": {
+   "name": "সাব্বির",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "বগুড়ার সাতমাথা। ফুটপাতে একটা সাইকেল সারাইয়ের দোকান। কামাল ভাই, এক পায়ে ক্রাচ, দুই হাতে *রেঞ্চ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বগুড়া, সাতমাথা",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kamal",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকান",
+       "value": "সাতমাথার ফুটপাত"
+      },
+      {
+       "label": "পা",
+       "value": "১টা"
+      },
+      {
+       "label": "দিনে সাইকেল সারাই",
+       "value": "১৮টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সাত বছর আগে একটা ট্রাক। হাসপাতালে তিন মাস। তারপর বাড়িতে দেড় বছর শুয়ে। আর একদিন উঠে বললেন— *হাত তো দুইটাই আছে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lady",
+   "say": "ভাই, চেইন ঠিক করার কত? পঞ্চাশ? এই নেন পাঁচশো। *রাখেন*, আল্লাহ আপনারে ভালো রাখুক।",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একটা দুপুর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "lady",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "kamal",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "lady": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "আপা, পঞ্চাশ টাকা। বাকিটা ফেরত নেন। চেইনের কাজ পঞ্চাশ টাকারই *হইছে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "down"
+    }
+   }
+  },
+  {
+   "voice": "lady",
+   "say": "আরে রাখেন না! আমি তো *দয়া* কইরা দিতেছি। এত দেমাগ কিসের?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "lady",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lady": "talk"
+    }
+   }
+  },
+  {
+   "say": "দয়া। এই শব্দটা কামাল ভাই সাত বছরে শুনেছেন হাজারবার। প্রতিবার মনে হয়, তাঁর রেঞ্চ না, *তাঁর পা* দেখে টাকা দেওয়া হচ্ছে।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "আপা, দেমাগ না। দয়ার টাকা নিলে আমি মিস্ত্রি থাকি না, *ভিক্ষুক* হইয়া যাই। আমি ভিক্ষুক না, আপা।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সাত বছরে কামাল ভাই যা শুনেছেন",
+   "card": {
+    "title": "মানুষের ‘সাহায্য’",
+    "items": [
+     {
+      "t": "‘বেচারা, রাখেন’",
+      "mark": "x"
+     },
+     {
+      "t": "‘পারবেন তো ভাই?’",
+      "mark": "x"
+     },
+     {
+      "t": "‘ক্রাচ নিয়া এত কষ্ট কইরেন না’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আপা থমকে গেলেন। পাঁচশো টাকার নোটটা হাতে। তারপর একটা প্রশ্ন করলেন, যেটা সাত বছরে *কেউ করেনি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "lady",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "kamal",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lady",
+   "say": "তাহলে… আপনারে কীভাবে সাহায্য করা যায়, ভাই? *আসলে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "lady",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lady": "down"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "সাইকেল খারাপ হইলে আমার কাছে আনবেন। পাশের বাড়ির মানুষরে কইবেন, কামালের হাতের কাজ ভালো। *কাজ* দিবেন, আপা। দয়া না।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর কামাল ভাইয়ের দোকানে লাইন। আপা তাঁর অফিসের, পাড়ার, ছেলের স্কুলের সবাইকে বলেছেন— সাইকেল সারাতে হলে *কামাল ভাই*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kamal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দিনে সাইকেল",
+       "from": "১৮",
+       "value": "৩১টা"
+      },
+      {
+       "label": "আপার পাঠানো কাস্টমার",
+       "value": "২৬ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কাজ এত বেড়েছে যে কামাল ভাই একজন সহকারী নিলেন। সাব্বির, পনেরো বছর, বাবা নেই, স্কুল ছেড়ে *বেকার* ঘুরছিল।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "ওস্তাদ, আপনি এক পায়ে এত দ্রুত কাজ করেন কেমনে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "পা দিয়া সাইকেল সারায় না রে, *হাত আর মাথা* দিয়া সারায়। আর তোর তো দুই পা, তুই আমার চেয়ে *দ্বিগুণ* পারবি।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "point"
+    }
+   }
+  },
+  {
+   "voice": "lady",
+   "say": "কামাল ভাই, আমার ছেলের নতুন সাইকেল। প্রথম সার্ভিসিং আপনার কাছে। আর এইবার *ঠিক দামটাই* বলবেন।",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kamal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "lady",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "lady": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "একশো বিশ টাকা, আপা। *এক টাকাও* বেশি না, এক টাকাও কম না।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "hold"
+    }
+   }
+  },
+  {
+   "say": "কামাল ভাইয়ের দোকানের টিনের সাইনবোর্ডে এখন একটা নতুন লাইন, সাব্বিরের রং করা— *‘কাজের দাম নিই। দয়ার দাম নিই না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "করুণা মানুষকে ছোট করে… *কাজ দিলে মানুষ দাঁড়ায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "করুণা মানুষকে ছোট করে…",
+    "line2": "কাজ দিলে\nমানুষ দাঁড়ায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুর্ঘটনায় এক পা হারানো কামাল ভাই সাইকেল সারান, কাস্টমার করুণা করে বেশি টাকা দেয়… তিনি ফেরত দেন 🚲",
+  "description": "বগুড়ার সাতমাথার মোড়ে কামাল ভাইয়ের সাইকেল সারাইয়ের দোকান। সাত বছর আগে দুর্ঘটনায় এক পা হারিয়েছেন, ক্রাচে ভর দিয়ে কাজ করেন। মানুষ এসে বেশি টাকা দেয়, ‘রাখেন ভাই, আল্লাহ দিছে’। কামাল ভাই প্রতিবার ফেরত দেন। একদিন এক আপা রাগ করলেন…",
+  "tags": [
+   "সংগ্রামের গল্প",
+   "প্রতিবন্ধী",
+   "সাইকেল মিস্ত্রি",
+   "সম্মান",
+   "বগুড়া",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মানুষ তাঁকে করুণা দিতে চাইত। কামাল ভাই চাইতেন শুধু কাজের ন্যায্য দাম। 🚲\nকাউকে সাহায্য করতে গিয়ে কখনো বুঝেছ, সে আসলে সম্মান চায়, করুণা না? 👇 #সম্মান #সংগ্রাম"
+ },
+ "thumbnail": {
+  "text": "বেশি টাকা ফেরত",
+  "sub": "এক পা, দুই হাত"
+ }
+}
