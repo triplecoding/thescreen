@@ -1,0 +1,432 @@
+{
+ "id": "211",
+ "status": "ready",
+ "title_bn": "পরীক্ষার খাতা দেখার রাত",
+ "theme": "honesty",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Fairness is a private habit",
+  "title_bn": "নিজের কাছে সৎ"
+ },
+ "cast": {
+  "munir": {
+   "name": "মুনির স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  },
+  "wife": {
+   "name": "স্ত্রী রোকসানা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "neighbor": {
+   "name": "প্রতিবেশী দুলাল সাহেব",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুমিল্লা। রাত। মুনির স্যার পঁচিশ বছর শিক্ষক। টেবিলে এসএসসির তিনশো বিশটা খাতা। প্রতিটা খাতার ওপরে কোডনম্বর, *কোনো নাম নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কুমিল্লা, মুনির স্যারের ঘর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "munir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শিক্ষকতা",
+       "value": "২৫ বছর"
+      },
+      {
+       "label": "এবার দেখার খাতা",
+       "value": "৩২০টা"
+      },
+      {
+       "label": "জমা দেওয়ার শেষ দিন",
+       "value": "৯ দিন পর"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দরজায় কড়া। প্রতিবেশী দুলাল সাহেব। হাতে মিষ্টির প্যাকেট। আর মুখে একটু বেশি *হাসি*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "দরজায় কড়া",
+    "props": [
+     "sofa",
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "neighbor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "munir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "স্যার, ছেলেটার এসএসসি। অংকে একটু দুর্বল। শুনলাম আপনি খাতা দেখতাছেন। এইখানে রোল নম্বর। খালি একটু *নজর রাখবেন*।",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "neighbor": "smile"
+    },
+    "arms": {
+     "neighbor": "hold"
+    }
+   }
+  },
+  {
+   "say": "মুনির স্যার চিরকুটটা দেখলেন। দুলাল সাহেব পনেরো বছরের প্রতিবেশী। ঈদে আসেন, বিপদে আসেন। আর খাতাটা হয়তো *ওই বান্ডিলেই*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "munir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মুনির স্যারের সামনে",
+   "card": {
+    "title": "যা ছিল",
+    "items": [
+     {
+      "t": "পনেরো বছরের সম্পর্ক",
+      "mark": "x"
+     },
+     {
+      "t": "একটা খাতা, কেউ জানবে না",
+      "mark": "x"
+     },
+     {
+      "t": "আর তিনশো উনিশজন অন্য বাচ্চা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "munir",
+   "say": "দুলাল ভাই, মিষ্টিটা নিয়া যান। খাতায় নাম থাকে না, কোড থাকে। আর থাকলেও, আমি যদি আপনার ছেলেরে দুই নম্বর দেই, তিনশো উনিশজনের *দুই নম্বর চুরি* করি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "munir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "munir": "down"
+    }
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "স্যার, পনেরো বছর পাশাপাশি। এইটুকুও *পারবেন না*?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "neighbor": "cross"
+    }
+   }
+  },
+  {
+   "voice": "wife",
+   "say": "উনি তো রাগ কইরা গেলেন। পনেরো বছরের সম্পর্ক। কালকে মুখও *দেখবেন না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দুলাল সাহেব চলে যাওয়ার পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "wife",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "munir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "wife": "worried"
+    },
+    "arms": {
+     "wife": "talk"
+    }
+   }
+  },
+  {
+   "voice": "munir",
+   "say": "জানি, রোকসানা। কিন্তু খাতাটা দেখা শেষ হইলে আমি ওনার ছেলেরে একটা জিনিস দিতে পারি, যেটা *নম্বর না*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "munir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "munir": "hold"
+    }
+   }
+  },
+  {
+   "say": "খাতা জমা দেওয়ার পর মুনির স্যার নিজেই গেলেন দুলাল সাহেবের বাসায়। মিষ্টি ছাড়া। হাতে একটা পুরোনো অংকের বই। আর একটা *প্রস্তাব*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ফলাফলের আগের মাস",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "munir",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "neighbor",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "munir",
+   "say": "দুলাল ভাই, পরীক্ষা তো শেষ। কিন্তু ছেলের সামনে এইচএসসি। প্রতি শুক্রবার আমার কাছে পাঠান। অংক। টাকা লাগবো না। এইবার নম্বরটা *ও নিজে নিবো*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "munir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "munir": "point"
+    }
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "স্যার… আমি আপনারে ঘুষ দিতে আসছিলাম। আর আপনি আমার ছেলেরে *ফ্রি পড়াইবেন*?",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "neighbor": "surprised"
+    },
+    "arms": {
+     "neighbor": "hold"
+    }
+   }
+  },
+  {
+   "voice": "munir",
+   "say": "ঘুষ না, ভাই। আপনি বাপ, ভয় পাইছিলেন। ভয়ের ওষুধ নম্বর না, *প্রস্তুতি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "munir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "munir": "down"
+    }
+   }
+  },
+  {
+   "say": "দুই বছর পর। দুলাল সাহেব আবার এলেন মিষ্টি নিয়ে। এবার হাতে ছেলের এইচএসসির মার্কশিট। অংকে *এ প্লাস*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দুই বছর পর",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "neighbor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "munir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এইচএসসি, অংক",
+       "value": "এ প্লাস"
+      },
+      {
+       "label": "শুক্রবারের ক্লাস",
+       "value": "দুই বছর"
+      },
+      {
+       "label": "দুলাল সাহেবের মিষ্টি",
+       "value": "এবার নেওয়া হলো"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "স্যার, এইবার মিষ্টিটা নেন। এইবার নম্বরটা আমার ছেলের *নিজের*।",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "neighbor": "happy"
+    },
+    "arms": {
+     "neighbor": "hold"
+    }
+   }
+  },
+  {
+   "say": "মুনির স্যারের বাসার শুক্রবারের ক্লাসে এখন সাতজন। সবাই প্রতিবেশীর ছেলেমেয়ে। আর দরজায় একটা কাগজ— *‘নম্বরের জন্য না, অংকের জন্য আসুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "একটা নম্বর দিলে একজন পাস করে… *একটা প্রস্তুতি দিলে মানুষ দাঁড়ায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "একটা নম্বর দিলে একজন পাস করে…",
+    "line2": "একটা প্রস্তুতি দিলে\nমানুষ দাঁড়ায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বোর্ডের খাতা দেখছেন মুনির স্যার, প্রতিবেশী এলেন মিষ্টি নিয়ে, ‘ছেলের রোল নম্বরটা একটু দেখবেন’… 📝",
+  "description": "কুমিল্লার মুনির স্যার পঁচিশ বছর শিক্ষক, এসএসসির খাতা দেখেন। এক সন্ধ্যায় প্রতিবেশী দুলাল সাহেব এলেন মিষ্টির প্যাকেট আর একটা চিরকুট নিয়ে— ছেলের রোল নম্বর। খাতাটা হয়তো স্যারের বান্ডিলেই আছে…",
+  "tags": [
+   "শিক্ষক",
+   "এসএসসি খাতা",
+   "সততা",
+   "কুমিল্লা",
+   "ন্যায্যতা",
+   "bangla golpo",
+   "সততার গল্প",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "প্রতিবেশী এলেন মিষ্টি আর একটা রোল নম্বর নিয়ে। মুনির স্যার মিষ্টিটা নিলেন না, কিন্তু অন্য একটা জিনিস দিলেন। 📝\nসম্পর্কের চাপে কখনো কি ন্যায্যতা ধরে রাখা কঠিন হয়েছে? 👇 #সততা #শিক্ষক"
+ },
+ "thumbnail": {
+  "text": "মিষ্টি আর রোল নম্বর",
+  "sub": "খাতা দেখার রাত"
+ }
+}

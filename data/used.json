@@ -1643,6 +1643,54 @@
    "relation": "young man / neighbourhood auntie / teenager",
    "set": "street",
    "hook": "a young man opens a tiny library-and-carrom room next to the mosque for idle teenagers; one boy becomes its keeper; the neighbourhood donates books"
+  },
+  {
+   "id": "207",
+   "book": "The Psychology of Money",
+   "item": "Debt compounds against you",
+   "relation": "indebted aunt / college-going niece / NGO officer",
+   "set": "home",
+   "hook": "a woman stacks five microloans to repay each other; her niece lists every loan, they stop new borrowing, sell one asset, negotiate with the NGO officer, and clear the debts smallest-first"
+  },
+  {
+   "id": "208",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Character: who you are under pressure",
+   "relation": "company driver / managing director / his teenage daughter",
+   "set": "street",
+   "hook": "a long-serving driver notices the MD's daughter being bullied in a coaching group chat; he drives her straight to her father's office so she can tell him; the father finally listens"
+  },
+  {
+   "id": "209",
+   "book": "The 33 Strategies of War",
+   "item": "Divide the work, not the family",
+   "relation": "elder brother / younger brother / mother",
+   "set": "shop",
+   "hook": "two brothers fight over modernising their late father's shop; their mother makes them swap roles for a month; each learns the other's strength and they divide work instead of the shop"
+  },
+  {
+   "id": "210",
+   "book": "The Daily Laws",
+   "item": "What we leave unsaid",
+   "relation": "daughter / mother / village postmaster",
+   "set": "home",
+   "hook": "a daughter who fought with her father before he died receives a letter he posted on the day of their argument; it blesses her Dhaka job; she reconciles with her grief and goes"
+  },
+  {
+   "id": "211",
+   "book": "The Social Contract",
+   "item": "Fairness is a private habit",
+   "relation": "exam-marking teacher / wife / neighbour",
+   "set": "home",
+   "hook": "a teacher marking board exams is asked by his neighbour to favour his son's script; he refuses gently, then offers free tutoring for the son's weak subject before results; the son passes on his own"
+  },
+  {
+   "id": "212",
+   "book": "Games People Play",
+   "item": "The game: \"If it weren't for you\"",
+   "relation": "husband / wife / husband's mother",
+   "set": "home",
+   "hook": "a husband blames his wife for money running out; she records every taka for a month; the record shows his own small daily spends; they make a joint budget"
   }
  ]
 }

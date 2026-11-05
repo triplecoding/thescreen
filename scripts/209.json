@@ -1,0 +1,411 @@
+{
+ "id": "209",
+ "status": "ready",
+ "title_bn": "দুই ভাইয়ের এক দোকান",
+ "theme": "siblings",
+ "source": {
+  "book": "The 33 Strategies of War",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STRATEGY 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Divide the work, not the family",
+  "title_bn": "কাজ ভাগ, পরিবার না"
+ },
+ "cast": {
+  "rahim": {
+   "name": "বড় ভাই রহিম",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "cap": true,
+   "voice": "man"
+  },
+  "karim": {
+   "name": "ছোট ভাই করিম",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#8A6A4F",
+   "hair": "hijab",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নরসিংদী বাজার। আব্বার রেখে যাওয়া মুদি দোকান, বত্রিশ বছর। আব্বা নেই দুই বছর। দুই ভাই দোকান চালায়। আর *প্রতিদিন ঝগড়া*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নরসিংদী বাজার, মুদি দোকান",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "karim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকান",
+       "value": "আব্বার, ৩২ বছর"
+      },
+      {
+       "label": "দুই ভাইয়ের ঝগড়া",
+       "value": "প্রায় প্রতিদিন"
+      },
+      {
+       "label": "বিক্রি, গত বছরের চেয়ে",
+       "value": "২২% কম",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "অনলাইন, ডেলিভারি, এইসব কইরা বাকি বাড়াইতাছস! আব্বা বত্রিশ বছর চালাইছে *খাতায়*, এইসব ছাড়া।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rahim": "angry"
+    },
+    "arms": {
+     "rahim": "point"
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "আর বত্রিশ বছর পর বিক্রি বাইশ পার্সেন্ট কম, ভাইয়া। পাশে সুপারশপ খুলছে, মানুষ *ঘরে বইসা* অর্ডার দেয়।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই ভাইয়ের প্রস্তাব",
+   "card": {
+    "title": "যা চাইছিল",
+    "items": [
+     {
+      "t": "রহিম: দোকান দুই ভাগ, মাঝে দেয়াল",
+      "mark": "x"
+     },
+     {
+      "t": "করিম: নিজের ভাগ বেচে আলাদা ব্যবসা",
+      "mark": "x"
+     },
+     {
+      "t": "দুজনেই: আম্মা ঠিক করুক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে দুই ভাই আম্মার কাছে। দুজনেই বলল, দোকান ভাগ করে দেন। আম্মা অনেকক্ষণ চুপ। তারপর বললেন একটা *অদ্ভুত শর্ত*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আম্মার ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rahim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "ভাগ করমু। কিন্তু আগে এক মাস। রহিম, তুই করিমের কাম করবি, ফোন আর ডেলিভারি। করিম, তুই বসবি ক্যাশে, *খাতায়*। এক মাস পরেও ভাগ চাইলে দিমু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "আম্মা, ভাইয়া তো ফোনই ঠিকমতো *চালাইতে পারে না*!",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "moods": {
+     "karim": "surprised"
+    },
+    "arms": {
+     "karim": "talk"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আর তুই খাতা চিনস না। তোর আব্বা কইত, দোকান চলে দুই পায়ে। একটা পা কাইটা কেউ *দৌড়ায় না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "down"
+    }
+   }
+  },
+  {
+   "say": "দ্বিতীয় সপ্তাহে করিম খাতা খুলল। আর দেখল এমন কিছু, যা কোনো অ্যাপে নেই। প্রতিটা কাস্টমারের নামের পাশে আব্বার, তারপর ভাইয়ার নোট— *‘ছেলের পরীক্ষা, বাকি চাইবা না’*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দ্বিতীয় সপ্তাহ",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "karim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "ভাইয়া খালি বাকি দেয় না। মানুষ চিনে। এই বাজারের অর্ধেক মানুষ এই দোকানে আসে *ভাইয়ার জন্য*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "hold"
+    }
+   }
+  },
+  {
+   "say": "আর রহিম? প্রথম দিন ফোনে অর্ডার নিতে গিয়ে তিনবার ভুল। তারপর বাইকে ডেলিভারি। আর দেখল, যে খালারা হাঁটুর ব্যথায় বাজারে আসতে পারেন না, তাঁরা দরজা খুলে *দোয়া করছেন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই সপ্তাহ, ডেলিভারি",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "করিম তো খালি অনলাইন না। যারা আসতে পারে না, তাদের কাছে দোকানটা *নিয়া যায়*।",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rahim": "thinking"
+    },
+    "arms": {
+     "rahim": "phone"
+    }
+   }
+  },
+  {
+   "say": "এক মাস শেষ। আম্মা জিজ্ঞেস করলেন, ভাগ কবে করবে? দুই ভাই একজন আরেকজনের দিকে তাকাল। কেউ *কথা বলল না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মাস শেষে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rahim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "karim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahim",
+   "say": "আম্মা, ভাগ লাগবো না। দোকান এক থাকবো, কাম ভাগ। আমি ক্যাশে, মানুষ চিনি। করিম ডেলিভারি আর ফোন। *দুই পা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rahim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahim": "down"
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "আর ভাইয়ার খাতাটা আমি ফোনেও তুলমু। নোটগুলাসহ। *আব্বার নোটও*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "down"
+    }
+   }
+  },
+  {
+   "say": "হাজী স্টোরের সাইনবোর্ডের নিচে এখন একটা ছোট্ট লাইন যোগ হয়েছে— *‘দোকানে আসুন, অথবা ফোন দিন। দুই ভাই, এক দোকান।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ঝগড়া বাড়লে মানুষ ভাগ চায়… *একে অন্যের কাজ বুঝলে ভাগ লাগে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ঝগড়া বাড়লে মানুষ ভাগ চায়…",
+    "line2": "একে অন্যের কাজ বুঝলে\nভাগ লাগে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বার মুদি দোকান ভাগ করতে চায় দুই ভাই… আম্মা দিলেন এক অদ্ভুত শর্ত 🏪",
+  "description": "নরসিংদীর বাজারে আব্বার রেখে যাওয়া মুদি দোকান। বড় ভাই রহিম চান পুরোনো নিয়মে চলুক, ছোট ভাই করিম চান অনলাইন, হোম ডেলিভারি। প্রতিদিন ঝগড়া। দুজনেই বলে দোকানটা ভাগ করো। আম্মা এক শর্ত দিলেন…",
+  "tags": [
+   "ভাইয়ের গল্প",
+   "মুদি দোকান",
+   "পারিবারিক ব্যবসা",
+   "নরসিংদী",
+   "ভাইবোনের গল্প",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দোকান ভাগ করতে চাইছিল দুই ভাই। আম্মা বললেন, এক মাস একজনের কাজ আরেকজন করো। মাস শেষে কেউ আর ভাগ চাইল না। 🏪\nভাইবোনের সাথে ব্যবসা বা কাজ করার অভিজ্ঞতা কেমন তোমার? 👇 #ভাই #পরিবার"
+ },
+ "thumbnail": {
+  "text": "দোকান ভাগ করো!",
+  "sub": "আম্মার শর্ত"
+ }
+}

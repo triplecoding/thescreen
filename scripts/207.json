@@ -1,0 +1,432 @@
+{
+ "id": "207",
+ "status": "ready",
+ "title_bn": "কিস্তির জাল",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Debt compounds against you",
+  "title_bn": "ঋণের ফাঁদ"
+ },
+ "cast": {
+  "hasina": {
+   "name": "হাসিনা খালা",
+   "type": "woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "niece": {
+   "name": "ভাগ্নি তানজিলা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "officer": {
+   "name": "এনজিওর আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাইবান্ধার এক গ্রাম। মঙ্গলবার সকাল। হাসিনা খালার হাতে পাঁচটা পাসবই। পাঁচটা এনজিও। সপ্তাহে কিস্তি চার হাজার একশো। আর আয় *দুই হাজার আটশো*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "গাইবান্ধা, হাসিনা খালার উঠান",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "hasina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চলমান কিস্তি",
+       "value": "৫টা এনজিও"
+      },
+      {
+       "label": "সাপ্তাহিক কিস্তি",
+       "value": "৪,১০০ টাকা"
+      },
+      {
+       "label": "খালার আয়",
+       "value": "সপ্তাহে ২,৮০০ টাকা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শুরুটা ছিল ত্রিশ হাজার, একটা গরু কেনার জন্য। গরু মারা গেল। তারপর একটা কিস্তি শোধ করতে আরেকটা ঋণ। তারপর আরেকটা। *জালের মতো*।",
+   "pause": 1.0,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "hasina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "niece",
+   "say": "খালা, কান্দেন কেন? কালকে কিস্তির দিন? কত লাগবো, *আমারে কন*।",
+   "tone": "curious",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "niece",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "talk"
+     },
+     {
+      "id": "hasina",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "niece": "talk"
+    }
+   }
+  },
+  {
+   "voice": "hasina",
+   "say": "কত লাগবো জানি না রে মা। কারে কত দিছি, কত বাকি, কিছুই *মাথায় নাই*। খালি জানি, শেষ হয় না।",
+   "scene": {
+    "cam": {
+     "focus": "hasina",
+     "zoom": 1.4
+    },
+    "moods": {
+     "hasina": "crying"
+    },
+    "arms": {
+     "hasina": "face"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "খালার এখন পর্যন্ত যা হয়েছে",
+   "card": {
+    "title": "ঋণের হিসাব",
+    "items": [
+     {
+      "t": "প্রথম ঋণ ৩০ হাজার",
+      "mark": "x"
+     },
+     {
+      "t": "পরের চারটা নেওয়া আগেরটা শোধ করতে",
+      "mark": "x"
+     },
+     {
+      "t": "মোট শোধ করেছেন ৯২ হাজার, তবু বাকি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তানজিলা কলেজে পড়ে, হিসাববিজ্ঞান। সে পাঁচটা পাসবই হাতে নিল। একটা খাতা খুলল। আর বলল একটা কথা, যেটা খালা *আশা করেননি*।",
+   "scene": {
+    "cam": {
+     "focus": "niece",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "niece",
+   "say": "খালা, আজকে থেইকা আর কোনো নতুন ঋণ না। একটাও না। আগে খাতায় সব লেখি। তারপর দেখি *জাল কোথায়*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "niece",
+     "zoom": 1.4
+    },
+    "arms": {
+     "niece": "hold"
+    }
+   }
+  },
+  {
+   "say": "পুরো রাত বসে তানজিলা হিসাব মেলাল। মোট বাকি ছিয়াত্তর হাজার সাতশো। ভয়ংকর। কিন্তু প্রথমবার, *একটা নির্দিষ্ট সংখ্যা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পরের সন্ধ্যা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "niece",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "খালার পাঁচ ঋণ — তানজিলার খাতা",
+     "lines": [
+      "ক— বাকি ৬,২০০",
+      "খ— বাকি ১১,৫০০",
+      "গ— বাকি ১৮,০০০",
+      "ঘ ও ঙ— বাকি ৪১,০০০"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "niece",
+   "say": "খালা, সবচেয়ে ছোটটা আগে শেষ করি। ছয় হাজার দুইশো। আপনার কানের দুলটা বেচলে ওইটা *এক সপ্তাহেই* শেষ।",
+   "scene": {
+    "cam": {
+     "focus": "niece",
+     "zoom": 1.4
+    },
+    "moods": {
+     "niece": "thinking"
+    },
+    "arms": {
+     "niece": "hold"
+    }
+   }
+  },
+  {
+   "say": "এরপর তানজিলা গেল সবচেয়ে বড় এনজিওর অফিসে। খাতা হাতে। ঝগড়া না। শুধু *খালার পুরো হিসাব*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "এনজিও অফিস, সাপ্তাহিক সভা",
+    "props": [
+     "signboard",
+     "sign:সাপ্তাহিক কিস্তি সভা"
+    ],
+    "chars": [
+     {
+      "id": "officer",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "niece",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "niece",
+   "say": "আপা, খালা পালাবেন না, শোধ করবেন। কিন্তু সপ্তাহে এক হাজার দুইশোর বেশি পারবেন না। এই হিসাবটা দেখেন। কিস্তিটা একটু *লম্বা* করা যায়?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "niece",
+     "zoom": 1.4
+    },
+    "arms": {
+     "niece": "hold"
+    }
+   }
+  },
+  {
+   "voice": "officer",
+   "say": "সাধারণত কেউ খাতা নিয়া আসে না, খালি কান্দে। এই হিসাব দেখলে অফিসরে বোঝানো যাইবো। চেষ্টা *করতেছি*।",
+   "scene": {
+    "cam": {
+     "focus": "officer",
+     "zoom": 1.4
+    },
+    "moods": {
+     "officer": "thinking"
+    },
+    "arms": {
+     "officer": "hold"
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দ মাস পর। শেষ পাসবইটায় এনজিওর আপা সিল দিলেন— *‘পরিশোধিত’*। হাসিনা খালা পাসবইটা বুকের কাছে ধরে রাখলেন অনেকক্ষণ।",
+   "pause": 1.2,
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চৌদ্দ মাস পর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "hasina",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "niece",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "hasina",
+     "zoom": 1.4
+    },
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চৌদ্দ মাসে শেষ",
+       "value": "৫টা ঋণ"
+      },
+      {
+       "label": "নতুন ঋণ",
+       "value": "০"
+      },
+      {
+       "label": "খালার মুরগির খামার",
+       "value": "৪০টা মুরগি, নিজের টাকায়"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "hasina",
+   "say": "সাত বছর মঙ্গলবার আইলে বুক কাঁপত। আজকে মঙ্গলবার, আর আমার *কিছু দেওয়ার নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "hasina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hasina": "hold"
+    }
+   }
+  },
+  {
+   "voice": "niece",
+   "say": "খালা, দেওয়ার আছে। এই খাতাটা। পাশের বাড়ির চাচিরও *তিনটা কিস্তি*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "niece",
+     "zoom": 1.4
+    },
+    "arms": {
+     "niece": "hold"
+    }
+   }
+  },
+  {
+   "say": "হাসিনা খালার উঠানে এখন প্রতি শুক্রবার বিকেলে পাঁচ-ছয়জন নারী বসেন। প্রত্যেকের হাতে একটা খাতা। আর মাঝখানে তানজিলা— *‘আগে লেখেন, তারপর ভয় পান।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ঋণ দিয়ে ঋণ শোধ করলে… *জাল শুধু বড় হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ঋণ দিয়ে ঋণ শোধ করলে…",
+    "line2": "জাল শুধু\nবড় হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এক কিস্তি শোধ করতে আরেক এনজিও, তারপর আরেকটা… হাসিনা খালার পাঁচটা কিস্তি, প্রতি সপ্তাহে ভয় 📓",
+  "description": "গাইবান্ধার হাসিনা খালা প্রথমে নিয়েছিলেন ত্রিশ হাজার, গরু কেনার জন্য। গরু মারা গেল। কিস্তি দিতে আরেক এনজিও, তারপর আরেকটা। এখন পাঁচটা কিস্তি, সপ্তাহে চার হাজার। কলেজপড়ুয়া ভাগ্নি তানজিলা একটা খাতা খুলে বসল…",
+  "tags": [
+   "কিস্তি",
+   "ক্ষুদ্রঋণ",
+   "এনজিও",
+   "ঋণের ফাঁদ",
+   "গাইবান্ধা",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সংগ্রামের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একটা কিস্তি শোধ করতে আরেকটা কিস্তি। পাঁচটা ঋণের জাল খুলল একটা খাতা, আর এক ভাগ্নির ধৈর্য। 📓\nতোমার চারপাশে কেউ কি কিস্তির চাপে আছেন? 👇 #কিস্তি #ঋণ"
+ },
+ "thumbnail": {
+  "text": "পাঁচটা কিস্তি",
+  "sub": "সপ্তাহে ৪ হাজার"
+ }
+}

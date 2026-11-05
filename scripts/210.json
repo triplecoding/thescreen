@@ -1,0 +1,384 @@
+{
+ "id": "210",
+ "status": "ready",
+ "title_bn": "আব্বার শেষ চিঠি",
+ "theme": "parents",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "What we leave unsaid",
+  "title_bn": "না বলা কথা"
+ },
+ "cast": {
+  "nadia": {
+   "name": "নাদিয়া",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "hijab",
+   "voice": "old_woman"
+  },
+  "postman": {
+   "name": "পোস্টমাস্টার চাচা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নওগাঁর এক বাসা। নাদিয়ার আব্বা মারা গেছেন তিন মাস। আর আব্বার সাথে নাদিয়ার শেষ কথা ছিল *একটা ঝগড়া*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নওগাঁ, সকাল",
+    "props": [
+     "window",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "nadia",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বা নেই",
+       "value": "৩ মাস"
+      },
+      {
+       "label": "শেষ কথা",
+       "value": "একটা ঝগড়া"
+      },
+      {
+       "label": "ঢাকার চাকরির অফার",
+       "value": "নেওয়া হয়নি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ঢাকায় একটা ভালো চাকরি পেয়েছিল। আব্বা বলেছিলেন, ‘মেয়েমানুষ একা ঢাকায়, না।’ নাদিয়া চিৎকার করেছিল। তারপর দুই দিন কথা বলেনি। তৃতীয় দিন আব্বা *হার্ট অ্যাটাক*।",
+   "pause": 1.0,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nadia",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "চাকরিটার লোক তো আবার ফোন দিছিল। তুই যাবি না?",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "নাদিয়া আর আম্মা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "talk"
+     },
+     {
+      "id": "nadia",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "nadia",
+   "say": "কেমনে যাই, আম্মা? আব্বা না কইছিল। আমি শেষবার আব্বার সাথে চিল্লাইছি। আর যাইয়া *কী প্রমাণ* করমু?",
+   "scene": {
+    "cam": {
+     "focus": "nadia",
+     "zoom": 1.4
+    },
+    "moods": {
+     "nadia": "crying"
+    },
+    "arms": {
+     "nadia": "face"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাসে নাদিয়া",
+   "card": {
+    "title": "যা হয়েছে",
+    "items": [
+     {
+      "t": "চাকরির অফার তিনবার পেছানো",
+      "mark": "x"
+     },
+     {
+      "t": "আব্বার ঘরে ঢোকা হয়নি",
+      "mark": "x"
+     },
+     {
+      "t": "‘সরি’ বলা হয়নি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক সকালে দরজায় পোস্টমাস্টার চাচা। আব্বার পুরোনো বন্ধু। হাতে একটা খাম। আর চোখ ভেজা। *একটু দেরি হয়ে গেছে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সকাল",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "postman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "nadia",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "postman",
+   "say": "মা, এইটা তোর আব্বা পোস্ট করছিল, যেদিন… ঠিকানায় একটা ভুল ছিল, তিন মাস ঘুইরা আসছে। প্রেরকের নাম দেইখা আমি *নিজে আনছি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "postman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "postman": "hold"
+    }
+   }
+  },
+  {
+   "say": "খামের ওপর আব্বার হাতের লেখা। তারিখ— ঝগড়ার পরের দিন। নাদিয়া খামটা খুলল। কাঁপা হাতে। প্রথম লাইন— *‘রাগ করিস না, মা।’*",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "nadia",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nadia",
+   "say": "আম্মা, আব্বা রাগ করে নাই। আব্বা ভয় পাইছিল। আমি ভাবছি *না কইছে*, আব্বা তো আসলে চিঠিতে *হ্যাঁ* কইছে।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nadia",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "nadia": "crying"
+    },
+    "arms": {
+     "nadia": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তোর আব্বা এমনই। মুখে কিছু কইত না। তুই হওয়ার দিনও খালি কইছিল, ‘দেখো তো, নাকটা *আমার মতো* না?’",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "hug"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে মা-মেয়ে অনেক কথা বলল। আব্বার কথা। আর তিন মাসে প্রথমবার নাদিয়া আব্বার ঘরে ঢুকল। *চিঠিটা রাখল আব্বার বালিশের পাশে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দুই মাস পর। ঢাকা। নাদিয়ার নতুন চাকরি। প্রতি রাতে দশটায় আম্মাকে ফোন। কারণ চিঠির শেষ লাইনে লেখা ছিল— *‘রাতে একবার ফোন দিস।’*",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দুই মাস পর, ঢাকা",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "nadia",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন চাকরি",
+       "value": "ঢাকা, দুই মাস"
+      },
+      {
+       "label": "প্রতি রাতে আম্মাকে ফোন",
+       "value": "রাত ১০টা"
+      },
+      {
+       "label": "চিঠি",
+       "value": "ব্যাগে, সবসময়"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nadia",
+   "say": "আম্মা, খাইছেন? আজকে অফিসে প্রথম প্রেজেন্টেশন দিলাম। আব্বা থাকলে কইত, ‘*নাকটা আমার মতো*’।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nadia",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nadia": "phone"
+    }
+   }
+  },
+  {
+   "say": "নাদিয়ার ডেস্কে একটা ছোট্ট ফ্রেম। ভেতরে চিঠির শুধু একটা লাইন, আব্বার হাতের লেখায়— *‘রাতে একবার ফোন দিস।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "রাগের শেষ কথা মনে থাকে… *ভালোবাসার না বলা কথা তবু পৌঁছায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "রাগের শেষ কথা মনে থাকে…",
+    "line2": "ভালোবাসার না বলা কথা\nতবু পৌঁছায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বার মৃত্যুর তিন মাস পর ডাকে এল আব্বারই লেখা একটা চিঠি, নাদিয়ার নামে… ✉️",
+  "description": "নওগাঁর নাদিয়া। আব্বা মারা গেছেন তিন মাস। আব্বার সাথে শেষ কথা ছিল একটা ঝগড়া— ঢাকায় চাকরি নিয়ে। নাদিয়া ক্ষমা চাইতে পারেনি। এক সকালে পোস্টমাস্টার চাচা এলেন একটা খাম নিয়ে। প্রেরক— আব্বা…",
+  "tags": [
+   "বাবার চিঠি",
+   "বাবা মেয়ের গল্প",
+   "স্মৃতি",
+   "অভিমান",
+   "নওগাঁ",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "শেষ কথা ছিল একটা ঝগড়া। তিন মাস পর ডাকে এল আব্বার লেখা চিঠি। প্রথম লাইন— ‘রাগ করিস না, মা।’ ✉️\nপ্রিয় কাউকে কি কোনো কথা বলা হয়নি, যেটা এখন বলতে ইচ্ছা করে? 👇 #বাবা #চিঠি"
+ },
+ "thumbnail": {
+  "text": "আব্বা নেই তিন মাস",
+  "sub": "ডাকে আব্বার চিঠি"
+ }
+}
