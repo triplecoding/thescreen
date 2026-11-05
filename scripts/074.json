@@ -1,0 +1,437 @@
+{
+ "id": "074",
+ "status": "ready",
+ "title_bn": "আমার বাবা, চা বাগানের শ্রমিক",
+ "theme": "parents",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Rider and the Elephant",
+  "title_bn": "মন আগে, যুক্তি পরে"
+ },
+ "cast": {
+  "puja": {
+   "name": "পূজা",
+   "type": "child_girl",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "long_braid",
+   "voice": "child_girl"
+  },
+  "binod": {
+   "name": "বিনোদ",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "hm": {
+   "name": "হেডস্যার",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মৌলভীবাজারের এক চা বাগান। বিনোদ ভোর ছয়টা থেকে পাতা তোলেন। দিনে চব্বিশ কেজি। মজুরি *একশো আটাত্তর টাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মৌলভীবাজার, চা বাগান",
+    "chars": [
+     {
+      "id": "binod",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দৈনিক মজুরি",
+       "value": "১৭৮ টাকা"
+      },
+      {
+       "label": "রোজের পাতা",
+       "value": "২৪ কেজি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "লাইনঘরে কুপির আলোয় মেয়ে পূজা লিখছে। ক্লাস সিক্স। স্কুলে রচনা প্রতিযোগিতা, বিষয়— *আমার বাবা*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "বাগানের লাইনঘর, রাত",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "binod",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "puja",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "binod",
+   "say": "আমার কথা কী লিখবি, মা? লিখ বাবা *পাতা তোলে*। ব্যস, শেষ।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "binod",
+     "zoom": 1.4
+    },
+    "arms": {
+     "binod": "talk"
+    }
+   }
+  },
+  {
+   "voice": "puja",
+   "say": "বাবা, তোমার আঙুলে এই কালো দাগগুলা কিসের? *ধোয়া যায় না* কেন?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "puja",
+     "zoom": 1.4
+    },
+    "arms": {
+     "puja": "talk"
+    }
+   }
+  },
+  {
+   "voice": "binod",
+   "say": "চায়ের কষ, মা। বিশ বছরে চামড়ায় বসে গেছে। *ধুইলেও যায় না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "binod",
+     "zoom": 1.4
+    },
+    "arms": {
+     "binod": "face"
+    }
+   }
+  },
+  {
+   "say": "পূজা কিছু বলল না। শুধু খাতায় লিখল আরেকটা লাইন। তারপর আরেকটা। সেই রাতে সে ঘুমাল *অনেক দেরিতে*।",
+   "scene": {
+    "cam": {
+     "focus": "puja",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hm",
+   "say": "রচনা প্রতিযোগিতায় প্রথম, *পূজা রানী*! শুক্রবার মঞ্চে পুরস্কার। বাবা-মাকে আনবা।",
+   "tone": "proudly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর, স্কুল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "hm",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "puja",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "hm": "talk"
+    }
+   }
+  },
+  {
+   "say": "পূজা দৌড়ে বাড়ি ফিরল। কিন্তু বাবার মুখে খুশির পাশাপাশি আরেকটা জিনিস— *ভয়*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "binod",
+   "say": "মা, স্কুলে সবাই আসবো ভালো জামা পইরা। আমি তো… বাগানের মানুষ। লোকে *তোরে নিয়া* হাসবো।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "লাইনঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "binod",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "puja",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "binod": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "বিনোদের না যাওয়ার কারণ",
+   "card": {
+    "title": "বাবার ভয়",
+    "items": [
+     {
+      "t": "একটাই শার্ট, তাও ছেঁড়া",
+      "mark": "x"
+     },
+     {
+      "t": "হাতে চায়ের দাগ",
+      "mark": "x"
+     },
+     {
+      "t": "‘শ্রমিকের মেয়ে’— কথাটা মেয়ের গায়ে লাগবে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শুক্রবার। মাঠ ভর্তি মানুষ। বিনোদ এলেন ঠিকই, কিন্তু ঢুকলেন না। গেটের লোহার শিক ধরে *বাইরেই* দাঁড়িয়ে রইলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শুক্রবার, স্কুলের মঞ্চ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "binod",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "hm",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "puja",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "হেডস্যার পূজাকে বললেন রচনাটা মাইকে পড়তে। সে কাগজ খুলল, গলা কাঁপছে।",
+   "scene": {
+    "cam": {
+     "focus": "puja",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "puja",
+   "say": "আমার বাবা প্রতিদিন চব্বিশ কেজি চা পাতা তোলেন। আপনারা সবাই আজ সকালে যে চা খেয়েছেন, হয়তো তার একটা পাতা *আমার বাবার হাতের*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "puja",
+     "zoom": 1.4
+    },
+    "arms": {
+     "puja": "hold"
+    }
+   }
+  },
+  {
+   "voice": "puja",
+   "say": "বাবার আঙুলে চায়ের দাগ, ধুলেও যায় না। আমি বড় হয়ে সেই হাতের জন্য একটা জিনিস চাই— *সবাই যেন দেখে*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "puja",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মাঠ নিস্তব্ধ। গেটের বাইরে একজন মানুষ শিক শক্ত করে ধরে আছেন। চোখ দিয়ে পানি পড়ছে, কিন্তু *মুখে হাসি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "binod",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hm",
+   "say": "বিনোদ বাবু, বাইরে কেন? মঞ্চে আসেন। এই পুরস্কার আপনার মেয়ে একা *নিবে না*।",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই দুপুর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "hm",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "binod",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "hm": "wave"
+    }
+   }
+  },
+  {
+   "say": "হেডস্যার নিজে গেট খুলে বিনোদকে নিয়ে গেলেন মঞ্চে। পূজার হাতে পুরস্কার, বাবার হাতে *পূজার হাত*।"
+  },
+  {
+   "voice": "binod",
+   "say": "মা রে, আমার দাগগুলা তুই *লেখা* বানাইয়া দিলি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "binod",
+     "zoom": 1.4
+    },
+    "arms": {
+     "binod": "hug"
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে স্কুলের শিক্ষকদের চা এল বাগান থেকে। হেডস্যার কাপ তুলে বললেন— *‘আগে বিনোদ বাবু।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবার কাপে চা পৌঁছায়… *যার হাত থেকে আসে,  তাকে কেউ দেখে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবার কাপে চা পৌঁছায়…",
+    "line2": "যার হাত থেকে আসে,\nতাকে কেউ দেখে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রচনা প্রতিযোগিতায় প্রথম হলো চা শ্রমিকের মেয়ে, আর বাবা দাঁড়িয়ে রইলেন গেটের বাইরে… 🍃",
+  "description": "মৌলভীবাজারের এক চা বাগান। বিনোদের দৈনিক মজুরি একশো আটাত্তর টাকা। মেয়ে পূজা স্কুলের রচনা প্রতিযোগিতায় লিখল ‘আমার বাবা’। পুরস্কারের দিন বাবা ভেতরে ঢুকলেন না— লজ্জায় গেটের বাইরে দাঁড়িয়ে রইলেন। তারপর মাইকে পড়া হলো রচনাটা…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "চা বাগান",
+   "চা শ্রমিক",
+   "সিলেট",
+   "রচনা প্রতিযোগিতা",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবার কাপে চা পৌঁছায়। যার হাত থেকে আসে, তাকে কেউ দেখে না— এক মেয়ে ছাড়া। 🍃\nতোমার সকালের চা-টা কার হাত ঘুরে আসে, কখনো ভেবেছ? 👇 #চাবাগান #বাবা"
+ },
+ "thumbnail": {
+  "text": "গেটের বাইরে বাবা",
+  "sub": "আমার বাবা"
+ }
+}

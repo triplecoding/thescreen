@@ -1,0 +1,420 @@
+{
+ "id": "069",
+ "status": "ready",
+ "title_bn": "মফিজ চাচার গেট",
+ "theme": "school",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Liking: The Friendly Thief",
+  "title_bn": "নাম মনে রাখার শক্তি"
+ },
+ "cast": {
+  "mofiz": {
+   "name": "মফিজ চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#5B7DB1",
+   "color2": "#2B2B2B",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "farzana": {
+   "name": "ডা. ফারজানা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "young_woman"
+  },
+  "parent": {
+   "name": "গাড়ির মালিক",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাজশাহীর এক সরকারি স্কুলের গেট। একত্রিশ বছর ধরে এখানে দাঁড়ান মফিজ চাচা। প্রতিটা বাচ্চাকে ডাকেন *নাম ধরে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রাজশাহী, সকাল ৭টা ২০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "mofiz",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "স্কুলের গেটে",
+       "value": "৩১ বছর"
+      },
+      {
+       "label": "মুখস্থ নাম",
+       "value": "১,৮০০টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mofiz",
+   "say": "তানভীর, টিফিন আনছো? রিমা, *বেণী* খুলে গেছে, বাঁধো আগে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mofiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mofiz": "wave"
+    }
+   }
+  },
+  {
+   "say": "অথচ এই স্কুলের কেউ জানে না, মফিজ চাচার পুরো নাম কী। খাতায় লেখা শুধু— *দারোয়ান*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সোমবার সকালে একটা দামি গাড়ি গেটের সামনে থামল। নিয়ম, গাড়ি ভেতরে ঢুকবে না। মফিজ চাচা *হাত তুললেন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সোমবার সকাল",
+    "props": [
+     "school_gate",
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "mofiz",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "parent",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "parent",
+   "say": "এই দারোয়ান, সরো! জানো আমি কে? তোমার চাকরি *এক ফোনে* খাব।",
+   "scene": {
+    "cam": {
+     "focus": "parent",
+     "zoom": 1.4
+    },
+    "moods": {
+     "parent": "angry"
+    },
+    "arms": {
+     "parent": "point"
+    }
+   }
+  },
+  {
+   "say": "সবার সামনে চেঁচামেচি। হেডস্যার এসে লোকটাকে শান্ত করলেন, গাড়ি ঢুকতে দিলেন। মফিজ চাচাকে কেউ *কিছু বলল না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "mofiz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বুধবার রাতে তিনি খুললেন একটা পুরোনো খাতা। একত্রিশ বছরের নাম, আর প্রতিটা নামের পাশে *ছোট্ট একটা কথা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বুধবার রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mofiz",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "মফিজ চাচার খাতা",
+     "lines": [
+      "২০০৯— ফারজানা, টিফিনে রুটি",
+      "২০১৪— রাকিব, বৃষ্টিতে ছাতা নাই",
+      "২০২১— নিশি, বাবা আসে না"
+     ]
+    }
+   }
+  },
+  {
+   "say": "একই রাতে ঢাকায় ডাক্তার ফারজানা স্কুলের পুরোনো গ্রুপে দেখলেন একটা পোস্ট। *মফিজ চাচা কাল অবসরে যাচ্ছেন*।",
+   "scene": {
+    "widget": null,
+    "set": "hospital",
+    "light": "night",
+    "chip": "ঢাকা মেডিকেল, একই রাত",
+    "chars": [
+     {
+      "id": "farzana",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "farzana",
+   "say": "সবাই শোনো! কাল সকাল সাড়ে সাতটা। *গেটে*। যে যেখানে আছো।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "farzana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "farzana": "phone"
+    }
+   }
+  },
+  {
+   "say": "বৃহস্পতিবার সকাল সাড়ে সাতটা। মফিজ চাচা গেট খুলে থমকে গেলেন। রাস্তা ভর্তি মানুষ। *লাইন* ধরে দাঁড়ানো।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "বৃহস্পতিবার, সকাল ৭টা ৩০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "mofiz",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "farzana",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "farzana",
+   "say": "চাচা, বলেন তো আমি কে? *নাম* বলেন।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "farzana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "farzana": "wave"
+    }
+   }
+  },
+  {
+   "voice": "mofiz",
+   "say": "ফারজানা… দুই হাজার নয়। তুমি টিফিনে খালি *রুটি* আনতা। আমি গুড় দিতাম।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "mofiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mofiz": "point"
+    }
+   }
+  },
+  {
+   "say": "ফারজানা আর দাঁড়িয়ে থাকতে পারলেন না। পেছনে লাইন। প্রত্যেকে এগিয়ে এসে বলে— *আমার নাম বলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "farzana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mofiz",
+   "say": "রাকিব, চৌদ্দ সাল! বৃষ্টির দিনে তোরে আমার *ছাতা* দিছিলাম, ফেরত দিস নাই!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "mofiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mofiz": "point"
+    }
+   }
+  },
+  {
+   "say": "চারশো তেরো জন। মফিজ চাচা একটা নামও ভুললেন না। আর সেই সকালে প্রথমবার স্কুলের সবাই জানল— তাঁর নাম *মফিজ উদ্দিন মোল্লা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ভিড়ের মধ্যে দাঁড়িয়ে ছিলেন সোমবারের সেই গাড়ির মালিক। আজ তিনি নিজেই *হেঁটে* ঢুকলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই সকাল",
+    "props": [
+     "school_gate",
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "mofiz",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "parent",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "parent",
+   "say": "চাচা, সেদিন… আমার মেয়ের নামও তো আপনি জানেন, *তাই না*?",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "parent",
+     "zoom": 1.4
+    },
+    "arms": {
+     "parent": "down"
+    }
+   }
+  },
+  {
+   "voice": "mofiz",
+   "say": "জানি, স্যার। আফিয়া। ক্লাস থ্রি। *বাম জুতার ফিতা* রোজ খোলা থাকে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mofiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mofiz": "talk"
+    }
+   }
+  },
+  {
+   "say": "স্কুলের গেটের পাশে এখন একটা ছোট্ট ফলক। তাতে লেখা— *‘মফিজ উদ্দিন মোল্লা গেট। সবার নাম যিনি মনে রেখেছিলেন।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে মানুষ সবার নাম মনে রাখে… *তাঁর নামটাও  কারও মনে রাখা উচিত*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে মানুষ সবার নাম মনে রাখে…",
+    "line2": "তাঁর নামটাও\nকারও মনে রাখা উচিত।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৩১ বছর স্কুলের গেটে, ১৮০০ ছাত্রের নাম মুখস্থ… অথচ তাঁর পুরো নাম কেউ জানে না 🏫",
+  "description": "রাজশাহীর এক সরকারি স্কুলের দারোয়ান মফিজ চাচা একত্রিশ বছরে এক হাজার আটশো ছাত্রছাত্রীর নাম মুখস্থ রেখেছেন। অথচ তাঁর নিজের পুরো নামটা কেউ জানে না। বৃহস্পতিবার তাঁর অবসর। হেডস্যার ঠিক করলেন অফিসে একটা ছোট্ট মালা… তারপর সকাল সাড়ে সাতটায় গেটে যা হলো…",
+  "tags": [
+   "স্কুলের গল্প",
+   "দারোয়ান",
+   "অবসর",
+   "শিক্ষার্থী",
+   "রাজশাহী",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "সম্মানের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একত্রিশ বছর তিনি সবার নাম মনে রেখেছিলেন। শেষ দিনে সবাই এসে তাঁকে মনে রাখল। 🏫\nতোমার স্কুলের দারোয়ান চাচার নাম কি তুমি জানতে? 👇 #স্কুল #দারোয়ান"
+ },
+ "thumbnail": {
+  "text": "১৮০০ নাম",
+  "sub": "তাঁর নাম কেউ জানে না"
+ }
+}

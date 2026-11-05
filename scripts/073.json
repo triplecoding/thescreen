@@ -1,0 +1,465 @@
+{
+ "id": "073",
+ "status": "ready",
+ "title_bn": "এজেন্ট ৪৪৭১",
+ "theme": "work",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "The Law of Narcissism: Transform Self-love into Empathy",
+  "title_bn": "নিজের বাইরে তাকানো"
+ },
+ "cast": {
+  "tania": {
+   "name": "তানিয়া",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "haque": {
+   "name": "হক সাহেব",
+   "type": "old_man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "lead": {
+   "name": "টিম লিডার রনি",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মহাখালীর এক কল সেন্টার। তানিয়ার আইডি *চার হাজার চারশো একাত্তর*। টার্গেট— প্রতি কল তিন মিনিট।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "মহাখালী, কল সেন্টার",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রতি কলের টার্গেট",
+       "value": "৩ মিনিট"
+      },
+      {
+       "label": "রাতের কল",
+       "value": "১১০টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "haque",
+   "say": "তোমাদের ইন্টারনেট চলে না! প্রতিদিন বলি, প্রতিদিন একই কথা! *কী করো তোমরা*?",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "উত্তরা, রাত সাড়ে দশটা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "haque",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "haque": "angry"
+    },
+    "arms": {
+     "haque": "phone"
+    }
+   }
+  },
+  {
+   "say": "প্রতি রাতে সাড়ে দশটায় একই নাম্বার। একই রাগ। একই অভিযোগ। আর পরীক্ষা করলে দেখা যায়— *ইন্টারনেট ঠিক আছে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "lead",
+   "say": "আবার উনি? টিকেট ক্লোজ করো। তোমার গড় সময় *পাঁচ মিনিট* হয়ে গেছে, বোনাস যাবে।",
+   "tone": "annoyed",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "কল সেন্টার",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "lead",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "lead": "point"
+    }
+   }
+  },
+  {
+   "say": "এক রাতে তানিয়া খেয়াল করল, লোকটা অভিযোগ শেষ করেও ফোন রাখে না। অপেক্ষা করে। *কিছু একটা বলবে বলে*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "স্যার, ইন্টারনেট দিয়া আপনি আসলে কী করতে চান? মানে… *কী চলে না*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "call"
+    }
+   }
+  },
+  {
+   "say": "ওপাশে অনেকক্ষণ চুপ। তারপর রাগী গলাটা হঠাৎ খুব *নরম* হয়ে গেল।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "haque",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "haque",
+   "say": "নাতিটা কানাডায়। বলছিল ভিডিও কল দিবা, দাদু। আমি… *বোতামটা* খুঁইজা পাই না, মা।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "haque",
+     "zoom": 1.4
+    },
+    "arms": {
+     "haque": "phone"
+    }
+   }
+  },
+  {
+   "voice": "haque",
+   "say": "স্ত্রী মারা গেছেন দুই বছর। ছেলে-মেয়ে বাইরে। রাতে এই বাসায় কথা কওয়ার মানুষ *একটাই*— তোমরা।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "haque",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানিয়ার স্ক্রিনে টাইমার লাল হয়ে গেছে। সাত মিনিট। সে টাইমারের দিকে আর *তাকাল না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "স্যার, কাল সন্ধ্যা সাতটায় আমি নিজে ফলো-আপ কল দিব। এক এক কইরা *শিখাব*, ঠিক আছে?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "call"
+    }
+   }
+  },
+  {
+   "say": "পরের তিন দিন ফলো-আপ কল। সবুজ বোতাম, ক্যামেরা, নাম খোঁজা। হক সাহেব কাগজে লিখে রাখেন, *ছাত্রের মতো*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "পরের তিন দিন",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "lead",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "হক সাহেবের ক্লাস",
+     "items": [
+      {
+       "t": "সবুজ বোতাম চেনা",
+       "mark": "check"
+      },
+      {
+       "t": "ক্যামেরা ঘোরানো",
+       "mark": "check"
+      },
+      {
+       "t": "নাতির নাম খোঁজা",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "lead",
+   "say": "তানিয়া, এই কল তো টার্গেটে পড়ে না। কী করতেছ?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "lead",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lead": "cross"
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "ভাইয়া, উনি দুই সপ্তাহে ছাব্বিশবার কল দিছেন। আজকে থেকে আর দিবেন না। এইটা কি *টার্গেটে* পড়ে না?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tania": "talk"
+    }
+   }
+  },
+  {
+   "say": "চতুর্থ রাতে সাড়ে দশটায় কোনো কল এল না কল সেন্টারে। কারণ উত্তরার এক বাসায় তখন বাজছে *একটা ভিডিও কল*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "উত্তরা, চতুর্থ রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "haque",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "haque",
+   "say": "দাদু, দেখ! আমি নিজে দিছি! কেউ টিপে দেয় নাই, *আমি নিজে*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "haque",
+     "zoom": 1.4
+    },
+    "arms": {
+     "haque": "phone"
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর কল সেন্টারে একটা খাম এল। হাতের লেখা। উপরে শুধু লেখা— *‘এজেন্ট ৪৪৭১’*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "lead",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lead",
+   "say": "এই চিঠিটা বোর্ডে লাগাও। আর কাল থেকে নতুন নিয়ম— *একই নাম্বারে* তিনবার কল আসলে, আসল সমস্যা খুঁজবা।",
+   "tone": "warmly",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "চিঠি",
+     "lines": [
+      "মা তানিয়া, তুমি আমার ইন্টারনেট ঠিক করো নাই।",
+      "তুমি আমার রাত ঠিক করে দিছ। — হক"
+     ]
+    },
+    "cam": {
+     "focus": "lead",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lead": "talk"
+    }
+   }
+  },
+  {
+   "say": "কল সেন্টারের নোটিশ বোর্ডে এখন সবার উপরে একটা চিঠি। আর তার নিচে টিম লিডারের হাতে লেখা— *‘কলটা শুনুন, অভিযোগটা না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "প্রতিটা রাগী ফোনের ওপাশে… *একজন একা  মানুষ থাকে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "প্রতিটা রাগী ফোনের ওপাশে…",
+    "line2": "একজন একা\nমানুষ থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রোজ রাতে কল সেন্টারে চেঁচান এক বৃদ্ধ, অভিযোগ ‘ইন্টারনেট চলে না’… তানিয়া খুঁজে পেল আসল অভিযোগ 🎧",
+  "description": "মহাখালীর এক কল সেন্টারে তানিয়ার টার্গেট— প্রতি কল তিন মিনিট। প্রতি রাতে ফোন দেন হক সাহেব, রাগী গলা, একই অভিযোগ। টিম লিডার বলে, টিকেট বন্ধ করো। এক রাতে তানিয়া একটা প্রশ্ন করল…",
+  "tags": [
+   "কল সেন্টারের গল্প",
+   "অফিসের গল্প",
+   "একাকীত্ব",
+   "বৃদ্ধ বাবা",
+   "প্রবাসী সন্তান",
+   "bangla golpo",
+   "office story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "প্রতিটা রাগী ফোনের ওপাশে একজন মানুষ থাকে। তানিয়া সেটা শুনতে পেয়েছিল। 🎧\nরাগের পেছনের আসল কষ্টটা তুমি কখনো খুঁজে পেয়েছ? 👇 #অফিস #একাকীত্ব"
+ },
+ "thumbnail": {
+  "text": "রোজ রাতে একই কল",
+  "sub": "আসল অভিযোগ"
+ }
+}

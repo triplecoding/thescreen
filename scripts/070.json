@@ -1,0 +1,485 @@
+{
+ "id": "070",
+ "status": "ready",
+ "title_bn": "দাদির মাটির চুলা",
+ "theme": "family",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Loss Aversion and the Endowment Effect",
+  "title_bn": "যা হারানোর ভয়, তার দাম"
+ },
+ "cast": {
+  "dadi": {
+   "name": "দাদি",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "rafi": {
+   "name": "রাফি",
+   "type": "teen_boy",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "teen_boy"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "সিরাজগঞ্জের এক গ্রামে নতুন দুইতলা পাকা বাড়ি। রান্নাঘরে গ্যাসের চুলা। শুধু উঠানের কোণে এখনো একটা *মাটির চুলা*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "সিরাজগঞ্জ, নতুন পাকা বাড়ি",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "dadi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন বাড়ি",
+       "value": "পাকা, দুইতলা"
+      },
+      {
+       "label": "রান্নাঘরে",
+       "value": "গ্যাসের সিলিন্ডার"
+      },
+      {
+       "label": "উঠানে",
+       "value": "মাটির চুলা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আম্মা, কাল মিস্ত্রি আসবো। চুলাটা ভাইঙ্গা ওইখানে *গাড়ির জায়গা* বানামু।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "point"
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "খবরদার! আমি যতদিন বাঁইচা আছি, ওই চুলায় *হাত দিবি না*।",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "dadi": "angry"
+    },
+    "arms": {
+     "dadi": "point"
+    }
+   }
+  },
+  {
+   "say": "আব্বা অবাক। দাদির বয়স সত্তর, ধোঁয়ায় কাশি। তবু রোজ সকালে তিনি ওই চুলাতেই *ভাত বসান*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পরিবারের সবাই চেষ্টা করল",
+   "card": {
+    "title": "দাদিকে বোঝানোর চেষ্টা",
+    "items": [
+     {
+      "t": "‘ধোঁয়ায় আপনার শরীর খারাপ হয়’",
+      "mark": "x"
+     },
+     {
+      "t": "‘গ্যাসে দশ মিনিটে রান্না’",
+      "mark": "x"
+     },
+     {
+      "t": "‘লোকে কী বলবে, পাকা বাড়িতে মাটির চুলা’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সন্ধ্যায় দাদি চুলার পাশে বসে মুড়ি ভাজছিলেন। তেরো বছরের রাফি পাশে এসে বসল। তর্ক না, *একটা প্রশ্ন*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "সন্ধ্যা, উঠান",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rafi",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দাদি, চুলাটার বয়স কত? আব্বার চেয়েও *বেশি*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rafi": "talk"
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "না রে। এইটা আঠাশ বছরের। তোর আব্বা তখন *ক্লাস সেভেনে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dadi": "down"
+    }
+   }
+  },
+  {
+   "say": "দাদি মুড়ির কড়াই নামিয়ে রাখলেন। তারপর বললেন এমন একটা গল্প, যেটা এই বাড়ির কেউ *কখনো শোনেনি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আটানব্বইয়ের বন্যা। ঘর, গরু, ধান, সব গেল পানিতে। একুশ দিন বাঁধের উপর। খাওয়া শুধু *চিড়া আর মুড়ি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "১৯৯৮ সাল, বন্যা",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পানির নিচে",
+       "value": "৬৯ দিন"
+      },
+      {
+       "label": "বাঁধে থাকা",
+       "value": "২১ দিন"
+      },
+      {
+       "label": "খাওয়া",
+       "value": "শুধু চিড়া-মুড়ি",
+       "red": true
+      }
+     ]
+    },
+    "fx": "rain"
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "পানি নামার পর তোর দাদা নতুন বাঁধের মাটি দিয়া এই চুলা বানাইলেন। খালি হাতে। *তিন দিন* লাগছিল।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "একুশ দিন পর এই চুলায় প্রথম গরম ভাত রান্ধলাম। তোর আব্বা খাইয়া *কাঁদছিল*। ভাত দেইখা।",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "dadi": "crying"
+    }
+   }
+  },
+  {
+   "say": "রাফি কিছু বলতে পারল না। শুধু দাদির হাতটা ধরল। এই চুলাটা চুলা না। এটা *দাদার হাতের শেষ চিহ্ন*।",
+   "pause": 0.9,
+   "scene": {
+    "widget": null,
+    "set": "balcony",
+    "light": "night",
+    "chip": "উঠান, এখন",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "dadi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "rafi",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hug"
+     }
+    ],
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "আব্বা, চুলাটা ভাঙবেন না। ওইটা দাদা আটানব্বই সালে বানাইছিলেন। আপনি ওই চুলার ভাত খাইয়া *কাঁদছিলেন*।",
+   "tone": "serious",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "rafi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rafi": "talk"
+    }
+   }
+  },
+  {
+   "say": "আব্বা ফোন নামিয়ে রাখলেন। আঠাশ বছর আগের একটা ভাতের থালা। *তিনি ভুলে গিয়েছিলেন*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আম্মা কোনোদিন বলে নাই… আমিই *জিগাই নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে মিস্ত্রি এল ঠিকই। কিন্তু চুলা ভাঙতে না। চুলার উপর বসাল একটা টিনের *চাল*, পাশে ধোঁয়া যাওয়ার পাইপ।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "dadi",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rafi",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আম্মা, এখন বৃষ্টিতেও রান্ধতে পারবেন। আর শীতে পিঠা এই চুলাতেই *হইবো*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "talk"
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "পাকা বাড়িতে মাটির চুলা। লোকে কী বলবো রে? *বলুক*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চুলার গায়ে এখন রাফির হাতে আঁকা একটা লেখা, সাদা চুন দিয়ে— *‘দাদার চুলা, ১৯৯৮’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যা আমাদের কাছে শুধু মাটি… *কারও কাছে  বেঁচে থাকার প্রমাণ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যা আমাদের কাছে শুধু মাটি…",
+    "line2": "কারও কাছে\nবেঁচে থাকার প্রমাণ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পাকা বাড়ি, গ্যাসের চুলা, তবু দাদি ছাড়বেন না মাটির চুলা… নাতির এক প্রশ্নে বেরোল ১৯৯৮-এর গল্প 🔥",
+  "description": "সিরাজগঞ্জের গ্রামে নতুন পাকা বাড়ি, রান্নাঘরে গ্যাসের সিলিন্ডার। আব্বা চান উঠানের পুরোনো মাটির চুলাটা ভেঙে ফেলতে। দাদি রাজি না, কেউ বোঝে না কেন। তেরো বছরের রাফি শুধু জিজ্ঞেস করল— দাদি, চুলাটার বয়স কত?",
+  "tags": [
+   "দাদির গল্প",
+   "মাটির চুলা",
+   "বন্যা ১৯৯৮",
+   "সিরাজগঞ্জ",
+   "গ্রামের গল্প",
+   "bangla golpo",
+   "পরিবারের গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবার কাছে এটা একটা ভাঙা মাটির চুলা। দাদির কাছে এটা বেঁচে থাকার প্রমাণ। 🔥\nতোমার বাড়িতে এমন কোন পুরোনো জিনিস আছে, যেটা কেউ ফেলতে পারে না? 👇 #দাদি #স্মৃতি"
+ },
+ "thumbnail": {
+  "text": "ভাঙবেন না",
+  "sub": "১৯৯৮ সালের চুলা"
+ }
+}

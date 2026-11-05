@@ -1,0 +1,442 @@
+{
+ "id": "071",
+ "status": "ready",
+ "title_bn": "কাদের চাচার আলু",
+ "theme": "struggle",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Of the Division of Labour and the Extent of the Market",
+  "title_bn": "বাজার যত বড়, দাম তত ন্যায্য"
+ },
+ "cast": {
+  "kader": {
+   "name": "কাদের চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "teep": true,
+   "voice": "old_man"
+  },
+  "nayeem": {
+   "name": "নাঈম",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "shapla": {
+   "name": "শাপলা",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রংপুরের মিঠাপুকুর। এবার আলুর ফলন ভালো। কিন্তু ফড়িয়া দিচ্ছে কেজি *বারো টাকা*। ঢাকায় সেই আলু চল্লিশ।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রংপুর, আলুর খেত",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খেতে আলুর দাম",
+       "value": "১২ টাকা কেজি",
+       "red": true
+      },
+      {
+       "label": "ঢাকার বাজারে",
+       "value": "৪০ টাকা কেজি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "আব্বা, বারো টাকায় তো সার-বীজের টাকাও উঠবো না। ঢাকার মানুষ *চল্লিশ* দিয়া কিনে!",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nayeem": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "জয়নাল ফড়িয়া বিশ বছর আমার আলু নেয়। *বিপদে* টাকা দেয়। ওরে ছাড়ুম কেমনে?",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kader": "hold"
+    }
+   }
+  },
+  {
+   "say": "নাঈম এইচএসসি পাস। বাজারে মোবাইলের দোকানে কাজ করে। মাথায় একটা বুদ্ধি, কিন্তু বাবার মুখে *ভয়*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাতে নাঈম খুলল একটা ফেসবুক পেজ। নাম দিল— *রংপুরের আলু, চাষির ঘর থেকে*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "মোবাইলের দোকান, রাত",
+    "props": [
+     "signboard",
+     "sign:নাঈম টেলিকম"
+    ],
+    "chars": [
+     {
+      "id": "nayeem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "ফেসবুক পেজ",
+     "lines": [
+      "‘রংপুরের আলু— চাষির ঘর থেকে’",
+      "১০ কেজির বস্তা: ২৮০ টাকা",
+      "কুরিয়ারে ঢাকা"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "ফেসবুকে আলু বেচবি? গ্রামের মানুষ শুনলে *হাসবো*। কাদেরের পোলা মোবাইলে আলু বেচে!",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "বাড়ির উঠান",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "kader": "point"
+    }
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "হাসুক আব্বা। দেখেন, ঢাকার একজন আপা *পঞ্চাশ কেজি* চাইছে।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nayeem": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম মাস ভালো গেল না",
+   "card": {
+    "title": "যা যা ভুল হলো",
+    "items": [
+     {
+      "t": "বস্তায় পচা আলু মিশে গেল",
+      "mark": "x"
+     },
+     {
+      "t": "কুরিয়ার দেরি করল তিন দিন",
+      "mark": "x"
+     },
+     {
+      "t": "গ্রামে কথা— ‘কাদেরের পোলা মোবাইলে আলু বেচে’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "কাদের চাচা প্যাকিংয়ে হাত দিলেন না। ছেলের দিকে তাকালেন, যেন বলছেন— *বলছিলাম না*?",
+   "scene": {
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পনেরো দিন পর ঢাকার সেই আপার ইনবক্সে একটা ভিডিও এল। নাঈম মোবাইলটা বাবার *সামনে* ধরল।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পনেরো দিন পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "চাচা, আমার বাচ্চারা জীবনে প্রথম জিগাইলো, আলু *কোথা থেকে* আসে। আমি বলছি— কাদের চাচার খেত থেকে।",
+   "tone": "warmly",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "শাপলা আপা, ঢাকা",
+     "msgs": [
+      {
+       "who": "শাপলা",
+       "t": "আলুভর্তা বানাইছি, দেখেন!"
+      },
+      {
+       "who": "শাপলা",
+       "t": "চাচা, আপনার আলুতে মাটির গন্ধ পাইছি, ছোটবেলার গ্রামের।"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কাদের চাচা ভিডিওটা দেখলেন একবার, দুইবার, *পাঁচবার*। চল্লিশ বছর আলু ফলিয়েছেন। কেউ কোনোদিন তাঁর নাম ধরে ধন্যবাদ দেয়নি।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "নাঈম… কালকে বস্তা আমি নিজে বাছমু। পচা একটাও *যাইবো না*।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kader": "down"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে কাদের চাচা নিজের হাতে আলু বাছলেন। আর প্রতিটা বস্তায় দিলেন একটা ছোট কাগজ, কাঁপা হাতে লেখা।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরের দিন সকাল",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kader",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "এইবার দেখি গ্রামের মানুষ কে হাসে। *চিঠিওয়ালা আলু* কেউ দেখছে?",
+   "tone": "playfully",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বস্তার চিঠি",
+     "lines": [
+      "আল্লাহর নাম নিয়া খাইবেন",
+      "— কাদের চাচা, মিঠাপুকুর"
+     ]
+    },
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kader": "talk"
+    }
+   }
+  },
+  {
+   "say": "সেই মৌসুমে বারোশো কেজি আলু গেল ঢাকায়, আঠাশ টাকায়। আর বাকিটা কাদের চাচা দিলেন জয়নাল ফড়িয়াকেই। *সম্পর্ক* তো সম্পর্ক।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এই মৌসুমে বিক্রি",
+       "value": "১,২০০ কেজি"
+      },
+      {
+       "label": "দাম",
+       "from": "১২",
+       "value": "২৮ টাকা"
+      },
+      {
+       "label": "ফড়িয়াকেও",
+       "value": "বাকি আলু, আগের মতো"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "মিঠাপুকুরের সেই খেতের আইলে এখন একটা ছোট সাইনবোর্ড। ছেলের বানানো, বাবার নামে— *‘কাদের চাচার আলু’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দাম ঠিক করে বাজার… *মর্যাদা দেয়  মানুষ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দাম ঠিক করে বাজার…",
+    "line2": "মর্যাদা দেয়\nমানুষ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "খেতে আলু ১২ টাকা, ঢাকায় ৪০… ছেলে খুলল ফেসবুক পেজ, বাবা বললেন ‘মানুষ হাসবো’ 🥔",
+  "description": "রংপুরের কৃষক কাদের চাচা ফড়িয়ার কাছে আলু বেচেন কেজি বারো টাকায়, ঢাকায় সেই আলু চল্লিশ। ছেলে নাঈম খুলল ফেসবুক পেজ, বাবা রাজি না। প্রথম অর্ডার গেল ঢাকায়, তারপর এল একটা ভিডিও…",
+  "tags": [
+   "কৃষকের গল্প",
+   "রংপুরের আলু",
+   "অনলাইন ব্যবসা",
+   "বাবা ছেলের গল্প",
+   "ফেসবুক পেজ",
+   "bangla golpo",
+   "সংগ্রামের গল্প",
+   "কৃষি"
+  ]
+ },
+ "facebook": {
+  "caption": "ফেসবুকে আলু বেচবে শুনে বাবা হেসেছিলেন। একটা ভিডিও দেখে সেই বাবাই প্রতিটা বস্তায় চিঠি লিখলেন। 🥔\nতুমি কি কখনো সরাসরি কৃষকের কাছ থেকে কিছু কিনেছ? 👇 #কৃষক #আলু"
+ },
+ "thumbnail": {
+  "text": "খেতে ১২, ঢাকায় ৪০",
+  "sub": "চাচার আলু"
+ }
+}

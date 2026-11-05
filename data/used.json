@@ -539,6 +539,54 @@
    "relation": "rival tailors / apprentice",
    "set": "shop",
    "hook": "two rival tailors facing each other in Old Dhaka; on chandraat one is hospitalised with 43 orders pending; the rival sews all night and delivers under the other's name"
+  },
+  {
+   "id": "069",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking: The Friendly Thief",
+   "relation": "school guard / alumna doctor / rich parent",
+   "set": "street",
+   "hook": "guard who memorised 1,800 students' names retires; humiliated by a parent, then hundreds of alumni line up at the gate saying their names and batches"
+  },
+  {
+   "id": "070",
+   "book": "Thinking, Fast and Slow",
+   "item": "Loss Aversion and the Endowment Effect",
+   "relation": "grandmother / grandson / son",
+   "set": "balcony",
+   "hook": "son wants to demolish the yard's clay stove after building a pucca house with gas; grandmother refuses; grandson learns grandfather rebuilt it after the 1998 flood"
+  },
+  {
+   "id": "071",
+   "book": "The Wealth of Nations",
+   "item": "Of the Division of Labour and the Extent of the Market",
+   "relation": "farmer father / son / Dhaka buyer",
+   "set": "street",
+   "hook": "potato farmer sells to middlemen at 12 tk; son starts a Facebook page; father refuses until a Dhaka buyer's thank-you video; father writes notes in every sack"
+  },
+  {
+   "id": "072",
+   "book": "The Daily Laws",
+   "item": "The Law of Empathy",
+   "relation": "retired postman / mother of a Saudi migrant / migrant son",
+   "set": "balcony",
+   "hook": "mother asks the retired postman every week for a letter; son silent 8 months out of shame after losing his job; postman tracks him by phone and tells him mother wants his voice, not money"
+  },
+  {
+   "id": "073",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Narcissism: Transform Self-love into Empathy",
+   "relation": "call-centre agent / lonely old caller / team leader",
+   "set": "shop",
+   "hook": "an old man calls a telecom centre nightly with an angry internet complaint; agent discovers he can't video-call his grandson abroad and teaches him on follow-up calls"
+  },
+  {
+   "id": "074",
+   "book": "The Righteous Mind",
+   "item": "The Rider and the Elephant",
+   "relation": "tea-garden worker father / daughter / headmaster",
+   "set": "street",
+   "hook": "tea-plucker father ashamed to enter his daughter's prize-giving; her essay 'My father' is read on the mike while he stands outside the gate"
   }
  ]
 }
