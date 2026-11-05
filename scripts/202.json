@@ -1,0 +1,390 @@
+{
+ "id": "202",
+ "status": "ready",
+ "title_bn": "রিকশার পেছনের লেখা",
+ "theme": "struggle",
+ "source": {
+  "book": "The Open Society and Its Enemies",
+  "author": "Karl Popper",
+  "author_bn": "কার্ল পপার",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Your attitude defines your journey",
+  "title_bn": "নিজের গল্প নিজে লেখা"
+ },
+ "cast": {
+  "sattar": {
+   "name": "সাত্তার",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  },
+  "daughter": {
+   "name": "মেয়ে লাবণী",
+   "type": "teen_girl",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "passenger": {
+   "name": "যাত্রী আপা",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রংপুর, জাহাজ কোম্পানির মোড়। সাত্তারের রিকশা, দশ বছর। আর রিকশার পেছনে লাল রঙে লেখা একটা লাইন— *‘আমার মেয়ে ডাক্তার হবে ইনশাআল্লাহ’*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রংপুর, জাহাজ কোম্পানির মোড়",
+    "chars": [
+     {
+      "id": "sattar",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাত্তারের রিকশা",
+       "value": "১০ বছর"
+      },
+      {
+       "label": "দৈনিক আয়",
+       "value": "৭০০–৯০০ টাকা"
+      },
+      {
+       "label": "রিকশার পেছনে লেখা",
+       "value": "১টা লাইন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "যাত্রীরা পড়ে, কেউ হাসে। ‘রিকশাওয়ালার মেয়ে ডাক্তার? *হাহ*।’ সাত্তার শুধু প্যাডেল চালান। উত্তর দেন না। লেখাটা *মোছেন না*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sattar",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "daughter",
+   "say": "আব্বা, ওই লেখাটা মুইছা ফালান। কলেজের পোলাপান ছবি তুইলা হাসে। আমি যদি না পারি? তখন *সবাই জানবো*।",
+   "tone": "upset",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সাত্তারের ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "daughter",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sattar",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "daughter": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sattar",
+   "say": "না পারলে কী? লেখাটা তো তোর জন্য না রে মা। লেখাটা আমার জন্য। প্রতিদিন পেছনে তাকাইয়া মনে পড়ে, *কেন চালাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sattar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sattar": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "লাবণীর দুশ্চিন্তা",
+   "card": {
+    "title": "যা ভাবত",
+    "items": [
+     {
+      "t": "মেডিকেল কোচিং ২৫ হাজার, টাকা নাই",
+      "mark": "x"
+     },
+     {
+      "t": "সবাই জানে, ফেল করলে লজ্জা",
+      "mark": "x"
+     },
+     {
+      "t": "আব্বার হাঁটুর ব্যথা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক বিকেলে লাবণী আব্বার রিকশায় কোচিং থেকে ফিরছিল। পাশে উঠলেন এক যাত্রী আপা। পেছনের লেখাটা দেখে *থমকে গেলেন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক বিকেল, রিকশায়",
+    "chars": [
+     {
+      "id": "passenger",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "daughter",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "passenger",
+   "say": "এইটা কার রিকশা? তোমার আব্বার? এই লেখা উনি লিখছেন?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "passenger",
+     "zoom": 1.4
+    },
+    "arms": {
+     "passenger": "talk"
+    }
+   }
+  },
+  {
+   "voice": "daughter",
+   "say": "জি, আপা। মানুষ হাসে। আমি *লজ্জা পাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "daughter",
+     "zoom": 1.4
+    },
+    "arms": {
+     "daughter": "hold"
+    }
+   }
+  },
+  {
+   "voice": "passenger",
+   "say": "আমার আব্বা দর্জি ছিলেন। দোকানে লিখছিলেন, ‘আমার মেয়ে ব্যারিস্টার হবে’। আমিও লজ্জা পাইতাম। আজকে আমি *আইনজীবী*। ওই লেখাটা আমি এখনো রাখছি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "passenger",
+     "zoom": 1.4
+    },
+    "arms": {
+     "passenger": "talk"
+    }
+   }
+  },
+  {
+   "say": "লাবণী চুপ। রিকশা চলছে। সামনে আব্বার ঘামে ভেজা পিঠ। আর প্রথমবার পেছনের লেখাটা ওর *লজ্জা* মনে হলো না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "daughter",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাত থেকে লাবণী পড়ল অন্যরকম করে। ভোর চারটা থেকে। ইউটিউবে ফ্রি ক্লাস, সিনিয়র আপুর পুরোনো বই। আর পড়ার টেবিলের সামনে লিখে রাখল *আব্বার রিকশার লাইনটা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত থেকে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "daughter",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ফলাফলের দিন। রংপুর মেডিকেল কলেজ। আর ভর্তির দিন লাবণী গেল আব্বার রিকশায়। গেটের সামনে নামল। লোকজন তাকিয়ে আছে *রিকশার পেছনে*।",
+   "pause": 1.2,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মেডিকেল ভর্তির দিন",
+    "chars": [
+     {
+      "id": "sattar",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "daughter",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": {
+     "focus": "sattar",
+     "zoom": 1.4
+    },
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেডিকেল ভর্তি পরীক্ষা",
+       "value": "উত্তীর্ণ"
+      },
+      {
+       "label": "কলেজ",
+       "value": "রংপুর মেডিকেল কলেজ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "daughter",
+   "say": "আব্বা, লেখাটা মুইছেন না। শুধু ‘হবে’টা কাইটা লিখেন— *‘হচ্ছে’*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "daughter",
+     "zoom": 1.4
+    },
+    "arms": {
+     "daughter": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sattar",
+   "say": "মা রে… দশ বছর মানুষ হাসছে। আজকে হাসি তো *আমার*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "sattar",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sattar": "face"
+    }
+   }
+  },
+  {
+   "say": "গেটের দারোয়ান এগিয়ে এলেন। লেখাটা পড়লেন। তারপর সাত্তারের হাত ধরে বললেন, ‘ভাই, *মিষ্টি কই*?’",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সাত্তারের রিকশার পেছনে এখন নতুন রঙে লেখা— *‘আমার মেয়ে ডাক্তার হচ্ছে। আলহামদুলিল্লাহ।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষ স্বপ্ন দেখে হাসে… *যিনি স্বপ্ন লেখেন তিনিই শেষে হাসেন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষ স্বপ্ন দেখে হাসে…",
+    "line2": "যিনি স্বপ্ন লেখেন\nতিনিই শেষে হাসেন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রিকশার পেছনে লেখা ‘আমার মেয়ে ডাক্তার হবে’, লোকে হাসত… সাত্তার মুছে ফেলেননি ১০ বছর 🛺",
+  "description": "রংপুরের সাত্তার দশ বছর রিকশা চালান। রিকশার পেছনে রং দিয়ে লেখা— আমার মেয়ে ডাক্তার হবে ইনশাআল্লাহ। যাত্রীরা হাসে, কেউ ঠাট্টা করে। মেয়ে লাবণী লজ্জা পায়, বলে মুছে ফেলো আব্বা। সাত্তার মুছলেন না…",
+  "tags": [
+   "রিকশাওয়ালা বাবা",
+   "মেয়ে ডাক্তার",
+   "স্বপ্ন",
+   "রংপুর",
+   "বাবা মেয়ের গল্প",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "রিকশার পেছনের লেখা নিয়ে দশ বছর মানুষ হেসেছে। মেডিকেলের ভর্তির দিন সেই রিকশায় চড়ে গেল মেয়ে। 🛺\nতোমার বাবা-মা তোমার জন্য কোন স্বপ্ন সবার সামনে দেখেছিলেন? 👇 #বাবামেয়ে #স্বপ্ন"
+ },
+ "thumbnail": {
+  "text": "‘আমার মেয়ে ডাক্তার হবে’",
+  "sub": "লোকে হাসত"
+ }
+}

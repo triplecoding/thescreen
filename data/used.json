@@ -1595,6 +1595,54 @@
    "relation": "son / elderly mother / daughter-in-law",
    "set": "home",
    "hook": "a son records his ageing mother's unwritten recipes during Eid by measuring her handfuls; the notebook becomes a family heirloom and his wife cooks it for his mother when her hands shake"
+  },
+  {
+   "id": "201",
+   "book": "The Art of War",
+   "item": "Adapt to the terrain",
+   "relation": "haor teacher / pupil / union chairman",
+   "set": "street",
+   "hook": "a teacher in the Sunamganj haor rents a boat to hold class at each village landing during the monsoon; dropouts stop; the union council funds a second boat"
+  },
+  {
+   "id": "202",
+   "book": "The Open Society and Its Enemies",
+   "item": "Your attitude defines your journey",
+   "relation": "rickshaw puller father / daughter / passenger",
+   "set": "street",
+   "hook": "a Rangpur rickshaw puller paints his dream for his daughter on his rickshaw; she is embarrassed; a passenger's story of her own father changes how she sees it; she gets into medical college"
+  },
+  {
+   "id": "203",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking: we say yes to people who notice us",
+   "relation": "new daughter-in-law / father-in-law / husband",
+   "set": "home",
+   "hook": "a father-in-law ignores his son's love-marriage bride; she quietly notices his broken spectacles and reads the newspaper to him; he warms to her"
+  },
+  {
+   "id": "204",
+   "book": "The Social Contract",
+   "item": "Integrity under pressure",
+   "relation": "pharmacy assistant / pharmacy owner / village mother",
+   "set": "shop",
+   "hook": "a pharmacy worker realises he gave a child the wrong-strength syrup; the owner says stay quiet; he tracks down the mother before the night dose; the owner later makes double-check rules"
+  },
+  {
+   "id": "205",
+   "book": "Mastery",
+   "item": "Return to your first skill with new eyes",
+   "relation": "returned migrant / wife / son",
+   "set": "home",
+   "hook": "a returnee electrician with no savings sees unsafe village wiring; after a near-accident he starts a safe-wiring service with his son; he becomes the area's trusted electrician"
+  },
+  {
+   "id": "206",
+   "book": "The Republic",
+   "item": "The well-ordered community educates itself",
+   "relation": "young man / neighbourhood auntie / teenager",
+   "set": "street",
+   "hook": "a young man opens a tiny library-and-carrom room next to the mosque for idle teenagers; one boy becomes its keeper; the neighbourhood donates books"
   }
  ]
 }

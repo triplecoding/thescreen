@@ -1,0 +1,413 @@
+{
+ "id": "206",
+ "status": "ready",
+ "title_bn": "মসজিদের পাশের লাইব্রেরি",
+ "theme": "community",
+ "source": {
+  "book": "The Republic",
+  "author": "Plato",
+  "author_bn": "প্লেটো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The well-ordered community educates itself",
+  "title_bn": "একসাথে শেখা"
+ },
+ "cast": {
+  "hafiz": {
+   "name": "হাফিজ ভাই",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "young_man"
+  },
+  "auntie": {
+   "name": "পাড়ার খালা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "old_woman"
+  },
+  "boy": {
+   "name": "কিশোর জনি",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "সিলেট, শিবগঞ্জের এক মোড়। রাত দশটা। পনেরো-বিশজন কিশোর, হাতে মোবাইল। মাঝে মাঝে ঝগড়া, মাঝে মাঝে *আরও খারাপ কিছু*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "সিলেট, শিবগঞ্জের এক মোড়",
+    "chars": [
+     {
+      "id": "boy",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মোড়ে রাতের আড্ডা",
+       "value": "১৫–২০ জন কিশোর"
+      },
+      {
+       "label": "পাড়ার বড়দের সমাধান",
+       "value": "বকা"
+      },
+      {
+       "label": "কাজ হয়েছে",
+       "value": "না"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "auntie",
+   "say": "হাফিজ, দেখছস? প্রতিরাতে এরা এইখানে। কাল একজনের মোবাইল নিয়া মারামারি। কেউ কিছু *কয় না*!",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "night",
+    "chip": "মোড়ের পাশে",
+    "chars": [
+     {
+      "id": "auntie",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "auntie": "angry"
+    },
+    "arms": {
+     "auntie": "point"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "খালা, কয় তো সবাই। বকে। কিন্তু বইলা যামু কই? মোড় থেইকা উঠাইয়া দিলে এরা *যাইবো কই*?",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "moods": {
+     "hafiz": "thinking"
+    },
+    "arms": {
+     "hafiz": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পাড়ার বড়দের চেষ্টা",
+   "card": {
+    "title": "যা কাজ করেনি",
+    "items": [
+     {
+      "t": "বকা",
+      "mark": "x"
+     },
+     {
+      "t": "বাবা-মায়ের কাছে নালিশ",
+      "mark": "x"
+     },
+     {
+      "t": "মোড়ে লাইট খুলে ফেলা— অন্ধকারে আরও খারাপ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "হাফিজ ভাই সেই রাতে ভাবলেন। এই ছেলেরা খারাপ না। ওদের শুধু *বসার একটা জায়গা* নেই। যেখানে কেউ বকবে না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে মসজিদের পাশে বারো ফুটের একটা ঘর। ভাড়া মাসে তিন হাজার, নিজের বেতন থেকে। নিজের দুইশো বই। একটা ক্যারম বোর্ড। আর দরজায় লেখা— *পাড়া পাঠাগার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মসজিদের পাশের ছোট ঘর",
+    "props": [
+     "signboard",
+     "sign:পাড়া পাঠাগার"
+    ],
+    "chars": [
+     {
+      "id": "hafiz",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "fx": "sparkle"
+   }
+  },
+  {
+   "voice": "boy",
+   "say": "ক্যারম খেলতে বিশ পাতা পড়তে হইবো? এইটা কী *নিয়ম*?",
+   "tone": "suspicious",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "পাড়া পাঠাগারের নিয়ম",
+     "lines": [
+      "রাত ১০টা পর্যন্ত খোলা",
+      "ক্যারম খেলতে হলে আগে ২০ পাতা পড়া",
+      "কেউ বকবে না"
+     ]
+    },
+    "set": "shop",
+    "light": "night",
+    "chip": "প্রথম সপ্তাহ",
+    "props": [
+     "signboard",
+     "sign:পাড়া পাঠাগার"
+    ],
+    "chars": [
+     {
+      "id": "boy",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "hafiz",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "boy": "cross"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "নিয়ম কঠিন না। বিশ পাতা, যেকোনো বই। গোয়েন্দা, খেলা, ভূত। পড়লে খেল, *যতক্ষণ খুশি*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "hold"
+    }
+   }
+  },
+  {
+   "voice": "boy",
+   "say": "আর না পড়লে? বকবেন? সবাই তো খালি *বকে*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "boy",
+     "zoom": 1.4
+    },
+    "arms": {
+     "boy": "cross"
+    }
+   }
+  },
+  {
+   "voice": "hafiz",
+   "say": "না রে। না পড়লে বইসা থাক, চা খা। এইখানে কেউ বকবো না, এইটাই তো *একমাত্র নিয়ম*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "hafiz",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hafiz": "down"
+    }
+   }
+  },
+  {
+   "say": "প্রথম রাতে এল তিনজন। ক্যারমের দিকে তাকাল, বইয়ের দিকে তাকাল। চা খেল। চলে গেল। দ্বিতীয় রাতে এল আটজন। আর এবার একজন *বই খুলল*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "জনি একটা গোয়েন্দা বই তুলল। খেলার জন্য। বিশ পাতা পড়ল। তারপর আর থামল না। সেই রাতে ক্যারম পড়ে রইল, জনি পড়ল *একশো বিশ পাতা*।",
+   "scene": {
+    "cam": {
+     "focus": "boy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর। মোড়ে আড্ডা নেই। রাত দশটা পর্যন্ত পাঠাগারে আলো। আর জনি এখন পাঠাগারের *খাতা রাখে*— কে কোন বই নিল।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard",
+     "sign:পাড়া পাঠাগার"
+    ],
+    "chars": [
+     {
+      "id": "auntie",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "boy",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "auntie",
+   "say": "এই যে জনি, আমার নাতির পুরান বই আনছি। চল্লিশটা। তোরা নিস? *তুই* রাখস এইগুলা?",
+   "scene": {
+    "cam": {
+     "focus": "auntie",
+     "zoom": 1.4
+    },
+    "moods": {
+     "auntie": "surprised"
+    },
+    "arms": {
+     "auntie": "hold"
+    }
+   }
+  },
+  {
+   "voice": "boy",
+   "say": "জি খালা। আমিই রাখি। খালা, আপনার নাতিরে পাঠাইয়েন। এইখানে *ক্যারমও* আছে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "boy",
+     "zoom": 1.4
+    },
+    "arms": {
+     "boy": "hold"
+    }
+   }
+  },
+  {
+   "voice": "auntie",
+   "say": "যে পোলারে তিন মাস আগে মোড়ে বকছি, সেই আজকে আমার বই গুইনা রাখে। হাফিজ, তুই আমগো *পাড়াটা* ফিরাইয়া দিছস।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "auntie",
+     "zoom": 1.4
+    },
+    "arms": {
+     "auntie": "hold"
+    }
+   }
+  },
+  {
+   "say": "পাঠাগারের দেয়ালে একটা কাগজ। জনির হাতে লেখা— *‘আমরা মোড়ে বসতাম কারণ কোথাও যাওয়ার ছিল না। এখন আছে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বকা দিয়ে মোড় খালি করা যায়… *জায়গা দিলে মন ভরে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "বকা দিয়ে মোড় খালি করা যায়…",
+    "line2": "জায়গা দিলে\nমন ভরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পাড়ার ছেলেরা মোড়ে বসে আড্ডা আর মোবাইল, বড়রা শুধু বকে… হাফিজ ভাই খুললেন ১২ ফুটের একটা লাইব্রেরি 📚",
+  "description": "সিলেটের এক পাড়া। কিশোররা মোড়ে বসে মোবাইল, মাঝে মাঝে ঝামেলা। বড়রা বকে, কেউ কিছু করে না। হাফিজ ভাই, পাড়ার মসজিদের পাশের ছোট একটা ঘর ভাড়া নিলেন। নিজের দুইশো বই আর একটা ক্যারম বোর্ড দিয়ে শুরু…",
+  "tags": [
+   "পাড়া লাইব্রেরি",
+   "কিশোর",
+   "বই পড়া",
+   "সিলেট",
+   "সমাজসেবা",
+   "bangla golpo",
+   "সমাজের গল্প",
+   "অনুপ্রেরণার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বকা দিয়ে মোড় থেকে ছেলেদের সরানো যায়নি। একটা ছোট লাইব্রেরি আর একটা ক্যারম বোর্ড পেরেছে। 📚\nতোমার পাড়ায় কিশোরদের জন্য কী থাকলে ভালো হতো? 👇 #পাড়া #লাইব্রেরি"
+ },
+ "thumbnail": {
+  "text": "মোড়ের আড্ডা",
+  "sub": "১২ ফুটের লাইব্রেরি"
+ }
+}
