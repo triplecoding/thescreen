@@ -395,6 +395,17 @@
       "playlist": true,
       "facebook": "2024805031559271",
       "scheduled_for": "2026-11-08T15:30:00+06:00"
+    },
+    {
+      "id": "034",
+      "date": "2026-11-08",
+      "slot": "17:30",
+      "duration": 137.35,
+      "title": "তিন বছর শুধু ‘পরে দেখব’, তারপর জরিনা খালা আর চল্লিশ হকার ☔ | The Dictator's Handbook",
+      "youtube": "-OeqYLbduSk",
+      "playlist": true,
+      "facebook": "1848903786303603",
+      "scheduled_for": "2026-11-08T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -419,10 +430,11 @@
     "The Republic": "PLIYzytq-E1g0",
     "On War": "PLB7loe6INN4s",
     "The Open Society and Its Enemies": "PLNXUg5iIRpr4",
-    "The 33 Strategies of War": "PLB3eGsLlxhY8"
+    "The 33 Strategies of War": "PLB3eGsLlxhY8",
+    "The Dictator's Handbook": "PLP5oE_7fMspM"
   },
   "last_run": {
-    "at": "2026-11-05T22:27:32.995006+06:00",
+    "at": "2026-11-05T22:34:32.442702+06:00",
     "errors": []
   },
   "queue_remaining": 15,
