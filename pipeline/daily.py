@@ -144,6 +144,47 @@ def upcoming(now, cfg, done, hours=26, grace_min=100, limit=6):
     return out[:limit]
 
 
+def needs_fb(rec, now):
+    """A post that reached YouTube but not Facebook (e.g. Facebook's temporary posting limit) and is still worth posting."""
+    if not rec.get("youtube") or rec.get("facebook") or not rec.get("facebook_error") or rec.get("fb_tries", 0) >= 3:
+        return False
+    sf = rec.get("scheduled_for")
+    if not sf or sf == "immediate":
+        return False
+    when = datetime.fromisoformat(sf)
+    return when > now - timedelta(hours=12)
+
+
+def fb_repair(state, platforms, now, tts, limit=2):
+    """Re-produce (voice comes from the cache) and upload to Facebook the posts that only reached YouTube.
+    Scheduled for the original slot when it is still ahead, otherwise published now. At most `limit` per run so a
+    Facebook posting limit is not hit again."""
+    if "facebook" not in platforms:
+        return
+    from produce import produce
+    import upload_facebook
+    done = 0
+    for rec in state.get("posted", [])[-18:]:
+        if done >= limit or not needs_fb(rec, now):
+            continue
+        rec["fb_tries"] = rec.get("fb_tries", 0) + 1
+        try:
+            log(f"facebook repair: {rec['id']} ({rec['date']} {rec['slot']})")
+            odir = produce(rec["id"], tts)
+            when = datetime.fromisoformat(rec["scheduled_for"])
+            sched = when.timestamp() if when > now + timedelta(minutes=20) else None
+            script = load_json(SCRIPTS / f"{rec['id']}.json")
+            rec["facebook"] = upload_facebook.upload(Path(odir) / "video.mp4", script, sched, Path(odir) / "thumb_9x16.jpg")
+            rec.pop("facebook_error", None)
+            done += 1
+        except Exception as e:  # noqa
+            rec["facebook_error"] = str(e)[:300]
+            log(f"facebook repair {rec['id']} failed: {str(e)[:200]}")
+        save_json(STATE, state)
+        git_commit(f"facebook repair {rec['id']}", state)
+
+
+
 def engage(state, platforms, now):
     """Post the 'first comment' (the episode's mirror question) on videos that have gone live since the last run."""
     import seo
@@ -200,7 +241,10 @@ def main():
         state = load_json(STATE, {}) or {}
         done = {(p["date"], p["slot"]) for p in state.get("posted", [])}
         todo = upcoming(now, cfg, done, limit=max(a.ahead, 1))
-        work = 1 if todo and queue(state) else 0
+        repairs = [p["id"] for p in state.get("posted", []) if needs_fb(p, now)]
+        work = 1 if (todo and queue(state)) or repairs else 0
+        if repairs:
+            log("plan: facebook repair pending for", ", ".join(repairs))
         log("plan:", ", ".join(f"{d} {s}" for d, s, _ in todo) or "all slots for the next 26 h already scheduled", "| queue:", len(queue(state)))
         if os.environ.get("GITHUB_OUTPUT"):
             with open(os.environ["GITHUB_OUTPUT"], "a") as f:
@@ -265,6 +309,11 @@ def main():
     parked_now = 0
     if not a.dry_run:
         engage(state, platforms, now)
+        if not a.extra:
+            try:
+                fb_repair(state, platforms, now, a.tts)
+            except Exception as e:  # noqa — a repair must never stop the day's production
+                log("facebook repair skipped:", e)
     def taken(slot, when):
         d = str(when.date()) if (a.ahead or a.next) else str(date)
         return (d, slot) in {(p["date"], p["slot"]) for p in state["posted"]}
