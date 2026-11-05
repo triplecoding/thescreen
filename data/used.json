@@ -1115,6 +1115,54 @@
    "relation": "reticent father / son in Dhaka / mother",
    "set": "home",
    "hook": "a father who only ever texts 'ok' is taught emojis by his son over Eid; a week later at midnight he sends his first red heart after practising for days"
+  },
+  {
+   "id": "141",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Never sacrifice your integrity for profit",
+   "relation": "shop assistant / shop owner / young mother",
+   "set": "shop",
+   "hook": "owner orders a 19-year-old assistant to relabel expired infant formula; a mother with a baby walks in; the boy tells her the truth and asks the owner if he'd feed it to his granddaughter"
+  },
+  {
+   "id": "142",
+   "book": "The Righteous Mind",
+   "item": "Expanding the moral circle",
+   "relation": "Muslim tea-stall owner / Hindu puja organiser / neighbourhood girl",
+   "set": "street",
+   "hook": "a storm floods a small lane puja pandal on Ashtami night; the tea-stall owner opens his storeroom to shelter it; months later the puja committee sends sweets for Eid"
+  },
+  {
+   "id": "143",
+   "book": "The 50th Law",
+   "item": "Self-belief against the crowd",
+   "relation": "transgender (hijra) woman / hungry student / neighbouring shopkeeper",
+   "set": "street",
+   "hook": "a hijra woman opens a khichuri stall near a college to earn with dignity; nobody eats for a week until a broke student sits down in the rain; students start coming"
+  },
+  {
+   "id": "144",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Defensiveness: lower resistance with patience",
+   "relation": "stepdaughter / stepmother / father",
+   "set": "home",
+   "hook": "a girl refuses to accept her stepmother for three years; the stepmother never forces and quietly keeps the late mother's photo dusted and her saree for the girl; on the SSC morning the girl calls her Ammu"
+  },
+  {
+   "id": "145",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Planning Fallacy",
+   "relation": "software tester / product head / CEO",
+   "set": "shop",
+   "hook": "the night before launching a remittance app, a tester finds a rounding bug that always takes under one taka from migrants; she shows its yearly total and the CEO delays launch"
+  },
+  {
+   "id": "146",
+   "book": "The Righteous Mind",
+   "item": "Shared rituals bind us",
+   "relation": "migrant father / bride daughter / uncle",
+   "set": "home",
+   "hook": "a father in Saudi can't get leave for his daughter's wedding; at the farewell the uncle holds up the phone so the father can 'give her hand' and say the words himself"
   }
  ]
 }

@@ -1,0 +1,429 @@
+{
+ "id": "141",
+ "status": "ready",
+ "title_bn": "মেয়াদের স্টিকার",
+ "theme": "honesty",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Never sacrifice your integrity for profit",
+  "title_bn": "লাভের চেয়ে বড় নীতি"
+ },
+ "cast": {
+  "ripon": {
+   "name": "রিপন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "owner": {
+   "name": "হাজী সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "old_man"
+  },
+  "mother": {
+   "name": "এক মা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার দৌলতপুর বাজার। হাজী স্টোরের তাকে ছত্রিশটা বাচ্চাদের দুধের কৌটা। মেয়াদ শেষ *গত মাসে*। দাম প্রায় বিশ হাজার টাকা।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "খুলনা, দৌলতপুর বাজার",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর — মুদি ও শিশুখাদ্য",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "ripon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেয়াদ শেষ দুধের কৌটা",
+       "value": "৩৬টা"
+      },
+      {
+       "label": "দাম",
+       "value": "২০,৫০০ টাকা",
+       "red": true
+      },
+      {
+       "label": "মেয়াদ শেষ",
+       "value": "গত মাসে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "রিপন, এই রোলটা নে। কৌটার পুরান তারিখের উপর নতুন স্টিকার। *ছয় মাস পরের* তারিখ।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "hold"
+    }
+   }
+  },
+  {
+   "voice": "ripon",
+   "say": "হাজী সাব, এইটা তো বাচ্চাদের দুধ। মেয়াদ শেষ হইলে *পেট খারাপ*…",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    },
+    "moods": {
+     "ripon": "worried"
+    },
+    "arms": {
+     "ripon": "down"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "এক মাসে কিছু হয় না। সবাই করে। বিশ হাজার টাকা ফালাইয়া দিমু? তোর বেতন থেইকা কাটমু? *লাগা*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "point"
+    }
+   }
+  },
+  {
+   "say": "রিপনের বেতন সাত হাজার। মা অসুস্থ, ছোট বোনের স্কুল। চাকরি গেলে কাল থেকে কী? স্টিকারের রোলটা হাতে। *হাত কাঁপছে*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রিপনের মাথায় তখন যা ঘুরছিল",
+   "card": {
+    "title": "সহজ যুক্তিগুলো",
+    "items": [
+     {
+      "t": "সবাই করে",
+      "mark": "x"
+     },
+     {
+      "t": "এক মাসে কিছু হয় না",
+      "mark": "x"
+     },
+     {
+      "t": "আমি তো শুধু কর্মচারী",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ঠিক তখন দোকানে ঢুকলেন এক মা। কোলে ছয় মাসের একটা বাচ্চা। তাকের দিকে আঙুল তুললেন— *ওই দুধটা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "একই সকাল",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর — মুদি ও শিশুখাদ্য",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "mother",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ripon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mother",
+   "say": "ভাই, এইটা দেন। ডাক্তার এইটাই কইছে। *দুইটা*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mother",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mother": "hold"
+    }
+   }
+  },
+  {
+   "say": "রিপন কৌটা নামাল। তাকাল বাচ্চার দিকে। ছোট্ট হাত, মায়ের ওড়না ধরে আছে। আর কৌটার নিচে, ছোট অক্ষরে, *গত মাসের তারিখ*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ripon",
+   "say": "আপা, এইটা নিয়েন না। মেয়াদ শেষ। *গত মাসে*। পাশের দোকানে নতুনটা আছে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ripon": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "কী করলি তুই? কাস্টমার *ভাগাইলি*? কাল থেকে আসবি না!",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মা চলে যাওয়ার পর",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর — মুদি ও শিশুখাদ্য",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "ripon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "owner": "angry"
+    },
+    "arms": {
+     "owner": "point"
+    }
+   }
+  },
+  {
+   "voice": "ripon",
+   "say": "হাজী সাব, একটা কথা কই, তারপর যামু। আপনার নাতনির বয়স তো ছয় মাস, না? এই দুধ আপনি *তারে খাওয়াইবেন*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ripon": "down"
+    }
+   }
+  },
+  {
+   "say": "হাজী সাহেব থেমে গেলেন। ছয় মাসের নাতনি। গত সপ্তাহে প্রথম হেসেছে। তিনি তাকের দিকে তাকালেন। ছত্রিশটা কৌটা। আর একটা *ছোট্ট মুখ*।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "না… খাওয়ামু না। আল্লাহ মাফ করুক। পঁয়ত্রিশ বছর দোকান চালাই, কোনোদিন *এইভাবে ভাবি নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "face"
+    }
+   }
+  },
+  {
+   "say": "পরদিন ছত্রিশটা কৌটা গেল ডিস্ট্রিবিউটরের কাছে। কিছু টাকা ফেরত, কিছু লস। আর রিপন এল দোকানে, কারণ হাজী সাহেব *নিজে ফোন করে* ডেকেছেন।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরের দিন",
+    "props": [
+     "signboard",
+     "sign:হাজী স্টোর — মুদি ও শিশুখাদ্য",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ripon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফেরত দেওয়া কৌটা",
+       "value": "৩৬টা, ডিস্ট্রিবিউটরকে"
+      },
+      {
+       "label": "রিপনের চাকরি",
+       "value": "আছে"
+      },
+      {
+       "label": "বেতন",
+       "from": "৭,০০০",
+       "value": "৮,৫০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "রিপন, তোর বেতন দেড় হাজার বাড়াইলাম। আর তাকে মেয়াদ দেখার দায়িত্ব *তোর*। প্রতি সপ্তাহে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "hold"
+    }
+   }
+  },
+  {
+   "say": "হাজী স্টোরের দরজায় এখন একটা হাতে লেখা কাগজ— *‘কেনার আগে মেয়াদ দেখুন। না দেখলে রিপনকে জিজ্ঞেস করুন।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "স্টিকার বদলালে তারিখ বদলায়… *বিষ বদলায় না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "স্টিকার বদলালে তারিখ বদলায়…",
+    "line2": "বিষ বদলায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মালিক বললেন বাচ্চাদের দুধের মেয়াদের স্টিকার বদলাও, ১৯ বছরের রিপন বলল ‘না’… 🍼",
+  "description": "খুলনার এক মুদি দোকানে কাজ করে উনিশ বছরের রিপন। এক সকালে মালিক হাজী সাহেব দিলেন একটা স্টিকারের রোল— বাচ্চাদের দুধের কৌটার মেয়াদ গত মাসে শেষ, নতুন তারিখ লাগিয়ে দাও। রিপন রোলটা হাতে নিয়ে দাঁড়িয়ে রইল। তখনই দোকানে ঢুকলেন এক মা, কোলে ছয় মাসের বাচ্চা…",
+  "tags": [
+   "সততার গল্প",
+   "মেয়াদোত্তীর্ণ পণ্য",
+   "ভোক্তা অধিকার",
+   "মুদি দোকান",
+   "খুলনা",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "সচেতনতার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "স্টিকার বদলালে বিশ হাজার টাকা বাঁচত। রিপন বাঁচাল একটা ছয় মাসের বাচ্চার পেট। 🍼\nকেনাকাটার সময় তুমি কি মেয়াদের তারিখ দেখো? কখনো ঠকেছ? 👇 #সচেতনতা #সততা"
+ },
+ "thumbnail": {
+  "text": "মেয়াদ শেষ",
+  "sub": "নতুন স্টিকার?"
+ }
+}
