@@ -272,6 +272,17 @@
       "playlist": true,
       "facebook": "1638279784339998",
       "scheduled_for": "2026-11-06T15:30:00+06:00"
+    },
+    {
+      "id": "023",
+      "date": "2026-11-06",
+      "slot": "20:00",
+      "duration": 129.7,
+      "title": "ম্যানেজার বলত ‘সব ঠিক আছে’, ডেলিভারির ছেলেটা বলল সত্যিটা 🔧 | The Prince বাংলা",
+      "youtube": "q4BoOntcvTU",
+      "playlist": true,
+      "facebook": "1467493665334603",
+      "scheduled_for": "2026-11-06T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -287,10 +298,11 @@
     "The Book of Five Rings": "PLFT3vBebPx4I",
     "The Daily Laws": "PLV002FrxsI-Y",
     "The Art of Seduction": "PLajhOinIZG4o",
-    "The Art of Worldly Wisdom": "PLDj1Guz8vitU"
+    "The Art of Worldly Wisdom": "PLDj1Guz8vitU",
+    "The Prince": "PLJjXUsSTRMuM"
   },
   "last_run": {
-    "at": "2026-11-05T18:41:34.016221+06:00",
+    "at": "2026-11-05T18:45:53.033461+06:00",
     "errors": []
   },
   "queue_remaining": 24,
