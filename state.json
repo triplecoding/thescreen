@@ -261,6 +261,17 @@
       "playlist": true,
       "facebook": "1144989154731271",
       "scheduled_for": "2026-11-06T11:30:00+06:00"
+    },
+    {
+      "id": "022",
+      "date": "2026-11-06",
+      "slot": "15:30",
+      "duration": 138.32,
+      "title": "বেতন ২২ হাজার, ধার দিল ৪৭ হাজার— তারপর তানিয়া শিখল ‘না’ বলতে 🤝 | The Art of Worldly Wisdom",
+      "youtube": "GULv2dBgFnI",
+      "playlist": true,
+      "facebook": "1638279784339998",
+      "scheduled_for": "2026-11-06T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -275,10 +286,11 @@
     "Mastery": "PLbqUW4qBrso8",
     "The Book of Five Rings": "PLFT3vBebPx4I",
     "The Daily Laws": "PLV002FrxsI-Y",
-    "The Art of Seduction": "PLajhOinIZG4o"
+    "The Art of Seduction": "PLajhOinIZG4o",
+    "The Art of Worldly Wisdom": "PLDj1Guz8vitU"
   },
   "last_run": {
-    "at": "2026-11-05T18:37:00.964133+06:00",
+    "at": "2026-11-05T18:41:34.016221+06:00",
     "errors": []
   },
   "queue_remaining": 24,
