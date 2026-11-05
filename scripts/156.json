@@ -1,0 +1,415 @@
+{
+ "id": "156",
+ "status": "ready",
+ "title_bn": "জামাইয়ের রান্না",
+ "theme": "family",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Care as the foundation",
+  "title_bn": "যত্নই আসল সম্পর্ক"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "shashuri": {
+   "name": "শাশুড়ি আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "neighbor": {
+   "name": "পাশের বাড়ির চাচি",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ময়মনসিংহের এক গ্রাম। কলপাড়ে পড়ে শাশুড়ি আম্মার হাত ভেঙেছে। ছেলে মালয়েশিয়ায়। মেয়ে, আরিফের স্ত্রী, নিজেই অসুস্থ, *ঢাকায় বিশ্রামে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ময়মনসিংহ, শাশুড়ির বাড়ি",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শাশুড়ি আম্মার হাত",
+       "value": "ভাঙা, প্লাস্টার"
+      },
+      {
+       "label": "ছেলে",
+       "value": "মালয়েশিয়ায়"
+      },
+      {
+       "label": "দেখার মানুষ",
+       "value": "কেউ নেই",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "বাবা, তুমি আইসা পড়ছো? অফিস? আমি তো কাউরে *কই নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shashuri": "down"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আম্মা, এক সপ্তাহ ছুটি নিছি। আপনি খালি বসবেন। রান্না, উঠান, হাঁস-মুরগি— *আমি দেখমু*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "hold"
+    }
+   }
+  },
+  {
+   "say": "প্রথম দিন। মাটির চুলা, ভেজা লাকড়ি। আরিফ জীবনে ভাত রেঁধেছেন হয়তো তিনবার। ধোঁয়ায় চোখ লাল, ভাত হলো *অর্ধেক গলা, অর্ধেক শক্ত*।",
+   "scene": {
+    "widget": null,
+    "set": "kitchen",
+    "light": "day",
+    "chip": "প্রথম দিন, মাটির চুলা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "বাবা, চাল আগে ধুইয়া ভিজাইতে হয়। আইসো, আমি বইসা বইসা কই, তুমি *হাত চালাও*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পাড়ার কথা",
+   "card": {
+    "title": "যা কানে এল",
+    "items": [
+     {
+      "t": "‘জামাই রান্না করে, ছি!’",
+      "mark": "x"
+     },
+     {
+      "t": "‘ছেলে থাকলে এই দিন দেখা লাগত না’",
+      "mark": "x"
+     },
+     {
+      "t": "‘বউয়ের বাপের বাড়িতে জামাইয়ের এত খাটুনি?’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "জামাই মিয়া, শাড়িটাও পইরা নেন। পুরা *বউ* হইয়া গেছেন! আমাদের জামাইরা তো আইসা খালি খায়।",
+   "tone": "teasing",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "তৃতীয় দিন, উঠান",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "neighbor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "neighbor": "talk"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "চাচি, আমার আম্মাও এইভাবে একা থাকেন। আমি চাই, কেউ যেন *তাঁরেও* এইভাবে দেখে। এইটুকুই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "hold"
+    }
+   }
+  },
+  {
+   "say": "চাচি চুপ হয়ে গেলেন। তাঁর নিজের মেয়ের জামাই শেষ কবে এসেছিল, মনে করতে পারলেন না। *দুই ঈদ আগে*, বোধহয়।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পঞ্চম রাতে আরিফ নিজের হাতে মাছ বেছে ভাত মেখে দিলেন শাশুড়িকে। ডান হাত প্লাস্টারে, বাম হাতে খেতে পারেন না। আরিফ মুখে তুলে দিলেন, *ছোট বাচ্চার মতো*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পঞ্চম রাত",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "বাবা, পঁয়ত্রিশ বছর আগে তোমার শ্বশুর মারা যাওয়ার পর কেউ আমারে এমনে *খাওয়াই নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shashuri": "down"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আম্মা, আপনি আমার বউরে বিশ বছর এমনে খাওয়াইছেন। আমি খালি *পাঁচ দিন* দিলাম। হিসাব এখনো অনেক বাকি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "hold"
+    }
+   }
+  },
+  {
+   "say": "সপ্তম দিনের সকাল। আরিফ ব্যাগ গোছাচ্ছেন। উঠানে শাশুড়ি আম্মা আর পাশের বাড়ির চাচি, যিনি তিন দিন আগে হাসছিলেন।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "সপ্তম দিন, ফেরার সকাল",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "neighbor",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এক সপ্তাহে রান্না",
+       "value": "২১ বেলা"
+      },
+      {
+       "label": "পোড়া ভাত",
+       "value": "২ বার"
+      },
+      {
+       "label": "শাশুড়ির হাসি",
+       "value": "গোনা যায়নি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "শুনো, পাড়ায় কইয়া দিও। আমার ছেলে একটা না, *দুইটা*। একটা মালয়েশিয়ায়, একটা এই যে, ব্যাগ গোছাইতেছে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shashuri": "talk"
+    }
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "ভাবি, আমার জামাইরে আরিফের নাম্বারটা দিমু। *শিখুক* কিছু।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "neighbor": "down"
+    }
+   }
+  },
+  {
+   "say": "শাশুড়ি আম্মার রান্নাঘরের দেয়ালে এখন একটা কাগজ, আরিফের হাতে লেখা— *‘চাল আগে ভিজাতে হয়। আম্মার নিয়ম।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "জামাই মানে শুধু আদর পাওয়া না… *আদর ফেরত দেওয়াও*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "জামাই মানে শুধু আদর পাওয়া না…",
+    "line2": "আদর ফেরত দেওয়াও।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "শাশুড়ি একা, হাত ভাঙা… জামাই এক সপ্তাহ রাঁধলেন, গ্রাম বলল ‘জামাই রান্না করে!’ 🍲",
+  "description": "আরিফের স্ত্রী অসুস্থ, ঢাকায় বিশ্রামে। গ্রামে একা শাশুড়ি আম্মা, ছেলে থাকে বিদেশে, হাত ভেঙেছে কলপাড়ে পড়ে। কেউ দেখার নেই। আরিফ অফিস থেকে এক সপ্তাহ ছুটি নিয়ে গেলেন গ্রামে। উঠান থেকে রান্নাঘর— সব। পাড়ার লোকে হাসল…",
+  "tags": [
+   "জামাই শাশুড়ির গল্প",
+   "পরিবার",
+   "দায়িত্ব",
+   "পুরুষের রান্না",
+   "গ্রামের গল্প",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "সংসারের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "গ্রামের সবাই বলল, জামাই রান্না করে, লজ্জার কথা। শাশুড়ি আম্মা বললেন, আমার আরেকটা ছেলে আছে। 🍲\nতোমার পরিবারে কি কোনো জামাই বা বউ আপন সন্তানের মতো পাশে দাঁড়িয়েছে? 👇 #পরিবার #জামাই"
+ },
+ "thumbnail": {
+  "text": "‘জামাই রান্না করে!’",
+  "sub": "এক সপ্তাহ"
+ }
+}

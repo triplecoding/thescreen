@@ -1,0 +1,404 @@
+{
+ "id": "153",
+ "status": "ready",
+ "title_bn": "গলির লালু",
+ "theme": "community",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Each is protected by all",
+  "title_bn": "সবাই সবার পাহারা"
+ },
+ "cast": {
+  "lalu": {
+   "name": "পিয়া",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "secretary": {
+   "name": "সেক্রেটারি সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "guard": {
+   "name": "দারোয়ান মজনু",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#2B2B2B",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "beard": "stubble",
+   "cap": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মিরপুর এগারোর এক গলি। একটা বাদামি বেওয়ারিশ কুকুর, নাম লালু। আর ক্লাস টুর পিয়া, রোজ স্কুল থেকে ফিরে দেয় *অর্ধেক রুটি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মিরপুর ১১, একটা গলি",
+    "chars": [
+     {
+      "id": "lalu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লালুর বয়স",
+       "value": "প্রায় ৪ বছর"
+      },
+      {
+       "label": "মালিক",
+       "value": "নেই"
+      },
+      {
+       "label": "বন্ধু",
+       "value": "১ জন, পিয়া"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "রাতে ঘেউঘেউ করে, ঘুম হয় না। সিটি কর্পোরেশনে খবর দিতেছি। *এই সপ্তাহেই* সরানো হবে।",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "বিল্ডিং কমিটির মিটিং",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "secretary",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "secretary": "talk"
+    }
+   }
+  },
+  {
+   "say": "সবাই হাত তুলল। কেউ ভয় পায়, কেউ বিরক্ত। কেউ জানে না, লালু রাতে কেন ডাকে। শুধু দারোয়ান মজনু *চুপ* থাকল।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "lalu",
+   "say": "মজনু মামা, লালুরে নিয়া যাইবো? ও তো কাউরে *কামড়ায় না*!",
+   "tone": "tearful",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন",
+    "chars": [
+     {
+      "id": "lalu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "guard",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "lalu": "down"
+    }
+   }
+  },
+  {
+   "voice": "guard",
+   "say": "জানি, মা। রাতে ও আমার সাথে পাহারা দেয়। অচেনা কেউ আসলে *ডাকে*। কিন্তু কমিটির কথা কে শোনে?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "guard",
+     "zoom": 1.4
+    },
+    "arms": {
+     "guard": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই সপ্তাহ ধরে যা হলো",
+   "card": {
+    "title": "লালুর বিরুদ্ধে অভিযোগ",
+    "items": [
+     {
+      "t": "রাতে ডাকাডাকি",
+      "mark": "x"
+     },
+     {
+      "t": "ময়লার ঝুড়ি উল্টানো",
+      "mark": "x"
+     },
+     {
+      "t": "বাচ্চারা ভয় পায়",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দুই সপ্তাহ পর। রাত তিনটা। হঠাৎ লালু ডাকতে লাগল। একটানা, পাগলের মতো। নিচতলার মিটার রুমের দরজায় থাবা দিচ্ছে। দরজার নিচ দিয়ে *ধোঁয়া*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "দুই সপ্তাহ পর, রাত তিনটা",
+    "chars": [
+     {
+      "id": "guard",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "pulse"
+   }
+  },
+  {
+   "voice": "guard",
+   "say": "আগুন! মিটার রুমে আগুন! সবাই নামেন! *সবাই নামেন*!",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "guard",
+     "zoom": 1.4
+    },
+    "arms": {
+     "guard": "point"
+    }
+   }
+  },
+  {
+   "say": "মজনু চিৎকার দিল, গেটের ঘণ্টা বাজাল। লালু ডাকতে ডাকতে সিঁড়ি দিয়ে ওপরে উঠে গেল, প্রতিটা দরজায় *থাবা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দশ মিনিটের মধ্যে আটতলার বত্রিশটা পরিবার নিচে। ফায়ার সার্ভিস এল। মিটার রুমের আগুন ছড়ানোর আগেই নিভল। কেউ আহত হয়নি। *একজনও না*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "দশ মিনিট পর",
+    "chars": [
+     {
+      "id": "secretary",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "lalu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "মজনু, প্রথম কে টের পাইলো? তুমি?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "secretary",
+     "zoom": 1.4
+    },
+    "arms": {
+     "secretary": "down"
+    }
+   }
+  },
+  {
+   "voice": "guard",
+   "say": "না, স্যার। লালু। আমি তো ঝিমাইতেছিলাম। ও না ডাকলে… *আমি জানি না কী হইতো*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "guard",
+     "zoom": 1.4
+    },
+    "arms": {
+     "guard": "point"
+    }
+   }
+  },
+  {
+   "say": "সেক্রেটারি সাহেব তাকালেন। গলির কোণে বসে আছে লালু, হাঁপাচ্ছে। দুই সপ্তাহ আগে যাকে সরানোর প্রস্তাব *তিনিই* দিয়েছিলেন।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "secretary",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর গেটের পাশে একটা ছোট টিনের ঘর। ভেতরে একটা পুরোনো কম্বল। আর বিল্ডিং কমিটি থেকে মাসে পাঁচশো টাকা, *লালুর খাবারের জন্য*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "chars": [
+     {
+      "id": "lalu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "secretary",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাঁচানো পরিবার",
+       "value": "৩২টা"
+      },
+      {
+       "label": "লালুর নতুন ঘর",
+       "value": "১টা, টিনের ছাউনি"
+      },
+      {
+       "label": "সিটি কর্পোরেশনে অভিযোগ",
+       "value": "প্রত্যাহার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "পিয়া, লালুর টিকার দায়িত্ব কমিটির। আর তুমি ওর রুটি দিবা। কিন্তু এখন থেকে *পুরা রুটি*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "secretary",
+     "zoom": 1.4
+    },
+    "arms": {
+     "secretary": "point"
+    }
+   }
+  },
+  {
+   "voice": "lalu",
+   "say": "লালু শুনছস? তুই এখন *কমিটির মেম্বার*!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "lalu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lalu": "wave"
+    }
+   }
+  },
+  {
+   "say": "লালুর টিনের ঘরের গায়ে এখন একটা কাগজ, পিয়ার হাতে লেখা, কাঁচা অক্ষরে— *‘লালু। পাহারাদার। আমাদের।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যাকে আমরা উপদ্রব ভাবি… *অনেক সময় সে-ই পাহারা দেয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যাকে আমরা উপদ্রব ভাবি…",
+    "line2": "অনেক সময় সে-ই\nপাহারা দেয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গলির বেওয়ারিশ কুকুর লালুকে সরাতে চাইল বিল্ডিং কমিটি… তার দুই সপ্তাহ পর রাত তিনটায় লালুর ডাক 🐕",
+  "description": "মিরপুরের এক গলিতে একটা বেওয়ারিশ কুকুর— লালু। ক্লাস টুর পিয়া রোজ ওকে রুটি দেয়। বিল্ডিং কমিটি সিদ্ধান্ত নিল, সিটি কর্পোরেশনকে খবর দেবে, লালুকে সরাতে হবে। পিয়া কাঁদল, কেউ শুনল না। তারপর এক রাত তিনটায়…",
+  "tags": [
+   "পাড়ার গল্প",
+   "বেওয়ারিশ কুকুর",
+   "প্রাণীর প্রতি দয়া",
+   "অগ্নিকাণ্ড",
+   "মিরপুর",
+   "bangla golpo",
+   "হৃদয়ছোঁয়া গল্প",
+   "মানবিকতা"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই চেয়েছিল লালুকে সরাতে। রাত তিনটায় সেই লালুই জাগিয়ে দিল পুরো বিল্ডিং। 🐕\nতোমার গলির কোন প্রাণীটা সবার অজান্তে পাহারা দেয়? 👇 #প্রাণী #পাড়া"
+ },
+ "thumbnail": {
+  "text": "‘লালুকে সরাও’",
+  "sub": "রাত ৩টার ডাক"
+ }
+}

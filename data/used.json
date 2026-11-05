@@ -1211,6 +1211,54 @@
    "relation": "university son / father secretly working as a mall guard / friend",
    "set": "street",
    "hook": "the son discovers his father's 'night office job' is a mall security post and pretends not to know him in front of friends; that night he learns the job pays his tuition and returns to introduce him proudly"
+  },
+  {
+   "id": "153",
+   "book": "The Social Contract",
+   "item": "Each is protected by all",
+   "relation": "little girl / building secretary / guard",
+   "set": "street",
+   "hook": "the building committee wants the stray dog removed; one night it barks at smoke from a ground-floor electrical fire, waking residents; the committee builds it a shelter"
+  },
+  {
+   "id": "154",
+   "book": "Mastery",
+   "item": "Reconnect to your inclinations and adapt",
+   "relation": "old lift operator / new admin officer / rural visitor",
+   "set": "shop",
+   "hook": "automatic lifts make a 32-year lift operator redundant; the officer notices visitors rely on him to find offices and creates a help desk for him"
+  },
+  {
+   "id": "155",
+   "book": "The Psychology of Money",
+   "item": "Wealth is security, not just return",
+   "relation": "Saudi migrant / experienced migrant friend / mother",
+   "set": "home",
+   "hook": "a young migrant sends wages through hundi for a slightly better rate; the agent vanishes with three months' money; he switches to bank channels with incentive and teaches others"
+  },
+  {
+   "id": "156",
+   "book": "The Righteous Mind",
+   "item": "Care as the foundation",
+   "relation": "son-in-law / mother-in-law / neighbour",
+   "set": "home",
+   "hook": "with his wife unwell and her brother abroad, a son-in-law takes a week off to care for his mother-in-law who broke her arm; villagers mock; she calls him her other son"
+  },
+  {
+   "id": "157",
+   "book": "Thinking, Fast and Slow",
+   "item": "Overconfidence and the illusion of skill",
+   "relation": "young son / retired father / friend",
+   "set": "home",
+   "hook": "a son secretly invests his father's pension savings in a 'guaranteed double' share tip and loses 40%; he confesses; the father responds calmly and they make a repayment and learning plan"
+  },
+  {
+   "id": "158",
+   "book": "The Art of War",
+   "item": "Speed is the essence of war",
+   "relation": "SSC candidate / rickshaw puller / centre secretary",
+   "set": "street",
+   "hook": "a girl forgets her admit card on the first SSC day; a rickshaw puller races 5 km to her house and back while the centre secretary lets her sit provisionally; he refuses payment"
   }
  ]
 }

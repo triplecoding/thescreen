@@ -1,0 +1,407 @@
+{
+ "id": "158",
+ "status": "ready",
+ "title_bn": "প্রবেশপত্র ফেলে এসেছিল নুসরাত",
+ "theme": "school",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Speed is the essence of war",
+  "title_bn": "সময়ের দৌড়"
+ },
+ "cast": {
+  "nusrat": {
+   "name": "নুসরাত",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "rickshaw": {
+   "name": "রিকশাওয়ালা রহিম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "invigilator": {
+   "name": "কেন্দ্রসচিব স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "বগুড়া, এসএসসির প্রথম দিন। সকাল নয়টা চল্লিশ। গেটে ব্যাগ খুলে নুসরাত জমে গেল। প্রবেশপত্র নেই। *টেবিলে ফেলে এসেছে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বগুড়া, পরীক্ষাকেন্দ্রের গেট, সকাল ৯টা ৪০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "nusrat",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "৯:৪০",
+     "label": "পরীক্ষা শুরু ১০টায়"
+    }
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "আব্বা ফোন ধরে না… বাসা পাঁচ কিলোমিটার… দশটায় পরীক্ষা। আমি… আমি পরীক্ষা *দিতে পারব না*।",
+   "tone": "tearful",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nusrat": "hold"
+    }
+   }
+  },
+  {
+   "say": "গেটের পাশে রিকশা নিয়ে দাঁড়িয়ে ছিলেন রহিম চাচা। ষাট বছর। সকালে এখানে পরীক্ষার্থী নামিয়ে দিয়ে অপেক্ষা করছিলেন *পরের যাত্রীর*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rickshaw",
+   "say": "মা, বাসা কই? ঠিকানা কও। আর বাসায় কে আছে, ফোন দিয়া কও *কাগজটা হাতে* নিয়া গেটে দাঁড়াইতে।",
+   "tone": "serious",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই মুহূর্ত",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rickshaw",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "nusrat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rickshaw": "point"
+    }
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "সূত্রাপুর, মসজিদের পিছে। আম্মা আছে। কিন্তু চাচা, *বিশ মিনিট*…",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nusrat": "down"
+    }
+   }
+  },
+  {
+   "voice": "rickshaw",
+   "say": "বিশ মিনিট অনেক সময়, মা। তুমি ভিতরে যাও, স্যাররে কও। আমি *আসতেছি*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rickshaw",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rickshaw": "wave"
+    }
+   }
+  },
+  {
+   "say": "রহিম চাচা প্যাডেল চাপলেন। ষাট বছরের পা। কিন্তু আজ সেই পায়ে তিরিশ বছরের জোর। শর্টকাট গলি, বাজারের পাশ, *রেললাইনের ধার*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রাস্তায়",
+    "chars": [
+     {
+      "id": "rickshaw",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "dust"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রহিম চাচার পথ",
+   "card": {
+    "title": "পাঁচ কিলোমিটার, দশ মিনিটে",
+    "items": [
+     {
+      "t": "বাজারের গলি— উল্টো দিকের ভিড়",
+      "mark": "x"
+     },
+     {
+      "t": "রেলগেট— বন্ধ, ঘুরে পার",
+      "mark": "x"
+     },
+     {
+      "t": "বাসার গেটে আম্মা, হাতে কাগজ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এদিকে কেন্দ্রসচিব স্যার নুসরাতের কথা শুনলেন। নিয়ম কড়া, প্রবেশপত্র ছাড়া হলে ঢোকা নিষেধ। তিনি ঘড়ি দেখলেন। *নয়টা আটান্ন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরীক্ষাকেন্দ্র, সকাল ৯টা ৫৮",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "invigilator",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "nusrat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "invigilator",
+   "say": "যাও, বসো। প্রশ্ন পাবা। কিন্তু প্রবেশপত্র *আধা ঘণ্টার মধ্যে* আমার হাতে না আসলে খাতা জমা নিতে পারব না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "invigilator",
+     "zoom": 1.4
+    },
+    "arms": {
+     "invigilator": "talk"
+    }
+   }
+  },
+  {
+   "say": "দশটা পনেরো। গেটে একটা রিকশা থামল। রহিম চাচা হাঁপাচ্ছেন। কপাল বেয়ে ঘাম। হাতে একটা প্লাস্টিকের ফাইল, *ভেতরে প্রবেশপত্র*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সকাল ১০টা ১৫",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rickshaw",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "invigilator",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rickshaw",
+   "say": "স্যার… নুসরাতের… কাগজ। ওর আম্মা দিছে। আমি… *দেরি করি নাই তো*?",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "rickshaw",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rickshaw": "hold"
+    }
+   }
+  },
+  {
+   "voice": "invigilator",
+   "say": "চাচা, পঁয়ত্রিশ মিনিটে দশ কিলোমিটার? আপনি… *দেরি করেন নাই*। একদম না।",
+   "scene": {
+    "cam": {
+     "focus": "invigilator",
+     "zoom": 1.4
+    },
+    "moods": {
+     "invigilator": "surprised"
+    },
+    "arms": {
+     "invigilator": "down"
+    }
+   }
+  },
+  {
+   "say": "দুপুর একটা। পরীক্ষা শেষ। নুসরাত দৌড়ে বেরোল। গেটে রহিম চাচা তখনো দাঁড়িয়ে। আরেকজন যাত্রী নেননি, *অপেক্ষা* করছিলেন।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "পরীক্ষা শেষে, দুপুর ১টা",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "nusrat",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rickshaw",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nusrat",
+   "say": "চাচা, পরীক্ষা ভালো হইছে! আম্মা পাঁচশো টাকা দিছে, *আপনার জন্য*। নেন, প্লিজ।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nusrat",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nusrat": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rickshaw",
+   "say": "না মা। আমার নাতনিও পরের বছর পরীক্ষা দিবো। কোনোদিন যদি কাগজ ফালাইয়া যায়, কেউ যেন *দৌড়ায়*। এইটাই ভাড়া।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rickshaw",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rickshaw": "wave"
+    }
+   }
+  },
+  {
+   "say": "নুসরাতের এসএসসির রেজাল্টের দিন সে প্রথম মিষ্টি নিয়ে গেল না স্কুলে, না আত্মীয়ের বাসায়। গেল সূত্রাপুরের রিকশা স্ট্যান্ডে, *রহিম চাচার কাছে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পরীক্ষার হলে নিয়ম আটকায়… *মানুষের দৌড় রাস্তা খোলে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পরীক্ষার হলে নিয়ম আটকায়…",
+    "line2": "মানুষের দৌড়\nরাস্তা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এসএসসি পরীক্ষা শুরু ২০ মিনিট পর, নুসরাতের প্রবেশপত্র বাসায়… এক রিকশাওয়ালা চাচার দৌড় 🏃‍♀️",
+  "description": "বগুড়ায় এসএসসির প্রথম দিন। পরীক্ষাকেন্দ্রের গেটে নুসরাত ব্যাগ খুলে দেখে প্রবেশপত্র নেই, টেবিলে ফেলে এসেছে। বাসা পাঁচ কিলোমিটার, পরীক্ষা শুরু বিশ মিনিট পর। আব্বা অফিসে, ফোন ধরেন না। গেটে দাঁড়িয়ে ছিলেন রিকশাওয়ালা রহিম চাচা…",
+  "tags": [
+   "এসএসসি পরীক্ষা",
+   "প্রবেশপত্র",
+   "রিকশাওয়ালা",
+   "মানবিকতা",
+   "বগুড়া",
+   "bangla golpo",
+   "student motivation bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বিশ মিনিট, পাঁচ কিলোমিটার, আর একজন অচেনা রিকশাওয়ালা। নুসরাতের এসএসসি বাঁচিয়েছিল একটা প্যাডেল। 🚲\nপরীক্ষার দিন কোনো অচেনা মানুষ কি কখনো তোমাকে বাঁচিয়ে দিয়েছিল? 👇 #এসএসসি #মানবিকতা"
+ },
+ "thumbnail": {
+  "text": "প্রবেশপত্র বাসায়",
+  "sub": "২০ মিনিট"
+ }
+}
