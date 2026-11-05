@@ -494,6 +494,17 @@
       "playlist": true,
       "facebook": "936944689350462",
       "scheduled_for": "2026-11-10T09:00:00+06:00"
+    },
+    {
+      "id": "043",
+      "date": "2026-11-10",
+      "slot": "11:30",
+      "duration": 138.19,
+      "title": "এক বাথরুম, সাতজন— দুই বছরের সকালের যুদ্ধ থামাল দাদার এক কাগজ 🌅",
+      "youtube": "APf92JHre5g",
+      "playlist": false,
+      "facebook": "1426617506285763",
+      "scheduled_for": "2026-11-10T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -524,7 +535,7 @@
     "theme:community": "PLTIVdSRBE7Ko"
   },
   "last_run": {
-    "at": "2026-11-06T00:17:14.715368+06:00",
+    "at": "2026-11-06T00:23:34.404125+06:00",
     "errors": []
   },
   "queue_remaining": 15,
