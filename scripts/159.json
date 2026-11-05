@@ -1,0 +1,371 @@
+{
+ "id": "159",
+ "status": "ready",
+ "title_bn": "হাটে পাওয়া দশ হাজার টাকা",
+ "theme": "honesty",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Commitment: who we decide to be",
+  "title_bn": "নিজের কাছে দেওয়া কথা"
+ },
+ "cast": {
+  "sabbir": {
+   "name": "সাব্বির",
+   "type": "child_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "kid",
+   "voice": "child_boy"
+  },
+  "amma": {
+   "name": "সাব্বিরের আম্মা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "khala": {
+   "name": "রাবেয়া খালা",
+   "type": "old_woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "টাঙ্গাইলের গরুর হাট। কাদা, ভিড়, হাম্বা ডাক। ক্লাস ফাইভের সাব্বির আব্বার সাথে এসেছে। পায়ের কাছে কাদায় একটা রাবার বাঁধা বান্ডিল। *দশ হাজার টাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "টাঙ্গাইল, গরুর হাট",
+    "chars": [
+     {
+      "id": "sabbir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বান্ডিলে",
+       "value": "১০,০০০ টাকা"
+      },
+      {
+       "label": "কেউ দেখেছে?",
+       "value": "না"
+      },
+      {
+       "label": "সাব্বিরের জুতা",
+       "value": "ছেঁড়া",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চারপাশে কেউ তাকাচ্ছে না। সাব্বির বান্ডিলটা তুলে পকেটে রাখল। হাত কাঁপছে। আর মাথায় একটাই ছবি— *নতুন সাদা কেডস*।",
+   "pause": 0.9,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "কী রে, খাস না ক্যান? হাটে কিছু *হইছে*?",
+   "tone": "curious",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বাসায়, দুপুর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "hold"
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "আম্মা… কাদায় টাকা পাইছি। দশ হাজার। আমি… আমি ভাবছিলাম *জুতা কিনমু*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "down"
+    }
+   }
+  },
+  {
+   "say": "আম্মা বান্ডিলটার দিকে তাকালেন। তারপর ছেলের পায়ের দিকে। ছেঁড়া জুতা, তিন জায়গায় সেলাই। দশ হাজার টাকায় হয় *দশ জোড়া*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "সাব্বির, এই টাকা যার, সে এখন কোথাও কান্দতেছে। তুই নতুন জুতা পইরা হাঁটলে, প্রতিটা পায়ে *তার কান্না* শুনবি। পারবি?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "say": "বিকেলে সাব্বির নিজে গেল হাটের অফিসে। মাইকে ঘোষণা হলো— *একটা টাকার বান্ডিল পাওয়া গেছে*। পাঁচ মিনিটের মধ্যে দৌড়ে এলেন এক বৃদ্ধা।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "হাটের অফিস, মাইকের পাশে",
+    "chars": [
+     {
+      "id": "sabbir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "khala",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "আমার! আমার টাকা! রাবার বান্ধা, দশ হাজার। আমার *একমাত্র ছাগলটা* বেইচা পাইছিলাম। নাতিটার ওষুধ…",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    },
+    "moods": {
+     "khala": "crying"
+    },
+    "arms": {
+     "khala": "face"
+    }
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "খালা, গুইনা দেখেন। *সব আছে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "hold"
+    }
+   }
+  },
+  {
+   "say": "রাবেয়া খালা টাকা গুনলেন না। ছেলেটার মুখের দিকে তাকিয়ে রইলেন। তারপর তার মাথায় হাত রাখলেন। আর হাটের মাঝখানে, সবার সামনে, *কেঁদে ফেললেন*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হাটের লোকজন ঘিরে ধরল। কেউ জিজ্ঞেস করল, কোন স্কুলে পড়ো? কেউ পিঠ চাপড়াল। আর এক গরুর ব্যাপারী এগিয়ে এলেন, হাতে একটা খাম।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "একই বিকেল",
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "sabbir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "বাবা, আমি গরিব, তোরে কিছু দিতে পারি না। খালি দোয়া করি, তোর জুতা যেন কোনোদিন *ছেঁড়া না থাকে*।",
+   "tone": "warmly",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফেরত দেওয়া",
+       "value": "১০,০০০ টাকা"
+      },
+      {
+       "label": "হাটের ব্যাপারীদের পুরস্কার",
+       "value": "নতুন জুতা + স্কুল ব্যাগ"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই রাতে সাব্বির বাসায় ফিরল নতুন সাদা কেডস পায়ে। হাটের ব্যাপারীরা চাঁদা তুলে কিনে দিয়েছেন। আম্মা জুতাটা দেখলেন, তারপর *ছেলেকে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sabbir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sabbir",
+   "say": "আম্মা, এই জুতা পইরা হাঁটলে কারও কান্না শুনি না। খালি *খালার দোয়া*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "sabbir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sabbir": "hold"
+    }
+   }
+  },
+  {
+   "say": "সাব্বিরের পুরোনো ছেঁড়া জুতা জোড়া এখনো খাটের নিচে রাখা। আম্মা ফেলতে দেননি। বলেছেন— *‘এইটা দেখলে মনে থাকবে, কোনটা সহজ ছিল আর কোনটা ঠিক।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কেউ না দেখলে নেওয়া সহজ… *ফেরত দিলে মাথা উঁচু থাকে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কেউ না দেখলে নেওয়া সহজ…",
+    "line2": "ফেরত দিলে\nমাথা উঁচু থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গরুর হাটে কাদায় দশ হাজার টাকা, কেউ দেখেনি… সাব্বিরের পায়ে ছেঁড়া জুতা 🐄",
+  "description": "টাঙ্গাইলের গরুর হাটে কাদার মধ্যে একটা রাবার বাঁধা বান্ডিল। দশ হাজার টাকা। ক্লাস ফাইভের সাব্বির তুলে নিল, কেউ দেখেনি। তার স্কুলের জুতা ছেঁড়া, আম্মা বলেছেন এই মাসে হবে না। সাব্বির টাকাটা পকেটে রাখল। তারপর…",
+  "tags": [
+   "সততার গল্প",
+   "শিশুর সততা",
+   "গরুর হাট",
+   "হারানো টাকা",
+   "টাঙ্গাইল",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দশ হাজার টাকা, কেউ দেখেনি, আর পায়ে ছেঁড়া জুতা। ক্লাস ফাইভের সাব্বির তবু টাকাটা নিয়ে গেল মাইকের কাছে। 🐄\nছোটবেলায় কিছু কুড়িয়ে পেয়ে ফেরত দিয়েছিলে? কী মনে হয়েছিল? 👇 #সততা #শৈশব"
+ },
+ "thumbnail": {
+  "text": "কাদায় ১০ হাজার",
+  "sub": "কেউ দেখেনি"
+ }
+}

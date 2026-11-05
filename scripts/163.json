@@ -1,0 +1,374 @@
+{
+ "id": "163",
+ "status": "ready",
+ "title_bn": "ওয়েটার রুবেলের পক্ষে ম্যানেজার",
+ "theme": "work",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "The Law of Grandiosity vs. respect",
+  "title_bn": "অহংকার বনাম সম্মান"
+ },
+ "cast": {
+  "rubel": {
+   "name": "রুবেল",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#2B2B2B",
+   "color2": "#F2EEE3",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "customer": {
+   "name": "ধনী কাস্টমার",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "manager": {
+   "name": "ম্যানেজার শিরিন আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "গুলশানের এক রেস্টুরেন্ট। রাত ন’টা। টেবিল সাতে একজন কাস্টমার, দামি ঘড়ি, জোরে কথা। আর ওয়েটার রুবেল, *তিন বছর এখানে*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "গুলশান, একটা রেস্টুরেন্ট",
+    "props": [
+     "signboard",
+     "sign:রেস্টুরেন্ট — রাতের খাবার",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "rubel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রুবেলের চাকরি",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "বেতন",
+       "value": "১৪,০০০ টাকা"
+      },
+      {
+       "label": "সেদিনের টিপ",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আমি চিকেন বলছি, তুমি বিফ আনছো! কানে শোনো না? *গ্রাম থেকে আইসা* ওয়েটার হইছো!",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "moods": {
+     "customer": "angry"
+    },
+    "arms": {
+     "customer": "point"
+    }
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "স্যার, আপনি মেনুতে আঙুল দিয়া এইটাই দেখাইছিলেন। আমি লিইখা *পড়ে শোনাইছিলাম*…",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rubel": "down"
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আবার মুখে মুখে কথা! ম্যানেজার ডাকো। তোমার *চাকরি খাব* আজকে।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "point"
+    }
+   }
+  },
+  {
+   "say": "পুরো রেস্টুরেন্ট তাকিয়ে আছে। রুবেল মাথা নিচু করল। তিন বছরে এমন রাত আগেও এসেছে। প্রতিবার ম্যানেজার বলেছেন— *সরি বলো, রুবেল*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রুবেলের তিন বছর",
+   "card": {
+    "title": "‘কাস্টমার সবসময় ঠিক’",
+    "items": [
+     {
+      "t": "ভুল অর্ডার— ওয়েটারের দোষ",
+      "mark": "x"
+     },
+     {
+      "t": "ঠান্ডা খাবার— ওয়েটারের দোষ",
+      "mark": "x"
+     },
+     {
+      "t": "বিল বেশি মনে হলে— ওয়েটারের দোষ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "নতুন ম্যানেজার শিরিন আপা এলেন। দুই মাস হলো যোগ দিয়েছেন। হাতে রুবেলের অর্ডার বই। *পাতাটা খোলা*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "একই সময়",
+    "props": [
+     "signboard",
+     "sign:রেস্টুরেন্ট — রাতের খাবার",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "manager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "স্যার, অর্ডারে লেখা বিফ। আর রুবেলের নিয়ম, অর্ডার নিয়ে কাস্টমারকে পড়ে শোনানো। আপনি তখন *মাথা নাড়ছিলেন*, আমি কাউন্টার থেকে দেখছি।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "manager": "hold"
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আপনি কাস্টমারের সাথে তর্ক করতেছেন? জানেন আমি কত টাকার বিল দিই? *আর আসব না*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "arms": {
+     "customer": "cross"
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "স্যার, খাবারটা বদলে দিচ্ছি, ফ্রি। কিন্তু আমার কর্মীর সাথে এইভাবে কথা বলবেন না। এইটা আমার রেস্টুরেন্টের নিয়ম। *সবার জন্য*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "manager": "talk"
+    }
+   }
+  },
+  {
+   "say": "কাস্টমার উঠে দাঁড়ালেন। টাকা টেবিলে ছুড়ে দিয়ে বেরিয়ে গেলেন। রেস্টুরেন্ট চুপ। তারপর পেছনের টেবিল থেকে একজন বৃদ্ধ হাততালি দিলেন। *একা*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "আপা, আপনার কাস্টমার গেল আমার জন্য। মালিক রাগ করবো। আপনি *সরি কইলেই* পারতেন।",
+   "tone": "tearful",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "বন্ধের পর",
+    "props": [
+     "signboard",
+     "sign:রেস্টুরেন্ট — রাতের খাবার",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "manager",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rubel": "down"
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "রুবেল, একজন কাস্টমার গেলে আরেকজন আসে। কিন্তু তুমি যদি একদিন ভাবো এই রেস্টুরেন্ট তোমার পাশে নাই, তুমি *মন থেকে* চইলা যাবা। ওইটা আমি বেশি ভয় পাই।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "manager": "talk"
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর রেস্টুরেন্টের রিভিউ বাড়ল। কারণ ওয়েটাররা এখন হাসে, *ভয় পায় না*। আর সেই রাতের বৃদ্ধ কাস্টমার প্রতি শুক্রবার আসেন, শুধু রুবেলের টেবিলে বসেন।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "signboard",
+     "sign:রেস্টুরেন্ট — রাতের খাবার",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রেস্টুরেন্টের কিচেনের দরজায় এখন একটা কাগজ, শিরিন আপার লেখা— *‘কাস্টমার রাজা। কিন্তু আমাদের কর্মীরা প্রজা না।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে বস কর্মীর পাশে দাঁড়ায়… *তার জন্য কর্মী দাঁড়ায় সারাজীবন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে বস কর্মীর পাশে দাঁড়ায়…",
+    "line2": "তার জন্য কর্মী\nদাঁড়ায় সারাজীবন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নিজের ভুলের দোষ ওয়েটারের ঘাড়ে, অপমান করলেন ধনী কাস্টমার… ম্যানেজার যা বললেন 🍽️",
+  "description": "গুলশানের এক রেস্টুরেন্টে ওয়েটার রুবেল। একজন কাস্টমার নিজেই ভুল খাবার অর্ডার করে দোষ দিলেন রুবেলকে। সবার সামনে চিৎকার, অপমান, ‘ম্যানেজার ডাকো, চাকরি খাব’। রুবেল মাথা নিচু করে দাঁড়িয়ে। ম্যানেজার শিরিন আপা এলেন…",
+  "tags": [
+   "অফিসের গল্প",
+   "রেস্টুরেন্ট",
+   "ওয়েটার",
+   "কর্মীর সম্মান",
+   "ম্যানেজার",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘কাস্টমার সবসময় ঠিক’— এই নিয়মের বাইরে গিয়ে ম্যানেজার দাঁড়ালেন একজন ওয়েটারের পাশে। 🍽️\nকাজের জায়গায় তোমার বস কি কখনো তোমার পাশে দাঁড়িয়েছিলেন? 👇 #অফিস #সম্মান"
+ },
+ "thumbnail": {
+  "text": "‘চাকরি খাব’",
+  "sub": "ওয়েটারের পাশে"
+ }
+}

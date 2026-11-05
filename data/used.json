@@ -1259,6 +1259,54 @@
    "relation": "SSC candidate / rickshaw puller / centre secretary",
    "set": "street",
    "hook": "a girl forgets her admit card on the first SSC day; a rickshaw puller races 5 km to her house and back while the centre secretary lets her sit provisionally; he refuses payment"
+  },
+  {
+   "id": "159",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Commitment: who we decide to be",
+   "relation": "schoolboy / mother / old widow",
+   "set": "street",
+   "hook": "a class-5 boy with torn shoes finds 10,000 taka at a cattle market; tempted, he goes to the market announcer; it belongs to an old widow who sold her only goat for her grandson's medicine"
+  },
+  {
+   "id": "160",
+   "book": "The Social Contract",
+   "item": "The common good",
+   "relation": "tea-stall owner / university student / pavement sleeper",
+   "set": "street",
+   "hook": "a tea seller near Kamalapur station places a box for old winter clothes; it starts empty; a student's post fills it; over the winter 300 people on the pavement get warm clothes"
+  },
+  {
+   "id": "161",
+   "book": "The Daily Laws",
+   "item": "The Law of Purpose: honour the work",
+   "relation": "retiring clerk father / son / colleague",
+   "set": "home",
+   "hook": "a clerk retiring after 34 years expects no farewell; his son brings a cake and reads a letter listing everything the job gave the family; colleagues gather"
+  },
+  {
+   "id": "162",
+   "book": "On War",
+   "item": "Friction and the unexpected",
+   "relation": "salt farmer / daughter / neighbouring farmer",
+   "set": "street",
+   "hook": "unseasonal rain dissolves a month of salt the night before sale; the daughter's SSC fee depended on it; neighbouring farmers each give a basket of their salt"
+  },
+  {
+   "id": "163",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Grandiosity vs. respect",
+   "relation": "waiter / rich customer / restaurant manager",
+   "set": "shop",
+   "hook": "a customer who ordered wrongly humiliates a waiter publicly and demands his firing; the manager checks the order slip and politely defends her staff, losing the customer but winning her team"
+  },
+  {
+   "id": "164",
+   "book": "Games People Play",
+   "item": "Pastimes: the games that bind",
+   "relation": "brother / sister / mother",
+   "set": "home",
+   "hook": "siblings fought over the TV remote for 20 years; at her wedding farewell he gives her the old remote wrapped as a gift with a note; the empty sofa side after she leaves"
   }
  ]
 }

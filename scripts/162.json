@@ -1,0 +1,419 @@
+{
+ "id": "162",
+ "status": "ready",
+ "title_bn": "লবণমাঠে বৃষ্টি",
+ "theme": "struggle",
+ "source": {
+  "book": "On War",
+  "author": "Carl von Clausewitz",
+  "author_bn": "কার্ল ফন ক্লাউজেভিৎস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Friction and the unexpected",
+  "title_bn": "অপ্রত্যাশিত ধাক্কা"
+ },
+ "cast": {
+  "haider": {
+   "name": "হায়দার চাচা",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "man"
+  },
+  "sathi": {
+   "name": "সাথী",
+   "type": "teen_girl",
+   "skin": "dark",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2C14E",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "neighbor": {
+   "name": "পাশের মাঠের জলিল ভাই",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#8A6A4F",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "কক্সবাজারের মহেশখালী। চারপাশে সাদা লবণমাঠ, রোদে চকচক করছে। হায়দার চাচার দুই কানি জমিতে এক মাসের লবণ জমেছে। *আশি মণ*। পরশু বিক্রি।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মহেশখালী, লবণমাঠ",
+    "chars": [
+     {
+      "id": "haider",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লবণমাঠ",
+       "value": "২ কানি"
+      },
+      {
+       "label": "এক মাসের লবণ",
+       "value": "প্রায় ৮০ মণ"
+      },
+      {
+       "label": "বিক্রির দিন",
+       "value": "পরশু"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "haider",
+   "say": "সাথী, এইবারের লবণে তোর এসএসসির ফরম ফি, নতুন বই, আর তোর আম্মার *একটা শাড়ি*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "haider",
+     "zoom": 1.4
+    },
+    "arms": {
+     "haider": "hold"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে হঠাৎ আকাশ ভেঙে বৃষ্টি। পৌষ মাসে। এমন বৃষ্টি গত দশ বছরে হয়নি। হায়দার চাচা দরজায় দাঁড়িয়ে শুনলেন *টিনের চালের* শব্দ।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "haider",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "sathi",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "voice": "haider",
+   "say": "আল্লাহ… লবণ। লবণ তো *গইলা যাইতেছে*।",
+   "scene": {
+    "cam": {
+     "focus": "haider",
+     "zoom": 1.4
+    },
+    "moods": {
+     "haider": "worried"
+    },
+    "arms": {
+     "haider": "face"
+    }
+   }
+  },
+  {
+   "say": "সাথী জানালায় দাঁড়িয়ে। মাঠ অন্ধকার। শুধু বৃষ্টির শব্দ, আর আব্বার *নিঃশ্বাস*, যিনি সারারাত দরজায় বসে রইলেন।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে মাঠে গিয়ে দেখলেন। আশি মণ সাদা লবণ এখন কাদা আর নোনা পানি। এক মাসের রোদ, এক মাসের ঘাম। *এক রাতে শেষ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের সকাল, লবণমাঠ",
+    "chars": [
+     {
+      "id": "haider",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "sathi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "আব্বা, এসএসসি এইবার না দিলে কী? পরের বছর দিমু। আপনি *কাইন্দেন না*।",
+   "tone": "softly",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাঁচানো গেছে",
+       "value": "প্রায় ৫ মণ",
+       "red": true
+      },
+      {
+       "label": "ক্ষতি",
+       "value": "প্রায় ৩৬,০০০ টাকা"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sathi": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "হায়দার চাচার সামনে যা ছিল",
+   "card": {
+    "title": "সব রাস্তাই কঠিন",
+    "items": [
+     {
+      "t": "মহাজনের কাছে ঋণ, সুদ বেশি",
+      "mark": "x"
+     },
+     {
+      "t": "মেয়ের পরীক্ষা এক বছর পেছানো",
+      "mark": "x"
+     },
+     {
+      "t": "জমি বন্ধক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "হায়দার চাচা কিছু বললেন না। মেয়েটা ক্লাসে দ্বিতীয়। এক বছর পেছালে হয়তো আর *কোনোদিন* দেওয়া হবে না।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "haider",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুপুরে পাশের মাঠের জলিল ভাই এলেন। তাঁর মাঠ একটু উঁচুতে, লবণ বেঁচেছে *অর্ধেক*। হাতে একটা ঝুড়ি।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুপুর",
+    "chars": [
+     {
+      "id": "neighbor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "haider",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "হায়দার ভাই, এক ঝুড়ি লবণ রাখেন। আর মাঠের সবাইরে কইছি। *প্রত্যেকে এক ঝুড়ি*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "neighbor": "talk"
+    }
+   }
+  },
+  {
+   "voice": "haider",
+   "say": "জলিল ভাই, তোমাদেরও তো লস। আমি *কেমনে নিমু*?",
+   "scene": {
+    "cam": {
+     "focus": "haider",
+     "zoom": 1.4
+    },
+    "moods": {
+     "haider": "surprised"
+    },
+    "arms": {
+     "haider": "down"
+    }
+   }
+  },
+  {
+   "voice": "neighbor",
+   "say": "গত বছর আমার পোলার জ্বরে আপনি সারারাত নৌকা চালাইছিলেন, মনে নাই? এইটা দান না, *হিসাব*। আর সাথী আমাগো মাঠের সবার মাইয়া।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "neighbor",
+     "zoom": 1.4
+    },
+    "arms": {
+     "neighbor": "talk"
+    }
+   }
+  },
+  {
+   "say": "বিকেলে হায়দার চাচার উঠানে লাইন। একজন একজন করে মাঠের চাষিরা আসছেন। প্রত্যেকের মাথায় *এক ঝুড়ি সাদা লবণ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিকেল, লবণমাঠ",
+    "chars": [
+     {
+      "id": "haider",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "sathi",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "neighbor",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "আব্বা, এইটা তো লবণ না। এইটা *তেইশটা মানুষের ঘাম*। পরীক্ষায় খারাপ করলে এই ঘামের অপমান হইবো।",
+   "tone": "tearful",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জমা হলো",
+       "value": "২৩ ঝুড়ি, প্রায় ৪৬ মণ"
+      },
+      {
+       "label": "সাথীর ফরম ফি",
+       "value": "জমা হলো সময়মতো"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sathi": "hug"
+    }
+   }
+  },
+  {
+   "say": "সাথী এসএসসিতে পেল জিপিএ পাঁচ। রেজাল্টের দিন সে মিষ্টি নিয়ে গেল না। নিয়ে গেল তেইশটা ছোট প্যাকেট, প্রতিটায় লেখা— *‘আপনার লবণে আমার পরীক্ষা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বৃষ্টি এক রাতে সব গলিয়ে দিতে পারে… *প্রতিবেশী গলতে দেয় না একটা স্বপ্ন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "বৃষ্টি এক রাতে সব গলিয়ে দিতে পারে…",
+    "line2": "প্রতিবেশী গলতে দেয় না\nএকটা স্বপ্ন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পৌষ মাসে হঠাৎ বৃষ্টি, কক্সবাজারের লবণমাঠে এক মাসের লবণ গলে গেল… হায়দার চাচার মেয়ের এসএসসি ফি 🧂",
+  "description": "কক্সবাজারের মহেশখালীতে হায়দার চাচার দুই কানি লবণমাঠ। এক মাসের রোদে জমেছিল সাদা লবণ, আর দুই দিন পর বেচার কথা। পৌষে হঠাৎ এক রাতের বৃষ্টি, সব গলে কাদা। মেয়ে সাথীর এসএসসির ফরম ফি এই লবণেই দেওয়ার কথা…",
+  "tags": [
+   "লবণচাষির গল্প",
+   "কক্সবাজার",
+   "মহেশখালী",
+   "সংগ্রামের গল্প",
+   "কৃষক",
+   "bangla golpo",
+   "motivational story bangla",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "এক রাতের বৃষ্টিতে গলে গেল এক মাসের লবণ। কিন্তু পাশের মাঠের মানুষগুলো গলে যেতে দিল না একটা মেয়ের স্বপ্ন। 🧂\nতুমি কি জানো, তোমার রান্নাঘরের লবণটা কোথা থেকে আসে? 👇 #লবণচাষি #সংগ্রাম"
+ },
+ "thumbnail": {
+  "text": "এক রাতের বৃষ্টি",
+  "sub": "এক মাসের লবণ"
+ }
+}
