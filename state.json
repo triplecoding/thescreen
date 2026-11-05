@@ -296,6 +296,17 @@
       "playlist": true,
       "facebook": "2315078535919168",
       "scheduled_for": "2026-11-07T09:00:00+06:00"
+    },
+    {
+      "id": "025",
+      "date": "2026-11-07",
+      "slot": "11:30",
+      "duration": 134.36,
+      "title": "এক গুজবে বিক্রি নামল তিন ভাগে, তারপর কাশেম চাচার পানির গামলা 🐟 | Propaganda বাংলা",
+      "youtube": "CD8WzPOXQig",
+      "playlist": true,
+      "facebook": "1140339868691330",
+      "scheduled_for": "2026-11-07T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -313,10 +324,11 @@
     "The Art of Seduction": "PLajhOinIZG4o",
     "The Art of Worldly Wisdom": "PLDj1Guz8vitU",
     "The Prince": "PLJjXUsSTRMuM",
-    "1984": "PLK7cGEwvm_Dk"
+    "1984": "PLK7cGEwvm_Dk",
+    "Propaganda": "PLGCk3gankBoE"
   },
   "last_run": {
-    "at": "2026-11-05T20:39:44.105605+06:00",
+    "at": "2026-11-05T20:45:55.744205+06:00",
     "errors": []
   },
   "queue_remaining": 21,
