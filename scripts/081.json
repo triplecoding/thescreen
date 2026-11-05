@@ -1,0 +1,520 @@
+{
+ "id": "081",
+ "status": "ready",
+ "title_bn": "তোমার জন্যই তো",
+ "theme": "family",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "If It Weren't For You",
+  "title_bn": "‘তোমার জন্যই তো’ খেলা"
+ },
+ "cast": {
+  "lipi": {
+   "name": "লিপি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "shahin": {
+   "name": "শাহীন",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "oishi": {
+   "name": "ঐশী",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "মিরপুরের এক সংসার, পনেরো বছরের। ঝগড়া যা নিয়েই শুরু হোক, শেষ হয় *একটা কথায়*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মিরপুর, রাতের খাবার",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "lipi",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "shahin",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সংসার",
+       "value": "১৫ বছর"
+      },
+      {
+       "label": "এক কথা",
+       "value": "‘তোমার জন্যই তো’"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "অনার্সে ফার্স্ট ক্লাস ছিলাম। *তোমার জন্যই তো* চাকরিটা করতে পারলাম না।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lipi": "talk"
+    }
+   }
+  },
+  {
+   "say": "শাহীন চুপ থাকেন। অথচ তাঁর মনে আছে, বিয়ের পর তিনি নিজেই বলেছিলেন— *চাকরি করো*। লিপি করেননি।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক শুক্রবার শাহীন একটা খাম রাখলেন টেবিলে। পাশের স্কুলের প্রিন্সিপাল তাঁর বন্ধু। একজন *ইংরেজি শিক্ষিকা* লাগবে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক শুক্রবার",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "lipi",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "লিপি, তুমি তো সবসময় চাইছো। এইবার আর *আমার জন্য* আটকাইবো না।",
+   "tone": "warmly",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "envelope",
+     "title": "চাকরির প্রস্তাব",
+     "lines": [
+      "সহকারী শিক্ষিকা, ইংরেজি",
+      "ক্লাস থ্রি থেকে ফাইভ",
+      "যোগদান: এক তারিখ"
+     ]
+    },
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shahin": "hold"
+    }
+   }
+  },
+  {
+   "say": "লিপি খামটা হাতে নিলেন। খুশি হওয়ার কথা। কিন্তু বুকের ভেতর হঠাৎ একটা অচেনা *ঠান্ডা ভয়*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "এখন? ঐশীর স্কুল, রান্না, তোমার অফিস… সংসার *কে দেখবো*?",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lipi": "down"
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "রান্না আমি শিখব। ঐশী তো তোমার স্কুলেই পড়ে, *একসাথে* যাবা।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shahin": "talk"
+    }
+   }
+  },
+  {
+   "say": "তৃতীয় রাতে নয় বছরের ঐশী ইংরেজি হোমওয়ার্ক নিয়ে মায়ের কাছে এল। বানান জিজ্ঞেস করল। লিপি বলে দিলেন, *এক সেকেন্ডে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তৃতীয় রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "lipi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "oishi",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "oishi",
+   "say": "আম্মু, তুমি তো সব পারো। তাইলে চাকরিটা নিতেছো না কেন? তুমি কি *ভয় পাও*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "oishi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "oishi": "talk"
+    }
+   }
+  },
+  {
+   "say": "পনেরো বছর কেউ এই প্রশ্নটা করেনি। লিপি নিজেও না। নয় বছরের একটা মেয়ে করল, *হোমওয়ার্কের খাতা হাতে*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "হ্যাঁ রে মা। আম্মু ভয় পায়। যদি না পারি? তখন তো আর *কাউরে দোষ* দিতে পারব না।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lipi": "face"
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "শাহীন, পনেরো বছর তোমারে দোষ দিছি। আসলে আমি *নিজেরে* ভয় পাইতাম।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পাশের ঘর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "lipi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "lipi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "জানি। তাই কোনোদিন উত্তর দেই নাই। খালি অপেক্ষা করছি, *কবে নিজে কইবা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shahin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "আর না পারলে? আমার দোষ দিও। আমি তো *অভ্যস্ত*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shahin": "point"
+    }
+   }
+  },
+  {
+   "say": "এক তারিখ ভোর ছয়টা। শাহীন জীবনে প্রথম রুটি বানালেন। গোল হলো না, হলো *বাংলাদেশের ম্যাপ*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "এক তারিখ, ভোর ছয়টা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "লিপি ক্লাসে ঢুকলেন। চল্লিশজন বাচ্চা উঠে দাঁড়াল। প্রথম শব্দ বলতে গলা কাঁপল, দ্বিতীয়টায় *আর কাঁপল না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "স্কুলের গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "lipi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "oishi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "প্রথম বেতন। আজকে রাতের খাওয়া *আমার পক্ষ থেকে*। রেস্টুরেন্টে।",
+   "tone": "playfully",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক মাস পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "lipi",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "shahin",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রথম বেতন",
+       "value": "১৬,০০০ টাকা"
+      },
+      {
+       "label": "ক্লাসের বাচ্চা",
+       "value": "১২০ জন"
+      }
+     ]
+    },
+    "arms": {
+     "lipi": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "কেন? আমার রুটি *খারাপ* হইছে?",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lipi",
+   "say": "ভালো হইছে বইলাই তো। *তোমার জন্যই তো* চাকরিটা করতে পারলাম।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "lipi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "lipi": "point"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে পনেরো বছরের পুরোনো কথাটা আবার বলা হলো। শুধু এবার কথাটার শেষে ছিল *একটা হাসি*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘তোমার জন্য পারিনি’ বলা সহজ… *‘ভয় পাচ্ছিলাম’ বলা কঠিন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘তোমার জন্য পারিনি’ বলা সহজ…",
+    "line2": "‘ভয় পাচ্ছিলাম’\nবলা কঠিন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৫ বছর বলেছেন ‘তোমার জন্যই তো চাকরি করতে পারলাম না’… তারপর স্বামী এনে দিলেন চাকরির চিঠি 💼",
+  "description": "পনেরো বছরের সংসারে লিপির একটাই অভিযোগ— তোমার জন্যই তো চাকরি করতে পারলাম না। একদিন স্বামী শাহীন সত্যি সত্যি এনে দিলেন একটা স্কুলের শিক্ষিকার চাকরির প্রস্তাব। আর তখনই লিপি খুঁজতে লাগলেন নতুন অজুহাত…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "সংসারের গল্প",
+   "নারীর চাকরি",
+   "ভয়",
+   "আত্মবিশ্বাস",
+   "bangla golpo",
+   "sonsar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘তোমার জন্য পারিনি’ বলা সহজ ছিল। ‘ভয় পাচ্ছি’ বলতে লিপির লাগল পনেরো বছর। 💼\nতুমি কি কখনো নিজের ভয়টাকে অন্য কারও দোষ বানিয়েছ? 👇 #সংসার #নারী"
+ },
+ "thumbnail": {
+  "text": "তোমার জন্যই তো",
+  "sub": "১৫ বছরের অভিযোগ"
+ }
+}

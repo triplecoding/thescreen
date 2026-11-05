@@ -1,0 +1,458 @@
+{
+ "id": "085",
+ "status": "ready",
+ "title_bn": "পঞ্চাশ টাকার সমিতি",
+ "theme": "money",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Of Stock Lent at Interest",
+  "title_bn": "নিজেদের টাকায় নিজেদের ভরসা"
+ },
+ "cast": {
+  "jharna": {
+   "name": "ঝর্ণা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "kohinur": {
+   "name": "কোহিনূর খালা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "nasima": {
+   "name": "নাসিমা",
+   "type": "young_woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "টাঙ্গাইলের এক গ্রাম। চল্লিশটা বাড়ির একত্রিশটায় এনজিওর কিস্তি। কিস্তির দিন সকালে মেয়েদের মুখে *ভয়*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "টাঙ্গাইল, ঝর্ণার উঠান",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "jharna",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "kohinur",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গ্রামের বাড়ি",
+       "value": "৪০টা"
+      },
+      {
+       "label": "এনজিও কিস্তি",
+       "value": "৩১টা বাড়িতে",
+       "red": true
+      },
+      {
+       "label": "সুদ",
+       "value": "বছরে ২৪%"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jharna",
+   "say": "খালা, আমরা বারোজন যদি সপ্তাহে পঞ্চাশ টাকা কইরা রাখি? নিজেদের খাতা, *নিজেদের* নিয়ম।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jharna",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jharna": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kohinur",
+   "say": "পঞ্চাশ টাকায় কী হইবো, ঝর্ণা? কিস্তিওয়ালারা দেয় *পঞ্চাশ হাজার*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "kohinur",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kohinur": "down"
+    }
+   }
+  },
+  {
+   "voice": "jharna",
+   "say": "সুদসহ ফেরত নেয় বাষট্টি হাজার। আর আমরা নিজেরা নিলে *সুদ নাই*, খালি ফেরত।",
+   "tone": "hopeful",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jharna",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jharna": "point"
+    }
+   }
+  },
+  {
+   "say": "বারোজন রাজি হলো। কেউ বিশ্বাসে, কেউ ঝর্ণার জোরাজুরিতে। প্রথম সপ্তাহে জমল *ছয়শো টাকা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "প্রথম ছয় মাস গ্রামের কথা",
+   "card": {
+    "title": "সবাই হাসল",
+    "items": [
+     {
+      "t": "‘পঞ্চাশ টাকার ব্যাংক!’",
+      "mark": "x"
+     },
+     {
+      "t": "‘মেয়েমানুষ হিসাব রাখবো?’",
+      "mark": "x"
+     },
+     {
+      "t": "‘কেউ টাকা নিয়া পালাইলে?’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ছয় মাস পর এক রাতে নাসিমার গরুটা মারা গেল। স্বামী নেই, গরুর দুধ বেচেই চলত সংসার। ঘরে ধারের টাকাও নেই, কিস্তির *দাগও* আছে।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে, নাসিমার ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nasima",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nasima",
+   "say": "কিস্তির অফিসে গেলে নতুন ঋণ দিবো, কিন্তু আগের কিস্তি না দিলে *বসাইয়া রাখবো*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nasima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasima": "face"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে বারোজন বসল ঝর্ণার উঠানে। খাতা খোলা হলো। ছয় মাসে জমেছে *পনেরো হাজার ছয়শো*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "পরের সকাল, ঝর্ণার উঠান",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "jharna",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kohinur",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "nasima",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kohinur",
+   "say": "নাসিমা, বারো হাজার নে। সুদ নাই। দশ সপ্তাহে ফেরত দিবি। *আর কিছু লাগবো না*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kohinur",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kohinur": "talk"
+    }
+   }
+  },
+  {
+   "voice": "nasima",
+   "say": "খালা… কোনো কাগজ? কোনো *জমিনের দলিল*?",
+   "scene": {
+    "cam": {
+     "focus": "nasima",
+     "zoom": 1.4
+    },
+    "moods": {
+     "nasima": "surprised"
+    },
+    "arms": {
+     "nasima": "down"
+    }
+   }
+  },
+  {
+   "voice": "jharna",
+   "say": "এই খাতাই কাগজ। আর আমরা বারোজন *সাক্ষী*। যা, বাছুর কিন।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "jharna",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jharna": "hold"
+    }
+   }
+  },
+  {
+   "say": "নাসিমা টাকা হাতে নিয়ে চুপ করে রইল। জীবনে প্রথম কেউ তাকে টাকা দিল, *চোখ রাঙিয়ে না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "nasima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দশ সপ্তাহ পর নাসিমা শেষ কিস্তি দিল। এক দিনও দেরি না। খাতায় তার নামের পাশে কোহিনূর খালা দিলেন একটা *লাল টিক*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "দশ সপ্তাহ পর",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "nasima",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "jharna",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নাসিমার ফেরত",
+       "value": "১২,০০০, দশ সপ্তাহে"
+      },
+      {
+       "label": "দেরি",
+       "value": "০ দিন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nasima",
+   "say": "খালা, সামনের সপ্তাহ থেকে আমি একশো টাকা দিমু। পঞ্চাশ আমার, *পঞ্চাশ পরের নাসিমার*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "nasima",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nasima": "hold"
+    }
+   }
+  },
+  {
+   "say": "এক বছর পর সমিতিতে সাতচল্লিশজন। জমা এক লাখ বিরাশি হাজার। গ্রামের কিস্তির বাড়ি একত্রিশ থেকে নেমে *নয়টা*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সদস্য",
+       "from": "১২",
+       "value": "৪৭ জন"
+      },
+      {
+       "label": "জমা",
+       "value": "১,৮২,০০০ টাকা"
+      },
+      {
+       "label": "সুদ দেওয়া",
+       "value": "০"
+      }
+     ]
+    },
+    "set": "balcony",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "kohinur",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jharna",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "kohinur",
+   "say": "পঞ্চাশ টাকার ব্যাংক কইয়া যারা হাসছিল, তাদের বউরাই এখন *লাইনে* খাড়া।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "kohinur",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kohinur": "hold"
+    }
+   }
+  },
+  {
+   "say": "ঝর্ণার উঠানের পেয়ারা গাছে এখন একটা ছোট টিনের সাইনবোর্ড, কাঁচা হাতে লেখা— *‘বারোজনের ব্যাংক। সুদ নাই, ভরসা আছে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অন্যের টাকায় ঋণ নিলে ভয় বাড়ে… *নিজেদের টাকায় নিলে ভরসা বাড়ে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অন্যের টাকায় ঋণ নিলে ভয় বাড়ে…",
+    "line2": "নিজেদের টাকায় নিলে\nভরসা বাড়ে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এনজিওর কিস্তিতে ডুবছিল গ্রামের মেয়েরা, তারপর বারোজন মিলে খুলল সপ্তাহে ৫০ টাকার নিজের সমিতি 🪙",
+  "description": "টাঙ্গাইলের এক গ্রামে প্রায় সব বাড়িতে এনজিওর কিস্তি। সপ্তাহে কিস্তি না দিলে বাড়ির সামনে লোক এসে বসে থাকে। ঝর্ণা একদিন উঠানে ডাকল বারোজনকে— সপ্তাহে পঞ্চাশ টাকা, নিজেদের খাতা, নিজেদের নিয়ম। সবাই হাসল। তারপর নাসিমার গরুটা মারা গেল…",
+  "tags": [
+   "গ্রামের নারী",
+   "সমিতি",
+   "সঞ্চয়",
+   "কিস্তি",
+   "টাঙ্গাইল",
+   "টাকার গল্প",
+   "bangla golpo",
+   "জীবনের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সপ্তাহে পঞ্চাশ টাকা। বারোজন নারী। আর একটা খাতা, যেখানে সুদের ঘর নেই— আছে ভরসার ঘর। 🪙\nতোমার মা-খালারা কি কখনো এমন নিজেদের সমিতি চালাতেন? 👇 #সমিতি #নারী"
+ },
+ "thumbnail": {
+  "text": "সপ্তাহে ৫০ টাকা",
+  "sub": "১২ জন নারী"
+ }
+}

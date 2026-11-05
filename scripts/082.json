@@ -1,0 +1,489 @@
+{
+ "id": "082",
+ "status": "ready",
+ "title_bn": "হাশেম ওস্তাদের কান",
+ "theme": "struggle",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Absorb the Hidden Knowledge",
+  "title_bn": "হাতের কাজের গোপন জ্ঞান"
+ },
+ "cast": {
+  "sajib": {
+   "name": "সজীব",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "hashem": {
+   "name": "হাশেম ওস্তাদ",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#8A6A4F",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "rehana": {
+   "name": "রেহানা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "এলিফ্যান্ট রোডের এক এসির দোকান। তরুণ সজীব দিনে ধরে আটটা কল। আর পঁয়ত্রিশ বছরের হাশেম ওস্তাদ— *তিনটা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এলিফ্যান্ট রোড, এসি সার্ভিসিং",
+    "props": [
+     "signboard",
+     "sign:হাশেম রেফ্রিজারেশন"
+    ],
+    "chars": [
+     {
+      "id": "sajib",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সজীবের কল",
+       "value": "দিনে ৮টা"
+      },
+      {
+       "label": "হাশেম ওস্তাদের কল",
+       "value": "দিনে ৩টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sajib",
+   "say": "ওস্তাদ, আপনে এসির সামনে খাড়াইয়া চোখ বুজেন ক্যান? ইউটিউবে সব আছে, *দশ মিনিটের* ভিডিও।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "sajib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajib": "phone"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "ভিডিও তোরে হাত শিখায়। *কান* শিখায় না।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "down"
+    }
+   }
+  },
+  {
+   "say": "জুনের এক দুপুর। ধানমন্ডির এক বাসায় এসি ঠান্ডা করছে না। ঘরে রেহানা আপার বৃদ্ধ মা, *শ্বাসকষ্টের রোগী*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "ধানমন্ডি, এক বাসা, দুপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sajib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "ভাই, আম্মার গরমে কষ্ট হয়। আজকেই *ঠিক* লাগবে, প্লিজ।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rehana": "worried"
+    },
+    "arms": {
+     "rehana": "talk"
+    }
+   }
+  },
+  {
+   "voice": "sajib",
+   "say": "আপা, গ্যাস কম। দশ মিনিট। *ভিডিওতে* দেখছি এইটা।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "sajib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajib": "talk"
+    }
+   }
+  },
+  {
+   "say": "এসি থেকে একটা অদ্ভুত খটখট শব্দ আসছিল। সজীব শুনল, কিন্তু *থামল না*। গ্যাস ভরল, সুইচ দিল।",
+   "scene": {
+    "cam": {
+     "focus": "sajib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিশ মিনিট পর একটা পোড়া গন্ধ। তারপর *ধুপ*। কম্প্রেসার বন্ধ। আর চালু হলো না।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বিশ মিনিট পর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sajib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "fx": "dust"
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "দশ মিনিট বলছিলেন! নতুন কম্প্রেসার *পঁচিশ হাজার*! আম্মা আজকে রাতে কী করবে?",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rehana": "angry"
+    },
+    "arms": {
+     "rehana": "point"
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় সজীব দোকানে ফিরল। মালিক চিৎকার করছেন। পঁচিশ হাজার কে দেবে? সজীবের মাসের বেতন *আঠারো*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "দোকান, সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:হাশেম রেফ্রিজারেশন"
+    ],
+    "chars": [
+     {
+      "id": "sajib",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sajib",
+   "say": "ওস্তাদ, আমি শব্দটা শুনছিলাম। কিন্তু ভাবছিলাম, *ভিডিওতে তো* এই শব্দের কথা নাই।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "sajib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajib": "face"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "ভিডিওতে থাকে না কারণ প্রতিটা এসির গলা আলাদা। চল, *এখনই* যাই।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "talk"
+    }
+   }
+  },
+  {
+   "say": "রাত ন'টায় ওস্তাদ এলেন রেহানা আপার বাসায়। নিজের পকেট থেকে কিনে আনলেন একটা *পুরোনো ভালো কম্প্রেসার*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ধানমন্ডি, রাত ন'টা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "sajib",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rehana",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "আপা, ভুলটা আমার দোকানের। টাকা লাগবো না। খালি আমার ছেলেটারে আজকে কাজটা *দেখতে দেন*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "talk"
+    }
+   }
+  },
+  {
+   "say": "ওস্তাদ এসির গায়ে কান পাতলেন। চোখ বুজে। তারপর সজীবের হাত নিয়ে রাখলেন *মোটরের গায়ে*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "টের পাস? এই কাঁপুনিটা? ফ্যান ঘুরতেছে, কিন্তু *পুরা ঘুরতেছে না*। শব্দটা এইখান থেকে আসে।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "point"
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর সজীবের কল কমেছে, আটটা থেকে পাঁচটা। কিন্তু একটাও ফেরত আসে না। আর তার পকেটে একটা খাতা— *শব্দের খাতা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard",
+     "sign:হাশেম রেফ্রিজারেশন"
+    ],
+    "chars": [
+     {
+      "id": "sajib",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "সজীবের ‘শব্দের খাতা’",
+     "lines": [
+      "খটখট— ফ্যান মোটর",
+      "শিস— গ্যাস লিক",
+      "গুমগুম— কম্প্রেসার ক্লান্ত"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sajib",
+   "say": "ওস্তাদ, আজকে মিরপুরের এসির গলা শুইনা বুঝছি, *বয়স বারো বছর*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "sajib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sajib": "talk"
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "আরে বাহ! আর দুই বছর। তারপর তুই আমারে *ইউটিউব* শিখাবি।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "hashem": "point"
+    }
+   }
+  },
+  {
+   "say": "দোকানের দেয়ালে এখন সজীবের হাতে লেখা একটা কাগজ— *‘আগে শোনো, তারপর খোলো।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভিডিও শেখায় কীভাবে করতে হয়… *ওস্তাদ শেখান কখন থামতে হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভিডিও শেখায় কীভাবে করতে হয়…",
+    "line2": "ওস্তাদ শেখান\nকখন থামতে হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ইউটিউব দেখে এসি সারায় সজীব, ওস্তাদকে বলে ‘স্লো’… একদিন পুড়ে গেল এক বাসার কম্প্রেসার 🔧",
+  "description": "এলিফ্যান্ট রোডের এসি সার্ভিসিং দোকান। তরুণ সজীব ইউটিউব দেখে কাজ শেখে, দিনে আটটা কল ধরে। আর পঁয়ত্রিশ বছরের হাশেম ওস্তাদ কাজের আগে চোখ বুজে শুধু শোনেন। সজীব হাসে। তারপর একটা গরমের দুপুরে…",
+  "tags": [
+   "সংগ্রামের গল্প",
+   "মিস্ত্রির গল্প",
+   "ওস্তাদ শাগরেদ",
+   "এসি মেরামত",
+   "অভিজ্ঞতা",
+   "bangla golpo",
+   "motivational story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ভিডিও শেখায় কীভাবে করতে হয়। ওস্তাদ শেখান কখন থামতে হয়। 🔧\nতোমার জীবনের ‘ওস্তাদ’ কে, যাঁর কাছে এমন কিছু শিখেছ যা কোনো বইয়ে নেই? 👇 #ওস্তাদ #কাজ"
+ },
+ "thumbnail": {
+  "text": "‘ওস্তাদ স্লো’",
+  "sub": "পুড়ে গেল কম্প্রেসার"
+ }
+}

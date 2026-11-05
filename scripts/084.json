@@ -1,0 +1,451 @@
+{
+ "id": "084",
+ "status": "ready",
+ "title_bn": "সাততলার নানু",
+ "theme": "community",
+ "source": {
+  "book": "The Social Contract",
+  "author": "Jean-Jacques Rousseau",
+  "author_bn": "জ্যাঁ-জ্যাক রুসো",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Social Compact",
+  "title_bn": "সবার জন্য একটা চুক্তি"
+ },
+ "cast": {
+  "nanu": {
+   "name": "নানু",
+   "type": "old_woman",
+   "skin": "light",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "ayon": {
+   "name": "অয়ন",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "secretary": {
+   "name": "সেক্রেটারি সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "মোহাম্মদপুরের এক আটতলা বিল্ডিং। লিফট নষ্ট তিন মাস। মেরামতে লাগবে এক লাখ আশি হাজার। মিটিং হয়েছে পাঁচটা। *ফল শূন্য*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "মোহাম্মদপুর, ‘শান্তি নিবাস’",
+    "chars": [
+     {
+      "id": "ayon",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লিফট নষ্ট",
+       "value": "৩ মাস"
+      },
+      {
+       "label": "মেরামত খরচ",
+       "value": "১,৮০,০০০ টাকা"
+      },
+      {
+       "label": "মিটিং",
+       "value": "৫টা, ফল=০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "দোতলা বলে, আমরা লিফট চড়ি না, *টাকা দিব কেন*? আটতলা বলে, সবাই সমান দিবে!",
+   "tone": "frustrated",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "ছাদের মিটিং",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "secretary",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "secretary": "talk"
+    }
+   }
+  },
+  {
+   "say": "তর্ক চলে রাত এগারোটা পর্যন্ত। প্রতিটা তলার নিজের যুক্তি। আর কারও মনে নেই, সাততলায় একজন মানুষ *তিন মাস নিচে নামেননি*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "অয়ন ক্লাস নাইনে পড়ে, পাঁচতলায় থাকে। একদিন মায়ের পাঠানো পিঠা দিতে গেল সাততলায়। *নানুর ঘরে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সাততলা, নানুর ঘর",
+    "props": [
+     "window",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "ayon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "বাবা, নিচের আমগাছটায় কি এইবার *মুকুল* আসছে? তিন মাস দেখি নাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nanu": "down"
+    }
+   }
+  },
+  {
+   "say": "অয়ন জানালা দিয়ে তাকাল। আমগাছটা ঠিক নিচেই। কিন্তু সাততলার জানালা থেকে শুধু *পাতার মাথা* দেখা যায়।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ayon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নানুর তিন মাস",
+   "card": {
+    "title": "লিফট ছাড়া সাততলা",
+    "items": [
+     {
+      "t": "হাঁটুতে অপারেশন— সিঁড়ি নিষেধ",
+      "mark": "x"
+     },
+     {
+      "t": "ছেলে থাকে কানাডায়",
+      "mark": "x"
+     },
+     {
+      "t": "বিকেলের উঠান— শুধু স্মৃতি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "অয়ন সেই রাতে কোনো মিটিং ডাকল না। বিল্ডিংয়ের হোয়াটসঅ্যাপ গ্রুপে দিল একটা ছোট্ট মেসেজ।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "সেই রাতে",
+    "chars": [
+     {
+      "id": "ayon",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম এক ঘণ্টা কোনো উত্তর নেই। তারপর একজন লিখল— *আমি আসব*। তারপর আরেকজন। তারপর *এগারোজন*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "শান্তি নিবাস গ্রুপ",
+     "msgs": [
+      {
+       "who": "অয়ন",
+       "t": "শনিবার বিকাল ৪টা"
+      },
+      {
+       "who": "অয়ন",
+       "t": "নানুকে চেয়ারে করে নিচে নামাব, চারজন লাগবে"
+      },
+      {
+       "who": "অয়ন",
+       "t": "কে কে আসবেন?"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "ayon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শনিবার বিকেল। একটা প্লাস্টিকের চেয়ার, চারটা হাত, একশো বারোটা সিঁড়ি। নানু ভয়ে চোখ বন্ধ করে রাখলেন, *মুখে হাসি*।",
+   "scene": {
+    "widget": null,
+    "set": "stairs",
+    "light": "day",
+    "chip": "শনিবার, বিকাল ৪টা",
+    "chars": [
+     {
+      "id": "ayon",
+      "x": 0.3,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "secretary",
+      "x": 0.6,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "nanu",
+      "x": 0.85,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "আস্তে বাবারা! আমি কি *রানী এলিজাবেথ*? এত সম্মান!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "উঠানে আমগাছের নিচে নানু বসলেন। মুকুল এসেছে। তিন মাস পর তিনি গাছটার গায়ে হাত রাখলেন, *পুরোনো বন্ধুর মতো*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "বিল্ডিংয়ের উঠান",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "secretary",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশে দাঁড়িয়ে সেক্রেটারি সাহেব। দোতলায় থাকেন। পাঁচটা মিটিংয়ে তিনিই সবচেয়ে জোরে বলেছিলেন— *আমরা কেন দিব*?",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "secretary",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "খালাম্মা, আপনি তিন মাস নিচে নামেন নাই? আমি… আমি *জানতামই না*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "secretary",
+     "zoom": 1.4
+    },
+    "arms": {
+     "secretary": "down"
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "say": "জানবা কেমনে, বাবা? তোমরা তো উপরে ওঠো না। *চা খাও*, ঠান্ডা হইয়া যাইতেছে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nanu": "hold"
+    }
+   }
+  },
+  {
+   "voice": "secretary",
+   "say": "দোতলা থেকে আমি আগে দিব। *বিশ হাজার*। আর কেউ কিছু বলবেন?",
+   "tone": "serious",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে, ছাদের মিটিং",
+    "props": [
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "secretary",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "secretary": "talk"
+    }
+   }
+  },
+  {
+   "say": "ছয় নম্বর মিটিং শেষ হলো এগারো মিনিটে। কেউ তলা গুনল না। দুই সপ্তাহে লিফট *আবার চলল*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মিটিং",
+       "value": "৬ নম্বর"
+      },
+      {
+       "label": "সময় লাগল",
+       "value": "১১ মিনিট"
+      },
+      {
+       "label": "টাকা উঠল",
+       "value": "১,৮০,০০০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "লিফট ঠিক হয়েছে, তবু প্রতি শনিবার বিকেলে সাততলা থেকে একটা চেয়ার নামে। কারণ নানু বলেছেন— *‘লিফটে তো আর গল্প হয় না।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই হিসাব করছিল কে কত দেবে… *কেউ দেখছিল না কে কত হারাচ্ছে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই হিসাব করছিল কে কত দেবে…",
+    "line2": "কেউ দেখছিল না\nকে কত হারাচ্ছে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "লিফট নষ্ট তিন মাস, ‘কে কত টাকা দেবে’ ঝগড়া… সাততলার ৮০ বছরের নানু তিন মাস নিচে নামেননি 🛗",
+  "description": "মোহাম্মদপুরের এক অ্যাপার্টমেন্টে লিফট নষ্ট তিন মাস। মিটিংয়ে শুধু ঝগড়া— কোন তলা কত দেবে। এর মাঝে সাততলার আশি বছরের নানু তিন মাস নিচে নামেননি। ক্লাস নাইনের অয়ন ঠিক করল, ঝগড়া না, একটা চেয়ার…",
+  "tags": [
+   "অ্যাপার্টমেন্টের গল্প",
+   "প্রতিবেশী",
+   "লিফট",
+   "বৃদ্ধা",
+   "ঢাকার জীবন",
+   "bangla golpo",
+   "পাড়ার গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন মাস ঝগড়া হলো টাকা নিয়ে। ঝগড়া থামল যেদিন সবাই নানুকে উঠানে দেখল। 🛗\nতোমার বিল্ডিংয়ের সবচেয়ে বয়স্ক মানুষটার নাম কি তুমি জানো? 👇 #প্রতিবেশী #ঢাকা"
+ },
+ "thumbnail": {
+  "text": "তিন মাস নামেননি",
+  "sub": "সাততলার নানু"
+ }
+}

@@ -635,6 +635,54 @@
    "relation": "probashi husband / wife / mother-in-law",
    "set": "home",
    "hook": "Qatar worker's mother says his wife wastes the remittance; wife shows a 4-year ledger with every taka and a row 'for myself: 0'"
+  },
+  {
+   "id": "081",
+   "book": "Games People Play",
+   "item": "If It Weren't For You",
+   "relation": "wife / husband / daughter",
+   "set": "home",
+   "hook": "wife blames husband for 15 years for her lost career; he brings a real teaching job offer; she finds excuses until their daughter asks if she is scared"
+  },
+  {
+   "id": "082",
+   "book": "Mastery",
+   "item": "Absorb the Hidden Knowledge",
+   "relation": "young YouTube-taught technician / old master / customer",
+   "set": "shop",
+   "hook": "fast AC technician mocks his slow master who listens before working; a rushed job burns a customer's compressor; the master teaches him to hear"
+  },
+  {
+   "id": "083",
+   "book": "The Art of Seduction",
+   "item": "Mix pleasure with pain: the indirect gesture",
+   "relation": "estranged father / daughter / mother",
+   "set": "home",
+   "hook": "father stops speaking to his daughter for 3 years after her love marriage; in winter she sends his favourite duck curry and rice rotis by bus with no note; he recognises the taste"
+  },
+  {
+   "id": "084",
+   "book": "The Social Contract",
+   "item": "The Social Compact",
+   "relation": "elderly neighbour / teenage boy / building secretary",
+   "set": "stairs",
+   "hook": "broken lift for 3 months while residents fight over shares; an 80-year-old on the 7th floor hasn't gone down; a boy organises Saturday chair-carries and the committee agrees"
+  },
+  {
+   "id": "085",
+   "book": "The Wealth of Nations",
+   "item": "Of Stock Lent at Interest",
+   "relation": "village women / elder / young widow",
+   "set": "balcony",
+   "hook": "women trapped in NGO instalments form their own 50-taka weekly savings circle with a shared notebook; a member's cow dies and the circle lends interest-free"
+  },
+  {
+   "id": "086",
+   "book": "The Republic",
+   "item": "The Ring of Gyges",
+   "relation": "CNG driver / Saudi-bound migrant / driver's daughter",
+   "set": "street",
+   "hook": "CNG driver finds a migrant's passport, visa and 40,000 taka while his own daughter's admission fee is due; nobody saw; he races back before the flight"
   }
  ]
 }

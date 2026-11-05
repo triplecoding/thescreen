@@ -1,0 +1,473 @@
+{
+ "id": "083",
+ "status": "ready",
+ "title_bn": "হাঁসের মাংস আর চালের রুটি",
+ "theme": "parents",
+ "source": {
+  "book": "The Art of Seduction",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Mix pleasure with pain: the indirect gesture",
+  "title_bn": "না বলে বলা"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "teep": true,
+   "voice": "old_man"
+  },
+  "mukti": {
+   "name": "মুক্তি",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "ma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নেত্রকোনার এক বাড়ি। তিন বছর ধরে একটা নিয়ম— মুক্তির নাম এই বাড়িতে *উচ্চারণ হয় না*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নেত্রকোনা, শীতের সকাল",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "ma",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেয়ের সাথে কথা নাই",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "কাটা ফোন",
+       "value": "৪১টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "মুক্তির ফোন আইছিল। আপনারে *সালাম* দিছে।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "talk"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আমার মাইয়া তিন বছর আগে মইরা গেছে। *অন্য কথা কও*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "মুক্তি নিজের পছন্দে বিয়ে করেছিল। ছেলে ভালো, কিন্তু আব্বার পছন্দের না। সেদিন থেকে *একচল্লিশটা ফোন*, সব কাটা।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঢাকায় মুক্তি প্রতি রাতে ফোনটা হাতে নেয়। নাম্বার টাইপ করে। তারপর *কাটে না*, কিন্তু চাপেও না।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ঢাকা, মুক্তির বাসা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mukti",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "mukti",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন বছরে মুক্তির চেষ্টা",
+   "card": {
+    "title": "সব ফেরত এসেছে",
+    "items": [
+     {
+      "t": "ফোন— কেটে দেন",
+      "mark": "x"
+     },
+     {
+      "t": "চিঠি— না খুলে ফেরত",
+      "mark": "x"
+     },
+     {
+      "t": "ঈদে বাড়ি যাওয়া— দরজা খোলেননি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ডিসেম্বরের প্রথম শীত। মুক্তির মনে পড়ল, শীতের প্রথম ভোরে আব্বা কী খেতেন। *হাঁসের মাংস, চালের রুটি*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "ডিসেম্বরের প্রথম শীত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "mukti",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mukti",
+   "say": "আম্মার রেসিপি। কালিজিরা একটু বেশি, আর আব্বার জন্য ঝাল *একদম কম*।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "mukti",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mukti": "hold"
+    }
+   }
+  },
+  {
+   "say": "সারারাত রান্না। ভোরে টিফিন ক্যারিয়ারে ভরে বাসে পাঠিয়ে দিল। কোনো চিঠি না, *কোনো নাম না*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "mukti",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সকালে বাসের কন্ডাক্টর দিয়ে গেল একটা টিফিন ক্যারিয়ার। আম্মা কিছু বললেন না। *শুধু বেড়ে দিলেন*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নেত্রকোনা, পরের সকাল",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "ma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা কে পাঠাইলো? রুটির গন্ধ তো… *তোমার হাতের* না।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "say": "আব্বা এক টুকরা রুটি ঝোলে ডোবালেন। মুখে দিলেন। তারপর থেমে গেলেন। কালিজিরা একটু বেশি। ঝাল *একদম কম*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এই ঝাল… এইটা তো খালি আমার মাইয়া জানে। *মুক্তি* পাঠাইছে।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "face"
+    }
+   }
+  },
+  {
+   "say": "তিন বছরে প্রথমবার নামটা উচ্চারণ হলো এই বাড়িতে। আম্মা রান্নাঘরে গিয়ে *চুপচাপ কাঁদলেন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আব্বা নাস্তা শেষ করলেন। সবটুকু। তারপর ফোনটা নিলেন। বিয়াল্লিশ নম্বর ফোন। এবার *উল্টো দিক থেকে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "একই সকাল",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মুক্তি… হাঁসটা ভালো হইছে। খালি… *আরেকটু ঝাল* দিতে পারতি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "phone"
+    }
+   }
+  },
+  {
+   "voice": "mukti",
+   "say": "আব্বা… আমি তো ভাবছি আপনি এখন ঝাল *খাইতে পারেন না*।",
+   "scene": {
+    "cam": "wide",
+    "moods": {
+     "mukti": "crying"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "পারি না। তবু দিস। ঝাল লাগলে পানি খামু। *তুই আইলে* পানি দিবি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "phone"
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর মুক্তি এল, স্বামী সাথে। দরজা খুললেন আব্বা নিজে। হাতে *খালি টিফিন ক্যারিয়ারটা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "mukti",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "ma",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কথা না বলা",
+       "from": "৩ বছর",
+       "value": "০"
+      },
+      {
+       "label": "টিফিন ক্যারিয়ার",
+       "value": "১টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা ফেরত নে। আর সামনের শীতে আবার ভইরা পাঠাইস। *এইবার তোরা দুইজন* নিয়া আসিস।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "say": "আব্বা এখন শীতের প্রথম ভোরে নাস্তা খান না। অপেক্ষা করেন একটা বাসের। আর একটা *টিফিন ক্যারিয়ারের*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অভিমান কথায় ভাঙে না… *ভাঙে চেনা একটা স্বাদে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অভিমান কথায় ভাঙে না…",
+    "line2": "ভাঙে চেনা\nএকটা স্বাদে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নিজের পছন্দে বিয়ে করায় তিন বছর মেয়ের সাথে কথা বলেন না বাবা… শীতের এক সকালে এল একটা পার্সেল 🦆",
+  "description": "মুক্তি নিজের পছন্দে বিয়ে করেছিল, আব্বা তিন বছর কথা বলেন না। ফোন দিলে কেটে দেন। শীত এল। মুক্তি জানে, আব্বা শীতে সবচেয়ে ভালোবাসেন হাঁসের মাংস আর চালের রুটি। কোনো চিঠি ছাড়া বাসে পাঠাল একটা টিফিন ক্যারিয়ার…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "অভিমান",
+   "পছন্দের বিয়ে",
+   "হাঁসের মাংস",
+   "শীতের রান্না",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন বছর একটা কথাও হয়নি। তারপর এক টিফিন ক্যারিয়ার হাঁসের মাংস— আর বাবা স্বাদেই চিনলেন মেয়েকে। 🦆\nঅভিমান ভাঙাতে তুমি কখনো কথা ছাড়া কিছু পাঠিয়েছ? 👇 #বাবামেয়ে #অভিমান"
+ },
+ "thumbnail": {
+  "text": "৩ বছর কথা নাই",
+  "sub": "একটা টিফিন"
+ }
+}

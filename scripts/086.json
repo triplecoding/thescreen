@@ -1,0 +1,462 @@
+{
+ "id": "086",
+ "status": "ready",
+ "title_bn": "এয়ারপোর্ট রোডের পাসপোর্ট",
+ "theme": "honesty",
+ "source": {
+  "book": "The Republic",
+  "author": "Plato",
+  "author_bn": "প্লেটো",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "The Ring of Gyges",
+  "title_bn": "কেউ না দেখলে তুমি কে"
+ },
+ "cast": {
+  "kabir": {
+   "name": "কবির",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "alamin": {
+   "name": "আলামিন",
+   "type": "young_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "tuba": {
+   "name": "তুবা",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "long_braid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "বিমানবন্দর সড়ক, দুপুর বারোটা। যাত্রী নামিয়ে কবির দেখলেন পেছনের সিটে একটা কালো ব্যাগ। ভেতরে পাসপোর্ট, ভিসা, আর *চল্লিশ হাজার টাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকা, বিমানবন্দর সড়ক, দুপুর ১২টা",
+    "props": [
+     "cng",
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "kabir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ব্যাগে টাকা",
+       "value": "৪০,০০০"
+      },
+      {
+       "label": "সাথে",
+       "value": "পাসপোর্ট + সৌদির ভিসা"
+      },
+      {
+       "label": "কেউ দেখেছে?",
+       "value": "না",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আগের রাতে মেয়ে তুবা বলেছিল, স্কুলে ভর্তির শেষ দিন পরশু। লাগবে *বারো হাজার*। কবিরের পকেটে আছে চার।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "আগের রাত, কবিরের বাসা",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kabir",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "tuba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuba",
+   "say": "আব্বু, না হইলে থাক। আমি *আগের স্কুলেই* পড়ি?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "tuba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kabir",
+   "say": "না মা। নতুন স্কুলেই পড়বি। আব্বু *ব্যবস্থা* করব।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kabir": "down"
+    }
+   }
+  },
+  {
+   "say": "এখন হাতে চল্লিশ হাজার। কেউ দেখেনি। যাত্রী জানে না কোন সিএনজিতে ভুলে রেখেছে। *নম্বরও* মনে রাখেনি নিশ্চয়ই।",
+   "pause": 0.9,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিমানবন্দর সড়ক, এখন",
+    "props": [
+     "cng",
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "kabir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "কবিরের মাথায় তখন যুক্তি",
+   "card": {
+    "title": "সহজ যুক্তিগুলো",
+    "items": [
+     {
+      "t": "কেউ তো দেখেনি",
+      "mark": "x"
+     },
+     {
+      "t": "মেয়ের ভর্তি, এটা তো ভালো কাজ",
+      "mark": "x"
+     },
+     {
+      "t": "আমি না নিলে অন্য কেউ নিবে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তারপর তিনি পাসপোর্টটা খুললেন। ছবিতে একটা কমবয়সী ছেলে। নাম আলামিন। ভিসায় তারিখ— *আজ*। ফ্লাইট বিকাল তিনটা।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "kabir",
+   "say": "এই পোলাটা এইখানে ধার কইরা টাকা জোগাড় করছে। এইটা না পাইলে *ফ্লাইট* মিস।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kabir": "face"
+    }
+   }
+  },
+  {
+   "say": "কবির সিএনজির হ্যান্ডেল ঘোরালেন। উল্টো দিকে। *এয়ারপোর্টের দিকে*।",
+   "scene": {
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিমানবন্দরের গেটে একটা ছেলে মাটিতে বসে কাঁদছে। পকেট উল্টে খুঁজছে। আশেপাশে ভিড়, কেউ *থামছে না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিমানবন্দর, ডিপারচার গেট",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "alamin",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "kabir",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kabir",
+   "say": "আলামিন? এইটা তোমার ব্যাগ? গুইনা দেখো, *সব আছে কিনা*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kabir": "hold"
+    }
+   }
+  },
+  {
+   "voice": "alamin",
+   "say": "আছে… সব আছে! ভাই, এই চল্লিশ হাজার আমার আম্মার *কানের দুল* বেচা টাকা।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "alamin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "alamin": "face"
+    }
+   }
+  },
+  {
+   "voice": "alamin",
+   "say": "ভাই, দশ হাজার রাখেন। *প্লিজ*। আপনি না থাকলে আমার জীবন শেষ আছিল।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "alamin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "alamin": "hold"
+    }
+   }
+  },
+  {
+   "voice": "kabir",
+   "say": "না, ভাই। এইটা রাখলে আজকে রাতে মেয়ের *চোখে চোখ* রাখতে পারব না। যাও, ফ্লাইট ধরো।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "kabir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kabir": "down"
+    }
+   }
+  },
+  {
+   "say": "আলামিন জোর করে কবিরের নম্বর লিখে নিল। তারপর দৌড়ে ঢুকে গেল গেটের ভেতরে। *শেষ ডাকের আগে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "alamin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে বাসায় ফিরে কবির মেয়েকে কিছু বললেন না। ভর্তির টাকা এখনো আট হাজার *কম*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kabir",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "tuba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক মাস পর একটা অচেনা নম্বর থেকে কল। সৌদির নম্বর। আর বিকাশে একটা মেসেজ— *বারো হাজার টাকা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "kabir",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "tuba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "alamin",
+   "say": "ভাই, আপনি সেদিন আমার জীবন ফেরত দিছিলেন। এইটা খালি আপনার মেয়ের *মামা* দিতেছে।",
+   "tone": "warmly",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আলামিন, রিয়াদ",
+     "msgs": [
+      {
+       "who": "আলামিন",
+       "t": "ভাই, প্রথম বেতন পাইছি।"
+      },
+      {
+       "who": "আলামিন",
+       "t": "এইটা বখশিশ না। আপনার মেয়ের ভর্তির টাকা। মামার পক্ষ থেকে।"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "tuba",
+   "say": "আব্বু, আমার একজন *সৌদির মামা* আছে? কবে থেকে?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tuba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tuba": "hold"
+    }
+   }
+  },
+  {
+   "say": "তুবার নতুন স্কুলের খাতার প্রথম পাতায় একটা লাইন, বাবার হাতে লেখা— *‘কেউ না দেখলেও, আল্লাহ দেখেন। আর মেয়েও।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কেউ না দেখলে চুরি সহজ… *কিন্তু নিজের চোখ এড়ানো যায় না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কেউ না দেখলে চুরি সহজ…",
+    "line2": "কিন্তু নিজের চোখ\nএড়ানো যায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সিএনজির পেছনের সিটে পাসপোর্ট, ভিসা আর ৪০ হাজার টাকা… মেয়ের ভর্তির টাকা নেই কবিরের, কেউ দেখেনি 🛂",
+  "description": "বিমানবন্দর সড়কে যাত্রী নামিয়ে কবির দেখলেন পেছনের সিটে একটা ব্যাগ— পাসপোর্ট, সৌদির ভিসা, চল্লিশ হাজার টাকা। নিজের মেয়ের স্কুলে ভর্তির টাকা নেই। কেউ দেখেনি। আর ফ্লাইট তিন ঘণ্টা পর…",
+  "tags": [
+   "সততার গল্প",
+   "সিএনজি চালক",
+   "পাসপোর্ট",
+   "সৌদি প্রবাসী",
+   "বিমানবন্দর",
+   "bangla golpo",
+   "jiboner golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "কেউ দেখেনি। চল্লিশ হাজার টাকা আর মেয়ের ভর্তি। কবির তবু সিএনজি ঘোরালেন। 🛂\nকেউ না দেখলে তুমি কতটা সৎ— কখনো পরীক্ষা হয়েছে তোমার? 👇 #সততা #সিএনজি"
+ },
+ "thumbnail": {
+  "text": "পাসপোর্ট + ৪০ হাজার",
+  "sub": "কেউ দেখেনি"
+ }
+}
