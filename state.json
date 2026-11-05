@@ -439,6 +439,17 @@
       "playlist": true,
       "facebook": "1450368383107544",
       "scheduled_for": "2026-11-09T11:30:00+06:00"
+    },
+    {
+      "id": "038",
+      "date": "2026-11-09",
+      "slot": "13:30",
+      "duration": 139.84,
+      "title": "আট মাস রোজ অভিযোগ, তারপর এক পাতার চিঠিতে বদলে গেল অফিস 📝",
+      "youtube": "cTFvy0nYYsA",
+      "playlist": true,
+      "facebook": "1107773758902727",
+      "scheduled_for": "2026-11-09T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -468,7 +479,7 @@
     "The 50th Law": "PLHPj7wq0Ennw"
   },
   "last_run": {
-    "at": "2026-11-05T23:44:43.079794+06:00",
+    "at": "2026-11-05T23:50:22.049710+06:00",
     "errors": []
   },
   "queue_remaining": 21,
