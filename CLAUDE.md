@@ -4,7 +4,7 @@
 touching, fully original Bangladeshi life stories built on ideas from 26 books (Greene's other books, Sun Tzu, Cialdini, Kahneman, Housel, Orwell… — never The 48 Laws of Power),
 rendered as premium 9:16 motion-graphics videos (2:00–2:30) with ElevenLabs voices, and published to YouTube + Facebook.
 
-Read this file first in every session. Then `docs/STORY_GUIDE.md` (craft), `docs/SCRIPT_FORMAT.md` (JSON) and `docs/GROWTH.md` (algorithm/SEO) before writing scripts.
+Read this file first in every session. Then `docs/BANGLADESH_STORY_BIBLE.md` (Bangladeshi people, psychology, realism, dialogue — the story bible), `docs/STORY_GUIDE.md` (craft), `docs/SCRIPT_FORMAT.md` (JSON) and `docs/GROWTH.md` (algorithm/SEO) before writing scripts.
 
 ## How the system runs
 ```
@@ -22,7 +22,7 @@ GitHub Actions — .github/workflows/keeper.yml ("Keeper (timer)") ← self-rene
    sleeps until 35 min before each slot → dispatches "Publish videos" → dispatches itself again.
    "Publish videos" restarts the Keeper whenever it is not running (each watches the other).
 
-Claude scheduled task — "The Screen: weekly scripts" (Fri 07:33 Dhaka) → writes 30 new scripts → validate → push
+Claude scheduled task — "The Screen: scripts (Tue + Fri)" (07:33 Dhaka) → writes 24 new scripts each run → validate → push
 Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backup trigger (dispatches a run if tomorrow is
    not fully scheduled) + health check: reads the last runs,
    fixes failures, re-runs a missed slot, reviews contact sheets, tops up the queue. Posting never depends on it.
@@ -56,7 +56,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backu
 
 ## Weekly script writer — exact procedure
 1. `git pull`. Read `docs/STORY_GUIDE.md`, `docs/SCRIPT_FORMAT.md`, `data/books.json`, `data/used.json`, and 2 existing scripts.
-2. Write **30** new scripts continuing the numbering. Mix: every priority-1 book at least twice, others once; rotate
+2. Write **24** new scripts continuing the numbering (Tue + Fri = 48/week for 6 videos a day), following `docs/BANGLADESH_STORY_BIBLE.md`. Mix: every priority-1 book at least twice, others once; rotate
    relationships/sets/lights/genders per the variety rules. Each story original, specific, Bangladeshi, touching.
 3. `python pipeline/validate.py` — fix every error; keep estimates ~125–145 s.
 4. Optional spot-check: `python pipeline/produce.py <id> --tts edge --stills` renders still frames to `out/<id>/stills` (free preview voice) — look at 2–3 of them.
@@ -75,7 +75,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backu
    back by removing their entry from `failed`.
 4. Download the artifact (`gh api repos/triplecoding/thescreen/actions/runs/<id>/artifacts`, then the `archive_download_url`), open `contact.jpg` of each video and check visuals; if a video is broken,
    fix and re-produce; tell the owner what happened.
-5. If `state.json → queue_remaining` < 12, write extra scripts (same procedure as weekly).
+5. If `state.json → queue_remaining` < 18, write extra scripts (same procedure as weekly).
 
 ## Local commands
 ```bash
