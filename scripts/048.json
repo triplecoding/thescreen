@@ -1,0 +1,565 @@
+{
+ "id": "048",
+ "status": "ready",
+ "title_bn": "মিষ্টি মানুষ",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "তিন নম্বর অধ্যায়",
+  "title": "The Law of Role-playing",
+  "title_bn": "মুখোশের ভেতরটা দেখো"
+ },
+ "cast": {
+  "tasnim": {
+   "name": "তাসনিম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "rajib": {
+   "name": "রাজীব ভাই",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#C4473A",
+   "hair": "side",
+   "voice": "man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#8A5A3C",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নতুন চাকরির প্রথম মাস। অফিসে সবচেয়ে মিষ্টি মানুষ *রাজীব ভাই*। রোজ তাসনিমের জন্য চা আনেন।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "নতুন অফিস, প্রথম মাস",
+    "chars": [
+     {
+      "id": "rajib",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rajib",
+   "tone": "warmly",
+   "say": "তুমি তো জিনিয়াস, তাসনিম! তোমার *আইডিয়াগুলো* আমাকে একটু বলো না।",
+   "scene": {
+    "arms": {
+     "rajib": "talk"
+    },
+    "holds": {
+     "rajib": "none"
+    },
+    "cam": {
+     "focus": "rajib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tasnim",
+   "tone": "excited",
+   "say": "অবশ্যই ভাইয়া। ক্লায়েন্টের জন্য একটা *নতুন প্ল্যান* ভেবেছি…",
+   "scene": {
+    "arms": {
+     "rajib": "down",
+     "tasnim": "talk"
+    },
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তাসনিমের আব্বা নেই। তার বেতনে চলে ছোট ভাইয়ের পড়া। তাই অফিসে সবার সাথে সে *খুব সাবধানে* হাসে।",
+   "pause": 0.4,
+   "scene": {
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "সোমবারের মিটিং। তাসনিমের প্ল্যানটা বসের সামনে পেশ করলেন রাজীব ভাই, *নিজের নামে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সোমবারের মিটিং",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "rajib",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rajib",
+   "tone": "proudly",
+   "say": "স্যার, এটা আমি *অনেক দিন* ধরে ভাবছিলাম।",
+   "scene": {
+    "arms": {
+     "rajib": "talk"
+    },
+    "cam": {
+     "focus": "rajib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তাসনিম কিছু বলতে পারল না। গলায় কী যেন আটকে রইল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "rajib": "down"
+    },
+    "moods": {
+     "tasnim": "sad"
+    },
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "মিটিং শেষে বস রাজীব ভাইয়ের পিঠ চাপড়ে বললেন, *এইরকম মাথাই দরকার*। তাসনিম ফাইল গোছাতে গোছাতে চোখ নামিয়ে রাখল।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাতে বাসায় ফিরে আম্মার পাশে বসে কাঁদল সে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hug"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tasnim",
+   "tone": "tearful",
+   "say": "আম্মা, এত ভালো ব্যবহার করত! আমি *বুঝব কী করে*?",
+   "scene": {
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "gently",
+   "say": "মানুষের কথা শুনিস না, মা। দেখ, যে তাকে *কিছু দিতে পারে না*, তার সাথে সে কেমন।",
+   "scene": {
+    "arms": {
+     "amma": "talk"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tasnim",
+   "tone": "upset",
+   "say": "কিন্তু আম্মা, ঝগড়া করলে তো *চাকরিটাই* যাবে।",
+   "scene": {
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "gently",
+   "say": "ঝগড়া কে করতে বলছে? *প্রমাণ রাখ*, মা।",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "মুখোশ চেনা যায় *ছোট মুহূর্তে*।",
+   "card": {
+    "text": "মুখোশ চেনা যায়\n*ছোট মুহূর্তে*।"
+   }
+  },
+  {
+   "say": "পরদিন থেকে তাসনিম চুপচাপ দেখল। আর যা দেখল, তা আগে কখনো চোখে পড়েনি।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরের দুই সপ্তাহ",
+    "chars": [
+     {
+      "id": "rajib",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "যা দেখল তাসনিম",
+     "items": [
+      {
+       "t": "বসের সামনে — মধু",
+       "mark": "x"
+      },
+      {
+       "t": "চা দেওয়া ছেলেটাকে — ধমক",
+       "mark": "x"
+      },
+      {
+       "t": "অন্যের কাজ — নিজের নামে",
+       "mark": "x"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এবার নতুন প্ল্যানের প্রতিটা ধাপ সে আগে *ইমেইলে* পাঠাল বসকে, তারিখসহ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tasnim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "chat",
+     "title": "ইমেইল — বস",
+     "msgs": [
+      {
+       "who": "তাসনিম",
+       "t": "স্যার, নতুন প্ল্যানের খসড়া সংযুক্ত করলাম।"
+      },
+      {
+       "who": "বস",
+       "t": "চমৎকার! বৃহস্পতিবার তুমি নিজে দেখাবে।"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন সিঁড়িতে আবার সেই মিষ্টি হাসি।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "widget": null,
+    "chars": [
+     {
+      "id": "rajib",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rajib",
+   "tone": "warmly",
+   "say": "তাসনিম, নতুন কিছু ভাবলে আগে *আমাকে* বোলো, কেমন?",
+   "scene": {
+    "arms": {
+     "rajib": "talk"
+    },
+    "holds": {
+     "rajib": "none"
+    },
+    "cam": {
+     "focus": "rajib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tasnim",
+   "tone": "playfully",
+   "say": "অবশ্যই ভাইয়া। বসকে তো *আগেই পাঠিয়ে দিয়েছি*। আপনিও দেখে নেবেন।",
+   "scene": {
+    "arms": {
+     "rajib": "down",
+     "tasnim": "talk"
+    },
+    "moods": {
+     "tasnim": "smile"
+    },
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাজীব ভাইয়ের হাসিটা এক মুহূর্তের জন্য *থেমে গেল*।",
+   "pause": 0.7,
+   "scene": {
+    "arms": {
+     "tasnim": "down"
+    },
+    "moods": {
+     "rajib": "surprised"
+    },
+    "cam": {
+     "focus": "rajib",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "মাস শেষে বস সবার সামনে ঘোষণা দিলেন— নতুন প্রজেক্টের লিড *তাসনিম*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "মাস শেষে",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "tasnim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রজেক্ট লিড",
+       "value": "তাসনিম"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সন্ধ্যায় সেই চায়ের ছেলেটা এসে বলল, আপা, আজকের চা-টা *আমার পক্ষ থেকে*।",
+   "pause": 0.4,
+   "scene": {
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "teasing",
+   "say": "কী রে, এখন আর কাঁদিস না?",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "tasnim",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tasnim",
+   "tone": "warmly",
+   "say": "না আম্মা। এখন আমি কথা শুনি না, *মানুষ দেখি*।",
+   "scene": {
+    "arms": {
+     "amma": "down",
+     "tasnim": "talk"
+    },
+    "cam": {
+     "focus": "tasnim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাসের মিষ্টি কথা যা লুকিয়েছিল, *ছোট ছোট মুহূর্ত* তা দেখিয়ে দিল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "tasnim": "down"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মিষ্টি কথা সবাই বলে… *ছোট মুহূর্ত মিথ্যা বলে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মিষ্টি কথা সবাই বলে…",
+    "line2": "ছোট মুহূর্ত\nমিথ্যা বলে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রোজ চা আনতেন, তারপর আমার প্ল্যান নিজের নামে চালালেন 🎭",
+  "description": "নতুন অফিসে সবচেয়ে মিষ্টি মানুষ রাজীব ভাই, রোজ চা আনেন। তারপর সোমবারের মিটিংয়ে তাসনিমের প্ল্যান পেশ হলো তাঁর নামে। সেই রাতে আম্মা একটা কথা বললেন…\nরবার্ট গ্রিনের The Laws of Human Nature — The Law of Role-playing — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "laws of human nature bangla",
+   "robert greene bangla",
+   "অফিস পলিটিক্স",
+   "মানুষ চেনা",
+   "মা মেয়ের গল্প",
+   "কর্মজীবী নারী",
+   "মুখোশ",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "এক মাসের মিষ্টি কথা যা লুকিয়েছিল, ছোট ছোট মুহূর্ত তা দেখিয়ে দিল। 🎭\n\nকাউকে চিনতে তুমি কোন ছোট মুহূর্তটা খেয়াল করো? 👇\n\n#মানুষচেনা #অফিস"
+ },
+ "thumbnail": {
+  "text": "মিষ্টি মানুষ",
+  "sub": "মুখোশ, নাকি মানুষ?"
+ },
+ "_extended": "story-only v1"
+}

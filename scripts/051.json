@@ -1,0 +1,502 @@
+{
+ "id": "051",
+ "status": "ready",
+ "title_bn": "পুকুরঘাটের বিশ মিনিট",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 4",
+  "chapter_bn": "চতুর্থ নীতি",
+  "title": "Liking",
+  "title_bn": "চেনা মানুষের কথাই মানি"
+ },
+ "cast": {
+  "sumaiya": {
+   "name": "সুমাইয়া আপা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#6B4E9B",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "harun": {
+   "name": "হারুন চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "panjabi",
+   "color": "#B8A98A",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "salma": {
+   "name": "সালমা ভাবি",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#2F7A6B",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "গ্রামের প্রাইমারি স্কুলে নতুন আপা সুমাইয়া। খাতায় ছাত্র *বাহান্ন*, ক্লাসে আসে *এগারো*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "নেত্রকোনা, প্রাইমারি স্কুল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "sumaiya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খাতায়",
+       "value": "৫২"
+      },
+      {
+       "label": "ক্লাসে",
+       "value": "১১",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সে ভালো পড়ায়, রঙিন চার্ট বানায়। তবু মায়েরা ছেলেমেয়ে পাঠায় না।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "যে এগারোজন আসে, তাদের চারজন আসে খালি পেটে। এক মেয়ে রোজ *ছোট ভাইকে কোলে* নিয়ে ক্লাসে বসে।",
+   "pause": 0.4,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "sumaiya",
+   "tone": "frustrated",
+   "say": "আমি তো সবচেয়ে ভালোটা দিচ্ছি চাচা! ওরা *আসে না কেন*?",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "sumaiya",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "talk",
+      "hold": "book"
+     },
+     {
+      "id": "harun",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "harun",
+   "tone": "gently",
+   "say": "আপা, ওরা আপনারে *চেনে না*। শহরের মানুষ, শহরের ভাষা। অচেনা মানুষের হাতে কেউ বাচ্চা দেয় না।",
+   "scene": {
+    "arms": {
+     "sumaiya": "hold",
+     "harun": "talk"
+    },
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নোটিশ টাঙানো হলো, মাইকে ঘোষণা হলো, অভিভাবক সভা ডাকা হলো। সভায় এল *তিনজন*।",
+   "card": {
+    "title": "যা কাজ করেনি",
+    "items": [
+     {
+      "t": "নোটিশ টাঙানো",
+      "mark": "x"
+     },
+     {
+      "t": "মাইকে ঘোষণা",
+      "mark": "x"
+     },
+     {
+      "t": "অভিভাবক সভা — তিনজন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সেই রাতে সুমাইয়া অনেক ভাবল। পড়ানোর আগে হয়তো দরকার *পরিচয়*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "স্কুলের কোয়ার্টার",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sumaiya",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "sumaiya",
+   "tone": "tearful",
+   "say": "আম্মা, শহরে ফিরে আসি? এখানে কেউ আমাকে *চায় না*।",
+   "scene": {
+    "arms": {
+     "sumaiya": "call"
+    },
+    "holds": {
+     "sumaiya": "phone"
+    },
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "ওপাশে আম্মা বললেন, আগে ওদের মতো করে একদিন *বসে দেখ*, মা।",
+   "pause": 0.5,
+   "scene": {
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পরদিন বিকেলে সে স্কুল ছেড়ে গেল *পুকুরঘাটে*।",
+   "card": {
+    "text": "পরদিন বিকেলে সে গেল\n*পুকুরঘাটে*।"
+   }
+  },
+  {
+   "say": "যেখানে মায়েরা বিকেলে গল্প করে। সুমাইয়া বসল তাদের পাশে, শুনল তাদের *ভাষা*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "পুকুরঘাট, বিকেল",
+    "props": [],
+    "chars": [
+     {
+      "id": "salma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sumaiya",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "salma",
+   "tone": "sad",
+   "say": "আপা, আমার পোলা দুবাই থেইকা চিঠি দিছে। আমি তো *পড়তে পারি না*…",
+   "scene": {
+    "holds": {
+     "salma": "envelope"
+    },
+    "arms": {
+     "salma": "hold"
+    },
+    "cam": {
+     "focus": "salma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumaiya",
+   "tone": "warmly",
+   "say": "দেন ভাবি, আমি পড়ি। আর চাইলে আপনাকে নিজের নামটা *লিখতেও* শিখিয়ে দেব।",
+   "scene": {
+    "arms": {
+     "sumaiya": "talk"
+    },
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চিঠি শেষ হতে সালমা ভাবির চোখ ভেজা। প্রথমবার নতুন আপাকে মনে হলো *নিজের মানুষ*।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "sumaiya": "down"
+    },
+    "moods": {
+     "salma": "crying"
+    },
+    "cam": {
+     "focus": "salma",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "সেই থেকে রোজ বিকেলে পুকুরঘাটে *বিশ মিনিট*।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "বিকেলের বিশ মিনিট",
+     "items": [
+      {
+       "t": "মায়েদের নাম মনে রাখা",
+       "mark": "check"
+      },
+      {
+       "t": "চিঠি পড়ে দেওয়া, নাম লেখা শেখানো",
+       "mark": "check"
+      },
+      {
+       "t": "বাচ্চার প্রশংসা, মায়ের সামনে",
+       "mark": "check"
+      }
+     ]
+    },
+    "moods": {
+     "salma": "smile"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "salma",
+   "tone": "hopeful",
+   "say": "আপা, কাল থিকা আমার মাইয়াডারেও *পাঠামু*। আপনার কাছে।",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "salma": "talk"
+    },
+    "cam": {
+     "focus": "salma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আর সালমা ভাবির মুখে মুখে খবর ছড়াল পুরো পাড়ায়।",
+   "scene": {
+    "arms": {
+     "salma": "down"
+    },
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "এক মা জিজ্ঞেস করলেন, আপা, আমার পোলারে কি *ডাক্তার* বানানো যাইব? সুমাইয়া হাসল, আগে কাল ক্লাসে পাঠান।",
+   "scene": {
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "এক মাসে ক্লাসে উপস্থিতি এগারো থেকে *চল্লিশ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "harun",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "sumaiya",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ক্লাসে",
+       "value": "৪০",
+       "from": "১১"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "harun",
+   "tone": "laughs",
+   "say": "আপা, তিরিশ বছর এই স্কুলে। এমন ভিড় *দেখি নাই*!",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "harun": "happy"
+    },
+    "arms": {
+     "harun": "talk"
+    },
+    "cam": {
+     "focus": "harun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumaiya",
+   "tone": "warmly",
+   "say": "চাচা, চার্ট তো আগেও ছিল। এখন শুধু ওরা আমাকে *চেনে*।",
+   "scene": {
+    "arms": {
+     "harun": "down",
+     "sumaiya": "talk"
+    },
+    "cam": {
+     "focus": "sumaiya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সালমা ভাবি এখন নিজের নাম লেখেন। আর মেয়েটা পড়ে *ক্লাস টুতে*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "props": [],
+    "chars": [
+     {
+      "id": "salma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sumaiya",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "point"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রঙিন চার্ট যা পারেনি, *পুকুরঘাটের বিশ মিনিট* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "sumaiya": "down"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষ যুক্তি শোনে পরে… *আগে চেনে মানুষটাকে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষ যুক্তি শোনে পরে…",
+    "line2": "আগে চেনে\nমানুষটাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "খাতায় ৫২ জন, ক্লাসে আসে ১১… নতুন আপা গেলেন পুকুরঘাটে, তারপর 🌾",
+  "description": "গ্রামের স্কুলে নতুন আপা সুমাইয়া। ভালো পড়ান, রঙিন চার্ট বানান, তবু ক্লাসে আসে এগারোজন। নোটিশ, মাইক, অভিভাবক সভা— সব বিফল। তারপর একদিন বিকেলে তিনি স্কুল ছেড়ে গেলেন পুকুরঘাটে…\nরবার্ট চালডিনির Influence — Liking — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "influence bangla",
+   "cialdini bangla",
+   "গ্রামের গল্প",
+   "শিক্ষকের গল্প",
+   "প্রাইমারি স্কুল",
+   "বিশ্বাস",
+   "মানুষের মন",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "রঙিন চার্ট যা পারেনি, পুকুরঘাটের বিশ মিনিট তা পারল। 🌾\n\nকে তোমার কাছে ‘নিজের মানুষ’ হয়ে উঠেছিল ছোট্ট একটা উপকারে? 👇\n\n#শিক্ষক #গ্রাম"
+ },
+ "thumbnail": {
+  "text": "পুকুরঘাটের আপা",
+  "sub": "৫২ জনে ১১ জন"
+ },
+ "_extended": "story-only v1"
+}

@@ -1,0 +1,553 @@
+{
+ "id": "050",
+ "status": "ready",
+ "title_bn": "খালি চেয়ার",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "তিন নম্বর অধ্যায়",
+  "title": "Never Enough",
+  "title_bn": "কখনো যথেষ্ট না"
+ },
+ "cast": {
+  "abba": {
+   "name": "ফারুক সাহেব",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#3F6E8C",
+   "hair": "short",
+   "beard": "stubble",
+   "glasses": true,
+   "voice": "man"
+  },
+  "riya": {
+   "name": "রিয়া",
+   "type": "child_girl",
+   "skin": "tan",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "amma": {
+   "name": "আম্মু",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বেতন ষাট হাজার। সংসার চলে *ভালোভাবেই*। তবু ফারুক সাহেব নিলেন দ্বিতীয় চাকরি, সন্ধ্যা ছয়টা থেকে রাত এগারোটা।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ধানমন্ডি, রাত এগারোটা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "৬০,০০০"
+      },
+      {
+       "label": "বাড়তি চাকরি",
+       "value": "+২৫,০০০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কারণ অফিসের রাশেদ ভাই ফ্ল্যাট কিনেছেন। তিনিও *কেন পারবেন না*?",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "রাতে যখন ফেরেন, রিয়া ঘুমিয়ে। সকালে যখন বের হন, রিয়া *স্কুলে*।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রিয়া রোজ আব্বুর জন্য একটা ছবি আঁকে। ছবিগুলো টেবিলে জমে, *কেউ দেখে না*।",
+   "pause": 0.4,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "gently",
+   "say": "আমাদের তো কিছু কম পড়ছে না। এত দৌড় *কিসের জন্য*?",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "frustrated",
+   "say": "আরেকটু হলেই হবে। আর *দুটো বছর*।",
+   "scene": {
+    "arms": {
+     "amma": "down",
+     "abba": "talk"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "tone": "excited",
+   "say": "আব্বু, শুক্রবার স্কুলে আমি কবিতা বলব। *সামনের সারিতে* বসবে তো?",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সকালের নাশতা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "riya",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "warmly",
+   "say": "অবশ্যই মা। *প্রমিস*।",
+   "scene": {
+    "arms": {
+     "riya": "down"
+    },
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "কিন্তু শুক্রবার সন্ধ্যায় অফিসে জরুরি মিটিং। দুই মাসে মিস হয়েছে আরও অনেক কিছু।",
+   "card": {
+    "title": "দুই মাসে যা মিস হলো",
+    "items": [
+     {
+      "t": "রিয়ার জন্মদিনের কেক কাটা",
+      "mark": "x"
+     },
+     {
+      "t": "রাতের একসাথে খাওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "স্কুলের অনুষ্ঠান",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত এগারোটায় ঘরে ফিরে দেখলেন, রিয়া সোফায় ঘুমিয়ে। হাতে একটা কার্ড।",
+   "pause": 0.6,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "abba",
+      "x": 0.72,
+      "pose": "walk",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "রিয়ার কার্ড",
+     "lines": [
+      "সামনের সারি",
+      "আব্বুর জায়গা"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "sad",
+   "say": "পুরো অনুষ্ঠানে তোমার চেয়ারটা খালি রেখেছিল। কাউকে *বসতে দেয়নি*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.22,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "talk"
+     },
+     {
+      "id": "riya",
+      "x": 0.48,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "abba",
+      "x": 0.76,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "sighs",
+   "say": "আমি তো ওদের জন্যই খাটছি… *ওদের জন্যই*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "softly",
+   "say": "ওরা বাড়তি টাকা চায় না। চায় *তুমি পাশে বসো*।",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফোনে অনুষ্ঠানের ভিডিও। মেয়ে কবিতা বলছে— *আমার বাবা*। আর বারবার তাকাচ্ছে খালি চেয়ারটার দিকে।",
+   "pause": 1.0,
+   "scene": {
+    "arms": {
+     "amma": "down",
+     "abba": "phone"
+    },
+    "holds": {
+     "abba": "phone"
+    },
+    "moods": {
+     "abba": "crying"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "যা ছিল যথেষ্ট, তার পেছনে দৌড়াতে গিয়ে হারাচ্ছিলেন *অমূল্য*।",
+   "card": {
+    "text": "যথেষ্টর পেছনে দৌড়ে\nহারাচ্ছিলেন *অমূল্য*।"
+   }
+  },
+  {
+   "say": "সেই রাতে ফারুক সাহেব প্রথমবার লিখলেন, তাঁর *আসলে কী লাগবে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "যথেষ্ট কত?",
+     "items": [
+      {
+       "t": "ঘর, খাবার, পড়াশোনা — আছে",
+       "mark": "check"
+      },
+      {
+       "t": "বিপদের জমা — আছে",
+       "mark": "check"
+      },
+      {
+       "t": "রাশেদ ভাইয়ের ফ্ল্যাট — দরকার নেই",
+       "mark": "x"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন দ্বিতীয় চাকরিতে *ইস্তফা*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "ইস্তফার চিঠিতে সই করতে গিয়ে হাতটা একটু কাঁপল। পঁচিশ হাজার— কম না। তবু কলমটা *থামল না*।",
+   "pause": 0.5,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাশেদ ভাই ফোনে বললেন, বোকামি করলেন। ফারুক সাহেব হাসলেন। বোকামিটা তো *এতদিন করছিলেন*।",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরের শুক্রবার সন্ধ্যায় বারান্দায় ছোট্ট এক অনুষ্ঠান।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "পরের শুক্রবার",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "riya",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "softly",
+   "say": "মা, কবিতাটা আরেকবার শোনাবি? এবার আমি *সামনের সারিতে*।",
+   "scene": {
+    "arms": {
+     "abba": "talk"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "tone": "softly",
+   "say": "আমার বাবা আকাশের মতো, *সবসময় মাথার ওপরে*।",
+   "scene": {
+    "arms": {
+     "abba": "down",
+     "riya": "talk"
+    },
+    "moods": {
+     "riya": "happy"
+    },
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "warmly",
+   "say": "পঁচিশ হাজার কম। কিন্তু ঘরটা কেমন *ভরা ভরা* লাগে।",
+   "scene": {
+    "arms": {
+     "riya": "hug"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পঁচিশ হাজার বাড়তি টাকা যা দিতে পারেনি, *একটা খালি চেয়ার* তা শিখিয়ে দিল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "টাকা আবার আসে… *সামনের সারির দিন আসে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "টাকা আবার আসে…",
+    "line2": "সামনের সারির দিন\nআসে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পুরো অনুষ্ঠানে বাবার চেয়ারটা খালি রেখেছিল মেয়ে 🪑",
+  "description": "বেতন ষাট হাজার, সংসার চলে ভালোভাবেই। তবু ফারুক সাহেব নিলেন দ্বিতীয় চাকরি। মেয়ের স্কুলের অনুষ্ঠানে সামনের সারির চেয়ারটা খালিই রইল…\nমরগান হাউজেলের The Psychology of Money — Never Enough — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "psychology of money bangla",
+   "morgan housel bangla",
+   "বাবা মেয়ের গল্প",
+   "পরিবার",
+   "ওয়ার্ক লাইফ ব্যালান্স",
+   "যথেষ্ট",
+   "আবেগের গল্প",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পঁচিশ হাজার বাড়তি টাকা যা দিতে পারেনি, একটা খালি চেয়ার তা শিখিয়ে দিল। 🪑\n\nতোমার ‘যথেষ্ট’ কত— কখনো লিখে দেখেছ? 👇\n\n#বাবা #পরিবার"
+ },
+ "thumbnail": {
+  "text": "খালি চেয়ার",
+  "sub": "আর দুটো বছর?"
+ },
+ "_extended": "story-only v1"
+}

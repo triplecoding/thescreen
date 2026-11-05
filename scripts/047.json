@@ -1,0 +1,520 @@
+{
+ "id": "047",
+ "status": "ready",
+ "title_bn": "দুই বাড়ির পানি",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "তিন নম্বর অধ্যায়",
+  "title": "The supreme art is to win without fighting",
+  "title_bn": "না লড়েই জেতা"
+ },
+ "cast": {
+  "abba": {
+   "name": "আনোয়ার সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#6B7F99",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "hashem": {
+   "name": "হাশেম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "panjabi",
+   "color": "#E9E1CF",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "sakib": {
+   "name": "সাকিব",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "দুই বছর ধরে বৃষ্টি হলেই আনোয়ার সাহেবের উঠানে হাঁটুপানি। পানি আসে পাশের *হাশেম চাচার ছাদ* থেকে।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "দুই বছর ধরে",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঝগড়া",
+       "value": "২ বছর"
+      },
+      {
+       "label": "উকিলের নোটিশ",
+       "value": "১",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "upset",
+   "say": "এবার কোর্টে দেখা হবে চাচা। আমি *ছাড়ব না*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "tone": "annoyed",
+   "say": "যা পারো করো! আমার ছাদ, *আমার পানি*।",
+   "scene": {
+    "arms": {
+     "abba": "down",
+     "hashem": "point"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক বর্ষায় আনোয়ার সাহেবের মা উঠানের পানিতে পিছলে পড়েছিলেন। সেই থেকে দুই বাড়িতে *কথা বন্ধ*। ঈদেও কেউ কারো দরজায় যায় না।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চিৎকারে রাগ বাড়ল, সালিশ কেউ মানল না, উকিল চাইলেন *বিশ হাজার*।",
+   "card": {
+    "title": "দুই বছরের লড়াই",
+    "items": [
+     {
+      "t": "চিৎকার — আরও রাগ",
+      "mark": "x"
+     },
+     {
+      "t": "মুরুব্বিদের সালিশ — কেউ মানল না",
+      "mark": "x"
+     },
+     {
+      "t": "উকিলের খরচ — বিশ হাজার",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সেই রাতে ছেলে সাকিব এসে বাবার পাশে বসল।",
+   "pause": 0.5,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "table",
+     "window"
+    ],
+    "fx": null,
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "sakib",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sakib",
+   "tone": "gently",
+   "say": "আব্বা, কোর্টে জিতলেও চাচা তো পাশের বাড়িতেই থাকবেন। *রোজ দেখা হবে*।",
+   "scene": {
+    "arms": {
+     "sakib": "talk"
+    },
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "frustrated",
+   "say": "তাহলে কী করব? *হার মেনে* নেব?",
+   "scene": {
+    "arms": {
+     "sakib": "down",
+     "abba": "talk"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sakib",
+   "tone": "hopeful",
+   "say": "হার না আব্বা। চাচা আগে *রাজমিস্ত্রি* ছিলেন। পাইপের কাজ উনিই সবচেয়ে ভালো বোঝেন।",
+   "scene": {
+    "arms": {
+     "abba": "hold",
+     "sakib": "talk"
+    },
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আনোয়ার সাহেব অনেকক্ষণ ভাবলেন। তারপর নোটিশটা ভাঁজ করে ড্রয়ারে রাখলেন।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "sakib": "down"
+    },
+    "moods": {
+     "abba": "thinking"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "sighs",
+   "say": "চাচা কি আমার হাতের চা খাবেন? দুই বছর তো *সালামও* নেন না।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sakib",
+   "tone": "playfully",
+   "say": "চেষ্টা করেন, আব্বা। না খেলে চা-টা *আমরা খাব*।",
+   "scene": {
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পরদিন সকালে তিনি গেলেন *চা আর একটা প্রশ্ন* নিয়ে।",
+   "card": {
+    "text": "পরদিন সকালে তিনি গেলেন\n*চা আর একটা প্রশ্ন* নিয়ে।"
+   }
+  },
+  {
+   "say": "হাশেম চাচার বারান্দায় দাঁড়িয়ে চায়ের কাপ এগিয়ে দিলেন।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "warmly",
+   "say": "চাচা, আপনার হাতের কাজ সবাই জানে। দুই বাড়ির পানি একসাথে ড্রেনে নিতে কী লাগবে? *খরচ অর্ধেক অর্ধেক*।",
+   "scene": {
+    "arms": {
+     "abba": "talk"
+    },
+    "holds": {
+     "abba": "none"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হাশেম চাচা চুপ। দুই বছর তিনি তৈরি ছিলেন *ঝগড়ার জন্য*, প্রশ্নের জন্য না।",
+   "pause": 0.7,
+   "scene": {
+    "arms": {
+     "abba": "down"
+    },
+    "moods": {
+     "hashem": "surprised"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "tone": "suspicious",
+   "say": "আনোয়ার, তুমি না আমার নামে *কেস* করতে চাইছিলা?",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "softly",
+   "say": "চেয়েছিলাম, চাচা। কিন্তু কেস জিতলে তো *আপনাকে হারাতাম*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "tone": "softly",
+   "say": "চার ইঞ্চির পাইপ আর ছোট একটা গর্ত। খরচ *তিন হাজারের* বেশি না।",
+   "scene": {
+    "moods": {
+     "hashem": "thinking"
+    },
+    "arms": {
+     "hashem": "talk"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "tone": "proudly",
+   "say": "আর মিস্ত্রি লাগবে না। *আমি নিজেই* করে দেব।",
+   "scene": {
+    "moods": {
+     "hashem": "smile"
+    },
+    "arms": {
+     "hashem": "point"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার দুই বাড়ির লোক মিলে পাইপ বসাল। মাপ নিলেন হাশেম চাচা নিজে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শুক্রবার",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.28,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "abba",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "sakib",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পাইপের খরচ",
+       "value": "৩,০০০"
+      },
+      {
+       "label": "উকিলের খরচ",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরের বর্ষায় উঠান শুকনো। আর হাশেম চাচার ঘরের পিঠা এখন আসে এই বাড়িতেও।",
+   "scene": {
+    "widget": null,
+    "fx": "rain",
+    "cam": "pan"
+   }
+  },
+  {
+   "voice": "sakib",
+   "tone": "teasing",
+   "say": "চাচা, এবার পিঠার *খরচও* কি অর্ধেক?",
+   "scene": {
+    "arms": {
+     "sakib": "talk"
+    },
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "tone": "laughs",
+   "say": "না রে দাদু। পিঠা পুরোটাই *আমার পক্ষ থেকে*।",
+   "scene": {
+    "arms": {
+     "sakib": "down",
+     "hashem": "talk"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই বছরের লড়াই যা পারেনি, *এক কাপ চা* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "hashem": "down"
+    },
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সব যুদ্ধ মাঠে জেতা হয় না… *কিছু জেতা হয় চায়ের কাপে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সব যুদ্ধ মাঠে জেতা হয় না…",
+    "line2": "কিছু জেতা হয়\nচায়ের কাপে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুই বছরের ঝগড়া, উকিলের নোটিশ… এক কাপ চায়ে মিটে গেল সব ☕",
+  "description": "বৃষ্টি হলেই উঠানে হাঁটুপানি, পানি আসে পাশের বাড়ির ছাদ থেকে। দুই বছরের ঝগড়া, উকিলের নোটিশও তৈরি। তারপর ছেলে সাকিব বাবাকে একটা কথা মনে করিয়ে দিল…\nসান জুর The Art of War — Win without fighting — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "art of war bangla",
+   "sun tzu bangla",
+   "সান জু বাংলা",
+   "প্রতিবেশী ঝগড়া",
+   "বাবা ছেলের গল্প",
+   "সমাধান",
+   "প্রতিবেশী",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দুই বছরের লড়াই যা পারেনি, এক কাপ চা তা পারল। ☕\n\nকোন ঝগড়াটা তুমি জিততে চাও, আর কোনটা মিটিয়ে ফেলতে চাও? 👇\n\n#প্রতিবেশী #সমাধান"
+ },
+ "thumbnail": {
+  "text": "দুই বাড়ির পানি",
+  "sub": "কোর্ট, নাকি চা?"
+ },
+ "_extended": "story-only v1"
+}

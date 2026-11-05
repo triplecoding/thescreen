@@ -1,357 +1,413 @@
 {
-  "_note": "One line per script already written. The weekly writer appends here so ideas are never repeated.",
-  "used": [
-    {
-      "id": "001",
-      "book": "The Art of War",
-      "item": "Weak Points and Strong — avoid what is strong, strike at what is weak",
-      "relation": "shopkeeper-customers / father-son",
-      "set": "shop",
-      "hook": "27-year shop, sales halved after a superstore opened"
-    },
-    {
-      "id": "002",
-      "book": "The Laws of Human Nature",
-      "item": "The Law of Defensiveness",
-      "relation": "mother-in-law / daughter-in-law",
-      "set": "kitchen",
-      "hook": "6 months, 0 open conversations; public true praise at a dawat"
-    },
-    {
-      "id": "003",
-      "book": "The Psychology of Money",
-      "item": "Wealth Is What You Don't See",
-      "relation": "father-son",
-      "set": "street",
-      "hook": "gets off 200 m before the school gate"
-    },
-    {
-      "id": "004",
-      "book": "Games People Play",
-      "item": "Why Don't You — Yes, But",
-      "relation": "father-daughter",
-      "set": "balcony",
-      "hook": "came home and spoke to no one"
-    },
-    {
-      "id": "005",
-      "book": "Thinking, Fast and Slow",
-      "item": "WYSIATI — What You See Is All There Is",
-      "relation": "neighbours",
-      "set": "stairs",
-      "hook": "comes home at 3 am every night"
-    },
-    {
-      "id": "006",
-      "book": "Influence: The Psychology of Persuasion",
-      "item": "Reciprocity",
-      "relation": "tea-stall owner / rickshaw puller (neighbours), father-son",
-      "set": "street",
-      "hook": "14-year tea stall down to 40 cups a day after a new café; free first cup on winter dawns"
-    },
-    {
-      "id": "007",
-      "book": "The Psychology of Money",
-      "item": "Getting Wealthy vs. Staying Wealthy",
-      "relation": "spouses (wife protagonist)",
-      "set": "home",
-      "hook": "salary doubled, month-end balance zero; wife's 'ঝড়ের দিন' passbook saves the family after layoff"
-    },
-    {
-      "id": "008",
-      "book": "Animal Farm",
-      "item": "All are equal, but some become more equal",
-      "relation": "housing-society neighbours / secretary / guard",
-      "set": "stairs",
-      "hook": "secretary promised 'everyone equal'; a year later the generator runs only on his floor; old signed rules pinned on the notice board"
-    },
-    {
-      "id": "009",
-      "book": "Games People Play",
-      "item": "If It Weren't For You",
-      "relation": "siblings (elder sister protagonist)",
-      "set": "balcony",
-      "hook": "12 years of 'তোর জন্যই তো'; brother leaves an open-university admission form"
-    },
-    {
-      "id": "010",
-      "book": "Thinking, Fast and Slow",
-      "item": "Anchoring",
-      "relation": "father-daughter / shopkeeper-customer",
-      "set": "shop",
-      "hook": "11 customers a day, 11 bargains, almost zero profit; an honest value card on the counter"
-    },
-    {
-      "id": "011",
-      "book": "The Art of War",
-      "item": "Know yourself and know your opponent",
-      "relation": "teacher-student / mother-son",
-      "set": "home",
-      "hook": "200 sums every night, still 38 in the test exam; three old answer scripts"
-    },
-    {
-      "id": "012",
-      "book": "The Laws of Human Nature",
-      "item": "The Law of Envy — Beware the Fragile Ego",
-      "relation": "friends (two women, tiffin business)",
-      "set": "kitchen",
-      "hook": "80 orders vs 12; admits envy at 4:30 am and learns the hidden cost"
-    },
-    {
-      "id": "013",
-      "book": "Influence: The Psychology of Persuasion",
-      "item": "Scarcity",
-      "relation": "grandmother-grandson",
-      "set": "home",
-      "hook": "3 parcels in a month from Facebook lives; 'only 2 left' every night for 7 nights"
-    },
-    {
-      "id": "014",
-      "book": "The Psychology of Money",
-      "item": "Room for Error",
-      "relation": "older sister-younger brother",
-      "set": "hospital",
-      "hook": "3 years of 500 tk a month in an envelope marked 'for nothing'"
-    },
-    {
-      "id": "015",
-      "book": "Mastery",
-      "item": "Submit to Reality: The Ideal Apprenticeship",
-      "relation": "ustad-apprentice",
-      "set": "shop",
-      "hook": "3 months, 4,000 screws counted, 0 phones opened"
-    },
-    {
-      "id": "016",
-      "book": "Games People Play",
-      "item": "Harried",
-      "relation": "mother–daughter",
-      "set": "kitchen",
-      "hook": "22 chores a day, 0 rest"
-    },
-    {
-      "id": "017",
-      "book": "The Book of Five Rings",
-      "item": "Become the opponent — see from their side",
-      "relation": "driver–passengers / father–daughter",
-      "set": "street",
-      "hook": "25 fare fights in a month"
-    },
-    {
-      "id": "018",
-      "book": "The Daily Laws",
-      "item": "Patience as a superpower",
-      "relation": "grandmother–granddaughter",
-      "set": "balcony",
-      "hook": "quits everything within 7 days"
-    },
-    {
-      "id": "019",
-      "book": "The Art of War",
-      "item": "Build a golden bridge for your opponent to retreat",
-      "relation": "father–son (teen)",
-      "set": "balcony",
-      "hook": "16, no licence, took dad's motorbike and hid the damage"
-    },
-    {
-      "id": "020",
-      "book": "The Art of Seduction",
-      "item": "The Charmer — make people feel important and heard",
-      "relation": "daughter-in-law–father-in-law",
-      "set": "home",
-      "hook": "8 months, father-in-law only says 'রেখে যাও'"
-    },
-    {
-      "id": "021",
-      "book": "Thinking, Fast and Slow",
-      "item": "Sunk Cost",
-      "relation": "friends (two young men) / mother–son",
-      "set": "balcony",
-      "hook": "4 years, 3 BCS attempts, 3 lakh taka on coaching"
-    },
-    {
-      "id": "022",
-      "book": "The Art of Worldly Wisdom",
-      "item": "Know how to refuse",
-      "relation": "niece–uncle / mother–daughter",
-      "set": "home",
-      "hook": "salary 22k, lent 47k to relatives in first year"
-    },
-    {
-      "id": "023",
-      "book": "The Prince",
-      "item": "Build on the people, not on flatterers",
-      "relation": "employer–employees (owner, manager, delivery boy)",
-      "set": "shop",
-      "hook": "sales down 40% while manager says 'all fine'"
-    },
-    {
-      "id": "024",
-      "book": "1984",
-      "item": "Constant watching changes behaviour",
-      "relation": "mother–teen daughter",
-      "set": "home",
-      "hook": "checks daughter's phone 14 times a day"
-    },
-    {
-      "id": "025",
-      "book": "Propaganda",
-      "item": "Repetition makes ideas feel true",
-      "relation": "shopkeeper–customers / father–son",
-      "set": "shop",
-      "hook": "40-year fish shop, sales down to a third after a rumour"
-    },
-    {
-      "id": "026",
-      "book": "The Righteous Mind",
-      "item": "The elephant and the rider — intuition first, reasons later",
-      "relation": "sisters-in-law (ja) / mother-in-law",
-      "set": "kitchen",
-      "hook": "one kitchen, two sisters-in-law, 112 fights in 2 years"
-    },
-    {
-      "id": "027",
-      "book": "Animal Farm",
-      "item": "The loyal worker who only says 'I will work harder'",
-      "relation": "father–son / employer–employee",
-      "set": "street",
-      "hook": "18 years of night duty, 3 days of leave"
-    },
-    {
-      "id": "028",
-      "book": "The Wealth of Nations",
-      "item": "Division of labour multiplies output",
-      "relation": "siblings / mother–daughter / neighbour",
-      "set": "kitchen",
-      "hook": "40 tiffins a day alone, 50 orders turned away"
-    },
-    {
-      "id": "029",
-      "book": "The Republic",
-      "item": "The Ring of Gyges — who are you when no one is watching?",
-      "relation": "shopkeeper–stranger (old woman) / friends",
-      "set": "shop",
-      "hook": "25,000 taka sent to the wrong number; nobody would know"
-    },
-    {
-      "id": "030",
-      "book": "On War",
-      "item": "The culminating point — knowing when to stop",
-      "relation": "grandfather–granddaughter / customer",
-      "set": "street",
-      "hook": "1 fuchka cart to 4 in 6 months, profit lower than with 1"
-    },
-    {
-      "id": "031",
-      "book": "The Laws of Human Nature",
-      "item": "The Law of Irrationality — Master Your Emotional Self",
-      "relation": "colleagues (senior–junior) / boss",
-      "set": "shop",
-      "hook": "11 years in the job, resignation written at 1 am after public scolding"
-    },
-    {
-      "id": "032",
-      "book": "The Open Society and Its Enemies",
-      "item": "Criticism makes communities stronger",
-      "relation": "headmistress–students / colleague",
-      "set": "street",
-      "hook": "17 girls dropped out in a year, nobody said why"
-    },
-    {
-      "id": "033",
-      "book": "The 33 Strategies of War",
-      "item": "Pick Your Battles Carefully",
-      "relation": "tenant–landlord / spouses",
-      "set": "stairs",
-      "hook": "19 fights with the landlord in a year, 0 wins"
-    },
-    {
-      "id": "034",
-      "book": "The Dictator's Handbook",
-      "item": "When the circle is small, the many are ignored",
-      "relation": "hawkers–committee (community) / elder–teen",
-      "set": "street",
-      "hook": "40 hawkers, 0 committee seats, 3 years of 'later'"
-    },
-    {
-      "id": "035",
-      "book": "The 50th Law",
-      "item": "Turn Bad Situations into Opportunity",
-      "relation": "father–son / customers",
-      "set": "street",
-      "hook": "wedding cancelled at 10 pm with biryani for 200 already cooked"
-    },
-    {
-      "id": "036",
-      "book": "Influence: The Psychology of Persuasion",
-      "item": "Commitment and Consistency",
-      "relation": "neighbours (young woman, elderly neighbour, bhabi)",
-      "set": "stairs",
-      "hook": "24 flats, garbage on the stairs every morning; 24 signed door cards"
-    },
-    {
-      "id": "037",
-      "book": "The Psychology of Money",
-      "item": "Man in the Car Paradox",
-      "relation": "mother–son / cousins",
-      "set": "street",
-      "hook": "12 instalments of 10,000 tk for an expensive phone on a 28k salary"
-    },
-    {
-      "id": "038",
-      "book": "Games People Play",
-      "item": "Ain't It Awful",
-      "relation": "colleagues (women) / boss",
-      "set": "kitchen",
-      "hook": "40 minutes of the same lunch complaints every day for 8 months"
-    },
-    {
-      "id": "039",
-      "book": "Thinking, Fast and Slow",
-      "item": "The Planning Fallacy",
-      "relation": "spouses (tailor husband) / customer",
-      "set": "shop",
-      "hook": "3 Eids, 3 late deliveries, 23 angry customers; wife's old notebook"
-    },
-    {
-      "id": "040",
-      "book": "The Art of War",
-      "item": "Victorious warriors win first, then go to war (preparation)",
-      "relation": "younger sister–elder brother / shopkeeper",
-      "set": "shop",
-      "hook": "7 job interviews, 7 rejections; 30 shopkeepers asked before the 8th"
-    },
-    {
-      "id": "041",
-      "book": "The Laws of Human Nature",
-      "item": "The Law of Narcissism — Transform Self-love into Empathy",
-      "relation": "spouses (husband learns) / daughter",
-      "set": "home",
-      "hook": "12 years of marriage, only one person talks at dinner; daughter's 'know your parents' worksheet"
-    },
-    {
-      "id": "042",
-      "book": "Animal Farm",
-      "item": "Rules quietly rewritten after the fact",
-      "relation": "friends (teen cricket club) / younger boy",
-      "set": "street",
-      "hook": "12 pay the club fee, only the captain bats; first-day rule notebook"
-    },
-    {
-      "id": "043",
-      "book": "The Social Contract",
-      "item": "Freedom includes obeying rules we made together",
-      "relation": "grandfather–grandchildren / joint family",
-      "set": "home",
-      "hook": "1 bathroom, 7 people, a fight every morning at 7:30"
-    },
-    {
-      "id": "044",
-      "book": "The Psychology of Money",
-      "item": "No One's Crazy",
-      "relation": "mother–daughter / brother",
-      "set": "home",
-      "hook": "3 rice drums under the bed, cash in the pillow; the 1988 flood"
-    }
-  ]
+ "_note": "One line per script already written. The weekly writer appends here so ideas are never repeated.",
+ "used": [
+  {
+   "id": "001",
+   "book": "The Art of War",
+   "item": "Weak Points and Strong — avoid what is strong, strike at what is weak",
+   "relation": "shopkeeper-customers / father-son",
+   "set": "shop",
+   "hook": "27-year shop, sales halved after a superstore opened"
+  },
+  {
+   "id": "002",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Defensiveness",
+   "relation": "mother-in-law / daughter-in-law",
+   "set": "kitchen",
+   "hook": "6 months, 0 open conversations; public true praise at a dawat"
+  },
+  {
+   "id": "003",
+   "book": "The Psychology of Money",
+   "item": "Wealth Is What You Don't See",
+   "relation": "father-son",
+   "set": "street",
+   "hook": "gets off 200 m before the school gate"
+  },
+  {
+   "id": "004",
+   "book": "Games People Play",
+   "item": "Why Don't You — Yes, But",
+   "relation": "father-daughter",
+   "set": "balcony",
+   "hook": "came home and spoke to no one"
+  },
+  {
+   "id": "005",
+   "book": "Thinking, Fast and Slow",
+   "item": "WYSIATI — What You See Is All There Is",
+   "relation": "neighbours",
+   "set": "stairs",
+   "hook": "comes home at 3 am every night"
+  },
+  {
+   "id": "006",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocity",
+   "relation": "tea-stall owner / rickshaw puller (neighbours), father-son",
+   "set": "street",
+   "hook": "14-year tea stall down to 40 cups a day after a new café; free first cup on winter dawns"
+  },
+  {
+   "id": "007",
+   "book": "The Psychology of Money",
+   "item": "Getting Wealthy vs. Staying Wealthy",
+   "relation": "spouses (wife protagonist)",
+   "set": "home",
+   "hook": "salary doubled, month-end balance zero; wife's 'ঝড়ের দিন' passbook saves the family after layoff"
+  },
+  {
+   "id": "008",
+   "book": "Animal Farm",
+   "item": "All are equal, but some become more equal",
+   "relation": "housing-society neighbours / secretary / guard",
+   "set": "stairs",
+   "hook": "secretary promised 'everyone equal'; a year later the generator runs only on his floor; old signed rules pinned on the notice board"
+  },
+  {
+   "id": "009",
+   "book": "Games People Play",
+   "item": "If It Weren't For You",
+   "relation": "siblings (elder sister protagonist)",
+   "set": "balcony",
+   "hook": "12 years of 'তোর জন্যই তো'; brother leaves an open-university admission form"
+  },
+  {
+   "id": "010",
+   "book": "Thinking, Fast and Slow",
+   "item": "Anchoring",
+   "relation": "father-daughter / shopkeeper-customer",
+   "set": "shop",
+   "hook": "11 customers a day, 11 bargains, almost zero profit; an honest value card on the counter"
+  },
+  {
+   "id": "011",
+   "book": "The Art of War",
+   "item": "Know yourself and know your opponent",
+   "relation": "teacher-student / mother-son",
+   "set": "home",
+   "hook": "200 sums every night, still 38 in the test exam; three old answer scripts"
+  },
+  {
+   "id": "012",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Envy — Beware the Fragile Ego",
+   "relation": "friends (two women, tiffin business)",
+   "set": "kitchen",
+   "hook": "80 orders vs 12; admits envy at 4:30 am and learns the hidden cost"
+  },
+  {
+   "id": "013",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Scarcity",
+   "relation": "grandmother-grandson",
+   "set": "home",
+   "hook": "3 parcels in a month from Facebook lives; 'only 2 left' every night for 7 nights"
+  },
+  {
+   "id": "014",
+   "book": "The Psychology of Money",
+   "item": "Room for Error",
+   "relation": "older sister-younger brother",
+   "set": "hospital",
+   "hook": "3 years of 500 tk a month in an envelope marked 'for nothing'"
+  },
+  {
+   "id": "015",
+   "book": "Mastery",
+   "item": "Submit to Reality: The Ideal Apprenticeship",
+   "relation": "ustad-apprentice",
+   "set": "shop",
+   "hook": "3 months, 4,000 screws counted, 0 phones opened"
+  },
+  {
+   "id": "016",
+   "book": "Games People Play",
+   "item": "Harried",
+   "relation": "mother–daughter",
+   "set": "kitchen",
+   "hook": "22 chores a day, 0 rest"
+  },
+  {
+   "id": "017",
+   "book": "The Book of Five Rings",
+   "item": "Become the opponent — see from their side",
+   "relation": "driver–passengers / father–daughter",
+   "set": "street",
+   "hook": "25 fare fights in a month"
+  },
+  {
+   "id": "018",
+   "book": "The Daily Laws",
+   "item": "Patience as a superpower",
+   "relation": "grandmother–granddaughter",
+   "set": "balcony",
+   "hook": "quits everything within 7 days"
+  },
+  {
+   "id": "019",
+   "book": "The Art of War",
+   "item": "Build a golden bridge for your opponent to retreat",
+   "relation": "father–son (teen)",
+   "set": "balcony",
+   "hook": "16, no licence, took dad's motorbike and hid the damage"
+  },
+  {
+   "id": "020",
+   "book": "The Art of Seduction",
+   "item": "The Charmer — make people feel important and heard",
+   "relation": "daughter-in-law–father-in-law",
+   "set": "home",
+   "hook": "8 months, father-in-law only says 'রেখে যাও'"
+  },
+  {
+   "id": "021",
+   "book": "Thinking, Fast and Slow",
+   "item": "Sunk Cost",
+   "relation": "friends (two young men) / mother–son",
+   "set": "balcony",
+   "hook": "4 years, 3 BCS attempts, 3 lakh taka on coaching"
+  },
+  {
+   "id": "022",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Know how to refuse",
+   "relation": "niece–uncle / mother–daughter",
+   "set": "home",
+   "hook": "salary 22k, lent 47k to relatives in first year"
+  },
+  {
+   "id": "023",
+   "book": "The Prince",
+   "item": "Build on the people, not on flatterers",
+   "relation": "employer–employees (owner, manager, delivery boy)",
+   "set": "shop",
+   "hook": "sales down 40% while manager says 'all fine'"
+  },
+  {
+   "id": "024",
+   "book": "1984",
+   "item": "Constant watching changes behaviour",
+   "relation": "mother–teen daughter",
+   "set": "home",
+   "hook": "checks daughter's phone 14 times a day"
+  },
+  {
+   "id": "025",
+   "book": "Propaganda",
+   "item": "Repetition makes ideas feel true",
+   "relation": "shopkeeper–customers / father–son",
+   "set": "shop",
+   "hook": "40-year fish shop, sales down to a third after a rumour"
+  },
+  {
+   "id": "026",
+   "book": "The Righteous Mind",
+   "item": "The elephant and the rider — intuition first, reasons later",
+   "relation": "sisters-in-law (ja) / mother-in-law",
+   "set": "kitchen",
+   "hook": "one kitchen, two sisters-in-law, 112 fights in 2 years"
+  },
+  {
+   "id": "027",
+   "book": "Animal Farm",
+   "item": "The loyal worker who only says 'I will work harder'",
+   "relation": "father–son / employer–employee",
+   "set": "street",
+   "hook": "18 years of night duty, 3 days of leave"
+  },
+  {
+   "id": "028",
+   "book": "The Wealth of Nations",
+   "item": "Division of labour multiplies output",
+   "relation": "siblings / mother–daughter / neighbour",
+   "set": "kitchen",
+   "hook": "40 tiffins a day alone, 50 orders turned away"
+  },
+  {
+   "id": "029",
+   "book": "The Republic",
+   "item": "The Ring of Gyges — who are you when no one is watching?",
+   "relation": "shopkeeper–stranger (old woman) / friends",
+   "set": "shop",
+   "hook": "25,000 taka sent to the wrong number; nobody would know"
+  },
+  {
+   "id": "030",
+   "book": "On War",
+   "item": "The culminating point — knowing when to stop",
+   "relation": "grandfather–granddaughter / customer",
+   "set": "street",
+   "hook": "1 fuchka cart to 4 in 6 months, profit lower than with 1"
+  },
+  {
+   "id": "031",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Irrationality — Master Your Emotional Self",
+   "relation": "colleagues (senior–junior) / boss",
+   "set": "shop",
+   "hook": "11 years in the job, resignation written at 1 am after public scolding"
+  },
+  {
+   "id": "032",
+   "book": "The Open Society and Its Enemies",
+   "item": "Criticism makes communities stronger",
+   "relation": "headmistress–students / colleague",
+   "set": "street",
+   "hook": "17 girls dropped out in a year, nobody said why"
+  },
+  {
+   "id": "033",
+   "book": "The 33 Strategies of War",
+   "item": "Pick Your Battles Carefully",
+   "relation": "tenant–landlord / spouses",
+   "set": "stairs",
+   "hook": "19 fights with the landlord in a year, 0 wins"
+  },
+  {
+   "id": "034",
+   "book": "The Dictator's Handbook",
+   "item": "When the circle is small, the many are ignored",
+   "relation": "hawkers–committee (community) / elder–teen",
+   "set": "street",
+   "hook": "40 hawkers, 0 committee seats, 3 years of 'later'"
+  },
+  {
+   "id": "035",
+   "book": "The 50th Law",
+   "item": "Turn Bad Situations into Opportunity",
+   "relation": "father–son / customers",
+   "set": "street",
+   "hook": "wedding cancelled at 10 pm with biryani for 200 already cooked"
+  },
+  {
+   "id": "036",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Commitment and Consistency",
+   "relation": "neighbours (young woman, elderly neighbour, bhabi)",
+   "set": "stairs",
+   "hook": "24 flats, garbage on the stairs every morning; 24 signed door cards"
+  },
+  {
+   "id": "037",
+   "book": "The Psychology of Money",
+   "item": "Man in the Car Paradox",
+   "relation": "mother–son / cousins",
+   "set": "street",
+   "hook": "12 instalments of 10,000 tk for an expensive phone on a 28k salary"
+  },
+  {
+   "id": "038",
+   "book": "Games People Play",
+   "item": "Ain't It Awful",
+   "relation": "colleagues (women) / boss",
+   "set": "kitchen",
+   "hook": "40 minutes of the same lunch complaints every day for 8 months"
+  },
+  {
+   "id": "039",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Planning Fallacy",
+   "relation": "spouses (tailor husband) / customer",
+   "set": "shop",
+   "hook": "3 Eids, 3 late deliveries, 23 angry customers; wife's old notebook"
+  },
+  {
+   "id": "040",
+   "book": "The Art of War",
+   "item": "Victorious warriors win first, then go to war (preparation)",
+   "relation": "younger sister–elder brother / shopkeeper",
+   "set": "shop",
+   "hook": "7 job interviews, 7 rejections; 30 shopkeepers asked before the 8th"
+  },
+  {
+   "id": "041",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Narcissism — Transform Self-love into Empathy",
+   "relation": "spouses (husband learns) / daughter",
+   "set": "home",
+   "hook": "12 years of marriage, only one person talks at dinner; daughter's 'know your parents' worksheet"
+  },
+  {
+   "id": "042",
+   "book": "Animal Farm",
+   "item": "Rules quietly rewritten after the fact",
+   "relation": "friends (teen cricket club) / younger boy",
+   "set": "street",
+   "hook": "12 pay the club fee, only the captain bats; first-day rule notebook"
+  },
+  {
+   "id": "043",
+   "book": "The Social Contract",
+   "item": "Freedom includes obeying rules we made together",
+   "relation": "grandfather–grandchildren / joint family",
+   "set": "home",
+   "hook": "1 bathroom, 7 people, a fight every morning at 7:30"
+  },
+  {
+   "id": "044",
+   "book": "The Psychology of Money",
+   "item": "No One's Crazy",
+   "relation": "mother–daughter / brother",
+   "set": "home",
+   "hook": "3 rice drums under the bed, cash in the pillow; the 1988 flood"
+  },
+  {
+   "id": "045",
+   "book": "Games People Play",
+   "item": "Kick Me",
+   "relation": "grandmother-grandson",
+   "set": "home",
+   "hook": "29 job applications, 9 interviews, 0 jobs; always opens with 'maybe you won't take me'"
+  },
+  {
+   "id": "046",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Social Proof",
+   "relation": "uncle-nephew / spouses",
+   "set": "street",
+   "hook": "10% monthly 'samity', long queues, 5,000-member group; 'find one person who got paid after a year'"
+  },
+  {
+   "id": "047",
+   "book": "The Art of War",
+   "item": "The supreme art is to win without fighting",
+   "relation": "neighbours / father-son",
+   "set": "street",
+   "hook": "2 years of drain-water fights and a lawyer notice; tea + 'you're the mason, what would it take?'"
+  },
+  {
+   "id": "048",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Role-playing",
+   "relation": "colleagues / mother-daughter",
+   "set": "stairs",
+   "hook": "sweetest colleague presents her plan as his own; 'watch how he treats people who can give him nothing'"
+  },
+  {
+   "id": "049",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Halo Effect",
+   "relation": "mother-son / tutors",
+   "set": "home",
+   "hook": "6,000-tk polished tutor vs 3,000-tk retired teacher in torn sandals; a one-hour trial class"
+  },
+  {
+   "id": "050",
+   "book": "The Psychology of Money",
+   "item": "Never Enough",
+   "relation": "father-daughter (child) / spouses",
+   "set": "home",
+   "hook": "60k salary, takes a 2nd evening job to match a colleague's flat; daughter keeps his front-row chair empty"
+  },
+  {
+   "id": "051",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Liking",
+   "relation": "teacher-mothers / school peon",
+   "set": "street",
+   "hook": "village school, 52 enrolled, 11 attend; new teacher spends 20 minutes every afternoon at the pond-side reading mothers' letters"
+  }
+ ]
 }

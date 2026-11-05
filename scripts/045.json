@@ -1,0 +1,548 @@
+{
+ "id": "045",
+ "status": "ready",
+ "title_bn": "উনত্রিশটা আবেদন",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "THE GAME",
+  "chapter_bn": "একটা মানসিক খেলা",
+  "title": "Kick Me",
+  "title_bn": "“আমাকে মারো” — নিজের হার ডেকে আনা"
+ },
+ "cast": {
+  "sumon": {
+   "name": "সুমন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "nanu": {
+   "name": "নানু",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "sir": {
+   "name": "ইন্টারভিউ বোর্ড",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#2E3A4F",
+   "hair": "side_grey",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "দুই বছরে *উনত্রিশটা* চাকরির আবেদন। ইন্টারভিউর ডাক এসেছে নয়বার। চাকরি— একটাও না।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "দুই বছর ধরে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "nanu",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আবেদন",
+       "value": "২৯",
+       "from": "১"
+      },
+      {
+       "label": "চাকরি",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রতিবার ইন্টারভিউ থেকে ফিরে নানুর পাশে বসে সুমন একই কথা বলে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আম্মা-আব্বা গ্রামে। ফোনে আম্মা জিজ্ঞেস করেন, এবার কী হলো রে? সুমন বলে, *রেজাল্ট দেয় নাই এখনো*।",
+   "pause": 0.5,
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "sighs",
+   "say": "বলেছিলাম না নানু? আমার *কপালটাই খারাপ*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "curious",
+   "say": "কপাল তো দেখি নাই রে। ইন্টারভিউতে *প্রথম কথাটা* কী বলিস?",
+   "scene": {
+    "arms": {
+     "nanu": "talk"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "flatly",
+   "say": "বলি, স্যার, রেজাল্ট অত ভালো না, *হয়তো নেবেন না*, তবু চেষ্টা করছি।",
+   "scene": {
+    "arms": {
+     "nanu": "down",
+     "sumon": "talk"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানু অনেকক্ষণ চুপ করে পান বানালেন। তারপর হাসলেন।",
+   "pause": 0.6,
+   "scene": {
+    "arms": {
+     "sumon": "down"
+    },
+    "moods": {
+     "nanu": "smile"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "teasing",
+   "say": "তুই তো নিজেই ওদের হাতে *লাঠি তুলে দিস*, বাবা। তারপর বলিস, মারল কেন।",
+   "scene": {
+    "arms": {
+     "nanu": "point"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "sighs",
+   "say": "নানু, ওরা তো এমনিও নেবে না। আগে বলে রাখলে *কষ্টটা কম লাগে*।",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "teasing",
+   "say": "কষ্ট কম লাগে, না চাকরিটাও *কম আসে*?",
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নয়টা ইন্টারভিউতেই সুমন দিয়েছে নিজের হারের *আগাম ঘোষণা*।",
+   "card": {
+    "title": "নয় ইন্টারভিউ, একই শুরু",
+    "items": [
+     {
+      "t": "‘হয়তো নেবেন না’",
+      "mark": "x"
+     },
+     {
+      "t": "দশ মিনিট দেরিতে পৌঁছানো",
+      "mark": "x"
+     },
+     {
+      "t": "‘আমার কপাল খারাপ’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সেই রাতে অন্ধকার ঘরে সুমন প্রথমবার *নিজেকে শুনল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সে কি হারতে যায়? নাকি গিয়ে *হারের অপেক্ষা* করে?",
+   "card": {
+    "text": "সে কি হারতে যায়?\nনাকি *হারের অপেক্ষা* করে?"
+   }
+  },
+  {
+   "say": "পরের ইন্টারভিউর আগের রাতে নানু একটা কাগজে লিখে দিলেন তিনটা লাইন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "sumon",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "নানুর তিন লাইন",
+     "lines": [
+      "আধা ঘণ্টা আগে যাবি",
+      "প্রথমে বলবি, তুই কী পারিস",
+      "‘হয়তো’ শব্দটা বাড়িতে রেখে যাবি"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "warmly",
+   "say": "কী পারিস না, ওটা ওরা খুঁজুক। তুই বলবি *কী পারিস*।",
+   "scene": {
+    "arms": {
+     "nanu": "talk"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন মতিঝিলের অফিস। সামনে চশমা পরা কঠিন চেহারার এক স্যার।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ইন্টারভিউ, মতিঝিল",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "sir",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "cross"
+     },
+     {
+      "id": "sumon",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "sir",
+   "tone": "serious",
+   "say": "রেজাল্ট তো খুব ভালো না। আপনাকে *কেন নেবো*?",
+   "scene": {
+    "arms": {
+     "sir": "talk"
+    },
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "proudly",
+   "say": "স্যার, ভার্সিটিতে তিন বছর ক্যান্টিনের হিসাব রেখেছি। *এক টাকাও* গরমিল হয়নি।",
+   "scene": {
+    "arms": {
+     "sir": "down",
+     "sumon": "talk"
+    },
+    "moods": {
+     "sumon": "smile"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sir",
+   "tone": "curious",
+   "say": "হিসাবের খাতাগুলো *সাথে আছে*?",
+   "scene": {
+    "moods": {
+     "sir": "surprised"
+    },
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "proudly",
+   "say": "আছে স্যার। *সবগুলো*।",
+   "scene": {
+    "arms": {
+     "sumon": "hold"
+    },
+    "holds": {
+     "sumon": "book"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "sir",
+   "tone": "warmly",
+   "say": "কাল সকাল নয়টায় জয়েন করেন। আর খাতাগুলো *আমাদের অফিসেও* আনবেন।",
+   "scene": {
+    "moods": {
+     "sir": "smile"
+    },
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর সুমন বাড়ি ফিরল মিষ্টির প্যাকেট হাতে।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "sumon",
+      "x": 0.7,
+      "pose": "walk",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sumon",
+   "tone": "excited",
+   "say": "নানু, *ত্রিশ নম্বরটা* হয়ে গেছে!",
+   "scene": {
+    "chars": [
+     {
+      "id": "nanu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "sumon",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানু মিষ্টি মুখে না দিয়ে আগে গ্রামে ফোন দিলেন। বললেন, তোর ছেলে চাকরি পাইছে— *নিজের যোগ্যতায়*।",
+   "pause": 0.4,
+   "scene": {
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nanu",
+   "tone": "laughs",
+   "say": "ত্রিশ না রে, এটাই তোর *প্রথম*। আগেরগুলোতে তো তুই যাসই নাই।",
+   "scene": {
+    "arms": {
+     "nanu": "talk"
+    },
+    "cam": {
+     "focus": "nanu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "উনত্রিশটা আবেদন যা পারেনি, *একটা শব্দ বাদ দেওয়া* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "nanu": "down"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দরজা সবসময় বন্ধ থাকে না… *কখনো আমরাই টানি*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দরজা সবসময় বন্ধ থাকে না…",
+    "line2": "কখনো\nআমরাই টানি।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "২৯টা চাকরির আবেদন, একটাও হয়নি… নানুর ৩ লাইনে বদলে গেল সব 💼",
+  "description": "দুই বছরে উনত্রিশটা আবেদন, নয়টা ইন্টারভিউ, চাকরি একটাও না। সুমন বলে, কপাল খারাপ। কিন্তু নানু জানতে চাইলেন, ইন্টারভিউর প্রথম কথাটা কী…\nএরিক বার্নের Games People Play — Kick Me — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "games people play bangla",
+   "eric berne bangla",
+   "চাকরির ইন্টারভিউ",
+   "নানুর গল্প",
+   "আত্মবিশ্বাস",
+   "বেকার জীবন",
+   "মোটিভেশন বাংলা",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "উনত্রিশটা আবেদন যা পারেনি, একটা শব্দ বাদ দেওয়া তা পারল। 💼\n\nতুমি কি কখনো নিজের হার আগেই ঘোষণা করে ফেলো? 👇\n\n#চাকরি #আত্মবিশ্বাস"
+ },
+ "thumbnail": {
+  "text": "উনত্রিশটা আবেদন",
+  "sub": "কপাল, নাকি প্রথম কথা?"
+ },
+ "_extended": "story-only v1"
+}

@@ -1,0 +1,513 @@
+{
+ "id": "049",
+ "status": "ready",
+ "title_bn": "ছেঁড়া স্যান্ডেলের স্যার",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "HALO EFFECT",
+  "chapter_bn": "মনের একটা ফাঁদ",
+  "title": "The Halo Effect",
+  "title_bn": "এক গুণের আলোয় সব ভালো দেখা"
+ },
+ "cast": {
+  "shirin": {
+   "name": "শিরিন",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#6B4E9B",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "tanjil": {
+   "name": "নতুন স্যার",
+   "type": "young_man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "bashir": {
+   "name": "বশির স্যার",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#B8A98A",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "tuhin": {
+   "name": "টুহিন",
+   "type": "child_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "ক্লাস ফাইভের টুহিনের জন্য দুজন টিউটর। একজনের বেতন *ছয় হাজার*, আরেকজনের *তিন হাজার*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "টিউটর বাছাই",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন স্যার",
+       "value": "৬,০০০"
+      },
+      {
+       "label": "বশির স্যার",
+       "value": "৩,০০০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নতুন স্যার নামকরা ভার্সিটির ছাত্র। ঝকঝকে শার্ট, মুখে ইংরেজি।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "tanjil",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "হেসে বললেন, তাঁর সব ছাত্র নাকি *এ-প্লাস* পায়।",
+   "scene": {
+    "arms": {
+     "tanjil": "talk"
+    },
+    "holds": {
+     "tanjil": "none"
+    },
+    "cam": {
+     "focus": "tanjil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বশির স্যার অবসরপ্রাপ্ত স্কুলশিক্ষক। পুরনো পাঞ্জাবি, পায়ে *ছেঁড়া স্যান্ডেল*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "bashir",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "bashir",
+   "tone": "softly",
+   "say": "আপা, আগে ছেলেটার সাথে *একটু কথা বলি*?",
+   "scene": {
+    "arms": {
+     "bashir": "talk"
+    },
+    "holds": {
+     "bashir": "none"
+    },
+    "cam": {
+     "focus": "bashir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "flatly",
+   "say": "না স্যার, আমরা *ঠিক করে ফেলেছি*।",
+   "scene": {
+    "arms": {
+     "bashir": "down",
+     "shirin": "talk"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পাশের বাসার ভাবিরাও বললেন, ভার্সিটির ছেলে, *ভালোই হবে*। শিরিন খুশি মনে ছয় হাজার টাকা অগ্রিম দিলেন।",
+   "pause": 0.4,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাস কাটল। স্যার পড়ানোর সময় ফোনে, টুহিন চুপ, নম্বর আরও *নিচে*।",
+   "card": {
+    "title": "তিন মাসে যা হলো",
+    "items": [
+     {
+      "t": "স্যার পড়ানোর সময় ফোনে",
+      "mark": "x"
+     },
+     {
+      "t": "টুহিন একটাও প্রশ্ন করে না",
+      "mark": "x"
+     },
+     {
+      "t": "অঙ্কে পঞ্চান্ন থেকে বিয়াল্লিশ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শিরিন ভাবলেন, ছেলেটাই হয়তো *দুর্বল*। রাতে টুহিনকে বকলেন অনেকক্ষণ।",
+   "pause": 0.6,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "crying",
+      "arm": "face",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuhin",
+   "tone": "tearful",
+   "say": "আম্মু, স্যার যা বলে, আমি *কিছুই বুঝি না*।",
+   "scene": {
+    "arms": {
+     "shirin": "down"
+    },
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পরদিন সিঁড়িতে খবর পেলেন, পাশের বাসার মেয়েটা অঙ্কে এখন ক্লাসে প্রথম। পড়ায় *বশির স্যার*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরদিন",
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "sighs",
+   "say": "আমি আসলে কী দেখে স্যার বেছেছিলাম? শার্ট, ইংরেজি, ভার্সিটির নাম… *পড়ানো তো দেখিনি*!",
+   "scene": {
+    "moods": {
+     "shirin": "thinking"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "sad",
+   "say": "লোকে কী বলবে ভেবে বেছেছিলাম। টুহিনের *কী লাগবে*, সেটা ভাবিনি।",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "একটা ঝকঝকে গুণ দেখে আমরা ধরে নিই, *সব গুণই* আছে।",
+   "card": {
+    "text": "একটা ঝকঝকে গুণ দেখে\nধরে নিই *সব গুণই* আছে।"
+   }
+  },
+  {
+   "say": "শিরিন এবার দুজনকেই ডাকলেন। *এক ঘণ্টার* পরীক্ষামূলক ক্লাস। নিজে বসে দেখলেন।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "bashir",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shirin",
+      "x": 0.86,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "cross"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "নতুন স্যার পুরো সময় বোর্ডে লিখলেন। বশির স্যার টুহিনকে দিয়ে *আম ভাগ করিয়ে* ভগ্নাংশ বোঝালেন।",
+   "scene": {
+    "cam": "pan"
+   }
+  },
+  {
+   "voice": "bashir",
+   "tone": "playfully",
+   "say": "বলো তো বাবা, একটা আম চারজনে ভাগ করলে তোমার *কতটুকু*?",
+   "scene": {
+    "cam": {
+     "focus": "bashir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "tone": "excited",
+   "say": "এক ভাগের *চার ভাগ*! মানে এক-চতুর্থাংশ!",
+   "scene": {
+    "moods": {
+     "tuhin": "happy"
+    },
+    "arms": {
+     "tuhin": "wave"
+    },
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাসে এই প্রথম টুহিন *নিজে উত্তর* দিল। শিরিনের চোখ ভিজে উঠল।",
+   "pause": 0.7,
+   "scene": {
+    "arms": {
+     "tuhin": "down"
+    },
+    "moods": {
+     "shirin": "crying"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "tone": "softly",
+   "say": "স্যার, কাল থেকে *আপনি আসবেন*। আর আমাকে মাফ করবেন।",
+   "scene": {
+    "moods": {
+     "shirin": "smile"
+    },
+    "arms": {
+     "shirin": "talk"
+    },
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "bashir",
+   "tone": "gently",
+   "say": "মাফের কিছু নেই আপা। *চোখ তো সবারই* ভুল করে।",
+   "scene": {
+    "arms": {
+     "shirin": "down",
+     "bashir": "talk"
+    },
+    "cam": {
+     "focus": "bashir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "tone": "playfully",
+   "say": "স্যার, কাল আবার আম দিয়ে অঙ্ক করব? *পেয়ারা* দিয়েও করা যায়?",
+   "scene": {
+    "moods": {
+     "tuhin": "happy"
+    },
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর অঙ্কে টুহিনের নম্বর *নব্বই*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অঙ্ক",
+       "value": "৯০",
+       "from": "৪২"
+      }
+     ]
+    },
+    "moods": {
+     "tuhin": "happy"
+    },
+    "arms": {
+     "bashir": "down"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঝকঝকে শার্ট যা পারেনি, *ছেঁড়া স্যান্ডেলের ধৈর্য* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সব ঝকঝকে জিনিস সোনা না… *সব পুরনো জিনিস ফেলনা না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সব ঝকঝকে জিনিস সোনা না…",
+    "line2": "সব পুরনো জিনিস\nফেলনা না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছয় হাজারের ঝকঝকে স্যার, নাকি তিন হাজারের ছেঁড়া স্যান্ডেল? 👟",
+  "description": "ক্লাস ফাইভের টুহিনের জন্য দুজন টিউটর— নামকরা ভার্সিটির ঝকঝকে তরুণ, আর ছেঁড়া স্যান্ডেলের অবসরপ্রাপ্ত শিক্ষক। শিরিন বেছে নিলেন প্রথমজনকে। তিন মাস পর…\nড্যানিয়েল কাহনেম্যানের Thinking, Fast and Slow — The Halo Effect — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "thinking fast and slow bangla",
+   "halo effect bangla",
+   "কাহনেম্যান বাংলা",
+   "শিক্ষকের গল্প",
+   "মা ছেলের গল্প",
+   "টিউশন",
+   "প্যারেন্টিং",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ঝকঝকে শার্ট যা পারেনি, ছেঁড়া স্যান্ডেলের ধৈর্য তা পারল। 👟\n\nশুধু চেহারা বা নাম দেখে কখনো ভুল মানুষ বেছেছ? 👇\n\n#শিক্ষক #মা"
+ },
+ "thumbnail": {
+  "text": "ছেঁড়া স্যান্ডেল",
+  "sub": "ঝলক, নাকি কাজ?"
+ },
+ "_extended": "story-only v1"
+}

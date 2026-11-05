@@ -1,0 +1,566 @@
+{
+ "id": "046",
+ "status": "ready",
+ "title_bn": "সবাই তো দিচ্ছে",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 3",
+  "chapter_bn": "তৃতীয় নীতি",
+  "title": "Social Proof",
+  "title_bn": "সবাই যা করে, আমরাও তা করি"
+ },
+ "cast": {
+  "mama": {
+   "name": "জলিল মামা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#8FA7B5",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "rashed": {
+   "name": "রাশেদ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "side",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "mami": {
+   "name": "মামি",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বাজারে নতুন সমিতি। মাসে *দশ পার্সেন্ট* লাভ। জলিল মামা ব্যাংক থেকে তুলে এনেছেন জমানো *দুই লাখ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "উপজেলা বাজার",
+    "props": [
+     "superstore",
+     "sign:সোনালী স্বপ্ন সমিতি"
+    ],
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rashed",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসে লাভ",
+       "value": "১০%"
+      },
+      {
+       "label": "মামার জমা",
+       "value": "২ লাখ"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সমিতির সামনে রোজ লম্বা লাইন। ফেসবুক গ্রুপে *পাঁচ হাজার* সদস্য।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "লাইনের একজন বলল, পাশের গ্রামের সবাই নাকি এই টাকায় *বাড়ি পাকা* করে ফেলেছে।",
+   "scene": {
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "excited",
+   "say": "দেখ রাশেদ, এত মানুষ কি *বোকা*? সবাই তো দিচ্ছে!",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "mama": "point"
+    },
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mami",
+   "tone": "gently",
+   "say": "ঘরের ছাদ সারানোর টাকা। একটু *ভেবে* দাও।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mami",
+      "x": 0.28,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "mama",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rashed",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mami",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "annoyed",
+   "say": "ভাবতে ভাবতে তো সবাই *বড়লোক* হয়ে যাবে।",
+   "scene": {
+    "arms": {
+     "mami": "down",
+     "mama": "cross"
+    },
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "tone": "gently",
+   "say": "মামা, দুইটা দিন সময় দেন। একটু খোঁজ নেই। *টাকা তো পালাবে না*।",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভাগ্নে রাশেদ তর্ক করল না। রাতে বসে গ্রুপটা *ঘাঁটল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "যা পেল, তাতে তার ঘুম উড়ে গেল।",
+   "card": {
+    "title": "ভিড়ের ভেতরে",
+    "items": [
+     {
+      "t": "লাইনের সব ছবিতে একই বিশজন",
+      "mark": "x"
+     },
+     {
+      "t": "সদস্যদের আইডি এক মাসের পুরনো",
+      "mark": "x"
+     },
+     {
+      "t": "টাকা ফেরত পাওয়া কেউ নেই",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সকালে মামাকে সে শুধু একটা অনুরোধ করল।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rashed",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rashed",
+   "tone": "gently",
+   "say": "মামা, টাকা দেন। শুধু তার আগে *এক বছর আগে* টাকা দিয়েছে, এমন একজনকে খুঁজে দেন।",
+   "scene": {
+    "arms": {
+     "rashed": "talk"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "laughs",
+   "say": "এ আর এমন কী! বাজারে *শত শত* লোক।",
+   "scene": {
+    "arms": {
+     "rashed": "down",
+     "mama": "talk"
+    },
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "annoyed",
+   "say": "ঠিক আছে, দুই দিন। তারপর কিন্তু *আর কোনো কথা নাই*।",
+   "scene": {
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সারাদিন ঘুরলেন জলিল মামা। চায়ের দোকান, মুদি দোকান, বাসস্ট্যান্ড।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সারাদিন",
+    "props": [
+     "superstore",
+     "sign:সোনালী স্বপ্ন সমিতি"
+    ],
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "যাকেই জিজ্ঞেস করেন, সে বলে— আমি তো *গত মাসে* দিলাম।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সবাই টাকা *দিয়েছে*। কেউ এখনো *পায়নি*।",
+   "card": {
+    "text": "সবাই টাকা *দিয়েছে*।\nকেউ এখনো *পায়নি*।"
+   },
+   "pause": 0.5
+  },
+  {
+   "voice": "mama",
+   "tone": "sighs",
+   "say": "সবাই দিচ্ছে, কারণ *সবাই দিচ্ছে*। কেউ তো কিছু পাচ্ছে না!",
+   "scene": {
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "রাতে ফিরে মামা কিছু খেলেন না। মামিকে শুধু বললেন, কাল সকালে *ব্যাংকে চলো*।",
+   "pause": 0.5
+  },
+  {
+   "say": "দুই লাখ টাকা ফিরে গেল ব্যাংকে, ছাদের নামে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "mami",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "passbook",
+     "title": "ছাদের টাকা",
+     "lines": [
+      "জমা — ২,০০,০০০ টাকা"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mami",
+   "tone": "warmly",
+   "say": "ছাদের টাকা ছাদেই থাকুক। *লাভ পরে* দেখা যাবে।",
+   "scene": {
+    "arms": {
+     "mami": "talk"
+    },
+    "cam": {
+     "focus": "mami",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর এক সকালে বাজারে হইচই। সমিতির অফিসে *তালা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "superstore",
+     "sign:সোনালী স্বপ্ন সমিতি"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "mama",
+      "x": 0.38,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "face"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "লাইনের সেই মানুষগুলো এখন দাঁড়িয়ে *বন্ধ দরজার* সামনে। কারও হাতে রসিদ, কারও চোখে পানি।",
+   "pause": 0.7,
+   "scene": {
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "এক বৃদ্ধা মাটিতে বসে কাঁদছিলেন— মেয়ের বিয়ের টাকা, *সবটাই এখানে*। মামা তাঁর পাশে গিয়ে চুপ করে দাঁড়ালেন।",
+   "pause": 0.7,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "sad",
+   "say": "ভিড় দেখে ভেবেছিলাম রাস্তাটা নিরাপদ। *ভিড়টাই ছিল ফাঁদ*।",
+   "scene": {
+    "arms": {
+     "mama": "down"
+    },
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "tone": "softly",
+   "say": "আমি শুধু জানতে চেয়েছিলাম মামা, *ভিড়ের শেষে* কে দাঁড়িয়ে।",
+   "scene": {
+    "arms": {
+     "rashed": "talk"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mama",
+   "tone": "tearful",
+   "say": "তুই না থাকলে আজ আমিও ওই লাইনে দাঁড়াতাম, বাবা। *এই দুই লাখ নিয়ে*।",
+   "scene": {
+    "moods": {
+     "mama": "crying"
+    },
+    "cam": {
+     "focus": "mama",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "পাঁচ হাজার মানুষের ভিড় যা লুকিয়েছিল, *একজন মানুষ খোঁজা* তা দেখাল।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "rashed": "down"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভিড় পথ দেখায় না… *শুধু শব্দ করে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভিড় পথ দেখায় না…",
+    "line2": "শুধু\nশব্দ করে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘সবাই তো দিচ্ছে!’ সমিতিতে ২ লাখ দিতে যাচ্ছিলেন মামা… তারপর 😮",
+  "description": "মাসে দশ পার্সেন্ট লাভ, রোজ লম্বা লাইন, গ্রুপে পাঁচ হাজার সদস্য। জলিল মামা জমানো দুই লাখ তুলে এনেছেন। ভাগ্নে রাশেদ তর্ক না করে শুধু একটা অনুরোধ করল…\nরবার্ট চালডিনির Influence — Social Proof — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "influence bangla",
+   "cialdini bangla",
+   "social proof bangla",
+   "সমিতি প্রতারণা",
+   "টাকা বাঁচানো",
+   "মামা ভাগ্নে",
+   "সচেতনতা",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পাঁচ হাজার মানুষের ভিড় যা লুকিয়েছিল, একজন মানুষ খোঁজা তা দেখাল। 😮\n\nশুধু ‘সবাই করছে’ দেখে তুমি কখনো ঠকেছ? 👇\n\n#সচেতনতা #টাকা"
+ },
+ "thumbnail": {
+  "text": "সবাই তো দিচ্ছে",
+  "sub": "ভিড়ের শেষে কে?"
+ },
+ "_extended": "story-only v1"
+}
