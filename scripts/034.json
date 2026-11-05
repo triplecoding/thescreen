@@ -1,528 +1,576 @@
 {
-  "id": "034",
-  "status": "ready",
-  "title_bn": "জরিনা খালার ছাউনি",
-  "source": {
-    "book": "The Dictator's Handbook",
-    "author": "Bruce Bueno de Mesquita & Alastair Smith",
-    "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
-    "chapter": "IDEA",
-    "chapter_bn": "একটা ভাবনা",
-    "title": "When the Circle Is Small, the Many Are Ignored",
-    "title_bn": "ছোট বৃত্তে অনেকে হারিয়ে যায়"
+ "id": "034",
+ "status": "ready",
+ "title_bn": "জরিনা খালার ছাউনি",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA",
+  "chapter_bn": "একটা ভাবনা",
+  "title": "When the Circle Is Small, the Many Are Ignored",
+  "title_bn": "ছোট বৃত্তে অনেকে হারিয়ে যায়"
+ },
+ "cast": {
+  "jorina": {
+   "name": "জরিনা খালা",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#6C3A5C",
+   "color2": "#E8A33D",
+   "hair": "grey_bun",
+   "voice": "old_woman"
   },
-  "cast": {
-    "jorina": {
-      "name": "জরিনা খালা",
-      "type": "old_woman",
-      "skin": "brown",
-      "outfit": "sari",
-      "color": "#6C3A5C",
-      "color2": "#E8A33D",
-      "hair": "grey_bun",
-      "voice": "old_woman"
-    },
-    "kalu": {
-      "name": "কালু",
-      "type": "teen_boy",
-      "skin": "dark",
-      "outfit": "tshirt",
-      "color": "#E8A33D",
-      "hair": "kid",
-      "voice": "teen_boy"
-    },
-    "president": {
-      "name": "সভাপতি সাহেব",
-      "type": "man",
-      "skin": "wheat",
-      "outfit": "panjabi",
-      "color": "#FFFFFF",
-      "hair": "side",
-      "beard": "full_black",
-      "voice": "man"
-    }
+  "kalu": {
+   "name": "কালু",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "teen_boy"
   },
-  "beats": [
-    {
-      "say": "বাসস্ট্যান্ডে চল্লিশ জন হকার। ছাউনি নেই, বাতি নেই। কমিটির খাতায় তারা *শূন্য*।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "সিরাজগঞ্জ বাসস্ট্যান্ড",
-        "props": [
-          "car",
-          "cng"
-        ],
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "worried",
-            "arm": "hold",
-            "hold": "tea"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "হকার",
-              "value": "৪০"
-            },
-            {
-              "label": "কমিটিতে আসন",
-              "value": "০",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "সভাপতি খুশি রাখেন শুধু *পাঁচজন বাস মালিককে*। চেয়ারটা তো ওরাই ধরে রাখে।",
-      "scene": {
-        "widget": null,
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "president",
-      "tone": "flatly",
-      "say": "খালা, ছাউনি পরে দেখব। আগে মালিকদের *পার্কিংটা* হোক।",
-      "scene": {
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "president",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "talk"
-          }
-        ],
-        "cam": {
-          "focus": "president",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jorina",
-      "tone": "sad",
-      "say": "বাবা, তিন বছর ধরে শুধু *পরে* শুনছি। বৃষ্টিতে চুলা নিভে যায়।",
-      "scene": {
-        "cam": {
-          "focus": "jorina",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "দরখাস্ত, কাউন্সিলরের দরজা, একা একা অনুরোধ। কাগজগুলো জমল *ড্রয়ারে*।",
-      "card": {
-        "title": "খালার চেষ্টা",
-        "items": [
-          {
-            "t": "দরখাস্ত",
-            "mark": "x"
-          },
-          {
-            "t": "কাউন্সিলরের দরজা",
-            "mark": "x"
-          },
-          {
-            "t": "একা একা অনুরোধ",
-            "mark": "x"
-          }
-        ],
-        "footer": "ফল: ড্রয়ারে"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "এক বর্ষার রাতে ঝড়ে উড়ে গেল খালার পলিথিনের ছাউনি। চায়ের হাঁড়ি *কাদায়*।",
-      "pause": 0.8,
-      "scene": {
-        "set": "street",
-        "light": "night",
-        "chip": "বর্ষার রাত",
-        "props": [
-          "car"
-        ],
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "face"
-          }
-        ],
-        "fx": "rain",
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "kalu",
-      "tone": "gently",
-      "say": "খালা, কাঁদেন না। আমরা চল্লিশজন তো *একসাথে* আছি!",
-      "scene": {
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "down"
-          },
-          {
-            "id": "kalu",
-            "x": 0.68,
-            "pose": "stand",
-            "face": "left",
-            "mood": "worried",
-            "arm": "talk",
-            "hold": "bag"
-          }
-        ],
-        "cam": {
-          "focus": "kalu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "খালা কালুর দিকে তাকালেন। আর হঠাৎ বুঝলেন— একা একা তারা *অদৃশ্য*।",
-      "pause": 0.8,
-      "scene": {
-        "moods": {
-          "jorina": "thinking"
-        },
-        "cam": {
-          "focus": "jorina",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "একজনের কথা যায় ফাইলে। *চল্লিশজনের* কথা যায় মাঠে।",
-      "pause": 0.7,
-      "card": {
-        "text": "একজনের কথা যায় ফাইলে।\n*চল্লিশজনের* কথা মাঠে।"
-      }
-    },
-    {
-      "say": "পরদিন ভোর থেকে চল্লিশ হকার মিলে ঝাড়ু দিল স্ট্যান্ড। জায়গাটা *ঝকঝকে*।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "পরদিন ভোর",
-        "props": [
-          "car",
-          "cng"
-        ],
-        "fx": null,
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.35,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "kalu",
-            "x": 0.65,
-            "pose": "walk",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          }
-        ],
-        "cam": "pan"
-      }
-    },
-    {
-      "say": "আর প্রতিটা যাত্রীর হাতে, চায়ের সাথে, *একটা কাগজ*।",
-      "scene": {
-        "widget": {
-          "kind": "note",
-          "style": "paper",
-          "title": "যাত্রীদের কাছে অনুরোধ",
-          "lines": [
-            "একটা ছাউনি, একটা বাতি—",
-            "আপনার অপেক্ষাও সহজ হবে।",
-            "সই দিন ✍️"
-          ]
-        },
-        "holds": {
-          "jorina": "tea"
-        }
-      }
-    },
-    {
-      "say": "এক মাসে সই পড়ল *তিন হাজার*। মালিকরাও বুঝলেন, যাত্রী খুশি থাকলে *বাসও ভরে*।",
-      "scene": {
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "যাত্রীর সই",
-              "value": "৩,০০০",
-              "from": "০"
-            }
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "president",
-      "tone": "curious",
-      "say": "খালা, এত মানুষ যে আপনাদের পাশে, *জানতাম না*।",
-      "scene": {
-        "widget": null,
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "book"
-          },
-          {
-            "id": "president",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "down"
-          }
-        ],
-        "cam": {
-          "focus": "president",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jorina",
-      "tone": "softly",
-      "say": "জানতেন না, কারণ আপনার টেবিলে বসে *পাঁচজন*। চল্লিশজন দাঁড়িয়ে থাকে বাইরে।",
-      "scene": {
-        "cam": {
-          "focus": "jorina",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "সভাপতি অনেকক্ষণ চুপ। তারপর কমিটিতে বসালেন নতুন একটা চেয়ার— *হকার প্রতিনিধি*।",
-      "pause": 0.6,
-      "scene": {
-        "cam": {
-          "focus": "president",
-          "zoom": 1.4
-        },
-        "moods": {
-          "president": "thinking"
-        }
-      }
-    },
-    {
-      "say": "দুই মাসে ছাউনি উঠল, বাতি জ্বলল। প্রথম মিটিংয়ে চেয়ারে বসলেন *জরিনা খালা*।",
-      "scene": {
-        "light": "evening",
-        "chip": "দুই মাস পর",
-        "chars": [
-          {
-            "id": "jorina",
-            "x": 0.35,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "down"
-          },
-          {
-            "id": "kalu",
-            "x": 0.65,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "wave"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "কমিটিতে আসন",
-              "value": "১",
-              "from": "০"
-            }
-          ]
-        },
-        "fx": "glow",
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "kalu",
-      "tone": "excited",
-      "say": "খালা, আপনি তো এখন *নেতা*!",
-      "scene": {
-        "widget": null,
-        "fx": null,
-        "cam": {
-          "focus": "kalu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jorina",
-      "tone": "laughs",
-      "say": "নেতা না রে। আমি শুধু *চল্লিশজনের গলা*।",
-      "scene": {
-        "cam": {
-          "focus": "jorina",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "একা একা দরখাস্ত যা পারেনি, *চল্লিশটা হাত একসাথে* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— মেসকিতা ও স্মিথের *দ্য ডিক্টেটরস হ্যান্ডবুক*।"
-    },
-    {
-      "kind": "book",
-      "say": "একটা ভাবনা— বৃত্ত ছোট হলে, *অনেকে হারিয়ে যায়*।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "নেতা শোনেন তাদের কথা, যারা তাকে চেয়ারে রাখে। বৃত্ত ছোট হলে, বাকিরা *চোখে পড়ে না*।",
-      "card": {
-        "title": "কার কথা পৌঁছায়?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "people",
-            "t": "ছোট বৃত্ত",
-            "sub": "শুধু পাঁচজনের কথা",
-            "bad": true
-          },
-          "right": {
-            "icon": "hand",
-            "t": "বড় বৃত্ত",
-            "sub": "সবার কথা"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, একা থাকলে মানুষ *অদৃশ্য*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "একা থাকলে অদৃশ্য",
-            "sub": "একসাথে হলে চোখে পড়ে",
-            "icon": "people"
-          },
-          {
-            "t": "ঝগড়া নয়, কাজ দেখাও",
-            "sub": "ঝাড়ু আর সই",
-            "icon": "check"
-          },
-          {
-            "t": "নেতা হলে বৃত্ত বড় করো",
-            "sub": "বাইরের মানুষকে চেয়ার দাও",
-            "icon": "heart"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, ঝগড়া নয়— *কাজ দেখাও*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, নেতা হলে *বৃত্তটা* বড় করো।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার টেবিলে কি শুধু *কাছের পাঁচজন*, নাকি *বাইরের মানুষেরও* চেয়ার আছে?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমার টেবিলে কি শুধু *কাছের পাঁচজন*,\nনাকি *বাইরের মানুষেরও* চেয়ার আছে?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "একজনের ডাক হারিয়ে যায়… *চল্লিশজনের ডাক পথ খুঁজে নেয়*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "একজনের ডাক হারিয়ে যায়…",
-        "line2": "চল্লিশজনের ডাক\nপথ খুঁজে নেয়।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "তিন বছর শুধু ‘পরে দেখব’, তারপর জরিনা খালা আর চল্লিশ হকার ☔ | The Dictator's Handbook",
-    "description": "বাসস্ট্যান্ডে চল্লিশ জন হকার, কিন্তু কমিটির খাতায় তারা শূন্য। তিন বছর ধরে জরিনা খালা শুনেছেন শুধু ‘পরে দেখব’। তারপর এক বর্ষার রাতে…\nব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ-এর The Dictator's Handbook — When the Circle Is Small, the Many Are Ignored — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "dictators handbook bangla",
-      "bruce bueno de mesquita",
-      "হকারের গল্প",
-      "একতা",
-      "বাংলা গল্প",
-      "বাসস্ট্যান্ড",
-      "নেতৃত্ব",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "একা একা দরখাস্ত যা পারেনি, চল্লিশটা হাত একসাথে তা পারল। ☔\n\nতোমার এলাকার কোন মানুষটার কথা কেউ শোনে না, অথচ শোনা দরকার? 👇\n\n📖 The Dictator's Handbook — Bruce Bueno de Mesquita & Alastair Smith\n#একতা #বাংলাগল্প"
-  },
-  "thumbnail": {
-    "text": "৪০ জন অদৃশ্য",
-    "sub": "জরিনা খালার চা"
+  "president": {
+   "name": "সভাপতি সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#FFFFFF",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
   }
+ },
+ "beats": [
+  {
+   "say": "বাসস্ট্যান্ডে চল্লিশ জন হকার। ছাউনি নেই, বাতি নেই। কমিটির খাতায় তারা *শূন্য*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সিরাজগঞ্জ বাসস্ট্যান্ড",
+    "props": [
+     "car",
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হকার",
+       "value": "৪০"
+      },
+      {
+       "label": "কমিটিতে আসন",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সভাপতি খুশি রাখেন শুধু *পাঁচজন বাস মালিককে*। চেয়ারটা তো ওরাই ধরে রাখে।",
+   "scene": {
+    "widget": null,
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "president",
+   "tone": "flatly",
+   "say": "খালা, ছাউনি পরে দেখব। আগে মালিকদের *পার্কিংটা* হোক।",
+   "scene": {
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "president",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "president",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jorina",
+   "tone": "sad",
+   "say": "বাবা, তিন বছর ধরে শুধু *পরে* শুনছি। বৃষ্টিতে চুলা নিভে যায়।",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "president",
+   "tone": "flatly",
+   "say": "খালা, আপনারা তো *অস্থায়ী*। মালিকরা না থাকলে স্ট্যান্ডই থাকবে না।",
+   "scene": {
+    "cam": {
+     "focus": "president",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দরখাস্ত, কাউন্সিলরের দরজা, একা একা অনুরোধ। কাগজগুলো জমল *ড্রয়ারে*।",
+   "card": {
+    "title": "খালার চেষ্টা",
+    "items": [
+     {
+      "t": "দরখাস্ত",
+      "mark": "x"
+     },
+     {
+      "t": "কাউন্সিলরের দরজা",
+      "mark": "x"
+     },
+     {
+      "t": "একা একা অনুরোধ",
+      "mark": "x"
+     }
+    ],
+    "footer": "ফল: ড্রয়ারে"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "এক বর্ষার রাতে ঝড়ে উড়ে গেল খালার পলিথিনের ছাউনি। চায়ের হাঁড়ি *কাদায়*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "বর্ষার রাত",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "fx": "rain",
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jorina",
+   "tone": "tearful",
+   "say": "তিরিশ বছর এই চুলায় চা বেচি, বাবা। আজ *চুলাটাও* গেল।",
+   "scene": {
+    "moods": {
+     "jorina": "crying"
+    },
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "kalu",
+   "tone": "gently",
+   "say": "খালা, কাঁদেন না। আমরা চল্লিশজন তো *একসাথে* আছি!",
+   "scene": {
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "kalu",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খালা কালুর দিকে তাকালেন। আর হঠাৎ বুঝলেন— একা একা তারা *অদৃশ্য*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "jorina": "thinking"
+    },
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "একজনের কথা যায় ফাইলে। *চল্লিশজনের* কথা যায় মাঠে।",
+   "pause": 0.7,
+   "card": {
+    "text": "একজনের কথা যায় ফাইলে।\n*চল্লিশজনের* কথা মাঠে।"
+   }
+  },
+  {
+   "say": "পরদিন ভোর থেকে চল্লিশ হকার মিলে ঝাড়ু দিল স্ট্যান্ড। জায়গাটা *ঝকঝকে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন ভোর",
+    "props": [
+     "car",
+     "cng"
+    ],
+    "fx": null,
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "kalu",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "voice": "kalu",
+   "tone": "excited",
+   "say": "খালা, যাত্রীরা কইতেছে, স্ট্যান্ড এত পরিষ্কার *আগে কোনোদিন* দেখে নাই!",
+   "scene": {
+    "moods": {
+     "kalu": "happy"
+    },
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আর প্রতিটা যাত্রীর হাতে, চায়ের সাথে, *একটা কাগজ*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "যাত্রীদের কাছে অনুরোধ",
+     "lines": [
+      "একটা ছাউনি, একটা বাতি—",
+      "আপনার অপেক্ষাও সহজ হবে।",
+      "সই দিন ✍️"
+     ]
+    },
+    "holds": {
+     "jorina": "tea"
+    }
+   }
+  },
+  {
+   "say": "এক মাসে সই পড়ল *তিন হাজার*। মালিকরাও বুঝলেন, যাত্রী খুশি থাকলে *বাসও ভরে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "যাত্রীর সই",
+       "value": "৩,০০০",
+       "from": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "president",
+   "tone": "curious",
+   "say": "খালা, এত মানুষ যে আপনাদের পাশে, *জানতাম না*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "president",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "president",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jorina",
+   "tone": "softly",
+   "say": "জানতেন না, কারণ আপনার টেবিলে বসে *পাঁচজন*। চল্লিশজন দাঁড়িয়ে থাকে বাইরে।",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সভাপতি অনেকক্ষণ চুপ। তারপর কমিটিতে বসালেন নতুন একটা চেয়ার— *হকার প্রতিনিধি*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "president",
+     "zoom": 1.4
+    },
+    "moods": {
+     "president": "thinking"
+    }
+   }
+  },
+  {
+   "say": "দুই মাসে ছাউনি উঠল, বাতি জ্বলল। প্রথম মিটিংয়ে চেয়ারে বসলেন *জরিনা খালা*।",
+   "scene": {
+    "light": "evening",
+    "chip": "দুই মাস পর",
+    "chars": [
+     {
+      "id": "jorina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "kalu",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কমিটিতে আসন",
+       "value": "১",
+       "from": "০"
+      }
+     ]
+    },
+    "fx": "glow",
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kalu",
+   "tone": "excited",
+   "say": "খালা, আপনি তো এখন *নেতা*!",
+   "scene": {
+    "widget": null,
+    "fx": null,
+    "cam": {
+     "focus": "kalu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jorina",
+   "tone": "laughs",
+   "say": "নেতা না রে। আমি শুধু *চল্লিশজনের গলা*।",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন রাতে ঝুম বৃষ্টি। নতুন ছাউনির নিচে খালার চুলা জ্বলল *সারারাত*, আর চায়ের কাপ হাতে দাঁড়িয়ে রইল চল্লিশজন।",
+   "pause": 0.5,
+   "scene": {
+    "cam": "wide",
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "একা একা দরখাস্ত যা পারেনি, *চল্লিশটা হাত একসাথে* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— মেসকিতা ও স্মিথের *দ্য ডিক্টেটরস হ্যান্ডবুক*।"
+  },
+  {
+   "kind": "book",
+   "say": "একটা ভাবনা— বৃত্ত ছোট হলে, *অনেকে হারিয়ে যায়*।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "নেতা শোনেন তাদের কথা, যারা তাকে চেয়ারে রাখে। বৃত্ত ছোট হলে, বাকিরা *চোখে পড়ে না*।",
+   "card": {
+    "title": "কার কথা পৌঁছায়?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "people",
+      "t": "ছোট বৃত্ত",
+      "sub": "শুধু পাঁচজনের কথা",
+      "bad": true
+     },
+     "right": {
+      "icon": "hand",
+      "t": "বড় বৃত্ত",
+      "sub": "সবার কথা"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, একা থাকলে মানুষ *অদৃশ্য*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "একা থাকলে অদৃশ্য",
+      "sub": "একসাথে হলে চোখে পড়ে",
+      "icon": "people"
+     },
+     {
+      "t": "ঝগড়া নয়, কাজ দেখাও",
+      "sub": "ঝাড়ু আর সই",
+      "icon": "check"
+     },
+     {
+      "t": "নেতা হলে বৃত্ত বড় করো",
+      "sub": "বাইরের মানুষকে চেয়ার দাও",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, ঝগড়া নয়— *কাজ দেখাও*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, নেতা হলে *বৃত্তটা* বড় করো।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার টেবিলে কি শুধু *কাছের পাঁচজন*, নাকি *বাইরের মানুষেরও* চেয়ার আছে?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমার টেবিলে কি শুধু *কাছের পাঁচজন*,\nনাকি *বাইরের মানুষেরও* চেয়ার আছে?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "একজনের ডাক হারিয়ে যায়… *চল্লিশজনের ডাক পথ খুঁজে নেয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "একজনের ডাক হারিয়ে যায়…",
+    "line2": "চল্লিশজনের ডাক\nপথ খুঁজে নেয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন বছর শুধু ‘পরে দেখব’, তারপর জরিনা খালা আর চল্লিশ হকার ☔ | The Dictator's Handbook",
+  "description": "বাসস্ট্যান্ডে চল্লিশ জন হকার, কিন্তু কমিটির খাতায় তারা শূন্য। তিন বছর ধরে জরিনা খালা শুনেছেন শুধু ‘পরে দেখব’। তারপর এক বর্ষার রাতে…\nব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ-এর The Dictator's Handbook — When the Circle Is Small, the Many Are Ignored — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "dictators handbook bangla",
+   "bruce bueno de mesquita",
+   "হকারের গল্প",
+   "একতা",
+   "বাংলা গল্প",
+   "বাসস্ট্যান্ড",
+   "নেতৃত্ব",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "একা একা দরখাস্ত যা পারেনি, চল্লিশটা হাত একসাথে তা পারল। ☔\n\nতোমার এলাকার কোন মানুষটার কথা কেউ শোনে না, অথচ শোনা দরকার? 👇\n\n📖 The Dictator's Handbook — Bruce Bueno de Mesquita & Alastair Smith\n#একতা #বাংলাগল্প"
+ },
+ "thumbnail": {
+  "text": "৪০ জন অদৃশ্য",
+  "sub": "জরিনা খালার চা"
+ },
+ "_extended": "story-only v1"
 }
