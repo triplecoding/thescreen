@@ -385,6 +385,8 @@ def main():
             if "facebook" in platforms:
                 try:
                     rec["facebook"] = upload_facebook.upload(video, script, when.timestamp() if schedule else None, Path(odir) / "thumb_9x16.jpg")
+                    import time
+                    time.sleep(int(os.environ.get("FB_GAP", "60")))   # space Facebook uploads: bursts trigger its posting limit
                 except Exception as e:  # noqa
                     rec["facebook_error"] = str(e)[:300]; errors.append(f"facebook {sid}: {e}")
         rec["scheduled_for"] = when.isoformat() if schedule else "immediate"
