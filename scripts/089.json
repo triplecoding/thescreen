@@ -1,0 +1,483 @@
+{
+ "id": "089",
+ "status": "ready",
+ "title_bn": "এটিএম বুথের ছাত্র",
+ "theme": "work",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Law of Apprenticeship",
+  "title_bn": "রাতের পড়া"
+ },
+ "cast": {
+  "selim": {
+   "name": "সেলিম",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#2B2B2B",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "beard": "moustache",
+   "cap": true,
+   "voice": "man"
+  },
+  "dcosta": {
+   "name": "মিসেস ডি’কস্টা",
+   "type": "old_woman",
+   "skin": "light",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "nupur": {
+   "name": "নুপুর",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "গুলশানের এক এটিএম বুথ। রাত দশটা থেকে ভোর ছয়টা, আট ঘণ্টা একটা কাচের ঘরে। *সেলিম, নিরাপত্তা প্রহরী*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "গুলশান, এটিএম বুথ, রাত ১০টা",
+    "props": [
+     "signboard",
+     "sign:এটিএম বুথ — ২৪ ঘণ্টা"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ডিউটি",
+       "value": "রাত ১০টা–ভোর ৬টা"
+      },
+      {
+       "label": "বেতন",
+       "value": "১৪,৫০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nupur",
+   "say": "আব্বু, ‘ডিলিজেন্ট’ মানে কী? টিচার কালকে *বাক্য* বানাইতে দিছে।",
+   "tone": "hopeful",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "বিকেল, কড়াইল বস্তির ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nupur",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "nupur": "point"
+    }
+   }
+  },
+  {
+   "say": "সেলিম খাতার দিকে তাকিয়ে রইলেন। অক্ষরগুলো চেনেন, শব্দটা চেনেন না। ক্লাস ফাইভ পর্যন্ত পড়েছিলেন, *ত্রিশ বছর আগে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "আম্মুরে জিগা। আমার ডিউটির *দেরি* হইতেছে।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "selim": "down"
+    }
+   }
+  },
+  {
+   "say": "নুপুর চলে গেল। সেলিম জানেন, আম্মুও জানে না। আর মেয়েটা সেটা জানে। এই লজ্জাটা তিনি নিয়ে গেলেন *বুথে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাত সাড়ে এগারোটা। নিয়মিত কাস্টমার মিসেস ডি’কস্টা এলেন। প্রতি রাতে আসেন, *হাঁটার পথে*। আজ দেখলেন গার্ডের হাতে একটা বাচ্চার খাতা।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত সাড়ে এগারোটা",
+    "props": [
+     "signboard",
+     "sign:এটিএম বুথ — ২৪ ঘণ্টা"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "dcosta",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dcosta",
+   "say": "কী পড়ছেন, সেলিম ভাই? *ইংলিশ*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "dcosta",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dcosta": "talk"
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "মেয়ের খাতা, ম্যাডাম। ও একটা শব্দ জিগাইছিল। আমি… *পারি নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "selim": "hold"
+    }
+   }
+  },
+  {
+   "voice": "dcosta",
+   "say": "ডিলিজেন্ট। মানে যে মানুষ মন দিয়ে, নিয়মিত কাজ করে। যেমন আপনি, *প্রতি রাতে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "dcosta",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dcosta": "point"
+    }
+   }
+  },
+  {
+   "say": "সেলিম শব্দটা তিনবার বললেন। ডিলিজেন্ট। মিসেস ডি’কস্টা হাসলেন। তারপর ব্যাগ থেকে বের করলেন একটা *হলুদ চিরকুট*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dcosta",
+   "say": "চল্লিশ বছর ইংরেজি পড়াইছি। রিটায়ারের পর ছাত্র নাই। আপনি হবেন? রোজ রাতে *একটা শব্দ*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "dcosta",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dcosta": "hold"
+    }
+   }
+  },
+  {
+   "say": "এরপর প্রতি রাতে বুথের কাচের গায়ে একটা হলুদ চিরকুট। একটা শব্দ, তার মানে, আর *একটা বাক্য*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "এক বছর, প্রতি রাতে",
+    "props": [
+     "signboard",
+     "sign:এটিএম বুথ — ২৪ ঘণ্টা"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "আজকের শব্দ",
+     "lines": [
+      "patient — ধৈর্যশীল",
+      "proud — গর্বিত",
+      "brave — সাহসী"
+     ]
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সেলিমের রাতের নিয়ম",
+   "card": {
+    "title": "আট ঘণ্টার ডিউটিতে",
+    "items": [
+     {
+      "t": "প্রতি ঘণ্টায় একবার শব্দটা জোরে বলা",
+      "mark": "x"
+     },
+     {
+      "t": "এটিএমের ইংরেজি লেখা পড়ে ফেলা",
+      "mark": "x"
+     },
+     {
+      "t": "ভোরে বাসায় গিয়ে মেয়েকে শেখানো",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "‘ইনসার্ট ইওর কার্ড’— কার্ড ঢুকান। ‘এন্টার পিন’— পিন দেন। ম্যাডাম, এইটা তো *আমি এক বছর ধইরা* দেখি!",
+   "tone": "proudly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক বছর পর। চারশো বারোটা শব্দ। আর ভোর ছয়টায় ডিউটি থেকে ফিরে বাবা-মেয়ের একটা নতুন খেলা— *শব্দ ধরা*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শেখা শব্দ",
+       "value": "৪১২টা"
+      },
+      {
+       "label": "চিরকুট",
+       "value": "৩৬৫টা"
+      }
+     ]
+    },
+    "set": "home",
+    "light": "day",
+    "chip": "এক বছর পর, ভোর ছয়টা",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nupur",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nupur",
+   "say": "আব্বু, ‘গ্রেটফুল’ মানে কী? এইবার পারবা না!",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "nupur",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nupur": "point"
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "say": "কৃতজ্ঞ। যেমন তোর আব্বু, *মিসেস ডি’কস্টার* কাছে।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "selim": "talk"
+    }
+   }
+  },
+  {
+   "say": "বড়দিনের আগের রাতে মিসেস ডি’কস্টা এলেন। আজ কাচের গায়ে চিরকুট লাগানো আগেই। কিন্তু হাতের লেখাটা *তাঁর না*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "night",
+    "chip": "একটা ডিসেম্বরের রাত",
+    "props": [
+     "signboard",
+     "sign:এটিএম বুথ — ২৪ ঘণ্টা"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "dcosta",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dcosta",
+   "say": "সেলিম ভাই… বানান একদম *ঠিক* আছে।",
+   "tone": "tearful",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "আজকের শব্দ (সেলিমের লেখা)",
+     "lines": [
+      "Teacher — শিক্ষক",
+      "You are my teacher. Merry Christmas."
+     ]
+    },
+    "cam": {
+     "focus": "dcosta",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dcosta": "face"
+    }
+   }
+  },
+  {
+   "say": "পরের বছর সেলিম ভর্তি হলেন উন্মুক্ত বিশ্ববিদ্যালয়ের এসএসসি প্রোগ্রামে। ভর্তির ফরমে পেশার ঘরে লিখলেন, ইংরেজিতে— *‘Diligent guard.’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শেখার জন্য ক্লাসরুম লাগে না… *লাগে একজন শিক্ষক, আর একটু সাহস*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "শেখার জন্য ক্লাসরুম লাগে না…",
+    "line2": "লাগে একজন শিক্ষক,\nআর একটু সাহস।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এটিএম বুথের রাতের গার্ড, মেয়ের ইংরেজি পড়া পারেননি… তারপর রোজ রাতে একটা হলুদ চিরকুট ✍️",
+  "description": "গুলশানের এক এটিএম বুথে রাতের গার্ড সেলিম। মেয়ে নুপুর একদিন ইংরেজি হোমওয়ার্ক নিয়ে এল, সেলিম একটা শব্দও পারলেন না। লজ্জায় চুপ। সেই রাতে বুথের নিয়মিত কাস্টমার, অবসরপ্রাপ্ত ইংরেজি শিক্ষিকা মিসেস ডি’কস্টা খেয়াল করলেন তাঁর হাতে মেয়ের খাতা…",
+  "tags": [
+   "নিরাপত্তা প্রহরী",
+   "বাবা মেয়ের গল্প",
+   "ইংরেজি শেখা",
+   "পরিশ্রম",
+   "ঢাকা",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "রাতের পাহারাদার সেলিম এক বছরে শিখলেন চারশো ইংরেজি শব্দ। শিক্ষক— এক বৃদ্ধা আর রোজ রাতের একটা চিরকুট। ✍️\nবড় হয়ে নতুন কিছু শিখতে তোমাকে কে সাহায্য করেছিল? 👇 #শেখা #বাবা"
+ },
+ "thumbnail": {
+  "text": "রাতের গার্ড",
+  "sub": "রোজ একটা শব্দ"
+ }
+}

@@ -1,0 +1,467 @@
+{
+ "id": "088",
+ "status": "ready",
+ "title_bn": "দুই ভাইয়ের আমগাছ",
+ "theme": "siblings",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Supreme excellence is breaking the enemy's resistance without fighting",
+  "title_bn": "না লড়েই জেতা"
+ },
+ "cast": {
+  "jalal": {
+   "name": "জালাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "kamal": {
+   "name": "কামাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "mithila": {
+   "name": "মিথিলা",
+   "type": "child_girl",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "সাতক্ষীরার এক উঠান, মাঝখানে বাঁশের বেড়া। দুই পাশে দুই ভাই। আর বেড়ার ঠিক উপরে একটা *আমগাছ*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "সাতক্ষীরা, দুই বাড়ির সীমানা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "kamal",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মামলা",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "কথা বন্ধ",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "উকিলের খরচ",
+       "value": "৮৪,০০০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "গাছের গোড়া আমার দিকে *দুই হাত* বেশি। গাছ আমার।",
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    },
+    "moods": {
+     "jalal": "angry"
+    },
+    "arms": {
+     "jalal": "point"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "ডালের তিন ভাগ আমার উঠানে। পাতা ঝাড়ু দেই আমি। *গাছ আমার*।",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "moods": {
+     "kamal": "angry"
+    },
+    "arms": {
+     "kamal": "point"
+    }
+   }
+  },
+  {
+   "say": "তিন বছর মামলা চলছে। উকিলের পেছনে গেছে চুরাশি হাজার টাকা। আমের দাম হলে হয়তো *চার হাজার*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কামালের মেয়ে মিথিলা, বয়স আট। সে কিছুই বোঝে না, শুধু জানে— বেড়ার ওপারের *বড় আব্বুর* সাথে কথা বলা নিষেধ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কামালের ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "kamal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "mithila",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mithila",
+   "say": "আব্বু, দাদা গাছটা কার জন্য লাগাইছিল? *তোমার*, না বড় আব্বুর?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mithila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mithila": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "দাদা কইছিল… *দুই ভাইয়ের ছায়া*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "down"
+    }
+   }
+  },
+  {
+   "say": "কথাটা বলেই কামাল থেমে গেলেন। চল্লিশ বছর আগের একটা বিকেল। বাবা দুই ভাইকে দিয়ে গর্ত খুঁড়িয়েছিলেন। *দুইজনের হাতে* একটা চারা।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জ্যৈষ্ঠ মাস। গাছে আম পেকেছে। কেউ পাড়ে না, *মামলা চলছে*। পাকা আম পড়ে পচে দুই উঠানেই।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "জ্যৈষ্ঠের এক বিকেল",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "mithila",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক বিকেলে কাউকে না বলে মিথিলা উঠে গেল গাছে। মাঝের ডালে বসল, *ঠিক বেড়ার উপরে*।",
+   "scene": {
+    "cam": {
+     "focus": "mithila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mithila",
+   "say": "আব্বু, এইটা তোমার! *ধরো*!",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "mithila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mithila": "wave"
+    }
+   }
+  },
+  {
+   "voice": "mithila",
+   "say": "বড় আব্বু, এইটা তোমার! এইটা আব্বুর! এইটা তোমার! *সমান সমান*!",
+   "tone": "laughs",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "একই বিকেল",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "mithila",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "kamal",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "mithila": "wave"
+    }
+   }
+  },
+  {
+   "say": "দুই ভাই দুই পাশে দাঁড়িয়ে। দুইজনের হাতে আম। দুইজনই উপরে তাকিয়ে, একই ডালের দিকে। তিন বছরে প্রথমবার *একই দিকে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "কামাল… আব্বা আমাগো দিয়া এই গাছ লাগাইছিল, *মনে আছে*? তুই তখন পানি আনতে গিয়া কলসি ভাঙছিলি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jalal": "down"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "আর আপনি আব্বারে কইছিলেন, *আমি* ভাঙছি। মাইর খাইছিলেন আমার বদলে।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "face"
+    }
+   }
+  },
+  {
+   "say": "চল্লিশ বছরের পুরোনো একটা মিথ্যা। একটা কলসি। আর একটা মার, ভাইয়ের বদলে। জালালের হাত থেকে আমটা *পড়ে গেল*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mithila",
+   "say": "তোমরা কানতেছো কেন? *আম* তো মিষ্টি!",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mithila",
+     "zoom": 1.4
+    },
+    "arms": {
+     "mithila": "down"
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে দুই ভাই একসাথে আদালতে গেলেন। মামলা তুলে নিতে। ফেরার পথে বাসে বসলেন *পাশাপাশি*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "kamal",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মামলা",
+       "value": "প্রত্যাহার"
+      },
+      {
+       "label": "বাঁশের বেড়া",
+       "value": "খোলা"
+      },
+      {
+       "label": "উকিলের খরচ",
+       "from": "৮৪,০০০",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "গাছ তোর দিকে বাঁকা, তুই রাখ। খালি বছরে এক ঝুড়ি আম *আমার উঠানে* পাঠাইস।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jalal": "talk"
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "পাঠামু না। আপনি আমার উঠানে আইসা খাইবেন। *ছায়া* তো আমার দিকেই বেশি।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    },
+    "arms": {
+     "kamal": "talk"
+    }
+   }
+  },
+  {
+   "say": "গাছের নিচের বাঁশের বেড়ায় এখন একটা ছোট দরজা। মিথিলার আঁকা কাগজে লেখা— *‘দুই ভাইয়ের ছায়া।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মামলা জেতে উকিল… *হারে দুই ভাই*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মামলা জেতে উকিল…",
+    "line2": "হারে দুই ভাই।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সীমানার আমগাছ নিয়ে দুই ভাইয়ের তিন বছরের মামলা… জ্যৈষ্ঠের এক বিকেলে গাছে উঠল ছোট্ট মিথিলা 🥭",
+  "description": "সাতক্ষীরায় বাবার জমি ভাগ হয়েছে। মাঝখানের সীমানায় একটা আমগাছ। বড় ভাই জালাল বলেন গাছ তাঁর, ছোট ভাই কামাল বলেন তাঁর। তিন বছর মামলা, কথা বন্ধ। জ্যৈষ্ঠের এক বিকেলে কামালের আট বছরের মেয়ে মিথিলা উঠে গেল সেই গাছে…",
+  "tags": [
+   "ভাই ভাইয়ের গল্প",
+   "জমির বিরোধ",
+   "মামলা",
+   "আমগাছ",
+   "সাতক্ষীরা",
+   "bangla golpo",
+   "পরিবারের গল্প",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন বছরের মামলা থামাল আট বছরের একটা মেয়ে আর এক ঝুড়ি আম। 🥭\nতোমার পরিবারে কি জমি নিয়ে এমন ভাঙন দেখেছ? কী থামাতে পারত? 👇 #ভাই #পরিবার"
+ },
+ "thumbnail": {
+  "text": "৩ বছরের মামলা",
+  "sub": "একটা আমগাছ"
+ }
+}

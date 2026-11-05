@@ -1,0 +1,407 @@
+{
+ "id": "087",
+ "status": "ready",
+ "title_bn": "রুমানার বিয়ে থামল যে প্রশ্নে",
+ "theme": "school",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Commitment and Consistency",
+  "title_bn": "নিজের কথার সাথে মিল রাখা"
+ },
+ "cast": {
+  "shirin": {
+   "name": "শিরিন ম্যাডাম",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "father": {
+   "name": "রুমানার আব্বা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  },
+  "rumana": {
+   "name": "রুমানা",
+   "type": "teen_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  }
+ },
+ "beats": [
+  {
+   "say": "ভোলার এক স্কুল। ক্লাস এইটের রোল দুই, রুমানা, তিন দিন ধরে আসে না। শিরিন ম্যাডাম খাতায় তার নামের পাশে দিলেন *একটা প্রশ্নবোধক চিহ্ন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ভোলা, স্কুলের মাঠ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রুমানা অনুপস্থিত",
+       "value": "৩ দিন"
+      },
+      {
+       "label": "ক্লাস",
+       "value": "এইট"
+      },
+      {
+       "label": "রোল",
+       "value": "২"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বিকেলে খবর এল। রুমানার বিয়ে ঠিক হয়েছে। শুক্রবার। ছেলে মালয়েশিয়া থাকে, *বয়স একত্রিশ*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলে শিরিন ম্যাডাম গেলেন রুমানাদের বাড়ি। ঘরে বিয়ের শাড়ির প্যাকেট। পাশের ঘর থেকে একটা *কান্না চাপা* শব্দ।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "রুমানাদের বাড়ি, বিকেল",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "father",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "shirin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "father",
+   "say": "ম্যাডাম, আপনে বুঝবেন না। মাইয়া বড় হইতেছে, রাস্তায় পোলাপান *খারাপ কথা* কয়। আমি রিকশা চালাই, সারাদিন বাইরে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "down"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "ভালো ঘর পাইছি। আইজকা না দিলে কাইলকা যদি কিছু হয়, *কে দেখবো*?",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "face"
+    }
+   }
+  },
+  {
+   "say": "শিরিন ম্যাডাম বুঝলেন, এই মানুষটা খারাপ বাবা না। *ভয় পাওয়া* বাবা। ভয়ের সাথে তর্ক করলে ভয় বাড়ে।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "ভাই, একটা কথা জিগাই। আপনার আম্মার বিয়া *কত বছর বয়সে* হইছিল?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shirin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "আম্মার? তেরো… না, বারো। নানা গরিব আছিল। *কেন*?",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "moods": {
+     "father": "thinking"
+    },
+    "arms": {
+     "father": "down"
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "আপনার আম্মার জীবনটা কেমন গেছিল? *সুখের*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shirin": "talk"
+    }
+   }
+  },
+  {
+   "say": "রুমানার আব্বা অনেকক্ষণ চুপ। চোখের সামনে ভাসল মায়ের মুখ। চৌদ্দ বছরে প্রথম বাচ্চা। পনেরোতে দ্বিতীয়। আর সারাজীবন একটা *কাশি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "আম্মা কইতো, আমার জীবনটা শুরুই হয় নাই রে, *শেষ হইয়া গেছে*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "face"
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "রুমানা অংকে ক্লাসে প্রথম। ও নার্স হইতে চায়। ওর জীবনটা কি শুরু হইতে দিবেন, নাকি *আপনার আম্মার মতো*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shirin": "talk"
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "কিন্তু রাস্তার পোলাপান? মাইয়াটা *একা* স্কুলে যায়।",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "একই বিকেল",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "father",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shirin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "father": "down"
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "একা যাইবো না। আমাদের স্কুলের চারটা মেয়ে ওই রাস্তা দিয়া যায়। কাল থেকে পাঁচজন *একসাথে*। আর আমি নিজে মোড়ে দাঁড়াব।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shirin": "talk"
+    }
+   }
+  },
+  {
+   "say": "তিনি উঠে দাঁড়ালেন। পাশের ঘরে গেলেন। শাড়ির প্যাকেটটা তুলে আলমারিতে রাখলেন। *তালা দিলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "father",
+   "say": "রুমানা, ব্যাগ গোছা। কালকে *স্কুল*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "father",
+     "zoom": 1.4
+    },
+    "arms": {
+     "father": "talk"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে স্কুলের মোড়ে পাঁচটা মেয়ে, এক লাইনে। আর মোড়ে দাঁড়ানো একজন ম্যাডাম, হাতে *হাজিরা খাতা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "rumana",
+      "x": 0.3,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shirin",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "একসাথে স্কুলে",
+       "value": "৫ জন"
+      },
+      {
+       "label": "রুমানার উপস্থিতি",
+       "value": "১০০%"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শিরিন ম্যাডামের হাজিরা খাতায় রুমানার নামের পাশে প্রশ্নবোধক চিহ্নটা এখনো আছে। তার পাশে নতুন করে লেখা— *‘উত্তর পাওয়া গেছে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভয়ের সাথে তর্ক করলে ভয় জেতে… *প্রশ্ন করলে বিবেক জাগে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভয়ের সাথে তর্ক করলে ভয় জেতে…",
+    "line2": "প্রশ্ন করলে\nবিবেক জাগে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ক্লাস এইটের রুমানার বিয়ে ঠিক, শুক্রবার… ম্যাডাম বাবাকে একটা প্রশ্ন করলেন, আর বাবা চুপ 📚",
+  "description": "ভোলার এক স্কুলে ক্লাস এইটের রুমানা তিন দিন অনুপস্থিত। শিরিন ম্যাডাম খোঁজ নিয়ে জানলেন— শুক্রবার তার বিয়ে। বাবা রিকশা চালান, মেয়ের নিরাপত্তার ভয়ে বিয়ে দিতে চান। ম্যাডাম তর্ক করলেন না, থানার ভয় দেখালেন না। শুধু একটা প্রশ্ন করলেন…",
+  "tags": [
+   "বাল্যবিবাহ",
+   "স্কুলের গল্প",
+   "শিক্ষিকা",
+   "মেয়েদের পড়াশোনা",
+   "ভোলা",
+   "বাবা মেয়ের গল্প",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ভয় দেখিয়ে নয়, একটা প্রশ্ন করে রুমানার বাবাকে থামালেন ম্যাডাম। 📚\nতোমার এলাকায় কোনো মেয়েকে কি তার পড়াশোনা চালিয়ে যেতে কেউ সাহায্য করেছিল? 👇 #মেয়েদেরপড়াশোনা #শিক্ষক"
+ },
+ "thumbnail": {
+  "text": "শুক্রবার বিয়ে",
+  "sub": "ক্লাস এইট"
+ }
+}

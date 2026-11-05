@@ -1,0 +1,465 @@
+{
+ "id": "091",
+ "status": "ready",
+ "title_bn": "আম্মা নিজে পড়লেন",
+ "theme": "parents",
+ "source": {
+  "book": "The Open Society and Its Enemies",
+  "author": "Karl Popper",
+  "author_bn": "কার্ল পপার",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Spell of Plato: open minds learn",
+  "title_bn": "শেখা কখনো দেরি না"
+ },
+ "cast": {
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "tushi": {
+   "name": "তুশি",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "nayeem": {
+   "name": "নাঈম",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাইবান্ধার এক গ্রাম। ঢাকা থেকে ছেলে নাঈমের মেসেজ এলে আম্মা মোবাইল নিয়ে যান পাশের বাড়ির *ভাবির কাছে*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "গাইবান্ধা, পাশের বাড়ির বারান্দা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আম্মার বয়স",
+       "value": "৫২"
+      },
+      {
+       "label": "লেখাপড়া",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ভাবি জোরে জোরে পড়েন। উঠানে বসা সবাই শোনে। আর সন্ধ্যার মধ্যে পুরো গ্রাম জানে, নাঈম কী লিখেছে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "একদিন এমন একটা মেসেজ এল। পরদিন গ্রামের হাটে কথা— *নাঈমের চাকরি নাকি যায় যায়*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "নাঈম",
+     "msgs": [
+      {
+       "who": "নাঈম",
+       "t": "আম্মা, এই মাসে বেতন দেরি। টাকা পাঠাইতে পারব না। মাফ কইরেন।"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আমার পোলার কষ্টের কথা আমি জানলাম *সবার পরে*। সবাই আগে জানলো।",
+   "tone": "tearful",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "আম্মার বাহান্ন বছর",
+   "card": {
+    "title": "যা কখনো হয়নি",
+    "items": [
+     {
+      "t": "স্কুল— বাপের বাড়িতে নিষেধ ছিল",
+      "mark": "x"
+     },
+     {
+      "t": "নিজের নাম লেখা— টিপসই",
+      "mark": "x"
+     },
+     {
+      "t": "ছেলের চিঠি— সবসময় অন্যের গলায়",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরদিন দুপুরে নাতনি তুশি স্কুল থেকে ফিরে স্লেটে লিখছিল। ক্লাস টু। আম্মা পাশে বসলেন, *অনেকক্ষণ চুপ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরের দিন",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "tushi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুশি, তুই আমারে… *অ আ* শিখাবি? কাউরে কইস না।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "down"
+    }
+   }
+  },
+  {
+   "voice": "tushi",
+   "say": "দাদু, তুমি পড়বা? তুমি তো *বড়*!",
+   "scene": {
+    "cam": {
+     "focus": "tushi",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tushi": "surprised"
+    },
+    "arms": {
+     "tushi": "point"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বড় হইলে কি চোখ বন্ধ থাকে, বইন? আমি তোর চাচার মেসেজ *নিজে* পড়তে চাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "say": "এরপর তিন মাস। প্রতিদিন দুপুরে একটা স্লেট, একটা চক, আর ক্লাস টুর এক কঠোর *শিক্ষিকা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তিন মাস, প্রতি দুপুরে",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "tushi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আম্মার স্লেট",
+     "lines": [
+      "অ আ ই ঈ",
+      "ম + া = মা",
+      "ব + া + ব + া = বাবা"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tushi",
+   "say": "দাদু, ‘ম’-এর মাথা কাটলা কেন? আবার লেখো। *হাতের লেখা সুন্দর* না হইলে নম্বর নাই।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "tushi",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tushi": "point"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আল্লাহ, তোর মাস্টার তোরে এমনে *বকে*?",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "hold"
+    }
+   }
+  },
+  {
+   "say": "আম্মার আঙুল কাঁপে। চোখে চশমা নেই, ঝাপসা দেখেন। তবু প্রতিদিন একটা নতুন অক্ষর। তিন মাসে *পঞ্চাশটা*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন মাস পর এক রাতে নাঈমের মেসেজ এল। আম্মা ভাবির বাসায় গেলেন না। ঘরের কোণে বসে নিজেই চোখের সামনে ধরলেন *মোবাইলটা*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "তিন মাস পর এক রাতে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আ… ম্মা। ভা… লো। আ… ছি। *ভালো আছি*!",
+   "tone": "whispers",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "নাঈম",
+     "msgs": [
+      {
+       "who": "নাঈম",
+       "t": "আম্মা, ভালো আছি। নতুন চাকরি পাইছি।"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "phone"
+    }
+   }
+  },
+  {
+   "say": "তিনটা শব্দ। পড়তে লাগল দুই মিনিট। বাহান্ন বছরে প্রথমবার ছেলের কথা তিনি শুনলেন *নিজের গলায়*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আর সেই রাতে ঢাকায় নাঈমের মোবাইলে একটা উত্তর এল। আম্মার নাম্বার থেকে। জীবনে প্রথম। *একটা মাত্র শব্দ*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "ঢাকা, নাঈমের মেস",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "nayeem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "আম্মা… এইটা কে লিখছে? আপনি? আপনি *নিজে* লিখছেন?",
+   "tone": "tearful",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আম্মা",
+     "msgs": [
+      {
+       "who": "আম্মা",
+       "t": "বাবা"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nayeem": "phone"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "হ রে। তোর তুশি মাস্টারের কাছে শিখছি। *বানান ঠিক* আছে?",
+   "tone": "laughs",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এখন আম্মার ঘরের দেয়ালে ঝোলে একটা পুরোনো স্লেট। তাতে চক দিয়ে লেখা, কাঁপা হাতে— *‘বাবা’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পড়তে শেখার কোনো বয়স নেই… *থাকে শুধু একটা কারণ*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পড়তে শেখার কোনো বয়স নেই…",
+    "line2": "থাকে শুধু\nএকটা কারণ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ঢাকা থেকে ছেলের মেসেজ, আম্মা পড়তে পারেন না, পড়ে দেয় পাশের বাড়ির মানুষ… তারপর নাতনির স্লেট 🖍️",
+  "description": "গাইবান্ধার আম্মা লেখাপড়া জানেন না। ঢাকায় চাকরি করা ছেলে নাঈম মেসেজ পাঠায়, পড়ে দেয় পাশের বাড়ির ভাবি— আর গ্রামের সবাই জেনে যায় ছেলের ভেতরের কথা। বাহান্ন বছরে আম্মা ঠিক করলেন, নাতনি তুশির স্লেটে শিখবেন অক্ষর…",
+  "tags": [
+   "মায়ের গল্প",
+   "লেখাপড়া",
+   "নাতনি",
+   "বয়স্ক শিক্ষা",
+   "গ্রামের গল্প",
+   "bangla golpo",
+   "mayer golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বাহান্ন বছরে প্রথম অক্ষর শিখলেন আম্মা। কারণ ছেলের কথাগুলো তিনি নিজের চোখে পড়তে চেয়েছিলেন। 🖍️\nতোমার মা-বাবাকে কি কখনো কিছু শিখিয়েছ? 👇 #মা #শেখা"
+ },
+ "thumbnail": {
+  "text": "পড়তে পারেন না",
+  "sub": "ছেলের মেসেজ"
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "id": "090",
+ "status": "ready",
+ "title_bn": "মানচিত্রের সেই বিন্দু",
+ "theme": "probashi",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Morality binds and blinds",
+  "title_bn": "দূরের মানুষের সাথে বাঁধন"
+ },
+ "cast": {
+  "ayra": {
+   "name": "আয়রা",
+   "type": "child_girl",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#F2C14E",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "abbu": {
+   "name": "আব্বু (থার্ড অফিসার)",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "ammu": {
+   "name": "আম্মু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চট্টগ্রামের হালিশহর। আয়রার বয়স নয়। নয়টা জন্মদিন, একটাতেও আব্বু ছিলেন না। আব্বু *জাহাজে থাকেন*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "চট্টগ্রাম, হালিশহর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ayra",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বু সাগরে",
+       "value": "৬ মাস"
+      },
+      {
+       "label": "জন্মদিনে বাসায়",
+       "value": "০ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "আয়রা মা, শুনতে পাইতেছো? আমি… *ভারত মহাসাগর*…",
+   "tone": "warmly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ভিডিও কল আটকে গেল। আব্বুর মুখ জমে গেল একটা ভাঙা ছবিতে। জাহাজের ইন্টারনেট, মাঝসমুদ্রে *এমনই*।",
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ayra",
+   "say": "আব্বু আমাকে ভালোবাসে না। সবার আব্বু বিকালে বাসায় আসে। আমার আব্বু *ছবি হইয়া* আসে।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayra": "phone"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে আম্মু আয়রার পাশে বসলেন। মোবাইলে খুললেন একটা মানচিত্র। নীল সমুদ্রের মাঝখানে একটা *ছোট্ট সবুজ বিন্দু*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ayra",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "এই বিন্দুটা আব্বুর জাহাজ। দেখো, *নড়তেছে*। আব্বু এখন এইখানে।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ammu": "phone"
+    }
+   }
+  },
+  {
+   "voice": "ayra",
+   "say": "এত ছোট? আব্বু *এত ছোট* জাহাজে থাকে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayra": "point"
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "জাহাজটা তিনটা ফুটবল মাঠের সমান। কিন্তু সমুদ্রটা এত বড়, যে জাহাজটা *একটা বিন্দু*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ammu": "phone"
+    }
+   }
+  },
+  {
+   "say": "এরপর প্রতি রাতে ঘুমানোর আগে আয়রা বিন্দুটা খোঁজে। খাতায় লেখে আব্বু কোথায়। আর একটা কথা বলে, *বিন্দুটাকে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "প্রতি রাতে, এক মাস",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ayra",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আয়রার খাতা",
+     "lines": [
+      "সোমবার— আব্বু শ্রীলংকার পাশে",
+      "বুধবার— ঝড়ের মেঘ, আব্বু সাবধানে",
+      "শুক্রবার— আব্বু ইকুয়েটরের কাছে!"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "ayra",
+   "say": "আব্বু, আজকে স্কুলে অংকে দশে দশ। *তুমি শুনতে পাইছো*?",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayra": "phone"
+    }
+   }
+  },
+  {
+   "say": "আর হাজার মাইল দূরে, জাহাজের ব্রিজে মাঝরাতের ওয়াচে আব্বু। চার্ট টেবিলের কোণে টেপ দিয়ে লাগানো আয়রার আঁকা একটা ছবি। *প্রতিটা ওয়াচে* সঙ্গে থাকে।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "জাহাজের ব্রিজ, মাঝরাত",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আয়রার জন্মদিন। এবারও আব্বু নেই। কিন্তু সন্ধ্যায় একটা ভিডিও এল। *আটকায়নি*, কারণ আব্বু আগেই রেকর্ড করে পাঠিয়েছেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আয়রার জন্মদিন",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ayra",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "আয়রা মা! আজকে আমাদের জাহাজ ইকুয়েটর পার হইছে, পৃথিবীর *মাঝখানের দাগ*। আর আজকে তোমার জন্মদিন!",
+   "tone": "excited",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "ক্যাপ্টেন আংকেল, চিফ আংকেল, পুরা জাহাজের বাইশজন মিলে কেক বানাইছি। সবাই বলো— *হ্যাপি বার্থডে আয়রা*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভিডিওতে বাইশজন মানুষ। সমুদ্রের মাঝখানে। এক মেয়ের জন্য গান গাইছে, *বেসুরো গলায়*। আয়রা হাসতে হাসতে কেঁদে ফেলল।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ayra",
+   "say": "আম্মু, আব্বু পৃথিবীর মাঝখানে আমার জন্মদিন *করছে*!",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "ayra",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ayra": "phone"
+    }
+   }
+  },
+  {
+   "say": "চার মাস পর জাহাজ ভিড়ল চট্টগ্রাম বন্দরে। আয়রা মানচিত্রে দেখছিল, বিন্দুটা একদম *বাড়ির কাছে*। তারপর বিন্দুটা দৌড়ে এল, দুই হাত মেলে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চার মাস পর, চট্টগ্রাম বন্দর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ayra",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "abbu",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "ammu",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাগরে",
+       "value": "৬ মাস"
+      },
+      {
+       "label": "বাড়ি ফেরা",
+       "value": "আজ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আয়রার খাতার শেষ পাতায় এখন একটা লাইন— *‘আব্বু একটা বিন্দু না। বিন্দুটা আমার আব্বু।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দূরত্ব মাইলে মাপা যায়… *ভালোবাসা মাপে একটা বিন্দু*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দূরত্ব মাইলে মাপা যায়…",
+    "line2": "ভালোবাসা মাপে\nএকটা বিন্দু।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "জাহাজের অফিসার বাবা কোনো জন্মদিনে থাকেন না… মেয়ে রোজ রাতে খুঁজত মানচিত্রের একটা বিন্দু 🚢",
+  "description": "আয়রার আব্বু জাহাজের থার্ড অফিসার, ছয় মাস সাগরে। কোনো জন্মদিনে থাকেন না। ইন্টারনেট দুর্বল, ভিডিও কল আটকে যায়। আয়রা অভিমান করে বলে— আব্বু আমাকে ভালোবাসে না। তারপর আম্মু মোবাইলে খুলে দিলেন একটা মানচিত্র, তাতে একটা নড়াচড়া করা বিন্দু…",
+  "tags": [
+   "নাবিকের গল্প",
+   "মেরিন অফিসার",
+   "বাবা মেয়ের গল্প",
+   "জাহাজ",
+   "প্রবাস জীবন",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছয় মাস সাগরে বাবা। মেয়ের কাছে তিনি একটা বিন্দু— যে প্রতিদিন একটু একটু করে বাড়ির দিকে আসে। 🚢\nতোমার পরিবারে কেউ কি জাহাজে বা দূরে কাজ করেন? তাঁকে আজ কী বলতে চাও? 👇 #নাবিক #বাবা"
+ },
+ "thumbnail": {
+  "text": "আব্বু কোথায়?",
+  "sub": "মানচিত্রের বিন্দু"
+ }
+}

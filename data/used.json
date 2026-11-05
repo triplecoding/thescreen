@@ -683,6 +683,54 @@
    "relation": "CNG driver / Saudi-bound migrant / driver's daughter",
    "set": "street",
    "hook": "CNG driver finds a migrant's passport, visa and 40,000 taka while his own daughter's admission fee is due; nobody saw; he races back before the flight"
+  },
+  {
+   "id": "087",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Commitment and Consistency",
+   "relation": "teacher / father / schoolgirl",
+   "set": "street",
+   "hook": "class-8 girl's marriage fixed out of the father's fear; teacher asks him how old his own mother was when she married and what her life was like; he calls it off"
+  },
+  {
+   "id": "088",
+   "book": "The Art of War",
+   "item": "Supreme excellence is breaking the enemy's resistance without fighting",
+   "relation": "elder brother / younger brother / niece",
+   "set": "balcony",
+   "hook": "brothers in a 3-year court case over a mango tree on the boundary of their father's land; the younger's daughter climbs it and throws mangoes equally to both yards"
+  },
+  {
+   "id": "089",
+   "book": "The Daily Laws",
+   "item": "The Law of Apprenticeship",
+   "relation": "ATM night guard / retired English teacher / daughter",
+   "set": "shop",
+   "hook": "guard can't help his daughter with English homework; a retired teacher who withdraws money nightly leaves him one word a night on a sticky note"
+  },
+  {
+   "id": "090",
+   "book": "The Righteous Mind",
+   "item": "Morality binds and blinds",
+   "relation": "seafarer father / daughter / mother",
+   "set": "home",
+   "hook": "ship's third officer misses every birthday; daughter feels unloved; mother shows her the ship-tracking map; the crew celebrate her birthday on the bridge as the ship crosses the equator"
+  },
+  {
+   "id": "091",
+   "book": "The Open Society and Its Enemies",
+   "item": "The Spell of Plato: open minds learn",
+   "relation": "illiterate mother / granddaughter / son in Dhaka",
+   "set": "balcony",
+   "hook": "mother's private messages from her son are read aloud by a neighbour; at 52 she secretly learns letters on her granddaughter's slate and reads and replies herself"
+  },
+  {
+   "id": "092",
+   "book": "The 50th Law",
+   "item": "See Things for What They Are: fearlessness",
+   "relation": "woman motorbike rider / father / passenger",
+   "set": "street",
+   "hook": "daughter earns as a ride-share biker; father is ashamed; on a strike morning with no transport she takes him to his doctor's appointment"
   }
  ]
 }
