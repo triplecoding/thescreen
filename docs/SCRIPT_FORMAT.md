@@ -77,3 +77,10 @@ emotional silence uses a slow focus on the listener. Use `iris` transitions auto
 - `takeaways`: first beat `"show":0` with `card.items` (3 × `{t, sub, icon}`), then `show` 1, 2, 3
 - `ask`: first beat `card.quote: null` (lead-in line), second beat `card.quote` = the question (`\n` allowed)
 - `outro`: `card.line1`, `card.line2` — last beat, `pause` ≈ 1.6
+
+### `theme` (since 5 Nov 2026)
+Top-level `"theme"` picks the YouTube playlist and the theme hashtag (pipeline/seo.py `THEMES`):
+`parents` · `siblings` · `family` · `work` · `money` · `struggle` · `community` · `school` · `probashi` · `honesty`.
+If missing, it is guessed from the title/tags. Facebook caption = exactly **2 lines** (hook line + a question to the
+viewer ending with 👇) + up to 2 own hashtags; the pipeline completes it to exactly 5 hashtags. YouTube gets 5 hashtags
+(#Shorts #বাংলাগল্প #<theme> #জীবনেরগল্প #TheScreen) and theme/story tags — never book-search tags.

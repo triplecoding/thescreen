@@ -88,7 +88,7 @@ def upload(video, script, publish_at_iso=None, thumb=None):
     return vid
 
 
-def add_to_playlist(video_id, book, cache):
+def add_to_playlist(video_id, book, cache, title=None, desc=None):
     """Group videos by source book. cache: dict book->playlist id (persisted in state.json).
     Returns True once the video is in the book's playlist (idempotent: checks before inserting).
     playlistItems.insert often answers 409 right after a playlist is created or a video is uploaded,
@@ -100,7 +100,7 @@ def add_to_playlist(video_id, book, cache):
         pid = cache.get(book)
         if not pid:
             r = requests.post(f"{API}/playlists", params={"part": "snippet,status"}, headers=H, timeout=60,
-                              data=json.dumps({"snippet": {"title": f"{book} — বাংলা গল্পে | The Screen", "description": f"{book} বইয়ের শিক্ষা, জীবনের গল্পে। The Screen — গল্পে দেখি জীবন।", "defaultLanguage": "bn"}, "status": {"privacyStatus": "public"}}))
+                              data=json.dumps({"snippet": {"title": title or f"{book} — বাংলা গল্পে | The Screen", "description": (desc or f"{book} — জীবনের গল্প।") + " The Screen — গল্পে দেখি জীবন। প্রতিদিন ৬টি নতুন বাংলা গল্প।", "defaultLanguage": "bn"}, "status": {"privacyStatus": "public"}}))
             if not r.ok:
                 log("playlist create skipped:", r.status_code)
                 return False

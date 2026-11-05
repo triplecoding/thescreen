@@ -1,198 +1,198 @@
 {
-  "brand": "The Screen",
-  "tagline_bn": "গল্পে দেখি জীবন",
-  "timezone": "Asia/Dhaka",
-  "posts_per_day": 6,
-  "slots": [
+ "brand": "The Screen",
+ "tagline_bn": "গল্পে দেখি জীবন",
+ "timezone": "Asia/Dhaka",
+ "posts_per_day": 6,
+ "slots": [
+  "09:00",
+  "11:30",
+  "13:30",
+  "15:30",
+  "17:30",
+  "20:00"
+ ],
+ "publish_mode": "scheduled",
+ "platforms": [
+  "youtube",
+  "facebook"
+ ],
+ "duration": {
+  "min": 120.0,
+  "max": 150.0
+ },
+ "render": {
+  "fps": 30,
+  "workers": 0
+ },
+ "elevenlabs": {
+  "model_id": "eleven_v4_turbo",
+  "language_code": "bn",
+  "output_format": "mp3_44100_128",
+  "audio_tags": true,
+  "allowed_tags": [
+   "softly",
+   "warmly",
+   "gently",
+   "sad",
+   "tearful",
+   "whispers",
+   "sighs",
+   "laughs",
+   "excited",
+   "hopeful",
+   "annoyed",
+   "frustrated",
+   "upset",
+   "proudly",
+   "playfully",
+   "teasing",
+   "suspicious",
+   "flatly",
+   "curious",
+   "serious"
+  ],
+  "default_settings": {
+   "stability": 0.45,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "use_speaker_boost": true,
+   "speed": 1.0
+  },
+  "model_locked": true,
+  "voice_design": false
+ },
+ "voices": {
+  "narrator": {
+   "note": "young sharp voiceover male",
+   "settings": {
+    "stability": 0.5,
+    "style": 0.35,
+    "speed": 1.0
+   }
+  },
+  "young_man": {
+   "note": "male young",
+   "settings": {
+    "stability": 0.42
+   }
+  },
+  "man": {
+   "note": "uncle-type age male",
+   "settings": {
+    "stability": 0.45
+   }
+  },
+  "old_man": {
+   "note": "old age male",
+   "settings": {
+    "stability": 0.5,
+    "speed": 0.96
+   }
+  },
+  "old_woman": {
+   "note": "old mother / grandmother",
+   "settings": {
+    "stability": 0.48,
+    "speed": 0.96
+   }
+  },
+  "woman": {
+   "note": "mother — uses the old mother voice",
+   "settings": {
+    "stability": 0.45,
+    "speed": 1.0
+   }
+  },
+  "young_woman": {
+   "note": "daughter voice",
+   "settings": {
+    "stability": 0.42
+   }
+  },
+  "teen_girl": {
+   "note": "daughter voice",
+   "settings": {
+    "stability": 0.4,
+    "style": 0.45
+   }
+  },
+  "teen_boy": {
+   "note": "male young voice, livelier",
+   "settings": {
+    "stability": 0.38,
+    "style": 0.45,
+    "speed": 1.03
+   }
+  },
+  "child_girl": {
+   "note": "daughter voice with child settings",
+   "settings": {
+    "stability": 0.3,
+    "style": 0.6,
+    "speed": 1.06
+   }
+  },
+  "child_boy": {
+   "note": "daughter voice with child settings",
+   "settings": {
+    "stability": 0.3,
+    "style": 0.6,
+    "speed": 1.06
+   }
+  }
+ },
+ "voice_sample_bn": "আমাদের চারপাশে প্রতিদিন অসংখ্য গল্প ঘটে। কেউ চুপচাপ ভালোবাসে, কেউ না বলে কষ্ট পায়, আবার কেউ ছোট্ট একটা কাজ দিয়ে পুরো পরিবারের মন বদলে দেয়। আজ তেমনই একটা গল্প শোনাব— যেটা হয়তো তোমার নিজের জীবনেরও গল্প।",
+ "youtube": {
+  "category_id": "22",
+  "default_language": "bn",
+  "made_for_kids": false,
+  "extra_tags": [
+   "the screen bangla",
+   "bangla story",
+   "জীবনের গল্প"
+  ],
+  "playlists": "theme (pipeline/seo.py THEMES)"
+ },
+ "facebook": {
+  "graph_version": "v21.0"
+ },
+ "music": {
+  "volume_db": -21,
+  "duck": 0.55
+ },
+ "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately.",
+ "story_only": true,
+ "slot_schedule": [
+  {
+   "from": "2026-11-01",
+   "slots": [
+    "10:00",
+    "13:30",
+    "17:30",
+    "20:00"
+   ]
+  },
+  {
+   "from": "2026-11-06",
+   "slots": [
+    "10:00",
+    "11:30",
+    "13:30",
+    "15:30",
+    "17:30",
+    "20:00"
+   ]
+  },
+  {
+   "from": "2026-11-07",
+   "slots": [
     "09:00",
     "11:30",
     "13:30",
     "15:30",
     "17:30",
     "20:00"
-  ],
-  "publish_mode": "scheduled",
-  "platforms": [
-    "youtube",
-    "facebook"
-  ],
-  "duration": {
-    "min": 120.0,
-    "max": 150.0
-  },
-  "render": {
-    "fps": 30,
-    "workers": 0
-  },
-  "elevenlabs": {
-    "model_id": "eleven_v4_turbo",
-    "language_code": "bn",
-    "output_format": "mp3_44100_128",
-    "audio_tags": true,
-    "allowed_tags": [
-      "softly",
-      "warmly",
-      "gently",
-      "sad",
-      "tearful",
-      "whispers",
-      "sighs",
-      "laughs",
-      "excited",
-      "hopeful",
-      "annoyed",
-      "frustrated",
-      "upset",
-      "proudly",
-      "playfully",
-      "teasing",
-      "suspicious",
-      "flatly",
-      "curious",
-      "serious"
-    ],
-    "default_settings": {
-      "stability": 0.45,
-      "similarity_boost": 0.8,
-      "style": 0.35,
-      "use_speaker_boost": true,
-      "speed": 1.0
-    },
-    "model_locked": true,
-    "voice_design": false
-  },
-  "voices": {
-    "narrator": {
-      "note": "young sharp voiceover male",
-      "settings": {
-        "stability": 0.5,
-        "style": 0.35,
-        "speed": 1.0
-      }
-    },
-    "young_man": {
-      "note": "male young",
-      "settings": {
-        "stability": 0.42
-      }
-    },
-    "man": {
-      "note": "uncle-type age male",
-      "settings": {
-        "stability": 0.45
-      }
-    },
-    "old_man": {
-      "note": "old age male",
-      "settings": {
-        "stability": 0.5,
-        "speed": 0.96
-      }
-    },
-    "old_woman": {
-      "note": "old mother / grandmother",
-      "settings": {
-        "stability": 0.48,
-        "speed": 0.96
-      }
-    },
-    "woman": {
-      "note": "mother — uses the old mother voice",
-      "settings": {
-        "stability": 0.45,
-        "speed": 1.0
-      }
-    },
-    "young_woman": {
-      "note": "daughter voice",
-      "settings": {
-        "stability": 0.42
-      }
-    },
-    "teen_girl": {
-      "note": "daughter voice",
-      "settings": {
-        "stability": 0.4,
-        "style": 0.45
-      }
-    },
-    "teen_boy": {
-      "note": "male young voice, livelier",
-      "settings": {
-        "stability": 0.38,
-        "style": 0.45,
-        "speed": 1.03
-      }
-    },
-    "child_girl": {
-      "note": "daughter voice with child settings",
-      "settings": {
-        "stability": 0.3,
-        "style": 0.6,
-        "speed": 1.06
-      }
-    },
-    "child_boy": {
-      "note": "daughter voice with child settings",
-      "settings": {
-        "stability": 0.3,
-        "style": 0.6,
-        "speed": 1.06
-      }
-    }
-  },
-  "voice_sample_bn": "আমাদের চারপাশে প্রতিদিন অসংখ্য গল্প ঘটে। কেউ চুপচাপ ভালোবাসে, কেউ না বলে কষ্ট পায়, আবার কেউ ছোট্ট একটা কাজ দিয়ে পুরো পরিবারের মন বদলে দেয়। আজ তেমনই একটা গল্প শোনাব— যেটা হয়তো তোমার নিজের জীবনেরও গল্প।",
-  "youtube": {
-    "category_id": "22",
-    "default_language": "bn",
-    "made_for_kids": false,
-    "playlist_by_book": true,
-    "extra_tags": [
-      "the screen bangla",
-      "bangla story",
-      "জীবনের গল্প"
-    ]
-  },
-  "facebook": {
-    "graph_version": "v21.0"
-  },
-  "music": {
-    "volume_db": -21,
-    "duck": 0.55
-  },
-  "_schedule_note": "4 videos/day at 10:00, 13:30, 17:30, 20:00 Asia/Dhaka. GitHub Actions runs ~35 min before each slot (cron in .github/workflows/daily.yml) and schedules the upload for the exact slot time; a late run publishes immediately.",
-  "story_only": true,
-  "slot_schedule": [
-    {
-      "from": "2026-11-01",
-      "slots": [
-        "10:00",
-        "13:30",
-        "17:30",
-        "20:00"
-      ]
-    },
-    {
-      "from": "2026-11-06",
-      "slots": [
-        "10:00",
-        "11:30",
-        "13:30",
-        "15:30",
-        "17:30",
-        "20:00"
-      ]
-    },
-    {
-      "from": "2026-11-07",
-      "slots": [
-        "09:00",
-        "11:30",
-        "13:30",
-        "15:30",
-        "17:30",
-        "20:00"
-      ]
-    }
-  ]
+   ]
+  }
+ ]
 }
