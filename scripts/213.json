@@ -1,0 +1,391 @@
+{
+ "id": "213",
+ "status": "ready",
+ "title_bn": "পেছনের বেঞ্চের তিনজন",
+ "theme": "school",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "The Law of Role-playing: people become the label",
+  "title_bn": "লেবেলের ফাঁদ"
+ },
+ "cast": {
+  "rehana": {
+   "name": "রেহানা ম্যাডাম",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "polash": {
+   "name": "পলাশ",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "head": {
+   "name": "হেডস্যার",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ফরিদপুরের এক হাইস্কুল। ক্লাস নাইন। পেছনের বেঞ্চে তিনজন— পলাশ, মিঠু, রনি। গত পরীক্ষায় অংকে আঠারো, বাইশ, পনেরো। আর প্রতিটা শিক্ষকের এক কথা— *বাদ দাও*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ফরিদপুর, হাইস্কুল, ক্লাস নাইন",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — খ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "polash",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পেছনের বেঞ্চ",
+       "value": "৩ জন"
+      },
+      {
+       "label": "গত পরীক্ষায় অংক",
+       "value": "১৮, ২২, ১৫"
+      },
+      {
+       "label": "শিক্ষকদের মত",
+       "value": "‘বাদ দাও’",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পলাশ বাবার সাথে সকালে বাজারে মাছ বেচে, তারপর স্কুলে আসে। ঘুম চোখে। আর তিন বছর ধরে শুনছে, ‘পেছনের বেঞ্চ, তোরা তো *পারবি না*।’ এখন সে নিজেও তাই ভাবে।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "polash",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নতুন অংকের ম্যাডাম রেহানা। প্রথম দিন। হাজিরা শেষে তিনি পেছনের দিকে তাকালেন। তারপর বললেন একটা কথা, যেটা *কেউ আশা করেনি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নতুন ম্যাডামের প্রথম দিন",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — খ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "polash",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "পলাশ, মিঠু, রনি। তোমরা তিনজন সামনে আসো। আজকে থেকে এই বেঞ্চ তোমাদের। আর ক্লাসের *অংকের বোর্ড* তোমাদের দায়িত্বে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rehana": "point"
+    }
+   }
+  },
+  {
+   "voice": "polash",
+   "say": "ম্যাডাম, আমরা? আমরা তো অংকে *ফেল* করি। ভুল ম্যাডাম, আপনি জানেন না।",
+   "scene": {
+    "cam": {
+     "focus": "polash",
+     "zoom": 1.4
+    },
+    "moods": {
+     "polash": "surprised"
+    },
+    "arms": {
+     "polash": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "জানি। খাতা দেখছি। কিন্তু তোমার বাজারে মাছের দাম কে হিসাব করে? তুমি না? মাথা খারাপ না তোমার, পলাশ। খালি কেউ *দায়িত্ব দেয় নাই*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rehana": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিনজনের নতুন দায়িত্ব",
+   "card": {
+    "title": "অংকের বোর্ড",
+    "items": [
+     {
+      "t": "প্রতিদিন ক্লাসের আগে একটা অংক বোর্ডে লেখা",
+      "mark": "x"
+     },
+     {
+      "t": "যে পারবে না, তাকে বুঝিয়ে দেওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "আর আগে নিজেরা বুঝে আসা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রথম সপ্তাহ। পলাশ বোর্ডে অংক লিখল, ভুল। ক্লাস হাসল। ম্যাডাম বললেন— *আবার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "প্রথম সপ্তাহ, টিফিনের পর",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — খ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "polash",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "point"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "ভুল হইছে, ভালো। এখন সবাই দেখল ভুলটা কোথায়। পলাশ, তুমি আজকে পুরা ক্লাসরে একটা ভুল শিখাইলা। কালকে *ঠিকটা* শিখাইবা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rehana": "talk"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে পলাশ প্রথমবার অংক বই খুলল নিজে থেকে। কারণ কাল সকালে পুরো ক্লাস তার দিকে তাকিয়ে থাকবে। আর এবার সে *হাসতে দেবে না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "polash",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর হেডস্যার ক্লাসে এলেন। বোর্ডে একটা বীজগণিত। আর বোর্ডের পাশে দাঁড়িয়ে পলাশ বোঝাচ্ছে, পুরো ক্লাস *চুপ করে শুনছে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — খ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "head",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "head",
+   "say": "রেহানা আপা, এইটা পলাশ? মাছবাজারের পলাশ? তিন বছর তো ওরে কেউ *খাতা খুলতে* দেখে নাই।",
+   "scene": {
+    "cam": {
+     "focus": "head",
+     "zoom": 1.4
+    },
+    "moods": {
+     "head": "surprised"
+    },
+    "arms": {
+     "head": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "স্যার, তিন বছর সবাই ওরে বলছে ‘পেছনের বেঞ্চ’। ও সেইটাই হইছিল। এখন বলছি ‘অংকের বোর্ড’। ও *এইটা হইতেছে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rehana": "down"
+    }
+   }
+  },
+  {
+   "voice": "polash",
+   "say": "ম্যাডাম, আব্বা আজকে মাছ বেচতে বেচতে বাজারের সবাইরে কইছে— *‘আমার পোলা ক্লাসের অংক শিখায়’*।",
+   "tone": "proudly",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বার্ষিক পরীক্ষার ফল",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — খ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "polash",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null,
+    "arms": {
+     "polash": "hold"
+    }
+   }
+  },
+  {
+   "say": "সেই স্কুলে এখন প্রতি ক্লাসে পেছনের বেঞ্চ বলে কিছু নেই। প্রতি মাসে বেঞ্চ ঘোরে। আর অংকের বোর্ডের পাশে লেখা— *‘দায়িত্ব দাও, তারপর দেখো।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "লেবেল দিলে মানুষ সেটাই হয়ে যায়… *দায়িত্ব দিলে মানুষ বড় হয়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "লেবেল দিলে মানুষ সেটাই হয়ে যায়…",
+    "line2": "দায়িত্ব দিলে\nমানুষ বড় হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পেছনের বেঞ্চের তিনজনকে সবাই বলে ‘বাদ দাও, ওরা পারবে না’… নতুন ম্যাডাম তিনজনকেই সামনে বসালেন 🪑",
+  "description": "ফরিদপুরের এক হাইস্কুল। ক্লাস নাইনের পেছনের বেঞ্চে তিনজন— পলাশ, মিঠু, রনি। শিক্ষকেরা বলেন, বাদ দাও, ওরা পারবে না। নতুন অংকের ম্যাডাম রেহানা প্রথম দিনেই তিনজনকে সামনের বেঞ্চে বসালেন, আর দিলেন একটা দায়িত্ব…",
+  "tags": [
+   "স্কুলের গল্প",
+   "শিক্ষক",
+   "পেছনের বেঞ্চ",
+   "আত্মবিশ্বাস",
+   "ফরিদপুর",
+   "bangla golpo",
+   "student motivation bangla",
+   "অনুপ্রেরণার গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই বলত, পেছনের বেঞ্চের তিনজন পারবে না। এক ম্যাডাম ওদের সামনে বসিয়ে দিলেন একটা দায়িত্ব, আর লেবেলটা ভেঙে গেল। 🪑\nতোমাকে কি কখনো কেউ একটা লেবেল দিয়ে দিয়েছিল? 👇 #শিক্ষক #স্কুল"
+ },
+ "thumbnail": {
+  "text": "‘ওরা পারবে না’",
+  "sub": "পেছনের বেঞ্চ"
+ }
+}

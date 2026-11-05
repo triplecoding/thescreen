@@ -1691,6 +1691,54 @@
    "relation": "husband / wife / husband's mother",
    "set": "home",
    "hook": "a husband blames his wife for money running out; she records every taka for a month; the record shows his own small daily spends; they make a joint budget"
+  },
+  {
+   "id": "213",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Role-playing: people become the label",
+   "relation": "new maths teacher / backbencher / headmaster",
+   "set": "shop",
+   "hook": "a new teacher moves three written-off backbenchers to the front and makes them in charge of the class's maths board; they rise to the role and pass"
+  },
+  {
+   "id": "214",
+   "book": "On War",
+   "item": "Friction: plans fail, persistence adapts",
+   "relation": "farmer / wife / agriculture officer",
+   "set": "street",
+   "hook": "a Kurigram farmer loses his aman crop in a flood; with an extension officer's advice he plants a quick-maturing variety and vegetables on raised beds and partly recovers"
+  },
+  {
+   "id": "215",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocity: small kindness returns",
+   "relation": "lift operator / his daughter / building manager",
+   "set": "stairs",
+   "hook": "a cheerful lift operator who greets everyone by name for 11 years quietly lacks money for his daughter's university admission; a manager overhears; the whole building contributes"
+  },
+  {
+   "id": "216",
+   "book": "The Psychology of Money",
+   "item": "Getting money vs keeping it",
+   "relation": "returning probashi uncle / nephew about to go abroad / grandmother",
+   "set": "home",
+   "hook": "a showy Dubai uncle returns ill with no savings; his nephew, about to go abroad himself, learns from him and sets up a disciplined savings plan; the uncle helps him"
+  },
+  {
+   "id": "217",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Law of Pride: competence over praise",
+   "relation": "cashier / supervisor / owner",
+   "set": "shop",
+   "hook": "a cashier uncovers stock loss; her supervisor presents it as his; she doesn't fight but keeps dated notes and, when the owner asks a detailed question, only she can answer"
+  },
+  {
+   "id": "218",
+   "book": "The Psychology of Money",
+   "item": "Room for error: the hidden safety",
+   "relation": "son who lost his job / mother / old jeweller",
+   "set": "home",
+   "hook": "a son hides his job loss; his mother, sensing it, brings her 30-year-old earrings to pawn; the jeweller tells the son she had them made from her own mother's wedding gold for a crisis; the son refuses, finds work, and later buys back nothing—she keeps wearing them"
   }
  ]
 }

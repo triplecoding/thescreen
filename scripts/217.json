@@ -1,0 +1,394 @@
+{
+ "id": "217",
+ "status": "ready",
+ "title_bn": "ক্যাশিয়ার মেয়েটা",
+ "theme": "work",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Law of Pride: competence over praise",
+  "title_bn": "নিজের কাজ নিজে বলা"
+ },
+ "cast": {
+  "jui": {
+   "name": "জুঁই",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "supervisor": {
+   "name": "সুপারভাইজার আজাদ",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "owner": {
+   "name": "মালিক হক সাহেব",
+   "type": "old_man",
+   "skin": "light",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনা, সোনাডাঙা। একটা সুপারশপ। জুঁই চোদ্দ মাস ক্যাশে। আর তিন মাস ধরে খেয়াল করছে, হিসাব মেলে না। প্রতি মাসে প্রায় *চল্লিশ হাজার টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "খুলনা, সোনাডাঙা, সুপারশপ",
+    "props": [
+     "signboard",
+     "sign:সুপারশপ — ক্যাশ ৩",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "jui",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জুঁইয়ের চাকরি",
+       "value": "১৪ মাস"
+      },
+      {
+       "label": "বেতন",
+       "value": "১৫,০০০ টাকা"
+      },
+      {
+       "label": "প্রতি মাসে হিসাবের গরমিল",
+       "value": "প্রায় ৪০,০০০ টাকা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এক মাস জুঁই রাত জেগে মেলাল। স্টক রেজিস্টার, বিক্রির রসিদ, গুদামের চালান। তারপর পেল। তেল আর গুঁড়া দুধ। গুদাম থেকে বের হয়, *বিক্রি হয় না*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jui",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jui",
+   "say": "আজাদ ভাই, এইটা দেখেন। তিন মাসের হিসাব। প্রতি মঙ্গলবার রাতের চালানে তেল আর দুধ *কম আসে*, কিন্তু খাতায় পুরা।",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সুপারভাইজারের টেবিল",
+    "props": [
+     "signboard",
+     "sign:সুপারশপ — অফিস"
+    ],
+    "chars": [
+     {
+      "id": "jui",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "supervisor",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "jui": "hold"
+    }
+   }
+  },
+  {
+   "voice": "supervisor",
+   "say": "জুঁই, তুমি এইটা একা বাইর করছ? আচ্ছা, রাখো। কালকে মালিকের মিটিং, আমি *দেখতেছি*।",
+   "scene": {
+    "cam": {
+     "focus": "supervisor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "supervisor": "surprised"
+    },
+    "arms": {
+     "supervisor": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরদিন মিটিং। জুঁই বাইরে, ক্যাশে। আর কাচের দরজা দিয়ে দেখল, আজাদ ভাই তার রিপোর্ট দিচ্ছেন মালিককে। প্রথম পাতায় লেখা— *‘প্রস্তুত করেছেন: আজাদ হোসেন’*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন, মালিকের মিটিং",
+    "props": [
+     "signboard",
+     "sign:সুপারশপ — অফিস"
+    ],
+    "chars": [
+     {
+      "id": "supervisor",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "owner",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "জুঁইয়ের সামনে তিন পথ",
+   "card": {
+    "title": "যা করা যেত",
+    "items": [
+     {
+      "t": "মিটিংয়ে ঢুকে ঝগড়া",
+      "mark": "x"
+     },
+     {
+      "t": "চাকরি ছেড়ে দেওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "চুপ থাকা, কিন্তু খাতা রাখা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "জুঁই রাগে কাঁপছিল। কিন্তু সে ঢুকল না। তার ব্যাগে একটা নোটবই। এক মাসের প্রতিটা রাতের নোট। *তারিখ, সময়, চালান নম্বর*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "jui",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "আজাদ, ভালো কাজ। এখন বলো, মঙ্গলবার রাতের চালান কে সই করে? আর এইটা কোন সপ্তাহ থেকে শুরু? *তারিখটা*?",
+   "tone": "curious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "একই মিটিং, দশ মিনিট পর",
+    "props": [
+     "signboard",
+     "sign:সুপারশপ — অফিস"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "talk"
+     },
+     {
+      "id": "supervisor",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "owner": "talk"
+    }
+   }
+  },
+  {
+   "voice": "supervisor",
+   "say": "স্যার… মানে… ওই, তারিখটা… *দেখে বলতেছি*।",
+   "scene": {
+    "cam": {
+     "focus": "supervisor",
+     "zoom": 1.4
+    },
+    "moods": {
+     "supervisor": "worried"
+    },
+    "arms": {
+     "supervisor": "hold"
+    }
+   }
+  },
+  {
+   "say": "আজাদ ভাই পাতা উল্টাচ্ছেন। উত্তর নেই। কারণ উত্তরগুলো রিপোর্টে না। উত্তরগুলো জুঁইয়ের *নোটবইয়ে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "হক সাহেব নিজে নেমে এলেন ক্যাশে। ক্যামেরার রেকর্ডে দেখেছেন, এক মাস রাত দশটার পর কে ক্যাশে বসে থাকত। *একটা মেয়ে, হাতে খাতা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মালিক ক্যাশে নেমে এলেন",
+    "props": [
+     "signboard",
+     "sign:সুপারশপ — ক্যাশ ৩",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jui",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jui",
+   "say": "স্যার, প্রথম গরমিল আগস্টের নয় তারিখ। চালান নম্বর ৪৪১৭। সই একজনেরই। আমার নোটবইয়ে প্রতিটা *তারিখ আছে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jui",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jui": "hold"
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "রিপোর্টটা তো তোমার। আর তুমি মিটিংয়ে ঢুইকা ঝগড়া করো নাই কেন?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    },
+    "arms": {
+     "owner": "hold"
+    }
+   }
+  },
+  {
+   "voice": "jui",
+   "say": "স্যার, ঝগড়া করলে মনে হইত আমি ক্রেডিট চাই। আমি চাইছিলাম হিসাবটা ঠিক হোক। আর জানতাম, প্রশ্ন আসলে *উত্তর আমার কাছে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jui",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jui": "down"
+    }
+   }
+  },
+  {
+   "say": "জুঁইয়ের নতুন ডেস্কে এখন একটা নোটবই সবসময় খোলা। প্রথম পাতায় লেখা— *‘কাজ করো, লিখে রাখো। ক্রেডিট নিজেই খুঁজে আসবে।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অন্যের কাজ নিজের নামে নেওয়া যায়… *উত্তরগুলো নেওয়া যায় না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অন্যের কাজ নিজের নামে নেওয়া যায়…",
+    "line2": "উত্তরগুলো\nনেওয়া যায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ক্যাশিয়ার জুঁই ধরল মাসে ৪০ হাজারের গরমিল… রিপোর্টটা জমা পড়ল সুপারভাইজারের নামে 🧾",
+  "description": "খুলনার এক সুপারশপের ক্যাশিয়ার জুঁই। এক মাস রাত জেগে খুঁজে বের করল, প্রতি মাসে চল্লিশ হাজার টাকার পণ্য হিসাব থেকে উধাও। রিপোর্ট দিল সুপারভাইজারকে। পরদিন মালিকের মিটিংয়ে সুপারভাইজার রিপোর্টটা দিলেন— নিজের নামে…",
+  "tags": [
+   "অফিস রাজনীতি",
+   "ক্রেডিট চুরি",
+   "সুপারশপ",
+   "খুলনা",
+   "নারী কর্মী",
+   "bangla golpo",
+   "office story bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "জুঁই এক মাস রাত জেগে গরমিল ধরেছিল। ক্রেডিট নিল আরেকজন। জুঁই ঝগড়া করল না, শুধু খাতাটা রেখেছিল। 🧾\nঅফিসে তোমার কাজের ক্রেডিট কি কেউ নিয়েছে কখনো? 👇 #অফিস #কাজ"
+ },
+ "thumbnail": {
+  "text": "৪০ হাজারের গরমিল",
+  "sub": "রিপোর্ট অন্যের নামে"
+ }
+}

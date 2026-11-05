@@ -1,0 +1,394 @@
+{
+ "id": "218",
+ "status": "ready",
+ "title_bn": "মায়ের কানের দুল",
+ "theme": "parents",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Room for error: the hidden safety",
+  "title_bn": "গোপন সঞ্চয়"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "jeweler": {
+   "name": "স্বর্ণকার কাকা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "পাবনার এক বাড়ি। আম্মার কানে একজোড়া পুরোনো সোনার দুল। ত্রিশ বছর। আরিফ চারবার বলেছে নতুন কিনে দেবে। আম্মা শুধু হাসেন— *‘এইটাই থাক।’*",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পাবনা, আরিফের বাড়ি, ঈদের ছুটি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আম্মার কানের দুল",
+       "value": "৩০ বছর, একজোড়া"
+      },
+      {
+       "label": "নতুন কিনে দেওয়ার চেষ্টা",
+       "value": "৪ বার"
+      },
+      {
+       "label": "আম্মার উত্তর",
+       "value": "‘এইটাই থাক’"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর। ঢাকা। আরিফের কোম্পানি বন্ধ। চাকরি নেই এক মাস। বাসা ভাড়া বাকি দুই মাস। আর আম্মাকে ফোনে বলছে, *‘সব ঠিক আছে’*।",
+   "pause": 1.0,
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "তিন মাস পর, ঢাকা থেকে ফোন",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আম্মা, অফিসে চাপ, তাই কম ফোন দেই। টাকা পাঠাইতে একটু দেরি হইবো, এই মাসে। *চিন্তা কইরেন না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "arms": {
+     "arif": "phone"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আরিফ, তোর গলা অন্যরকম। ভাত খাইছস আজকে? সত্যি কইরা *ক*।",
+   "tone": "gently",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "আরিফের এক মাস",
+   "card": {
+    "title": "যা লুকিয়েছিল",
+    "items": [
+     {
+      "t": "চাকরি নেই",
+      "mark": "x"
+     },
+     {
+      "t": "ভাড়া বাকি ২২ হাজার",
+      "mark": "x"
+     },
+     {
+      "t": "প্রতিদিন দুপুরে শুধু রুটি-কলা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দুই দিন পর মেসের দরজায় কড়া। আরিফ খুলে দেখে, আম্মা। একা। পাবনা থেকে বাসে। হাতে টিফিন ক্যারিয়ার। আর কানে *দুল নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দুই দিন পর, ঢাকার মেস",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আম্মা! আপনি একা? আর… আপনার কানের দুল *কই*?",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "moods": {
+     "arif": "surprised"
+    },
+    "arms": {
+     "arif": "talk"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "খুলছি। স্বর্ণকার কাকার কাছে রাখমু, বন্ধক। তোর ভাড়া হইয়া যাইবো। চুপ কর, *তর্ক করবি না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "hold"
+    }
+   }
+  },
+  {
+   "say": "আরিফ আম্মাকে নিয়ে পাবনা ফিরল। দুলটা নিয়ে আরিফ নিজেই গেল স্বর্ণকার কাকার কাছে, ফেরত দেওয়ার কথা বলতে। কাকা দুলটা হাতে নিয়ে *হাসলেন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পাবনা, স্বর্ণকারের দোকান",
+    "props": [
+     "signboard",
+     "sign:কুণ্ডু জুয়েলার্স",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "jeweler",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "arif",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jeweler",
+   "say": "এই দুল আমি ত্রিশ বছর আগে বানাইছি। তোর নানির বিয়ার সোনা ভাইঙা। তোর আম্মা কইছিল, ‘কাকা, এইটা পরমু, কিন্তু এইটা আমার শখ না। এইটা *বিপদের দিনের*।’",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jeweler",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jeweler": "hold"
+    }
+   }
+  },
+  {
+   "say": "আরিফ দাঁড়িয়ে রইল। ত্রিশ বছর। আম্মা নতুন দুল নেননি কারণ পুরোনোটা গয়না না। ওটা ছিল একটা *গোপন সঞ্চয়*। ছেলের জন্য।",
+   "pause": 1.2,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jeweler",
+   "say": "বাবা, এই দুল তিনবার আমার কাছে আসছে। তোর এসএসসির ফর্মের সময়, তোর আব্বার অপারেশনে, আর আজকে। প্রতিবার তোর আম্মা *ফেরত নিয়া গেছে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "jeweler",
+     "zoom": 1.4
+    },
+    "arms": {
+     "jeweler": "down"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আম্মা, দুলটা ফেরত আনছি। বন্ধক লাগবো না। আজকে একটা ইন্টারভিউ দিছি, কালকে উত্তর। আর পাইলেও, না পাইলেও, *আপনারে আর লুকামু না*।",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "arif": "hold"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "লুকাইস না। তুই ভাবস মা জানলে কষ্ট পাবে। মা না জানলে *বেশি কষ্ট* পায়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amma": "talk"
+    }
+   }
+  },
+  {
+   "say": "আরিফের প্রথম বেতনের দিন সে আম্মার নামে একটা ছোট্ট সঞ্চয়ী হিসাব খুলল। নাম রাখল নিজে, পাসবইয়ের প্রথম পাতায়— *‘আম্মার দুল— বিপদের দিনের জন্য।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মায়ের গয়না আমরা শুধু গয়না ভাবি… *আসলে সেটা আমাদের ঢাল*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মায়ের গয়না আমরা শুধু গয়না ভাবি…",
+    "line2": "আসলে সেটা\nআমাদের ঢাল।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আম্মার কানে সবসময় একটা পুরোনো সোনার দুল, কখনো খোলেন না… আরিফের চাকরি গেল, তখন জানল দুলের গল্প 💛",
+  "description": "পাবনার আরিফ, ঢাকায় চাকরি। আম্মার কানে সবসময় একজোড়া পুরোনো সোনার দুল, ত্রিশ বছর। আরিফ কতবার বলেছে নতুন কিনে দেবে, আম্মা নেন না। এক মাসে আরিফের চাকরি গেল, বাসা ভাড়া বাকি, লজ্জায় কাউকে বলতে পারছে না। আম্মা নিজেই টের পেলেন…",
+  "tags": [
+   "মায়ের গল্প",
+   "সোনার দুল",
+   "ত্যাগ",
+   "চাকরি হারানো",
+   "পাবনা",
+   "bangla golpo",
+   "mayer golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আম্মা ত্রিশ বছর কানের দুল খোলেননি। ছেলের চাকরি যাওয়ার দিন খুললেন, আর বললেন— ‘এইটা এই দিনের জন্যই রাখছিলাম।’ 💛\nতোমার মা কি এমন কিছু আগলে রাখেন, যার গল্প তুমি জানো না? 👇 #মা #ত্যাগ"
+ },
+ "thumbnail": {
+  "text": "ত্রিশ বছরের দুল",
+  "sub": "আজ খুললেন আম্মা"
+ }
+}
