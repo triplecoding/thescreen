@@ -1,570 +1,645 @@
 {
-  "id": "022",
-  "status": "ready",
-  "title_bn": "সাতচল্লিশ হাজারের ‘হ্যাঁ’",
-  "source": {
-    "book": "The Art of Worldly Wisdom",
-    "author": "Baltasar Gracián",
-    "author_bn": "বালতাসার গ্রাসিয়ান",
-    "chapter": "MAXIM 70",
-    "chapter_bn": "সত্তর নম্বর সূত্র",
-    "title": "Know How to Refuse",
-    "title_bn": "না বলতে জানো"
+ "id": "022",
+ "status": "ready",
+ "title_bn": "সাতচল্লিশ হাজারের ‘হ্যাঁ’",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 70",
+  "chapter_bn": "সত্তর নম্বর সূত্র",
+  "title": "Know How to Refuse",
+  "title_bn": "না বলতে জানো"
+ },
+ "cast": {
+  "tania": {
+   "name": "তানিয়া",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#7A3E8E",
+   "color2": "#F2C14E",
+   "hair": "long_braid",
+   "voice": "young_woman"
   },
-  "cast": {
-    "tania": {
-      "name": "তানিয়া",
-      "type": "young_woman",
-      "skin": "wheat",
-      "outfit": "salwar",
-      "color": "#7A3E8E",
-      "color2": "#F2C14E",
-      "hair": "long_braid",
-      "voice": "young_woman"
-    },
-    "ammu": {
-      "name": "আম্মা",
-      "type": "woman",
-      "skin": "tan",
-      "outfit": "sari",
-      "color": "#2F7D6D",
-      "color2": "#E8A33D",
-      "hair": "long_bun",
-      "voice": "woman"
-    },
-    "chacha": {
-      "name": "চাচা",
-      "type": "man",
-      "skin": "brown",
-      "outfit": "panjabi",
-      "color": "#E7E1D2",
-      "hair": "side_grey",
-      "beard": "moustache",
-      "voice": "man"
-    }
+  "ammu": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7D6D",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
   },
-  "beats": [
-    {
-      "say": "চাকরির প্রথম বছর। বেতন বাইশ হাজার, আর আত্মীয়দের ধার দেওয়া— *সাতচল্লিশ হাজার*।",
-      "scene": {
-        "set": "home",
-        "light": "evening",
-        "chip": "বগুড়া",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "worried",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "বেতন",
-              "value": "২২,০০০ ৳"
-            },
-            {
-              "label": "ধার দেওয়া",
-              "value": "৪৭,০০০ ৳",
-              "from": "০",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "চাচা, খালাতো ভাই, ফুপু— কাউকে *না* বলতে পারে না তানিয়া।",
-      "scene": {
-        "widget": {
-          "kind": "chat",
-          "title": "পরিবার 👨‍👩‍👧",
-          "msgs": [
-            {
-              "who": "চাচা",
-              "t": "মা, পাঁচ হাজার দে, মাস শেষে ফেরত"
-            },
-            {
-              "who": "রনি ভাইয়া",
-              "t": "নতুন ফোন কিনব, দশ হাজার হবে?"
-            },
-            {
-              "who": "ফুপু",
-              "t": "তুই তো এখন চাকরি করিস 😊"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "say": "মাস শেষে ফেরত? একটা টাকাও *ফেরত আসেনি*।",
-      "scene": {
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "voice": "chacha",
-      "say": "মা, এবার আট হাজার লাগবে। আগেরটা তো *দিয়েই দিব*, জানিস।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "চাচার দোকান",
-        "props": [
-          "signboard",
-          "sign:আলম স্টোর",
-          "cashbox"
-        ],
-        "widget": null,
-        "chars": [
-          {
-            "id": "chacha",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "chacha",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "tania",
-      "tone": "sighs",
-      "say": "জি, চাচা… আচ্ছা, *দেখি*।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "সেই দুপুর",
-        "props": [
-          "table"
-        ],
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "sad",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "ফোন রেখে সে নিজের ছেঁড়া জুতোর দিকে তাকাল। নতুনটা কেনা হলো না, *তৃতীয় মাস*।",
-      "pause": 0.5,
-      "scene": {
-        "moods": {
-          "tania": "sad"
-        },
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "লজ্জায় চুপ থাকা, বানানো অজুহাত, ফোন না ধরা। কোনোটাই *কাজ করল না*।",
-      "card": {
-        "title": "তানিয়ার উপায়",
-        "items": [
-          {
-            "t": "লজ্জায় চুপ থাকা",
-            "mark": "x"
-          },
-          {
-            "t": "বানানো অজুহাত",
-            "mark": "x"
-          },
-          {
-            "t": "ফোন না ধরা",
-            "mark": "x"
-          }
-        ],
-        "footer": "ধার ↑ · মন খারাপ ↑"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "মাসের পঁচিশ তারিখ। নিজের বাসভাড়ার টাকাও নেই। সে রাতে তানিয়া *কাঁদল*।",
-      "pause": 0.9,
-      "scene": {
-        "set": "home",
-        "light": "night",
-        "chip": "পঁচিশ তারিখ",
-        "props": [
-          "bed",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "আম্মা দরজায় দাঁড়িয়ে সব শুনছিলেন।",
-      "scene": {
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.32,
-            "pose": "sit",
-            "face": "right",
-            "mood": "crying",
-            "arm": "face"
-          },
-          {
-            "id": "ammu",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "worried",
-            "arm": "down"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "ammu",
-      "tone": "gently",
-      "say": "মা, ‘না’ বলা মানে *ভালোবাসা কমানো* না।",
-      "scene": {
-        "arms": {
-          "ammu": "talk"
-        },
-        "cam": {
-          "focus": "ammu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "tania",
-      "tone": "tearful",
-      "say": "কিন্তু আম্মা, চাচা যদি *রাগ করেন*?",
-      "scene": {
-        "arms": {
-          "tania": "down"
-        },
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "ammu",
-      "say": "রাগ করবেন একদিন। কিন্তু হ্যাঁ বলতে বলতে তুই *ভেতরে রেগে থাকবি* সারাজীবন।",
-      "scene": {
-        "cam": {
-          "focus": "ammu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "তানিয়া ঠিক করল, ‘না’ বলবে— *মিষ্টি করে, পরিষ্কার করে*।",
-      "pause": 0.7,
-      "card": {
-        "text": "‘না’ বলবে—\n*মিষ্টি করে, পরিষ্কার করে*।"
-      }
-    },
-    {
-      "say": "পরের ফোনটা এল শুক্রবার সকালে। এবার গলা কাঁপল না।",
-      "scene": {
-        "set": "home",
-        "light": "day",
-        "chip": "শুক্রবার সকাল",
-        "props": [
-          "table",
-          "window"
-        ],
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "neutral",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "tania",
-      "tone": "warmly",
-      "say": "চাচা, টাকা দিতে পারব না। তবে দোকানের হিসাবটা *বিনা পয়সায় করে দেব*।",
-      "scene": {
-        "moods": {
-          "tania": "smile"
-        },
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "ওপাশে কয়েক সেকেন্ড চুপ। তারপর—",
-      "pause": 0.5,
-      "scene": {
-        "cam": {
-          "focus": "tania",
-          "zoom": 1.45
-        }
-      }
-    },
-    {
-      "voice": "chacha",
-      "tone": "laughs",
-      "say": "তুই তো *বড় হয়ে গেছিস*, মা। আচ্ছা, বিকেলে আয়, হিসাবটা দেখিস।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "চাচার দোকান",
-        "props": [
-          "signboard",
-          "sign:আলম স্টোর",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "chacha",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "phone",
-            "hold": "phone"
-          }
-        ],
-        "cam": {
-          "focus": "chacha",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "তিন মাসে চাচা ফেরত দিলেন আগের পাঁচ হাজার। আর দোকানের হিসাবে *লাভ বাড়ল*।",
-      "scene": {
-        "chars": [
-          {
-            "id": "chacha",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "envelope"
-          },
-          {
-            "id": "tania",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "smile",
-            "arm": "hold",
-            "hold": "book"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "নতুন ধার",
-              "value": "০",
-              "from": "৮,০০০"
-            },
-            {
-              "label": "ফেরত এল",
-              "value": "৫,০০০ ৳",
-              "from": "০"
-            }
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "আর তানিয়া? সেই মাসে প্রথমবার নিজের জন্য কিনল *একজোড়া নতুন জুতো*।",
-      "scene": {
-        "widget": null,
-        "set": "home",
-        "light": "day",
-        "chip": "সেই মাসে",
-        "props": [
-          "almirah"
-        ],
-        "chars": [
-          {
-            "id": "tania",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "happy",
-            "arm": "hold",
-            "hold": "bag"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "say": "বছরভর ‘হ্যাঁ’ যা পারেনি, একটা *পরিষ্কার ‘না’* তা পারল। টাকাও বাঁচল, সম্পর্কও।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— বালতাসার গ্রাসিয়ানের *দ্য আর্ট অফ ওয়ার্ল্ডলি উইজডম*।"
-    },
-    {
-      "kind": "book",
-      "say": "সত্তর নম্বর সূত্র— *না বলতে জানো*।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "সবাইকে হ্যাঁ বললে, নিজেকে না বলা হয়। ভালো ‘না’-তে থাকে *সম্মান আর বিকল্প*।",
-      "card": {
-        "title": "দুই রকম উত্তর",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "x",
-            "t": "দায়ে পড়া হ্যাঁ",
-            "sub": "ভেতরে রাগ জমে",
-            "bad": true
-          },
-          "right": {
-            "icon": "hand",
-            "t": "সুন্দর ‘না’",
-            "sub": "সম্মান + একটা বিকল্প"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, ‘না’ বলা *অপরাধ নয়*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "‘না’ বলা অপরাধ নয়",
-            "sub": "নিজেকে বাঁচানোও দায়িত্ব",
-            "icon": "shield"
-          },
-          {
-            "t": "বলো পরিষ্কার করে",
-            "sub": "ঝুলিয়ে রাখা আরো কষ্টের",
-            "icon": "chat"
-          },
-          {
-            "t": "সাথে দাও একটা বিকল্প",
-            "sub": "যা সত্যি দিতে পারো",
-            "icon": "heart"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, বলো *পরিষ্কার করে*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, সাথে দাও একটা *বিকল্প*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি সবাইকে *হ্যাঁ* বলছি, নাকি নিজেকে *না*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি সবাইকে *হ্যাঁ* বলছি,\nনাকি নিজেকে *না*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "সব দরজায় হ্যাঁ বললে… *নিজের ঘরটাই খালি হয়ে যায়*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "সব দরজায় হ্যাঁ বললে…",
-        "line2": "নিজের ঘরটাই\nখালি হয়ে যায়।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "বেতন ২২ হাজার, ধার দিল ৪৭ হাজার— তারপর তানিয়া শিখল ‘না’ বলতে 🤝 | The Art of Worldly Wisdom",
-    "description": "চাকরির প্রথম বছর— বেতন বাইশ হাজার, আত্মীয়দের ধার দেওয়া সাতচল্লিশ হাজার। কাউকে না বলতে পারত না তানিয়া। তারপর এক রাতে আম্মা একটা কথা বললেন…\nবালতাসার গ্রাসিয়ান-এর The Art of Worldly Wisdom — Know How to Refuse — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "art of worldly wisdom bangla",
-      "baltasar gracian bangla",
-      "না বলতে শেখা",
-      "আত্মীয়",
-      "বাংলা গল্প",
-      "মা মেয়ের গল্প",
-      "টাকা ধার",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "বছরভর ‘হ্যাঁ’ যা পারেনি, একটা পরিষ্কার ‘না’ তা পারল। 🤝\n\nকাকে ‘না’ বলতে তোমার সবচেয়ে কষ্ট হয়? 👇\n\n📖 The Art of Worldly Wisdom — Baltasar Gracián\n#নাবলতেশেখো #পরিবার"
-  },
-  "thumbnail": {
-    "text": "‘না’ বলতে শেখা",
-    "sub": "ধার ৪৭ হাজার"
+  "chacha": {
+   "name": "চাচা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#E7E1D2",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
   }
+ },
+ "beats": [
+  {
+   "say": "চাকরির প্রথম বছর। বেতন বাইশ হাজার, আর আত্মীয়দের ধার দেওয়া— *সাতচল্লিশ হাজার*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "বগুড়া",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "২২,০০০ ৳"
+      },
+      {
+       "label": "ধার দেওয়া",
+       "value": "৪৭,০০০ ৳",
+       "from": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চাচা, খালাতো ভাই, ফুপু— কাউকে *না* বলতে পারে না তানিয়া।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "পরিবার 👨‍👩‍👧",
+     "msgs": [
+      {
+       "who": "চাচা",
+       "t": "মা, পাঁচ হাজার দে, মাস শেষে ফেরত"
+      },
+      {
+       "who": "রনি ভাইয়া",
+       "t": "নতুন ফোন কিনব, দশ হাজার হবে?"
+      },
+      {
+       "who": "ফুপু",
+       "t": "তুই তো এখন চাকরি করিস 😊"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মাস শেষে ফেরত? একটা টাকাও *ফেরত আসেনি*।",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "মা, এবার আট হাজার লাগবে। আগেরটা তো *দিয়েই দিব*, জানিস।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চাচার দোকান",
+    "props": [
+     "signboard",
+     "sign:আলম স্টোর",
+     "cashbox"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "tone": "sighs",
+   "say": "জি, চাচা… আচ্ছা, *দেখি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সেই দুপুর",
+    "props": [
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফোন রেখে সে নিজের ছেঁড়া জুতোর দিকে তাকাল। নতুনটা কেনা হলো না, *তৃতীয় মাস*।",
+   "pause": 0.5,
+   "scene": {
+    "moods": {
+     "tania": "sad"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অফিসের ক্যান্টিনে কলিগরা ডাকে, লাঞ্চে আসো। তানিয়া হাসে— *ডায়েট চলছে*। আসলে ব্যাগে আছে মাত্র বিশ টাকা।",
+   "pause": 0.4,
+   "scene": {
+    "moods": {
+     "tania": "sad"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "লজ্জায় চুপ থাকা, বানানো অজুহাত, ফোন না ধরা। কোনোটাই *কাজ করল না*।",
+   "card": {
+    "title": "তানিয়ার উপায়",
+    "items": [
+     {
+      "t": "লজ্জায় চুপ থাকা",
+      "mark": "x"
+     },
+     {
+      "t": "বানানো অজুহাত",
+      "mark": "x"
+     },
+     {
+      "t": "ফোন না ধরা",
+      "mark": "x"
+     }
+    ],
+    "footer": "ধার ↑ · মন খারাপ ↑"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "মাসের পঁচিশ তারিখ। নিজের বাসভাড়ার টাকাও নেই। সে রাতে তানিয়া *কাঁদল*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পঁচিশ তারিখ",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা দরজায় দাঁড়িয়ে সব শুনছিলেন।",
+   "scene": {
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "gently",
+   "say": "মা, ‘না’ বলা মানে *ভালোবাসা কমানো* না।",
+   "scene": {
+    "arms": {
+     "ammu": "talk"
+    },
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "tone": "tearful",
+   "say": "কিন্তু আম্মা, চাচা যদি *রাগ করেন*?",
+   "scene": {
+    "arms": {
+     "tania": "down"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "রাগ করবেন একদিন। কিন্তু হ্যাঁ বলতে বলতে তুই *ভেতরে রেগে থাকবি* সারাজীবন।",
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "tone": "upset",
+   "say": "কিন্তু আম্মা, ছোটবেলা থেকেই তো শিখেছি— আত্মীয়দের *না বলতে নেই*।",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "softly",
+   "say": "আমিই শিখিয়েছিলাম, মা। আজ বলছি— *ভুল শিখিয়েছিলাম*।",
+   "scene": {
+    "moods": {
+     "ammu": "sad"
+    },
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "তানিয়া ঠিক করল, ‘না’ বলবে— *মিষ্টি করে, পরিষ্কার করে*।",
+   "pause": 0.7,
+   "card": {
+    "text": "‘না’ বলবে—\n*মিষ্টি করে, পরিষ্কার করে*।"
+   }
+  },
+  {
+   "say": "পরের ফোনটা এল শুক্রবার সকালে। এবার গলা কাঁপল না।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শুক্রবার সকাল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tania",
+   "tone": "warmly",
+   "say": "চাচা, টাকা দিতে পারব না। তবে দোকানের হিসাবটা *বিনা পয়সায় করে দেব*।",
+   "scene": {
+    "moods": {
+     "tania": "smile"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ওপাশে কয়েক সেকেন্ড চুপ। তারপর—",
+   "pause": 0.5,
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "chacha",
+   "tone": "laughs",
+   "say": "তুই তো *বড় হয়ে গেছিস*, মা। আচ্ছা, বিকেলে আয়, হিসাবটা দেখিস।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চাচার দোকান",
+    "props": [
+     "signboard",
+     "sign:আলম স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাসে চাচা ফেরত দিলেন আগের পাঁচ হাজার। আর দোকানের হিসাবে *লাভ বাড়ল*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tania",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন ধার",
+       "value": "০",
+       "from": "৮,০০০"
+      },
+      {
+       "label": "ফেরত এল",
+       "value": "৫,০০০ ৳",
+       "from": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আর তানিয়া? সেই মাসে প্রথমবার নিজের জন্য কিনল *একজোড়া নতুন জুতো*।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "সেই মাসে",
+    "props": [
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সন্ধ্যায় আম্মার হাতে একটা খাম দিল সে।",
+   "scene": {
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tania",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tania",
+   "tone": "proudly",
+   "say": "আম্মা, এই মাসে প্রথমবার *তিন হাজার জমালাম*। নিজের নামে।",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বছরভর ‘হ্যাঁ’ যা পারেনি, একটা *পরিষ্কার ‘না’* তা পারল। টাকাও বাঁচল, সম্পর্কও।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— বালতাসার গ্রাসিয়ানের *দ্য আর্ট অফ ওয়ার্ল্ডলি উইজডম*।"
+  },
+  {
+   "kind": "book",
+   "say": "সত্তর নম্বর সূত্র— *না বলতে জানো*।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "সবাইকে হ্যাঁ বললে, নিজেকে না বলা হয়। ভালো ‘না’-তে থাকে *সম্মান আর বিকল্প*।",
+   "card": {
+    "title": "দুই রকম উত্তর",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "x",
+      "t": "দায়ে পড়া হ্যাঁ",
+      "sub": "ভেতরে রাগ জমে",
+      "bad": true
+     },
+     "right": {
+      "icon": "hand",
+      "t": "সুন্দর ‘না’",
+      "sub": "সম্মান + একটা বিকল্প"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, ‘না’ বলা *অপরাধ নয়*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "‘না’ বলা অপরাধ নয়",
+      "sub": "নিজেকে বাঁচানোও দায়িত্ব",
+      "icon": "shield"
+     },
+     {
+      "t": "বলো পরিষ্কার করে",
+      "sub": "ঝুলিয়ে রাখা আরো কষ্টের",
+      "icon": "chat"
+     },
+     {
+      "t": "সাথে দাও একটা বিকল্প",
+      "sub": "যা সত্যি দিতে পারো",
+      "icon": "heart"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, বলো *পরিষ্কার করে*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, সাথে দাও একটা *বিকল্প*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি সবাইকে *হ্যাঁ* বলছি, নাকি নিজেকে *না*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি সবাইকে *হ্যাঁ* বলছি,\nনাকি নিজেকে *না*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সব দরজায় হ্যাঁ বললে… *নিজের ঘরটাই খালি হয়ে যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সব দরজায় হ্যাঁ বললে…",
+    "line2": "নিজের ঘরটাই\nখালি হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বেতন ২২ হাজার, ধার দিল ৪৭ হাজার— তারপর তানিয়া শিখল ‘না’ বলতে 🤝 | The Art of Worldly Wisdom",
+  "description": "চাকরির প্রথম বছর— বেতন বাইশ হাজার, আত্মীয়দের ধার দেওয়া সাতচল্লিশ হাজার। কাউকে না বলতে পারত না তানিয়া। তারপর এক রাতে আম্মা একটা কথা বললেন…\nবালতাসার গ্রাসিয়ান-এর The Art of Worldly Wisdom — Know How to Refuse — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "art of worldly wisdom bangla",
+   "baltasar gracian bangla",
+   "না বলতে শেখা",
+   "আত্মীয়",
+   "বাংলা গল্প",
+   "মা মেয়ের গল্প",
+   "টাকা ধার",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "বছরভর ‘হ্যাঁ’ যা পারেনি, একটা পরিষ্কার ‘না’ তা পারল। 🤝\n\nকাকে ‘না’ বলতে তোমার সবচেয়ে কষ্ট হয়? 👇\n\n📖 The Art of Worldly Wisdom — Baltasar Gracián\n#নাবলতেশেখো #পরিবার"
+ },
+ "thumbnail": {
+  "text": "‘না’ বলতে শেখা",
+  "sub": "ধার ৪৭ হাজার"
+ },
+ "_extended": "story-only v1"
 }

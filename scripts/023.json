@@ -1,540 +1,606 @@
 {
-  "id": "023",
-  "status": "ready",
-  "title_bn": "সব ঠিক আছে, স্যার",
-  "source": {
-    "book": "The Prince",
-    "author": "Niccolò Machiavelli",
-    "author_bn": "নিকোলো ম্যাকিয়াভেলি",
-    "chapter": "CHAPTER 23",
-    "chapter_bn": "তেইশ নম্বর অধ্যায়",
-    "title": "How Flatterers Should Be Avoided",
-    "title_bn": "তোষামোদ থেকে দূরে থাকো"
+ "id": "023",
+ "status": "ready",
+ "title_bn": "সব ঠিক আছে, স্যার",
+ "source": {
+  "book": "The Prince",
+  "author": "Niccolò Machiavelli",
+  "author_bn": "নিকোলো ম্যাকিয়াভেলি",
+  "chapter": "CHAPTER 23",
+  "chapter_bn": "তেইশ নম্বর অধ্যায়",
+  "title": "How Flatterers Should Be Avoided",
+  "title_bn": "তোষামোদ থেকে দূরে থাকো"
+ },
+ "cast": {
+  "motaleb": {
+   "name": "মোতালেব সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#FFFFFF",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
   },
-  "cast": {
-    "motaleb": {
-      "name": "মোতালেব সাহেব",
-      "type": "old_man",
-      "skin": "wheat",
-      "outfit": "panjabi",
-      "color": "#FFFFFF",
-      "hair": "bald_grey",
-      "beard": "short_grey",
-      "glasses": true,
-      "voice": "old_man"
-    },
-    "bablu": {
-      "name": "বাবলু",
-      "type": "man",
-      "skin": "tan",
-      "outfit": "shirt",
-      "color": "#B5476B",
-      "hair": "side",
-      "beard": "moustache",
-      "voice": "man"
-    },
-    "jewel": {
-      "name": "জুয়েল",
-      "type": "young_man",
-      "skin": "dark",
-      "outfit": "tshirt",
-      "color": "#2F7D6D",
-      "hair": "short",
-      "voice": "young_man"
-    }
+  "bablu": {
+   "name": "বাবলু",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#B5476B",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
   },
-  "beats": [
-    {
-      "say": "দুই বছরে বিক্রি কমেছে *চল্লিশ ভাগ*। অথচ ম্যানেজার রোজ বলে— *সব ঠিক আছে*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "নারায়ণগঞ্জ",
-        "props": [
-          "signboard",
-          "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "worried",
-            "arm": "down"
-          },
-          {
-            "id": "bablu",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "smile",
-            "arm": "talk"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "বিক্রি",
-              "value": "-৪০%",
-              "from": "০%",
-              "red": true
-            },
-            {
-              "label": "রিপোর্ট",
-              "value": "সব ঠিক"
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "bablu",
-      "tone": "warmly",
-      "say": "স্যার, বাজার খারাপ। আপনার মতো মালিক এই এলাকায় *আর একটাও নাই*।",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "bablu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "motaleb",
-      "tone": "proudly",
-      "say": "তাই তো বলি বাবলু, তুমিই আমার *ডান হাত*।",
-      "scene": {
-        "moods": {
-          "motaleb": "smile"
-        },
-        "cam": {
-          "focus": "motaleb",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "এক কোণে চুপচাপ মাল তুলত ডেলিভারির ছেলে জুয়েল। সে দেখত *অন্য কিছু*।",
-      "scene": {
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.25,
-            "pose": "sit",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "bablu",
-            "x": 0.5,
-            "pose": "stand",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "phone",
-            "hold": "phone"
-          },
-          {
-            "id": "jewel",
-            "x": 0.8,
-            "pose": "stand",
-            "face": "left",
-            "mood": "worried",
-            "arm": "hold",
-            "hold": "bag"
-          }
-        ],
-        "cam": {
-          "focus": "jewel",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "say": "খদ্দের এলে বাবলু ফোনে ব্যস্ত। দাম জিজ্ঞেস করলে *ধমক*। আর মালিক এলেই মুখে মধু।",
-      "scene": {
-        "moods": {
-          "bablu": "angry"
-        },
-        "cam": {
-          "focus": "bablu",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "মালিক দাম কমালেন, নতুন মাল তুললেন, দোকান রং করালেন। বিক্রি *তবু কমল*।",
-      "card": {
-        "title": "মালিকের চেষ্টা",
-        "items": [
-          {
-            "t": "দাম কমানো",
-            "mark": "x"
-          },
-          {
-            "t": "নতুন মাল",
-            "mark": "x"
-          },
-          {
-            "t": "দোকান রং",
-            "mark": "x"
-          }
-        ],
-        "footer": "বিক্রি ↓"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "এক রাতে হিসাব মেলাতে বসে বুঝলেন, এবার ছেলের পড়ার টাকায়ও *টান পড়বে*।",
-      "pause": 0.9,
-      "scene": {
-        "set": "shop",
-        "light": "night",
-        "chip": "রাত দশটা",
-        "props": [
-          "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.4,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "motaleb",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "তখন জুয়েল ভয়ে ভয়ে দরজায় এসে দাঁড়াল।",
-      "scene": {
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "jewel",
-            "x": 0.72,
-            "pose": "stand",
-            "face": "left",
-            "mood": "worried",
-            "arm": "down"
-          }
-        ],
-        "cam": "static"
-      }
-    },
-    {
-      "voice": "jewel",
-      "tone": "softly",
-      "say": "স্যার, একটা কথা বলি? *রাগ করবেন* না তো?",
-      "scene": {
-        "cam": {
-          "focus": "jewel",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "motaleb",
-      "tone": "flatly",
-      "say": "বল।",
-      "scene": {
-        "cam": {
-          "focus": "motaleb",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jewel",
-      "tone": "serious",
-      "say": "পুরনো খদ্দেররা আসে না, স্যার। বাবলু ভাই ওদের সাথে *খারাপ ব্যবহার* করেন।",
-      "scene": {
-        "arms": {
-          "jewel": "talk"
-        },
-        "cam": {
-          "focus": "jewel",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "মোতালেব সাহেব অনেকক্ষণ চুপ। মিষ্টি কথা শুনতে শুনতে হারিয়ে গিয়েছিল *সত্যি শোনার কান*।",
-      "pause": 0.8,
-      "scene": {
-        "moods": {
-          "motaleb": "thinking"
-        },
-        "cam": {
-          "focus": "motaleb",
-          "zoom": 1.5
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "পরদিন তিনি নিজে গেলেন *পুরনো খদ্দেরদের* বাড়ি।",
-      "pause": 0.7,
-      "card": {
-        "text": "পরদিন তিনি নিজে গেলেন\n*পুরনো খদ্দেরদের* বাড়ি।"
-      }
-    },
-    {
-      "say": "শুনলেন তিনটা অভিযোগ। তিনটাই *এক মানুষকে* নিয়ে।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "পরদিন",
-        "props": [
-          "bicycle"
-        ],
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.45,
-            "pose": "walk",
-            "face": "right",
-            "mood": "worried",
-            "arm": "down"
-          }
-        ],
-        "widget": {
-          "kind": "checklist",
-          "title": "খদ্দেরদের কথা",
-          "items": [
-            {
-              "t": "ফোনে ব্যস্ত, কথা শোনে না",
-              "mark": "x"
-            },
-            {
-              "t": "দাম জিজ্ঞেস করলে ধমক",
-              "mark": "x"
-            },
-            {
-              "t": "বাকি চাইলে অপমান",
-              "mark": "x"
-            }
-          ]
-        },
-        "cam": "pan"
-      }
-    },
-    {
-      "say": "বাবলুকে তাড়ালেন না। দিলেন গুদামের দায়িত্ব। আর কাউন্টারে বসালেন *জুয়েলকে*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "এক সপ্তাহ পর",
-        "props": [
-          "signboard",
-          "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
-          "cashbox"
-        ],
-        "widget": null,
-        "chars": [
-          {
-            "id": "motaleb",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "talk"
-          },
-          {
-            "id": "jewel",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "down"
-          }
-        ],
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "motaleb",
-      "tone": "warmly",
-      "say": "জুয়েল, যেদিন আমার ভুল দেখবি, *সেদিনও* বলবি। কথা দে।",
-      "scene": {
-        "cam": {
-          "focus": "motaleb",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "jewel",
-      "tone": "hopeful",
-      "say": "কথা দিলাম, স্যার। *সবার আগে* বলব।",
-      "scene": {
-        "moods": {
-          "jewel": "happy"
-        },
-        "cam": {
-          "focus": "jewel",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "ছয় মাসে পুরনো খদ্দেররা একে একে ফিরল। বিক্রি আবার *আগের জায়গায়*।",
-      "scene": {
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "বিক্রি",
-              "value": "+৫%",
-              "from": "-৪০%"
-            },
-            {
-              "label": "ফিরে আসা খদ্দের",
-              "value": "৬৫",
-              "from": "০"
-            }
-          ]
-        },
-        "moods": {
-          "motaleb": "happy"
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "দুই বছরের মিষ্টি কথা যা পারেনি, *একটা তিক্ত সত্যি* তা পারল।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— নিকোলো ম্যাকিয়াভেলির *দ্য প্রিন্স*।"
-    },
-    {
-      "kind": "book",
-      "say": "তেইশ নম্বর অধ্যায়— *তোষামোদ* থেকে দূরে থাকো।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "যে শুধু খুশি করা কথা শোনে, তার কাছে খারাপ খবর পৌঁছায় না। সত্যি বলার *নিরাপদ জায়গা* লাগে।",
-      "card": {
-        "title": "কোন কথা শুনবে?",
-        "widget": {
-          "type": "compare",
-          "left": {
-            "icon": "x",
-            "t": "মিষ্টি কথা",
-            "sub": "খারাপ খবর লুকায়",
-            "bad": true
-          },
-          "right": {
-            "icon": "ear",
-            "t": "সত্যি কথা",
-            "sub": "সমস্যা আগেই ধরা পড়ে"
-          },
-          "show": 2
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, শুধু প্রশংসা শুনলে— *সাবধান*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "শুধু প্রশংসা? সাবধান",
-            "sub": "“সব ঠিক” মানেই ঠিক না",
-            "icon": "eye"
-          },
-          {
-            "t": "সত্যি বলাকে নিরাপদ করো",
-            "sub": "রাগ নয়, ধন্যবাদ",
-            "icon": "shield"
-          },
-          {
-            "t": "নিজে মানুষের কাছে যাও",
-            "sub": "মাঠ থেকে শোনো",
-            "icon": "people"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, সত্যি বলাকে *নিরাপদ* করো।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, নিজে মানুষের *কাছে যাও*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার পাশে কি শুধু *হ্যাঁ বলা* মানুষ, নাকি *সত্যি বলারও* কেউ?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমার পাশে কি শুধু *হ্যাঁ বলা* মানুষ,\nনাকি *সত্যি বলারও* কেউ?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "মিষ্টি কথা কানে আরাম দেয়… *তিক্ত সত্যি বাঁচিয়ে রাখে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "মিষ্টি কথা কানে আরাম দেয়…",
-        "line2": "তিক্ত সত্যি\nবাঁচিয়ে রাখে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "ম্যানেজার বলত ‘সব ঠিক আছে’, ডেলিভারির ছেলেটা বলল সত্যিটা 🔧 | The Prince বাংলা",
-    "description": "দুই বছরে বিক্রি কমেছে চল্লিশ ভাগ, অথচ ম্যানেজার রোজ বলত— সব ঠিক আছে, স্যার। তারপর এক রাতে ডেলিভারির ছেলে জুয়েল ভয়ে ভয়ে দরজায় এসে দাঁড়াল…\nনিকোলো ম্যাকিয়াভেলি-এর The Prince — How Flatterers Should Be Avoided — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "the prince bangla",
-      "machiavelli bangla",
-      "ব্যবসার গল্প",
-      "তোষামোদ",
-      "বাংলা গল্প",
-      "দোকানের গল্প",
-      "leadership bangla",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "দুই বছরের মিষ্টি কথা যা পারেনি, একটা তিক্ত সত্যি তা পারল। 🔧\n\nতোমার জীবনে কে তোমাকে সবসময় সত্যি কথাটা বলে? 👇\n\n📖 The Prince — Niccolò Machiavelli\n#ব্যবসা #সত্যি"
-  },
-  "thumbnail": {
-    "text": "সব ঠিক আছে?",
-    "sub": "সত্যিটা বলল জুয়েল"
+  "jewel": {
+   "name": "জুয়েল",
+   "type": "young_man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#2F7D6D",
+   "hair": "short",
+   "voice": "young_man"
   }
+ },
+ "beats": [
+  {
+   "say": "দুই বছরে বিক্রি কমেছে *চল্লিশ ভাগ*। অথচ ম্যানেজার রোজ বলে— *সব ঠিক আছে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নারায়ণগঞ্জ",
+    "props": [
+     "signboard",
+     "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "bablu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিক্রি",
+       "value": "-৪০%",
+       "from": "০%",
+       "red": true
+      },
+      {
+       "label": "রিপোর্ট",
+       "value": "সব ঠিক"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "bablu",
+   "tone": "warmly",
+   "say": "স্যার, বাজার খারাপ। আপনার মতো মালিক এই এলাকায় *আর একটাও নাই*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "bablu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motaleb",
+   "tone": "proudly",
+   "say": "তাই তো বলি বাবলু, তুমিই আমার *ডান হাত*।",
+   "scene": {
+    "moods": {
+     "motaleb": "smile"
+    },
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক কোণে চুপচাপ মাল তুলত ডেলিভারির ছেলে জুয়েল। সে দেখত *অন্য কিছু*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "bablu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "jewel",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "খদ্দের এলে বাবলু ফোনে ব্যস্ত। দাম জিজ্ঞেস করলে *ধমক*। আর মালিক এলেই মুখে মধু।",
+   "scene": {
+    "moods": {
+     "bablu": "angry"
+    },
+    "cam": {
+     "focus": "bablu",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "bablu",
+   "tone": "annoyed",
+   "say": "এই দামেই নিলে নেন, না নিলে সামনে যান। *টাইম নাই*।",
+   "scene": {
+    "arms": {
+     "bablu": "point"
+    },
+    "moods": {
+     "bablu": "angry"
+    },
+    "cam": {
+     "focus": "bablu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মালিক দাম কমালেন, নতুন মাল তুললেন, দোকান রং করালেন। বিক্রি *তবু কমল*।",
+   "card": {
+    "title": "মালিকের চেষ্টা",
+    "items": [
+     {
+      "t": "দাম কমানো",
+      "mark": "x"
+     },
+     {
+      "t": "নতুন মাল",
+      "mark": "x"
+     },
+     {
+      "t": "দোকান রং",
+      "mark": "x"
+     }
+    ],
+    "footer": "বিক্রি ↓"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "এক রাতে হিসাব মেলাতে বসে বুঝলেন, এবার ছেলের পড়ার টাকায়ও *টান পড়বে*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত দশটা",
+    "props": [
+     "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তখন জুয়েল ভয়ে ভয়ে দরজায় এসে দাঁড়াল।",
+   "scene": {
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "jewel",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "static"
+   }
+  },
+  {
+   "voice": "jewel",
+   "tone": "softly",
+   "say": "স্যার, একটা কথা বলি? *রাগ করবেন* না তো?",
+   "scene": {
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motaleb",
+   "tone": "flatly",
+   "say": "বল।",
+   "scene": {
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jewel",
+   "tone": "serious",
+   "say": "পুরনো খদ্দেররা আসে না, স্যার। বাবলু ভাই ওদের সাথে *খারাপ ব্যবহার* করেন।",
+   "scene": {
+    "arms": {
+     "jewel": "talk"
+    },
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মোতালেব সাহেব অনেকক্ষণ চুপ। মিষ্টি কথা শুনতে শুনতে হারিয়ে গিয়েছিল *সত্যি শোনার কান*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "motaleb": "thinking"
+    },
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "motaleb",
+   "tone": "sad",
+   "say": "তুই এতদিন বলিস নাই কেন, জুয়েল?",
+   "scene": {
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jewel",
+   "tone": "softly",
+   "say": "ভয় পাইছিলাম, স্যার। বাবলু ভাই কইছিল, বেশি কথা বললে *চাকরি থাকবে না*।",
+   "scene": {
+    "moods": {
+     "jewel": "worried"
+    },
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "পরদিন তিনি নিজে গেলেন *পুরনো খদ্দেরদের* বাড়ি।",
+   "pause": 0.7,
+   "card": {
+    "text": "পরদিন তিনি নিজে গেলেন\n*পুরনো খদ্দেরদের* বাড়ি।"
+   }
+  },
+  {
+   "say": "শুনলেন তিনটা অভিযোগ। তিনটাই *এক মানুষকে* নিয়ে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.45,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "খদ্দেরদের কথা",
+     "items": [
+      {
+       "t": "ফোনে ব্যস্ত, কথা শোনে না",
+       "mark": "x"
+      },
+      {
+       "t": "দাম জিজ্ঞেস করলে ধমক",
+       "mark": "x"
+      },
+      {
+       "t": "বাকি চাইলে অপমান",
+       "mark": "x"
+      }
+     ]
+    },
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "এক চাচি বললেন, দশ বছর এই দোকান থেকে বাজার করি। অথচ ম্যানেজার এমন ব্যবহার করে, যেন আমরা *ভিক্ষা চাইতে* গেছি।",
+   "pause": 0.5,
+   "scene": {
+    "moods": {
+     "motaleb": "sad"
+    },
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "বাবলুকে তাড়ালেন না। দিলেন গুদামের দায়িত্ব। আর কাউন্টারে বসালেন *জুয়েলকে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:মোতালেব হার্ডওয়্যার · ১৯৯২",
+     "cashbox"
+    ],
+    "widget": null,
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "jewel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "motaleb",
+   "tone": "warmly",
+   "say": "জুয়েল, যেদিন আমার ভুল দেখবি, *সেদিনও* বলবি। কথা দে।",
+   "scene": {
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jewel",
+   "tone": "hopeful",
+   "say": "কথা দিলাম, স্যার। *সবার আগে* বলব।",
+   "scene": {
+    "moods": {
+     "jewel": "happy"
+    },
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে প্রথম যে চাচি ফিরলেন, জুয়েল উঠে দাঁড়িয়ে আগে *সালাম দিল*। চাচি হেসে বললেন, এইবার দোকানটা *দোকানের মতো* লাগে।",
+   "scene": {
+    "moods": {
+     "motaleb": "happy",
+     "jewel": "smile"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ছয় মাসে পুরনো খদ্দেররা একে একে ফিরল। বিক্রি আবার *আগের জায়গায়*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিক্রি",
+       "value": "+৫%",
+       "from": "-৪০%"
+      },
+      {
+       "label": "ফিরে আসা খদ্দের",
+       "value": "৬৫",
+       "from": "০"
+      }
+     ]
+    },
+    "moods": {
+     "motaleb": "happy"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দুই বছরের মিষ্টি কথা যা পারেনি, *একটা তিক্ত সত্যি* তা পারল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— নিকোলো ম্যাকিয়াভেলির *দ্য প্রিন্স*।"
+  },
+  {
+   "kind": "book",
+   "say": "তেইশ নম্বর অধ্যায়— *তোষামোদ* থেকে দূরে থাকো।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "যে শুধু খুশি করা কথা শোনে, তার কাছে খারাপ খবর পৌঁছায় না। সত্যি বলার *নিরাপদ জায়গা* লাগে।",
+   "card": {
+    "title": "কোন কথা শুনবে?",
+    "widget": {
+     "type": "compare",
+     "left": {
+      "icon": "x",
+      "t": "মিষ্টি কথা",
+      "sub": "খারাপ খবর লুকায়",
+      "bad": true
+     },
+     "right": {
+      "icon": "ear",
+      "t": "সত্যি কথা",
+      "sub": "সমস্যা আগেই ধরা পড়ে"
+     },
+     "show": 2
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, শুধু প্রশংসা শুনলে— *সাবধান*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "শুধু প্রশংসা? সাবধান",
+      "sub": "“সব ঠিক” মানেই ঠিক না",
+      "icon": "eye"
+     },
+     {
+      "t": "সত্যি বলাকে নিরাপদ করো",
+      "sub": "রাগ নয়, ধন্যবাদ",
+      "icon": "shield"
+     },
+     {
+      "t": "নিজে মানুষের কাছে যাও",
+      "sub": "মাঠ থেকে শোনো",
+      "icon": "people"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, সত্যি বলাকে *নিরাপদ* করো।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, নিজে মানুষের *কাছে যাও*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমার পাশে কি শুধু *হ্যাঁ বলা* মানুষ, নাকি *সত্যি বলারও* কেউ?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমার পাশে কি শুধু *হ্যাঁ বলা* মানুষ,\nনাকি *সত্যি বলারও* কেউ?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মিষ্টি কথা কানে আরাম দেয়… *তিক্ত সত্যি বাঁচিয়ে রাখে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "মিষ্টি কথা কানে আরাম দেয়…",
+    "line2": "তিক্ত সত্যি\nবাঁচিয়ে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ম্যানেজার বলত ‘সব ঠিক আছে’, ডেলিভারির ছেলেটা বলল সত্যিটা 🔧 | The Prince বাংলা",
+  "description": "দুই বছরে বিক্রি কমেছে চল্লিশ ভাগ, অথচ ম্যানেজার রোজ বলত— সব ঠিক আছে, স্যার। তারপর এক রাতে ডেলিভারির ছেলে জুয়েল ভয়ে ভয়ে দরজায় এসে দাঁড়াল…\nনিকোলো ম্যাকিয়াভেলি-এর The Prince — How Flatterers Should Be Avoided — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "the prince bangla",
+   "machiavelli bangla",
+   "ব্যবসার গল্প",
+   "তোষামোদ",
+   "বাংলা গল্প",
+   "দোকানের গল্প",
+   "leadership bangla",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "দুই বছরের মিষ্টি কথা যা পারেনি, একটা তিক্ত সত্যি তা পারল। 🔧\n\nতোমার জীবনে কে তোমাকে সবসময় সত্যি কথাটা বলে? 👇\n\n📖 The Prince — Niccolò Machiavelli\n#ব্যবসা #সত্যি"
+ },
+ "thumbnail": {
+  "text": "সব ঠিক আছে?",
+  "sub": "সত্যিটা বলল জুয়েল"
+ },
+ "_extended": "story-only v1"
 }

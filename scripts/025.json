@@ -1,570 +1,615 @@
 {
-  "id": "025",
-  "status": "ready",
-  "title_bn": "কাশেম চাচার পানির গামলা",
-  "source": {
-    "book": "Propaganda",
-    "author": "Edward Bernays",
-    "author_bn": "এডওয়ার্ড বার্নেস",
-    "chapter": "IDEA",
-    "chapter_bn": "একটা ভাবনা",
-    "title": "Repetition Makes Ideas Feel True",
-    "title_bn": "বারবার শুনলে সত্যি মনে হয়"
+ "id": "025",
+ "status": "ready",
+ "title_bn": "কাশেম চাচার পানির গামলা",
+ "source": {
+  "book": "Propaganda",
+  "author": "Edward Bernays",
+  "author_bn": "এডওয়ার্ড বার্নেস",
+  "chapter": "IDEA",
+  "chapter_bn": "একটা ভাবনা",
+  "title": "Repetition Makes Ideas Feel True",
+  "title_bn": "বারবার শুনলে সত্যি মনে হয়"
+ },
+ "cast": {
+  "kashem": {
+   "name": "কাশেম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#8E9AAF",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
   },
-  "cast": {
-    "kashem": {
-      "name": "কাশেম চাচা",
-      "type": "old_man",
-      "skin": "dark",
-      "outfit": "tshirt",
-      "color": "#8E9AAF",
-      "hair": "bald_grey",
-      "beard": "short_grey",
-      "voice": "old_man"
-    },
-    "babu": {
-      "name": "বাবু",
-      "type": "young_man",
-      "skin": "brown",
-      "outfit": "shirt",
-      "color": "#E07A3F",
-      "hair": "short",
-      "beard": "stubble",
-      "voice": "young_man"
-    },
-    "shahana": {
-      "name": "শাহানা ভাবি",
-      "type": "woman",
-      "skin": "wheat",
-      "outfit": "sari",
-      "color": "#B23A48",
-      "color2": "#F2C14E",
-      "hair": "long_bun",
-      "voice": "woman"
-    }
+  "babu": {
+   "name": "বাবু",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#E07A3F",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
   },
-  "beats": [
-    {
-      "say": "চল্লিশ বছরের মাছের দোকান। এক মাসে বিক্রি নেমে এল *তিন ভাগের এক ভাগে*।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "গাইবান্ধা বাজার",
-        "props": [
-          "signboard",
-          "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.45,
-            "pose": "stand",
-            "face": "right",
-            "mood": "worried",
-            "arm": "cross"
-          }
-        ],
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "দোকানের বয়স",
-              "value": "৪০ বছর"
-            },
-            {
-              "label": "বিক্রি",
-              "value": "-৬৬%",
-              "from": "০%",
-              "red": true
-            }
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "say": "কারণ একটা কথা। মহল্লার গ্রুপে কেউ লিখেছিল— *কাশেমের মাছে ফরমালিন*।",
-      "scene": {
-        "widget": {
-          "kind": "chat",
-          "title": "আমাদের মহল্লা 🏘️",
-          "msgs": [
-            {
-              "who": "অচেনা",
-              "t": "কাশেমের মাছে নাকি ফরমালিন!"
-            },
-            {
-              "who": "৩-এ",
-              "t": "আমিও শুনেছি 😨"
-            },
-            {
-              "who": "রিনা",
-              "t": "আমার ভাবিও তো বলল!"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "say": "কেউ দেখেনি, কেউ পরীক্ষাও করেনি। কিন্তু কথাটা ঘুরল একশোবার। আর একশোবার শোনা কথা, *সত্যির মতো* শোনায়।",
-      "scene": {
-        "widget": null,
-        "cam": {
-          "focus": "kashem",
-          "zoom": 1.35
-        }
-      }
-    },
-    {
-      "voice": "shahana",
-      "tone": "flatly",
-      "say": "চাচা, আজ মাছ নেব না। সবাই বলছে… *আপনি তো জানেনই*।",
-      "scene": {
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "shahana",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "bag"
-          }
-        ],
-        "cam": {
-          "focus": "shahana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "kashem",
-      "tone": "sad",
-      "say": "মা, চল্লিশ বছর এই হাতে মাছ বেচি। কোনোদিন *ভেজাল দিইনি*।",
-      "scene": {
-        "arms": {
-          "kashem": "talk"
-        },
-        "cam": {
-          "focus": "kashem",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "list",
-      "say": "ছেলে বাবু গ্রুপে প্রতিবাদ লিখল, কমেন্টে ঝগড়া করল, পোস্ট মুছতে বলল। গুজব আরো *ছড়াল*।",
-      "card": {
-        "title": "বাবুর চেষ্টা",
-        "items": [
-          {
-            "t": "গ্রুপে প্রতিবাদ",
-            "mark": "x"
-          },
-          {
-            "t": "কমেন্টে ঝগড়া",
-            "mark": "x"
-          },
-          {
-            "t": "পোস্ট মুছতে বলা",
-            "mark": "x"
-          }
-        ],
-        "footer": "গুজব ↑"
-      }
-    },
-    {
-      "say": "চল্লিশ বছরের চেনা খদ্দের, এখন রাস্তার ওপাশ দিয়ে *চোখ ফিরিয়ে* হাঁটে।",
-      "scene": {
-        "set": "street",
-        "light": "day",
-        "chip": "বাজারের রাস্তা",
-        "props": [
-          "bicycle"
-        ],
-        "chars": [
-          {
-            "id": "shahana",
-            "x": 0.55,
-            "pose": "walk",
-            "face": "left",
-            "mood": "neutral",
-            "arm": "hold",
-            "hold": "bag"
-          }
-        ],
-        "cam": "pan"
-      }
-    },
-    {
-      "tone": "softly",
-      "say": "এক সন্ধ্যায় না-বিকানো মাছের পাশে কাশেম চাচা *চুপ করে বসে রইলেন*।",
-      "pause": 0.9,
-      "scene": {
-        "set": "shop",
-        "light": "evening",
-        "chip": "এক সন্ধ্যায়",
-        "props": [
-          "signboard",
-          "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.45,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "face"
-          }
-        ],
-        "cam": {
-          "focus": "kashem",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "babu",
-      "tone": "hopeful",
-      "say": "আব্বা, তর্কে গুজব থামে না। মানুষকে *নিজের চোখে* দেখাতে হবে।",
-      "scene": {
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.3,
-            "pose": "sit",
-            "face": "right",
-            "mood": "sad",
-            "arm": "down"
-          },
-          {
-            "id": "babu",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "thinking",
-            "arm": "talk"
-          }
-        ],
-        "cam": {
-          "focus": "babu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "kind": "statement",
-      "say": "গুজবের উত্তর তর্কে নয়— *নিজের চোখে দেখায়*।",
-      "pause": 0.7,
-      "card": {
-        "text": "গুজবের উত্তর তর্কে নয়—\n*নিজের চোখে দেখায়*।"
-      }
-    },
-    {
-      "say": "পরদিন দোকানে এল বড় একটা পানির গামলা। মাছ বিকাবে *জ্যান্ত*, চোখের সামনে।",
-      "scene": {
-        "set": "shop",
-        "light": "day",
-        "chip": "পরদিন সকাল",
-        "props": [
-          "signboard",
-          "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
-          "cashbox"
-        ],
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "babu",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "happy",
-            "arm": "point"
-          }
-        ],
-        "widget": {
-          "kind": "note",
-          "style": "paper",
-          "title": "কাশেম চাচার মাছ",
-          "lines": [
-            "জ্যান্ত মাছ, চোখের সামনে কাটা",
-            "ফরমালিন পরীক্ষার কিট — যে কেউ",
-            "সন্দেহ হলে টাকা ফেরত"
-          ]
-        },
-        "cam": "push"
-      }
-    },
-    {
-      "voice": "babu",
-      "tone": "warmly",
-      "say": "আসেন ভাবি, নিজের হাতে *পরীক্ষা করে* দেখেন। টাকা লাগবে না।",
-      "scene": {
-        "widget": null,
-        "chars": [
-          {
-            "id": "babu",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "talk"
-          },
-          {
-            "id": "shahana",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "surprised",
-            "arm": "hold",
-            "hold": "bag"
-          }
-        ],
-        "cam": {
-          "focus": "babu",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "প্রথম দিন পরীক্ষা করল এগারো জন। এগারোবারই ফল— *পরিষ্কার*।",
-      "scene": {
-        "widget": {
-          "kind": "stats",
-          "items": [
-            {
-              "label": "পরীক্ষা",
-              "value": "১১",
-              "from": "০"
-            },
-            {
-              "label": "ফরমালিন",
-              "value": "০"
-            }
-          ]
-        },
-        "cam": "wide"
-      }
-    },
-    {
-      "voice": "shahana",
-      "tone": "softly",
-      "say": "চাচা, মাফ করবেন। না জেনেই কথাটা *ছড়িয়েছিলাম*।",
-      "scene": {
-        "widget": null,
-        "chars": [
-          {
-            "id": "kashem",
-            "x": 0.3,
-            "pose": "stand",
-            "face": "right",
-            "mood": "smile",
-            "arm": "down"
-          },
-          {
-            "id": "shahana",
-            "x": 0.7,
-            "pose": "stand",
-            "face": "left",
-            "mood": "sad",
-            "arm": "down"
-          }
-        ],
-        "cam": {
-          "focus": "shahana",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "voice": "kashem",
-      "tone": "gently",
-      "say": "থাক মা। এখন যা দেখলে, *সেটাও* একটু বলে দিও।",
-      "scene": {
-        "arms": {
-          "kashem": "talk"
-        },
-        "cam": {
-          "focus": "kashem",
-          "zoom": 1.4
-        }
-      }
-    },
-    {
-      "say": "সেই রাতে গ্রুপে উঠল নতুন ছবি— জ্যান্ত মাছ, পরীক্ষার কিট, আর *কাশেম চাচার হাসি*।",
-      "scene": {
-        "widget": {
-          "kind": "chat",
-          "title": "আমাদের মহল্লা 🏘️",
-          "msgs": [
-            {
-              "who": "শাহানা",
-              "t": "নিজে পরীক্ষা করলাম, একদম ঠিক ✅"
-            },
-            {
-              "who": "৩-এ",
-              "t": "সরি চাচা 🙏"
-            },
-            {
-              "who": "রিনা",
-              "t": "কাল সকালে আমিও যাব"
-            }
-          ]
-        },
-        "moods": {
-          "kashem": "happy"
-        }
-      }
-    },
-    {
-      "say": "এক মাসে বিক্রি ফিরল আগের জায়গায়। ভোরে দোকানের সামনে এখন *লাইন*।",
-      "scene": {
-        "widget": null,
-        "cam": "wide"
-      }
-    },
-    {
-      "say": "একশোবার শোনা মিথ্যা যা করেছিল, একবার *চোখে দেখা সত্যি* তা মুছে দিল।",
-      "pause": 0.8,
-      "scene": {
-        "widget": null,
-        "fx": "glow",
-        "cam": {
-          "zoom": 1.2
-        }
-      }
-    },
-    {
-      "kind": "book",
-      "say": "এই গল্পের পেছনের বই— এডওয়ার্ড বার্নেসের *প্রোপাগান্ডা*।"
-    },
-    {
-      "kind": "book",
-      "say": "একটা ভাবনা— বারবার শুনলে কথা *সত্যি মনে হয়*।",
-      "reveal": true,
-      "pause": 0.3
-    },
-    {
-      "kind": "concept",
-      "say": "মন সত্যি আর *চেনা* আলাদা করতে পারে না। যা বারবার শুনি, চেনা লাগে— তাই বিশ্বাস হয়।",
-      "card": {
-        "title": "গুজব কীভাবে ‘সত্যি’ হয়",
-        "widget": {
-          "type": "flow",
-          "loop": true,
-          "nodes": [
-            {
-              "icon": "chat",
-              "t": "একজন বলল"
-            },
-            {
-              "icon": "people",
-              "t": "সবাই শেয়ার"
-            },
-            {
-              "icon": "brain",
-              "t": "চেনা লাগে"
-            },
-            {
-              "icon": "check",
-              "t": "“সত্যি”"
-            }
-          ],
-          "show": 4
-        }
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "পর্দার বাইরে, তোমার জীবনে— এক, বারবার শোনা মানেই *সত্যি নয়*।",
-      "show": 1,
-      "card": {
-        "items": [
-          {
-            "t": "বারবার শোনা ≠ সত্যি",
-            "sub": "উৎস কে? প্রমাণ কী?",
-            "icon": "brain"
-          },
-          {
-            "t": "তর্ক নয়, দেখাও",
-            "sub": "চোখে দেখা গুজব থামায়",
-            "icon": "eye"
-          },
-          {
-            "t": "ফরোয়ার্ডের আগে থামো",
-            "sub": "একটা শেয়ার, একটা সংসার",
-            "icon": "hand"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "takeaways",
-      "say": "দুই, তর্ক নয়— *দেখাও*।",
-      "show": 2
-    },
-    {
-      "kind": "takeaways",
-      "say": "তিন, ফরোয়ার্ডের আগে *থামো*।",
-      "show": 3,
-      "pause": 0.4
-    },
-    {
-      "kind": "ask",
-      "tone": "softly",
-      "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *শোনা কথা* ছড়াচ্ছি, নাকি *দেখা সত্যি*?",
-      "pause": 0.7,
-      "card": {
-        "quote": "আমি কি *শোনা কথা* ছড়াচ্ছি,\nনাকি *দেখা সত্যি*?"
-      }
-    },
-    {
-      "kind": "outro",
-      "say": "গুজব দৌড়ায় একশো মুখে… *সত্যি হাঁটে নিজের পায়ে*।",
-      "pause": 1.6,
-      "card": {
-        "line1": "গুজব দৌড়ায় একশো মুখে…",
-        "line2": "সত্যি হাঁটে\nনিজের পায়ে।"
-      }
-    }
-  ],
-  "youtube": {
-    "title": "এক গুজবে বিক্রি নামল তিন ভাগে, তারপর কাশেম চাচার পানির গামলা 🐟 | Propaganda বাংলা",
-    "description": "চল্লিশ বছরের মাছের দোকান। মহল্লার গ্রুপে একটা কথা ঘুরল একশোবার— কাশেমের মাছে ফরমালিন। কেউ দেখেনি, তবু সবাই বিশ্বাস করল। তারপর…\nএডওয়ার্ড বার্নেস-এর Propaganda — Repetition Makes Ideas Feel True — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
-    "tags": [
-      "propaganda bangla",
-      "edward bernays bangla",
-      "গুজব",
-      "ফেসবুক গুজব",
-      "বাংলা গল্প",
-      "বাজারের গল্প",
-      "বাবা ছেলের গল্প",
-      "জীবনের শিক্ষা"
-    ]
-  },
-  "facebook": {
-    "caption": "একশোবার শোনা মিথ্যা যা করেছিল, একবার চোখে দেখা সত্যি তা মুছে দিল। 🐟\n\nকোনো গুজব বিশ্বাস করে পরে কখনো লজ্জা পেয়েছ? 👇\n\n📖 Propaganda — Edward Bernays\n#গুজব #সত্যি"
-  },
-  "thumbnail": {
-    "text": "একটা গুজব",
-    "sub": "৪০ বছরের দোকান"
+  "shahana": {
+   "name": "শাহানা ভাবি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#B23A48",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
   }
+ },
+ "beats": [
+  {
+   "say": "চল্লিশ বছরের মাছের দোকান। এক মাসে বিক্রি নেমে এল *তিন ভাগের এক ভাগে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "গাইবান্ধা বাজার",
+    "props": [
+     "signboard",
+     "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "cross"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের বয়স",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "বিক্রি",
+       "value": "-৬৬%",
+       "from": "০%",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কারণ একটা কথা। মহল্লার গ্রুপে কেউ লিখেছিল— *কাশেমের মাছে ফরমালিন*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আমাদের মহল্লা 🏘️",
+     "msgs": [
+      {
+       "who": "অচেনা",
+       "t": "কাশেমের মাছে নাকি ফরমালিন!"
+      },
+      {
+       "who": "৩-এ",
+       "t": "আমিও শুনেছি 😨"
+      },
+      {
+       "who": "রিনা",
+       "t": "আমার ভাবিও তো বলল!"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কেউ দেখেনি, কেউ পরীক্ষাও করেনি। কিন্তু কথাটা ঘুরল একশোবার। আর একশোবার শোনা কথা, *সত্যির মতো* শোনায়।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "shahana",
+   "tone": "flatly",
+   "say": "চাচা, আজ মাছ নেব না। সবাই বলছে… *আপনি তো জানেনই*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shahana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "shahana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "tone": "sad",
+   "say": "মা, চল্লিশ বছর এই হাতে মাছ বেচি। কোনোদিন *ভেজাল দিইনি*।",
+   "scene": {
+    "arms": {
+     "kashem": "talk"
+    },
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাহানা ভাবি মাথা নিচু করে চলে গেলেন। কাশেম চাচা বরফের ওপর মাছগুলো সাজিয়ে রাখলেন, *যেন কিছুই হয়নি*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "kashem": "sad"
+    },
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ছেলে বাবু গ্রুপে প্রতিবাদ লিখল, কমেন্টে ঝগড়া করল, পোস্ট মুছতে বলল। গুজব আরো *ছড়াল*।",
+   "card": {
+    "title": "বাবুর চেষ্টা",
+    "items": [
+     {
+      "t": "গ্রুপে প্রতিবাদ",
+      "mark": "x"
+     },
+     {
+      "t": "কমেন্টে ঝগড়া",
+      "mark": "x"
+     },
+     {
+      "t": "পোস্ট মুছতে বলা",
+      "mark": "x"
+     }
+    ],
+    "footer": "গুজব ↑"
+   }
+  },
+  {
+   "say": "চল্লিশ বছরের চেনা খদ্দের, এখন রাস্তার ওপাশ দিয়ে *চোখ ফিরিয়ে* হাঁটে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বাজারের রাস্তা",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "shahana",
+      "x": 0.55,
+      "pose": "walk",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "tone": "softly",
+   "say": "এক সন্ধ্যায় না-বিকানো মাছের পাশে কাশেম চাচা *চুপ করে বসে রইলেন*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "এক সন্ধ্যায়",
+    "props": [
+     "signboard",
+     "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babu",
+   "tone": "hopeful",
+   "say": "আব্বা, তর্কে গুজব থামে না। মানুষকে *নিজের চোখে* দেখাতে হবে।",
+   "scene": {
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "babu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "babu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "tone": "sighs",
+   "say": "কেমনে দেখামু, বাবা? মানুষ তো *দোকানের সামনেই* আসে না।",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babu",
+   "tone": "hopeful",
+   "say": "আসবে, আব্বা। ফ্রিতে পরীক্ষা করতে দিলে কৌতূহল *আটকানো যায় না*।",
+   "scene": {
+    "cam": {
+     "focus": "babu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "গুজবের উত্তর তর্কে নয়— *নিজের চোখে দেখায়*।",
+   "pause": 0.7,
+   "card": {
+    "text": "গুজবের উত্তর তর্কে নয়—\n*নিজের চোখে দেখায়*।"
+   }
+  },
+  {
+   "say": "পরদিন দোকানে এল বড় একটা পানির গামলা। মাছ বিকাবে *জ্যান্ত*, চোখের সামনে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:কাশেম মৎস্য ভাণ্ডার · ১৯৮৫",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "babu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "কাশেম চাচার মাছ",
+     "lines": [
+      "জ্যান্ত মাছ, চোখের সামনে কাটা",
+      "ফরমালিন পরীক্ষার কিট — যে কেউ",
+      "সন্দেহ হলে টাকা ফেরত"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "babu",
+   "tone": "warmly",
+   "say": "আসেন ভাবি, নিজের হাতে *পরীক্ষা করে* দেখেন। টাকা লাগবে না।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "babu",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "shahana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "babu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম দিন পরীক্ষা করল এগারো জন। এগারোবারই ফল— *পরিষ্কার*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "পরীক্ষা",
+       "value": "১১",
+       "from": "০"
+      },
+      {
+       "label": "ফরমালিন",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "shahana",
+   "tone": "softly",
+   "say": "চাচা, মাফ করবেন। না জেনেই কথাটা *ছড়িয়েছিলাম*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "kashem",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "shahana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "shahana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kashem",
+   "tone": "gently",
+   "say": "থাক মা। এখন যা দেখলে, *সেটাও* একটু বলে দিও।",
+   "scene": {
+    "arms": {
+     "kashem": "talk"
+    },
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পাশ থেকে বাবু হেসে বলল, আব্বা, এইবার বুঝলেন? *তর্ক না, প্রমাণ*।",
+   "scene": {
+    "cam": {
+     "focus": "kashem",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে গ্রুপে উঠল নতুন ছবি— জ্যান্ত মাছ, পরীক্ষার কিট, আর *কাশেম চাচার হাসি*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আমাদের মহল্লা 🏘️",
+     "msgs": [
+      {
+       "who": "শাহানা",
+       "t": "নিজে পরীক্ষা করলাম, একদম ঠিক ✅"
+      },
+      {
+       "who": "৩-এ",
+       "t": "সরি চাচা 🙏"
+      },
+      {
+       "who": "রিনা",
+       "t": "কাল সকালে আমিও যাব"
+      }
+     ]
+    },
+    "moods": {
+     "kashem": "happy"
+    }
+   }
+  },
+  {
+   "say": "এক মাসে বিক্রি ফিরল আগের জায়গায়। ভোরে দোকানের সামনে এখন *লাইন*।",
+   "scene": {
+    "widget": null,
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "একশোবার শোনা মিথ্যা যা করেছিল, একবার *চোখে দেখা সত্যি* তা মুছে দিল।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow",
+    "cam": {
+     "zoom": 1.2
+    }
+   }
+  },
+  {
+   "kind": "book",
+   "say": "এই গল্পের পেছনের বই— এডওয়ার্ড বার্নেসের *প্রোপাগান্ডা*।"
+  },
+  {
+   "kind": "book",
+   "say": "একটা ভাবনা— বারবার শুনলে কথা *সত্যি মনে হয়*।",
+   "reveal": true,
+   "pause": 0.3
+  },
+  {
+   "kind": "concept",
+   "say": "মন সত্যি আর *চেনা* আলাদা করতে পারে না। যা বারবার শুনি, চেনা লাগে— তাই বিশ্বাস হয়।",
+   "card": {
+    "title": "গুজব কীভাবে ‘সত্যি’ হয়",
+    "widget": {
+     "type": "flow",
+     "loop": true,
+     "nodes": [
+      {
+       "icon": "chat",
+       "t": "একজন বলল"
+      },
+      {
+       "icon": "people",
+       "t": "সবাই শেয়ার"
+      },
+      {
+       "icon": "brain",
+       "t": "চেনা লাগে"
+      },
+      {
+       "icon": "check",
+       "t": "“সত্যি”"
+      }
+     ],
+     "show": 4
+    }
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "পর্দার বাইরে, তোমার জীবনে— এক, বারবার শোনা মানেই *সত্যি নয়*।",
+   "show": 1,
+   "card": {
+    "items": [
+     {
+      "t": "বারবার শোনা ≠ সত্যি",
+      "sub": "উৎস কে? প্রমাণ কী?",
+      "icon": "brain"
+     },
+     {
+      "t": "তর্ক নয়, দেখাও",
+      "sub": "চোখে দেখা গুজব থামায়",
+      "icon": "eye"
+     },
+     {
+      "t": "ফরোয়ার্ডের আগে থামো",
+      "sub": "একটা শেয়ার, একটা সংসার",
+      "icon": "hand"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "takeaways",
+   "say": "দুই, তর্ক নয়— *দেখাও*।",
+   "show": 2
+  },
+  {
+   "kind": "takeaways",
+   "say": "তিন, ফরোয়ার্ডের আগে *থামো*।",
+   "show": 3,
+   "pause": 0.4
+  },
+  {
+   "kind": "ask",
+   "tone": "softly",
+   "say": "এবার পর্দাটা তোমার দিকে ঘোরাই— আমি কি *শোনা কথা* ছড়াচ্ছি, নাকি *দেখা সত্যি*?",
+   "pause": 0.7,
+   "card": {
+    "quote": "আমি কি *শোনা কথা* ছড়াচ্ছি,\nনাকি *দেখা সত্যি*?"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "গুজব দৌড়ায় একশো মুখে… *সত্যি হাঁটে নিজের পায়ে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "গুজব দৌড়ায় একশো মুখে…",
+    "line2": "সত্যি হাঁটে\nনিজের পায়ে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এক গুজবে বিক্রি নামল তিন ভাগে, তারপর কাশেম চাচার পানির গামলা 🐟 | Propaganda বাংলা",
+  "description": "চল্লিশ বছরের মাছের দোকান। মহল্লার গ্রুপে একটা কথা ঘুরল একশোবার— কাশেমের মাছে ফরমালিন। কেউ দেখেনি, তবু সবাই বিশ্বাস করল। তারপর…\nএডওয়ার্ড বার্নেস-এর Propaganda — Repetition Makes Ideas Feel True — জীবনের গল্পে।\nThe Screen — গল্পে দেখি জীবন।",
+  "tags": [
+   "propaganda bangla",
+   "edward bernays bangla",
+   "গুজব",
+   "ফেসবুক গুজব",
+   "বাংলা গল্প",
+   "বাজারের গল্প",
+   "বাবা ছেলের গল্প",
+   "জীবনের শিক্ষা"
+  ]
+ },
+ "facebook": {
+  "caption": "একশোবার শোনা মিথ্যা যা করেছিল, একবার চোখে দেখা সত্যি তা মুছে দিল। 🐟\n\nকোনো গুজব বিশ্বাস করে পরে কখনো লজ্জা পেয়েছ? 👇\n\n📖 Propaganda — Edward Bernays\n#গুজব #সত্যি"
+ },
+ "thumbnail": {
+  "text": "একটা গুজব",
+  "sub": "৪০ বছরের দোকান"
+ },
+ "_extended": "story-only v1"
 }
