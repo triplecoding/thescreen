@@ -177,7 +177,9 @@
       "youtube": "9R0agyQ9Ozc",
       "playlist": true,
       "facebook": "1167824942857190",
-      "scheduled_for": "2026-11-05T10:00:00+06:00"
+      "scheduled_for": "2026-11-05T10:00:00+06:00",
+      "yt_comment": "UgxpGq-pAK1eEKEsjWF4AaABAg",
+      "fb_comment": "1167824942857190_1746918439710539"
     },
     {
       "id": "015",
@@ -222,6 +224,17 @@
       "playlist": true,
       "facebook": "1434934898163287",
       "scheduled_for": "2026-11-06T10:00:00+06:00"
+    },
+    {
+      "id": "019",
+      "date": "2026-11-06",
+      "slot": "13:30",
+      "duration": 139.03,
+      "title": "ছেলের মিথ্যা ধরেও কিছু বললেন না আব্বা, তারপর রাত সাড়ে বারোটায়… 🏍️ | The Art of War বাংলা",
+      "youtube": "HzKarL1Aub4",
+      "playlist": true,
+      "facebook": "2960714974262219",
+      "scheduled_for": "2026-11-06T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -238,11 +251,10 @@
     "The Daily Laws": "PLV002FrxsI-Y"
   },
   "last_run": {
-    "at": "2026-11-05T08:27:56.692947+06:00",
-    "errors": [],
-    "queue_remaining": 26
+    "at": "2026-11-05T12:17:08.891099+06:00",
+    "errors": []
   },
   "queue_remaining": 26,
-  "_run_started": "2026-11-05T08:22:54.889970+06:00",
+  "_run_started": "2026-11-05T12:10:55.475452+06:00",
   "dry_runs": []
 }
