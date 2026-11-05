@@ -1,0 +1,521 @@
+{
+ "id": "075",
+ "status": "ready",
+ "title_bn": "দুই বোনের এক জোড়া জুতা",
+ "theme": "siblings",
+ "source": {
+  "book": "The Book of Five Rings",
+  "author": "Miyamoto Musashi",
+  "author_bn": "মিয়ামোতো মুসাশি",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Way of Training",
+  "title_bn": "প্রতিদিনের অনুশীলন"
+ },
+ "cast": {
+  "laboni": {
+   "name": "লাবণী",
+   "type": "teen_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "shimu": {
+   "name": "শিমু",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "ma": {
+   "name": "মা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাইবান্ধার এক স্কুল। দুই বোন, দুই শিফট। আর পায়ের সাদা জুতা— *একটাই জোড়া*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "গাইবান্ধা, স্কুলের পথ, দুপুর ১২টা ২০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "laboni",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বোন",
+       "value": "২ জন"
+      },
+      {
+       "label": "শিফট",
+       "value": "সকাল আর দুপুর"
+      },
+      {
+       "label": "জুতা",
+       "value": "১ জোড়া",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সকালের শিফট শেষ হয় বারোটায়। লাবণী রোজ দৌড়ে বাড়ি ফেরে। দশ মিনিটের পথ, *ছয় মিনিটে*।",
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "laboni",
+   "say": "নে, পর তাড়াতাড়ি! ফিতা *দুইবার* বান্ধিস, খুইলা যায়।",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "বাড়ির দরজা",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "laboni",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shimu",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "laboni": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "আপু, আজকে ছয় মিনিট? কালকে *পাঁচ* করতে পারবা?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shimu": "wave"
+    }
+   }
+  },
+  {
+   "say": "দুই বছর এভাবে চলছে। বাবা নেই, মা অন্যের বাড়িতে কাজ করেন। দ্বিতীয় জোড়া জুতা *বাজেটে নেই*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই দুপুরে খেলার স্যার ছোটদের দৌড় দেখছিলেন। শিমু দৌড় দিল, আর *সবার আগে* দড়ি ছুঁল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "স্কুল মাঠ",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "স্যার বললেন, উপজেলায় দৌড়াবে শিমু। *শনিবার সকাল নয়টা*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "স্যারের নোটিশ",
+     "lines": [
+      "উপজেলা দৌড় প্রতিযোগিতা",
+      "শিমু, ক্লাস সিক্স",
+      "শনিবার সকাল ৯টা"
+     ]
+    },
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে হিসাব মিলল না। শনিবার সকাল নয়টায় লাবণীরও *টেস্ট পরীক্ষা*। আর জুতা একটাই।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "laboni",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shimu",
+      "x": 0.82,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "শিমু, এইবার থাক মা। আপার পরীক্ষা। জুতা ছাড়া *হলে ঢুকতে* দিবো না।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "down"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "আচ্ছা আম্মা। আমি তো *ছোট*। পরের বার দৌড়ামু।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shimu": "down"
+    }
+   }
+  },
+  {
+   "say": "লাবণী কিছু বলল না। কিন্তু সারারাত তার চোখে ভাসল বোনের দৌড়, আর দড়ি ছোঁয়ার সেই *হাসি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "লাবণী যা যা ভাবল",
+   "card": {
+    "title": "কোন রাস্তাই সোজা না",
+    "items": [
+     {
+      "t": "জুতা ধার— কারও পায়ে মিলে না",
+      "mark": "x"
+     },
+     {
+      "t": "পরীক্ষা মিস— সারা বছরের ক্ষতি",
+      "mark": "x"
+     },
+     {
+      "t": "স্যান্ডেলে পরীক্ষা— বকা খাওয়া নিশ্চিত",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শনিবার ভোরে শিমু ঘুম থেকে উঠে দেখল, দরজার সামনে জুতা জোড়া রাখা। ধোয়া, সাদা, *ফিতা দুইবার বাঁধা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শনিবার, ভোর ছয়টা",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "laboni",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "shimu",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "laboni",
+   "say": "দৌড় দিবি, আর পিছনে *তাকাবি না*। বুঝছিস?",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    },
+    "arms": {
+     "laboni": "point"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "আর তুমি? তোমার *পরীক্ষা*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shimu": "talk"
+    }
+   }
+  },
+  {
+   "voice": "laboni",
+   "say": "আমার পরীক্ষা তো হাতে দিমু, *পায়ে* না।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    },
+    "arms": {
+     "laboni": "wave"
+    }
+   }
+  },
+  {
+   "say": "পরীক্ষার হলে স্যান্ডেল পায়ে লাবণী। বকা খেল। দাঁড়িয়ে থাকল দশ মিনিট। তারপর বসল। আর লিখল *পুরো তিন ঘণ্টা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "স্কুল, পরীক্ষার হল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "laboni",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আর ঠিক তখন উপজেলা মাঠে একশো মিটার দৌড়। ছয় সেকেন্ড পর বোঝা গেল, সাদা জুতার মেয়েটাই *প্রথম*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "উপজেলা মাঠ, একই সকাল",
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "dust"
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "আপু, দুই হাজার টাকা পাইছি! আর এইটা… *তোমার জন্য*।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "evening",
+    "chip": "সেই বিকেল",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "laboni",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "shimu": "hold"
+    }
+   }
+  },
+  {
+   "say": "ব্যাগে একজোড়া নতুন সাদা জুতা। লাবণীর মাপে। শিমু বাজার থেকে কিনে এনেছে, পুরস্কারের টাকায়, *প্রথম দোকানেই*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "laboni",
+   "say": "পাগলি, টাকাটা নিজের জন্য *রাখতি*!",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "laboni",
+     "zoom": 1.4
+    },
+    "arms": {
+     "laboni": "hug"
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "রাখছি তো। এখন আর তোমারে *দৌড়াইয়া* বাসায় আসতে হইবো না।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন সেই বাড়ির দরজার সামনে রোজ সকালে দুই জোড়া সাদা জুতা। আর দুপুরে কেউ আর *দৌড়ায় না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "এক জোড়া জুতা দুইজনের পায়ে… *তবু দৌড়টা দুইজনেরই ছিল*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "এক জোড়া জুতা দুইজনের পায়ে…",
+    "line2": "তবু দৌড়টা\nদুইজনেরই ছিল।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুই বোন, এক জোড়া সাদা জুতা— সকালে বড় বোন, দুপুরে ছোট বোন… দৌড় প্রতিযোগিতার দিন যা হলো 👟",
+  "description": "গাইবান্ধার এক স্কুলে দুই বোন পড়ে দুই শিফটে। জুতা এক জোড়া। সকালের শিফট শেষে লাবণী দৌড়ে বাড়ি ফেরে, যাতে শিমু দুপুরে সেই জুতা পরে স্কুলে যেতে পারে। একদিন শিমু উপজেলা দৌড় প্রতিযোগিতায় সুযোগ পেল, আর সেদিনই লাবণীর টেস্ট পরীক্ষা…",
+  "tags": [
+   "বোনের গল্প",
+   "দুই বোন",
+   "স্কুলের গল্প",
+   "দৌড় প্রতিযোগিতা",
+   "গাইবান্ধা",
+   "bangla golpo",
+   "vai boner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "এক জোড়া জুতা, দুই জোড়া পা। দৌড়টা আসলে দুই বোন মিলে জিতেছিল। 👟\nতুমি আর তোমার ভাই-বোন ছোটবেলায় কোন জিনিস ভাগ করে ব্যবহার করতে? 👇 #বোন #স্কুল"
+ },
+ "thumbnail": {
+  "text": "এক জোড়া জুতা",
+  "sub": "দুই বোন"
+ }
+}

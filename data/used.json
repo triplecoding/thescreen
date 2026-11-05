@@ -587,6 +587,54 @@
    "relation": "tea-garden worker father / daughter / headmaster",
    "set": "street",
    "hook": "tea-plucker father ashamed to enter his daughter's prize-giving; her essay 'My father' is read on the mike while he stands outside the gate"
+  },
+  {
+   "id": "075",
+   "book": "The Book of Five Rings",
+   "item": "The Way of Training",
+   "relation": "elder sister / younger sister / mother",
+   "set": "street",
+   "hook": "two sisters in two school shifts share one pair of shoes; on the day of the younger's race the elder gives the shoes and sits her test in sandals; prize money buys a second pair"
+  },
+  {
+   "id": "076",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Experiencing Self and the Remembering Self",
+   "relation": "retired teacher father / son / old colleague",
+   "set": "shop",
+   "hook": "father insists on standing 4 hours in the bank pension queue; son finds the queue is where he meets old colleagues; son starts joining him monthly"
+  },
+  {
+   "id": "077",
+   "book": "The Art of War",
+   "item": "Build your opponent a golden bridge to retreat across",
+   "relation": "junior C&F clerk / senior boss / colleague",
+   "set": "shop",
+   "hook": "new clerk files a wrong HS code, container stuck at Chattogram port with daily demurrage; he hides it two days; boss lets him fix it himself and shares his own first mistake"
+  },
+  {
+   "id": "078",
+   "book": "Propaganda",
+   "item": "The Psychology of Public Relations",
+   "relation": "HSC student / mother / friend",
+   "set": "home",
+   "hook": "night before the exam a Messenger group sells '100% common' leaked questions for 500 tk; everyone buys and crams them; he studies; the questions were fake"
+  },
+  {
+   "id": "079",
+   "book": "The Dictator's Handbook",
+   "item": "The Rules of Politics: Keep your coalition small",
+   "relation": "college girl / local ward member / widow",
+   "set": "street",
+   "hook": "flood relief list is padded with the member's relatives while a widow is left out; a college girl proposes reading the list aloud on the school field"
+  },
+  {
+   "id": "080",
+   "book": "The Psychology of Money",
+   "item": "Save Money",
+   "relation": "probashi husband / wife / mother-in-law",
+   "set": "home",
+   "hook": "Qatar worker's mother says his wife wastes the remittance; wife shows a 4-year ledger with every taka and a row 'for myself: 0'"
   }
  ]
 }

@@ -1,0 +1,467 @@
+{
+ "id": "080",
+ "status": "ready",
+ "title_bn": "নিজের জন্য: ০",
+ "theme": "probashi",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "Save Money",
+  "title_bn": "সঞ্চয়ের আসল মানে"
+ },
+ "cast": {
+  "rina": {
+   "name": "রিনা",
+   "type": "young_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "masud": {
+   "name": "মাসুদ",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "shashuri": {
+   "name": "শাশুড়ি",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুমিল্লার এক বাড়ি। মাসুদ চার বছর কাতারে। প্রতি মাসে পঁয়ত্রিশ হাজার টাকা পাঠান, *বউয়ের কাছে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কুমিল্লা, প্রবাসীর বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসুদ কাতারে",
+       "value": "৪ বছর"
+      },
+      {
+       "label": "প্রতি মাসে পাঠান",
+       "value": "৩৫,০০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "চার বছরে একটা ইটও উঠলো না। কই যায় এত টাকা? বউ মানুষের হাতে টাকা দিলে *এমনই হয়*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shashuri": "point"
+    }
+   }
+  },
+  {
+   "say": "রিনা কিছু বলে না। চার বছর ধরে একই কথা শোনে। ভাত বাড়ে, প্লেট ধোয়, তারপর *চুপচাপ* ঘরে যায়।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কাতারে রাতে মায়ের ফোন আসে মাসুদের কাছে। প্রতিবার একই অভিযোগ। মাসুদের মনেও ধীরে ধীরে জমে *সন্দেহ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "কাতার, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "masud",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "masud",
+   "say": "রিনা, টাকাগুলা কই যায়? আম্মা কয় কিছুই *জমে নাই*।",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "masud",
+     "zoom": 1.4
+    },
+    "arms": {
+     "masud": "phone"
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "আপনি ছুটিতে আসেন। *আসলে* দেখাব।",
+   "tone": "softly",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মাসুদের মনের প্রশ্ন",
+   "card": {
+    "title": "চার বছরের সন্দেহ",
+    "items": [
+     {
+      "t": "১৬ লাখ টাকা কই গেল?",
+      "mark": "x"
+     },
+     {
+      "t": "বাড়ির কাজ শুরু হয় না কেন?",
+      "mark": "x"
+     },
+     {
+      "t": "রিনা হিসাব দেয় না কেন?",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ছুটির প্রথম রাত। মাসুদ জিজ্ঞেস করার আগেই রিনা আলমারি খুলল। বের করল একটা মোটা *লাল খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ছুটির প্রথম রাত",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "masud",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "চার বছরের প্রতিটা টাকা এইখানে। প্রতিটা রসিদ *পেছনে* রাখা আছে।",
+   "tone": "gently",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "সংসারের খাতা",
+     "lines": [
+      "আম্মার ওষুধ ও চোখের অপারেশন: ১,৮৫,০০০",
+      "ননদের বিয়ে: ৪,২০,০০০",
+      "দেবরের পড়া: ২,৬০,০০০",
+      "ব্যাংকে জমা (আপনার নামে): ৫,১০,০০০"
+     ]
+    },
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rina": "hold"
+    }
+   }
+  },
+  {
+   "say": "মাসুদ পাতা উল্টাতে লাগলেন। মায়ের চোখের অপারেশন, বোনের বিয়ে, ভাইয়ের ভর্তি। আর ব্যাংকে, *তাঁর নামে*, পাঁচ লাখ দশ হাজার।",
+   "scene": {
+    "cam": {
+     "focus": "masud",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শেষ পাতায় একটা ছোট্ট ঘর। রিনার হাতের লেখা। *নিজের জন্য: ০*।",
+   "pause": 1.0
+  },
+  {
+   "voice": "masud",
+   "say": "রিনা… চার বছরে তুমি নিজের জন্য *কিছু কেনো নাই*? একটা শাড়িও?",
+   "scene": {
+    "cam": {
+     "focus": "masud",
+     "zoom": 1.4
+    },
+    "moods": {
+     "masud": "surprised"
+    },
+    "arms": {
+     "masud": "down"
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "আপনি মরুভূমিতে চল্লিশ ডিগ্রিতে কাম করেন। আমি শাড়ি কিনলে মনে হইতো *আপনার ঘাম* পরতেছি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rina": "down"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে মাসুদ খাতাটা রাখলেন মায়ের সামনে। কিছু বললেন না। শুধু *প্রথম পাতাটা* খুলে দিলেন।",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "পরের সকাল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "masud",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "rina",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম লাইনেই লেখা— আম্মার চোখের অপারেশন। শাশুড়ি চশমা ঠিক করলেন। যে চোখে আজ তিনি খাতা পড়ছেন, সেই চোখের দাম *ওখানে লেখা*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "বউ… আমি তো কোনোদিন *জিগাই নাই*। খালি কইছি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shashuri": "face"
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "আম্মা, জিগানোর দরকার ছিল না। আপনি তো আমার *আম্মা*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rina": "hug"
+    }
+   }
+  },
+  {
+   "voice": "masud",
+   "say": "এইটা নতুন অ্যাকাউন্ট। তোমার নামে। প্রতি মাসে দুই হাজার। খাতায় একটা ঘর *বদলাইতে* হবে।",
+   "tone": "warmly",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ছুটির শেষ দিন",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "masud",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "masud": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "কোন ঘর?",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rina": "face"
+    }
+   }
+  },
+  {
+   "voice": "masud",
+   "say": "ওই যে, শেষ পাতার। শূন্যটা আর *দেখতে চাই না*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "masud",
+     "zoom": 1.4
+    },
+    "arms": {
+     "masud": "point"
+    }
+   }
+  },
+  {
+   "say": "লাল খাতার শেষ পাতায় এখন একটা কাটা দাগ। শূন্যর পাশে মাসুদের হাতে লেখা— *‘২,০০০। প্রতি মাসে। বাধ্যতামূলক।’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সংসারের হিসাব সবাই দেখে… *যে হিসাব রাখে, তাকে কেউ দেখে না*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "সংসারের হিসাব সবাই দেখে…",
+    "line2": "যে হিসাব রাখে,\nতাকে কেউ দেখে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "কাতার থেকে স্বামী টাকা পাঠান, শাশুড়ির সন্দেহ ‘বউ সব খরচ করে’… ছুটিতে এসে স্বামী দেখলেন একটা খাতা 📒",
+  "description": "মাসুদ চার বছর কাতারে। প্রতি মাসে বউ রিনার কাছে টাকা পাঠান। শাশুড়ির অভিযোগ— বউ সব উড়িয়ে দেয়। ছুটিতে এসে মাসুদ জিজ্ঞেস করতেই রিনা আলমারি থেকে বের করল একটা খাতা। শেষ পাতায় একটা লাইন— নিজের জন্য: শূন্য…",
+  "tags": [
+   "প্রবাসীর স্ত্রী",
+   "কাতার প্রবাসী",
+   "শাশুড়ি বউ",
+   "সংসারের হিসাব",
+   "ত্যাগ",
+   "bangla golpo",
+   "probashi golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চার বছরের প্রতিটা টাকার হিসাব খাতায় ছিল। শুধু একটা ঘর ফাঁকা— নিজের জন্য। 📒\nতোমার পরিবারে কে সবার হিসাব রাখে, অথচ নিজের জন্য কিছু রাখে না? 👇 #প্রবাসী #সংসার"
+ },
+ "thumbnail": {
+  "text": "নিজের জন্য: ০",
+  "sub": "চার বছরের খাতা"
+ }
+}

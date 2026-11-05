@@ -1,0 +1,448 @@
+{
+ "id": "077",
+ "status": "ready",
+ "title_bn": "ভুল এইচএস কোড",
+ "theme": "work",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Build your opponent a golden bridge to retreat across",
+  "title_bn": "ফেরার পথ খোলা রাখা"
+ },
+ "cast": {
+  "imran": {
+   "name": "ইমরান",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "rahman": {
+   "name": "রহমান সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "rina": {
+   "name": "রিনা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চট্টগ্রামের আগ্রাবাদ। চার মাস হলো ইমরানের প্রথম চাকরি। আর আজ সে জানল, তার একটা ভুলে বন্দরে আটকে আছে *একটা কন্টেইনার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "আগ্রাবাদ, চট্টগ্রাম, সিএন্ডএফ অফিস",
+    "props": [
+     "signboard",
+     "sign:রহমান সিএন্ডএফ এজেন্সি",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরির বয়স",
+       "value": "৪ মাস"
+      },
+      {
+       "label": "আটকে থাকা কন্টেইনার",
+       "value": "১টা"
+      },
+      {
+       "label": "ডেমারেজ",
+       "value": "রোজ ১৮,০০০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ডিক্লারেশনে এইচএস কোডের *দুইটা সংখ্যা উল্টো*। কাস্টমস মাল ছাড়ছে না। প্রতিদিন জরিমানা আঠারো হাজার।",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "ইমরান, গার্মেন্টসের কন্টেইনারটা এখনো ছাড়ে নাই? পার্টি *ফোন দিতেছে*।",
+   "tone": "curious",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "সেই দুপুর",
+    "props": [
+     "signboard",
+     "sign:রহমান সিএন্ডএফ এজেন্সি",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rina": "talk"
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "আপা, কাস্টমসে সার্ভার ডাউন। কাল *হয়ে যাবে*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    },
+    "arms": {
+     "imran": "down"
+    }
+   }
+  },
+  {
+   "say": "মিথ্যা। প্রথমটা সহজ ছিল। দ্বিতীয় দিন আরেকটা। প্রতিটা মিথ্যার সাথে জরিমানা বাড়ছে *আঠারো হাজার করে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "দ্বিতীয় রাতে ইমরান রিজাইন লেটার লিখল। ভাবল, সকালে টেবিলে রেখে *চলে যাবে*। কাউকে মুখ দেখাতে হবে না।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেসের ঘর, দ্বিতীয় রাত",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কিন্তু তৃতীয় দিন সকালে রহমান সাহেব আগেই অফিসে। টেবিলে খোলা সেই ফাইল। *কোডের পাশে লাল দাগ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তৃতীয় দিন সকাল",
+    "props": [
+     "signboard",
+     "sign:রহমান সিএন্ডএফ এজেন্সি",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "rahman",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "imran",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahman",
+   "say": "বসো। হাতের খামটা কী? *রিজাইন*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rahman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahman": "point"
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "স্যার, ভুলটা আমার। দুই দিন লুকাইছি। ছত্রিশ হাজার টাকা গেছে। আমি *চলে যাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    },
+    "arms": {
+     "imran": "hold"
+    }
+   }
+  },
+  {
+   "say": "রহমান সাহেব খামটা নিলেন। পড়লেন না। ড্রয়ারে রেখে দিলেন। তারপর বললেন একটা পুরোনো গল্প।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rahman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahman",
+   "say": "উনানব্বই সালে আমার প্রথম ভুলে একটা জাহাজের পুরা লট আটকাইছিল, *এক সপ্তাহ*। আমার বস আমারে বের করে নাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rahman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahman": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rahman",
+   "say": "চলে গেলে ভুলটা তোমার পিছে পিছে যাবে। ঠিক কইরা গেলে *ভুলটা থাকবে এইখানে*। কোনটা চাও?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rahman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahman": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rahman",
+   "say": "অ্যামেন্ডমেন্ট লিখবা, নিজে। কাস্টমসে যাবা, নিজে। আমি খালি *পাশে* দাঁড়াব। কথা তুমি বলবা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rahman",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rahman": "point"
+    }
+   }
+  },
+  {
+   "say": "সেই দুপুরে কাস্টমস হাউসে ইমরান নিজে ফাইল জমা দিল। ভুল স্বীকার, সংশোধন, জরিমানার রসিদ। রহমান সাহেব পাশে দাঁড়িয়ে, *একটা কথাও বললেন না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "কাস্টমস হাউস, সেই দুপুর",
+    "props": [
+     "signboard",
+     "sign:কাস্টমস হাউস — চট্টগ্রাম"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rahman",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সন্ধ্যা ছয়টায় কন্টেইনার ছাড়া পেল। ক্ষতি হলো ছত্রিশ হাজার। ইমরানের বেতন থেকে কাটা হলো— *শূন্য*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কন্টেইনার ছাড়া",
+       "value": "সন্ধ্যা ৬টা"
+      },
+      {
+       "label": "মোট ক্ষতি",
+       "value": "৩৬,০০০"
+      },
+      {
+       "label": "বেতন থেকে কাটা",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক বছর পর ইমরান অফিসের নতুন ছেলেদের ট্রেনিং দেয়। প্রথম দিন সবার হাতে দেয় একটা খাতা— *ভুলের খাতা*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ইমরানের ‘ভুলের খাতা’",
+     "lines": [
+      "এইচএস কোড— দুইবার মেলাও",
+      "ভুল হলে— এক ঘণ্টার মধ্যে বলো",
+      "লুকালে— জরিমানা রোজ বাড়ে"
+     ]
+    },
+    "set": "shop",
+    "light": "day",
+    "chip": "এক বছর পর",
+    "props": [
+     "signboard",
+     "sign:রহমান সিএন্ডএফ এজেন্সি",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "প্রথম নিয়ম— ভুল করলে এক ঘণ্টার মধ্যে বলবা। *দুই দিন* না। আমি জানি, দুই দিনের দাম কত।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    },
+    "arms": {
+     "imran": "point"
+    }
+   }
+  },
+  {
+   "say": "রহমান সাহেবের ড্রয়ারে এখনো আছে একটা না-খোলা খাম। ওপরে ইমরানের হাতে লেখা— *‘রিজাইন লেটার’*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভুল লুকালে বড় হয়… *স্বীকার করলে ছোট হয়ে যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভুল লুকালে বড় হয়…",
+    "line2": "স্বীকার করলে\nছোট হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "এক ভুল কোডে বন্দরে আটকে গেল কন্টেইনার, রোজ ১৮ হাজার জরিমানা… নতুন ছেলেটা লুকাল দুই দিন 📦",
+  "description": "চট্টগ্রামের এক সিএন্ডএফ এজেন্সিতে নতুন চাকরি ইমরানের। একটা ভুল এইচএস কোডে কন্টেইনার আটকে গেছে বন্দরে, প্রতিদিন আঠারো হাজার টাকা ডেমারেজ। ভয়ে দুই দিন কাউকে বলেনি। তৃতীয় দিন বস রহমান সাহেব ফাইলটা খুললেন…",
+  "tags": [
+   "অফিসের গল্প",
+   "চট্টগ্রাম বন্দর",
+   "সিএন্ডএফ",
+   "ভুল স্বীকার",
+   "বস",
+   "নতুন চাকরি",
+   "bangla golpo",
+   "office story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "ভুলটা ছিল এক লাইনের। লুকিয়ে রাখায় সেটা হয়ে গেল ছত্রিশ হাজার টাকার। 📦\nঅফিসে কোনো ভুল লুকিয়ে কখনো আরও বিপদে পড়েছ? 👇 #অফিস #চাকরি"
+ },
+ "thumbnail": {
+  "text": "ভুল কোড",
+  "sub": "২ দিন লুকানো"
+ }
+}

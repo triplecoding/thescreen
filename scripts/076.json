@@ -1,0 +1,493 @@
+{
+ "id": "076",
+ "status": "ready",
+ "title_bn": "পেনশনের লাইন",
+ "theme": "parents",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Experiencing Self and the Remembering Self",
+  "title_bn": "যে সময়টা মনে থাকে"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "sohel": {
+   "name": "সোহেল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "karim": {
+   "name": "করিম স্যার",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E8A33D",
+   "hair": "bald_grey",
+   "beard": "full_black",
+   "cap": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খুলনার এক ব্যাংক। মাসের প্রথম বৃহস্পতিবার। পেনশনের নয় হাজার আটশো টাকার জন্য আব্বা লাইনে দাঁড়ান— *চার ঘণ্টা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "খুলনা, সোনালী ব্যাংকের সামনে, সকাল ৯টা",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — পেনশন কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "passbook"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসের পেনশন",
+       "value": "৯,৮০০ টাকা"
+      },
+      {
+       "label": "লাইনে দাঁড়ানো",
+       "value": "৪ ঘণ্টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আব্বা, অ্যাপ খুলে দিছি। বাসায় বসে এক মিনিটে টাকা আসবো। চার ঘণ্টা *লাইনে* কেন?",
+   "tone": "frustrated",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sohel",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "sohel": "phone"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আমি ব্যাংকে যামু। মোবাইলে টাকা আমি *বিশ্বাস করি না*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আপনার হাঁটুতে ব্যথা। গরমে একবার *মাথা ঘুরছিল*। এইটা কি জেদ না?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sohel": "talk"
+    }
+   }
+  },
+  {
+   "say": "আব্বা উত্তর দিলেন না। চশমা খুলে রুমাল দিয়ে মুছতে লাগলেন। এই কাজটা তিনি করেন *কথা এড়াতে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সোহেল তিন মাস চেষ্টা করল",
+   "card": {
+    "title": "আব্বাকে বোঝানোর চেষ্টা",
+    "items": [
+     {
+      "t": "অ্যাপের ভিডিও দেখানো",
+      "mark": "x"
+     },
+     {
+      "t": "ব্যাংকের ম্যানেজারকে দিয়ে ফোন",
+      "mark": "x"
+     },
+     {
+      "t": "রাগ করে কথা বন্ধ, দুই দিন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরের মাসে সোহেল অফিস থেকে ছুটি নিল। আব্বাকে না জানিয়ে গেল ব্যাংকে। দেখতে— *ওখানে কী আছে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরের মাসের প্রথম বৃহস্পতিবার",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — পেনশন কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "লাইনে দাঁড়ানো চল্লিশজন বৃদ্ধ। প্রায় সবাই অবসরপ্রাপ্ত শিক্ষক, পোস্টমাস্টার, কেরানি। আর লাইনটা লাইন না— *একটা আড্ডা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পেনশনের লাইন",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — পেনশন কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "karim",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "হাসান স্যার, আপনার সেই ছাত্র না জজ হইছে? কন তো গল্পটা, *আরেকবার*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "talk"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "হইছে মানে! পরীক্ষায় অংকে বারো পাইছিল। আমি কইলাম, তুই *আইন* পড়। ব্যস!",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "talk"
+    }
+   }
+  },
+  {
+   "say": "সোহেল দেয়ালের আড়াল থেকে দেখল। আব্বা হাসছেন। গলা উঁচু। হাত নেড়ে গল্প বলছেন। বাসায় তিনি *এভাবে কোনোদিন* হাসেন না।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "স্যার, জানেন তো, মাসে এই এক দিনই *কথা কই* আমরা। বাকি ঊনত্রিশ দিন, ঘরে টিভি।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "down"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "সোহেল? তুই এইখানে? *অফিস* নাই?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বেলা একটা",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — পেনশন কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "sohel",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "abba": "surprised"
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আব্বা, আপনি টাকা তুলতে আসেন না। আপনি আসেন *করিম স্যারের* জন্য, তাই না?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sohel": "talk"
+    }
+   }
+  },
+  {
+   "say": "আব্বা চুপ। তারপর খুব আস্তে বললেন একটা কথা, যেটা চল্লিশ বছর শিক্ষকতার পরও কাউকে *বলেননি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ক্লাস ছিল, ছাত্র ছিল। রিটায়ারের পর ঘর খালি। এই লাইনে দাঁড়াইলে মনে হয়, আমি এখনো *কেউ একজন*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "down"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "তাইলে আর অ্যাপ না, আব্বা। খালি একটা শর্ত— প্রতি মাসে লাইনে *আমিও* দাঁড়াব। আপনার পাশে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    },
+    "arms": {
+     "sohel": "hug"
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি মাসে সোহেল ছুটি নেয়। হাতে ফ্লাস্কে চা, প্লাস্টিকের কাপ। লাইনের *চল্লিশজনের জন্য*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "day",
+    "chip": "প্রতি মাসের প্রথম বৃহস্পতিবার",
+    "props": [
+     "signboard",
+     "sign:ব্যাংক — পেনশন কাউন্টার"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "sohel",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "karim",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "karim",
+   "say": "হাসান স্যার, আপনার ছেলে তো এখন আমাদের *ক্লাস ক্যাপ্টেন*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "karim",
+     "zoom": 1.4
+    },
+    "arms": {
+     "karim": "talk"
+    }
+   }
+  },
+  {
+   "say": "ব্যাংকের গার্ড এখন জানে, প্রথম বৃহস্পতিবার লাইনের পাশে চারটা *চেয়ার* রাখতে হয়। হাঁটু ব্যথার স্যারদের জন্য।",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লাইনে দাঁড়ানো",
+       "value": "৪ ঘণ্টা"
+      },
+      {
+       "label": "সাথে",
+       "value": "ছেলে + চা"
+      },
+      {
+       "label": "মাথা ঘোরা",
+       "value": "০"
+      }
+     ]
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "আমরা ভাবি তাঁরা জেদ করেন… *আসলে তাঁরা একটু সঙ্গ খোঁজেন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "আমরা ভাবি তাঁরা জেদ করেন…",
+    "line2": "আসলে তাঁরা\nএকটু সঙ্গ খোঁজেন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "অ্যাপে এক মিনিটে পেনশন তোলা যায়, তবু আব্বা চার ঘণ্টা ব্যাংকের লাইনে দাঁড়ান… কারণটা শুনে ছেলে চুপ 🏦",
+  "description": "রিটায়ার্ড স্কুলশিক্ষক আব্বা প্রতি মাসে চার ঘণ্টা ব্যাংকের লাইনে দাঁড়ান পেনশনের নয় হাজার আটশো টাকার জন্য। ছেলে সোহেল মোবাইল ব্যাংকিং খুলে দিল, আব্বা রাজি না। জেদ ভেবে রাগ করল সোহেল। তারপর একদিন সে নিজে গেল সেই লাইনে…",
+  "tags": [
+   "বাবার গল্প",
+   "অবসরপ্রাপ্ত শিক্ষক",
+   "পেনশন",
+   "একাকীত্ব",
+   "বাবা ছেলের গল্প",
+   "bangla golpo",
+   "babar golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছেলে ভেবেছিল আব্বা জেদ করছেন। আসলে ব্যাংকের লাইনটাই ছিল তাঁর মাসের একমাত্র আড্ডা। 🏦\nতোমার বাবা-মায়ের সপ্তাহের সবচেয়ে প্রিয় মুহূর্ত কোনটা, জানো? 👇 #বাবা #অবসর"
+ },
+ "thumbnail": {
+  "text": "চার ঘণ্টার লাইন",
+  "sub": "আসল কারণ"
+ }
+}

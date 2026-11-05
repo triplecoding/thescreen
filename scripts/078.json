@@ -1,0 +1,481 @@
+{
+ "id": "078",
+ "status": "ready",
+ "title_bn": "পাঁচশো টাকার প্রশ্ন",
+ "theme": "honesty",
+ "source": {
+  "book": "Propaganda",
+  "author": "Edward Bernays",
+  "author_bn": "এডওয়ার্ড বার্নেস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Psychology of Public Relations",
+  "title_bn": "গুজব কীভাবে ছড়ায়"
+ },
+ "cast": {
+  "rakib": {
+   "name": "রাকিব",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "voice": "teen_boy"
+  },
+  "ma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "tonmoy": {
+   "name": "তন্ময়",
+   "type": "teen_boy",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "এইচএসসি রসায়ন পরীক্ষার আগের রাত। মেসেঞ্জার গ্রুপে একটা মেসেজ— *একশো পার্সেন্ট কমন প্রশ্ন*। মাত্র পাঁচশো টাকা।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ময়মনসিংহ, পরীক্ষার আগের রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "এইচএসসি ২০২৬ কমন সাজেশন",
+     "msgs": [
+      {
+       "who": "অ্যাডমিন",
+       "t": "১০০% কমন প্রশ্ন! মাত্র ৫০০ টাকা"
+      },
+      {
+       "who": "অ্যাডমিন",
+       "t": "আর ৩০ মিনিট, তারপর দাম ১০০০"
+      },
+      {
+       "who": "২৩৪ জন",
+       "t": "পাঠাইছি ভাই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নিচে দুইশো চৌত্রিশজনের কমেন্ট— পাঠাইছি ভাই। আর ত্রিশ মিনিট পর দাম *ডাবল*।",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tonmoy",
+   "say": "দোস্ত, পুরা ক্লাস কিনছে! তুই কিনবি না? পাঁচশো টাকায় *এ-প্লাস*!",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "night",
+    "chip": "রাত সাড়ে নয়টা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "tonmoy",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tonmoy": "phone"
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "যে লোক জানে প্রশ্ন কী আসবো, সে পাঁচশো টাকায় *আমার কাছে বেচবো* কেন?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rakib": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tonmoy",
+   "say": "আরে দর্শন বাদ দে! দুইশো চৌত্রিশজন কি সবাই *বোকা*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "tonmoy",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tonmoy": "wave"
+    }
+   }
+  },
+  {
+   "say": "রাকিবের মনেও খচখচ। দুইশো চৌত্রিশজন। যদি সত্যি হয়? যদি *সে একাই* পিছিয়ে পড়ে?",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা চা নিয়ে এলেন। আম্মা দর্জির কাজ করেন। পাঁচশো টাকা মানে তাঁর *দুইটা ব্লাউজের সেলাই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত দশটা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rakib",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "কী রে, মুখ শুকনা কেন? *কী হইছে*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "hold"
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "আম্মা, সবাই একটা প্রশ্ন কিনছে। আমি কিনি নাই। যদি সত্যি হয়, আমি *পিছায়া যাব*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rakib": "down"
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "যদি মিথ্যা হয়? তাইলে পাঁচশো টাকার সাথে তোর *আজকের রাতটাও* যাবে। সেইটা কেউ ফেরত দিবো না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    },
+    "arms": {
+     "ma": "talk"
+    }
+   }
+  },
+  {
+   "say": "রাকিব ফোনটা উল্টে রাখল। বই খুলল। রাত দুইটা পর্যন্ত সে পড়ল *পুরো সিলেবাসের রিভিশন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সেই রাতে বন্ধুরা যা করল",
+   "card": {
+    "title": "‘কমন প্রশ্নের’ রাত",
+    "items": [
+     {
+      "t": "পাঁচশো টাকা পাঠানো",
+      "mark": "x"
+     },
+     {
+      "t": "বিশটা প্রশ্নের উত্তর মুখস্থ",
+      "mark": "x"
+     },
+     {
+      "t": "বাকি সিলেবাস— ‘লাগবে না’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরদিন সকাল দশটা। প্রশ্ন হাতে পেয়ে হলের অর্ধেক ছেলে-মেয়ে *থমকে গেল*। বিশটা প্রশ্নের একটাও মেলেনি।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরীক্ষার হল, পরদিন সকাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "tonmoy",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "rakib",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tonmoy",
+   "say": "দোস্ত, একটাও কমন না। আর গ্রুপটা… গ্রুপটা *ডিলিট* হয়ে গেছে।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "tonmoy",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tonmoy": "face"
+    }
+   }
+  },
+  {
+   "say": "দুইশো চৌত্রিশজন, প্রত্যেকে পাঁচশো। এক রাতে প্রতারকের পকেটে গেল এক লাখ সতেরো হাজার টাকা। আর তার চেয়ে দামি *একটা রাত*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গ্রুপের সদস্য",
+       "value": "২৩৪ জন"
+      },
+      {
+       "label": "প্রতারক নিল",
+       "value": "১,১৭,০০০ টাকা",
+       "red": true
+      },
+      {
+       "label": "কমন প্রশ্ন",
+       "value": "০টা"
+      }
+     ]
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "আয়, পরের পরীক্ষা তিন দিন পর। আমার নোট আছে। আজকে থেকে *একসাথে* পড়ি।",
+   "tone": "warmly",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "evening",
+    "chip": "সেই বিকেল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tonmoy",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "rakib": "talk"
+    }
+   }
+  },
+  {
+   "voice": "tonmoy",
+   "say": "দোস্ত, তোরে বোকা কইছিলাম। আসলে বোকা ছিলাম *দুইশো চৌত্রিশজন*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "tonmoy",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tonmoy": "down"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে রাকিব নিজের ক্লাসের গ্রুপে লিখল একটা ছোট মেসেজ। *পরের বছরের ছোট ভাইদের* জন্য।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ma",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আম্মার দুইটা ব্লাউজের সেলাইয়ের টাকা বেঁচে গেল। সেই টাকায় রাকিব কিনল একটা নতুন *রসায়ন গাইড*— তন্ময়ের জন্য।",
+   "pause": 0.8,
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "রাকিবের মেসেজ",
+     "lines": [
+      "যে প্রশ্ন জানে, সে বেচে না",
+      "বেচলে সে প্রশ্ন জানে না",
+      "৫০০ টাকায় শুধু একটা জিনিস কেনা যায়— আফসোস"
+     ]
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘সবাই কিনছে’— এটা প্রমাণ না… *এটা প্রতারকের বিজ্ঞাপন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘সবাই কিনছে’— এটা প্রমাণ না…",
+    "line2": "এটা প্রতারকের\nবিজ্ঞাপন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পরীক্ষার আগের রাতে মেসেঞ্জারে ‘ফাঁস প্রশ্ন’, পাঁচশো টাকা… পুরো ক্লাস কিনল, রাকিব কিনল না 📝",
+  "description": "এইচএসসি পরীক্ষার আগের রাত। মেসেঞ্জার গ্রুপে বিজ্ঞাপন— ‘১০০% কমন প্রশ্ন, মাত্র ৫০০ টাকা’। বন্ধুরা সবাই কিনল, রাত জেগে মুখস্থ করল। রাকিব কিনল না। সবাই বলল বোকা। পরদিন সকালে প্রশ্ন হাতে পেয়ে…",
+  "tags": [
+   "পরীক্ষার গল্প",
+   "প্রশ্ন ফাঁস প্রতারণা",
+   "এইচএসসি",
+   "সচেতনতা",
+   "সততার গল্প",
+   "bangla golpo",
+   "student motivation bangla",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই কিনেছিল ‘ফাঁস প্রশ্ন’। রাকিব কিনেছিল আরও চার ঘণ্টা পড়া। 📝\n‘সবাই করছে’ দেখে কখনো ভুল কিছু করেছ, পরে আফসোস হয়েছে? 👇 #পরীক্ষা #সচেতনতা"
+ },
+ "thumbnail": {
+  "text": "১০০% কমন?",
+  "sub": "৫০০ টাকা"
+ }
+}

@@ -1,0 +1,502 @@
+{
+ "id": "079",
+ "status": "ready",
+ "title_bn": "ত্রাণের লিস্ট",
+ "theme": "community",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Rules of Politics: Keep your coalition small",
+  "title_bn": "গোপন তালিকার রাজনীতি"
+ },
+ "cast": {
+  "shapla": {
+   "name": "শাপলা",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2C14E",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "member": {
+   "name": "মেম্বার সাহেব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "beard": "full_black",
+   "teep": true,
+   "voice": "man"
+  },
+  "amena": {
+   "name": "আমেনা বুবু",
+   "type": "old_woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "কুড়িগ্রামের এক চরে বন্যা। দুইশো ষাট পরিবার পানিবন্দি। ত্রাণ এসেছে দুইশো জনের। লিস্ট বানিয়েছেন— *মেম্বার সাহেব*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কুড়িগ্রাম, চরের স্কুলমাঠ, বন্যার পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "member",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ত্রাণের চাল",
+       "value": "১০ কেজি করে"
+      },
+      {
+       "label": "লিস্টে নাম",
+       "value": "২০০টা"
+      },
+      {
+       "label": "পানিবন্দি পরিবার",
+       "value": "২৬০টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "শাপলা রে, আমার নাম কি লিস্টে *উঠছে*? ঘরে চাল নাই তিন দিন।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "আমেনা বুবুর ঘর, পানি হাঁটু পর্যন্ত",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shapla",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amena": "down"
+    }
+   }
+  },
+  {
+   "say": "শাপলা লিস্ট দেখেছে। আমেনা বুবুর নাম নেই। অথচ মেম্বার সাহেবের চাচাতো ভাইয়ের নাম আছে *তিন জায়গায়*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "থাক মা, মেম্বারের সাথে লাগিস না। গরিবের নাম *পরের বার* উঠবো।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    },
+    "arms": {
+     "amena": "down"
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "বুবু, পরের বার পর্যন্ত আপনি কী খাবেন? *পানি*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "talk"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "শাপলার মাথায় যা যা এল",
+   "card": {
+    "title": "কোনটাই কাজের না",
+    "items": [
+     {
+      "t": "মেম্বারের সাথে ঝগড়া— কেউ পাশে দাঁড়াবে না",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুকে পোস্ট— পরে আরও বিপদ",
+      "mark": "x"
+     },
+     {
+      "t": "চুপ থাকা— আমেনা বুবু না খেয়ে থাকবেন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পরদিন সকালে ত্রাণ বিতরণ। মাঠে তিনশো মানুষ। শাপলা সবার সামনে মেম্বার সাহেবের কাছে গেল। ঝগড়া না, *একটা প্রস্তাব*।",
+   "scene": {
+    "widget": null,
+    "set": "street",
+    "light": "day",
+    "chip": "পরের দিন, ত্রাণ বিতরণের সকাল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "member",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "মেম্বার চাচা, লিস্টটা মাইকে পইড়া দেন। সবাই নিজের নাম শুনুক। কেউ *বাদ পড়লে* এখনই জানা যাবে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "talk"
+    }
+   }
+  },
+  {
+   "voice": "member",
+   "say": "মাইকে পড়ার কী দরকার? লিস্ট তো *ঠিক আছে*।",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "member",
+     "zoom": 1.4
+    },
+    "arms": {
+     "member": "cross"
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "ঠিক থাকলে তো পড়তে *অসুবিধা নাই*, চাচা। আপনার সুনামই হইবো।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "talk"
+    }
+   }
+  },
+  {
+   "say": "মাঠ চুপ। তিনশো মানুষ তাকিয়ে আছে। এখন না বললে সবাই *বুঝে যাবে*। মেম্বার সাহেব মাইকটা নিলেন।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "member",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাপলা জানত, মেম্বার সাহেব খারাপ মানুষ না। শুধু অন্ধকারে লিস্ট বানালে সবাই প্রথমে *নিজের মানুষের* নাম লেখে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "member",
+   "say": "সাতচল্লিশ নম্বর, আলাল মিয়া। …একশো বারো, আলাল উদ্দিন। …একশো *উননব্বই*…",
+   "tone": "flatly",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মাইকে নাম পড়া",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "member",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "member": "hold"
+    }
+   }
+  },
+  {
+   "say": "তৃতীয়বার একই নাম পড়তেই মাঠে গুঞ্জন। কেউ হাসল। কেউ জোরে বলল— *আলাল ভাই কয়বার খায়*?",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "member",
+   "say": "আচ্ছা… লিস্টে কিছু ভুল আছে। যার যার নাম নাই, *হাত তোলো*। এখনই ঠিক করি।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "member",
+     "zoom": 1.4
+    },
+    "arms": {
+     "member": "face"
+    }
+   }
+  },
+  {
+   "say": "হাত উঠল একষট্টিটা। প্রথম হাতটা আমেনা বুবুর। কাঁপা হাত, কিন্তু *উঁচু*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "তিন দিন পর ভাত রান্ধমু রে মা। তোর নামটা আমি *নামাজে* কমু।",
+   "tone": "tearful",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ডুপ্লিকেট নাম",
+       "value": "২৮টা"
+      },
+      {
+       "label": "নতুন যোগ হলো",
+       "value": "৬১ জন"
+      },
+      {
+       "label": "বাকি থাকল",
+       "value": "০"
+      }
+     ]
+    },
+    "set": "street",
+    "light": "day",
+    "chip": "সেই দুপুর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "amena": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "বুবু, নাম তো আপনার আগেই থাকার কথা ছিল। আমি খালি *জোরে পড়াইলাম*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "hug"
+    }
+   }
+  },
+  {
+   "voice": "member",
+   "say": "শাপলা, তুই আজকে আমার মান বাঁচাইলি, না *মান খাইলি*, বুঝতেছি না।",
+   "tone": "sighs",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিকেল",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "member",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "shapla",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "member": "talk"
+    }
+   }
+  },
+  {
+   "voice": "shapla",
+   "say": "চাচা, সামনের বার লিস্ট নিজেই মাইকে পইড়েন। দেখবেন, মানুষ আপনারে *মাথায় তুইলা* রাখবো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    },
+    "arms": {
+     "shapla": "talk"
+    }
+   }
+  },
+  {
+   "say": "এরপর থেকে ওই চরে যেকোনো ত্রাণের লিস্ট আগে স্কুলের দেয়ালে টাঙানো হয়। আর পড়া হয় মাইকে— *সবার সামনে*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অন্ধকারে লিস্টে আপনজনের নাম বাড়ে… *আলোতে ফেরে ঠিক মানুষের নাম*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অন্ধকারে লিস্টে আপনজনের নাম বাড়ে…",
+    "line2": "আলোতে ফেরে\nঠিক মানুষের নাম।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বন্যার ত্রাণে ২০০ নামের লিস্ট, অথচ বিধবা আমেনা বুবুর নাম নাই… কলেজের মেয়ে শাপলা একটা প্রস্তাব দিল 🌊",
+  "description": "কুড়িগ্রামের এক চরে বন্যা। ত্রাণের চাল দশ কেজি করে, লিস্ট বানিয়েছেন মেম্বার সাহেব। সেই লিস্টে তাঁর আত্মীয়দের নাম তিনবার, অথচ বিধবা আমেনা বুবুর নাম নেই। কলেজপড়ুয়া শাপলা ঝগড়া করল না। শুধু একটা প্রস্তাব দিল— লিস্টটা মাইকে পড়া হোক…",
+  "tags": [
+   "বন্যার গল্প",
+   "ত্রাণ",
+   "কুড়িগ্রাম",
+   "গ্রামের গল্প",
+   "ন্যায়বিচার",
+   "স্বচ্ছতা",
+   "bangla golpo",
+   "শিক্ষণীয় গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "গোপন লিস্টে আপনজনের নাম বাড়ে। মাইকে পড়লে ঠিক মানুষের নাম ফেরে। 🌊\nতোমার এলাকায় কখনো এমন অন্যায় দেখেছ, যেটা শুধু ‘সবার সামনে’ আনলেই ঠিক হয়ে যেত? 👇 #বন্যা #ন্যায়"
+ },
+ "thumbnail": {
+  "text": "লিস্টে নাম নাই",
+  "sub": "ত্রাণের চাল"
+ }
+}
