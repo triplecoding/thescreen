@@ -1,0 +1,466 @@
+{
+ "id": "054",
+ "status": "ready",
+ "title_bn": "পিয়ন সেলিম ভাইয়ের ছেলে",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 4",
+  "chapter_bn": "চতুর্থ ধাপ",
+  "title": "See People as They Are: Social Intelligence",
+  "title_bn": "মানুষকে যেমন, তেমন দেখো"
+ },
+ "cast": {
+  "selim": {
+   "name": "সেলিম ভাই",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8FA7B5",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "nazma": {
+   "name": "নাজমা ম্যাডাম",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "sari",
+   "color": "#6B4E9B",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "araf": {
+   "name": "আরাফ",
+   "type": "teen_boy",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "আঠারো বছর মতিঝিলের এক অফিসে পিয়ন। দিনে ষাট কাপ চা। অথচ অফিসের *অর্ধেক মানুষ* তাঁর পুরো নামটাও জানে না।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "মতিঝিল, অফিসের সিঁড়ি",
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "১৮ বছর"
+      },
+      {
+       "label": "রোজ চা",
+       "value": "৬০ কাপ"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nazma",
+   "tone": "annoyed",
+   "say": "এই সেলিম! চা ঠান্ডা কেন? *কতবার বলব*!",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "day",
+    "chip": "অ্যাকাউন্টস সেকশন",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "nazma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "selim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "tone": "softly",
+   "say": "সরি ম্যাডাম। এখনই *গরম করে* আনছি।",
+   "scene": {
+    "arms": {
+     "nazma": "down"
+    },
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাজমা ম্যাডাম অফিসের সবচেয়ে কড়া মানুষ। সেলিম ভাই তাঁর টেবিলে যান সবচেয়ে ভয়ে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "কেউ জানে না, সেলিম ভাইয়ের প্রতিটা দুপুর কাটে সিঁড়ির নিচে, *ছেলের অঙ্ক বই* হাতে।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "দুপুরের বিরতি",
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বেতন আঠারো হাজার। নিজে পড়েছেন ক্লাস এইট পর্যন্ত। কিন্তু ছেলের প্রতিটা অঙ্ক তিনি আগে *নিজে বোঝেন*, তারপর রাতে বোঝান।",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ছেলের জন্য তাঁর তিনটা নিয়ম ছিল।",
+   "card": {
+    "title": "সেলিম ভাইয়ের নিয়ম",
+    "items": [
+     {
+      "t": "অফিসের কষ্টের কথা বাসায় না",
+      "mark": "x"
+     },
+     {
+      "t": "দুপুরের টিফিনের টাকায় গাইড বই",
+      "mark": "x"
+     },
+     {
+      "t": "ছেলের সামনে কখনো ‘আমি পিয়ন’ না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এসএসসির রেজাল্টের দিন। দুপুর দুইটায় সেলিম ভাইয়ের ফোন বাজল।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "রেজাল্টের দিন",
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "araf",
+   "tone": "excited",
+   "say": "আব্বা! *জিপিএ ফাইভ*! আর বোর্ডে… আমার রোল *তিন নম্বরে*!",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "সেলিম ভাই সিঁড়িতেই বসে পড়লেন। চায়ের ট্রে নামিয়ে রাখলেন। কিছুক্ষণ *কোনো শব্দ* করতে পারলেন না।",
+   "pause": 1.0,
+   "scene": {
+    "moods": {
+     "selim": "crying"
+    },
+    "arms": {
+     "selim": "face"
+    },
+    "holds": {
+     "selim": "none"
+    },
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.55
+    }
+   }
+  },
+  {
+   "say": "বিকেলে অফিসে মিষ্টির প্যাকেট। সবাই খেল। কেউ জিজ্ঞেস করল না, *কীসের মিষ্টি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "nazma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "nazma",
+   "tone": "flatly",
+   "say": "সেলিম, মিষ্টি কেন? *বিয়ে-টিয়ে* নাকি?",
+   "scene": {
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "selim",
+   "tone": "softly",
+   "say": "না ম্যাডাম। ছেলেটা… *বোর্ডে তিন নম্বর* হয়েছে।",
+   "scene": {
+    "cam": {
+     "focus": "selim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঘরটা হঠাৎ চুপ। নাজমা ম্যাডামের হাতের কলম *থেমে গেল*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "nazma": "surprised"
+    },
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "nazma",
+   "tone": "sad",
+   "say": "আঠারো বছর… আপনার ছেলের নামটাও তো *জানি না*, সেলিম ভাই।",
+   "scene": {
+    "moods": {
+     "nazma": "sad"
+    },
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "সেদিন প্রথমবার কেউ তাঁকে ডাকল— *সেলিম ভাই*।",
+   "card": {
+    "text": "সেদিন প্রথমবার কেউ ডাকল—\n*সেলিম ভাই*।"
+   }
+  },
+  {
+   "say": "পরদিন সকালে নাজমা ম্যাডাম নিজে উঠে দাঁড়ালেন। সামনে সেলিম ভাই, পাশে লাজুক মুখে আরাফ।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "nazma",
+      "x": 0.28,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "selim",
+      "x": 0.58,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "araf",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nazma",
+   "tone": "warmly",
+   "say": "আরাফ, এই কলমটা আমার আব্বার ছিল। তোমাকে দিলাম। তোমার আব্বা *আমাদের সবার চেয়ে বড়* কাজ করেছেন।",
+   "scene": {
+    "arms": {
+     "nazma": "talk"
+    },
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "araf",
+   "tone": "softly",
+   "say": "থ্যাংক ইউ ম্যাডাম। আব্বা বলে, আপনি নাকি *অফিসের সবচেয়ে ভালো* মানুষ।",
+   "scene": {
+    "cam": {
+     "focus": "araf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাজমা ম্যাডাম হেসে ফেললেন। তারপর চোখ মুছলেন। *সেলিম ভাই এই কথা কখনো বলেননি*— শুধু ছেলেকে বলতেন।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "nazma": "crying"
+    },
+    "cam": {
+     "focus": "nazma",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "এখন দুপুরে সেলিম ভাইকে আর সিঁড়ির নিচে বসতে হয় না। অ্যাকাউন্টস সেকশনে তাঁর জন্য একটা *চেয়ার* থাকে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এখন",
+    "props": [
+     "table",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "selim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "অ্যাকাউন্টস সেকশনের খাতায় এখন একটা নাম পুরোটা লেখা থাকে— *মোহাম্মদ সেলিম উদ্দিন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পদ দেখে মানুষ মাপা যায়… *মানুষ দেখে মানুষ চেনা যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "পদ দেখে মানুষ মাপা যায়…",
+    "line2": "মানুষ দেখে\nমানুষ চেনা যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৮ বছর অফিসের পিয়ন, কেউ নামও জানত না… তারপর ছেলে বোর্ডে তিন নম্বর 🎓",
+  "description": "আঠারো বছর মতিঝিলের অফিসে পিয়ন সেলিম ভাই। দিনে ষাট কাপ চা, কেউ পুরো নামটাও জানে না। কড়া নাজমা ম্যাডামের ধমক রোজকার। তারপর এসএসসির রেজাল্টের দিন বিকেলে এল মিষ্টির প্যাকেট…",
+  "tags": [
+   "বাবার গল্প",
+   "বাবা ছেলের গল্প",
+   "এসএসসি রেজাল্ট",
+   "অফিসের গল্প",
+   "bangla golpo",
+   "motivational story bangla",
+   "সম্মান",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আঠারো বছরের ষাট কাপ চা যা পারেনি, ছেলের একটা রেজাল্ট তা পারল। 🎓\n\nতোমার অফিস বা স্কুলের কোন মানুষটার নাম তুমি আজও জানো না? 👇\n\n#বাবা #সম্মান"
+ },
+ "thumbnail": {
+  "text": "সেলিম ভাই",
+  "sub": "বোর্ডে তিন নম্বর"
+ }
+}

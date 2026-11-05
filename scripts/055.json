@@ -1,0 +1,501 @@
+{
+ "id": "055",
+ "status": "ready",
+ "title_bn": "ভাইয়া আম খায় না",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "CHAPTER 2",
+  "chapter_bn": "দুই নম্বর অধ্যায়",
+  "title": "Reciprocation",
+  "title_bn": "প্রতিদান"
+ },
+ "cast": {
+  "ratul": {
+   "name": "রাতুল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "rumi": {
+   "name": "রুমি",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2C14E",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "ma": {
+   "name": "মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাজশাহীর এক বাড়িতে পনেরো বছর ধরে একটা নিয়ম। জ্যৈষ্ঠ মাস এলেই সবাই জানে— *রাতুল আম খায় না*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "রাজশাহী, জ্যৈষ্ঠ মাস",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ratul",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "cross"
+     },
+     {
+      "id": "rumi",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আম না খাওয়া",
+       "value": "১৫ বছর"
+      },
+      {
+       "label": "কারণ",
+       "value": "‘এলার্জি’",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rumi",
+   "tone": "playfully",
+   "say": "ভাইয়া, একটা টুকরা অন্তত খাও! *ল্যাংড়া*, একদম মিষ্টি।",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "rumi": "talk"
+    },
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ratul",
+   "tone": "laughs",
+   "say": "না রে, আমার গলা চুলকায়। তুই খা, *পুরোটা* খা।",
+   "scene": {
+    "cam": {
+     "focus": "ratul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমি হাসল। এই উত্তর সে শুনে আসছে ছয় বছর বয়স থেকে। কোনোদিন *প্রশ্ন করেনি*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "বাবা মারা যাওয়ার পর সংসার চলত মায়ের সেলাইয়ে। উঠানের গাছে আম ধরত গুনে গুনে— *একজনের ভাগ* হয়, দুজনের না।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "পনেরো বছর আগে",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মায়ের খাতা",
+     "lines": [
+      "গাছের আম: ১১টা",
+      "বিক্রি: ৮টা — রুমির স্কুলের বেতন",
+      "বাকি: ৩টা"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সেদিন বারো বছরের রাতুল মায়ের আঁচল টেনে ফিসফিস করে বলেছিল—",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "ratul",
+   "tone": "softly",
+   "say": "মা, আমি আর আম খামু না। *রুমিরে কইয়ো না*।",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এরপর পনেরো বছর রাতুল একটা অভিনয় চালিয়ে গেছে।",
+   "card": {
+    "title": "রাতুলের পনেরো বছরের অভিনয়",
+    "items": [
+     {
+      "t": "‘আমার এলার্জি আছে’",
+      "mark": "x"
+     },
+     {
+      "t": "আমের দিনে বন্ধুদের বাড়ি পালানো",
+      "mark": "x"
+     },
+     {
+      "t": "নিজের ভাগ চুপচাপ রুমির প্লেটে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আজ রুমির গায়ে হলুদ। কাল সে চলে যাবে সিলেটে, শ্বশুরবাড়ি। রাতে ব্যাগ গোছাতে গোছাতে মা হঠাৎ থেমে গেলেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "গায়ে হলুদের রাত",
+    "props": [
+     "bed",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rumi",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ma",
+   "tone": "tearful",
+   "say": "একটা কথা কই, রুমি। তোর ভাইয়ের *কোনো এলার্জি নাই*। কোনোদিন আছিলও না।",
+   "scene": {
+    "moods": {
+     "ma": "crying"
+    },
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "tone": "curious",
+   "say": "মানে? তাহলে… তাহলে *পনেরো বছর*?",
+   "scene": {
+    "moods": {
+     "rumi": "surprised"
+    },
+    "holds": {
+     "rumi": "none"
+    },
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মা কিছু বললেন না। শুধু পুরোনো খাতাটা খুলে দেখালেন। *এগারোটা আম, তিনটা বাকি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "যে ভাই রোজ খেপাত, সেই ভাই পনেরো বছর *নিজের ভাগ* রেখে গেছে তার প্লেটে।",
+   "card": {
+    "text": "যে ভাই রোজ খেপাত…\nসেই ভাই রেখে গেছে *নিজের ভাগ*।"
+   }
+  },
+  {
+   "say": "রুমি সেই রাতে ঘুমাল না। ভোরে উঠে উঠানের গাছ থেকে নিজের হাতে একটা আম পাড়ল।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "বিয়ের সকাল",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "rumi",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বিদায়ের মুহূর্ত। গেটের সামনে সবাই কাঁদছে। রুমি ভাইয়ের হাতে একটা স্টিলের বাটি দিল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বিদায়",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "ratul",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rumi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বাটিতে একটা আম, *দুই ভাগ* করা। ঢাকনার ওপর রুমির হাতে লেখা চিরকুট।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "রুমির চিরকুট",
+     "lines": [
+      "ভাইয়া, এবার অর্ধেক তোমার।",
+      "আর কোনোদিন মিথ্যা এলার্জি না।"
+     ]
+    },
+    "moods": {
+     "ratul": "surprised"
+    },
+    "holds": {
+     "rumi": "none"
+    },
+    "cam": {
+     "focus": "ratul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ratul",
+   "tone": "softly",
+   "say": "মা… *বলে দিছে*?",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "ratul": "crying"
+    },
+    "cam": {
+     "focus": "ratul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rumi",
+   "tone": "tearful",
+   "say": "পনেরো বছর তুমি খাওয়াইছো ভাইয়া। এবার আমার সামনে খাও, *আমি দেখব*।",
+   "scene": {
+    "arms": {
+     "rumi": "talk"
+    },
+    "cam": {
+     "focus": "rumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতুল এক কামড় দিল। চোখ ভিজে গেল, কিন্তু মুখে হাসি। পনেরো বছর পর আমের স্বাদ— *বোনের হাতে*।",
+   "pause": 1.0,
+   "scene": {
+    "moods": {
+     "ratul": "happy",
+     "rumi": "happy"
+    },
+    "arms": {
+     "rumi": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "ratul",
+   "tone": "laughs",
+   "say": "ইশ… পনেরো বছর *কী মিস* করছি রে!",
+   "scene": {
+    "cam": {
+     "focus": "ratul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি জ্যৈষ্ঠ মাসে সিলেট থেকে একটা ঝুড়ি আসে রাজশাহীতে। আমের দেশে, *আম*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "প্রতি জ্যৈষ্ঠ মাস",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "ratul",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "ঝুড়ির গায়ে লেখা",
+     "lines": [
+      "‘ভাইয়ার ভাগ — পুরোটা।’"
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আর এবার রাতুল কাউকে ভাগ দেয় না। মা হাসেন, *খা, পুরোটা খা*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "ratul",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "say": "উঠানের আমগাছটা এখনো আছে। এখন তার আম ভাগ হয়— *তিন ভাগ, সমান ভাগ*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু ‘না’ আসলে না নয়… *ভালোবাসার আরেক নাম*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু ‘না’ আসলে না নয়…",
+    "line2": "ভালোবাসার\nআরেক নাম।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৫ বছর ভাইয়া বলত ‘আমার আমে এলার্জি’… বিয়ের রাতে বোন জানল আসল কারণ 🥭",
+  "description": "রাজশাহীর এক বাড়িতে পনেরো বছর ধরে নিয়ম— রাতুল আম খায় না, তার নাকি এলার্জি। বোন রুমি কোনোদিন প্রশ্ন করেনি। তারপর গায়ে হলুদের রাতে মা খুললেন পুরোনো একটা খাতা…",
+  "tags": [
+   "ভাই বোনের গল্প",
+   "ভাইয়ের ভালোবাসা",
+   "রাজশাহীর আম",
+   "bangla golpo",
+   "jiboner golpo",
+   "আবেগের গল্প",
+   "বিয়ের বিদায়",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "পনেরো বছরের লুকানো একটা ‘না’— অর্ধেক একটা আমে ফেরত এল। 🥭\n\nতোমার ভাই বা বোন তোমার জন্য কী লুকিয়ে ছেড়ে দিয়েছে? 👇\n\n#ভাইবোন #আম"
+ },
+ "thumbnail": {
+  "text": "আমার এলার্জি",
+  "sub": "১৫ বছরের মিথ্যা"
+ }
+}

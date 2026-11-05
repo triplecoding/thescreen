@@ -1,0 +1,509 @@
+{
+ "id": "056",
+ "status": "ready",
+ "title_bn": "রেহানা খালার রিচার্জের দোকান",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "PART 1",
+  "chapter_bn": "প্রথম অংশ",
+  "title": "Two Systems: hurry makes us believe",
+  "title_bn": "তাড়াহুড়োয় মন ভুল দেখে"
+ },
+ "cast": {
+  "rehana": {
+   "name": "রেহানা খালা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "old_woman"
+  },
+  "tuli": {
+   "name": "তুলি",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#F2EEE3",
+   "color2": "#5B7DB1",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "rakib": {
+   "name": "রাকিব",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "দোকানটা চার ফুট বাই ছয় ফুট। মিরপুর এগারোর গলিতে তিন বছর। রেহানা খালার পুঁজি বলতে— *বত্রিশ হাজার টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "মিরপুর ১১, গলির মোড়",
+    "props": [
+     "signboard",
+     "sign:রেহানা টেলিকম — রিচার্জ · বিকাশ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকান",
+       "value": "৪ × ৬ ফুট"
+      },
+      {
+       "label": "পুরো পুঁজি",
+       "value": "৩২,০০০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "স্বামী মারা যাওয়ার পর এই দোকান দিয়েই ছেলের কলেজ চলে। পাড়ার ছেলেমেয়েরা ডাকে *খালা*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "tone": "laughs",
+   "say": "খালা, বিশ টাকা রিচার্জ। আর *বাকির খাতায়* আমার নামটা আরেকটু লিখেন, প্লিজ।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "phone"
+     },
+     {
+      "id": "rakib",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "warmly",
+   "say": "লিখলাম। ডেলিভারির টাকা পাইলে দিস, *তাড়া নাই*।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন দুপুরে একটা ফোন এল। ওপাশে খুব ব্যস্ত, খুব ভদ্র একটা গলা।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "গলাটা বলল— আন্টি, আমার বিশ হাজার টাকা *ভুল করে* আপনার নম্বরে চলে গেছে। একটু ফেরত দিবেন? মেয়ের হাসপাতালের বিল, *এখনই* লাগবে।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "মেসেজ",
+     "msgs": [
+      {
+       "who": "বিকাশ?",
+       "t": "আপনার অ্যাকাউন্টে ২০,০০০ টাকা ক্যাশ ইন হয়েছে।"
+      }
+     ]
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খালার বুক কেঁপে উঠল। কারো মেয়ে হাসপাতালে। *অন্যের টাকা* রাখা তো ঠিক না।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "rehana": "worried"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "কাঁপা হাতে খালা সেন্ড মানির পিন টিপছেন। ঠিক তখন দোকানে ঢুকল ক্লাস টেনের তুলি।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "phone"
+     },
+     {
+      "id": "tuli",
+      "x": 0.68,
+      "pose": "walk",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuli",
+   "tone": "excited",
+   "say": "খালা, দাঁড়ান! মেসেজটা দেখি একটু? এইটা তো *বিকাশ থেকে আসে নাই*, একটা নম্বর থেকে আসছে!",
+   "scene": {
+    "moods": {
+     "tuli": "surprised"
+    },
+    "arms": {
+     "tuli": "point"
+    },
+    "holds": {
+     "tuli": "none"
+    },
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "tone": "tearful",
+   "say": "কিন্তু উনি কানতেছে রে, মা। মেয়ে নাকি *হাসপাতালে*।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাকিব দৌড়ে এল, অ্যাপ খুলে ব্যালেন্স দেখল। বত্রিশ হাজারই আছে। *এক টাকাও* আসেনি।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tuli",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "cross"
+     },
+     {
+      "id": "rakib",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেসেজে লেখা",
+       "value": "+২০,০০০",
+       "red": true
+      },
+      {
+       "label": "আসল ব্যালেন্স",
+       "value": "৩২,০০০"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ফোনের ওপাশের ভদ্র গলা হঠাৎ চিৎকার করছে— এখনই না দিলে *অ্যাকাউন্ট ব্লক* হবে!",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "tone": "serious",
+   "say": "ভাই, ব্লক যা করার করেন। *খালার পাশে আজ আমরা আছি*।",
+   "scene": {
+    "arms": {
+     "rakib": "point"
+    },
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "লাইন কেটে গেল। খালা অনেকক্ষণ চুপ করে বসে রইলেন। তিন বছরের পুঁজি, এক মিনিটে *যেতে বসেছিল*।",
+   "pause": 1.0,
+   "scene": {
+    "moods": {
+     "rehana": "crying"
+    },
+    "arms": {
+     "rehana": "face"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "মানুষ ঠকে বোকামিতে না। ঠকে *ভালো মানুষ* হওয়ার তাড়াহুড়োয়।",
+   "card": {
+    "text": "মানুষ ঠকে বোকামিতে না…\nঠকে *ভালো মানুষ* হওয়ার তাড়াহুড়োয়।"
+   }
+  },
+  {
+   "say": "সেই রাতে তুলি একটা কাগজে বড় করে লিখল। পরদিন সকালে সেটা ঝুলল দোকানের সামনে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:রেহানা টেলিকম — রিচার্জ · বিকাশ",
+     "cashbox",
+     "envelopes"
+    ],
+    "chars": [
+     {
+      "id": "tuli",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "সাবধান! ‘ভুল করে টাকা গেছে’?",
+     "items": [
+      {
+       "t": "আগে নিজের ব্যালেন্স দেখুন",
+       "mark": "check"
+      },
+      {
+       "t": "মেসেজ কোথা থেকে এসেছে দেখুন",
+       "mark": "check"
+      },
+      {
+       "t": "কেউ তাড়া দিলে— থামুন",
+       "mark": "check"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuli",
+   "tone": "excited",
+   "say": "রাকিব ভাই, ছবি তুলে পাড়ার গ্রুপে দেন। *সব খালার* দেখা দরকার।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক দিনে শেয়ার *আটশো বার*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর বিকেলে দোকানের সামনে লম্বা লাইন। খালা অবাক।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "এক সপ্তাহ পর",
+    "props": [
+     "signboard",
+     "sign:রেহানা টেলিকম — রিচার্জ · বিকাশ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "rakib",
+      "x": 0.56,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tuli",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rakib",
+   "tone": "warmly",
+   "say": "খালা, পাড়ার সবাই বলল— *বাকির খাতাটা* আজ বন্ধ করি। সবার বাকি একসাথে নিয়ে আসছি।",
+   "scene": {
+    "arms": {
+     "rakib": "hold"
+    },
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খালা খামটা হাতে নিলেন। কিছু বলতে পারলেন না। শুধু খাতার পাতায় লিখলেন— *সব শোধ*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "rehana": "crying"
+    },
+    "holds": {
+     "rakib": "none",
+     "rehana": "envelope"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "say": "দোকানটা এখনো চার ফুট বাই ছয় ফুট। কিন্তু রেহানা খালা এখন আর *একা না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "একা মানুষকে ঠকানো সহজ… *পাড়াকে ঠকানো কঠিন*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "একা মানুষকে ঠকানো সহজ…",
+    "line2": "পাড়াকে ঠকানো\nকঠিন।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘আন্টি, ভুল করে টাকা চলে গেছে’— এক ফোনে যেতে বসেছিল খালার ৩ বছরের পুঁজি 📱",
+  "description": "মিরপুরের গলিতে চার ফুটের একটা রিচার্জের দোকান, রেহানা খালার পুরো পুঁজি বত্রিশ হাজার টাকা। এক দুপুরে ফোন এল— ‘ভুল করে বিশ হাজার টাকা গেছে, মেয়ে হাসপাতালে…’ খালা পিন টিপছেন, ঠিক তখন দোকানে ঢুকল তুলি…",
+  "tags": [
+   "বিকাশ প্রতারণা",
+   "ভুল করে টাকা গেছে",
+   "সচেতনতার গল্প",
+   "পাড়ার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "মিরপুর",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একা একজন খালাকে ঠকানো সহজ ছিল। পুরো পাড়ার খালাকে না। 📱\n\nতোমার বা পরিচিত কারো কাছে কি কখনো ‘ভুল করে টাকা গেছে’ ফোন এসেছে? কী করেছিলে? 👇\n\n#সাবধান #বিকাশ"
+ },
+ "thumbnail": {
+  "text": "ভুল করে টাকা গেছে",
+  "sub": "খালার ৩২ হাজার"
+ }
+}

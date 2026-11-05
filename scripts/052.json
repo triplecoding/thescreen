@@ -1,0 +1,570 @@
+{
+ "id": "052",
+ "status": "ready",
+ "title_bn": "মা আর মেয়ের দুই মিথ্যা",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 9",
+  "chapter_bn": "নয় নম্বর অধ্যায়",
+  "title": "Save Money",
+  "title_bn": "কারণ ছাড়াই জমাও"
+ },
+ "cast": {
+  "mitu": {
+   "name": "মিতু",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2C14E",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "nila": {
+   "name": "নীলা আপা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#6B4E9B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বেতন চোদ্দ হাজার পাঁচশো। আর প্রতি রাতে *তিন ঘণ্টা ওভারটাইম*। গাজীপুরের মিতু এই কথাটা আম্মাকে কোনোদিন বলেনি।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "গাজীপুর, রাত দশটা",
+    "props": [
+     "superstore",
+     "sign:সুরমা অ্যাপারেলস"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down",
+      "hold": "bag"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "১৪,৫০০"
+      },
+      {
+       "label": "রোজ ওভারটাইম",
+       "value": "৩ ঘণ্টা",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "টাকাটা যায় গ্রামে, ছোট ভাইয়ের কোচিংয়ে। আর প্রতি রাতে ফেরার পথে একই ফোন।",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "mitu": "call"
+    },
+    "holds": {
+     "mitu": "phone"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "gently",
+   "say": "খাইছিস, মা? ফ্যাক্টরিতে কাজ বেশি না তো?",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ময়মনসিংহ, গ্রামের বাড়ি",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "warmly",
+   "say": "না আম্মা, কাজ কম। *সন্ধ্যায় ছুটি* হয়ে যায়। তুমি খাইছো?",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "props": [
+     "superstore",
+     "sign:সুরমা অ্যাপারেলস"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "gently",
+   "say": "হ, *মাছ দিয়া* খাইছি।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.45,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফোন রেখে আম্মা পাতিলের দিকে তাকালেন। ভাত আর লবণ। মাছটা বিক্রি হয়েছে সকালে— *মেয়ের জন্য টাকা জমবে*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "amma": "sad"
+    },
+    "arms": {
+     "amma": "down"
+    },
+    "holds": {
+     "amma": "none"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "মেসে ফিরে মিতু খেল আলু ভর্তা আর পাতলা ডাল। বাকি টাকাটা গুনে রাখল একটা খামে— *আম্মার ওষুধ*।",
+   "pause": 0.5,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "গাজীপুর, মেসের রুম",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুজনেই প্রতিদিন একই কাজ করে। নিজের কষ্ট লুকায়, অন্যজনের জন্য *জমায়*।",
+   "card": {
+    "title": "দুই মিথ্যা, এক বছর",
+    "items": [
+     {
+      "t": "মিতু: ‘সন্ধ্যায় ছুটি’",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মা: ‘মাছ দিয়া খাইছি’",
+      "mark": "x"
+     },
+     {
+      "t": "দুজনের জমানো: একজন আরেকজনের জন্য",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ঈদের আগে তিন দিনের ছুটি। লাইনে পাশের মেশিনের নীলা আপা জিজ্ঞেস করলেন—",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঈদের তিন দিন আগে",
+    "props": [
+     "superstore",
+     "sign:সুরমা অ্যাপারেলস"
+    ],
+    "chars": [
+     {
+      "id": "nila",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "mitu",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nila",
+   "tone": "curious",
+   "say": "মিতু, এবার বাড়ি যাবি? নাকি ঈদের *ডাবল ওভারটাইম* করবি?",
+   "scene": {
+    "cam": {
+     "focus": "nila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "softly",
+   "say": "যাব আপা। এক বছর আম্মাকে *চোখে দেখি নাই*।",
+   "scene": {
+    "moods": {
+     "mitu": "smile"
+    },
+    "arms": {
+     "nila": "down"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বাড়ির উঠানে পা দিয়েই মিতু থমকে গেল। আম্মা যেন *অর্ধেক হয়ে গেছেন*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের আগের দিন",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "mitu",
+      "x": 0.66,
+      "pose": "walk",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আর আম্মা মেয়ের হাত ধরে দেখলেন, আঙুলের ডগা *সুঁইয়ের দাগে* ভরা।",
+   "scene": {
+    "moods": {
+     "amma": "surprised"
+    },
+    "holds": {
+     "mitu": "none"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.45
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "tearful",
+   "say": "সন্ধ্যায় সেলাই করতে কি এমন দাগ হয় রে, মা?",
+   "scene": {
+    "moods": {
+     "amma": "crying"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "tearful",
+   "say": "আম্মা, তোমার পাতিলে তো আজও *শুধু ভাত*। মাছ কই গেল?",
+   "scene": {
+    "moods": {
+     "mitu": "crying"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুজনেই চুপ। তারপর হঠাৎ দুজনেই একসাথে কেঁদে ফেললেন, আবার *হেসেও* ফেললেন।",
+   "pause": 0.9,
+   "scene": {
+    "arms": {
+     "mitu": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "এক বছর দুজনেই বলেছে— *ভালো আছি*। কেউ ভালো ছিল না।",
+   "card": {
+    "text": "দুজনেই বলেছে— *ভালো আছি*।\nকেউ ভালো ছিল না।"
+   }
+  },
+  {
+   "say": "সেই রাতে তিনজন বসল এক মাদুরে। ছোট ভাই রাফি খাতা খুলে নিজেই একটা হিসাব করল।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "mitu",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "checklist",
+     "title": "নতুন হিসাব",
+     "items": [
+      {
+       "t": "রাফি পড়াবে গ্রামের ছয়জনকে — কোচিংয়ের টাকা নিজেই",
+       "mark": "check"
+      },
+      {
+       "t": "মিতুর ওভারটাইম — রোজ এক ঘণ্টা",
+       "mark": "check"
+      },
+      {
+       "t": "আম্মার পাতিলে — রোজ একটা ডিম",
+       "mark": "check"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mitu",
+   "tone": "playfully",
+   "say": "আর শোনো আম্মা, প্রতি রাতে ফোনে আমি জিজ্ঞেস করব *কী দিয়ে খাইছো*। মিথ্যা বললে *ধরা পড়বা*!",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "mitu": "talk"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "laughs",
+   "say": "তুইও। সন্ধ্যায় ছুটি না রাত দশটায়— *সত্যি বলবি*।",
+   "scene": {
+    "moods": {
+     "amma": "happy"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর, রাত সাড়ে আটটা। ভিডিও কলে আম্মা হাসতে হাসতে একটা সেদ্ধ ডিম দেখালেন।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক মাস পর",
+    "props": [
+     "superstore",
+     "sign:সুরমা অ্যাপারেলস"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "chat",
+     "title": "আম্মা — ভিডিও কল",
+     "msgs": [
+      {
+       "who": "আম্মা",
+       "t": "আজকে খাইছি, সত্যি! এই দেখ 🥚"
+      },
+      {
+       "who": "মিতু",
+       "t": "আমিও ফিরছি। আজ ছুটি সাড়ে আটটায়।"
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "tone": "laughs",
+   "say": "আজকে খাইছি রে, *সত্যি সত্যি*।",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি রাতে ফোন রাখার আগে মা-মেয়ের একটাই প্রশ্ন— *কী দিয়ে খাইছো, সত্যি করে কও*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দুজনেই বলত— ভালো আছি… আসলে *দুজনেই না খেয়ে ছিল*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "দুজনেই বলত— ভালো আছি…",
+    "line2": "আসলে দুজনেই\nনা খেয়ে ছিল।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মেয়ে বলত ‘সন্ধ্যায় ছুটি’, মা বলত ‘মাছ দিয়া খাইছি’— দুজনেই লুকাত 🥺",
+  "description": "গাজীপুরের গার্মেন্টসে মিতু রোজ রাত দশটা পর্যন্ত ওভারটাইম করে, আম্মাকে বলে সন্ধ্যায় ছুটি। গ্রামে আম্মা মাছ বিক্রি করে টাকা জমান, মেয়েকে বলেন মাছ দিয়া খাইছি। তারপর ঈদের ছুটিতে দুজন মুখোমুখি…",
+  "tags": [
+   "মায়ের গল্প",
+   "মা মেয়ের গল্প",
+   "গার্মেন্টস কর্মী",
+   "bangla golpo",
+   "jiboner golpo",
+   "আবেগের গল্প",
+   "ঈদের ছুটি",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "এক বছরের লুকানো ত্যাগ যা পারেনি, একটা সত্যি কথা তা পারল। 🥺\n\nতোমার মা কি এখনো ফোনে বলেন, ‘খাইছি’? শেষ কবে জিজ্ঞেস করেছ কী দিয়ে খেয়েছেন? 👇\n\n#মায়েরগল্প #গার্মেন্টস"
+ },
+ "thumbnail": {
+  "text": "মাছ দিয়া খাইছি",
+  "sub": "দুজনেরই মিথ্যা"
+ }
+}

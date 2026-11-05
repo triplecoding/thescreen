@@ -408,6 +408,41 @@
    "relation": "teacher-mothers / school peon",
    "set": "street",
    "hook": "village school, 52 enrolled, 11 attend; new teacher spends 20 minutes every afternoon at the pond-side reading mothers' letters"
+  },
+  {
+   "id": "052",
+   "item": "Save Money",
+   "relation": "mother-daughter (garments worker) / brother",
+   "set": "home",
+   "hook": "daughter hides 3h nightly overtime, mother sells her fish to save for the daughter; both say 'ভালো আছি'"
+  },
+  {
+   "id": "053",
+   "item": "Create a need through attention, not pressure",
+   "relation": "probashi father-daughter (teen) / spouses",
+   "set": "kitchen",
+   "hook": "6 years in Dubai, 6 missed birthdays, daughter won't pick up; father learns her childhood khichuri over video calls"
+  },
+  {
+   "id": "054",
+   "item": "See People as They Are: Social Intelligence",
+   "relation": "office peon-officer / father-son",
+   "set": "home",
+   "hook": "18 years office peon, 60 cups of tea a day, nobody knows his full name; son 3rd on the board"
+  },
+  {
+   "id": "055",
+   "item": "Reciprocation",
+   "relation": "brother-sister / mother",
+   "set": "balcony",
+   "hook": "brother pretends mango 'allergy' for 15 years so his sister gets his share; at her wedding she gives him half a mango"
+  },
+  {
+   "id": "056",
+   "item": "Two Systems: hurry makes us believe",
+   "relation": "widow shopkeeper / neighbourhood teen + delivery rider",
+   "set": "shop",
+   "hook": "widow's tiny recharge shop; 'money sent by mistake' scam call; a schoolgirl and a rider stop her; the mohalla clears her baki khata"
   }
  ]
 }

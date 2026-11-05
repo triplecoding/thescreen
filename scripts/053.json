@@ -1,0 +1,462 @@
+{
+ "id": "053",
+ "status": "ready",
+ "title_bn": "দুবাইয়ের ডিম-খিচুড়ি",
+ "source": {
+  "book": "The Art of Seduction",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA",
+  "chapter_bn": "একটা ভাবনা",
+  "title": "Create a need through attention, not pressure",
+  "title_bn": "চাপ নয়, মনোযোগ"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বু",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "nusaiba": {
+   "name": "নুসাইবা",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#D9668B",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "ammu": {
+   "name": "আম্মু",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয় বছর দুবাই। ছয়টা জন্মদিন। আব্বু বাড়িতে ছিলেন *একটাতেও না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দুবাই, শ্রমিকদের ক্যাম্প",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রবাসে",
+       "value": "৬ বছর"
+      },
+      {
+       "label": "জন্মদিনে পাশে",
+       "value": "০",
+       "red": true
+      }
+     ]
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এবার নুসাইবা চোদ্দতে পা দেবে। আর গত দুই সপ্তাহ সে আব্বুর *ফোন ধরছে না*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.35
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "gently",
+   "say": "নুসাইবা, আব্বু ফোন দিছে। একটু কথা বল, মা।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "চাঁদপুর, বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "phone"
+     },
+     {
+      "id": "nusaiba",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "cross"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nusaiba",
+   "tone": "upset",
+   "say": "কী বলব আম্মু? আব্বু তো শুধু জিজ্ঞেস করবে, *টাকা পৌঁছাইছে*?",
+   "scene": {
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কথাটা ফোনের ওপাশে আব্বুও শুনলেন। *লাইনটা কেটে গেল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "আব্বু চেষ্টা করেছিলেন— নতুন জামা, দামি ফোন, জন্মদিনে বেশি টাকা। অভিমান *একটুও ভাঙেনি*।",
+   "card": {
+    "title": "ছয় বছরের চেষ্টা",
+    "items": [
+     {
+      "t": "নতুন জামা পাঠানো",
+      "mark": "x"
+     },
+     {
+      "t": "দামি ফোন উপহার",
+      "mark": "x"
+     },
+     {
+      "t": "জন্মদিনে বেশি টাকা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "সেই রাতে ক্যাম্পের রুমমেট জিজ্ঞেস করলেন, মেয়ে ছোটবেলায় কী পছন্দ করত? আব্বু একটু ভাবলেন। তারপর হাসলেন।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "softly",
+   "say": "ওর মায়ের হাতের *ডিম-খিচুড়ি*। বৃষ্টির দিনে আমি ওকে কোলে নিয়ে খাওয়াইতাম।",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "statement",
+   "say": "টাকা অনেক পাঠিয়েছেন। *নিজেকে* পাঠাননি কখনো।",
+   "card": {
+    "text": "টাকা অনেক পাঠিয়েছেন।\n*নিজেকে* পাঠাননি কখনো।"
+   }
+  },
+  {
+   "say": "পরদিন থেকে প্রতি রাতে, ডিউটি শেষে, আব্বু চুপিচুপি ভিডিও কল দেন আম্মুকে। রেসিপি শিখতে।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "ক্যাম্পের রান্নাঘর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "laughs",
+   "say": "আগে মসুর ডাল ভাজবা, তারপর চাল। আর হলুদ *কম*, ও বেশি হলুদ খায় না।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "তিন রাত খিচুড়ি পুড়ল। চতুর্থ রাতে আঙুলে *ফোসকা*, কিন্তু রংটা হলো ঠিক।",
+   "pause": 0.4,
+   "scene": {
+    "moods": {
+     "abba": "happy"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "ammu",
+   "tone": "gently",
+   "say": "এত কষ্ট কইরো না তো। ও তো এখনো *বোঝে না*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "softly",
+   "say": "বোঝে না বলেই তো, *বোঝাইতে হবে*। টাকা দিয়া না, হাত দিয়া।",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জন্মদিনের রাত বারোটা। নুসাইবার ফোনে ভিডিও কল। এবার আম্মু জোর করে ফোনটা ধরিয়ে দিলেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "জন্মদিনের রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "nusaiba",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পর্দায় আব্বু। ক্যাম্পের ছোট্ট রান্নাঘরে, হাতে একটা প্লেট। *ডিম-খিচুড়ি*, ঠিক আম্মুর মতো রং।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আব্বু — ভিডিও কল",
+     "msgs": [
+      {
+       "who": "আব্বু",
+       "t": "শুভ জন্মদিন, মা। এইটা আমি নিজে রাঁধছি।"
+      },
+      {
+       "who": "আব্বু",
+       "t": "তোর ভাগটা এখানে রাখলাম, ছুটিতে আইসা খাব একসাথে।"
+      }
+     ]
+    },
+    "moods": {
+     "nusaiba": "surprised"
+    },
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nusaiba",
+   "tone": "tearful",
+   "say": "আব্বু… তোমার হাতে ওটা কী? *পুড়ছে* নাকি?",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "nusaiba": "crying"
+    },
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "tone": "laughs",
+   "say": "ও কিছু না। তিনবার পুড়ছে, তাই *চারবার* রাঁধছি। তোর জন্য।",
+   "scene": {
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "নুসাইবা কিছু বলল না। শুধু স্ক্রিনটা গালে চেপে ধরল, *অনেকক্ষণ*।",
+   "pause": 1.0,
+   "scene": {
+    "arms": {
+     "nusaiba": "hug"
+    },
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি শুক্রবার রাতে দুজনে একসাথে রাঁধে। নুসাইবা চাঁদপুরে, আব্বু দুবাইয়ে— *এক রেসিপি*, দুই চুলা।",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "প্রতি শুক্রবার",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "nusaiba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nusaiba",
+   "tone": "playfully",
+   "say": "আব্বু, হলুদ বেশি দিয়ো না! *আমি দেখতেছি* কিন্তু!",
+   "scene": {
+    "cam": {
+     "focus": "nusaiba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুবাইয়ের ক্যাম্পের রান্নাঘরে এখন একটা হাঁড়ির গায়ে মার্কারে লেখা— *নুসাইবার খিচুড়ি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "টাকা পাঠানো যায় সাগর পার করে… *পাশে থাকা পাঠাতে হয় নিজের হাতে*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "টাকা পাঠানো যায় সাগর পার করে…",
+    "line2": "পাশে থাকা পাঠাতে হয়\nনিজের হাতে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছয় বছর দুবাই, মেয়ে ফোন ধরে না… তারপর আব্বু রাঁধলেন এক প্লেট খিচুড়ি 🍛",
+  "description": "ছয় বছর দুবাইয়ে, ছয়টা জন্মদিনে মেয়ের পাশে নেই। নতুন জামা, দামি ফোন— অভিমান ভাঙে না। তারপর ক্যাম্পের রান্নাঘরে আব্বু শিখলেন মেয়ের ছোটবেলার প্রিয় ডিম-খিচুড়ি…",
+  "tags": [
+   "প্রবাসী বাবা",
+   "বাবা মেয়ের গল্প",
+   "দুবাই প্রবাসী",
+   "probashi golpo",
+   "bangla golpo",
+   "অভিমান",
+   "জন্মদিন",
+   "বাংলা গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছয় বছরের পাঠানো টাকা যা পারেনি, এক প্লেট পোড়া খিচুড়ি তা পারল। 🍛\n\nপ্রবাসে থাকা তোমার প্রিয় মানুষটাকে আজ কী বলতে চাও? 👇\n\n#প্রবাসী #বাবা"
+ },
+ "thumbnail": {
+  "text": "পোড়া খিচুড়ি",
+  "sub": "অভিমান ভাঙল"
+ }
+}
