@@ -307,6 +307,17 @@
       "playlist": true,
       "facebook": "1140339868691330",
       "scheduled_for": "2026-11-07T11:30:00+06:00"
+    },
+    {
+      "id": "026",
+      "date": "2026-11-07",
+      "slot": "13:30",
+      "duration": 139.69,
+      "title": "এক রান্নাঘরে দুই জা, ১১২ ঝগড়া— তারপর এক বাটি নারকেল-চিংড়ি 🍤 | The Righteous Mind বাংলা",
+      "youtube": "PerM8nIO55g",
+      "playlist": true,
+      "facebook": "1873354210500599",
+      "scheduled_for": "2026-11-07T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -325,10 +336,11 @@
     "The Art of Worldly Wisdom": "PLDj1Guz8vitU",
     "The Prince": "PLJjXUsSTRMuM",
     "1984": "PLK7cGEwvm_Dk",
-    "Propaganda": "PLGCk3gankBoE"
+    "Propaganda": "PLGCk3gankBoE",
+    "The Righteous Mind": "PLWqwkhPxmHKs"
   },
   "last_run": {
-    "at": "2026-11-05T20:45:55.744205+06:00",
+    "at": "2026-11-05T20:52:30.532127+06:00",
     "errors": []
   },
   "queue_remaining": 21,
