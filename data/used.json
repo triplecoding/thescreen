@@ -1835,6 +1835,30 @@
    "relation": "son / daughter-in-law / mother",
    "set": "home",
    "hook": "a mother moved into her son's new flat can't sleep in the new bed; the daughter-in-law realises she misses the old wooden bed and secretly brings it from the village"
+  },
+  {
+   "id": "231",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Generosity seen late",
+   "relation": "mess cook / poor student / mess manager",
+   "set": "kitchen",
+   "hook": "residents accuse the cook of favouritism for giving one student extra dal; at the meeting it emerges he skips the meat meal to send money home; the mess creates an anonymous meal fund"
+  },
+  {
+   "id": "232",
+   "book": "Thinking, Fast and Slow",
+   "item": "Competence silences prejudice",
+   "relation": "female mechanic apprentice / master mechanic / sceptical customer",
+   "set": "shop",
+   "hook": "a customer refuses to let a woman touch his car; when three mechanics fail to find a fault, she diagnoses it by listening; the customer returns and asks for her by name"
+  },
+  {
+   "id": "233",
+   "book": "The Daily Laws",
+   "item": "Sacrifice remembered",
+   "relation": "elder sister who left studies / younger brother now an engineer / mother",
+   "set": "shop",
+   "hook": "a sister quit college for a garments job to fund her brother; when he succeeds he enrols her in an open-university degree with her old books and supports her through it"
   }
  ]
 }

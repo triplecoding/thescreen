@@ -1,0 +1,380 @@
+{
+ "id": "232",
+ "status": "ready",
+ "title_bn": "ওয়ার্কশপের মেয়ে মেকানিক",
+ "theme": "work",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Competence silences prejudice",
+  "title_bn": "কাজই উত্তর"
+ },
+ "cast": {
+  "rupa": {
+   "name": "রূপা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2F7A6B",
+   "hair": "long_bun",
+   "cap": true,
+   "voice": "young_woman"
+  },
+  "ustad": {
+   "name": "ওস্তাদ হানিফ",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "customer": {
+   "name": "গাড়ির মালিক",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "গাজীপুর, চৌরাস্তা। একটা মোটর ওয়ার্কশপ। সাতজন মেকানিক। তার মধ্যে একজন মেয়ে। রূপা। দুই বছর। কালি-মাখা হাত। আর একটা অদ্ভুত গুণ— *ইঞ্জিনের শব্দ শুনে* বোঝে কী হয়েছে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "গাজীপুর, চৌরাস্তা, মোটর ওয়ার্কশপ",
+    "props": [
+     "signboard",
+     "sign:হানিফ মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ustad",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রূপার শেখা",
+       "value": "২ বছর"
+      },
+      {
+       "label": "ওয়ার্কশপে মেকানিক",
+       "value": "৭ জন"
+      },
+      {
+       "label": "মেয়ে মেকানিক",
+       "value": "১ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ওস্তাদ হানিফ চল্লিশ বছর গাড়ি সারান। রূপার আব্বা ছিলেন তাঁর সহকারী। আব্বা মারা যাওয়ার পর রূপা এসে বলেছিল, ‘ওস্তাদ, *আমারে শিখান*।’",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "এই মেয়ে আমার গাড়িতে হাত দিবো? না না। পুরুষ মেকানিক দেন। মেয়েরা গাড়ির *কী বোঝে*?",
+   "tone": "annoyed",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক বিকেল",
+    "props": [
+     "signboard",
+     "sign:হানিফ মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "rupa",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ustad",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "customer": "point"
+    }
+   }
+  },
+  {
+   "voice": "ustad",
+   "say": "ঠিক আছে, সাহেব। আপনার যা ইচ্ছা। কামরুল, জসিম, বাবু, দেখো গাড়িটা।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "ustad",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন ঘণ্টায় যা হলো",
+   "card": {
+    "title": "তিন মেকানিকের চেষ্টা",
+    "items": [
+     {
+      "t": "প্লাগ বদলানো— শব্দ যায়নি",
+      "mark": "x"
+     },
+     {
+      "t": "ব্যাটারি পরীক্ষা— ঠিক আছে",
+      "mark": "x"
+     },
+     {
+      "t": "কম্পিউটার স্ক্যান— কোনো কোড নেই",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তিন ঘণ্টা। তিনজন মেকানিক। গাড়ি চালু হয়, কিন্তু একটা অদ্ভুত টিক টিক শব্দ, আর মাঝে মাঝে *বন্ধ হয়ে যায়*। কাস্টমারের রাগ বাড়ছে।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "ustad",
+   "say": "সাহেব, তিনজন পারে নাই। একজন আছে যে পারবো, কিন্তু আপনি তারে নিবেন না। আপনার *সিদ্ধান্ত*।",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সন্ধ্যা নামছে",
+    "props": [
+     "signboard",
+     "sign:হানিফ মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "ustad",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "ustad": "talk"
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "কালকে ভোরে চট্টগ্রাম যাইতে হইবো, মিটিং… আচ্ছা, *দেখুক*। দেখুক।",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    },
+    "moods": {
+     "customer": "worried"
+    },
+    "arms": {
+     "customer": "face"
+    }
+   }
+  },
+  {
+   "say": "রূপা গাড়ি চালু করল। তারপর বনেটের পাশে দাঁড়িয়ে চোখ বন্ধ করল। এক মিনিট। কেউ কথা বলছে না। শুধু ইঞ্জিনের শব্দ। *টিক… টিক… টিক*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "গাড়ির পাশে",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "ফুয়েল পাম্পের রিলে। ভিতরে একটা পিন আলগা। গরম হইলে কানেকশন ছুটে যায়, তখন বন্ধ হয়। আব্বা কইতেন, *টিক শব্দ মানে রিলে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rupa": "point"
+    }
+   }
+  },
+  {
+   "say": "পনেরো মিনিট। রিলে খোলা, পিন ঠিক করা, আবার বসানো। গাড়ি চালু হলো। টিক শব্দ নেই। দশ মিনিট চলল। *বন্ধ হলো না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "তিন ঘণ্টা তিনজন পারে নাই। আর তুমি পনেরো মিনিটে… চোখ বন্ধ কইরা? আমি তোমারে *ছোট কইরা* কথা কইছি। মাফ কইরো।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "সেই সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:হানিফ মোটরস"
+    ],
+    "chars": [
+     {
+      "id": "customer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "rupa",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "moods": {
+     "customer": "surprised"
+    },
+    "arms": {
+     "customer": "talk"
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "সমস্যা নাই, স্যার। গাড়ি তো জানে না কে সারাইতেছে। গাড়ি খালি জানে, *কে বোঝে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    },
+    "arms": {
+     "rupa": "hold"
+    }
+   }
+  },
+  {
+   "say": "হানিফ মোটরসের সাইনবোর্ডের নিচে এখন নতুন একটা লাইন, ওস্তাদ নিজে লিখিয়েছেন— *‘ইঞ্জিনের শব্দ শুনে সমস্যা বলা হয়। প্রধান মেকানিক: রূপা।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কে কাজ করছে দেখে বিচার সহজ… *কাজ দেখে বিচার করলে সত্যিটা দেখা যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "কে কাজ করছে দেখে বিচার সহজ…",
+    "line2": "কাজ দেখে বিচার করলে\nসত্যিটা দেখা যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘মেয়ে মেকানিক দিয়ে কাজ করাব না’… তিনজন হাল ছাড়ার পর রূপা শুনল ইঞ্জিনের শব্দ 🔧",
+  "description": "গাজীপুরের এক মোটর ওয়ার্কশপ। রূপা দুই বছর ধরে ওস্তাদ হানিফের কাছে কাজ শিখছে, ইঞ্জিনের শব্দ শুনে সমস্যা বোঝে। কিন্তু কাস্টমাররা বলে, মেয়ে মেকানিক দিয়ে কাজ করাব না। এক বিকেলে এক রাগী কাস্টমারের গাড়ি তিনজন মেকানিক ঠিক করতে পারল না…",
+  "tags": [
+   "নারী মেকানিক",
+   "ওয়ার্কশপ",
+   "কুসংস্কার",
+   "দক্ষতা",
+   "গাজীপুর",
+   "bangla golpo",
+   "অনুপ্রেরণার গল্প",
+   "office story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "কাস্টমার বলেছিলেন, মেয়ে দিয়ে কাজ করাবেন না। তিন মেকানিক যখন হাল ছাড়ল, রূপা চোখ বন্ধ করে শুনল ইঞ্জিনের শব্দ। 🔧\nকোনো কাজ ‘ছেলেদের’ বা ‘মেয়েদের’— এমন কথা কি তোমাকেও শুনতে হয়েছে? 👇 #নারী #দক্ষতা"
+ },
+ "thumbnail": {
+  "text": "‘মেয়ে মেকানিক না’",
+  "sub": "তিনজন হাল ছাড়ল"
+ }
+}

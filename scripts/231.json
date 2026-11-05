@@ -1,0 +1,402 @@
+{
+ "id": "231",
+ "status": "ready",
+ "title_bn": "মেসের রাঁধুনি খালা",
+ "theme": "struggle",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "The Law of Generosity seen late",
+  "title_bn": "দেরিতে দেখা মমতা"
+ },
+ "cast": {
+  "khala": {
+   "name": "রাঁধুনি রাবেয়া খালা",
+   "type": "old_woman",
+   "skin": "dark",
+   "outfit": "sari",
+   "color": "#8A6A4F",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "old_woman"
+  },
+  "tanvir": {
+   "name": "ছাত্র তানভীর",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "manager": {
+   "name": "মেস ম্যানেজার আসিফ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নীলক্ষেতের একটা ছাত্র মেস। চব্বিশজন। রাবেয়া খালা বারো বছর এখানে রান্না করেন। ভাত, ডাল, ভাজি, সপ্তাহে তিন দিন মাংস। আর একটা অভ্যাস, যেটা সবাই *খেয়াল করেছে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "নীলক্ষেত, ছাত্র মেস",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রাবেয়া খালার রান্না",
+       "value": "১২ বছর"
+      },
+      {
+       "label": "মেসে ছাত্র",
+       "value": "২৪ জন"
+      },
+      {
+       "label": "মাসিক মিল চার্জ",
+       "value": "৩,৬০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "খালা প্রতিদিন তানভীরের প্লেটে ডাল দেন একটু বেশি। ঘন। আর মাংসের দিনে তানভীর আসে না। অথচ মাসের টাকা সে *পুরোটাই দেয়*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "খালা, অভিযোগ আসছে। আপনি একজনরে বেশি দেন। সবাই সমান টাকা দেয়। এইটা তো *পক্ষপাত*।",
+   "tone": "annoyed",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "মেস মিটিং, মাসের শেষ",
+    "props": [
+     "signboard",
+     "sign:মেস মিটিং — ৩য় তলা"
+    ],
+    "chars": [
+     {
+      "id": "manager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     },
+     {
+      "id": "khala",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "manager": "talk"
+    }
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "বাবা, আমি… ডালটা একটু বেশি দেই। ডাল তো সস্তা। আর কিছু *না*।",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    },
+    "moods": {
+     "khala": "worried"
+    },
+    "arms": {
+     "khala": "down"
+    }
+   }
+  },
+  {
+   "say": "মিটিং চুপ। সবাই তাকাল তানভীরের দিকে। তানভীর মাথা নিচু করে বসে। তারপর উঠে দাঁড়াল। *গলা কাঁপছে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "খালার দোষ নাই। আমি মাংসের মিল বাদ দেই, ম্যানেজার ভাইরে বইলা টাকা কম দেই। ওই টাকা বাড়ি পাঠাই। আব্বা অসুস্থ। খালা জানতেন, তাই *ডাল বেশি* দিতেন।",
+   "tone": "tearful",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "একই মিটিং",
+    "props": [
+     "signboard",
+     "sign:মেস মিটিং — ৩য় তলা"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "manager",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "arms": {
+     "tanvir": "down"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তানভীরের এক বছর",
+   "card": {
+    "title": "যা কেউ জানত না",
+    "items": [
+     {
+      "t": "সপ্তাহে তিন দিন মাংসের মিল বাদ",
+      "mark": "x"
+     },
+     {
+      "t": "মাসে ১,৪০০ টাকা বাড়িতে",
+      "mark": "x"
+     },
+     {
+      "t": "দুপুরে শুধু ভাত আর ডাল",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "এক বছর? আর আমরা ভাবছি তুমি মাংস *পছন্দ করো না*?",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    },
+    "moods": {
+     "manager": "surprised"
+    },
+    "arms": {
+     "manager": "talk"
+    }
+   }
+  },
+  {
+   "say": "যে ছেলেটা অভিযোগ তুলেছিল, সে মাথা নিচু করল। তারপর আস্তে বলল, ‘খালা, মাফ কইরেন।’ আর কেউ কিছু বলল না। শুধু *চুপচাপ* সবাই খালার দিকে তাকাল।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "আমার পোলাও মেসে থাকত, রাজশাহীতে। কেউ ডাল দিত কি না জানি না। তাই এইখানে সবার প্লেটে ডাল দিলে মনে হয় *আমার পোলারে দিতেছি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    },
+    "arms": {
+     "khala": "down"
+    }
+   }
+  },
+  {
+   "say": "ম্যানেজার আসিফ কিছুক্ষণ চুপ। তারপর বললেন একটা প্রস্তাব। অভিযোগ না, *একটা নতুন নিয়ম*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "মিটিংয়ের শেষে",
+    "props": [
+     "signboard",
+     "sign:মেস মিটিং — ৩য় তলা"
+    ],
+    "chars": [
+     {
+      "id": "manager",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "আজকে থেইকা মেসে একটা বাক্স থাকবো। যার যা ইচ্ছা, নাম ছাড়া। যার দরকার, নাম ছাড়া মিল পাইবো। কেউ জানবো না *কে দিল, কে পাইল*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    },
+    "arms": {
+     "manager": "point"
+    }
+   }
+  },
+  {
+   "say": "পরের মাস। মাংসের দিন। তানভীরের প্লেটে মাংস। খালা চুপচাপ দিলেন, কেউ কিছু বলল না। আর তানভীর জানে না কোন টাকায়। *জানার দরকারও নেই*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রথম মাসে বাক্সে",
+       "value": "৮,২০০ টাকা"
+      },
+      {
+       "label": "নাম ছাড়া মিল পেয়েছে",
+       "value": "৪ জন ছাত্র"
+      },
+      {
+       "label": "অভিযোগ",
+       "value": "০"
+      }
+     ]
+    },
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরের মাস",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "খালা, পাশ করলে প্রথম বেতনে আপনারে একটা শাড়ি দিমু। আর ওই বাক্সে *প্রতি মাসে* কিছু দিমু।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    },
+    "arms": {
+     "tanvir": "hold"
+    }
+   }
+  },
+  {
+   "say": "মেসের দরজার বাক্সটা এখন তিন বছরের পুরোনো। গায়ে খালার হাতের কাঁচা লেখা, কেউ একজন লিখে দিয়েছে— *‘ডাল সস্তা। মায়া দামি।’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অভিযোগ দেখে শুধু পার্থক্য… *কারণ জানলে মমতা দেখা যায়*।",
+   "pause": 1.6,
+   "card": {
+    "line1": "অভিযোগ দেখে শুধু পার্থক্য…",
+    "line2": "কারণ জানলে\nমমতা দেখা যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মেসের খালা রোজ একজনকে বেশি ডাল দেন… খালা জানতেন তানভীর শুধু ভাত খায় কেন 🍚",
+  "description": "নীলক্ষেতের এক ছাত্র মেস। রাবেয়া খালা বারো বছর রান্না করেন। সবাই খেয়াল করল, খালা রোজ তানভীরের প্লেটে একটু বেশি ডাল দেন। মেস মিটিংয়ে অভিযোগ উঠল— পক্ষপাত। খালা চুপ। তানভীরও চুপ…",
+  "tags": [
+   "মেস জীবন",
+   "রাঁধুনি খালা",
+   "ছাত্রজীবন",
+   "অভাব",
+   "মমতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মেসের সবাই অভিযোগ করেছিল, খালা একজনকে বেশি ডাল দেন। মিটিংয়ে জানা গেল কেন, আর পরের মাস থেকে বদলে গেল পুরো মেসের নিয়ম। 🍚\nমেস বা হোস্টেলের কোন মানুষটাকে তুমি আজও মনে রাখো? 👇 #মেসজীবন #ছাত্রজীবন"
+ },
+ "thumbnail": {
+  "text": "‘খালা পক্ষপাত করেন’",
+  "sub": "তানভীর শুধু ভাত খায়"
+ }
+}
