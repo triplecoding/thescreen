@@ -807,6 +807,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-14T17:30:00+06:00"
+    },
+    {
+      "id": "071",
+      "date": "2026-11-14",
+      "slot": "20:00",
+      "duration": 125.02,
+      "title": "খেতে আলু ১২ টাকা, ঢাকায় ৪০… ছেলে খুলল ফেসবুক পেজ, বাবা বললেন ‘মানুষ হাসবো’ 🥔",
+      "youtube": "tTB68CIEHJ0",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-14T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -836,10 +847,11 @@
     "The 50th Law": "PLHPj7wq0Ennw",
     "theme:community": "PLTIVdSRBE7Ko",
     "theme:money": "PLE4xM922HB78",
-    "theme:school": "PLGV0VI6qNy64"
+    "theme:school": "PLGV0VI6qNy64",
+    "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:21:02.644789+06:00",
+    "at": "2026-11-06T13:25:26.375647+06:00",
     "errors": []
   },
   "queue_remaining": 192,
