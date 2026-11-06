@@ -1937,12 +1937,15 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T02:58:22.391014+06:00",
-    "errors": []
+    "at": "2026-11-07T03:04:19.474466+06:00",
+    "errors": [
+      "youtube 170: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
+    ],
+    "queue_remaining": 88
   },
-  "queue_remaining": 89,
+  "queue_remaining": 88,
   "_run_started": "2026-11-07T02:53:14.179122+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
-  "yt_limit_at": "2026-11-07T01:53:10.193285+06:00"
+  "yt_limit_at": "2026-11-07T03:04:19.443708+06:00"
 }
