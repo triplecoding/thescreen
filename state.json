@@ -1700,6 +1700,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-28T11:30:00+06:00"
+    },
+    {
+      "id": "152",
+      "date": "2026-11-28",
+      "slot": "13:30",
+      "duration": 134.98,
+      "title": "আব্বা বলেন ‘অফিসে নাইট ডিউটি’, আসলে শপিং মলের দারোয়ান… বন্ধুদের সামনে চিনতে চাইল না শাকিল 🌙",
+      "youtube": "9YhDgbG1FfA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-28T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1739,7 +1750,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:58:22.756516+06:00",
+    "at": "2026-11-06T22:04:49.713105+06:00",
     "errors": []
   },
   "queue_remaining": 108,
