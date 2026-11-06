@@ -1405,7 +1405,15 @@
       "scheduled_for": "2026-11-23T17:30:00+06:00"
     }
   ],
-  "failed": [],
+  "failed": [
+    {
+      "id": "125",
+      "reason": "all uploads failed: youtube 125: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
+      "at": "2026-11-06T18:03:25.572023+06:00",
+      "kind": "upload",
+      "retry": true
+    }
+  ],
   "playlists": {
     "The Laws of Human Nature": "PLa_DKXTCT90U",
     "The Art of War": "PLdM5Kv756r_M",
@@ -1436,8 +1444,10 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T18:32:35.824581+06:00",
-    "errors": []
+    "at": "2026-11-06T18:39:06.447889+06:00",
+    "errors": [
+      "youtube 125: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n"
+    ]
   },
   "queue_remaining": 138,
   "_run_started": "2026-11-06T18:03:25.572023+06:00",
