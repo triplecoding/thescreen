@@ -1414,6 +1414,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-23T20:00:00+06:00"
+    },
+    {
+      "id": "126",
+      "date": "2026-11-24",
+      "slot": "09:00",
+      "duration": 124.47,
+      "title": "‘বিলটা পাস কইরা দেন’— টেবিলে ৫০ হাজারের খাম… নতুন ইঞ্জিনিয়ার যা করলেন 🛣️",
+      "youtube": "UPa838-o23I",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-24T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1445,15 +1456,15 @@
     "theme:money": "PLE4xM922HB78",
     "theme:school": "PLGV0VI6qNy64",
     "theme:struggle": "PLMAYaBY5j7wI",
-    "theme:siblings": "PLEr2moaNpIqQ"
+    "theme:siblings": "PLEr2moaNpIqQ",
+    "theme:honesty": "PLf557_mEk6vQ"
   },
   "last_run": {
-    "at": "2026-11-06T19:08:56.867741+06:00",
-    "errors": [],
-    "queue_remaining": 132
+    "at": "2026-11-06T19:14:52.802214+06:00",
+    "errors": []
   },
   "queue_remaining": 132,
-  "_run_started": "2026-11-06T19:02:23.339071+06:00",
+  "_run_started": "2026-11-06T19:08:59.322659+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
