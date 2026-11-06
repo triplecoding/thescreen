@@ -940,6 +940,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-16T17:30:00+06:00"
+    },
+    {
+      "id": "083",
+      "date": "2026-11-16",
+      "slot": "20:00",
+      "duration": 144.02,
+      "title": "নিজের পছন্দে বিয়ে করায় তিন বছর মেয়ের সাথে কথা বলেন না বাবা… শীতের এক সকালে এল একটা পার্সেল 🦆",
+      "youtube": "k2m-EvSXspA",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-16T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -973,7 +984,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:24:31.773488+06:00",
+    "at": "2026-11-06T14:29:22.049322+06:00",
     "errors": []
   },
   "queue_remaining": 180,
