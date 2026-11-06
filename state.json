@@ -562,6 +562,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-11T09:00:00+06:00"
+    },
+    {
+      "id": "049",
+      "date": "2026-11-11",
+      "slot": "11:30",
+      "duration": 135.04,
+      "title": "ছয় হাজারের ঝকঝকে স্যার, নাকি তিন হাজারের ছেঁড়া স্যান্ডেল? 👟",
+      "youtube": "JswYHvnZDaE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-11T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -590,10 +601,11 @@
     "The Dictator's Handbook": "PLP5oE_7fMspM",
     "The 50th Law": "PLHPj7wq0Ennw",
     "theme:community": "PLTIVdSRBE7Ko",
-    "theme:money": "PLE4xM922HB78"
+    "theme:money": "PLE4xM922HB78",
+    "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T09:19:01.963860+06:00",
+    "at": "2026-11-06T09:24:30.644116+06:00",
     "errors": []
   },
   "queue_remaining": 210,
