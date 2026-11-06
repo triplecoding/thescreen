@@ -1017,6 +1017,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T20:00:00+06:00"
+    },
+    {
+      "id": "090",
+      "date": "2026-11-18",
+      "slot": "09:00",
+      "duration": 146.89,
+      "title": "জাহাজের অফিসার বাবা কোনো জন্মদিনে থাকেন না… মেয়ে রোজ রাতে খুঁজত মানচিত্রের একটা বিন্দু 🚢",
+      "youtube": "MSynXAzxhJc",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-18T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1050,12 +1061,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:13:00.950384+06:00",
-    "errors": [],
-    "queue_remaining": 168
+    "at": "2026-11-06T15:18:54.577801+06:00",
+    "errors": []
   },
   "queue_remaining": 168,
-  "_run_started": "2026-11-06T14:32:15.117360+06:00",
+  "_run_started": "2026-11-06T15:13:03.998221+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
