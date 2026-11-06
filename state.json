@@ -595,6 +595,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-11T15:30:00+06:00"
+    },
+    {
+      "id": "052",
+      "date": "2026-11-11",
+      "slot": "17:30",
+      "duration": 139.79,
+      "title": "মেয়ে বলত ‘সন্ধ্যায় ছুটি’, মা বলত ‘মাছ দিয়া খাইছি’— দুজনেই লুকাত 🥺",
+      "youtube": "Hy1HgcGg6eQ",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-11T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -627,7 +638,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T09:35:35.906586+06:00",
+    "at": "2026-11-06T09:41:14.243640+06:00",
     "errors": []
   },
   "queue_remaining": 210,
