@@ -1,0 +1,502 @@
+{
+ "id": "253",
+ "status": "ready",
+ "title_bn": "হয় নাই",
+ "theme": "community",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Turn every setback into practice",
+  "title_bn": "প্রতিটা ‘না’ একটা পাঠ"
+ },
+ "cast": {
+  "sohel": {
+   "name": "বাবুর্চি সোহেল",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "nazrul": {
+   "name": "নজরুল চাচা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "owner": {
+   "name": "হোটেল মালিক",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#7A8B99",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নয় শুক্রবার, একই অর্ডার— চিংড়ির মালাইকারি। নয়বারই প্লেট ফেরত— *হয় নাই*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "কুমিল্লা, কান্দিরপাড়",
+    "props": [
+     "signboard",
+     "sign:ভাত ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nazrul",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শুক্রবার",
+       "value": "৯"
+      },
+      {
+       "label": "ফেরত প্লেট",
+       "value": "৯",
+       "red": true
+      },
+      {
+       "label": "খাওয়া শেষ",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সোহেল এই হোটেলের নতুন বাবুর্চি। গ্রামে সবাই বলত, তার হাতে *জাদু*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রতি শুক্রবার আসেন এক বৃদ্ধ। জানালার পাশে, *একই চেয়ারে*।"
+  },
+  {
+   "voice": "nazrul",
+   "say": "হয় নাই, বাবা। ভালোই হইছে, কিন্তু *হয় নাই*।",
+   "tone": "sad",
+   "scene": {
+    "chars": [
+     {
+      "id": "nazrul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": {
+     "focus": "nazrul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "সোহেল, ওই চাচার অর্ডার আর নিও না। প্রতি সপ্তাহে *লস*।",
+   "tone": "annoyed",
+   "scene": {
+    "chars": [
+     {
+      "id": "owner",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সোহেলের গাল লাল হয়ে গেল। নয়বার। *নয়বার*।"
+  },
+  {
+   "kind": "list",
+   "say": "প্রতি সপ্তাহে সে কিছু না কিছু বদলাল।",
+   "card": {
+    "title": "সোহেল যা বদলাল",
+    "items": [
+     {
+      "t": "নারকেলের দুধ বাড়াল",
+      "mark": "x"
+     },
+     {
+      "t": "ঝাল কমাল",
+      "mark": "x"
+     },
+     {
+      "t": "সবচেয়ে বড় চিংড়ি আনল",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে মেসে বসে সোহেলের মনে হলো, রান্নাই ছেড়ে দেবে। তারপর *থামল*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেসের রুম",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রাগ করে লাভ নেই। প্রতিটা *‘হয় নাই’* হবে একটা ক্লাস। শিক্ষক— চাচা নিজেই।",
+   "scene": {
+    "moods": {
+     "sohel": "thinking"
+    },
+    "arms": {
+     "sohel": "down"
+    }
+   }
+  },
+  {
+   "say": "পরের শুক্রবার সোহেল খাতা নিয়ে বসল চাচার সামনে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দশম শুক্রবার",
+    "props": [
+     "signboard",
+     "sign:ভাত ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nazrul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "চাচা, রাগ করি নাই। কী *নাই* এইটায়? যা মনে পড়ে কন, আমি লিখি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nazrul",
+   "say": "তুমি… জিগাইলা? কেউ তো *জিগায় না*।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "nazrul": "surprised"
+    },
+    "cam": {
+     "focus": "nazrul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nazrul",
+   "say": "একটু মিষ্টি আছিল… আর পেঁয়াজ না, *আদা বেশি*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "nazrul": "thinking"
+    },
+    "cam": {
+     "focus": "nazrul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রতি শুক্রবার আরেকটা লাইন। চাচা *একটু একটু মনে করেন*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "চাচার মালাইকারি",
+     "lines": [
+      "একটু মিষ্টি",
+      "আদা বেশি, পেঁয়াজ না",
+      "শেষে একটা পোড়া তেজপাতা",
+      "চিংড়ি ছোট, খালের"
+     ]
+    }
+   }
+  },
+  {
+   "say": "শেষ লাইনে সোহেল অবাক। বড় চিংড়ি না। ছোট, *খালের চিংড়ি*।"
+  },
+  {
+   "say": "তেরো নম্বর শুক্রবার। ছোট চিংড়ি, খাতা খুলে রান্না, *লাইন ধরে ধরে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "তেরো নম্বর শুক্রবার",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "প্লেট গেল জানালার পাশে। সোহেল দরজায় দাঁড়িয়ে, *নিঃশ্বাস বন্ধ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুপুর",
+    "props": [
+     "signboard",
+     "sign:ভাত ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nazrul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "sohel",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চাচা এক লোকমা মুখে দিলেন। তারপর চুপ। কিছুক্ষণ পর প্লেটটা *খালি*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "nazrul",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "nazrul",
+   "say": "আমার স্ত্রী এইভাবে রাঁধত, বাবা। চার বছর হইল নাই। আজ *প্রথম* ওর হাতের স্বাদ পাইলাম।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "nazrul": "crying"
+    },
+    "cam": {
+     "focus": "nazrul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "চাচা, এইটা আমার রান্না না। *আপনার মনে রাখা*। আমি শুধু লিখছি।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মালিক সব দেখছিলেন। বিকেলে মেনু বোর্ডে উঠল নতুন লাইন।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আজকের বিশেষ",
+     "lines": [
+      "চাচার মালাইকারি — শুধু শুক্রবার"
+     ]
+    }
+   }
+  },
+  {
+   "say": "তিন সপ্তাহে সবার আগে শেষ হয় *এই পদটাই*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "পরের শুক্রবার চাচা একা এলেন না। সাথে নাতনি, বিশ্ববিদ্যালয়ে পড়ে।",
+   "scene": {
+    "chars": [
+     {
+      "id": "nazrul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "owner",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sohel",
+      "x": 0.88,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "সোহেল, চাচার নাতনি তোমার খাতাটা চায়। *দাদির রেসিপি* লিখে নিবে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খাতার প্রথম পাতায় নয়টা দাগ, নয়টা *‘হয় নাই’*। আর শেষে বড় করে লেখা— *‘হইছে’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "প্রতিটা ‘না’ যদি একটা পাঠ হয়… *ব্যর্থতাও শিক্ষক হয়ে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "প্রতিটা ‘না’ যদি একটা পাঠ হয়…",
+    "line2": "ব্যর্থতাও\nশিক্ষক হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নয় শুক্রবার নয়বার প্লেট ফেরত— “হয় নাই”। তারপর বাবুর্চি খাতা নিয়ে বসল 🍤",
+  "description": "কুমিল্লার এক ভাতের হোটেলে প্রতি শুক্রবার এক বৃদ্ধ চিংড়ির মালাইকারি অর্ডার দেন, আর প্রতিবার প্লেট ফেরত দেন— \"হয় নাই।\" নতুন বাবুর্চি সোহেল রাগ না করে একটা খাতা নিয়ে বসল…",
+  "tags": [
+   "মানুষের গল্প",
+   "রান্নার গল্প",
+   "কুমিল্লা",
+   "ভালোবাসার গল্প",
+   "অধ্যবসায়",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নয়টা \"হয় নাই\" সোহেলকে শিখিয়েছে একজনের স্ত্রীর হাতের স্বাদ। 🍤\nকারো হাতের কোন রান্নার স্বাদ তুমি আজও খুঁজে বেড়াও? 👇 #রান্না #কুমিল্লা"
+ },
+ "thumbnail": {
+  "text": "হয় নাই",
+  "sub": "৯টা ফেরত প্লেট"
+ }
+}

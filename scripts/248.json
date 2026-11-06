@@ -1,0 +1,510 @@
+{
+ "id": "248",
+ "status": "ready",
+ "title_bn": "ছেচল্লিশটা সাইকেল",
+ "theme": "school",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "The Availability Heuristic",
+  "title_bn": "চোখের সামনের ভয়"
+ },
+ "cast": {
+  "trisha": {
+   "name": "তৃষা",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "amma": {
+   "name": "আম্মু",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "স্কুল চার কিলোমিটার। ভ্যান ভাড়া দিনে চল্লিশ টাকা। আর উঠানে নতুন সাইকেল— *তালা দেওয়া*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কুষ্টিয়া, কুমারখালী",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "trisha",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "স্কুল",
+       "value": "৪ কিমি"
+      },
+      {
+       "label": "ভাড়া",
+       "value": "দিনে ৪০ টাকা"
+      },
+      {
+       "label": "সাইকেল চলেছে",
+       "value": "০ দিন",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তৃষা, ক্লাস নাইন। সাইকেলটা মামার উপহার, চালানো শিখেছে *মামাবাড়িতে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রথম দিনের আগের রাতে আম্মু ফেসবুকে দেখলেন অন্য জেলার *একটা দুর্ঘটনা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আগের রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "trisha",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "না। সাইকেল চলবে না। দেখছস? মাইয়াটা তোর বয়সী। *আমি পারমু না*।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "trisha",
+   "say": "আম্মু, ওইটা তো অনেক দূরের। আমাদের *রাস্তায় তো*…",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "trisha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আর একটা কথাও না। সাইকেলে *তালা*।",
+   "tone": "serious",
+   "scene": {
+    "moods": {
+     "amma": "angry"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তারপর প্রতি রাতে একই রকম ভিডিও। একটা দেখলে ফেসবুক দেখায় *আরও দশটা*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "ফেসবুক ভিডিও",
+     "msgs": [
+      {
+       "who": "ভিডিও",
+       "t": "সড়কে আবারও…"
+      },
+      {
+       "who": "ভিডিও",
+       "t": "সাবধান! এই ভুল করবেন না"
+      },
+      {
+       "who": "ভিডিও",
+       "t": "আরেকটি দুর্ঘটনা…"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তৃষা যা যা করল, আম্মু আরও শক্ত হলেন।",
+   "card": {
+    "title": "তৃষার চেষ্টা",
+    "items": [
+     {
+      "t": "রাগ করে ভাত না খাওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "আব্বুকে ফোনে বলা",
+      "mark": "x"
+     },
+     {
+      "t": "কান্না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে তৃষা কাঁদল না। *একটা প্রশ্ন করল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "trisha",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "trisha",
+   "say": "আম্মু, দশটা ভিডিও দেখছেন। আমাদের স্কুলে রোজ কয়টা মেয়ে সাইকেলে আসে, *জানেন*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "trisha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "কয়টা? জানি না… *পাঁচ-ছয়টা* হইব।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "amma": "thinking"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "trisha",
+   "say": "কাল সাড়ে নয়টায় গেটে দাঁড়াবেন? শুধু *গুনবেন*। তারপর আপনি যা বলেন।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "trisha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন স্কুলের গেট। আম্মু দাঁড়িয়ে, হাতে কাগজ-কলম।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "স্কুলের গেট, সকাল সাড়ে নয়টা",
+    "props": [
+     "school_gate",
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "trisha",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "একটা সাইকেল, তারপর তিনটা, তারপর একসাথে সাতটা। আম্মু গুনে *কূল পান না*।",
+   "scene": {
+    "moods": {
+     "amma": "surprised"
+    },
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাইকেলে আসা মেয়ে",
+       "value": "৪৬"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ছেচল্লিশজন মেয়ে। হেলমেট পরা, লাইন ধরে, *খালপাড়ের রাস্তা* দিয়ে।"
+  },
+  {
+   "say": "আম্মুর কাগজে দাগ পড়তে পড়তে *পাতা ভরে গেল*।"
+  },
+  {
+   "say": "দারোয়ান চাচা বললেন, তিন বছরে এই রাস্তায় কারো *একটা আঁচড়ও* লাগেনি।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "আম্মু খেয়াল করলেন, মহাসড়কে অটো কত জোরে ছোটে। তৃষা রোজ আসে *ওগুলোতেই*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "amma": "worried"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "ঠিক আছে। শর্ত তিনটা— হেলমেট, খালপাড়ের রাস্তা, আর সাত দিন আমি *পিছে পিছে* যামু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "trisha",
+   "say": "আট দিন যান, আম্মু। *একদিন বোনাস*।",
+   "tone": "playfully",
+   "scene": {
+    "moods": {
+     "trisha": "happy"
+    },
+    "cam": {
+     "focus": "trisha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম সপ্তাহ। তৃষা সাইকেলে, পেছনে ভ্যানে আম্মু। পাড়ার সবাই *হাসে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "প্রথম সপ্তাহ",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "trisha",
+      "x": 0.4,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.75,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "দ্বিতীয় সপ্তাহে আম্মু শুধু দরজায় হাত নাড়েন। মাসে বাঁচে *বারোশো টাকা*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "trisha",
+      "x": 0.4,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "amma",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "wave"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ভ্যান ভাড়া বাঁচল",
+       "value": "মাসে ১,২০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এক বিকেলে তৃষা অবাক। আম্মু তার সাইকেলের সিটে, *দুই পা মাটিতে*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "এক বিকেল",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "trisha",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "কী দেখস? পিছে ধর। *আমারেও শিখা*। হাটে যামু সাইকেলে।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মু তিনবার পড়লেন, তিনবারই উঠলেন। তৃষা পেছন থেকে বলল— *‘ভয় নাই, আম্মু, গুনে দেখছি।’*",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "moods": {
+     "trisha": "happy",
+     "amma": "happy"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "চোখের সামনে যা বারবার আসে… *সেটাই সবচেয়ে সত্যি না।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "চোখের সামনে যা বারবার আসে…",
+    "line2": "সেটাই সবচেয়ে\nসত্যি না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "একটা ভিডিও দেখে আম্মু সাইকেলে তালা দিলেন— মেয়ে বলল, “চলেন, গুনে দেখি” 🚲",
+  "description": "কুষ্টিয়ার তৃষা ক্লাস নাইনে পড়ে, স্কুল চার কিলোমিটার। নতুন সাইকেল থাকলেও আম্মু ফেসবুকে একটা দুর্ঘটনার ভিডিও দেখে তালা দিলেন। তৃষা তর্ক না করে একটা প্রশ্ন করল…",
+  "tags": [
+   "মা মেয়ের গল্প",
+   "স্কুলের গল্প",
+   "কুষ্টিয়া",
+   "মেয়েদের সাইকেল",
+   "ভয়",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দশটা ভিডিওর ভয় হার মানল ছেচল্লিশটা সাইকেলের কাছে— আর শেষে আম্মু নিজেই সিটে বসলেন। 🚲\nফোনে দেখা কোন ভয় তোমাকে বা তোমার পরিবারকে আটকে রেখেছে? 👇 #মা #সাইকেল"
+ },
+ "thumbnail": {
+  "text": "গুনে দেখছি",
+  "sub": "সাইকেলে তালা"
+ }
+}

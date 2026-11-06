@@ -1,0 +1,492 @@
+{
+ "id": "255",
+ "status": "ready",
+ "title_bn": "চল্লিশ টাকার খিচুড়ি",
+ "theme": "parents",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Self-interest can serve others (the baker and the butcher)",
+  "title_bn": "নিজের লাভেও অন্যের উপকার"
+ },
+ "cast": {
+  "jamil": {
+   "name": "জামিল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#3E5641",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "hijab",
+   "voice": "old_woman"
+  },
+  "meye": {
+   "name": "কুড়িগ্রামের মেয়েটা",
+   "type": "young_woman",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "hijab",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চল্লিশ টাকার খিচুড়ি, রাত এগারোটা থেকে ভোর চারটা। আর আম্মা বলেন— *পাপের ব্যবসা*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ঢাকা, হাসপাতালের পেছনের গলি",
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এক প্লেট",
+       "value": "৪০ টাকা"
+      },
+      {
+       "label": "সময়",
+       "value": "রাত ১১টা–ভোর ৪টা"
+      },
+      {
+       "label": "আম্মার রায়",
+       "value": "পাপ",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চাকরি হারিয়ে জামিল জমানো টাকায় কিনল একটা ভ্যান, একটা *বড় হাঁড়ি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "রাতে রোগীর লোকজন খাবার পায় না। খোলা হোটেলে প্লেট *একশো বিশ টাকা*।"
+  },
+  {
+   "voice": "amma",
+   "say": "মাইনষের বিপদে ব্যবসা? রোগীর লোকের টাকা নিবি? দিলে *ফ্রি দে*।",
+   "tone": "upset",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বাসায়",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     },
+     {
+      "id": "jamil",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "আম্মা, ফ্রি দিলে কয়দিন চালামু? এক সপ্তাহ? তারপর *ওরা কই খাইবো*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা মুখ ফিরিয়ে নিলেন। ভাত দেন, কিন্তু *পাশে বসেন না*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "গলির মাথায় চালু হলো এক দানবীরের ফ্রি লঙ্গরখানা। আম্মা *খুশি*।"
+  },
+  {
+   "voice": "amma",
+   "say": "দেখছস? মানুষ এইভাবে সাহায্য করে। *তোর মতো* হিসাব কইরা না।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "জামিলের প্রথম দুই মাস গেল খুব কষ্টে।",
+   "card": {
+    "title": "প্রথম দুই মাস",
+    "items": [
+     {
+      "t": "লাভ দিনে তিনশো টাকা",
+      "mark": "x"
+     },
+     {
+      "t": "আত্মীয়রা বলে ‘খিচুড়িওয়ালা’",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মার মুখ ভার",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তবু সে প্রতি প্লেটের হিসাব রাখে। লাভ মাত্র *ছয় টাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ভ্যানের পাশে",
+    "chars": [
+     {
+      "id": "jamil",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "এক প্লেটের হিসাব",
+     "lines": [
+      "চাল-ডাল-সবজি ২২",
+      "গ্যাস-তেল ৭",
+      "ভ্যান-বাটি-পানি ৫"
+     ],
+     "sub": "লাভ ৬ টাকা"
+    }
+   }
+  },
+  {
+   "say": "তিন মাসের মাথায় লঙ্গরখানায় তালা। দানবীরের টাকা *শেষ*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "সেই রাতে লাইনটা এলো জামিলের ভ্যানে। সত্তরজন। *দুইবার হাঁড়ি চড়ল*।",
+   "scene": {
+    "moods": {
+     "jamil": "worried"
+    },
+    "arms": {
+     "jamil": "hold"
+    },
+    "holds": {
+     "jamil": "plate"
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটায় আম্মা এলেন, ছেলেকে *খুঁজতে খুঁজতে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "meye",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "jamil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "amma",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ক্লান্ত মুখ, হাতে প্রেসক্রিপশন। আর সবার হাতে *গরম খিচুড়ি*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "meye",
+   "say": "আপনার ছেলে, খালাম্মা? আব্বার অপারেশন। এই চল্লিশ টাকায় আমি *মাথা উঁচা কইরা* খাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "meye",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা আঁচলে চোখ মুছলেন। তারপর গিয়ে দাঁড়ালেন ভ্যানের পেছনে।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "amma": "crying"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "সর। প্লেট আমি দেই। তুই *হাঁড়ি* দেখ।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "amma": "smile"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভোর চারটা পর্যন্ত মা-ছেলে একসাথে। একশো দশ প্লেট। *কোনো কথা লাগল না*।"
+  },
+  {
+   "voice": "amma",
+   "say": "লঙ্গরখানা চালায় দয়া, তোরটা হিসাব। দয়া *ফুরায়*, হিসাব ফুরায় না।",
+   "tone": "warmly",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ভোরে, রিকশায় ফেরা",
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "jamil",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamil",
+   "say": "আপনিও ঠিক ছিলেন, আম্মা। কেউ কেউ চল্লিশ টাকাও *দিতে পারে না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jamil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর। ভ্যানের পাশে ছোট্ট বোর্ড, আম্মার হাতে লেখা।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক মাস পর",
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jamil",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "খিচুড়ি — ৪০ টাকা",
+     "lines": [
+      "টাকা না থাকলে খেয়ে যান",
+      "যখন পারবেন, দিয়ে যাবেন"
+     ],
+     "sub": "— খালাম্মা"
+    }
+   }
+  },
+  {
+   "say": "বাকির খাতা আম্মার হাতে। তিন সপ্তাহে প্রায় সবাই *শোধ দিয়েছে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রাতে প্লেট",
+       "value": "১২০"
+      },
+      {
+       "label": "বাকি শোধ",
+       "value": "প্রায় সবাই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ফেরার দিন কুড়িগ্রামের মেয়েটা এলো। হাতে এক প্যাকেট *চিড়া*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "meye",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "meye",
+   "say": "খালাম্মা, খাতায় আমার নামটা কাইটা দেন। আর এই চিড়া— *বাকি না, ভালোবাসা*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "meye",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা হেসে নামটা কাটলেন। পাশে লিখলেন— *‘শোধ’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "লাভ মানেই লোভ না… *টিকে থাকলেই সেবা টেকে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "লাভ মানেই লোভ না…",
+    "line2": "টিকে থাকলেই\nসেবা টেকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "হাসপাতালের পেছনে ৪০ টাকার খিচুড়ি— আম্মা বলেন পাপ, তারপর এক রাতে… 🍲",
+  "description": "জামিল চাকরি হারিয়ে হাসপাতালের পেছনে রোগীর লোকদের জন্য চল্লিশ টাকার খিচুড়ির ভ্যান দিল। আম্মার চোখে এটা মানুষের বিপদে ব্যবসা। তারপর গলির ফ্রি লঙ্গরখানাটা বন্ধ হয়ে গেল…",
+  "tags": [
+   "মা ছেলের গল্প",
+   "হাসপাতাল",
+   "ঢাকা",
+   "ছোট ব্যবসা",
+   "মানবিকতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দয়া ফুরিয়ে যায়, কিন্তু ছয় টাকার সৎ লাভ রোজ রাতে হাঁড়ি চড়ায়। 🍲\nহাসপাতালে রাত জাগার সময় কে তোমার পাশে ছিল? 👇 #মা #মানবিকতা"
+ },
+ "thumbnail": {
+  "text": "পাপের ব্যবসা?",
+  "sub": "৪০ টাকার খিচুড়ি"
+ }
+}

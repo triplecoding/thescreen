@@ -1,0 +1,519 @@
+{
+ "id": "239",
+ "status": "ready",
+ "title_bn": "শেষ এক ঘণ্টা",
+ "theme": "parents",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 10",
+  "chapter_bn": "১০ নম্বর অধ্যায়",
+  "title": "The Peak-End Rule",
+  "title_bn": "শেষটাই মনে থাকে"
+ },
+ "cast": {
+  "shiuli": {
+   "name": "শিউলি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#DCD6C8",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "দুই মাস পর পর চার ঘণ্টার বাস জার্নি। দুই দিন খুব ভালো যায়। আর শেষ এক ঘণ্টায় *ঝগড়া*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বগুড়া, বাপের বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আসা",
+       "value": "প্রতি ২ মাসে"
+      },
+      {
+       "label": "প্রথম ২ দিন",
+       "value": "চমৎকার"
+      },
+      {
+       "label": "শেষ ১ ঘণ্টা",
+       "value": "ঝগড়া",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শিউলি থাকে ঢাকার মিরপুরে। চাকরি, সংসার। বগুড়ায় আম্মা-আব্বা।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "এবারও দুই দিন চমৎকার। আম্মার ভর্তা, আব্বার সাথে বিকেলের হাঁটা। তারপর *ফেরার সকাল*।"
+  },
+  {
+   "say": "বাস সাড়ে দশটায়। আম্মা তখনও রান্নাঘরে। দই, পিঠা, শুঁটকি— ব্যাগ *উপচে পড়ছে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ফেরার সকাল",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "shiuli",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shiuli",
+   "say": "আম্মা, এত কিছু নিতে পারব না! বাস ছাইড়া দিবে। প্লিজ, *এখন থামেন*!",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "এক বাটি দই, ব্যাস। ঢাকায় এমন দই পাস? *একটু দাঁড়া*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শিউলি দাঁড়াল না। ব্যাগ টেনে বেরিয়ে গেল। পেছনে আম্মা, হাতে *দইয়ের হাঁড়ি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    },
+    "moods": {
+     "amma": "sad"
+    }
+   }
+  },
+  {
+   "say": "বাসে উঠেই খারাপ লাগল। প্রতিবারের মতো ভাবল, *পরেরবার এমন হবে না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকার বাসে",
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই বছর ধরে প্রতিটা বিদায় একই রকম।",
+   "card": {
+    "title": "প্রতিবারের শেষ এক ঘণ্টা",
+    "items": [
+     {
+      "t": "আম্মার ব্যাগ ভরানো",
+      "mark": "x"
+     },
+     {
+      "t": "শিউলির তাড়া",
+      "mark": "x"
+     },
+     {
+      "t": "দরজায় কড়া কথা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আর ঢাকায় পৌঁছে প্রতিবার শিউলি ফোন দিতে *ভুলে যায়*।"
+  },
+  {
+   "say": "এক সপ্তাহ পর রাতে আব্বার ফোন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মিরপুর, এক সপ্তাহ পর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মা, তোর আম্মা পাশের বাসার ভাবিরে কয়— মাইয়া আসে আর *রাগ কইরা যায়*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "shiuli",
+   "say": "কিন্তু আব্বা, দুই দিন তো কত ভালো কাটাইলাম! আম্মার *ওইগুলা মনে নাই*?",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "shiuli": "surprised"
+    },
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "সিনেমা দেখলে তুই কোনটা মনে রাখস, মা? পুরাটা, না *শেষটা*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "শিউলি চুপ। দুই বছরের বিদায়গুলো চোখে ভাসল। দরজা, তাড়া, *দইয়ের হাঁড়ি*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "shiuli": "sad"
+    },
+    "arms": {
+     "shiuli": "face"
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে সে গেল। মাত্র একদিনের জন্য। কিন্তু সাথে *একটা নিয়ম*।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "এবারের নিয়ম",
+     "items": [
+      {
+       "t": "ব্যাগ গুছানো আগের রাতে",
+       "mark": "check"
+      },
+      {
+       "t": "বাস দুপুর একটায়",
+       "mark": "check"
+      },
+      {
+       "t": "শেষ এক ঘণ্টা শুধু আম্মার",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সকালে ব্যাগ রেডি। শিউলি গিয়ে বসল রান্নাঘরে, আম্মার পাশে, মটরশুঁটি ছিলতে।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরের মাস, বগুড়া",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "shiuli",
+   "say": "আম্মা, দইটা কোন হাঁড়িতে দিবেন? আমি নিজে *বাইন্ধা নিমু*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুই… নিজে নিবি? *বিরক্ত লাগবো না*?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "amma": "surprised"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shiuli",
+   "say": "অফিসে সবাই এই দইয়ের জন্য বইসা থাকে। নাম দিছে *আন্টির দই*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "shiuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা হেসে ফেললেন। আরেকটা বাটি এগিয়ে দিলেন। এবার শিউলি না করল না।",
+   "scene": {
+    "moods": {
+     "amma": "happy"
+    }
+   }
+  },
+  {
+   "say": "শেষ এক ঘণ্টা কাটল গল্পে। ছোটবেলার, নানুবাড়ির, *আম্মার বিয়ের*।"
+  },
+  {
+   "say": "গেটে দাঁড়িয়ে তিনজনের একটা ছবি। আম্মার কপালে চুমু। আর শেষ কথাটা—",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বিদায়",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "amma",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "abba",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "পৌঁছায়া একবার *ফোন দিস*, মা।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে আব্বার মেসেজ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shiuli",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "আব্বা",
+     "msgs": [
+      {
+       "who": "আব্বা",
+       "t": "তোর আম্মা খালারে এক ঘণ্টা ধইরা কইতাছে—"
+      },
+      {
+       "who": "আব্বা",
+       "t": "‘মাইয়া আইছিল, কী যে ভালো গেল!’"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মাত্র একদিন। অথচ আম্মার কাছে এটাই *সবচেয়ে সুন্দর* বেড়ানো।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বিদায়টা যেমন হয়… *পুরো দেখাটা তেমন মনে থাকে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "বিদায়টা যেমন হয়…",
+    "line2": "পুরো দেখাটা\nতেমন মনে থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুই দিনের আদর, শেষ এক ঘণ্টায় ঝগড়া… আব্বার এক প্রশ্নে বদলে গেল শিউলির বিদায় 🍶",
+  "description": "শিউলি প্রতি দুই মাসে বগুড়ায় বাপের বাড়ি যায়। দুই দিন চমৎকার, কিন্তু ফেরার সকালে দইয়ের হাঁড়ি নিয়ে প্রতিবার ঝগড়া। তারপর আব্বা ফোনে একটা প্রশ্ন করলেন…",
+  "tags": [
+   "মায়ের গল্প",
+   "মেয়ের গল্প",
+   "বগুড়া",
+   "বাপের বাড়ি",
+   "পরিবারের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মানুষ পুরো দেখাটা মনে রাখে না— মনে রাখে বিদায়টা। 🍶\nশেষবার আম্মু-আব্বুর কাছ থেকে কীভাবে বিদায় নিয়েছিলে? 👇 #মা #বগুড়া"
+ },
+ "thumbnail": {
+  "text": "শেষ এক ঘণ্টা",
+  "sub": "দইয়ের হাঁড়ি"
+ }
+}

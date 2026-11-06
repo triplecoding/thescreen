@@ -1,0 +1,521 @@
+{
+ "id": "249",
+ "status": "ready",
+ "title_bn": "মাছের মাথা",
+ "theme": "struggle",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Power slowly changes people who once fought for fairness",
+  "title_bn": "ক্ষমতা আস্তে আস্তে বদলায়"
+ },
+ "cast": {
+  "suman": {
+   "name": "সুমন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#B5523B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "rashed": {
+   "name": "রাশেদ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#4A6FA5",
+   "hair": "curly",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "khala": {
+   "name": "রান্নার খালা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#E8C9A0",
+   "color2": "#8E3B5A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "সাত মাস আগে আন্দোলন করে মিল রেট পঁচাত্তর থেকে পঞ্চান্ন। আজ আবার— *বাহাত্তর*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ঢাকা, আজিমপুরের মেস",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাত মাস আগে",
+       "value": "৭৫"
+      },
+      {
+       "label": "আন্দোলনের পর",
+       "value": "৫৫"
+      },
+      {
+       "label": "এখন",
+       "value": "৭২",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দজন ছাত্র, একজন রান্নার খালা, আর একটা *হিসাবের খাতা*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "আন্দোলনের নেতা সুমন দেয়ালে নিয়ম লিখেছিল। সবাই তাকেই *ম্যানেজার* বানাল।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মেসের নতুন নিয়ম",
+     "lines": [
+      "১. হিসাব খাতা সবার জন্য খোলা",
+      "২. মাছের মাথা পালা করে",
+      "৩. ম্যানেজার আলাদা কিছু খাবে না"
+     ],
+     "sub": "লিখেছে: সুমন"
+    }
+   }
+  },
+  {
+   "say": "তারপর আস্তে আস্তে— মাছের মাথা সুমনের পাতে, খাতা *আবার তালায়*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "suman",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "আইজও বড় মাথাটা তোমার পাতে, বাবা? রাশেদ কিন্তু তিন মাস *লেজ খায়*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "suman",
+   "say": "দেন খালা। ম্যানেজারি কি সোজা? *এইটুকু তো পাওনা*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাশেদ সব দেখে, চুপ থাকে। সে-ও তো *আন্দোলনে ছিল*।"
+  },
+  {
+   "say": "দেয়ালের সেই কাগজ কবে খুলে পড়েছে, *কেউ খেয়াল করেনি*।",
+   "scene": {
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "কেউ কিছু বলে না। শুধু একে অন্যের দিকে তাকায়।",
+   "card": {
+    "title": "সাত মাসে যা বদলাল",
+    "items": [
+     {
+      "t": "মিল রেট— ৫৫ থেকে ৭২",
+      "mark": "x"
+     },
+     {
+      "t": "হিসাব খাতা— আবার তালায়",
+      "mark": "x"
+     },
+     {
+      "t": "মাছের মাথা— শুধু ম্যানেজারের",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "দোস্ত, এই মাসে বাহাত্তর ক্যান? খাতাটা একটু *দেখা যাইবো*?",
+   "tone": "curious",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেসের রুম",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "suman",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "suman",
+   "say": "তুই আমারে সন্দেহ করস? বাজারের দাম *তুই বুঝবি না*।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "suman": "angry"
+    },
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাশেদ ঝগড়া করল না। সেই রাতে সে *অন্য একটা কাজ* করল।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rashed": "thinking"
+    }
+   }
+  },
+  {
+   "say": "ট্রাংক থেকে বের করল সেই পুরোনো কাগজ। *সুমনের নিজের হাতে লেখা*।",
+   "scene": {
+    "arms": {
+     "rashed": "hold"
+    },
+    "holds": {
+     "rashed": "envelope"
+    }
+   }
+  },
+  {
+   "say": "সকালে কাগজটা আবার দেয়ালে, খাবার টেবিলের সামনে। *কারো নাম নেই*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "suman",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "khala",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সুমনের চোখ পড়ল দেয়ালে। নিজের অক্ষর— *‘ম্যানেজার আলাদা কিছু খাবে না’*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.5
+    },
+    "moods": {
+     "suman": "surprised"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মেসের নতুন নিয়ম",
+     "lines": [
+      "৩. ম্যানেজার আলাদা কিছু খাবে না"
+     ],
+     "sub": "লিখেছে: সুমন"
+    }
+   }
+  },
+  {
+   "say": "পাতে তখন একটা বড় মাছের মাথা। সুমন অনেকক্ষণ *তাকিয়ে রইল*।",
+   "scene": {
+    "moods": {
+     "suman": "sad"
+    },
+    "widget": null
+   }
+  },
+  {
+   "voice": "suman",
+   "say": "খালা, মাথাটা… রাশেদের পাতে দেন। আজ থেকে আমার পাতে *সবার মতো*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় সুমন সবাইকে ডাকল। টেবিলে খাতা, *তালা খোলা*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা",
+    "props": [
+     "table",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "suman",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rashed",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "suman",
+   "say": "সাত মাসে বেশি নিছি আটশো চল্লিশ টাকা। এই মাসে *কাটা যাবে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "রাগ করিস নাই তো? কাগজটা লাগাইছিলাম *তোরেই মনে করাইতে*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "suman",
+   "say": "রাগ ক্যান? লিখছিলাম তো আমিই। মনে করানোর জন্য *একজন বন্ধু* লাগে।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "suman": "smile"
+    },
+    "cam": {
+     "focus": "suman",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে ম্যানেজার রাশেদ। রেট আটান্ন। খাতা *সবার জন্য খোলা*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরের মাস",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "suman",
+      "x": 0.62,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "rashed",
+      "x": 0.85,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মিল রেট",
+       "value": "৫৮"
+      },
+      {
+       "label": "ম্যানেজার",
+       "value": "প্রতি মাসে নতুন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার ইলিশ। খালা বড় মাথাটা হাতে, *কার পাতে দেবেন*?",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "এইবার মাথা কে খাইবো, বাবারা? *খাতায়* কার নাম?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দজন একসাথে বলল— *‘খালার’*। আর সুমন নিজের হাতে মাথাটা তুলে দিল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow",
+    "moods": {
+     "khala": "happy"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ক্ষমতা এলে নিয়ম ভুলতে দেরি হয় না… *একজন বন্ধু মনে করালে ফেরা যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ক্ষমতা এলে নিয়ম ভুলতে দেরি হয় না…",
+    "line2": "একজন বন্ধু মনে করালে\nফেরা যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আন্দোলন করে মেসের ম্যানেজার… সাত মাস পর দেয়ালে নিজের লেখা পড়ে চুপ সুমন 🐟",
+  "description": "আজিমপুরের এক মেসে মিল রেট কমাতে আন্দোলন করেছিল সুমন, তারপর নিজেই হলো ম্যানেজার। সাত মাসে রেট আবার বাহাত্তর, বড় মাছের মাথা তার পাতে। রুমমেট রাশেদ ঝগড়া না করে একটা কাজ করল…",
+  "tags": [
+   "মেসের গল্প",
+   "বন্ধুত্ব",
+   "ঢাকা",
+   "ছাত্রজীবন",
+   "ন্যায্যতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "যে নিয়ম সুমন নিজে লিখেছিল, সাত মাস পর বন্ধু শুধু সেটা দেয়ালে ফিরিয়ে দিল। 🐟\nক্ষমতা পেয়ে বদলে যেতে দেখেছ কাউকে? 👇 #মেস #বন্ধুত্ব"
+ },
+ "thumbnail": {
+  "text": "নিজের হাতের লেখা",
+  "sub": "মেসের ম্যানেজার"
+ }
+}

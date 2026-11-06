@@ -1,0 +1,552 @@
+{
+ "id": "250",
+ "status": "ready",
+ "title_bn": "যাদের ছাড়া দোকান নাই",
+ "theme": "work",
+ "source": {
+  "book": "The Dictator's Handbook",
+  "author": "Bruce Bueno de Mesquita & Alastair Smith",
+  "author_bn": "ব্রুস বুয়েনো দে মেসকিতা ও অ্যালাস্টেয়ার স্মিথ",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Every leader depends on a small group of essential supporters",
+  "title_bn": "যাদের ওপর দাঁড়িয়ে থাকে"
+ },
+ "cast": {
+  "rakib": {
+   "name": "রাকিব",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B4A6B",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "montu": {
+   "name": "মন্টু কাকা",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "চল্লিশ বছরের মিষ্টির দোকান। দুই কারিগরের বেতন চল্লিশ হাজার। নতুন মালিক বলে— *বাড়তি খরচ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "টাঙ্গাইল",
+    "props": [
+     "signboard",
+     "sign:মিষ্টিমুখ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের বয়স",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "কারিগর",
+       "value": "২ জন"
+      },
+      {
+       "label": "বেতন",
+       "value": "৪০,০০০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আব্বা অসুস্থ। দোকান এখন এমবিএ করা রাকিবের, মাথায় *এক্সেল শিট*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "মন্টু কাকা আর হারুন কাকা। ত্রিশ বছর ধরে ভোর চারটায় *চুলা জ্বালান*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "ভোর চারটা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "montu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "আব্বা, দুই বুড়া কারিগর চল্লিশ হাজার। নতুন ছেলে বারো হাজারে। সাথে রেডিমেড মিক্স। *লাভ ডাবল*।",
+   "tone": "excited",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "বাসায়",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "হিসাব ঠিক। আগে মন্টুরে এক সপ্তাহ ছুটি দে। *তারপর* সিদ্ধান্ত নিস।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাকিব হাসল। নতুন দুইটা ছেলে আনল, আর *রেডিমেড মিক্স*।"
+  },
+  {
+   "say": "কাকা কিছু বললেন না। গামছা কাঁধে *বাড়ি গেলেন*।"
+  },
+  {
+   "say": "প্রথম দিন চমচম শক্ত। দ্বিতীয় দিন রস ঢুকল না। তৃতীয় দিন এক কাস্টমার *কামড় দিয়ে রেখে দিলেন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ",
+    "props": [
+     "signboard",
+     "sign:মিষ্টিমুখ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক সপ্তাহে এক্সেলে লাল দাগ বাড়তে লাগল।",
+   "card": {
+    "title": "এক সপ্তাহের হিসাব",
+    "items": [
+     {
+      "t": "বিয়ের অর্ডার বাতিল— ৩টা",
+      "mark": "x"
+     },
+     {
+      "t": "ফেরত মিষ্টি— ১৮ কেজি",
+      "mark": "x"
+     },
+     {
+      "t": "কাস্টমার— ‘স্বাদ বদলাইছে’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আব্বা কিছু বলেন না। শুধু রোজ *দোকানে এসে বসেন*।"
+  },
+  {
+   "say": "শনিবার রাতে একটা ফোন। বড় বিয়ের অর্ডার, *পাঁচশো পিস*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "শনিবার রাত",
+    "props": [
+     "signboard",
+     "sign:মিষ্টিমুখ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শর্ত একটাই— *‘মন্টু মিয়ার হাতের চমচম চাই।’*",
+   "scene": {
+    "moods": {
+     "rakib": "surprised"
+    }
+   }
+  },
+  {
+   "say": "এক্সেলে মন্টু কাকা ছিলেন একটা খরচের ঘর। আসলে তিনিই *দোকানের নাম*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.5
+    },
+    "moods": {
+     "rakib": "sad"
+    }
+   }
+  },
+  {
+   "say": "ভোরে রাকিব গেল মন্টু কাকার বাড়ি। কাকা উঠানে, হাতে চা।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "মন্টু কাকার বাড়ি, ভোর",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "rakib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "montu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "কাকা, ভুল হিসাব করছিলাম। আপনি খরচ না। আপনিই *দোকান*। ফিরবেন?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "montu",
+   "say": "ফিরমু, বাবা। কিন্তু হারুন আর আমি বুড়া হইতাছি। আমাগো পরে *কে বানাইব*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "montu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এই প্রশ্নের ঘর *এক্সেলে ছিল না*।",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rakib": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "দুইটা ছেলে দেই, আপনারা শিখাবেন। বেতন বাড়বে, আর বিয়ের মৌসুমের লাভে *ভাগ*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "montu",
+   "say": "ভাগ? ত্রিশ বছরে কেউ *ভাগের কথা* কয় নাই, বাবা।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "montu": "crying"
+    },
+    "cam": {
+     "focus": "montu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলেই চুলা জ্বলল। পাঁচশো চমচম গেল *বিয়েবাড়িতে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "সেদিন বিকেল",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "montu",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rakib",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিন মাস পর, ভোর চারটা। চুলার সামনে দুই কাকা আর দুই *নতুন শাগরেদ*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "তিন মাস পর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "montu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কারিগর",
+       "value": "২ + শাগরেদ ২"
+      },
+      {
+       "label": "বিয়ের অর্ডার",
+       "value": "মাসে ১৪"
+      },
+      {
+       "label": "ফেরত",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাকিবের এক্সেলে এখন নতুন কলাম— *‘যাদের ছাড়া দোকান নাই’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "হিসাবে লাভ কত হইল?",
+   "tone": "teasing",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দোকান",
+    "props": [
+     "signboard",
+     "sign:মিষ্টিমুখ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "rakib",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "টাকায় একটু কম, আব্বা। কিন্তু *কাস্টমার ডাবল*। আর মন্টু কাকা এখন হাসেন।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মন্টু কাকা প্রথম চমচমটা রাখলেন রাকিবের হাতে। গরম, রসে ভেজা, *চল্লিশ বছরের স্বাদ*।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rakib",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "montu",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে হাতে দোকান দাঁড়িয়ে থাকে… *সেই হাত খরচ না, ভিত।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে হাতে দোকান দাঁড়িয়ে থাকে…",
+    "line2": "সেই হাত খরচ না,\nভিত।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "খরচ কমাতে দুই বুড়ো কারিগর বাদ? এক সপ্তাহেই এমবিএ ছেলের হিসাব উল্টে গেল 🍬",
+  "description": "টাঙ্গাইলের চল্লিশ বছরের মিষ্টির দোকান। এমবিএ করা রাকিব দায়িত্ব নিয়ে হিসাব করল— দুই বুড়ো কারিগর বাদ দিলে লাভ ডাবল। আব্বা শুধু বললেন, এক সপ্তাহ মন্টুরে ছুটি দে…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "মিষ্টির দোকান",
+   "টাঙ্গাইল",
+   "কারিগর",
+   "ব্যবসার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "এক্সেলে যিনি ছিলেন খরচের ঘর, আসলে তিনিই ছিলেন দোকানের নাম। 🍬\nতোমার কাজের জায়গায় কে সেই মানুষ, যাকে ছাড়া সব থেমে যায়? 👇 #কারিগর #টাঙ্গাইল"
+ },
+ "thumbnail": {
+  "text": "বাড়তি খরচ?",
+  "sub": "৪০ বছরের স্বাদ"
+ }
+}

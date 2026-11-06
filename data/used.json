@@ -1859,6 +1859,198 @@
    "relation": "elder sister who left studies / younger brother now an engineer / mother",
    "set": "shop",
    "hook": "a sister quit college for a garments job to fund her brother; when he succeeds he enrols her in an open-university degree with her old books and supports her through it"
+  },
+  {
+   "id": "234",
+   "book": "The Psychology of Money",
+   "item": "Freedom",
+   "relation": "daughter (accountant) / father (laid-off jute worker) / boss",
+   "set": "shop",
+   "hook": "a Khulna accountant saves 6,000 a month as \"money to say no\"; her boss demands she sign a fake 3-lakh bill; her father shows his 2020 jute-mill layoff notice; she resigns and finds a smaller, honest job"
+  },
+  {
+   "id": "235",
+   "book": "Games People Play",
+   "item": "Wooden Leg",
+   "relation": "father (port-office clerk) / teen daughter / boss",
+   "set": "home",
+   "hook": "a Chattogram clerk who always says \"village boy, I can't do English\" hears his daughter refuse an English debate with his exact words; they trade ten sentences nightly on the fridge; he answers an angry email, she places third"
+  },
+  {
+   "id": "236",
+   "book": "The Art of War",
+   "item": "Opportunities multiply as they are seized",
+   "relation": "young woman tutor / father / neighbour grandmother (probashi family)",
+   "set": "balcony",
+   "hook": "a jobless Sylheti graduate under marriage pressure is asked to teach a London grandson Bangla for one day; she prepares picture cards; he wishes his nani in Bangla; mothers in the UK sign up; 11 students"
+  },
+  {
+   "id": "237",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Conformity — Resist the Downward Pull of the Group",
+   "relation": "student / roommate friend / strict professor",
+   "set": "home",
+   "hook": "61 of 62 classmates plan to boycott a strict professor who zeroed copied assignments; Rafi, whom he tutored free for 10 minutes daily, asks the group one question at 1 am: \"who has been helped alone in his room?\"; 23 hands; boycott dissolves"
+  },
+  {
+   "id": "238",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Unity",
+   "relation": "young doctor (porter's daughter) / old porter / her father",
+   "set": "street",
+   "hook": "a free eye camp at Barishal launch ghat draws 4 of 200 porters; the doctor rewrites the banner \"daughter of porter Rahmat of this ghat\"; the old porter rallies everyone; 138 checked; he had hidden two years of cataract"
+  },
+  {
+   "id": "239",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Peak-End Rule",
+   "relation": "married daughter / mother / father",
+   "set": "kitchen",
+   "hook": "every visit home to Bogura is lovely for two days but ends in a rushed fight over the mother's packed food; father asks \"in a film, what do you remember — all of it or the ending?\"; she keeps the last hour only for her mother"
+  },
+  {
+   "id": "240",
+   "book": "Animal Farm",
+   "item": "Fear and sweet talk keep people silent",
+   "relation": "colleagues (young designer, senior woman) / boss",
+   "set": "shop",
+   "hook": "a boss who says \"we're a family\" delays salary three months and buys a new car; a designer has written down every promise with its date; 14 staff sign one polite letter asking only for a written date; both dates are kept"
+  },
+  {
+   "id": "241",
+   "book": "The Psychology of Money",
+   "item": "Luck and Risk",
+   "relation": "friends (two poultry farmers) / wife",
+   "set": "street",
+   "hook": "two friends start identical poultry farms; a storm floods the one on low land; the other is praised as smart and invited to give a success speech; his wife asks whether his shed survived by his brains or his father's high plot; he shares the credit and the risk"
+  },
+  {
+   "id": "242",
+   "book": "Mastery",
+   "item": "Discover Your Calling",
+   "relation": "father (hand-painted signboard artist) / daughter / young cafe owner",
+   "set": "shop",
+   "hook": "a Rajshahi signboard painter loses work to flex prints and packs his brushes away; his art-student daughter finds his letter notebook, wins a hand-lettered cafe wall and brings him back to paint it; orders return slowly"
+  },
+  {
+   "id": "243",
+   "book": "Games People Play",
+   "item": "Courtroom",
+   "relation": "spouses / wife's mother (and husband's sister off-screen)",
+   "set": "balcony",
+   "hook": "a couple turns every fight into a family-group trial with her mother and his elder sister as judges; the judges refuse to rule; the wife finds their son's drawing of two parents on phones and himself covering his ears; new rule: no phone, balcony and two cups of tea"
+  },
+  {
+   "id": "244",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Authority",
+   "relation": "son (jobless graduate) / mother / fake recruiter",
+   "set": "home",
+   "hook": "a suited man with a government-logo card promises a job for 5 lakh; the mother is ready to sell her gold; the son checks the official circulars at 2 am and politely asks to pay by cheque with a receipt; the man leaves and his number goes dead; the son passes a real written test"
+  },
+  {
+   "id": "245",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Shortsightedness — Elevate Your Perspective",
+   "relation": "farmer father / agri-diploma son / old farmer friend",
+   "set": "street",
+   "hook": "a Godkhali flower farmer agrees to sell his land's topsoil to a brick kiln to fix his roof; his son silently walks him to a friend's field ruined by the same sale three years ago; they take a small farm loan for gerbera instead and help revive the friend's land"
+  },
+  {
+   "id": "246",
+   "book": "The Art of War",
+   "item": "Know yourself and know your opponent",
+   "relation": "elder brother / younger sister / conservative father",
+   "set": "home",
+   "hook": "a Bhairab girl gets a Dhaka University seat; father says no; her brother's arguments fail for three days; he writes down the father's three real fears and answers each with facts; the father takes her to the hall himself and strikes out \"what will people say\""
+  },
+  {
+   "id": "247",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Know how to forget",
+   "relation": "sisters-in-law (bhabi / nanad) / niece",
+   "set": "kitchen",
+   "hook": "a woman has avoided her sister-in-law for 15 years over an insult at her own wedding; the niece invites her; she shows up the night before the gaye holud to cook ilish polao; when the sister-in-law finally apologises she says \"what words? I don't remember\""
+  },
+  {
+   "id": "248",
+   "book": "Thinking, Fast and Slow",
+   "item": "The Availability Heuristic",
+   "relation": "teen daughter / mother",
+   "set": "street",
+   "hook": "a Kushtia mother locks her daughter's new bicycle after one accident video, and Facebook keeps feeding her more; the daughter asks her to stand at the school gate and count: 46 girls cycle safely daily; she agrees with conditions and later asks to learn cycling herself"
+  },
+  {
+   "id": "249",
+   "book": "Animal Farm",
+   "item": "Power slowly changes people who once fought for fairness",
+   "relation": "mess-mates (friends) / mess cook",
+   "set": "kitchen",
+   "hook": "a student who led a mess protest against overcharging becomes manager and slowly takes the fish heads, extra eggs and locks the ledger; his friend silently re-posts the rules the manager himself wrote; he returns the extra money and rotates the job"
+  },
+  {
+   "id": "250",
+   "book": "The Dictator's Handbook",
+   "item": "Every leader depends on a small group of essential supporters",
+   "relation": "son (new owner) / father / old sweet-maker",
+   "set": "shop",
+   "hook": "an MBA son taking over a 40-year Tangail sweet shop plans to replace two old karigors with cheap hands and ready mix; his father asks him to give one a week off first; quality collapses and a 500-piece order asks for the old karigor by name; the son makes them trainers with a profit share"
+  },
+  {
+   "id": "251",
+   "book": "The Righteous Mind",
+   "item": "Moral foundations: care, fairness, loyalty, authority, sanctity, liberty",
+   "relation": "two teachers (strict woman, soft man) / class-8 student",
+   "set": "shop",
+   "hook": "a boy caught cheating splits a strict maths teacher (rules) and a kind Bangla teacher (care); she visits his dawn tea stall and finds him studying between customers; the zero stays, but both tutor him; he scores 61 honestly"
+  },
+  {
+   "id": "252",
+   "book": "The 50th Law",
+   "item": "Confront Your Fear",
+   "relation": "young woman (first job) / mother / CNG driver",
+   "set": "street",
+   "hook": "a 26-year-old from Sirajganj who has never travelled alone must reach Motijheel for her first bank job; her brother's leave is cancelled; she turns each fear into a question to ask someone; she refuses a 600-taka CNG and takes a 35-taka bus; months later she guides her cousin"
+  },
+  {
+   "id": "253",
+   "book": "The Daily Laws",
+   "item": "Turn every setback into practice",
+   "relation": "young cook / old widower customer / hotel owner",
+   "set": "shop",
+   "hook": "an old man sends back the same prawn malaikari nine Fridays running; the young cook stops changing things blindly and asks him what is missing, writing his memories line by line; the dish turns out to be his late wife's recipe"
+  },
+  {
+   "id": "254",
+   "book": "The Book of Five Rings",
+   "item": "Practice until it becomes natural",
+   "relation": "mother (construction labourer) / young daughter / site manager",
+   "set": "street",
+   "hook": "a female construction worker who thumbprints the wage book is short-paid weekly; her class-4 daughter teaches her to write her name and numbers on empty cement bags for 30 nights; she reads the book, catches a missing day and signs her name; seven co-workers join the night class"
+  },
+  {
+   "id": "255",
+   "book": "The Wealth of Nations",
+   "item": "Self-interest can serve others (the baker and the butcher)",
+   "relation": "son (night khichuri van) / mother / patient's daughter",
+   "set": "street",
+   "hook": "a jobless young man sells 40-taka khichuri at night behind a hospital for patients' families; his mother calls profiting from misfortune a sin and praises a free langar; the langar runs out of money and closes; at 2 am she sees 70 people eat with dignity and starts serving, then adds a pay-later ledger"
+  },
+  {
+   "id": "256",
+   "book": "The Prince",
+   "item": "Appearances matter — people judge by what they see",
+   "relation": "husband (electrician) / wife / customer",
+   "set": "home",
+   "hook": "an honest Rangpur electrician loses jobs to a slick uniformed company and is turned away at a door; his wife sews him a sky-blue shirt with his name, prints cards and paints a public price list; the same customer calls after the company botches her meter box"
+  },
+  {
+   "id": "257",
+   "book": "The 33 Strategies of War",
+   "item": "Know How to End Things",
+   "relation": "friends (business partners) / wife",
+   "set": "shop",
+   "hook": "two friends' 12-year Cox's Bazar dried-fish shop splits over online vs counter; instead of lawyers they ask a trusted elder to divide everything in half, keep the shared name, refer customers to each other and eat jilapi together again"
   }
  ]
 }

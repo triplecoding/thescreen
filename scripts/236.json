@@ -1,0 +1,532 @@
+{
+ "id": "236",
+ "status": "ready",
+ "title_bn": "লন্ডনের নাতি, সিলেটের নানু",
+ "theme": "probashi",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Opportunities multiply as they are seized",
+  "title_bn": "সুযোগ ধরলে সুযোগ বাড়ে"
+ },
+ "cast": {
+  "rumana": {
+   "name": "রুমানা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#DCD6C8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "nani": {
+   "name": "নানু",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#7A5A9E",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "অনার্স পাস। এগারোটা চাকরির পরীক্ষা, এগারোবার না। আর প্রতি সপ্তাহে *বিয়ের প্রস্তাব*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সিলেট, বিয়ানীবাজার",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumana",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরির পরীক্ষা",
+       "value": "১১"
+      },
+      {
+       "label": "ডাক",
+       "value": "০",
+       "red": true
+      },
+      {
+       "label": "বিয়ের প্রস্তাব",
+       "value": "প্রতি সপ্তাহে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রুমানা, চব্বিশ বছর। পাড়ার অর্ধেক ঘর লন্ডনি। বাকি অর্ধেক *অপেক্ষায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আর কত পরীক্ষা, মা? ভালো ঘর, ছেলে লন্ডনে। *আর কী চাস*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rumana",
+   "say": "আব্বা, আমারে আর ছয় মাস দেন। নিজে কিছু একটা *করতে চাই*।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "rumana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস। কিন্তু কী করবে, রুমানা নিজেও জানে না।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "rumana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বান্ধবীরা বলে, এখানে মেয়েদের কাজ কই? হয় বিয়ে, *নয় লন্ডন*।"
+  },
+  {
+   "say": "একদিন পাশের বাড়ির নানু ডাকলেন। হাতে ফোন। চোখ ভেজা।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "পাশের বাড়ির বারান্দা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "rumana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "মাগো, লন্ডনে আমার নাতি আয়ান। আমি বাংলায় কই, হে ইংরেজিতে। *কেউ কারো কথা বুঝি না*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "তুমি একদিন ভিডিওতে ওরে একটু বাংলা শিখাইবা? *একদিনই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমানা চাইলে দশ মিনিট গল্প করেই ছাড়তে পারত। করল না।",
+   "scene": {
+    "cam": {
+     "focus": "rumana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সারা রাত বানাল ছবির কার্ড। আম, নৌকা, আর বড় করে লেখা— *নানু*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "আয়ানের প্রথম ক্লাস",
+     "items": [
+      {
+       "t": "আম",
+       "mark": "check"
+      },
+      {
+       "t": "নৌকা",
+       "mark": "check"
+      },
+      {
+       "t": "নানু",
+       "mark": "check"
+      },
+      {
+       "t": "আমি তোমাকে ভালোবাসি",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চল্লিশ মিনিটের ক্লাস। আয়ান প্রথমে হাসল, তারপর মন দিল। শেষে বলল— *কালকে আবার*?",
+   "scene": {
+    "moods": {
+     "rumana": "happy"
+    },
+    "arms": {
+     "rumana": "phone"
+    },
+    "holds": {
+     "rumana": "phone"
+    },
+    "widget": null
+   }
+  },
+  {
+   "say": "নানুর জন্মদিন। লন্ডনে সকাল, সিলেটে বিকেল। ফোন বাজল।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "নানুর জন্মদিন",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "rumana",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "5:00",
+     "label": "সিলেট, বিকাল ৫টা"
+    }
+   }
+  },
+  {
+   "say": "ভাঙা উচ্চারণে, পুরোটা বাংলায়— ‘নানু, শুভ জন্মদিন। আমি তোমাকে *ভালোবাসি*।’",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "নানু ফোনটা বুকে চেপে ধরলেন। আট বছরে প্রথম নাতির কথা *নিজে বুঝলেন*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.5
+    },
+    "moods": {
+     "nani": "crying"
+    },
+    "arms": {
+     "nani": "hug"
+    }
+   }
+  },
+  {
+   "say": "আয়ানের আম্মু মাসে চার হাজার টাকা দিতে চাইলেন। তাঁর তিন বান্ধবীও।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rumana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "লন্ডনের বাংলা মায়েরা",
+     "msgs": [
+      {
+       "who": "আয়ানের আম্মু",
+       "t": "সিলেটে আমাদের একজন টিচার আছেন"
+      },
+      {
+       "who": "রুবিনা",
+       "t": "আমার মেয়ের জন্যও?"
+      },
+      {
+       "who": "শিরিন",
+       "t": "ওয়েটিং লিস্টে নাম দিলাম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "প্রতি ক্লাসে নতুন কার্ড। কারো জন্য *শাপলা*, কারো জন্য *রিকশা*।"
+  },
+  {
+   "say": "এক থেকে চার, চার থেকে *এগারো*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছাত্রছাত্রী",
+       "value": "১১"
+      },
+      {
+       "label": "শহর",
+       "value": "লন্ডন, বার্মিংহাম"
+      },
+      {
+       "label": "মাসে",
+       "value": "৪৪,০০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আব্বা দরজা থেকে শুনলেন, এক বাচ্চা বলছে— *‘আমার দাদাবাড়ি সিলেট’*।",
+   "scene": {
+    "light": "evening",
+    "chars": [
+     {
+      "id": "rumana",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "abba",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মা, তোর ছয় মাস তো শেষ। এখন কী কমু, *প্রস্তাব আনমু*?",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rumana",
+   "say": "আনেন আব্বা। কিন্তু আমার ক্লাস বিকাল পাঁচটায়। *ওইটা বাদ দিমু না*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "rumana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "বাদ দিবি ক্যান? ওইটাই তো এখন *তোর পরিচয়*।",
+   "tone": "proudly",
+   "scene": {
+    "moods": {
+     "abba": "happy"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে নানু এলেন, হাতে নিজের বানানো *চুঙ্গা পিঠা*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rumana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "আয়ান কাইল আমারে বাংলায় *গল্প শুনাইছে*, মাগো।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পিঠার পাশে আয়ানের আঁকা একটা নৌকা। নিচে লেখা— *‘মিস রুমানা’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ছোট্ট সুযোগটা যত্নে ধরলে… *সে নিজেই আরও দরজা খোলে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ছোট্ট সুযোগটা যত্নে ধরলে…",
+    "line2": "সে নিজেই\nআরও দরজা খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "লন্ডনের নাতি নানুর কথা বোঝে না… সিলেটের রুমানার এক দিনের ক্লাস বদলে দিল সব 🇧🇩",
+  "description": "বিয়ানীবাজারের রুমানা এগারোটা চাকরির পরীক্ষায় ফেল, বাড়িতে বিয়ের চাপ। একদিন পাশের বাড়ির নানু অনুরোধ করলেন— লন্ডনের নাতিকে একদিন বাংলা শেখাতে…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "সিলেট",
+   "লন্ডনি",
+   "নানু নাতি",
+   "মেয়ের স্বপ্ন",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একদিনের ক্লাসকে রুমানা হালকাভাবে নেয়নি— আর সেই একদিনই খুলে দিল এগারোটা দরজা। 🇧🇩\nতোমার জীবনের কোন ছোট্ট সুযোগ বড় কিছু হয়ে উঠেছিল? 👇 #সিলেট #প্রবাস"
+ },
+ "thumbnail": {
+  "text": "একদিনই তো",
+  "sub": "লন্ডনের নাতি"
+ }
+}

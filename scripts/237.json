@@ -1,0 +1,493 @@
+{
+ "id": "237",
+ "status": "ready",
+ "title_bn": "চারটার দশ মিনিট",
+ "theme": "school",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 13",
+  "chapter_bn": "১৩ নম্বর অধ্যায়",
+  "title": "The Law of Conformity — Resist the Downward Pull of the Group",
+  "title_bn": "দলের টানে না ভেসে যাওয়া"
+ },
+ "cast": {
+  "rafi": {
+   "name": "রাফি",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F5D8A",
+   "hair": "curly",
+   "voice": "young_man"
+  },
+  "sakib": {
+   "name": "সাকিব",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#B5523B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "sir": {
+   "name": "আনোয়ার স্যার",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#E9E4D8",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "বাষট্টি জনের ক্লাস গ্রুপ। একষট্টিজন বলল, *কাল কেউ ক্লাসে যাব না*। চুপ শুধু একজন— রাফি।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাজশাহী, হলের রুম",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "sakib",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "বিবিএ সেকেন্ড ইয়ার",
+     "msgs": [
+      {
+       "who": "সাকিব",
+       "t": "কাল আনোয়ার স্যারের ক্লাস বয়কট!"
+      },
+      {
+       "who": "৬১ জন",
+       "t": "👍"
+      },
+      {
+       "who": "রাফি",
+       "t": "…"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কারণ? কপি করা অ্যাসাইনমেন্টে স্যার শূন্য দিয়েছেন, *চল্লিশজনকে*।"
+  },
+  {
+   "say": "রাগী মেসেজ, স্ক্রিনশট। সবার আগে রুমমেট *সাকিব*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "sakib",
+   "say": "দোস্ত, তুইও লাইক দে। সবাই দিছে। একা থাকলে স্যারের *চামচা* কইবো।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দিতেছি… *একটু পরে*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাফি লাইক দিল না। ফোনটা উল্টে রাখল। মনে পড়ল প্রথম বছরের এক বিকেল।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "গ্রামের কলেজ থেকে আসা ছেলে। প্রথম প্রেজেন্টেশনে ইংরেজিতে আটকে গিয়েছিল। *ক্লাস হেসেছিল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দেড় বছর আগে, স্যারের রুম",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ — ২১৪"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "fx": "bw"
+   }
+  },
+  {
+   "voice": "sir",
+   "say": "রাফি, কাল থেকে বিকাল চারটায় আমার রুমে আসবা। দশ মিনিট। *ফি লাগবে না*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাফি গিয়েছিল। প্রথম দিন লজ্জায়, *তারপর অভ্যাসে*।"
+  },
+  {
+   "say": "তিন মাস, রোজ দশ মিনিট। সেই রাফি এখন প্রেজেন্টেশনে *ক্লাসে প্রথম*।",
+   "scene": {
+    "moods": {
+     "rafi": "smile"
+    }
+   }
+  },
+  {
+   "say": "আর আজ গ্রুপে লেখা হচ্ছে— স্যার অহংকারী, স্যার নিষ্ঠুর, *ছাত্রদের শত্রু*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "আজ রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "fx": null
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রাফি তিনবার লিখল, তিনবার মুছল।",
+   "card": {
+    "title": "রাফির তিনটা ভয়",
+    "items": [
+     {
+      "t": "একা পড়ে যাব",
+      "mark": "x"
+     },
+     {
+      "t": "সবাই চামচা বলবে",
+      "mark": "x"
+     },
+     {
+      "t": "সাকিবের সাথে দূরত্ব",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত একটা। অবশেষে সে লিখল। কোনো বক্তৃতা না। *শুধু একটা প্রশ্ন*।",
+   "scene": {
+    "widget": {
+     "kind": "clock",
+     "time": "1:00",
+     "label": "রাত একটা"
+    }
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "স্যারের রুমে একা গিয়ে কিছু বুঝে আসছো, এমন কেউ আছো? *একটু হাত তোলো*।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পাঁচ মিনিট চুপ। তারপর একটা হাত, তারপর তিনটা। ভোরের আগে *তেইশটা*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "বিবিএ সেকেন্ড ইয়ার",
+     "msgs": [
+      {
+       "who": "মিম",
+       "t": "✋ আমার বৃত্তির ফর্ম স্যার পূরণ করে দিছিলেন"
+      },
+      {
+       "who": "তানভীর",
+       "t": "✋ জ্বরের সময় ফোন দিছিলেন"
+      },
+      {
+       "who": "আরও ২১ জন",
+       "t": "✋"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sakib",
+   "say": "তুই রাতে এইটা কী করলি? সব প্ল্যান *শেষ কইরা দিলি*!",
+   "tone": "annoyed",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sakib",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "আমি কিছু শেষ করি নাই, দোস্ত। শুধু জিগাইছি। হাত তো *তোরাই তুলছস*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sakib",
+   "say": "আসলে আমার অ্যাসাইনমেন্টও কপি ছিল। রাগটা স্যারের উপর না, *নিজের উপর*।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "sakib": "sad"
+    },
+    "arms": {
+     "sakib": "face"
+    },
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকাল দশটা। ক্লাসরুম। একটা একটা করে বেঞ্চ ভরল। বাষট্টির মধ্যে *আটান্ন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ক্লাসরুম ৩০২",
+    "props": [
+     "signboard",
+     "sign:রুম ৩০২"
+    ],
+    "chars": [
+     {
+      "id": "sir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "উপস্থিত",
+       "value": "৫৮"
+      },
+      {
+       "label": "মোট",
+       "value": "৬২"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাফি পেছনের বেঞ্চে বসে দরজার দিকে তাকিয়ে। *সাকিব আসবে তো*?"
+  },
+  {
+   "say": "স্যার কিছুই জানেন না। চশমা ঠিক করে বললেন—",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "sir",
+   "say": "শূন্য পাওয়া চল্লিশজন, বিকালে আমার রুমে আসো। আবার লিখবা। এবার *নিজের হাতে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "sir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলে স্যারের রুমের সামনে লম্বা লাইন। সবার আগে দাঁড়িয়ে— *সাকিব*।",
+   "scene": {
+    "set": "stairs",
+    "light": "evening",
+    "chip": "বিকাল চারটা",
+    "chars": [
+     {
+      "id": "sakib",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rafi",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রাফি কিছু বলল না। শুধু গ্রুপের নামটা বদলে দিল।",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নতুন নাম— *‘চারটার দশ মিনিট’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "widget": {
+     "kind": "chat",
+     "title": "চারটার দশ মিনিট",
+     "msgs": [
+      {
+       "who": "সাকিব",
+       "t": "নামটা ভালো হইছে 🙂"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই যেদিকে যায়, সেদিকে যাওয়া সহজ… *একটা প্রশ্নই পথ বদলে দেয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই যেদিকে যায়, সেদিকে যাওয়া সহজ…",
+    "line2": "একটা প্রশ্নই\nপথ বদলে দেয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৬১ জন বলল ক্লাস বয়কট— রাতে রাফির একটা প্রশ্ন বদলে দিল পুরো ক্লাস ✋",
+  "description": "রাজশাহীর এক বিশ্ববিদ্যালয়ে কপি করা অ্যাসাইনমেন্টে শূন্য পেয়ে ৬১ জন ঠিক করল স্যারের ক্লাস বয়কট করবে। রাফি চুপ, কারণ তার মনে পড়ল এক বিকেল…",
+  "tags": [
+   "শিক্ষকের গল্প",
+   "বন্ধুত্ব",
+   "রাজশাহী",
+   "বিশ্ববিদ্যালয়",
+   "স্রোতের বিপরীতে",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই যখন এক দিকে, রাফি শুধু একটা প্রশ্ন করল— আর সবাই নিজের হাত তুলল। ✋\nকোনো শিক্ষক কি তোমার জন্য চুপচাপ বাড়তি সময় দিয়েছিলেন? 👇 #শিক্ষক #রাজশাহী"
+ },
+ "thumbnail": {
+  "text": "একটু হাত তোলো",
+  "sub": "৬১ জনের বয়কট"
+ }
+}

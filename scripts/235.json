@@ -1,0 +1,555 @@
+{
+ "id": "235",
+ "status": "ready",
+ "title_bn": "আমার দ্বারা হবে",
+ "theme": "parents",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 8",
+  "chapter_bn": "৮ নম্বর অধ্যায়",
+  "title": "Wooden Leg",
+  "title_bn": "অজুহাতের খোঁড়া পা"
+ },
+ "cast": {
+  "jasim": {
+   "name": "আব্বা জসিম",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#7A8B99",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "tanha": {
+   "name": "তানহা",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F5D8A",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "boss": {
+   "name": "অফিসের বস",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "বাইশ বছর একই চেয়ার। তিনবার প্রমোশনের লিস্ট, তিনবারই বাদ। জসিম সাহেবের একটাই কথা—",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চট্টগ্রাম, আগ্রাবাদ",
+    "props": [
+     "signboard",
+     "sign:শিপিং এজেন্ট অফিস"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "২২ বছর"
+      },
+      {
+       "label": "প্রমোশন লিস্ট",
+       "value": "৩ বার"
+      },
+      {
+       "label": "প্রমোশন",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "আমি গ্রামের স্কুলের পোলা। ইংরেজি কই পামু? আমার দ্বারা *হইব না*।",
+   "tone": "sighs",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিদেশি ইমেইল এলে তিনি ফাইলটা পাশের টেবিলে *ঠেলে দেন*।"
+  },
+  {
+   "say": "পারেন না, তা না। চেষ্টা করলে যে *ভুল হতে পারে*।",
+   "scene": {
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মেয়ে তানহা, ক্লাস নাইন। স্কুল থেকে নোটিশ এলো— *ইংরেজি বিতর্ক*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "পতেঙ্গা, জসিম সাহেবের বাসা",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tanha",
+      "x": 0.33,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নোটিশ",
+     "lines": [
+      "ইংরেজি বিতর্ক — জেলা পর্যায়",
+      "নাম: তানহা আক্তার"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "আব্বা, নাম কাটায় দিমু। সরকারি স্কুলের মেয়ে আমি। *আমার দ্বারা হইব না*।",
+   "tone": "upset",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চায়ের কাপ থেমে গেল। গলাটা মেয়ের। কিন্তু কথাটা *তাঁর নিজের*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.5
+    },
+    "moods": {
+     "jasim": "surprised"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "বাইশ বছর ধরে মেয়েটা রোজ একটা কথাই শুনেছে।",
+   "card": {
+    "title": "যেখান থেকে শিখল",
+    "items": [
+     {
+      "t": "অফিস থেকে ফিরে— ‘হইব না’",
+      "mark": "x"
+     },
+     {
+      "t": "আত্মীয়ের বাসায়— ‘কপাল’",
+      "mark": "x"
+     },
+     {
+      "t": "খাবার টেবিলে— ‘গ্রামের পোলা’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তানহা শুধু কথাটা শেখেনি। শিখেছে *চেষ্টা না করার* অভ্যাস।",
+   "scene": {
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সে রাতে *ঘুম এলো না*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "রাত এগারোটা চল্লিশ",
+    "props": [
+     "stove"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "11:40",
+     "label": "রাত"
+    }
+   }
+  },
+  {
+   "say": "তারপর মেয়ের দরজায় আস্তে টোকা দিলেন।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "তানহা, একটা ডিল? তুই নাম কাটাবি না। আর আমিও আর কমু না, *‘হইব না’*।",
+   "tone": "gently",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তানহার ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tanha",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jasim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "মানে? আপনিও শিখবেন? এই বয়সে, *আব্বা*?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "tanha": "surprised"
+    },
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "রোজ রাতে দশটা বাক্য। পাঁচটা তুই শিখাবি, পাঁচটা আমি। লেখা থাকবে *ফ্রিজে*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুরু হলো অদ্ভুত পড়াশোনা। রাত দশটা, একটা ডিকশনারি, *ফ্রিজে চিরকুট*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "প্রতি রাত দশটা",
+    "props": [
+     "stove"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tanha",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "আজকের দশ",
+     "lines": [
+      "আই উইল ট্রাই।",
+      "মে আই হেল্প ইউ?",
+      "দ্য শিপ ইজ লেট।"
+     ]
+    }
+   }
+  },
+  {
+   "say": "আব্বা ভুল করেন, তানহা হাসে। তানহা ভুল করে, আব্বা হাসেন। *লজ্জা কমে*।",
+   "scene": {
+    "moods": {
+     "jasim": "happy"
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর এক রাগী ইমেইল, জাহাজ দেরি। এবার জসিম সাহেব ফাইলটা *ঠেলে দিলেন না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর, অফিস",
+    "props": [
+     "signboard",
+     "sign:শিপিং এজেন্ট অফিস"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "boss",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "জসিম ভাই, এই উত্তর আপনার? এখন থেকে এই মেইল *আপনিই দেখবেন*।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "boss": "surprised"
+    },
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন অফিস থেকে ফিরে তিনি একবারও বললেন না, *‘আমাদের কপাল’*।"
+  },
+  {
+   "say": "প্রমোশন না, নতুন দায়িত্ব। বেতন বাড়ল তিন হাজার। তাঁর মনে হলো *তিন লাখ*।",
+   "scene": {
+    "moods": {
+     "jasim": "happy"
+    },
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নতুন দায়িত্ব",
+       "value": "১টা"
+      },
+      {
+       "label": "বেতন বাড়ল",
+       "value": "৩,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বিতর্কের দিন। মঞ্চে তানহা, হাত কাঁপছে। দর্শকের সারিতে আব্বার ঠোঁট নড়ছে *মেয়ের সাথে*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "জেলা স্কুল মিলনায়তন",
+    "props": [
+     "signboard",
+     "sign:ইংরেজি বিতর্ক প্রতিযোগিতা"
+    ],
+    "chars": [
+     {
+      "id": "tanha",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "jasim",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "তানহা তৃতীয় হলো। মঞ্চ থেকে নেমেই ছুটে এলো আব্বার কাছে।",
+   "scene": {
+    "moods": {
+     "tanha": "happy"
+    }
+   }
+  },
+  {
+   "voice": "tanha",
+   "say": "আব্বা, মঞ্চে উঠার আগে ফ্রিজের এক নম্বর বাক্যটা বলছি— *আই উইল ট্রাই*।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tanha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "আমিও আজ সকালে অফিসে ঢোকার আগে *ওইটাই বলছি*, মা।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "jasim": "crying"
+    },
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে ফ্রিজে নতুন চিরকুট, আব্বার হাতে লেখা— *‘আমার দ্বারা হবে।’*",
+   "pause": 0.8,
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "stove"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "আজকের বাক্য",
+     "lines": [
+      "আমার দ্বারা হবে।"
+     ]
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে কথা আমরা রোজ নিজেকে বলি… *সন্তান সেটাই শিখে নেয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে কথা আমরা রোজ নিজেকে বলি…",
+    "line2": "সন্তান সেটাই\nশিখে নেয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "“আমার দ্বারা হইব না”— বাবার এই কথা মেয়ের মুখে শুনে থমকে গেলেন জসিম সাহেব 📝",
+  "description": "চট্টগ্রামের জসিম সাহেব বাইশ বছর ধরে বলেন, \"আমি গ্রামের পোলা, আমার দ্বারা হইব না।\" একদিন ক্লাস নাইনের মেয়ে তানহা ঠিক একই কথা বলল…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "আত্মবিশ্বাস",
+   "চট্টগ্রাম",
+   "অজুহাত",
+   "পরিবারের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "বাবার অজুহাত মেয়ের মুখে শুনে, বাবা নিজেই বদলে গেলেন। 📝\nতোমার কোন অভ্যাসটা তোমার সন্তান বা ছোটরা শিখে ফেলছে? 👇 #বাবা #চট্টগ্রাম"
+ },
+ "thumbnail": {
+  "text": "আমার দ্বারা হবে",
+  "sub": "ফ্রিজের চিরকুট"
+ }
+}

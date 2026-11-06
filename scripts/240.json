@@ -1,0 +1,547 @@
+{
+ "id": "240",
+ "status": "ready",
+ "title_bn": "কথা দেওয়ার খাতা",
+ "theme": "work",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Fear and sweet talk keep people silent",
+  "title_bn": "ভয় আর মিষ্টি কথা"
+ },
+ "cast": {
+  "mahmud": {
+   "name": "মাহমুদ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#4A6FA5",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "boss": {
+   "name": "এমডি স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2B2B2B",
+   "hair": "short",
+   "beard": "full_black",
+   "glasses": true,
+   "voice": "man"
+  },
+  "ruma": {
+   "name": "রুমা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিন মাস বেতন নেই। চৌদ্দজন কর্মী। আর বসের একটাই কথা— *আমরা তো ফ্যামিলি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, পুরানা পল্টন",
+    "props": [
+     "signboard",
+     "sign:প্রিন্টিং ও ডিজাইন অফিস"
+    ],
+    "chars": [
+     {
+      "id": "boss",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বকেয়া বেতন",
+       "value": "৩ মাস",
+       "red": true
+      },
+      {
+       "label": "কর্মী",
+       "value": "১৪ জন"
+      },
+      {
+       "label": "প্রতিশ্রুতি",
+       "value": "৬ বার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মাহমুদ এখানে ডিজাইনার। বেতন বাইশ হাজার। পাবনায় আম্মার ওষুধ চলে *এই টাকায়*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "boss",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "এই মাসটা একটু কষ্ট করো। পনেরো তারিখে *সব ক্লিয়ার*। আমরা তো ফ্যামিলি, না?",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পনেরো তারিখ এলো, গেল। এলো আরেকটা মিটিং, আরেকটা *মিষ্টি কথা*।"
+  },
+  {
+   "say": "সেই মাসেই অফিসের নিচে বসের *নতুন গাড়ি*। ওপরে চৌদ্দজন চুপ।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "অফিসের নিচে",
+    "props": [
+     "car"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "ruma",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "মাহমুদ, কিছু কইয়ো না। চাকরি গেলে এই বাজারে *আরেকটা পাবা*?",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সবাই ভয় পায়। তাই হাসে, মাথা নাড়ে, আর *ধার করে*।",
+   "scene": {
+    "cam": {
+     "focus": "mahmud",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চৌদ্দজনের তিন মাস কাটল এভাবেই।",
+   "card": {
+    "title": "তিন মাসের বাকি",
+    "items": [
+     {
+      "t": "রুমা আপার বাচ্চার স্কুল ফি",
+      "mark": "x"
+     },
+     {
+      "t": "পিয়ন কাশেমের বাসাভাড়া",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মার ওষুধ, দোকানে বাকি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আর বস প্রতি মিটিংয়ে বলেন, *ধৈর্য ধরো*।",
+   "scene": {
+    "cam": "static"
+   }
+  },
+  {
+   "say": "রাতে আম্মার ফোন। মাহমুদ বলল, সব ঠিক আছে। তারপর *চুপ করে বসে রইল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেসের রুম",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বস যতবার কথা দিয়েছেন, মাহমুদ খাতায় *তারিখসহ লিখে রেখেছে*।",
+   "scene": {
+    "moods": {
+     "mahmud": "thinking"
+    },
+    "arms": {
+     "mahmud": "hold"
+    },
+    "holds": {
+     "mahmud": "book"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "কথা দেওয়ার খাতা",
+     "lines": [
+      "৫ আগস্ট — ‘১৫ তারিখে সব’",
+      "২০ সেপ্টেম্বর — ‘বায়ারের টাকা আসলেই’",
+      "১ অক্টোবর — ‘এই সপ্তাহেই’"
+     ],
+     "sub": "মোট ছয়বার"
+    }
+   }
+  },
+  {
+   "say": "পরদিন লাঞ্চে খাতাটা টেবিলে রাখল। রাগ না, স্লোগান না। *শুধু তারিখ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন, লাঞ্চ",
+    "props": [
+     "signboard",
+     "sign:প্রিন্টিং ও ডিজাইন অফিস"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "ruma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "mahmud",
+   "say": "আপা, ঝগড়া না। চলেন সবাই মিলে একটা চিঠি দেই। চাই শুধু *লিখিত একটা তারিখ*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "mahmud",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "একজন দিলে চাকরি যায়। কিন্তু *চৌদ্দজন* দিলে?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "ruma": "thinking"
+    },
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলের মধ্যে চিঠিতে *চৌদ্দটা সই*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বরাবর, ব্যবস্থাপনা পরিচালক",
+     "lines": [
+      "তিন মাসের বকেয়া বেতন",
+      "লিখিত সময়সূচি চাই"
+     ],
+     "sub": "স্বাক্ষর: ১৪ জন"
+    }
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "এইটা কী? আমি তোমাদের ফ্যামিলি ভাবি, আর তোমরা আমারে *চিঠি দাও*?",
+   "tone": "annoyed",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এমডির রুম",
+    "props": [
+     "signboard",
+     "sign:ব্যবস্থাপনা পরিচালক"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "ruma",
+      "x": 0.48,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "boss",
+      "x": 0.75,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mahmud",
+   "say": "স্যার, ফ্যামিলিতে কথা দিলে রাখে। এখানে ছয়টা তারিখ। আমরা *সাত নম্বরটা* লিখিত চাই।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "mahmud",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বস চিঠিটা উল্টে দেখলেন। চৌদ্দটা সই। কাউকে আলাদা করে ধমকানোর *উপায় নেই*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অনেকক্ষণ পর কলম তুললেন। দুইটা তারিখ— অর্ধেক এই সপ্তাহে, *বাকিটা মাসের শেষে*।",
+   "scene": {
+    "moods": {
+     "boss": "thinking"
+    }
+   }
+  },
+  {
+   "say": "দুটো তারিখই রাখা হলো। এবার সাক্ষী ছিল *চৌদ্দজন*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বকেয়া",
+       "value": "০"
+      },
+      {
+       "label": "সাক্ষী",
+       "value": "১৪ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পরের মাসের এক তারিখ। ফোনে মেসেজ— *বেতন এসেছে*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "পরের মাসের ১ তারিখ",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "mahmud",
+   "say": "আম্মা, ওষুধের টাকা পাঠাইছি। এখন থেকে প্রতি মাসের *এক তারিখেই* পাবেন।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mahmud",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অফিসে সেদিন পিয়ন কাশেম ভাই সবার জন্য চা আনলেন। *নিজের টাকায়*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "অফিস",
+    "props": [
+     "signboard",
+     "sign:প্রিন্টিং ও ডিজাইন অফিস"
+    ],
+    "chars": [
+     {
+      "id": "mahmud",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "ruma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "মাহমুদ, তোমার খাতাটা ফালাইয়ো না। *পরের জনের* কাজে লাগবো।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মাহমুদ খাতার নতুন পাতায় লিখল একটা তারিখ। পাশে— *‘কথা রাখা হয়েছে’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "কথা দেওয়ার খাতা",
+     "lines": [
+      "১ নভেম্বর — কথা রাখা হয়েছে"
+     ]
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভয় একা মানুষকে চুপ রাখে… *একসাথে থাকলে সত্যি বলা যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভয় একা মানুষকে চুপ রাখে…",
+    "line2": "একসাথে থাকলে\nসত্যি বলা যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন মাস বেতন নেই, বসের নতুন গাড়ি… মাহমুদের খাতায় ছয়টা তারিখ 📒",
+  "description": "পুরানা পল্টনের এক অফিসে তিন মাস বেতন বন্ধ, অথচ বস বলেন \"আমরা তো ফ্যামিলি\"। সবাই ভয়ে চুপ। কিন্তু মাহমুদ তিন মাস ধরে চুপচাপ একটা খাতায় লিখছিল…",
+  "tags": [
+   "অফিসের গল্প",
+   "চাকরির গল্প",
+   "ঢাকা",
+   "বেতন",
+   "একতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "একা বললে চাকরি যায়— চৌদ্দজন একসাথে বললে কথা রাখা হয়। 📒\nকর্মজীবনে কখনো এমন \"মিষ্টি কথা\"র ফাঁদে পড়েছ? 👇 #অফিস #চাকরি"
+ },
+ "thumbnail": {
+  "text": "আমরা তো ফ্যামিলি",
+  "sub": "৩ মাস বেতন নেই"
+ }
+}

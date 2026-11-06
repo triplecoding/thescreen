@@ -1,0 +1,493 @@
+{
+ "id": "242",
+ "status": "ready",
+ "title_bn": "র-এর লেজ",
+ "theme": "family",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Discover Your Calling",
+  "title_bn": "নিজের ডাক খুঁজে পাওয়া"
+ },
+ "cast": {
+  "mou": {
+   "name": "মৌ",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#E8A33D",
+   "color2": "#8E3B5A",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "abba": {
+   "name": "সাইফুল ওস্তাদ",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#7A8B99",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "araf": {
+   "name": "আরাফ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2B2B2B",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "পঁয়ত্রিশ বছরের হাতের লেখা। মাসে অর্ডার ছিল চল্লিশটা। এখন *দুইটা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "রাজশাহী, সাহেব বাজার",
+    "props": [
+     "signboard",
+     "sign:সাইফুল আর্ট"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অভিজ্ঞতা",
+       "value": "৩৫ বছর"
+      },
+      {
+       "label": "আগে অর্ডার",
+       "value": "মাসে ৪০"
+      },
+      {
+       "label": "এখন",
+       "value": "২",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সাইফুল ওস্তাদ সাইনবোর্ড আঁকেন। কিন্তু সবাই এখন *ফ্লেক্স প্রিন্ট* করে।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ওস্তাদের মেয়ে মৌ, চারুকলায় পড়ে। ছোটবেলায় বাবার বোর্ডের কোণে প্রথম লিখেছিল— *‘অ’*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "আব্বা, ফ্লেক্সে অক্ষরের প্রাণ নাই। আপনার *‘র’-এর লেজটা* কোনো মেশিন পারে না।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "প্রাণ দিয়া পেট চলে না, মা। ব্যাংকের পরীক্ষাটা দে। *এই লাইনে আর ভাত নাই*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ওস্তাদ তুলিগুলো ভরলেন পুরোনো একটা *টিনের বাক্সে*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মৌ চেষ্টা করল নিজের মতো। কিছুই দাঁড়াল না।",
+   "card": {
+    "title": "মৌয়ের চেষ্টা",
+    "items": [
+     {
+      "t": "ফেসবুক পেজ— ৪০ লাইক",
+      "mark": "x"
+     },
+     {
+      "t": "বন্ধুদের কার্ড— ফ্রি",
+      "mark": "x"
+     },
+     {
+      "t": "ব্যাংকের বই— মন নাই",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে মৌ বাবার পুরোনো খাতা খুলল। *ত্রিশ বছরের অক্ষর*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ওস্তাদের খাতা",
+     "lines": [
+      "ক — মাথা সোজা, পেট গোল",
+      "র — লেজে একটু বাঁক",
+      "মোটা টান, ধীরে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "মৌ বুঝল, সে ছবি আঁকতে চায় না। সে চায় অক্ষর। *বাবার অক্ষর*।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "mou": "smile"
+    }
+   }
+  },
+  {
+   "say": "পদ্মার পাড়ে নতুন এক ক্যাফে। মালিক আরাফ।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "পদ্মার পাড়",
+    "chars": [
+     {
+      "id": "araf",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "mou",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "araf",
+   "say": "আপু, দেয়ালে হাতে লেখা বাংলা চাই। *ফ্লেক্স না*।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "araf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "পারব। কিন্তু একা না। আমার সাথে একজন *ওস্তাদ* আসবেন।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে মৌ টিনের বাক্সটা বাবার সামনে রাখল।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ওস্তাদের ঘর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "mou",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "আব্বা, দশ ফুটের দেয়াল। রং কিনছি। শুধু *‘র’-এর লেজটা* আপনি দিবেন?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "দশ ফুট? এত বড় দেয়ালে… পঁচিশ বছর *হাত দেই নাই*।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "abba": "surprised"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কিন্তু ততক্ষণে ওস্তাদের আঙুল বাক্সের ঢাকনা *খুলে ফেলেছে*।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    },
+    "moods": {
+     "abba": "smile"
+    }
+   }
+  },
+  {
+   "say": "তিন দিন কাজ। মৌ মাপ দেয়, বাবা টান দেন। মৌ রং ভরে, বাবা *কিনারা মেলান*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ক্যাফের দেয়াল, তিন দিন",
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চতুর্থ দিন সকালে দেয়ালে বড় বড় অক্ষর— *‘পদ্মার পাড়ে এক কাপ’*।",
+   "scene": {
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "পথচারীরা থামে, ছবি তোলে। এক বৃদ্ধ বললেন, এমন লেখা *ছোটবেলায় দেখতেন*।",
+   "scene": {
+    "fx": null
+   }
+  },
+  {
+   "say": "তারপর ধীরে ধীরে অর্ডার। বিয়ের গেট, দোকানের দেয়াল, স্কুলের *বর্ণমালা*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসে অর্ডার",
+       "value": "২ → ৯"
+      },
+      {
+       "label": "কারিগর",
+       "value": "২ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বড়লোক হওয়ার মতো না। কিন্তু সাটার আবার ওঠে *রোজ সকালে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ওস্তাদের দোকানে নতুন সাইনবোর্ড। এবার হাতে আঁকা।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard_new",
+     "sign:সাইফুল ও মৌ আর্ট"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "mou",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "*‘ও মৌ’* অংশটা তুই লিখ। তোর ‘ম’ এখন আমার চেয়ে ভালো।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "না আব্বা, আমার ‘ম’ তো আপনার *খাতা থেকে চুরি করা*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "mou": "happy"
+    },
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বোর্ডের কোণে মৌয়ের ছোট্ট সই, সেই প্রথম অক্ষরের মতো— *‘অ’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে কাজে হাত আপনা থেকে চলে… *সেখানেই হয়তো তোমার পথ।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে কাজে হাত আপনা থেকে চলে…",
+    "line2": "সেখানেই হয়তো\nতোমার পথ।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ফ্লেক্সের যুগে বাবার তুলি বাক্সে বন্দি… মেয়ে খুলে দিল সেই বাক্স 🖌️",
+  "description": "রাজশাহীর সাইফুল ওস্তাদ পঁয়ত্রিশ বছর হাতে সাইনবোর্ড আঁকেন। ফ্লেক্স প্রিন্টে অর্ডার নেমে এলো দুইটায়। চারুকলার ছাত্রী মেয়ে মৌ একদিন বাবার পুরোনো খাতা খুলল…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "রাজশাহী",
+   "হাতের কাজ",
+   "স্বপ্নের গল্প",
+   "ঐতিহ্য",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "বাবার পুরোনো খাতায় মৌ খুঁজে পেল নিজের ডাক— আর বাবা ফিরে পেলেন নিজের তুলি। 🖌️\nতোমার পরিবারের কোন হাতের কাজটা হারিয়ে যেতে দিতে চাও না? 👇 #বাবা #রাজশাহী"
+ },
+ "thumbnail": {
+  "text": "র-এর লেজ",
+  "sub": "বাবার তুলি"
+ }
+}

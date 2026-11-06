@@ -1,0 +1,556 @@
+{
+ "id": "246",
+ "status": "ready",
+ "title_bn": "আব্বার তিনটা ভয়",
+ "theme": "siblings",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Know yourself and know your opponent",
+  "title_bn": "নিজেকে আর অন্যকে জানা"
+ },
+ "cast": {
+  "shuvo": {
+   "name": "শুভ ভাইয়া",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B5B7A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "mim": {
+   "name": "মিম",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ঢাকা বিশ্ববিদ্যালয়ে চান্স, মেধাক্রম *চৌদ্দশো বারো*। আর আব্বার উত্তর— *না*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কিশোরগঞ্জ, ভৈরব",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mim",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মেধাক্রম",
+       "value": "১৪১২"
+      },
+      {
+       "label": "ভর্তির শেষ দিন",
+       "value": "১২ দিন পর"
+      },
+      {
+       "label": "আব্বার উত্তর",
+       "value": "না",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মিম, আঠারো। পরিবারের প্রথম মেয়ে, যে *ঢাকায় পড়তে চায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মাইয়া ঢাকায় একা থাকবো? মানুষে কী কইবো? ভৈরবের কলেজ কি *খারাপ*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বড় ভাই শুভ তর্ক শুরু করল— যুগ বদলেছে, *মেয়েরা সব পারে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "mim",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তর্ক যত বাড়ল, আব্বার গলা তত উঁচু। শেষে দরজা বন্ধ। মিম *কাঁদতে কাঁদতে ঘুমাল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন দিনে শুভ তিনভাবে চেষ্টা করল।",
+   "card": {
+    "title": "শুভর প্রথম তিন দিন",
+    "items": [
+     {
+      "t": "তর্ক— আব্বা রেগে গেলেন",
+      "mark": "x"
+     },
+     {
+      "t": "আত্মীয়ের উদাহরণ— আরও রাগ",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মাকে পাঠানো— বকা খেলেন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "চতুর্থ রাতে শুভ তর্ক ছেড়ে কাগজ নিল। লিখল, আব্বা আসলে *কীসে ভয় পান*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "চতুর্থ রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আব্বার ভয়",
+     "lines": [
+      "১. মাইয়া একা, রাতে কী হয়",
+      "২. খরচ — মাসে কত?",
+      "৩. মানুষে কী কইবো"
+     ]
+    }
+   }
+  },
+  {
+   "say": "নিচে লিখল নিজেদের কী আছে— কিছু টাকা, আজিমপুরে খালা, আর *বারোটা দিন*।"
+  },
+  {
+   "say": "পাঁচ দিন শুভ ঢাকায় দৌড়াল। হলের নিয়ম, গেটের সময়, *খালার বাসার দূরত্ব*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকা, পাঁচ দিন",
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "pan",
+    "widget": null
+   }
+  },
+  {
+   "say": "ষষ্ঠ রাতে সে আব্বার পাশে বসল। হাতে কাগজ। গলা *খুব নিচু*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ষষ্ঠ রাত",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "আব্বা, তর্ক না। আপনার তিনটা চিন্তা লিখছি। দেখবেন? *পাঁচ মিনিট*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "দেখা। তয় *পাঁচ মিনিটই*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "এক— হলের গেট রাত দশটায় বন্ধ। শুক্রবার মিম থাকবে খালার বাসায়, *বারো মিনিটের পথ*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shuvo",
+   "say": "দুই— খরচ মাসে ছয় হাজার। তিন আমি দিমু। বাকিটা মিম *দুইটা টিউশনি* কইরা চালাবে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shuvo",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা চুপ। কাগজের তিন নম্বর লাইনে আঙুল রাখলেন— *মানুষে কী কইবো*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    },
+    "moods": {
+     "abba": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আর মানুষ? তোর চাচারা? *বাজারের লোকজন*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "আব্বা, মানুষ কী কইবো জানি না। চার বছর পর আমি কী হমু, *সেইটা দেখবেন*?",
+   "tone": "softly",
+   "scene": {
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "mim",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা কাগজটা ভাঁজ করে পকেটে রাখলেন। *কিছু বললেন না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন নাশতার টেবিলে শুধু একটা বাক্য—",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "stove"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "mim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "কাইল ভোরের ট্রেনে আমি নিজে যামু। *ভর্তির কাগজ* গুছা।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এগারোতম দিন। ঢাকা। হলের গেটে মিম, আব্বা আর একটা *টিনের ট্রাংক*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকা, হলের গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "mim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আব্বা দারোয়ানের নাম্বার নিলেন। খালার বাসার রাস্তা *দুইবার জিজ্ঞেস করলেন*।"
+  },
+  {
+   "say": "পকেট থেকে বের করলেন শুভর সেই কাগজ। তিন নম্বর লাইন *কাটা*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আব্বার ভয়",
+     "lines": [
+      "৩. মানুষে কী কইবো"
+     ],
+     "sub": "কাটলেন আব্বা নিজে",
+     "strike": true
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "মানুষের কথা আমি দেখমু। তুই শুধু পড়বি। আর রাতে একবার *ফোন দিস*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "widget": null,
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফেরার ট্রেনে মিমের মেসেজ— *‘ভাইয়া, প্রথম রাত। ভয় লাগছে না।’*",
+   "pause": 0.8,
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ফেরার পথে",
+    "chars": [
+     {
+      "id": "shuvo",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "রাগের সাথে লড়লে রাগ বাড়ে… *ভয়টা বুঝলে পথ খোলে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "রাগের সাথে লড়লে রাগ বাড়ে…",
+    "line2": "ভয়টা বুঝলে\nপথ খোলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "মেয়ে ঢাকায় একা? আব্বার উত্তর “না”— ভাইয়া তর্ক ছেড়ে লিখল আব্বার তিনটা ভয় 📄",
+  "description": "ভৈরবের মিম ঢাকা বিশ্ববিদ্যালয়ে চান্স পেয়েছে, কিন্তু আব্বা রাজি নন। বড় ভাই শুভ তিন দিন তর্ক করে হারল। চতুর্থ রাতে সে একটা কাগজে লিখল— আব্বা আসলে কীসে ভয় পান…",
+  "tags": [
+   "ভাইবোনের গল্প",
+   "বাবার গল্প",
+   "মেয়েদের পড়াশোনা",
+   "ভৈরব",
+   "বিশ্ববিদ্যালয়",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "তর্কে আব্বার রাগ বাড়ল— কিন্তু ভয়গুলো বোঝার পর আব্বা নিজেই ট্রাংক তুলে নিলেন। 📄\nতোমার পড়াশোনার পথে পরিবারের কে পাশে দাঁড়িয়েছিল? 👇 #ভাইবোন #পড়াশোনা"
+ },
+ "thumbnail": {
+  "text": "আব্বার তিনটা ভয়",
+  "sub": "ঢাকায় চান্স"
+ }
+}

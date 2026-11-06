@@ -1,0 +1,484 @@
+{
+ "id": "245",
+ "status": "ready",
+ "title_bn": "ওপরের তিন ফুট",
+ "theme": "family",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 6",
+  "chapter_bn": "৬ নম্বর অধ্যায়",
+  "title": "The Law of Shortsightedness — Elevate Your Perspective",
+  "title_bn": "দূরের দিকে তাকানো"
+ },
+ "cast": {
+  "malek": {
+   "name": "মালেক মিয়া",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "fahim": {
+   "name": "ফাহিম",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#5E7D3A",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "hashem": {
+   "name": "হাশেম চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#C9A15A",
+   "hair": "bald_grey",
+   "beard": "full_black",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "এক বিঘা জমি। ওপরের তিন ফুট মাটির দাম *এক লাখ আশি হাজার*। নগদ, আজই।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "যশোর, গদখালী",
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জমি",
+       "value": "১ বিঘা"
+      },
+      {
+       "label": "মাটি",
+       "value": "ওপরের ৩ ফুট"
+      },
+      {
+       "label": "দাম",
+       "value": "১,৮০,০০০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ফুলচাষি মালেক মিয়া। পঁচিশ বছর গোলাপ চাষ। এবার দাম পড়েছে, ঘরের *চালে ফুটো*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ইটভাটার লোক ট্রাকে মাটি কেটে নেবে। *তিন দিনে কাজ শেষ*।"
+  },
+  {
+   "voice": "malek",
+   "say": "বর্ষা আসতেছে, ফাহিম। চাল না সারাইলে চলবো? মাটি আবার *হইয়া যাইবো*।",
+   "tone": "serious",
+   "scene": {
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "fahim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "fahim",
+   "say": "আব্বা, ওপরের এই মাটি হইতে কত বছর লাগে… *আপনি জানেন*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "fahim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফাহিম কৃষি ডিপ্লোমা পড়ে। কিন্তু আব্বাকে বোঝানো *অন্য পরীক্ষা*।"
+  },
+  {
+   "kind": "list",
+   "say": "তিন দিনে তিনটা চেষ্টা। আব্বার একই উত্তর।",
+   "card": {
+    "title": "ফাহিম যা যা করল",
+    "items": [
+     {
+      "t": "বইয়ের হিসাব দেখাল",
+      "mark": "x"
+     },
+     {
+      "t": "ইউটিউবের ভিডিও দেখাল",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মাকে দিয়ে বলাল",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "বই দিয়া চাল সারে না, বাবা। *টাকা লাগে*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার ট্রাক আসবে। বৃহস্পতিবার রাতে ফাহিম *ঘুমাল না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বৃহস্পতিবার রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "fahim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "3:10",
+     "label": "রাত"
+    }
+   }
+  },
+  {
+   "say": "ভোরে সে বলল, আব্বা, একটু হাঁটতে চলেন। শুধু হাঁটা। *কোনো কথা না*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "পাশের গ্রামে এক জমির সামনে ফাহিম থামল। ফাটা মাটি, *শুকনো ঘাস*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পাশের গ্রাম, ভোর",
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "fahim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "hashem",
+      "x": 0.8,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশে বসে হাশেম চাচা, মালেক মিয়ার *পুরোনো সাথী*।"
+  },
+  {
+   "voice": "hashem",
+   "say": "মালেক, তিন বছর আগে আমিও মাটি বেচছিলাম। টাকা শেষ এক বছরে। আর জমি… *একটা ফুলও দেয় নাই*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মালেক মিয়া মাটিতে হাত দিলেন। মাটি না, যেন পাথর। অনেকক্ষণ *কিছু বললেন না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.5
+    },
+    "moods": {
+     "malek": "sad"
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "তুই এইখানে আনলি ক্যান? *ভাষণ* না দিয়া?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "fahim",
+   "say": "ভাষণ আপনি শোনেন না, আব্বা। *মাটি হাতে নিলে* শোনেন।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "fahim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুপুরে ইটভাটায় ফোন গেল— *না*। কিন্তু চালের সমস্যা তো রয়ে গেল।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সেদিন দুপুর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "fahim",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ফাহিমের প্রস্তাব— ষাট হাজার টাকা কৃষি ঋণ। জমির এক কোণে *জারবেরা*।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "ফাহিমের পরিকল্পনা",
+     "items": [
+      {
+       "t": "কৃষি ঋণ — ৬০,০০০",
+       "mark": "check"
+      },
+      {
+       "t": "চালের অর্ধেক সারানো",
+       "mark": "check"
+      },
+      {
+       "t": "জারবেরা — দশ শতক",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চালের অর্ধেক সারানো হলো, বাকিটায় পলিথিন। বর্ষায় তবু পানি পড়ল। *কেউ কিছু বলল না*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "পাঁচ মাস পর, ফাল্গুনের আগের রাত। ফুলের বাজার *জমজমাট*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পাঁচ মাস পর, ফাল্গুনের আগের রাত",
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "fahim",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মালেক মিয়ার ভ্যানে লাল-হলুদ জারবেরা। এক রাতে বিক্রি *আটত্রিশ হাজার*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এক রাতের বিক্রি",
+       "value": "৩৮,০০০"
+      },
+      {
+       "label": "জমি",
+       "value": "অক্ষত"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "malek",
+   "say": "কাইল চালের বাকিটা সারাই। আর হাশেমের জমিতে *আমরা গোবর দিমু*।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "malek",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে হাশেম চাচার ফাটা জমিতে পড়ল প্রথম গোবরের স্তূপ।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "chars": [
+     {
+      "id": "malek",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "তিন বছর লাগবো, মালেক। কিন্তু *শুরু তো হইল*।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "একপাশে বাবার ফুলের জমি। আরেক পাশে চাচার জমি, যেখানে *আবার ঘাস উঠছে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "আজকের অভাব যা বেচতে বলে… *কালকের জীবন তা চায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "আজকের অভাব যা বেচতে বলে…",
+    "line2": "কালকের জীবন\nতা চায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "অভাবে জমির ওপরের মাটি বেচতে রাজি বাবা— ছেলে নিয়ে গেল এক ফাটা জমিতে 🌼",
+  "description": "যশোরের গদখালীর ফুলচাষি মালেক মিয়া। ঘরের চাল সারাতে ইটভাটার কাছে জমির ওপরের তিন ফুট মাটি বেচতে রাজি। ছেলে ফাহিম তর্ক না করে ভোরে তাঁকে নিয়ে গেল পাশের গ্রামে…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "কৃষকের গল্প",
+   "যশোর",
+   "ফুলচাষ",
+   "মাটি",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "আজকের অভাবে বেচা মাটি তিন বছরেও ফুল দেয় না— মালেক মিয়া শেষ মুহূর্তে বুঝলেন। 🌼\nকখনো তাড়াহুড়ায় এমন কিছু বেচতে যাচ্ছিলে, যা আর ফেরে না? 👇 #কৃষক #যশোর"
+ },
+ "thumbnail": {
+  "text": "মাটি বেচবেন?",
+  "sub": "ওপরের তিন ফুট"
+ }
+}

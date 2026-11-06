@@ -1,0 +1,451 @@
+{
+ "id": "247",
+ "status": "ready",
+ "title_bn": "মনে নাই",
+ "theme": "family",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Know how to forget",
+  "title_bn": "ভুলে যেতে জানা"
+ },
+ "cast": {
+  "rehana": {
+   "name": "রেহানা ভাবি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#7A5A9E",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "shirin": {
+   "name": "শিরিন",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "tuli": {
+   "name": "তুলি",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#E8A33D",
+   "color2": "#C4473A",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "পনেরো বছর আগের একটা বাক্য। তারপর ননদের বাসায় যাওয়া *একবারও না*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ময়মনসিংহ",
+    "props": [
+     "sofa",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সেই কথার বয়স",
+       "value": "১৫ বছর"
+      },
+      {
+       "label": "ননদের বাসায় যাওয়া",
+       "value": "০",
+       "red": true
+      },
+      {
+       "label": "ঈদে দেখা",
+       "value": "শুধু সালাম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রেহানার বিয়ের দিন। সবার সামনে ননদ শিরিন বলেছিল, *‘বাপে তো খালি হাতে পাঠাইল’*।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    },
+    "fx": "bw",
+    "widget": null
+   }
+  },
+  {
+   "say": "সেদিন রেহানা কিছু বলেননি। শুধু মনে রেখেছেন। *প্রতিদিন*।",
+   "pause": 0.7,
+   "scene": {
+    "fx": null
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পনেরো বছর ধরে চলছে এক শান্ত যুদ্ধ।",
+   "card": {
+    "title": "পনেরো বছরের হিসাব",
+    "items": [
+     {
+      "t": "শিরিনের ফোন— ধরেন না",
+      "mark": "x"
+     },
+     {
+      "t": "শিরিন এলে— চা দেন, কথা না",
+      "mark": "x"
+     },
+     {
+      "t": "দাওয়াত— ‘শরীর খারাপ’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এর মধ্যে শিরিনের দোকান বন্ধ, মেয়ের বিয়ে সামনে, *হাতে টাকা কম*।"
+  },
+  {
+   "say": "এক দুপুরে দরজায় তুলি, শিরিনের মেয়ে। হাতে বিয়ের কার্ড।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tuli",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "মামি, আম্মা আসতে লজ্জা পায়। আপনি না আসলে বিয়াটা *অসম্পূর্ণ*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "দোয়া থাকবে, তুলি। কিন্তু তোর আম্মার বাসায়… *যাওয়া হবে না*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "আম্মা প্রায়ই বলে, বিয়েতে মামির হাতের *ইলিশ পোলাও* ছাড়া হবে না।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কার্ডটা টেবিলে পড়ে রইল। রাতে রেহানা *ভাত খেলেন না*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বিয়ের অ্যালবাম খুললেন। এক কোণে শিরিন, তখন *উনিশ বছরের মেয়ে*।"
+  },
+  {
+   "say": "উনিশ। আজ তুলির বয়সও তাই। এই বয়সে মানুষ কত কথা বলে, *না বুঝেই*।",
+   "scene": {
+    "moods": {
+     "rehana": "thinking"
+    }
+   }
+  },
+  {
+   "say": "শিরিন হয়তো ভুলেই গেছে। পনেরো বছর ভারী হয়ে আছে শুধু *তাঁর নিজের কাঁধ*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "ভোরে তিনি আলমারি থেকে নামালেন *পোলাওয়ের বড় হাঁড়ি*।"
+  },
+  {
+   "say": "গায়ে হলুদের আগের রাত। বাবুর্চি আসেনি। শিরিন *একা চুলার সামনে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "গায়ে হলুদের আগের রাত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "সর তো, শিরিন। ইলিশ পোলাওতে ঘি দিতে হয় *শেষে*, শুরুতে না।",
+   "tone": "gently",
+   "scene": {
+    "chars": [
+     {
+      "id": "shirin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "ভাবি… তুমি? এত রাতে… *আসলা*?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সারা রাত দুইজন রান্না করলেন। দেড়শো মানুষের হাঁড়ি। *পুরোনো কথা কেউ তুলল না*।",
+   "scene": {
+    "cam": "wide",
+    "moods": {
+     "rehana": "neutral",
+     "shirin": "smile"
+    }
+   }
+  },
+  {
+   "say": "ভোর চারটায়, শেষ হাঁড়ির ঢাকনা দিয়ে শিরিন আস্তে বলল—",
+   "scene": {
+    "widget": {
+     "kind": "clock",
+     "time": "4:00",
+     "label": "ভোর"
+    }
+   }
+  },
+  {
+   "voice": "shirin",
+   "say": "ভাবি, তোমার বিয়ার দিন একটা খারাপ কথা কইছিলাম। পনেরো বছর *মাফ চাইতে পারি নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "shirin": "crying"
+    },
+    "widget": null,
+    "cam": {
+     "focus": "shirin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "কোন কথা? কী জানি… আমার তো *মনে নাই*। এখন ঘুমা, সকালে হলুদ।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শিরিন জানে, ভাবির মনে আছে। রেহানাও জানেন, শিরিন জানে। তবু দুইজনই *হেসে ফেললেন*।",
+   "scene": {
+    "moods": {
+     "rehana": "happy",
+     "shirin": "happy"
+    }
+   }
+  },
+  {
+   "say": "গায়ে হলুদের মঞ্চে তুলি মাইক নিয়ে বলল—",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "গায়ে হলুদ",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "tuli",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "shirin",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuli",
+   "say": "আজকের পোলাও রান্না করছেন আমার দুই মা— *মামি আর আম্মা*।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tuli",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছবির সময় শিরিন ভাবিকে টেনে আনলেন সামনে। পনেরো বছর পর এক ছবিতে দুইজন, *পাশাপাশি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow",
+    "arms": {
+     "rehana": "hug",
+     "shirin": "hug"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কিছু কথা মনে রাখলে বোঝা বাড়ে… *ভুলে গেলে মানুষ ফেরে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "কিছু কথা মনে রাখলে বোঝা বাড়ে…",
+    "line2": "ভুলে গেলে\nমানুষ ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বিয়ের দিনের একটা কথা, পনেরো বছরের অভিমান— ননদের মেয়ের বিয়েতে ভাবি যা করলেন 🍛",
+  "description": "ময়মনসিংহের রেহানা ভাবি পনেরো বছর ননদের বাসায় যাননি— বিয়ের দিন শিরিন একটা কথা বলেছিল। এখন শিরিনের মেয়ে তুলির বিয়ে, বাবুর্চি আসেনি, টাকা কম…",
+  "tags": [
+   "ননদ ভাবির গল্প",
+   "অভিমান",
+   "ময়মনসিংহ",
+   "ক্ষমা",
+   "বিয়ের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "\"কোন কথা? আমার তো মনে নাই\"— পনেরো বছরের অভিমান শেষ হলো এক হাঁড়ি পোলাওয়ে। 🍛\nকারো কোন পুরোনো কথা কি তুমি এখনো মনে রেখেছ? 👇 #অভিমান #পরিবার"
+ },
+ "thumbnail": {
+  "text": "মনে নাই",
+  "sub": "১৫ বছরের অভিমান"
+ }
+}

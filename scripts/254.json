@@ -1,0 +1,513 @@
+{
+ "id": "254",
+ "status": "ready",
+ "title_bn": "আঙুলের ছাপ থেকে নাম",
+ "theme": "parents",
+ "source": {
+  "book": "The Book of Five Rings",
+  "author": "Miyamoto Musashi",
+  "author_bn": "মিয়ামোতো মুসাশি",
+  "chapter": "IDEA 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Practice until it becomes natural",
+  "title_bn": "চর্চায় সহজ"
+ },
+ "cast": {
+  "amena": {
+   "name": "আমেনা খালা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#B5523B",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "popy": {
+   "name": "পপি",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F5D8A",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "manager": {
+   "name": "সাইট ম্যানেজার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B4A6B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "দশ বছর মজুরির খাতায় শুধু *বুড়ো আঙুলের ছাপ*। আর প্রতি সপ্তাহে টাকা কম পড়ে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "গাজীপুর, টঙ্গী — নির্মাণাধীন ভবন",
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কাজের বছর",
+       "value": "১০"
+      },
+      {
+       "label": "দৈনিক মজুরি",
+       "value": "৫০০ টাকা"
+      },
+      {
+       "label": "খাতায় সই",
+       "value": "আঙুলের ছাপ",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আমেনা খালা ইট-বালু তোলেন। ছয়তলা দালানের প্রতিটা তলায় *তাঁর ঘাম*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "শনিবার মজুরি। ম্যানেজার আঙুলে কালি লাগিয়ে বলেন— *এইখানে দেন*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "manager",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "খালা, এই সপ্তাহে আড়াই হাজার। *ছাপ দেন*, পরের জন আসতেছে।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছয় দিনের কাজ, পাওয়ার কথা তিন হাজার। কিন্তু খাতায় কী লেখা, *পড়তে পারেন না*।",
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    },
+    "moods": {
+     "amena": "worried"
+    }
+   }
+  },
+  {
+   "say": "বাসায় টাকা গুনছেন। পাশে মেয়ে পপি, ক্লাস ফোর।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "বস্তির ঘর, সন্ধ্যা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "popy",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "popy",
+   "say": "আম্মা, টাকা গুইনা মুখ কালো করো ক্যান? *কম দিছে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "popy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "জানি না রে মা। পড়তে তো পারি না। *আঙুল দেই*, ব্যস।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পপি মায়ের কালি লাগা আঙুলের দিকে তাকাল। তারপর এগিয়ে দিল *পেন্সিলটা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "popy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "popy",
+   "say": "আম্মা, তোমারে নাম লেখা শিখাই? আর সংখ্যা। *এক মাস*, প্রতিদিন।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "popy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "চল্লিশ বছরে *কলম ধরমু*? মাইনষে হাসবো।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "popy",
+   "say": "কেউ দেখবো না, আম্মা। আমরা *রাতে* শিখমু।",
+   "tone": "playfully",
+   "scene": {
+    "moods": {
+     "popy": "smile"
+    },
+    "cam": {
+     "focus": "popy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুরু হলো রাতের ক্লাস। খাতা নেই, তাই সিমেন্টের *খালি বস্তার উল্টো পিঠ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাতের ক্লাস",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "popy",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রথম রাতে ‘আ’ লিখতে আধা ঘণ্টা। হাত কাঁপে। *কলম রেখে দিতে চান*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আম্মার খাতা",
+     "lines": [
+      "দিন ১: আ",
+      "দিন ৭: আমেনা",
+      "দিন ১৫: ১ থেকে ১০০",
+      "দিন ৩০: আমেনা খাতুন"
+     ]
+    }
+   }
+  },
+  {
+   "say": "কাজের ফাঁকে আঙুল দিয়ে বালুর ওপর লেখেন। আমেনা। *আমেনা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কাজের ফাঁকে",
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "ত্রিশ দিনে নাম, সংখ্যা। হাত আর কাঁপে না। লেখাটা হয়ে গেছে *নিজের*।",
+   "scene": {
+    "moods": {
+     "amena": "smile"
+    }
+   }
+  },
+  {
+   "say": "মজুরির শনিবার। ম্যানেজার কালির প্যাড এগিয়ে দিলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মজুরির শনিবার",
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "manager",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "কালি লাগবো না, স্যার। কলমটা দেন। আর খাতাটা একটু *দেখি*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সংখ্যা ছুঁয়ে ছুঁয়ে পড়লেন। কাজ ছয় দিন। খাতায় লেখা— *পাঁচ*।",
+   "scene": {
+    "moods": {
+     "manager": "surprised"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মজুরির খাতা",
+     "lines": [
+      "আমেনা — কাজের দিন: ৫",
+      "মজুরি: ২,৫০০"
+     ],
+     "sub": "আসলে কাজ করেছেন ৬ দিন"
+    }
+   }
+  },
+  {
+   "voice": "amena",
+   "say": "স্যার, আমি ছয় দিন আসছি। এইটা ভুল, না *প্রতি সপ্তাহেই* এমন?",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "manager",
+   "say": "ইয়ে… লেখার ভুল, খালা। এই নেন, *পাঁচশো* আরো।",
+   "tone": "flatly",
+   "scene": {
+    "moods": {
+     "manager": "worried"
+    },
+    "cam": {
+     "focus": "manager",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তারপর ছাপের জায়গায় লিখলেন, ধীরে, মোটা টানে— *আমেনা খাতুন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amena",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পেছনের লাইনে সাতজন নারী শ্রমিক *চুপচাপ দেখছিলেন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সেই রাতে বস্তার উল্টো পিঠে আটজন। শিক্ষক এখনো পপি।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amena",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "popy",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছাত্রী",
+       "value": "৮ জন"
+      },
+      {
+       "label": "শিক্ষকের বয়স",
+       "value": "৯ বছর"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "popy",
+   "say": "আম্মা, তুমি আজ থেকে *অ্যাসিস্ট্যান্ট টিচার*। খালাদের ‘ম’টা তুমি শিখাও।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "popy",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আমেনা খালা বস্তায় লিখলেন বড় একটা ‘ম’। আজ আর *হাত কাঁপল না*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "moods": {
+     "amena": "happy"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে হাত শুধু ছাপ দিতে জানত… *সে আজ নিজের নাম লেখে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে হাত শুধু ছাপ দিতে জানত…",
+    "line2": "সে আজ\nনিজের নাম লেখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দশ বছর মজুরির খাতায় আঙুলের ছাপ… ক্লাস ফোরের মেয়ে মাকে শেখাল নিজের নাম লিখতে ✍️",
+  "description": "টঙ্গীর এক নির্মাণাধীন ভবনে কাজ করেন আমেনা খালা। দশ বছর মজুরির খাতায় শুধু আঙুলের ছাপ, প্রতি সপ্তাহে টাকা কম। ক্লাস ফোরে পড়া মেয়ে পপি একদিন নিজের পেন্সিলটা এগিয়ে দিল…",
+  "tags": [
+   "মা মেয়ের গল্প",
+   "শ্রমিকের গল্প",
+   "গাজীপুর",
+   "নারী শ্রমিক",
+   "শিক্ষা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ত্রিশ রাতের চর্চায় আঙুলের ছাপ হয়ে গেল নিজের নাম— আর সেই নামই ধরল পাঁচশো টাকার ভুল। ✍️\nতোমার আম্মু বা আব্বুকে তুমি কী শিখিয়েছ? 👇 #মা #শ্রমিক"
+ },
+ "thumbnail": {
+  "text": "নিজের নাম",
+  "sub": "আঙুলের ছাপ"
+ }
+}

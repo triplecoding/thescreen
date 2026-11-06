@@ -1,0 +1,531 @@
+{
+ "id": "257",
+ "status": "ready",
+ "title_bn": "শেষটা ঠিক করা",
+ "theme": "work",
+ "source": {
+  "book": "The 33 Strategies of War",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STRATEGY 12",
+  "chapter_bn": "১২ নম্বর অধ্যায়",
+  "title": "Know How to End Things",
+  "title_bn": "সুন্দর করে শেষ করা"
+ },
+ "cast": {
+  "shahin": {
+   "name": "শাহীন",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "kamal": {
+   "name": "কামাল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2F5D8A",
+   "hair": "side",
+   "beard": "stubble",
+   "glasses": true,
+   "voice": "man"
+  },
+  "rubi": {
+   "name": "রুবি ভাবি",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বারো বছরের ব্যবসা, দুই বন্ধু। এ বছর তর্ক *সাতাশবার*। কথা বন্ধ এক মাস।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "কক্সবাজার, বড়বাজার",
+    "props": [
+     "signboard",
+     "sign:দুই বন্ধু শুঁটকি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "cross"
+     },
+     {
+      "id": "kamal",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ব্যবসা",
+       "value": "১২ বছর"
+      },
+      {
+       "label": "এ বছরের তর্ক",
+       "value": "২৭",
+       "red": true
+      },
+      {
+       "label": "কথা বন্ধ",
+       "value": "১ মাস"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শাহীন আর কামাল। ষাট হাজার টাকায় শুরু করেছিল *এই শুঁটকির দোকান*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "কামাল চায় অনলাইন, কুরিয়ার। শাহীন চায় দোকান, *নিজের চোখে মাছ বাছাই*।"
+  },
+  {
+   "voice": "kamal",
+   "say": "সারাজীবন এই দশ ফুটের দোকানে থাকবি? দুনিয়া *অনলাইনে*!",
+   "tone": "frustrated",
+   "scene": {
+    "arms": {
+     "kamal": "point"
+    },
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "অনলাইনে শুঁটকি বেচবি, কাস্টমার গন্ধ নিবে কেমনে? *বিশ্বাস* তো দোকানেই।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ব্যবসাটা চলছিল, কিন্তু বন্ধুত্বটা থেমে যাচ্ছিল।",
+   "card": {
+    "title": "এক বছরের হিসাব",
+    "items": [
+     {
+      "t": "তর্ক— সাতাশবার",
+      "mark": "x"
+     },
+     {
+      "t": "দুই পরিবারের দাওয়াত বন্ধ",
+      "mark": "x"
+     },
+     {
+      "t": "কর্মচারীরা দিশেহারা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে রুবি দেখলেন, শাহীনের হাতে উদ্বোধনের দিনের ছবি। দুই বন্ধু, *এক প্লেট জিলাপি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rubi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rubi",
+   "say": "তুমি দোকান হারাইতে ভয় পাও, না কামাল ভাইরে? কোনটা *বেশি কষ্টের*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rubi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাহীন উত্তর দিল না। কারণ উত্তরটা *সে জানত*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "এভাবে চললে একদিন অভিযোগ, আত্মীয়, *শত্রুতা*।",
+   "scene": {
+    "moods": {
+     "shahin": "thinking"
+    }
+   }
+  },
+  {
+   "say": "পরদিন শাহীন কামালকে ডাকল সৈকতের এক চায়ের দোকানে।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সৈকতের পাশে চায়ের দোকান",
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "kamal",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "দোস্ত, ঝগড়া কইরা না, চল *বন্ধুর মতো* আলাদা হই। তুই অনলাইন, আমি দোকান।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "তুই ভাগ চাস? এত সহজে? আমি ভাবছিলাম *উকিল* ধরবি।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "kamal": "surprised"
+    },
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "উকিল না। মোস্তফা চাচা হিসাব করবেন। মাল, টাকা, দেনা— *সব অর্ধেক*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ হিসাব। প্রতিটা বস্তা গোনা। *একটা টাকাও লুকানো* রইল না।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "ভাগের হিসাব",
+     "items": [
+      {
+       "t": "মাল — অর্ধেক অর্ধেক",
+       "mark": "check"
+      },
+      {
+       "t": "ব্যাংকের টাকা — অর্ধেক অর্ধেক",
+       "mark": "check"
+      },
+      {
+       "t": "দোকানের নাম — ?",
+       "mark": "x"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আটকাল শুধু দোকানের নাম— *‘দুই বন্ধু’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "নামটা তুই রাখ। শুধু আমার পেজে লিখতে দিস— *‘দুই বন্ধু থেকে শুরু’*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shahin",
+   "say": "লিখবি। আর কেউ ঢাকায় পাঠাইতে চাইলে, আমি দিমু *তোর নাম্বার*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "shahin": "smile",
+     "kamal": "smile"
+    },
+    "cam": {
+     "focus": "shahin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে দুই পরিবার এক টেবিলে। শেষ পাতে *এক প্লেট জিলাপি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rubi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "kamal",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ছয় মাস পর। ঢাকার এক কাস্টমার কুরিয়ার চান। শাহীন দিলেন *কামালের কার্ড*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "signboard",
+     "sign:দুই বন্ধু শুঁটকি ঘর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আর কামালের পেজে লেখা— *দোকানে কিনতে চাইলে: দুই বন্ধু শুঁটকি ঘর*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "কামালের অনলাইন শুঁটকি",
+     "msgs": [
+      {
+       "who": "কাস্টমার",
+       "t": "আপনাদের দোকান আছে?"
+      },
+      {
+       "who": "কামাল",
+       "t": "আছে, আমার বন্ধুর। ঠিকানা দিচ্ছি 🙂"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দুইজনেরই বিক্রি বেড়েছে। আলাদা হয়ে, *কিন্তু একসাথে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শাহীনের দোকান",
+       "value": "বিক্রি বাড়ল"
+      },
+      {
+       "label": "কামালের পেজ",
+       "value": "অর্ডার বাড়ল"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rubi",
+   "say": "তোমরা আলাদা হইয়া আরও বেশি বন্ধু হইলা। কেমনে, *বুঝলাম না*।",
+   "tone": "teasing",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সৈকতের সেই চায়ের দোকান",
+    "chars": [
+     {
+      "id": "shahin",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rubi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "kamal",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "rubi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kamal",
+   "say": "ভাবি, ঝগড়ায় শেষ হলে বন্ধু যায়। আমরা শুধু *শেষটা ঠিক* করছি।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "kamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যার সৈকত। দুই কাপ চা, দুই বন্ধু। আর *কোনো হিসাবের খাতা নেই*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শুরুর মতো শেষেরও একটা মর্যাদা আছে… *ঠিকভাবে শেষ করলে সম্পর্ক বাঁচে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "শুরুর মতো শেষেরও একটা মর্যাদা আছে…",
+    "line2": "ঠিকভাবে শেষ করলে\nসম্পর্ক বাঁচে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বারো বছরের পার্টনার, এক বছরে সাতাশটা তর্ক— দুই বন্ধু আলাদা হলো, শত্রু না হয়ে 🐟",
+  "description": "কক্সবাজারের শাহীন আর কামাল বারো বছর একসাথে শুঁটকির দোকান চালায়। একজন চায় অনলাইন, আরেকজন দোকান। কথা বন্ধ এক মাস। তারপর শাহীন বন্ধুকে ডাকল সৈকতের এক চায়ের দোকানে…",
+  "tags": [
+   "বন্ধুত্বের গল্প",
+   "ব্যবসার গল্প",
+   "কক্সবাজার",
+   "পার্টনারশিপ",
+   "সম্পর্ক",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "ঝগড়ায় শেষ করলে দোকান থাকে, বন্ধু যায়— ওরা শুধু শেষটা ঠিক করল। 🐟\nকোনো সম্পর্ক বা পার্টনারশিপ কি তুমি সুন্দর করে শেষ করতে পেরেছিলে? 👇 #বন্ধুত্ব #কক্সবাজার"
+ },
+ "thumbnail": {
+  "text": "বন্ধুর মতো আলাদা",
+  "sub": "১২ বছরের পার্টনার"
+ }
+}

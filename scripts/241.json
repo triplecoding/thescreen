@@ -1,0 +1,477 @@
+{
+ "id": "241",
+ "status": "ready",
+ "title_bn": "উঁচু ভিটা",
+ "theme": "struggle",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Luck and Risk",
+  "title_bn": "ভাগ্য আর ঝুঁকি"
+ },
+ "cast": {
+  "robiul": {
+   "name": "রবিউল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#5E7D3A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "shamim": {
+   "name": "শামীম",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#B5523B",
+   "hair": "curly",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "mina": {
+   "name": "মিনা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "একই মাসে দুই বন্ধুর দুইটা মুরগির খামার। এক রাতের ঝড়ে একজনের *সব শেষ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "গাজীপুর, শ্রীপুর",
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shamim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "লোন",
+       "value": "২ লাখ + ২ লাখ"
+      },
+      {
+       "label": "বাচ্চা",
+       "value": "১২০০ + ১২০০"
+      },
+      {
+       "label": "ঝড়ের পর শামীমের",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রবিউল আর শামীম। ক্লাস ওয়ান থেকে বন্ধু। দুইজনই ঢাকা ছেড়ে *গ্রামে ফিরেছে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "শামীমের শেড নিচু জমিতে, খালের পাশে। রবিউলের শেড উঁচু ভিটায়, *বাবার রেখে যাওয়া*।"
+  },
+  {
+   "say": "মে মাসের এক রাতে কালবৈশাখী। খালের পানি উঠে এলো শামীমের শেডে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "মে মাসের এক রাত",
+    "chars": [
+     {
+      "id": "shamim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "সকালে বারোশো বাচ্চার একটাও বেঁচে নেই। শামীম শেডের সামনে বসে রইল, *কাদায়*।",
+   "pause": 1.0,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "shamim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": null
+   }
+  },
+  {
+   "say": "ঋণের কিস্তি তখনো বাকি *বাইশটা*।",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "রবিউলের শেডে একটা টিনও উড়েনি। প্রথম ব্যাচেই লাভ *আটষট্টি হাজার*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রথম ব্যাচ",
+       "value": "৪৫ দিন"
+      },
+      {
+       "label": "লাভ",
+       "value": "৬৮,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাজারে সবাই রবিউলকে বলে বুদ্ধিমান। শামীমকে— *কপালপোড়া, অলস*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চায়ের দোকানে প্রতিদিন একই আলাপ।",
+   "card": {
+    "title": "লোকে যা বলল",
+    "items": [
+     {
+      "t": "রবিউলের মাথা ভালো",
+      "mark": "x"
+     },
+     {
+      "t": "শামীম হিসাব বোঝে না",
+      "mark": "x"
+     },
+     {
+      "t": "খামার সবার জন্য না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আর আস্তে আস্তে রবিউলও কথাগুলো *বিশ্বাস করতে লাগল*।",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "উপজেলা থেকে চিঠি এলো। সফল খামারি রবিউলকে *বক্তৃতা দিতে হবে*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আমন্ত্রণ",
+     "lines": [
+      "সফল তরুণ খামারি সম্মাননা",
+      "বক্তা: রবিউল ইসলাম"
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাতে রবিউল বক্তৃতা লিখছিল। মিনা পাশে বসে পড়লেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "mina",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "mina",
+   "say": "‘কঠোর পরিশ্রম আর সঠিক সিদ্ধান্ত’… শামীম ভাই কি পরিশ্রম *কম করছিল*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "না… ও আমার চেয়ে বেশি খাটত। রাত দুইটায় উইঠা *পানি দিত*।",
+   "tone": "flatly",
+   "scene": {
+    "moods": {
+     "robiul": "thinking"
+    },
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mina",
+   "say": "তাইলে তোমার শেড বাঁচল ক্যান? *তোমার বুদ্ধিতে*, না তোমার আব্বার ভিটায়?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "mina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রবিউল কলম নামিয়ে রাখল। বাইরে অন্ধকারে সেই *উঁচু ভিটা*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "robiul": "sad"
+    }
+   }
+  },
+  {
+   "say": "উপজেলা মিলনায়তন। মঞ্চে রবিউল। লেখা কাগজটা সে ভাঁজ করে *পকেটে রাখল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "উপজেলা মিলনায়তন",
+    "props": [
+     "signboard",
+     "sign:খামারি সম্মাননা"
+    ],
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "shamim",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "আমার সাথে একজন একই দিনে শুরু করছিল, বেশি খাটত। তফাত একটাই— *আমার জমি উঁচু ছিল*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "এই সম্মানের অর্ধেক ওর। সামনের ব্যাচে আমরা *একসাথে* শুরু করব।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সামনের সারিতে শামীম আস্তে আস্তে *মুখ তুলল*।",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.5
+    },
+    "moods": {
+     "shamim": "surprised"
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে উঁচু ভিটায় নতুন শেড, শামীমের তিনশো বাচ্চা। লাভ-লোকসান *অর্ধেক*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "chars": [
+     {
+      "id": "robiul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "shamim",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "তুই আমারে দয়া করতাছস না তো? *দয়া নিমু না* কিন্তু।",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "robiul",
+   "say": "দয়া না রে। পরের ঝড়ে আমার শেড গেলে, তুই *আমারে জায়গা দিবি*। কথা?",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "robiul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "কথা। আর এইবার দুইজনেই *বীমা* করমু।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "shamim": "happy"
+    },
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই বন্ধু টিনের চালে শেষ পেরেকটা মারল। দূরে মিনা, হাতে *দুই কাপ চা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সব সাফল্য শুধু বুদ্ধির না… *সব ব্যর্থতাও দোষের না।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সব সাফল্য শুধু বুদ্ধির না…",
+    "line2": "সব ব্যর্থতাও\nদোষের না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "একই খামার, একই পরিশ্রম— এক রাতের ঝড়ে একজন শেষ, আরেকজন “সফল” 🐔",
+  "description": "গাজীপুরের দুই বন্ধু রবিউল আর শামীম একই মাসে মুরগির খামার শুরু করল। এক রাতের কালবৈশাখীতে শামীমের সব গেল, রবিউল পেল সম্মাননা। মঞ্চে উঠে রবিউল যা বলল…",
+  "tags": [
+   "বন্ধুত্বের গল্প",
+   "খামারির গল্প",
+   "গাজীপুর",
+   "ভাগ্য",
+   "সংগ্রামের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "রবিউল মঞ্চে দাঁড়িয়ে স্বীকার করল— তার জমিটা শুধু উঁচু ছিল। 🐔\nতোমার সাফল্যের পেছনে কোন ভাগ্যটা কাজ করেছিল? 👇 #বন্ধুত্ব #খামার"
+ },
+ "thumbnail": {
+  "text": "আমার জমি উঁচু ছিল",
+  "sub": "এক রাতের ঝড়"
+ }
+}

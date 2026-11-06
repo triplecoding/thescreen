@@ -1,0 +1,517 @@
+{
+ "id": "244",
+ "status": "ready",
+ "title_bn": "স্যুট-টাইয়ের চাকরি",
+ "theme": "honesty",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Authority",
+  "title_bn": "কর্তৃত্বের মোহ"
+ },
+ "cast": {
+  "naim": {
+   "name": "নাঈম",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#6B8E9E",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#E8C9A0",
+   "color2": "#8E3B5A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "dalal": {
+   "name": "স্যুট পরা ভদ্রলোক",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#1F2A44",
+   "hair": "short",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "পাঁচ লাখে সরকারি চাকরি, আগে দুই লাখ। আর আম্মা রাজি, *দুই ভরি সোনা* বেচবেন।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নারায়ণগঞ্জ, চাষাঢ়া",
+    "props": [
+     "sofa",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "naim",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরির দাম",
+       "value": "৫ লাখ"
+      },
+      {
+       "label": "অগ্রিম",
+       "value": "২ লাখ",
+       "red": true
+      },
+      {
+       "label": "আম্মার সোনা",
+       "value": "২ ভরি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নাঈম, মাস্টার্স শেষ, দুই বছর বেকার। সবাই জিজ্ঞেস করে, *কী করো এখন*?",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "একদিন এলেন এক ভদ্রলোক। স্যুট, টাই, নিচে *সাদা গাড়ি*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "dalal",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "amma",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "naim",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "dalal",
+   "say": "খালাম্মা, সচিবালয়ে আমার লোক আছে। পাঁচ লাখ দিলে চাকরি *একদম পাকা*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "dalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কার্ডে সরকারি মনোগ্রাম। আম্মা কার্ডটা ধরলেন দুই হাতে, *সম্মান করে*।",
+   "scene": {
+    "arms": {
+     "amma": "hold"
+    },
+    "holds": {
+     "amma": "envelope"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "ভিজিটিং কার্ড",
+     "lines": [
+      "জনাব কামরুল হাসান",
+      "উপদেষ্টা (নিয়োগ), সচিবালয়"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বাবা, আপনি এত বড় মানুষ। সোনা বেইচা দিমু, *চাকরিটা দেন*।",
+   "tone": "hopeful",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈমের খটকা লাগল। কিন্তু *স্যারকে প্রশ্ন*? বেয়াদবি।",
+   "scene": {
+    "cam": {
+     "focus": "naim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রাতে নাঈম কাগজে তিনটা খটকা লিখল।",
+   "card": {
+    "title": "নাঈমের খটকা",
+    "items": [
+     {
+      "t": "পরীক্ষার কথা একবারও নাই",
+      "mark": "x"
+     },
+     {
+      "t": "টাকা নগদে, রসিদ ছাড়া",
+      "mark": "x"
+     },
+     {
+      "t": "কার্ডে ব্যক্তিগত নাম্বার",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত দুইটা। নাঈম সরকারি ওয়েবসাইট খুলল। ওই পদের *কোনো বিজ্ঞপ্তিই নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "naim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "2:00",
+     "label": "রাত"
+    }
+   }
+  },
+  {
+   "say": "আরেকটা খবর চোখে পড়ল। একই গল্প, একই স্যুট— *চাকরির প্রতারণা*।"
+  },
+  {
+   "say": "নিয়মে লেখা— লিখিত, মৌখিক, তারপর নিয়োগ। *টাকার কোনো ঘর নেই*।",
+   "scene": {
+    "moods": {
+     "naim": "surprised"
+    },
+    "widget": null
+   }
+  },
+  {
+   "say": "সকালে আম্মা সোনার বাক্স হাতে। পাশে স্যার, *চায়ে চুমুক*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "sofa",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "dalal",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "amma",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "naim",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "naim",
+   "say": "স্যার, টাকাটা নগদে না, চেকে দেই? আপনার নামে, *রসিদসহ*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "naim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dalal",
+   "say": "চেক? এইসব কাজে চেক চলে না, বাবা। *বিশ্বাস না থাকলে* থাক।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "dalal": "angry"
+    },
+    "cam": {
+     "focus": "dalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "naim",
+   "say": "আর বিজ্ঞপ্তিটা কবে আসবে, স্যার? আমি *ফর্মটা* পূরণ করতাম।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "naim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হাসি থেমে গেল। হঠাৎ জরুরি ফোন। চা অর্ধেক রেখে *উঠে গেলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "dalal": "worried"
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে নাম্বারটা *বন্ধ*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "naim",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "স্যুট পরা মানুষ মিথ্যা কয়, ভাবি নাই। তুই না থাকলে… *সব যাইত*, বাবা।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "amma": "crying"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা সোনার বাক্সটা আলমারিতে রাখলেন। *তালা দিলেন দুইবার*।"
+  },
+  {
+   "voice": "naim",
+   "say": "আম্মা, স্যুট দেইখা না, *কাগজ দেইখা* বিশ্বাস কইরেন। চাকরি আমি নিজে নিমু।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "naim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এরপর রোজ আট ঘণ্টা লাইব্রেরি। আসল বিজ্ঞপ্তি, *আসল আবেদন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নারায়ণগঞ্জ, গণগ্রন্থাগার",
+    "props": [
+     "signboard",
+     "sign:গণগ্রন্থাগার"
+    ],
+    "chars": [
+     {
+      "id": "naim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সাত মাস পর লিখিত পরীক্ষায় পাস। চাকরি না, কিন্তু *সত্যি একটা সিঁড়ি*।",
+   "scene": {
+    "moods": {
+     "naim": "happy"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "লিখিত পরীক্ষার ফল",
+     "lines": [
+      "রোল ৩০৪৭১৮ — উত্তীর্ণ",
+      "মৌখিক পরীক্ষা: আগামী মাসে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "খালাতো বোনের বিয়ে। আম্মার কানে সেই দুল। এক আত্মীয় ফিসফিস করলেন, কে নাকি *চাকরি দিব কইছিল*?",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "খালাতো বোনের বিয়ে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "naim",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "কেউ দিব না, আপা। আমার ছেলে চাকরি *নিজে নিব*।",
+   "tone": "proudly",
+   "scene": {
+    "moods": {
+     "amma": "happy"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈম দূর থেকে শুনল। পকেটের প্রবেশপত্রটা আরেকবার *ছুঁয়ে দেখল*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "naim",
+     "zoom": 1.4
+    },
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "স্যুট-টাই দেখে মানুষ মাথা নোয়ায়… *সত্যি থাকে কাগজে আর প্রশ্নে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "স্যুট-টাই দেখে মানুষ মাথা নোয়ায়…",
+    "line2": "সত্যি থাকে\nকাগজে আর প্রশ্নে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "পাঁচ লাখে সরকারি চাকরি! আম্মা সোনা বেচতে রাজি— ছেলের এক প্রশ্নে থামল সব 💍",
+  "description": "নারায়ণগঞ্জের নাঈম দুই বছর বেকার। একদিন স্যুট-টাই পরা এক ভদ্রলোক এলেন, সরকারি মনোগ্রামের কার্ড, পাঁচ লাখে চাকরি পাকা। আম্মা সোনার বাক্স নিয়ে বসলেন…",
+  "tags": [
+   "মায়ের গল্প",
+   "চাকরির প্রতারণা",
+   "নারায়ণগঞ্জ",
+   "সচেতনতা",
+   "বেকার জীবন",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "স্যুট-টাই দেখে আম্মা মাথা নুইয়েছিলেন— ছেলের দুইটা প্রশ্নে বাঁচল দুই ভরি সোনা। 💍\nতোমার পরিচিত কেউ কি কখনো \"টাকায় চাকরি\"র ফাঁদে পড়েছে? 👇 #সচেতনতা #চাকরি"
+ },
+ "thumbnail": {
+  "text": "চাকরি পাকা?",
+  "sub": "৫ লাখে সরকারি চাকরি"
+ }
+}

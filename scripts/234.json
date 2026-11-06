@@ -1,0 +1,544 @@
+{
+ "id": "234",
+ "status": "ready",
+ "title_bn": "না বলার টাকা",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 6",
+  "chapter_bn": "৬ নম্বর অধ্যায়",
+  "title": "Freedom",
+  "title_bn": "টাকা মানে স্বাধীনতা"
+ },
+ "cast": {
+  "mitu": {
+   "name": "মিতু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "boss": {
+   "name": "বড় স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B4A6B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "চব্বিশ হাজার টাকা বেতন। প্রতি মাসে ছয় হাজার আলাদা। মিতু এই টাকার নাম দিয়েছে— *না বলার টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "খুলনা, সোনাডাঙ্গা",
+    "props": [
+     "signboard",
+     "sign:রড-সিমেন্ট — হিসাব বিভাগ"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বেতন",
+       "value": "২৪,০০০"
+      },
+      {
+       "label": "আলাদা",
+       "value": "৬,০০০"
+      },
+      {
+       "label": "জমেছে",
+       "value": "২৬ মাস"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "খুলনার এক রড-সিমেন্টের অফিসে মিতু হিসাব দেখে। বয়স সাতাশ।"
+  },
+  {
+   "say": "খালারা গ্রুপে লেখেন— ব্যাংকে কেন, *সোনা গড়াও*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "মিতুদের বাসা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "পরিবার",
+     "msgs": [
+      {
+       "who": "বড় খালা",
+       "t": "মিতুর বিয়ার সোনা কই?"
+      },
+      {
+       "who": "ছোট খালা",
+       "t": "ব্যাংকে টাকা পইচা যায়!"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "আব্বা, সোনা থাকে গলায়। আর এই টাকা থাকে *পিঠের পেছনে*।",
+   "tone": "playfully",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা হাসলেন। তিনি জানেন, মেয়েটা কেন এমন।",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "moods": {
+     "abba": "smile"
+    }
+   }
+  },
+  {
+   "say": "দুই হাজার বিশ। খালিশপুরের পাটকল বন্ধ। আব্বার বত্রিশ বছরের চাকরি *এক নোটিশে শেষ*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "দুই হাজার বিশ, খালিশপুর",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push",
+    "fx": "bw"
+   }
+  },
+  {
+   "say": "সেই মাসে ঘরে চাল কেনার টাকাও ছিল না।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক বৃহস্পতিবার বড় স্যার ডাকলেন। টেবিলে তিন লাখ টাকার বিল— যে রড *কখনো আসেনি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "অফিস, বৃহস্পতিবার",
+    "props": [
+     "signboard",
+     "sign:ব্যবস্থাপনা পরিচালক"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "boss",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "fx": null,
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বিল নং ৪৪৭",
+     "lines": [
+      "রড — ৩ টন",
+      "৳ ৩,০০,০০০"
+     ],
+     "sub": "মাল আসেনি"
+    }
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "শুধু একটা সই, মিতু। কেউ ধরবে না। *প্রমোশনটা* তো সামনেই।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "স্যার, মাল তো আসে নাই। আমি সই করতে পারব না, *সরি*।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "boss",
+   "say": "ভেবে দেখো। খুলনায় চাকরি কিন্তু *গাছে ধরে না*।",
+   "tone": "flatly",
+   "scene": {
+    "moods": {
+     "boss": "angry"
+    },
+    "cam": {
+     "focus": "boss",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আগে হলে এই কথায় মিতুর হাত কাঁপত। আজ কাঁপল না।",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mitu": "thinking"
+    }
+   }
+  },
+  {
+   "say": "রাতে হিসাব করল। মাসের খরচ বারো হাজার। জমানো টাকায় চলবে *তেরো মাস*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "passbook"
+     },
+     {
+      "id": "abba",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জমা",
+       "value": "১,৫৬,০০০"
+      },
+      {
+       "label": "মাসের খরচ",
+       "value": "১২,০০০"
+      },
+      {
+       "label": "চলবে",
+       "value": "১৩ মাস"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "কী হইছে মা? রাতে খাইলি না ক্যান?",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "আব্বা, ভুয়া বিলে সই চায়। না দিলে চাকরি *থাকবে না*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা আলমারি থেকে বের করলেন হলুদ একটা কাগজ— পাটকলের *ছাঁটাই নোটিশ*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    },
+    "arms": {
+     "abba": "hold"
+    },
+    "holds": {
+     "abba": "envelope"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা যেদিন আসছিল, পকেটে এক মাসের টাকাও ছিল না। তোর তো *তেরো মাস* আছে। ঘুমা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে মিতু সই করল না। টেবিলে রেখে এলো একটা চিঠি— *পদত্যাগপত্র*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:ব্যবস্থাপনা পরিচালক"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিন মাস কঠিন গেল। নয়টা ইন্টারভিউ। জমা থেকে মাসে *বারো হাজার*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাস",
+       "value": "৩"
+      },
+      {
+       "label": "ইন্টারভিউ",
+       "value": "৯"
+      },
+      {
+       "label": "জমা কমল",
+       "value": "৩৬,০০০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চতুর্থ মাসে রূপসার এক অফিস ডাকল। বেতন একুশ হাজার, আগের চেয়ে কম। ম্যাডাম জানতে চাইলেন, আগেরটা *কেন ছাড়লেন*।",
+   "scene": {
+    "moods": {
+     "mitu": "smile"
+    },
+    "widget": null
+   }
+  },
+  {
+   "say": "মিতু সত্যিটা বলল। ম্যাডাম বললেন— *কাল থেকে আসেন*।",
+   "scene": {
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "প্রথম বেতনে মিতু আবার ছয় হাজার আলাদা করল। আর আনল আব্বার প্রিয় *চুইঝাল*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "নতুন চাকরির প্রথম বেতন",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "mitu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আবার আলাদা করলি? এইবার এই টাকার *নাম কী*?",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "একই নাম, আব্বা। *না বলার টাকা*। আপনার কাছ থেকেই শেখা।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "mitu": "happy"
+    },
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা নোটিশটা ভাঁজ করে রাখলেন। আজ কাগজটা আর *ভারী লাগল না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সঞ্চয় শুধু টাকা জমায় না… *মাথা উঁচু রাখার সাহস জমায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সঞ্চয় শুধু টাকা জমায় না…",
+    "line2": "মাথা উঁচু রাখার\nসাহস জমায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চাকরি বাঁচাতে ভুয়া বিলে সই? মিতুর ছয় হাজার টাকার গোপন খাম বলল— না 💪",
+  "description": "খুলনার মিতু প্রতি মাসে বেতনের ছয় হাজার আলাদা রাখে— নাম দিয়েছে \"না বলার টাকা\"। একদিন বড় স্যার তিন লাখ টাকার ভুয়া বিলে সই চাইলেন…",
+  "tags": [
+   "সঞ্চয়ের গল্প",
+   "বাবা মেয়ের গল্প",
+   "খুলনা",
+   "সততা",
+   "চাকরির গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "জমানো টাকা মিতুকে দিল সবচেয়ে দামি জিনিস— না বলার সাহস। 💪\nতোমার কাছে কি এমন একটা \"না বলার টাকা\" আছে? 👇 #সঞ্চয় #খুলনা"
+ },
+ "thumbnail": {
+  "text": "না বলার টাকা",
+  "sub": "ছয় হাজারের সাহস"
+ }
+}

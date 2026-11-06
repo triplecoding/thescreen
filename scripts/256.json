@@ -1,0 +1,503 @@
+{
+ "id": "256",
+ "status": "ready",
+ "title_bn": "আকাশি শার্ট",
+ "theme": "family",
+ "source": {
+  "book": "The Prince",
+  "author": "Niccolò Machiavelli",
+  "author_bn": "নিকোলো ম্যাকিয়াভেলি",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Appearances matter — people judge by what they see",
+  "title_bn": "মানুষ আগে চোখে দেখে"
+ },
+ "cast": {
+  "babul": {
+   "name": "বাবুল মিস্ত্রি",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A7F70",
+   "hair": "curly",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "salma": {
+   "name": "সালমা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "customer": {
+   "name": "ফ্ল্যাটের ভদ্রমহিলা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বিশ বছরের হাতের কাজ। একটাও শর্টসার্কিট হয়নি। তবু এ মাসে কাজ মাত্র *চারটা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রংপুর, জাহাজ কোম্পানি মোড়",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অভিজ্ঞতা",
+       "value": "২০ বছর"
+      },
+      {
+       "label": "অভিযোগ",
+       "value": "০"
+      },
+      {
+       "label": "এ মাসে কাজ",
+       "value": "৪",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাবুল মিস্ত্রি। লুঙ্গি, পুরোনো শার্ট। পাশেই নতুন দোকান— *‘স্মার্ট ইলেকট্রিক’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ওদের নীল ইউনিফর্ম, দাম দ্বিগুণ। তবু মানুষ *ওদেরই ডাকে*।"
+  },
+  {
+   "say": "একদিন এক ফ্ল্যাট থেকে ডাক। দরজা খুললেন এক ভদ্রমহিলা।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "একটা ফ্ল্যাটের দরজা",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "আপনি? না থাক ভাই। আমরা আসলে *কোম্পানির লোক* ডাকছি। সরি।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দরজা বন্ধ। বাবুল জানে, ভেতরের মিটার বক্সে *ঢিলা তারের গন্ধ*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.5
+    },
+    "moods": {
+     "babul": "sad"
+    }
+   }
+  },
+  {
+   "say": "রাতে বাবুল বলল, কাজ জানলে কী, *কাপড় দেখে মানুষ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "salma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "salma",
+   "say": "তাইলে কাপড়টা ঠিক করো না ক্যান? তোমার কাজ তো *সবার চেয়ে পরিষ্কার*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "salma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "সাজুগুজু কইরা মানুষ ঠকামু? *ওই কাম আমার না*।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "babul": "angry"
+    },
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সালমা কিছু বললেন না। এক সপ্তাহ রাতে *সেলাই মেশিনের শব্দ*।",
+   "pause": 0.6,
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "সালমার এক সপ্তাহ",
+     "items": [
+      {
+       "t": "সাতশো টাকার আকাশি কাপড়",
+       "mark": "check"
+      },
+      {
+       "t": "তিনশো টাকায় দুইশো কার্ড",
+       "mark": "check"
+      },
+      {
+       "t": "পুরোনো টিনের বাক্সে রং",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার টেবিলে একটা আকাশি শার্ট। বুকপকেটে সুতোয়— *‘বাবুল ইলেকট্রিক’*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শুক্রবার সকাল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "salma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "পাশে একটা রং করা টিনের বাক্স। গায়ে হাতে লেখা *দামের তালিকা*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বাবুল ইলেকট্রিক — দাম",
+     "lines": [
+      "সুইচ বদল — ১০০ টাকা",
+      "পুরো ফ্ল্যাট চেক — ৩০০ টাকা",
+      "মিটার বক্স — ৫০০ টাকা"
+     ],
+     "sub": "লুকানো খরচ নাই"
+    }
+   }
+  },
+  {
+   "voice": "salma",
+   "say": "নাটক না। তোমার কাজ যেমন সৎ, *দামটাও* সবাই দেখুক।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "salma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "দামের লিস্ট বাইরে? সবাই তো *লুকায়*…",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আয়নায় আকাশি শার্টে বাবুল। প্রথমবার নিজেকে মনে হলো *মিস্ত্রি না, কারিগর*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "babul": "smile"
+    }
+   }
+  },
+  {
+   "say": "সেই সপ্তাহে বিশটা বিল্ডিংয়ের দারোয়ানের কাছে কার্ড।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সেই সপ্তাহ",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "say": "দশ দিন পর এক সন্ধ্যায় ফোন। সেই ভদ্রমহিলা, গলায় *তাড়া*।",
+   "scene": {
+    "light": "evening",
+    "moods": {
+     "babul": "surprised"
+    },
+    "arms": {
+     "babul": "call"
+    },
+    "holds": {
+     "babul": "phone"
+    }
+   }
+  },
+  {
+   "voice": "customer",
+   "say": "ভাই, কোম্পানির লোক দুইবার কাজ করছে, মিটার বক্স *আবার গরম*। আসবেন?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "বাবুল দেখল সেই ঢিলা তার। কেউ ধরেনি, শুধু *টেপ পেঁচিয়েছে*।",
+   "scene": {
+    "set": "stairs",
+    "light": "evening",
+    "chip": "সেই ফ্ল্যাট",
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "point"
+     },
+     {
+      "id": "customer",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চল্লিশ মিনিটে কাজ শেষ। বিল *পাঁচশো টাকা*। কোম্পানি নিয়েছিল দুই হাজার।"
+  },
+  {
+   "voice": "customer",
+   "say": "সেদিন ফিরাইছিলাম, ভাই। সরি। বোনের বাসায়ও *আপনাকেই* লাগবে।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "customer": "smile"
+    },
+    "cam": {
+     "focus": "customer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর দিনে আট-দশটা কল। আকাশি শার্ট এখন *দুইটা*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "তিন মাস পর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "babul",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "salma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসে কাজ",
+       "value": "৪ → ৪৮"
+      },
+      {
+       "label": "আকাশি শার্ট",
+       "value": "২টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাতে সালমা দেখলেন, বাবুল একটা কার্ড *আলাদা করে রাখছে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "babul",
+   "say": "এইটা থাক। প্রথম কার্ড। পেছনে লিখলাম— *‘ডিজাইন: সালমা’*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "babul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সালমা কার্ডটা রাখলেন বিয়ের শাড়ির ভাঁজে, *যত্নে*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "moods": {
+     "salma": "happy"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষ আগে চোখ দিয়ে বিচার করে… *তাই সত্যিটাকেও সুন্দর করে সাজাও।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষ আগে চোখ দিয়ে বিচার করে…",
+    "line2": "তাই সত্যিটাকেও\nসুন্দর করে সাজাও।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বিশ বছরের মিস্ত্রি, দরজা থেকে ফেরত— স্ত্রীর সেলাই করা এক শার্ট বদলাল সব 👕",
+  "description": "রংপুরের বাবুল মিস্ত্রি বিশ বছরে একটাও শর্টসার্কিট করেননি, তবু মানুষ ডাকে চকচকে ইউনিফর্মের কোম্পানিকে। এক ভদ্রমহিলা দরজা থেকেই ফিরিয়ে দিলেন। সে রাতে স্ত্রী সালমা চুপচাপ সেলাই মেশিনে বসলেন…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "মিস্ত্রির গল্প",
+   "রংপুর",
+   "সততা",
+   "ছোট ব্যবসা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "কাজ ছিল সৎ, শুধু চেহারাটা সেটা বলত না— সালমা সেই ফাঁকটুকু সেলাই করে দিলেন। 👕\nতোমার পাশের কোন মানুষটা চুপচাপ তোমার কাজকে সুন্দর করে তোলে? 👇 #সংসার #রংপুর"
+ },
+ "thumbnail": {
+  "text": "আকাশি শার্ট",
+  "sub": "দরজা থেকে ফেরত"
+ }
+}

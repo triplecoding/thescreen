@@ -1,0 +1,490 @@
+{
+ "id": "251",
+ "status": "ready",
+ "title_bn": "শূন্য আর একটা হাত",
+ "theme": "school",
+ "source": {
+  "book": "The Righteous Mind",
+  "author": "Jonathan Haidt",
+  "author_bn": "জোনাথন হাইট",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Moral foundations: care, fairness, loyalty, authority, sanctity, liberty",
+  "title_bn": "ন্যায্যতা আর মমতা"
+ },
+ "cast": {
+  "najma": {
+   "name": "নাজমা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F5D8A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "rafiq": {
+   "name": "রফিক স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "zubayer": {
+   "name": "জুবায়ের",
+   "type": "teen_boy",
+   "skin": "tan",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2B2B2B",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "ক্লাস এইটের এক ছেলের পকেটে নকল। দুই শিক্ষকের দুই রায়— *শূন্য, নাকি মাফ*?",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নেত্রকোনা, মদন — শিক্ষক কক্ষ",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ"
+    ],
+    "chars": [
+     {
+      "id": "najma",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "rafiq",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "অর্ধবার্ষিক — গণিত",
+     "lines": [
+      "রোল ২৭: জুবায়ের",
+      "অবস্থা: নকলসহ ধরা"
+     ],
+     "sub": "সিদ্ধান্ত: ?"
+    }
+   }
+  },
+  {
+   "say": "নাজমা আপা বিশ বছরে নিয়ম ভাঙেননি। রফিক স্যারকে ছাত্ররা ডাকে *‘বড় ভাই’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "নিয়ম নিয়মই, রফিক সাহেব। মাফ করলে যারা নিজে লিখছে, তাদের প্রতি *অবিচার*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "আপা, ছেলেটার আব্বার পা ভাঙা। ভোরে ও চায়ের দোকান চালায়। এইটা *নিয়মের খাতায়* নাই?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুইজনই ঠিক। দুইজনই রাগী। তিন দিন ধরে *একই তর্ক*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তর্কে কেউ হারল না, কেউ জিতলও না।",
+   "card": {
+    "title": "তিন দিনের তর্ক",
+    "items": [
+     {
+      "t": "হেড স্যারের কাছে নালিশ",
+      "mark": "x"
+     },
+     {
+      "t": "স্টাফ রুমে কথা বন্ধ",
+      "mark": "x"
+     },
+     {
+      "t": "জুবায়ের স্কুলে আসা বন্ধ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আর পেছনের বেঞ্চে জুবায়েরের সিট *খালি পড়ে থাকে*।"
+  },
+  {
+   "say": "চতুর্থ দিন নাজমা আপা দেখলেন, জুবায়ের গেট পর্যন্ত এসে *ফিরে যাচ্ছে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "স্কুলের গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "zubayer",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "najma",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিনি ঠিক করলেন— তর্ক না, একবার *নিজের চোখে দেখবেন*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভোর সাড়ে পাঁচটা। বাজারের মোড়ে ছোট্ট চায়ের দোকান।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ভোর সাড়ে পাঁচটা, বাজারের মোড়",
+    "chars": [
+     {
+      "id": "zubayer",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চুলার পাশে জুবায়ের। এক হাতে কাপ ধোয়, আরেক হাতে অঙ্ক বই। কাস্টমার এলে বই *উল্টে রাখে*।"
+  },
+  {
+   "voice": "zubayer",
+   "say": "আপা… আপনি? সরি আপা। ওই রাতে পড়া হয় নাই। *ভয়ে* নকল করছিলাম।",
+   "tone": "tearful",
+   "scene": {
+    "chars": [
+     {
+      "id": "zubayer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     },
+     {
+      "id": "najma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "zubayer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "বইটা উল্টা রাখলি ক্যান? কোন অঙ্কটা *আটকাইছে*, দেখা।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কেটলির পাশে দাঁড়িয়ে পনেরো মিনিট অঙ্ক। এই প্রথম জুবায়ের *বুঝল*।",
+   "scene": {
+    "moods": {
+     "zubayer": "smile",
+     "najma": "smile"
+    }
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "আপনি ঠিক বলছিলেন, ছেলেটার কষ্ট আছে। কিন্তু শূন্যটা *থাকবে*, রফিক সাহেব।",
+   "tone": "serious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "শিক্ষক কক্ষ",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ"
+    ],
+    "chars": [
+     {
+      "id": "najma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "rafiq",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "আপনিও ঠিক, আপা। শূন্য থাকুক। কিন্তু ওরে একা ছাড়ব না। *আপনি অঙ্ক*, আমি বাংলা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন দিনের তর্ক মিটল এক মিনিটে। নিয়মটা রইল, সাথে রইল *একটা হাত*।",
+   "scene": {
+    "moods": {
+     "najma": "smile",
+     "rafiq": "smile"
+    }
+   }
+  },
+  {
+   "say": "হেড স্যার শুনে হাসলেন। বললেন, *‘এতদিনে বিচারটা পুরা হইল।’*"
+  },
+  {
+   "say": "তারপর তিন মাস, নতুন রুটিন।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "জুবায়েরের রুটিন",
+     "items": [
+      {
+       "t": "ভোরে দোকানে আব্বাকে সাহায্য",
+       "mark": "check"
+      },
+      {
+       "t": "ছুটির পর ৩০ মিনিট অঙ্ক",
+       "mark": "check"
+      },
+      {
+       "t": "বৃহস্পতিবার বাংলা",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "জুবায়ের ঘুমঘুম চোখে এলে নাজমা আপা আগে *চা খাওয়ান*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "বার্ষিক পরীক্ষার ফল। নোটিশ বোর্ডের সামনে ভিড়।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "zubayer",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "najma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "জুবায়ের, অঙ্কে একষট্টি। প্রথম না। কিন্তু প্রতিটা নম্বর *নিজের হাতের*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ধবার্ষিক",
+       "value": "০",
+       "red": true
+      },
+      {
+       "label": "বার্ষিক",
+       "value": "৬১"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "zubayer",
+   "say": "আপা, একষট্টি দেইখা আব্বা দোকানের সবাইরে *ফ্রি চা খাওয়াইছে*।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "zubayer",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "আর আমারে? আমিও তো *তোর দোকানের কাস্টমার*।",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "najma": "happy"
+    },
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন শিক্ষক কক্ষে একটা ফ্লাস্ক, জুবায়েরের দোকানের চা। দুই কাপ, *পাশাপাশি*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ"
+    ],
+    "chars": [
+     {
+      "id": "najma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rafiq",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "কেউ নিয়ম দেখে, কেউ মানুষ দেখে… *দুইটা মিললেই সত্যি বিচার।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "কেউ নিয়ম দেখে, কেউ মানুষ দেখে…",
+    "line2": "দুইটা মিললেই\nসত্যি বিচার।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নকলসহ ধরা ছাত্র: শূন্য, নাকি মাফ? ভোরের চায়ের দোকানে মিলল উত্তর ✏️",
+  "description": "নেত্রকোনার এক স্কুলে অর্ধবার্ষিক পরীক্ষায় নকলসহ ধরা পড়ল জুবায়ের। নাজমা আপা বলেন নিয়ম, রফিক স্যার বলেন মমতা। তিন দিনের তর্কের পর নাজমা আপা ভোরে গেলেন বাজারের এক চায়ের দোকানে…",
+  "tags": [
+   "শিক্ষকের গল্প",
+   "ছাত্রের গল্প",
+   "নেত্রকোনা",
+   "ন্যায়বিচার",
+   "স্কুলের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নিয়মটাও রইল, ছেলেটাও বাঁচল— যখন দুই শিক্ষক একে অন্যের চোখে দেখলেন। ✏️\nতোমার স্কুলজীবনে কোন শিক্ষক কঠিন হয়েও পাশে ছিলেন? 👇 #শিক্ষক #স্কুল"
+ },
+ "thumbnail": {
+  "text": "শূন্য নাকি মাফ",
+  "sub": "নকলসহ ধরা"
+ }
+}

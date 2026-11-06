@@ -1,0 +1,466 @@
+{
+ "id": "238",
+ "status": "ready",
+ "title_bn": "আমাদের ঘাটের মেয়ে",
+ "theme": "community",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "Unity",
+  "title_bn": "আমরা-একই-মানুষ"
+ },
+ "cast": {
+  "nasrin": {
+   "name": "ডাক্তার নাসরিন",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#F2EEE3",
+   "color2": "#2F7A6B",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "altaf": {
+   "name": "আলতাফ চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C9A15A",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "abba": {
+   "name": "নাসরিনের আব্বা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিন দিনের ফ্রি চোখের ক্যাম্প। ঘাটে দুইশো কুলি। প্রথম দিনে এলো *মাত্র চারজন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বরিশাল লঞ্চঘাট",
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ক্যাম্প",
+       "value": "৩ দিন"
+      },
+      {
+       "label": "কুলি",
+       "value": "২০০"
+      },
+      {
+       "label": "এসেছে",
+       "value": "৪",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এনজিওর তাঁবু, ব্যানার, চশমার বাক্স। কিন্তু কেউ *কাছে আসে না*।"
+  },
+  {
+   "voice": "altaf",
+   "say": "আপা, এইসব ডাক্তারি আমাগো লাইগা না। আইজ ফ্রি, কাইল কইবেন *টাকা দেন*।",
+   "tone": "suspicious",
+   "scene": {
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "altaf",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "চাচা, এক টাকাও লাগবে না। শুধু দশ মিনিট *বসেন*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচা বস্তা তুলে চলে গেলেন। সিঁড়িতে পা ফেলছেন *হাতড়ে হাতড়ে*।",
+   "scene": {
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই দিনে যা যা চেষ্টা হলো, কিছুতেই কাজ হলো না।",
+   "card": {
+    "title": "যা যা চেষ্টা হলো",
+    "items": [
+     {
+      "t": "মাইকে ঘোষণা",
+      "mark": "x"
+     },
+     {
+      "t": "লিফলেট বিলি",
+      "mark": "x"
+     },
+     {
+      "t": "ইজারাদারকে দিয়ে বলানো",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "দ্বিতীয় রাতে নাসরিন ঘাটের সিঁড়িতে একা বসলেন। লঞ্চের হর্ন, *চেনা গন্ধ*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "দ্বিতীয় রাত",
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এই ঘাট তাঁর অচেনা নয়। পঁচিশ বছর আগে এখানে তিনি বাবার জন্য *ভাত আনতেন*।",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে তিনি ব্যানারটা খুলে ফেললেন। সাদা কাগজে মার্কার দিয়ে লিখলেন নতুন করে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তৃতীয় দিন সকাল",
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নতুন ব্যানার",
+     "lines": [
+      "এই ঘাটের কুলি রহমত আলীর মেয়ে",
+      "আপনাদের চোখ দেখতে আসছি"
+     ]
+    }
+   }
+  },
+  {
+   "say": "তারপর অ্যাপ্রন খুলে বসলেন সিঁড়িতে, কুলিদের চায়ের দোকানের পাশে।",
+   "scene": {
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "altaf",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "altaf",
+   "say": "রহমত আলী? *সাতচল্লিশ নম্বর ব্যাজ*? তুমি হের মাইয়া?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "জি চাচা। আব্বা বলতেন, আপনি না থাকলে বর্ষায় *না খাইয়া থাকতাম*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচা অনেকক্ষণ তাকিয়ে রইলেন। তারপর ঘুরে চিৎকার করলেন—",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "altaf",
+   "say": "এই, সবাই আয়! রহমতের মাইয়া! *আমাগো ঘাটের মাইয়া* ডাক্তার হইছে!",
+   "tone": "excited",
+   "scene": {
+    "moods": {
+     "altaf": "happy"
+    },
+    "arms": {
+     "altaf": "wave"
+    },
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলের মধ্যে লম্বা লাইন। চোখ দেখানো হলো *একশো আটত্রিশজনের*।",
+   "scene": {
+    "cam": "wide",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আজ এসেছে",
+       "value": "১৩৮"
+      },
+      {
+       "label": "চশমা",
+       "value": "৯১"
+      },
+      {
+       "label": "ছানি",
+       "value": "১২"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আলতাফ চাচার পালা এলো সবার শেষে। দুই চোখেই *ছানি*।",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "ক্যাম্পের তাঁবু",
+    "chars": [
+     {
+      "id": "altaf",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "চাচা, কতদিন ধরে ঝাপসা দেখেন? এই চোখে সিঁড়িতে *বস্তা নিয়া*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "altaf",
+   "say": "দুই বছর। কাউরে কই নাই, মা। কুলির চোখ গেলে *কাম যায়*।",
+   "tone": "sad",
+   "scene": {
+    "moods": {
+     "altaf": "sad"
+    },
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এনজিওর খরচে শহরে অপারেশন হলো। নাসরিন নিজে সাথে গেলেন।"
+  },
+  {
+   "say": "অপারেশনের আগে চাচা নাসরিনের হাত ধরে রাখলেন, *বাবার মতো*।"
+  },
+  {
+   "say": "দুই মাস পর, ভোর। নতুন চশমায় চাচা লঞ্চের নামটা জোরে পড়লেন। চারপাশে *হাততালি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "chars": [
+     {
+      "id": "altaf",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নাসরিন ভিডিও কল দিলেন। ওপাশে গ্রামের বাড়িতে আব্বা।"
+  },
+  {
+   "voice": "abba",
+   "say": "আলতাফ! চশমায় তো তোরে *নায়ক লাগে*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "altaf",
+   "say": "রহমত, তোর মাইয়া খালি চোখ দেখে নাই। আমাগো *মানুষ মনে করছে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "altaf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন ঘাটের চায়ের দোকানে একটা কাগজ ঝোলে— *‘চোখের ক্যাম্প, প্রতি তিন মাসে’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অচেনা মানুষের ডাকে কেউ আসে না… *নিজের মানুষের ডাকে সবাই আসে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "অচেনা মানুষের ডাকে কেউ আসে না…",
+    "line2": "নিজের মানুষের ডাকে\nসবাই আসে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ফ্রি ক্যাম্পে কেউ আসে না… ডাক্তার লিখলেন, “আমি এই ঘাটের মেয়ে” 👓",
+  "description": "বরিশাল লঞ্চঘাটে ফ্রি চোখের ক্যাম্প, অথচ দুইশো কুলির মধ্যে এলো চারজন। ডাক্তার নাসরিন ব্যানার খুলে নতুন করে লিখলেন একটা লাইন…",
+  "tags": [
+   "মানুষের গল্প",
+   "বরিশাল",
+   "কুলির গল্প",
+   "ডাক্তার",
+   "বাবা মেয়ের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "অচেনা ডাক্তারকে কেউ বিশ্বাস করেনি— কিন্তু ‘আমাদের ঘাটের মেয়ে’কে সবাই করল। 👓\nতোমার এলাকার কোন মানুষটাকে নিয়ে তুমি গর্ব করো? 👇 #বরিশাল #মানুষ"
+ },
+ "thumbnail": {
+  "text": "ঘাটের মেয়ে",
+  "sub": "চার জন থেকে ১৩৮"
+ }
+}
