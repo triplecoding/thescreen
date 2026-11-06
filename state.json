@@ -630,6 +630,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-12T09:00:00+06:00"
+    },
+    {
+      "id": "055",
+      "date": "2026-11-12",
+      "slot": "11:30",
+      "duration": 146.32,
+      "title": "১৫ বছর ভাইয়া বলত ‘আমার আমে এলার্জি’… বিয়ের রাতে বোন জানল আসল কারণ 🥭",
+      "youtube": "zjq1dfkBgpc",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-12T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -662,7 +673,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T11:07:00.705849+06:00",
+    "at": "2026-11-06T11:13:41.055533+06:00",
     "errors": []
   },
   "queue_remaining": 204,
