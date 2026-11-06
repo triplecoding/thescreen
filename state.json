@@ -1733,6 +1733,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-28T17:30:00+06:00"
+    },
+    {
+      "id": "155",
+      "date": "2026-11-28",
+      "slot": "20:00",
+      "duration": 137.27,
+      "title": "হুন্ডিতে রিয়ালের রেট একটু বেশি, তাই তিন মাস সেখানেই টাকা পাঠাল রাসেল… তারপর এজেন্ট উধাও 💸",
+      "youtube": "QTawaJGqnLc",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-28T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1772,7 +1783,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:18:55.431743+06:00",
+    "at": "2026-11-06T22:25:17.004289+06:00",
     "errors": []
   },
   "queue_remaining": 108,
