@@ -663,6 +663,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-12T15:30:00+06:00"
+    },
+    {
+      "id": "058",
+      "date": "2026-11-12",
+      "slot": "17:30",
+      "duration": 145.25,
+      "title": "একই ঘরে দুইটা মাটির ব্যাংক— বাবা জমায় ছেলের জন্য, ছেলে জমায় বাবার চোখের জন্য 🏺",
+      "youtube": "rKmLeMPa9EA",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-12T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -695,7 +706,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T11:26:33.836689+06:00",
+    "at": "2026-11-06T11:33:11.769418+06:00",
     "errors": []
   },
   "queue_remaining": 204,
