@@ -242,7 +242,8 @@
       "youtube": "HzKarL1Aub4",
       "playlist": true,
       "facebook": "2960714974262219",
-      "scheduled_for": "2026-11-06T13:30:00+06:00"
+      "scheduled_for": "2026-11-06T13:30:00+06:00",
+      "yt_comment": "UgzFNcPtjJWfQhghR1x4AaABAg"
     },
     {
       "id": "020",
@@ -884,6 +885,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-15T20:00:00+06:00"
+    },
+    {
+      "id": "078",
+      "date": "2026-11-16",
+      "slot": "09:00",
+      "duration": 130.01,
+      "title": "পরীক্ষার আগের রাতে মেসেঞ্জারে ‘ফাঁস প্রশ্ন’, পাঁচশো টাকা… পুরো ক্লাস কিনল, রাকিব কিনল না 📝",
+      "youtube": "PC_QHD5Fxio",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-16T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -917,12 +929,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:57:39.423503+06:00",
-    "errors": [],
-    "queue_remaining": 180
+    "at": "2026-11-06T14:04:53.705317+06:00",
+    "errors": []
   },
   "queue_remaining": 180,
-  "_run_started": "2026-11-06T13:27:50.619521+06:00",
+  "_run_started": "2026-11-06T14:00:11.449318+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
