@@ -1183,6 +1183,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-20T13:30:00+06:00"
+    },
+    {
+      "id": "105",
+      "date": "2026-11-20",
+      "slot": "15:30",
+      "duration": 147.23,
+      "title": "ছেলের জন্মের ৩ দিন আগে বাবা গেলেন সৌদি… দেড় বছর পর ছেলের প্রথম শব্দ, ফোনের দিকে তাকিয়ে 📱",
+      "youtube": "IZetDjvDJgM",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-20T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1216,7 +1227,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:37:08.569568+06:00",
+    "at": "2026-11-06T16:42:54.577385+06:00",
     "errors": []
   },
   "queue_remaining": 156,
