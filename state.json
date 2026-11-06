@@ -1717,10 +1717,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:45:26.638645+06:00",
-    "errors": []
+    "at": "2026-11-06T21:45:28.370365+06:00",
+    "errors": [],
+    "queue_remaining": 108
   },
-  "queue_remaining": 114,
+  "queue_remaining": 108,
   "_run_started": "2026-11-06T21:05:46.940863+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
