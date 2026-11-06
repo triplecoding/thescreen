@@ -1050,6 +1050,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-18T13:30:00+06:00"
+    },
+    {
+      "id": "093",
+      "date": "2026-11-18",
+      "slot": "15:30",
+      "duration": 139.09,
+      "title": "মোবাইল সারাতে দিয়ে গেল কলেজের মেয়ে, বন্ধু বলল ‘দেখি তো কী আছে’… আরিফ যা করল 📱",
+      "youtube": "CFGHuNRBNRU",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-18T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1083,7 +1094,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:30:20.707159+06:00",
+    "at": "2026-11-06T15:35:46.265833+06:00",
     "errors": []
   },
   "queue_remaining": 168,
