@@ -1601,6 +1601,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-26T17:30:00+06:00"
+    },
+    {
+      "id": "143",
+      "date": "2026-11-26",
+      "slot": "20:00",
+      "duration": 137.17,
+      "title": "রানী আপা হিজড়া জনগোষ্ঠীর মানুষ, খুললেন খিচুড়ির দোকান… প্রথম সপ্তাহে একজনও খেতে এল না 🍛",
+      "youtube": "y5kQoNmq3tk",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-26T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1640,7 +1651,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:59:01.824066+06:00",
+    "at": "2026-11-06T21:05:42.285771+06:00",
     "errors": []
   },
   "queue_remaining": 120,
