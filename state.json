@@ -752,6 +752,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-13T20:00:00+06:00"
+    },
+    {
+      "id": "066",
+      "date": "2026-11-14",
+      "slot": "09:00",
+      "duration": 138.5,
+      "title": "ছোট ভাই জাপানে স্কলারশিপ পেল, বড় ভাই বিদায় দিতেও এল না… ফ্লাইটের ভোরে যা হলো ✈️",
+      "youtube": "GTFtF928Xhc",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-14T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -784,12 +795,11 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:54:42.677427+06:00",
-    "errors": [],
-    "queue_remaining": 192
+    "at": "2026-11-06T13:01:52.965994+06:00",
+    "errors": []
   },
   "queue_remaining": 192,
-  "_run_started": "2026-11-06T12:29:11.920267+06:00",
+  "_run_started": "2026-11-06T12:57:23.274888+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
