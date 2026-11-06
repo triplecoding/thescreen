@@ -1194,6 +1194,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-20T15:30:00+06:00"
+    },
+    {
+      "id": "106",
+      "date": "2026-11-20",
+      "slot": "17:30",
+      "duration": 140.65,
+      "title": "অর্ডার বাতিল, ঈদের বোনাস দিতে পারছে না ছোট গার্মেন্টস… শ্রমিকরা বলল ‘পরে দিয়েন’, মালিক যা করলেন 🚗",
+      "youtube": "l64eiqtl8Ko",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-20T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1227,7 +1238,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:42:54.577385+06:00",
+    "at": "2026-11-06T16:48:28.954493+06:00",
     "errors": []
   },
   "queue_remaining": 156,
