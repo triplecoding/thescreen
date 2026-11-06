@@ -1513,6 +1513,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-25T13:30:00+06:00"
+    },
+    {
+      "id": "135",
+      "date": "2026-11-25",
+      "slot": "15:30",
+      "duration": 146.92,
+      "title": "কথা গুছিয়ে বলতে পারেন না প্রবাসী বাবা, তাই মেয়েকে পাঠান আঁকা চিঠি ✏️",
+      "youtube": "L9IsAd7h4ew",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-25T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1552,7 +1563,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:06:42.081201+06:00",
+    "at": "2026-11-06T20:13:36.141427+06:00",
     "errors": []
   },
   "queue_remaining": 126,
