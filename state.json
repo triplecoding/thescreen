@@ -862,6 +862,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-15T15:30:00+06:00"
+    },
+    {
+      "id": "076",
+      "date": "2026-11-15",
+      "slot": "17:30",
+      "duration": 145.26,
+      "title": "অ্যাপে এক মিনিটে পেনশন তোলা যায়, তবু আব্বা চার ঘণ্টা ব্যাংকের লাইনে দাঁড়ান… কারণটা শুনে ছেলে চুপ 🏦",
+      "youtube": "ITDmsRujB2Q",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-15T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -895,7 +906,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:47:44.833786+06:00",
+    "at": "2026-11-06T13:52:51.504851+06:00",
     "errors": []
   },
   "queue_remaining": 186,
