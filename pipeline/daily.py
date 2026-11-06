@@ -8,6 +8,7 @@ usage: python pipeline/daily.py [--count N] [--now] [--dry-run] [--date YYYY-MM-
 """
 import argparse
 import os
+import shutil
 import subprocess
 import sys
 import traceback
@@ -158,6 +159,41 @@ def note_fb_error(state, err, now, hours=None):
         log(f"facebook posting limit hit — pausing Facebook calls until {state['fb_block_until']}")
 
 
+FBQ = "fb-queue"   # GitHub release that holds finished videos still waiting for Facebook (works with no Claude session)
+
+
+def _gh(*args):
+    return subprocess.run(["gh", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def fb_store(sid, video):
+    """Keep the finished MP4 as an asset of the 'fb-queue' release so a later run uploads exactly this file to Facebook."""
+    try:
+        if _gh("release", "view", FBQ).returncode != 0:
+            _gh("release", "create", FBQ, "--title", "Facebook queue", "--prerelease",
+                "--notes", "Finished videos waiting for Facebook (posting limit). Uploaded and removed automatically by daily.py.")
+        tmp = Path(video).parent / f"{sid}.mp4"
+        shutil.copyfile(video, tmp)
+        r = _gh("release", "upload", FBQ, str(tmp), "--clobber")
+        log(f"facebook queue: stored {sid}.mp4" if r.returncode == 0 else f"facebook queue: store {sid} failed: {r.stderr[:160]}")
+        return r.returncode == 0
+    except Exception as e:  # noqa
+        log(f"facebook queue: store {sid} failed: {e}")
+        return False
+
+
+def fb_fetch(sid):
+    d = OUT / sid
+    d.mkdir(parents=True, exist_ok=True)
+    r = _gh("release", "download", FBQ, "-p", f"{sid}.mp4", "-D", str(d), "--clobber")
+    f = d / f"{sid}.mp4"
+    return f if r.returncode == 0 and f.exists() and f.stat().st_size > 100_000 else None
+
+
+def fb_drop(sid):
+    _gh("release", "delete-asset", FBQ, f"{sid}.mp4", "-y")
+
+
 def needs_fb(rec, now):
     """A post that reached YouTube but not Facebook (e.g. Facebook's temporary posting limit) and is still worth posting."""
     if not rec.get("youtube") or rec.get("facebook") or not rec.get("facebook_error") or rec.get("fb_tries", 0) >= 4:
@@ -188,13 +224,20 @@ def fb_repair(state, platforms, now, tts, limit=1):
         rec["fb_tries"] = rec.get("fb_tries", 0) + 1
         try:
             log(f"facebook repair: {rec['id']} ({rec['date']} {rec['slot']})")
-            odir = produce(rec["id"], tts)
+            stored = fb_fetch(rec["id"])
+            if stored:
+                log(f"facebook repair: using the stored video {rec['id']}.mp4")
+                odir = stored.parent
+                shutil.copyfile(stored, odir / "video.mp4")
+            else:
+                odir = produce(rec["id"], tts)
             when = datetime.fromisoformat(rec["scheduled_for"])
             sched = when.timestamp() if when > now + timedelta(minutes=20) else None
             script = load_json(SCRIPTS / f"{rec['id']}.json")
             rec["facebook"] = upload_facebook.upload(Path(odir) / "video.mp4", script, sched, Path(odir) / "thumb_9x16.jpg")
             rec.pop("facebook_error", None)
             done += 1
+            fb_drop(rec["id"])
         except Exception as e:  # noqa
             rec["facebook_error"] = str(e)[:300]
             note_fb_error(state, e, now, hours=36)
@@ -407,6 +450,7 @@ def main():
                     rec["youtube_error"] = str(e)[:300]; errors.append(f"youtube {sid}: {e}")
             if "facebook" in platforms and fb_blocked(state, now):
                 rec["facebook_error"] = "deferred: facebook posting limit"   # fb_repair posts it once the pause ends
+                fb_store(sid, video)
                 log(f"facebook deferred for {sid} (posting limit until {state['fb_block_until']})")
             elif "facebook" in platforms:
                 try:
@@ -416,6 +460,7 @@ def main():
                 except Exception as e:  # noqa
                     rec["facebook_error"] = str(e)[:300]; errors.append(f"facebook {sid}: {e}")
                     note_fb_error(state, e, now)
+                    fb_store(sid, video)
         rec["scheduled_for"] = when.isoformat() if schedule else "immediate"
         if a.dry_run:
             state.setdefault("dry_runs", []).append(rec)
