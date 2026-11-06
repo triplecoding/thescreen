@@ -1557,6 +1557,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-26T09:00:00+06:00"
+    },
+    {
+      "id": "139",
+      "date": "2026-11-26",
+      "slot": "11:30",
+      "duration": 145.93,
+      "title": "দশ বছর আগে লেখা ‘নিজেকে চিঠি’— রিইউনিয়নে খোলা হলো ৪২টা খাম ✉️",
+      "youtube": "qQt4yKSa3gU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-26T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1596,7 +1607,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:32:43.417663+06:00",
+    "at": "2026-11-06T20:39:56.996038+06:00",
     "errors": []
   },
   "queue_remaining": 120,
