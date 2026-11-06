@@ -1744,6 +1744,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-28T20:00:00+06:00"
+    },
+    {
+      "id": "156",
+      "date": "2026-11-29",
+      "slot": "09:00",
+      "duration": 132.12,
+      "title": "শাশুড়ি একা, হাত ভাঙা… জামাই এক সপ্তাহ রাঁধলেন, গ্রাম বলল ‘জামাই রান্না করে!’ 🍲",
+      "youtube": "eCpTvCXth28",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-29T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1783,12 +1794,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:25:18.654521+06:00",
-    "errors": [],
-    "queue_remaining": 102
+    "at": "2026-11-06T22:31:32.656303+06:00",
+    "errors": []
   },
   "queue_remaining": 102,
-  "_run_started": "2026-11-06T21:45:31.090130+06:00",
+  "_run_started": "2026-11-06T22:25:21.662341+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
