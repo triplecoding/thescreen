@@ -1403,6 +1403,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-23T17:30:00+06:00"
+    },
+    {
+      "id": "125",
+      "date": "2026-11-23",
+      "slot": "20:00",
+      "duration": 138.52,
+      "title": "আব্বা মারা যাওয়ার পর তিন ভাই-বোনের ঝগড়া ‘আম্মা কার কাছে থাকবেন’… কেউ জিজ্ঞেস করেনি আম্মা কী চান 🏠",
+      "youtube": "XrrpMTQ4c7w",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-23T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1433,17 +1444,15 @@
     "theme:community": "PLTIVdSRBE7Ko",
     "theme:money": "PLE4xM922HB78",
     "theme:school": "PLGV0VI6qNy64",
-    "theme:struggle": "PLMAYaBY5j7wI"
+    "theme:struggle": "PLMAYaBY5j7wI",
+    "theme:siblings": "PLEr2moaNpIqQ"
   },
   "last_run": {
-    "at": "2026-11-06T18:57:47.588678+06:00",
-    "errors": [
-      "youtube 128: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n"
-    ],
-    "queue_remaining": 129
+    "at": "2026-11-06T19:08:55.238507+06:00",
+    "errors": []
   },
   "queue_remaining": 129,
-  "_run_started": "2026-11-06T18:51:23.076678+06:00",
+  "_run_started": "2026-11-06T19:02:23.339071+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
