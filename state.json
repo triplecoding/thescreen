@@ -49,7 +49,8 @@
       "youtube": "q9MKGLOOK-s",
       "playlist": true,
       "facebook": "1658204239383355",
-      "scheduled_for": "2026-11-02T17:30:00+06:00"
+      "scheduled_for": "2026-11-02T17:30:00+06:00",
+      "yt_comment": "Ugw88WHckCyA0JoDBod4AaABAg"
     },
     {
       "id": "005",
@@ -229,7 +230,8 @@
       "youtube": "9lSQ0EhU_QA",
       "playlist": true,
       "facebook": "1434934898163287",
-      "scheduled_for": "2026-11-06T10:00:00+06:00"
+      "scheduled_for": "2026-11-06T10:00:00+06:00",
+      "yt_comment": "Ugw8rGarGcveBl4si7B4AaABAg"
     },
     {
       "id": "019",
@@ -617,6 +619,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-11T20:00:00+06:00"
+    },
+    {
+      "id": "054",
+      "date": "2026-11-12",
+      "slot": "09:00",
+      "duration": 136.95,
+      "title": "১৮ বছর অফিসের পিয়ন, কেউ নামও জানত না… তারপর ছেলে বোর্ডে তিন নম্বর 🎓",
+      "youtube": "rAZhFhmjBts",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-12T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -649,12 +662,11 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T09:46:42.509428+06:00",
-    "errors": [],
-    "queue_remaining": 204
+    "at": "2026-11-06T11:07:00.705849+06:00",
+    "errors": []
   },
   "queue_remaining": 204,
-  "_run_started": "2026-11-06T09:13:41.118531+06:00",
+  "_run_started": "2026-11-06T11:01:01.279008+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
