@@ -1447,6 +1447,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-24T13:30:00+06:00"
+    },
+    {
+      "id": "129",
+      "date": "2026-11-24",
+      "slot": "15:30",
+      "duration": 147.8,
+      "title": "ধনী বন্ধু রোজ টিফিন বদলাত গরিব বন্ধুর সাথে… আসল কারণ জানা গেল পাঁচ বছর পর 🍱",
+      "youtube": "QSbYPWUypc8",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-24T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1484,7 +1495,7 @@
     "theme:parents": "PLJ6mTqLs5bbw"
   },
   "last_run": {
-    "at": "2026-11-06T19:27:24.716986+06:00",
+    "at": "2026-11-06T19:34:19.943969+06:00",
     "errors": []
   },
   "queue_remaining": 132,
