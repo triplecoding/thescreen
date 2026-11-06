@@ -538,7 +538,7 @@
       "playlist": false,
       "facebook_error": "Facebook upload failed: 400 {\"error\":{\"message\":\"We limit how often you can post, comment or do other things in a given amount of time in order to help protect the community from spam. You can try again later. Learn More\",\"type\":\"OAuthException\",\"code\":368,\"error_data\":{\"sentry_block_data\":\"AevXgLDH",
       "scheduled_for": "2026-11-10T17:30:00+06:00",
-      "fb_tries": 3
+      "fb_tries": 0
     },
     {
       "id": "047",
@@ -549,7 +549,8 @@
       "youtube": "hvNQevm5ZKY",
       "playlist": true,
       "facebook_error": "Facebook upload failed: 400 {\"error\":{\"message\":\"We limit how often you can post, comment or do other things in a given amount of time in order to help protect the community from spam. You can try again later. Learn More\",\"type\":\"OAuthException\",\"code\":368,\"error_data\":{\"sentry_block_data\":\"Aesdegpw",
-      "scheduled_for": "2026-11-10T20:00:00+06:00"
+      "scheduled_for": "2026-11-10T20:00:00+06:00",
+      "fb_tries": 0
     }
   ],
   "failed": [],
@@ -587,5 +588,6 @@
   },
   "queue_remaining": 210,
   "_run_started": "2026-11-06T08:27:01.524926+06:00",
-  "dry_runs": []
+  "dry_runs": [],
+  "fb_block_until": "2026-11-07T09:00:00+06:00"
 }

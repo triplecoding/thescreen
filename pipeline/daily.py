@@ -144,9 +144,23 @@ def upcoming(now, cfg, done, hours=26, grace_min=100, limit=6):
     return out[:limit]
 
 
+def fb_blocked(state, now):
+    """Facebook answered 'We limit how often you can post' (code 368). Further calls while blocked keep the block
+    alive, so every Facebook call pauses until fb_block_until; YouTube keeps working."""
+    u = state.get("fb_block_until")
+    return bool(u) and datetime.fromisoformat(u) > now
+
+
+def note_fb_error(state, err, now, hours=None):
+    if '"code":368' in str(err) or "We limit how often" in str(err):
+        h = hours or int(os.environ.get("FB_BLOCK_HOURS", "24"))
+        state["fb_block_until"] = (now + timedelta(hours=h)).isoformat()
+        log(f"facebook posting limit hit — pausing Facebook calls until {state['fb_block_until']}")
+
+
 def needs_fb(rec, now):
     """A post that reached YouTube but not Facebook (e.g. Facebook's temporary posting limit) and is still worth posting."""
-    if not rec.get("youtube") or rec.get("facebook") or not rec.get("facebook_error") or rec.get("fb_tries", 0) >= 3:
+    if not rec.get("youtube") or rec.get("facebook") or not rec.get("facebook_error") or rec.get("fb_tries", 0) >= 4:
         return False
     sf = rec.get("scheduled_for")
     if not sf or sf == "immediate":
@@ -155,17 +169,20 @@ def needs_fb(rec, now):
     return when > now - timedelta(hours=12)
 
 
-def fb_repair(state, platforms, now, tts, limit=2):
+def fb_repair(state, platforms, now, tts, limit=1):
     """Re-produce (voice comes from the cache) and upload to Facebook the posts that only reached YouTube.
     Scheduled for the original slot when it is still ahead, otherwise published now. At most `limit` per run so a
     Facebook posting limit is not hit again."""
     if "facebook" not in platforms:
         return
+    if fb_blocked(state, now):
+        log(f"facebook repair waits: posting limit until {state['fb_block_until']}")
+        return
     from produce import produce
     import upload_facebook
     done = 0
     for rec in state.get("posted", [])[-18:]:
-        if done >= limit or not needs_fb(rec, now):
+        if done >= limit or not needs_fb(rec, now) or fb_blocked(state, now):
             continue
         rec["fb_tries"] = rec.get("fb_tries", 0) + 1
         try:
@@ -179,6 +196,7 @@ def fb_repair(state, platforms, now, tts, limit=2):
             done += 1
         except Exception as e:  # noqa
             rec["facebook_error"] = str(e)[:300]
+            note_fb_error(state, e, now, hours=36)
             log(f"facebook repair {rec['id']} failed: {str(e)[:200]}")
         save_json(STATE, state)
         git_commit(f"facebook repair {rec['id']}", state)
@@ -208,12 +226,13 @@ def engage(state, platforms, now):
             except Exception as e:  # noqa
                 rec["yt_comment_error"] = str(e)[:160]
                 if "403" in str(e) or "404" in str(e): rec["yt_comment"] = "skipped"
-        if "facebook" in platforms and rec.get("facebook") and not rec.get("fb_comment"):
+        if "facebook" in platforms and rec.get("facebook") and not rec.get("fb_comment") and not fb_blocked(state, now):
             try:
                 rec["fb_comment"] = upload_facebook.comment(rec["facebook"], text)
                 log(f"facebook comment on {rec['id']}")
             except Exception as e:  # noqa
                 rec["fb_comment_error"] = str(e)[:160]
+                note_fb_error(state, e, now)
                 if "403" in str(e) or "(#200)" in str(e): rec["fb_comment"] = "skipped"
     save_json(STATE, state)
 
@@ -241,7 +260,7 @@ def main():
         state = load_json(STATE, {}) or {}
         done = {(p["date"], p["slot"]) for p in state.get("posted", [])}
         todo = upcoming(now, cfg, done, limit=max(a.ahead, 1))
-        repairs = [p["id"] for p in state.get("posted", []) if needs_fb(p, now)]
+        repairs = [] if fb_blocked(state, now) else [p["id"] for p in state.get("posted", []) if needs_fb(p, now)]
         work = 1 if (todo and queue(state)) or repairs else 0
         if repairs:
             log("plan: facebook repair pending for", ", ".join(repairs))
@@ -382,13 +401,17 @@ def main():
                     rec["playlist"] = upload_youtube.add_to_playlist(vid, key, state["playlists"], ptitle, pdesc)
                 except Exception as e:  # noqa
                     rec["youtube_error"] = str(e)[:300]; errors.append(f"youtube {sid}: {e}")
-            if "facebook" in platforms:
+            if "facebook" in platforms and fb_blocked(state, now):
+                rec["facebook_error"] = "deferred: facebook posting limit"   # fb_repair posts it once the pause ends
+                log(f"facebook deferred for {sid} (posting limit until {state['fb_block_until']})")
+            elif "facebook" in platforms:
                 try:
                     rec["facebook"] = upload_facebook.upload(video, script, when.timestamp() if schedule else None, Path(odir) / "thumb_9x16.jpg")
                     import time
                     time.sleep(int(os.environ.get("FB_GAP", "60")))   # space Facebook uploads: bursts trigger its posting limit
                 except Exception as e:  # noqa
                     rec["facebook_error"] = str(e)[:300]; errors.append(f"facebook {sid}: {e}")
+                    note_fb_error(state, e, now)
         rec["scheduled_for"] = when.isoformat() if schedule else "immediate"
         if a.dry_run:
             state.setdefault("dry_runs", []).append(rec)
