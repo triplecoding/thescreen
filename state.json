@@ -1006,6 +1006,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T17:30:00+06:00"
+    },
+    {
+      "id": "089",
+      "date": "2026-11-17",
+      "slot": "20:00",
+      "duration": 145.76,
+      "title": "এটিএম বুথের রাতের গার্ড, মেয়ের ইংরেজি পড়া পারেননি… তারপর রোজ রাতে একটা হলুদ চিরকুট ✍️",
+      "youtube": "kCR9xEhcv70",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1039,7 +1050,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:04:40.633942+06:00",
+    "at": "2026-11-06T15:11:20.436645+06:00",
     "errors": []
   },
   "queue_remaining": 174,
