@@ -1227,6 +1227,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-21T09:00:00+06:00"
+    },
+    {
+      "id": "109",
+      "date": "2026-11-21",
+      "slot": "11:30",
+      "duration": 148.38,
+      "title": "কথা আটকে যায়, ক্লাস হাসে, তাই আসিফ কোনোদিন মুখ খোলেনি… বাংলা স্যার নাম লিখলেন বিজয় দিবসের ভাষণে 🎤",
+      "youtube": "RvdRuinh1no",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-21T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1260,7 +1271,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T17:00:23.053744+06:00",
+    "at": "2026-11-06T17:06:14.187171+06:00",
     "errors": []
   },
   "queue_remaining": 150,
