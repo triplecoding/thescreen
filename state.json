@@ -1073,6 +1073,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-18T17:30:00+06:00"
+    },
+    {
+      "id": "095",
+      "date": "2026-11-18",
+      "slot": "20:00",
+      "duration": 138.72,
+      "title": "গার্মেন্টসে প্রথম চাকরি, মাসে ৫০০ টাকার ডিপিএস… সহকর্মীরা হাসল ‘৫০০ টাকায় কী হয়?’— দশ বছর পর ⏳",
+      "youtube": "HjW9aHavTHQ",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-18T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1106,7 +1117,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:41:35.125748+06:00",
+    "at": "2026-11-06T15:46:54.956910+06:00",
     "errors": []
   },
   "queue_remaining": 168,
