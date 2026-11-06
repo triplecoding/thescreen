@@ -829,6 +829,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-15T09:00:00+06:00"
+    },
+    {
+      "id": "073",
+      "date": "2026-11-15",
+      "slot": "11:30",
+      "duration": 143.69,
+      "title": "রোজ রাতে কল সেন্টারে চেঁচান এক বৃদ্ধ, অভিযোগ ‘ইন্টারনেট চলে না’… তানিয়া খুঁজে পেল আসল অভিযোগ 🎧",
+      "youtube": "r2S7nL6S4yU",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-15T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -862,7 +873,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:32:16.218417+06:00",
+    "at": "2026-11-06T13:37:20.812955+06:00",
     "errors": []
   },
   "queue_remaining": 186,
