@@ -962,6 +962,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T09:00:00+06:00"
+    },
+    {
+      "id": "085",
+      "date": "2026-11-17",
+      "slot": "11:30",
+      "duration": 132.71,
+      "title": "এনজিওর কিস্তিতে ডুবছিল গ্রামের মেয়েরা, তারপর বারোজন মিলে খুলল সপ্তাহে ৫০ টাকার নিজের সমিতি 🪙",
+      "youtube": "Fq-MkESJ4nM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -995,7 +1006,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:38:26.506549+06:00",
+    "at": "2026-11-06T14:44:36.232667+06:00",
     "errors": []
   },
   "queue_remaining": 174,
