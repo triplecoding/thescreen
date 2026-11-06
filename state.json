@@ -1656,6 +1656,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-27T15:30:00+06:00"
+    },
+    {
+      "id": "148",
+      "date": "2026-11-27",
+      "slot": "17:30",
+      "duration": 144.34,
+      "title": "দুই বছর শুধু ‘মিনিমাম ডিউ’ দিয়েছেন রাহাত, ভেবেছিলেন সব ঠিক আছে… তারপর বউয়ের হাতে পড়ল স্টেটমেন্ট 💳",
+      "youtube": "aWITyMnbBI8",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-27T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1695,7 +1706,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:32:17.494383+06:00",
+    "at": "2026-11-06T21:38:52.748768+06:00",
     "errors": []
   },
   "queue_remaining": 114,
