@@ -741,6 +741,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-13T17:30:00+06:00"
+    },
+    {
+      "id": "065",
+      "date": "2026-11-13",
+      "slot": "20:00",
+      "duration": 133.54,
+      "title": "নিজে রিকশা চালাতেন, মালিক হয়ে জমা বাড়ালেন ১৫০… তারপর জব্বার চাচা দেখালেন একটা পুরোনো রসিদ 🛺",
+      "youtube": "P_aZ6QlRyTg",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-13T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -773,7 +784,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:50:22.988516+06:00",
+    "at": "2026-11-06T12:54:41.118686+06:00",
     "errors": []
   },
   "queue_remaining": 198,
