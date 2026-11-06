@@ -1893,11 +1893,15 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T23:30:24.933819+06:00",
-    "errors": []
+    "at": "2026-11-06T23:37:31.663219+06:00",
+    "errors": [
+      "youtube 166: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
+    ],
+    "queue_remaining": 92
   },
-  "queue_remaining": 96,
+  "queue_remaining": 92,
   "_run_started": "2026-11-06T23:04:21.401404+06:00",
   "dry_runs": [],
-  "fb_block_until": "2026-11-07T09:00:00+06:00"
+  "fb_block_until": "2026-11-07T09:00:00+06:00",
+  "yt_limit_at": "2026-11-06T23:37:31.620379+06:00"
 }
