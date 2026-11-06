@@ -1623,6 +1623,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-27T09:00:00+06:00"
+    },
+    {
+      "id": "145",
+      "date": "2026-11-27",
+      "slot": "11:30",
+      "duration": 145.23,
+      "title": "লঞ্চের আগের রাতে টেস্টার পেল আশি পয়সার ভুল, বস বললেন ‘পরে ঠিক করব’ 📲",
+      "youtube": "VRH-6HbBHRg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-27T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1662,7 +1673,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:12:36.795958+06:00",
+    "at": "2026-11-06T21:19:19.697647+06:00",
     "errors": []
   },
   "queue_remaining": 114,
