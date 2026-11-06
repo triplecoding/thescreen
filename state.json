@@ -918,6 +918,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-16T13:30:00+06:00"
+    },
+    {
+      "id": "081",
+      "date": "2026-11-16",
+      "slot": "15:30",
+      "duration": 143.46,
+      "title": "১৫ বছর বলেছেন ‘তোমার জন্যই তো চাকরি করতে পারলাম না’… তারপর স্বামী এনে দিলেন চাকরির চিঠি 💼",
+      "youtube": "LaXN5O06lJY",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-16T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -951,7 +962,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:15:02.792220+06:00",
+    "at": "2026-11-06T14:19:50.636420+06:00",
     "errors": []
   },
   "queue_remaining": 180,
