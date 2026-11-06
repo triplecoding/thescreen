@@ -1436,6 +1436,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-24T11:30:00+06:00"
+    },
+    {
+      "id": "128",
+      "date": "2026-11-24",
+      "slot": "13:30",
+      "duration": 135.88,
+      "title": "ইন্টারভিউয়ের জন্য পরল আব্বার ৩০ বছরের পুরোনো শার্ট, পকেটে পেল একটা ভাঁজ করা কাগজ 👔",
+      "youtube": "LYMSKbSHVHg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-24T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1469,10 +1480,11 @@
     "theme:struggle": "PLMAYaBY5j7wI",
     "theme:siblings": "PLEr2moaNpIqQ",
     "theme:honesty": "PLf557_mEk6vQ",
-    "theme:probashi": "PLRt24uGoc9QU"
+    "theme:probashi": "PLRt24uGoc9QU",
+    "theme:parents": "PLJ6mTqLs5bbw"
   },
   "last_run": {
-    "at": "2026-11-06T19:21:02.071959+06:00",
+    "at": "2026-11-06T19:27:24.716986+06:00",
     "errors": []
   },
   "queue_remaining": 132,
