@@ -1028,6 +1028,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-18T09:00:00+06:00"
+    },
+    {
+      "id": "091",
+      "date": "2026-11-18",
+      "slot": "11:30",
+      "duration": 140.59,
+      "title": "ঢাকা থেকে ছেলের মেসেজ, আম্মা পড়তে পারেন না, পড়ে দেয় পাশের বাড়ির মানুষ… তারপর নাতনির স্লেট 🖍️",
+      "youtube": "Ley6G4CEVwA",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-18T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1061,7 +1072,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:18:54.577801+06:00",
+    "at": "2026-11-06T15:24:27.173925+06:00",
     "errors": []
   },
   "queue_remaining": 168,
