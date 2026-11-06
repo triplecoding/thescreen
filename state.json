@@ -1788,6 +1788,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-29T15:30:00+06:00"
+    },
+    {
+      "id": "160",
+      "date": "2026-11-29",
+      "slot": "17:30",
+      "duration": 144.5,
+      "title": "পৌষের রাতে ফুটপাতে কাঁপছিলেন জব্বার চাচা… চা-ওয়ালা মনু মামা রাখলেন একটা কার্টন 🧣",
+      "youtube": "C6lUgi1oR2c",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-29T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1827,7 +1838,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:51:24.086803+06:00",
+    "at": "2026-11-06T22:58:10.105495+06:00",
     "errors": []
   },
   "queue_remaining": 102,
