@@ -1426,6 +1426,13 @@
       "at": "2026-11-06T18:45:13.182986+06:00",
       "kind": "upload",
       "retry": true
+    },
+    {
+      "id": "128",
+      "reason": "all uploads failed: youtube 128: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
+      "at": "2026-11-06T18:51:23.076678+06:00",
+      "kind": "upload",
+      "retry": true
     }
   ],
   "playlists": {
@@ -1458,14 +1465,13 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T18:51:19.985959+06:00",
+    "at": "2026-11-06T18:57:45.642497+06:00",
     "errors": [
-      "youtube 127: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n"
-    ],
-    "queue_remaining": 130
+      "youtube 128: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n"
+    ]
   },
   "queue_remaining": 130,
-  "_run_started": "2026-11-06T18:45:13.182986+06:00",
+  "_run_started": "2026-11-06T18:51:23.076678+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
