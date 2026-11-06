@@ -227,7 +227,8 @@ def engage(state, platforms, now):
             except Exception as e:  # noqa
                 rec["yt_comment_error"] = str(e)[:160]
                 if "403" in str(e) or "404" in str(e): rec["yt_comment"] = "skipped"
-        if "facebook" in platforms and rec.get("facebook") and not rec.get("fb_comment") and not fb_blocked(state, now):
+        fb_comments = not channel()["facebook"].get("video_only", True)   # owner rule: Facebook API = video upload only
+        if fb_comments and "facebook" in platforms and rec.get("facebook") and not rec.get("fb_comment") and not fb_blocked(state, now):
             try:
                 rec["fb_comment"] = upload_facebook.comment(rec["facebook"], text)
                 log(f"facebook comment on {rec['id']}")

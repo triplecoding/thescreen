@@ -50,6 +50,7 @@ Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backu
 4. Never write secrets in code, logs, chat or commits. They live only in GitHub → Settings → Secrets → Actions.
 5. Scripts are produced in id order; one video never refers to another episode.
 6. Facebook captions contain no website links.
+6b. Facebook API = video upload only (owner, 6 Nov 2026): no first comments, no photo posts, no custom thumbnail upload, no retry after a 4xx/posting-limit (368) error. Switch: `config/channel.json → facebook.video_only`.
 7. Content rules in `docs/STORY_GUIDE.md` ("Never" list) are absolute.
 8. Do not touch other repositories or channels from this repo's tasks.
 9. Improve quality a little every week (new sets/props/poses, better stories) — but keep the brand identity.

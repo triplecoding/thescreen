@@ -44,6 +44,9 @@ def commit(msg):
 
 
 def main():
+    if channel()["facebook"].get("video_only", True):
+        log("photo posts: off — owner rule: the Facebook API uploads videos only (config facebook.video_only)")
+        return
     ver = channel()["facebook"].get("graph_version", "v21.0")
     G = f"https://graph.facebook.com/{ver}"
     page, tok = env("FB_PAGE_ID"), page_token()

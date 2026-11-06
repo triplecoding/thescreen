@@ -3,6 +3,7 @@ Videos longer than 90 s cannot go through the Reels API, so they are posted as P
 Page videos in the Reels/Video surfaces)."""
 from pathlib import Path
 
+import time
 import requests
 
 from common import channel, env, log, retry
@@ -52,14 +53,26 @@ def upload(video, script, publish_unix=None, thumb=None):
     else:
         data["published"] = "true"
 
+    video_only = channel()["facebook"].get("video_only", True)
+
     def go():
         files = {"source": (Path(video).name, open(video, "rb"), "video/mp4")}
-        if thumb and Path(thumb).exists():
+        if thumb and Path(thumb).exists() and not video_only:   # owner rule: video only, no photo upload
             files["thumb"] = (Path(thumb).name, open(thumb, "rb"), "image/jpeg")
-        r = requests.post(url, data=data, files=files, timeout=900)
-        if not r.ok:
-            raise RuntimeError(f"Facebook upload failed: {r.status_code} {r.text[:400]}")
-        return r.json()["id"]
-    vid = retry(go, tries=3, base=10, what="facebook upload")
+        return requests.post(url, data=data, files=files, timeout=900)
+
+    vid = None
+    for attempt in range(2):          # one retry, only for network / server (5xx) errors
+        try:
+            r = go()
+        except requests.RequestException as e:
+            if attempt: raise RuntimeError(f"Facebook upload failed: network {e}")
+            log(f"facebook upload network error ({e}); retry in 30s"); time.sleep(30); continue
+        if r.ok:
+            vid = r.json()["id"]; break
+        if r.status_code >= 500 and not attempt:
+            log(f"facebook upload {r.status_code}; retry in 30s"); time.sleep(30); continue
+        # 4xx (incl. code 368 posting limit): never retry — every extra call prolongs Facebook's block
+        raise RuntimeError(f"Facebook upload failed: {r.status_code} {r.text[:400]}")
     log(f"Facebook uploaded: video {vid} ({'scheduled' if publish_unix else 'published'})")
     return vid

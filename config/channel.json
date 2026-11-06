@@ -154,7 +154,9 @@
   "playlists": "theme (pipeline/seo.py THEMES)"
  },
  "facebook": {
-  "graph_version": "v21.0"
+  "graph_version": "v21.0",
+  "video_only": true,
+  "_video_only_note": "Owner rule (6 Nov 2026): the Facebook API is used ONLY to upload the video itself (with caption). No first comment, no custom thumbnail/photo upload, no retries after a posting-limit error."
  },
  "music": {
   "volume_db": -21,
