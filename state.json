@@ -697,6 +697,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-13T09:00:00+06:00"
+    },
+    {
+      "id": "061",
+      "date": "2026-11-13",
+      "slot": "11:30",
+      "duration": 133.37,
+      "title": "লঞ্চে ৮০ হাজার টাকার ব্যাগ উধাও, সবাই আঙুল তুলল কেবিন বয়ের দিকে… তারপর এক বৃদ্ধের প্রশ্ন 🚢",
+      "youtube": "Vx70qiqIfvQ",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-13T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -729,7 +740,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:33:24.343897+06:00",
+    "at": "2026-11-06T12:37:34.169444+06:00",
     "errors": []
   },
   "queue_remaining": 198,
