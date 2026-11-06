@@ -896,6 +896,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-16T09:00:00+06:00"
+    },
+    {
+      "id": "079",
+      "date": "2026-11-16",
+      "slot": "11:30",
+      "duration": 146.06,
+      "title": "বন্যার ত্রাণে ২০০ নামের লিস্ট, অথচ বিধবা আমেনা বুবুর নাম নাই… কলেজের মেয়ে শাপলা একটা প্রস্তাব দিল 🌊",
+      "youtube": "E-QZ23MvGEE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-16T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -929,7 +940,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:04:53.705317+06:00",
+    "at": "2026-11-06T14:10:13.362361+06:00",
     "errors": []
   },
   "queue_remaining": 180,
