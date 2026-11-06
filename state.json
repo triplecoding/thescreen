@@ -1546,6 +1546,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-25T20:00:00+06:00"
+    },
+    {
+      "id": "138",
+      "date": "2026-11-26",
+      "slot": "09:00",
+      "duration": 125.06,
+      "title": "ঠিকানা ‘বটগাছের পাশে নানুর বাড়ি’, অ্যাপ বলে পাওয়া যায়নি… জামাল ভাই খুঁজলেন 📦",
+      "youtube": "R6kmJR7IAJI",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-26T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1585,12 +1596,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:26:53.615260+06:00",
-    "errors": [],
-    "queue_remaining": 120
+    "at": "2026-11-06T20:32:43.417663+06:00",
+    "errors": []
   },
   "queue_remaining": 120,
-  "_run_started": "2026-11-06T19:47:18.669690+06:00",
+  "_run_started": "2026-11-06T20:26:56.416621+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
