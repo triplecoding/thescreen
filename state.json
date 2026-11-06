@@ -606,6 +606,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-11T17:30:00+06:00"
+    },
+    {
+      "id": "053",
+      "date": "2026-11-11",
+      "slot": "20:00",
+      "duration": 140.54,
+      "title": "ছয় বছর দুবাই, মেয়ে ফোন ধরে না… তারপর আব্বু রাঁধলেন এক প্লেট খিচুড়ি 🍛",
+      "youtube": "27eWkUrMMds",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-11T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -638,7 +649,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T09:41:14.243640+06:00",
+    "at": "2026-11-06T09:46:40.448343+06:00",
     "errors": []
   },
   "queue_remaining": 210,
