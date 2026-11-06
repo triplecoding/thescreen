@@ -873,6 +873,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-15T17:30:00+06:00"
+    },
+    {
+      "id": "077",
+      "date": "2026-11-15",
+      "slot": "20:00",
+      "duration": 137.45,
+      "title": "এক ভুল কোডে বন্দরে আটকে গেল কন্টেইনার, রোজ ১৮ হাজার জরিমানা… নতুন ছেলেটা লুকাল দুই দিন 📦",
+      "youtube": "j7J-3yzq9FM",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-15T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -906,7 +917,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:52:51.504851+06:00",
+    "at": "2026-11-06T13:57:37.691220+06:00",
     "errors": []
   },
   "queue_remaining": 186,
