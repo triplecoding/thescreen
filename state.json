@@ -951,6 +951,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-16T20:00:00+06:00"
+    },
+    {
+      "id": "084",
+      "date": "2026-11-17",
+      "slot": "09:00",
+      "duration": 140.01,
+      "title": "লিফট নষ্ট তিন মাস, ‘কে কত টাকা দেবে’ ঝগড়া… সাততলার ৮০ বছরের নানু তিন মাস নিচে নামেননি 🛗",
+      "youtube": "g8CctPctDU8",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -984,12 +995,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:29:23.854764+06:00",
-    "errors": [],
-    "queue_remaining": 174
+    "at": "2026-11-06T14:38:26.506549+06:00",
+    "errors": []
   },
   "queue_remaining": 174,
-  "_run_started": "2026-11-06T14:00:11.449318+06:00",
+  "_run_started": "2026-11-06T14:32:15.117360+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
