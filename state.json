@@ -929,6 +929,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-16T15:30:00+06:00"
+    },
+    {
+      "id": "082",
+      "date": "2026-11-16",
+      "slot": "17:30",
+      "duration": 141.37,
+      "title": "ইউটিউব দেখে এসি সারায় সজীব, ওস্তাদকে বলে ‘স্লো’… একদিন পুড়ে গেল এক বাসার কম্প্রেসার 🔧",
+      "youtube": "qVHBj1U8wAY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-16T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -962,7 +973,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:19:50.636420+06:00",
+    "at": "2026-11-06T14:24:31.773488+06:00",
     "errors": []
   },
   "queue_remaining": 180,
