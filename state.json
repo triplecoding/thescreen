@@ -1491,6 +1491,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-25T09:00:00+06:00"
+    },
+    {
+      "id": "133",
+      "date": "2026-11-25",
+      "slot": "11:30",
+      "duration": 138.94,
+      "title": "গামছা-স্যান্ডেল দেখে হাসল স্টাফরা… ৬৮ বছরে জীবনে প্রথম সমুদ্র দেখতে এসেছিলেন তাঁরা 🌊",
+      "youtube": "bCARyaa08ZY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-25T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1525,10 +1536,11 @@
     "theme:siblings": "PLEr2moaNpIqQ",
     "theme:honesty": "PLf557_mEk6vQ",
     "theme:probashi": "PLRt24uGoc9QU",
-    "theme:parents": "PLJ6mTqLs5bbw"
+    "theme:parents": "PLJ6mTqLs5bbw",
+    "theme:work": "PLCogb-be2B7I"
   },
   "last_run": {
-    "at": "2026-11-06T19:53:50.773243+06:00",
+    "at": "2026-11-06T20:00:24.805082+06:00",
     "errors": []
   },
   "queue_remaining": 126,
