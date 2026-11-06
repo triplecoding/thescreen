@@ -917,10 +917,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:57:37.691220+06:00",
-    "errors": []
+    "at": "2026-11-06T13:57:39.423503+06:00",
+    "errors": [],
+    "queue_remaining": 180
   },
-  "queue_remaining": 186,
+  "queue_remaining": 180,
   "_run_started": "2026-11-06T13:27:50.619521+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
