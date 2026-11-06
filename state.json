@@ -840,6 +840,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-15T11:30:00+06:00"
+    },
+    {
+      "id": "074",
+      "date": "2026-11-15",
+      "slot": "13:30",
+      "duration": 143.82,
+      "title": "রচনা প্রতিযোগিতায় প্রথম হলো চা শ্রমিকের মেয়ে, আর বাবা দাঁড়িয়ে রইলেন গেটের বাইরে… 🍃",
+      "youtube": "go-TOp1MLSs",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-15T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -873,7 +884,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T13:37:20.812955+06:00",
+    "at": "2026-11-06T13:42:39.859474+06:00",
     "errors": []
   },
   "queue_remaining": 186,
