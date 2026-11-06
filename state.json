@@ -1326,6 +1326,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-22T15:30:00+06:00"
+    },
+    {
+      "id": "118",
+      "date": "2026-11-22",
+      "slot": "17:30",
+      "duration": 124.03,
+      "title": "২২ বছর কুয়েতে কাটিয়ে চা দোকানে খুললেন ‘প্রবাস ক্লাস’… বাঁচালেন এক তরুণকে ✈️",
+      "youtube": "1d8LXyKgfV4",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-22T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1359,7 +1370,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T17:52:06.404789+06:00",
+    "at": "2026-11-06T17:57:21.176571+06:00",
     "errors": []
   },
   "queue_remaining": 144,
