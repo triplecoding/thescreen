@@ -1612,6 +1612,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-26T20:00:00+06:00"
+    },
+    {
+      "id": "144",
+      "date": "2026-11-27",
+      "slot": "09:00",
+      "duration": 147.87,
+      "title": "মা মারা যাওয়ার পর নতুন মাকে তানিয়া ডাকে ‘আন্টি’… তিন বছর পর পরীক্ষার গেটে 💐",
+      "youtube": "AxamGmeVEoc",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-27T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1651,12 +1662,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:05:44.189220+06:00",
-    "errors": [],
-    "queue_remaining": 114
+    "at": "2026-11-06T21:12:36.795958+06:00",
+    "errors": []
   },
   "queue_remaining": 114,
-  "_run_started": "2026-11-06T20:26:56.416621+06:00",
+  "_run_started": "2026-11-06T21:05:46.940863+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
