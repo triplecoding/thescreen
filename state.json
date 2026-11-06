@@ -719,6 +719,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-13T13:30:00+06:00"
+    },
+    {
+      "id": "063",
+      "date": "2026-11-13",
+      "slot": "15:30",
+      "duration": 141.79,
+      "title": "দুই বছর মাকে ভিডিও কলে দেখাল ‘সুন্দর রুম’… তারপর মা বললেন, ‘ক্যামেরাটা একটু ঘুরা’ 📱",
+      "youtube": "qtKO5MSLkuo",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-13T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -751,7 +762,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:41:44.374237+06:00",
+    "at": "2026-11-06T12:46:02.038892+06:00",
     "errors": []
   },
   "queue_remaining": 198,
