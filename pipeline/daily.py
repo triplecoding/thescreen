@@ -198,6 +198,8 @@ def fb_repair(state, platforms, now, tts, limit=1):
         except Exception as e:  # noqa
             rec["facebook_error"] = str(e)[:300]
             note_fb_error(state, e, now, hours=36)
+            if fb_blocked(state, now):
+                rec["fb_tries"] -= 1   # a posting-limit block is not the video's fault: keep it in the queue until it posts
             log(f"facebook repair {rec['id']} failed: {str(e)[:200]}")
         save_json(STATE, state)
         git_commit(f"facebook repair {rec['id']}", state)
