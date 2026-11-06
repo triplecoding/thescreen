@@ -1392,6 +1392,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-23T15:30:00+06:00"
+    },
+    {
+      "id": "124",
+      "date": "2026-11-23",
+      "slot": "17:30",
+      "duration": 144.4,
+      "title": "সারাজীবনের সঞ্চয় ৮ লাখ তুলতে এলেন বৃদ্ধ, কানে ফোন… ক্যাশিয়ার প্রিয়া থামালেন 🏦",
+      "youtube": "jsMG4YJtvog",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-23T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1425,7 +1436,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T18:27:03.119510+06:00",
+    "at": "2026-11-06T18:32:35.824581+06:00",
     "errors": []
   },
   "queue_remaining": 138,
