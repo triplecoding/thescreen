@@ -1405,36 +1405,7 @@
       "scheduled_for": "2026-11-23T17:30:00+06:00"
     }
   ],
-  "failed": [
-    {
-      "id": "125",
-      "reason": "all uploads failed: youtube 125: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
-      "at": "2026-11-06T18:03:25.572023+06:00",
-      "kind": "upload",
-      "retry": true
-    },
-    {
-      "id": "126",
-      "reason": "all uploads failed: youtube 126: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
-      "at": "2026-11-06T18:39:11.661995+06:00",
-      "kind": "upload",
-      "retry": true
-    },
-    {
-      "id": "127",
-      "reason": "all uploads failed: youtube 127: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
-      "at": "2026-11-06T18:45:13.182986+06:00",
-      "kind": "upload",
-      "retry": true
-    },
-    {
-      "id": "128",
-      "reason": "all uploads failed: youtube 128: YouTube init failed: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n    ]\n  }\n}\n",
-      "at": "2026-11-06T18:51:23.076678+06:00",
-      "kind": "upload",
-      "retry": true
-    }
-  ],
+  "failed": [],
   "playlists": {
     "The Laws of Human Nature": "PLa_DKXTCT90U",
     "The Art of War": "PLdM5Kv756r_M",

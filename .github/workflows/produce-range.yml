@@ -81,8 +81,9 @@ jobs:
             rm -rf out/*
             n=$(filled $D)
             if [ "$n" -ge 6 ]; then echo "$D: done"; D=$(date -d "$D +1 day" +%F); TRIES=0; continue; fi
+            LIMIT=$(python3 -c "import json,datetime as d;s=json.load(open('state.json'));t=s.get('yt_limit_at');print(1 if t and d.datetime.fromisoformat(t)>d.datetime.now(d.timezone.utc)-d.timedelta(minutes=90) else 0)")
+            if [ "$LIMIT" = "1" ]; then echo "$D: YouTube daily upload limit reached — waiting 60 min, then trying again"; sleep 3600; continue; fi
             TRIES=$(( ${TRIES:-0} + 1 ))
-            if grep -qi quota state.json; then echo "$D: YouTube quota reached — waiting 60 min"; sleep 3600; fi
             if [ $TRIES -ge 4 ]; then echo "::error::$D still $n/6 after 4 attempts — stopping (the daily runs will fill it before its slots)"; exit 1; fi
           done
           echo "all days up to $END scheduled"

@@ -459,10 +459,11 @@ def main():
                     rec["playlist"] = upload_youtube.add_to_playlist(vid, key, state["playlists"], ptitle, pdesc)
                 except Exception as e:  # noqa
                     rec["youtube_error"] = str(e)[:300]; errors.append(f"youtube {sid}: {e}")
-                    if "quota" in str(e).lower():
-                        yt_quota = True
+                    if any(w in str(e) for w in ("quota", "uploadLimitExceeded", "exceeded the number of videos")):
+                        yt_quota = True   # YouTube API quota or the channel's daily upload limit: stop, keep the script queued
             if yt_quota:
-                log(f"youtube quota reached — stopping this run; {sid} stays in the queue for the next run")
+                log(f"youtube upload limit/quota reached — stopping this run; {sid} stays in the queue for the next run")
+                state["yt_limit_at"] = datetime.now(tz).isoformat()
                 break
             if "facebook" in platforms and fb_blocked(state, now):
                 rec["facebook_error"] = "deferred: facebook posting limit"   # fb_repair posts it once the pause ends
