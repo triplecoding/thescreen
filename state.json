@@ -1469,6 +1469,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-24T17:30:00+06:00"
+    },
+    {
+      "id": "131",
+      "date": "2026-11-24",
+      "slot": "20:00",
+      "duration": 134.51,
+      "title": "হোটেলের সামনে একটা ফ্রিজ, লেখা ‘যার লাগে নিন, যার আছে দিন’… প্রথম সপ্তাহে একজন সব নিয়ে গেল 🧊",
+      "youtube": "y3PTt8tZKM4",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-24T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1506,7 +1517,7 @@
     "theme:parents": "PLJ6mTqLs5bbw"
   },
   "last_run": {
-    "at": "2026-11-06T19:41:04.893111+06:00",
+    "at": "2026-11-06T19:47:14.357725+06:00",
     "errors": []
   },
   "queue_remaining": 132,
