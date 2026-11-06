@@ -1293,6 +1293,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-22T09:00:00+06:00"
+    },
+    {
+      "id": "115",
+      "date": "2026-11-22",
+      "slot": "11:30",
+      "duration": 141.39,
+      "title": "ফ্রিল্যান্সিংয়ে মাসে ১.২ লাখ, খরচও তাই… তারপর আয় শূন্য পাঁচ মাস 💻",
+      "youtube": "KlaxTaKAnXY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-22T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1326,7 +1337,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T17:34:37.033386+06:00",
+    "at": "2026-11-06T17:40:19.448873+06:00",
     "errors": []
   },
   "queue_remaining": 144,
