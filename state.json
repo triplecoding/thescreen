@@ -1843,6 +1843,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-30T13:30:00+06:00"
+    },
+    {
+      "id": "165",
+      "date": "2026-11-30",
+      "slot": "15:30",
+      "duration": 144.31,
+      "title": "১৯ বছর দুবাইয়ে বাবা… ৫০তম জন্মদিনে লেবার ক্যাম্পের গেটে দাঁড়িয়ে ছিল ছেলে ✈️",
+      "youtube": "TXO3PvX4NqI",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-30T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1882,7 +1893,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T23:23:27.267977+06:00",
+    "at": "2026-11-06T23:30:24.933819+06:00",
     "errors": []
   },
   "queue_remaining": 96,
