@@ -1337,6 +1337,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-22T17:30:00+06:00"
+    },
+    {
+      "id": "119",
+      "date": "2026-11-22",
+      "slot": "20:00",
+      "duration": 148.77,
+      "title": "পঞ্চাশ বছরের সংসার, অথচ বিয়ের একটাও ছবি নেই… নাতনি মীম ঠিক করল, এবার হবে দাদা-দাদির ‘বিয়ে’ 📸",
+      "youtube": "xWq5dRyJvp8",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-22T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1370,7 +1381,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T17:57:21.176571+06:00",
+    "at": "2026-11-06T18:03:20.250573+06:00",
     "errors": []
   },
   "queue_remaining": 144,
