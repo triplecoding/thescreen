@@ -1766,6 +1766,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-29T11:30:00+06:00"
+    },
+    {
+      "id": "158",
+      "date": "2026-11-29",
+      "slot": "13:30",
+      "duration": 146.24,
+      "title": "এসএসসি পরীক্ষা শুরু ২০ মিনিট পর, নুসরাতের প্রবেশপত্র বাসায়… এক রিকশাওয়ালা চাচার দৌড় 🏃‍♀️",
+      "youtube": "dpVaSRisYqU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-29T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1805,7 +1816,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:37:45.460614+06:00",
+    "at": "2026-11-06T22:45:00.392600+06:00",
     "errors": []
   },
   "queue_remaining": 102,
