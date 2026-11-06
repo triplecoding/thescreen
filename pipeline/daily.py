@@ -214,6 +214,11 @@ def fb_repair(state, platforms, now, tts, limit=1):
     if fb_blocked(state, now):
         log(f"facebook repair waits: posting limit until {state['fb_block_until']}")
         return
+    last = state.get("fb_last_upload")
+    gap = int(os.environ.get("FB_REPAIR_GAP_MIN", "110"))
+    if last and datetime.fromisoformat(last) > now - timedelta(minutes=gap):
+        log(f"facebook repair waits: last Facebook upload {last} (spacing {gap} min)")
+        return
     from produce import produce
     import upload_facebook
     done = 0
@@ -236,6 +241,7 @@ def fb_repair(state, platforms, now, tts, limit=1):
             script = load_json(SCRIPTS / f"{rec['id']}.json")
             rec["facebook"] = upload_facebook.upload(Path(odir) / "video.mp4", script, sched, Path(odir) / "thumb_9x16.jpg")
             rec.pop("facebook_error", None)
+            state["fb_last_upload"] = now.isoformat()
             done += 1
             fb_drop(rec["id"])
         except Exception as e:  # noqa
@@ -307,7 +313,9 @@ def main():
         state = load_json(STATE, {}) or {}
         done = {(p["date"], p["slot"]) for p in state.get("posted", [])}
         todo = upcoming(now, cfg, done, limit=max(a.ahead, 1))
-        repairs = [] if fb_blocked(state, now) else [p["id"] for p in state.get("posted", []) if needs_fb(p, now)]
+        last = state.get("fb_last_upload")
+        spaced = not last or datetime.fromisoformat(last) <= now - timedelta(minutes=int(os.environ.get("FB_REPAIR_GAP_MIN", "110")))
+        repairs = [] if (fb_blocked(state, now) or not spaced) else [p["id"] for p in state.get("posted", []) if needs_fb(p, now)]
         work = 1 if (todo and queue(state)) or repairs else 0
         if repairs:
             log("plan: facebook repair pending for", ", ".join(repairs))
@@ -380,6 +388,7 @@ def main():
                 fb_repair(state, platforms, now, a.tts)
             except Exception as e:  # noqa — a repair must never stop the day's production
                 log("facebook repair skipped:", e)
+    yt_quota = False
     def taken(slot, when):
         d = str(when.date()) if (a.ahead or a.next) else str(date)
         return (d, slot) in {(p["date"], p["slot"]) for p in state["posted"]}
@@ -391,6 +400,8 @@ def main():
         q = [x for x in queue(state) if x not in dry_used]
         if not q:
             errors.append("queue empty — no ready scripts")
+            break
+        if yt_quota:
             break
         produced = None
         while q and not produced:
@@ -448,6 +459,11 @@ def main():
                     rec["playlist"] = upload_youtube.add_to_playlist(vid, key, state["playlists"], ptitle, pdesc)
                 except Exception as e:  # noqa
                     rec["youtube_error"] = str(e)[:300]; errors.append(f"youtube {sid}: {e}")
+                    if "quota" in str(e).lower():
+                        yt_quota = True
+            if yt_quota:
+                log(f"youtube quota reached — stopping this run; {sid} stays in the queue for the next run")
+                break
             if "facebook" in platforms and fb_blocked(state, now):
                 rec["facebook_error"] = "deferred: facebook posting limit"   # fb_repair posts it once the pause ends
                 fb_store(sid, video)
@@ -455,6 +471,7 @@ def main():
             elif "facebook" in platforms:
                 try:
                     rec["facebook"] = upload_facebook.upload(video, script, when.timestamp() if schedule else None, Path(odir) / "thumb_9x16.jpg")
+                    state["fb_last_upload"] = datetime.now(tz).isoformat()
                     import time
                     time.sleep(int(os.environ.get("FB_GAP", "60")))   # space Facebook uploads: bursts trigger its posting limit
                 except Exception as e:  # noqa

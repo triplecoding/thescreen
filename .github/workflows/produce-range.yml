@@ -1,0 +1,88 @@
+name: "Produce days ahead"
+# Makes and schedules whole days in order (start → end), one day at a time, with no Claude session:
+# each day = `daily.py --date D --count 6` (YouTube publishAt; Facebook scheduled, or stored in the
+# 'fb-queue' release while Facebook's posting limit is active — the hourly "Publish videos" runs upload it later).
+# A job may run ~5 h; then it starts itself again from the next unfinished day.
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "First date YYYY-MM-DD"
+        required: true
+      end:
+        description: "Last date YYYY-MM-DD"
+        required: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: produce-range
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      TZ: Asia/Dhaka
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Node + Chromium
+        run: npm install --no-audit --no-fund && npx playwright install --with-deps chromium
+      - name: Python deps
+        run: pip install -q -r requirements.txt
+      - name: Voice cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: voice-${{ github.run_id }}
+          restore-keys: voice-
+      - name: Check secrets
+        run: python pipeline/doctor.py --ci
+      - name: Produce day by day
+        run: |
+          git config user.name "The Screen Bot"
+          git config user.email "bot@thescreen.local"
+          T0=$(date +%s)
+          D="${{ github.event.inputs.start }}"; END="${{ github.event.inputs.end }}"
+          filled() { git pull -q --rebase origin main >/dev/null 2>&1 || git pull -q origin main; python3 -c "import json;s=json.load(open('state.json'));print(sum(1 for p in s['posted'] if p['date']=='$1'))"; }
+          busy() { gh api "repos/${{ github.repository }}/actions/workflows/daily.yml/runs?per_page=5" --jq '[.workflow_runs[]|select(.status=="in_progress")]|length'; }
+          while [[ "$D" < "$END" || "$D" == "$END" ]]; do
+            if [ $(( $(date +%s) - T0 )) -gt 17400 ]; then
+              echo "time budget used — continuing from $D in a new run"
+              gh api -X POST repos/${{ github.repository }}/actions/workflows/produce-range.yml/dispatches -f ref=main -f "inputs[start]=$D" -f "inputs[end]=$END"
+              exit 0
+            fi
+            n=$(filled $D)
+            if [ "$n" -ge 6 ]; then echo "$D: already scheduled ($n/6)"; D=$(date -d "$D +1 day" +%F); continue; fi
+            for i in $(seq 1 90); do [ "$(busy)" = "0" ] && break; echo "waiting for a running 'Publish videos' run…"; sleep 60; done
+            echo "=== $D: producing ($n/6 already)"
+            python pipeline/daily.py --count 6 --date "$D" || true
+            rm -rf out/*
+            n=$(filled $D)
+            if [ "$n" -ge 6 ]; then echo "$D: done"; D=$(date -d "$D +1 day" +%F); TRIES=0; continue; fi
+            TRIES=$(( ${TRIES:-0} + 1 ))
+            if grep -qi quota state.json; then echo "$D: YouTube quota reached — waiting 60 min"; sleep 3600; fi
+            if [ $TRIES -ge 4 ]; then echo "::error::$D still $n/6 after 4 attempts — stopping (the daily runs will fill it before its slots)"; exit 1; fi
+          done
+          echo "all days up to $END scheduled"
