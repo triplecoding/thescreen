@@ -674,6 +674,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-12T17:30:00+06:00"
+    },
+    {
+      "id": "059",
+      "date": "2026-11-12",
+      "slot": "20:00",
+      "duration": 134.65,
+      "title": "৩২ বছর হাতে লেখা খাতা, নতুন সফটওয়্যারে শূন্য এন্ট্রি… নতুন বস যা করলেন 📒",
+      "youtube": "ukTiExWgb64",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-12T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -706,7 +717,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T11:33:11.769418+06:00",
+    "at": "2026-11-06T11:39:15.745466+06:00",
     "errors": []
   },
   "queue_remaining": 204,
