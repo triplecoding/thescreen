@@ -22,6 +22,12 @@ GitHub Actions — .github/workflows/keeper.yml ("Keeper (timer)") ← self-rene
    sleeps until 35 min before each slot → dispatches "Publish videos" → dispatches itself again.
    "Publish videos" restarts the Keeper whenever it is not running (each watches the other).
 
+GitHub Actions — .github/workflows/produce-range.yml ("Produce days ahead") ← manual: makes days start→end in order, self-continuing
+GitHub Actions — .github/workflows/write-scripts.yml ("Write scripts (AI)") ← daily 03:17 Dhaka: if < 60 ready scripts, writes up to 12
+   with the Anthropic API (secret ANTHROPIC_API_KEY) + validate.py; does nothing without the secret
+Facebook catch-up: videos that could not go to Facebook are kept in the GitHub release "fb-queue"; the hourly
+   "Publish videos" runs upload one every ~2 h (earliest slot first) once Facebook's posting limit has passed.
+
 Claude scheduled task — "The Screen: scripts (Tue + Fri)" (07:33 Dhaka) → writes 24 new scripts each run → validate → push
 Claude scheduled task — "The Screen: daily supervisor" (00:31 Dhaka) → backup trigger (dispatches a run if tomorrow is
    not fully scheduled) + health check: reads the last runs,

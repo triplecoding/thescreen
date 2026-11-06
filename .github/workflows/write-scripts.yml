@@ -1,0 +1,45 @@
+name: "Write scripts (AI)"
+# Keeps the story queue full with no Claude session: when fewer than 60 ready scripts remain, writes up to 12 new
+# ones with the Anthropic API (secret ANTHROPIC_API_KEY), validates them and pushes. Does nothing without the secret.
+on:
+  schedule:
+    - cron: "17 21 * * *"   # 03:17 Dhaka, daily
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Write this many scripts now (0 = only if the queue is low)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: write-scripts
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Write
+        id: w
+        run: |
+          pip install -q requests
+          python pipeline/write_scripts.py --force "${{ github.event.inputs.force || '0' }}"
+      - name: Commit
+        if: steps.w.outputs.range != ''
+        run: |
+          git config user.name "The Screen Bot"
+          git config user.email "bot@thescreen.local"
+          git add scripts data/used.json
+          git commit -m "scripts: ${{ steps.w.outputs.range }} (AI writer)"
+          for i in 1 2 3 4 5; do git pull --rebase -q origin main && git push -q origin main && break; sleep 10; done
