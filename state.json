@@ -1106,6 +1106,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-19T11:30:00+06:00"
+    },
+    {
+      "id": "098",
+      "date": "2026-11-19",
+      "slot": "13:30",
+      "duration": 142.49,
+      "title": "‘পেছনের বেঞ্চ মানে ফেল’— নতুন ম্যাডাম প্রতি সপ্তাহে বেঞ্চ বদলালেন, আর জানা গেল হাবিবের এক গোপন কথা 🪑",
+      "youtube": "M2wG1S6x4aU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-19T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1139,7 +1150,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T15:57:26.532270+06:00",
+    "at": "2026-11-06T16:02:57.658848+06:00",
     "errors": []
   },
   "queue_remaining": 162,
