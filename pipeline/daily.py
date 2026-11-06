@@ -181,7 +181,8 @@ def fb_repair(state, platforms, now, tts, limit=1):
     from produce import produce
     import upload_facebook
     done = 0
-    for rec in state.get("posted", [])[-18:]:
+    pending = sorted((r for r in state.get("posted", []) if needs_fb(r, now)), key=lambda r: r["scheduled_for"])
+    for rec in pending:   # earliest slot first, whatever its position in the list (days are produced in advance)
         if done >= limit or not needs_fb(rec, now) or fb_blocked(state, now):
             continue
         rec["fb_tries"] = rec.get("fb_tries", 0) + 1
@@ -208,7 +209,7 @@ def engage(state, platforms, now):
     import seo
     import upload_facebook
     import upload_youtube
-    for rec in state.get("posted", [])[-12:]:
+    for rec in state.get("posted", [])[-80:]:   # wide window: several days are often scheduled ahead
         live = rec.get("scheduled_for") == "immediate" or (rec.get("scheduled_for") and datetime.fromisoformat(rec["scheduled_for"]) <= now)
         if not live:
             continue
