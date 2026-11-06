@@ -1128,6 +1128,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-19T15:30:00+06:00"
+    },
+    {
+      "id": "100",
+      "date": "2026-11-19",
+      "slot": "17:30",
+      "duration": 149.87,
+      "title": "বাবার সাথে কথা হয় শুধু ‘খাইছস?’… আলমারিতে পাওয়া গেল একটা খাতা, তাতে ছেলের স্কুলের প্রতিটা রান 🏏",
+      "youtube": "-HVyNP5W50A",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-19T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1161,7 +1172,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:08:46.767532+06:00",
+    "at": "2026-11-06T16:14:44.248898+06:00",
     "errors": []
   },
   "queue_remaining": 162,
