@@ -1161,6 +1161,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-20T09:00:00+06:00"
+    },
+    {
+      "id": "103",
+      "date": "2026-11-20",
+      "slot": "11:30",
+      "duration": 127.32,
+      "title": "পাশের দোকান কেজিতে ৫০ গ্রাম কম দেয়, তাই সস্তা… জামাল ভাই বললেন ‘না’, তারপর এক খালাম্মা ⚖️",
+      "youtube": "vJAfSHI2xl8",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-20T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1194,7 +1205,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:26:38.861172+06:00",
+    "at": "2026-11-06T16:31:38.503531+06:00",
     "errors": []
   },
   "queue_remaining": 156,
