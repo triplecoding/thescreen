@@ -796,6 +796,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-14T15:30:00+06:00"
+    },
+    {
+      "id": "070",
+      "date": "2026-11-14",
+      "slot": "17:30",
+      "duration": 145.37,
+      "title": "পাকা বাড়ি, গ্যাসের চুলা, তবু দাদি ছাড়বেন না মাটির চুলা… নাতির এক প্রশ্নে বেরোল ১৯৯৮-এর গল্প 🔥",
+      "youtube": "LADXU1RXSZ8",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-14T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -828,7 +839,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T13:16:09.153048+06:00",
+    "at": "2026-11-06T13:21:02.644789+06:00",
     "errors": []
   },
   "queue_remaining": 192,
