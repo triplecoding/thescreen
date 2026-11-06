@@ -1722,6 +1722,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-28T15:30:00+06:00"
+    },
+    {
+      "id": "154",
+      "date": "2026-11-28",
+      "slot": "17:30",
+      "duration": 130.49,
+      "title": "৩২ বছর লিফট চালিয়েছেন, অটোমেটিক লিফটে চাকরি শেষ… তারপর নিচতলায় একটা টেবিল 🛗",
+      "youtube": "4Uey8d9y66E",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-28T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1761,7 +1772,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:13:03.467724+06:00",
+    "at": "2026-11-06T22:18:55.431743+06:00",
     "errors": []
   },
   "queue_remaining": 108,
