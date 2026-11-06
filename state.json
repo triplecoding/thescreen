@@ -1359,6 +1359,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-23T09:00:00+06:00"
+    },
+    {
+      "id": "121",
+      "date": "2026-11-23",
+      "slot": "11:30",
+      "duration": 136.45,
+      "title": "স্বামীর মৃত্যুর পর মাছের বাজারে একমাত্র নারী, সবাই হাসল… তারপর লাল-সবুজ কাগজ 🐟",
+      "youtube": "aLOUnpkXFjo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-23T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1392,7 +1403,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T18:09:04.957025+06:00",
+    "at": "2026-11-06T18:14:40.460166+06:00",
     "errors": []
   },
   "queue_remaining": 138,
