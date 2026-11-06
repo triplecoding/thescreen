@@ -1502,6 +1502,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-25T11:30:00+06:00"
+    },
+    {
+      "id": "134",
+      "date": "2026-11-25",
+      "slot": "13:30",
+      "duration": 132.15,
+      "title": "চল্লিশতম বিবাহবার্ষিকী ভুলে গেলেন নানা, নানু তিন দিন চুপ… তারপর একটা ঝালমুড়ি 🥜",
+      "youtube": "bjcaA9i_hZg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-25T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1537,10 +1548,11 @@
     "theme:honesty": "PLf557_mEk6vQ",
     "theme:probashi": "PLRt24uGoc9QU",
     "theme:parents": "PLJ6mTqLs5bbw",
-    "theme:work": "PLCogb-be2B7I"
+    "theme:work": "PLCogb-be2B7I",
+    "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:00:24.805082+06:00",
+    "at": "2026-11-06T20:06:42.081201+06:00",
     "errors": []
   },
   "queue_remaining": 126,
