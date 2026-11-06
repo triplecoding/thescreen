@@ -1689,6 +1689,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-28T09:00:00+06:00"
+    },
+    {
+      "id": "151",
+      "date": "2026-11-28",
+      "slot": "11:30",
+      "duration": 142.29,
+      "title": "স্যারের ভুলে খাতায় ৮ নম্বর বেশি, ক্লাসে প্রথম হয়ে গেল অর্ণব… রাতে ঘুম এল না 📝",
+      "youtube": "m5KO4fXDjmU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-28T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1728,7 +1739,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:52:02.257464+06:00",
+    "at": "2026-11-06T21:58:22.756516+06:00",
     "errors": []
   },
   "queue_remaining": 108,
