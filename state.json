@@ -1282,6 +1282,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-21T20:00:00+06:00"
+    },
+    {
+      "id": "114",
+      "date": "2026-11-22",
+      "slot": "09:00",
+      "duration": 134.51,
+      "title": "তিন ভাই-বোন তিন শহরে, আর আম্মার মোবাইল রোজ ‘নষ্ট’ হয়… 📱",
+      "youtube": "U1XNf5p9SfA",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-22T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1315,12 +1326,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T17:29:16.060929+06:00",
-    "errors": [],
-    "queue_remaining": 144
+    "at": "2026-11-06T17:34:37.033386+06:00",
+    "errors": []
   },
   "queue_remaining": 144,
-  "_run_started": "2026-11-06T16:54:30.874307+06:00",
+  "_run_started": "2026-11-06T17:29:19.122955+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
