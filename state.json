@@ -784,10 +784,11 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:54:41.118686+06:00",
-    "errors": []
+    "at": "2026-11-06T12:54:42.677427+06:00",
+    "errors": [],
+    "queue_remaining": 192
   },
-  "queue_remaining": 198,
+  "queue_remaining": 192,
   "_run_started": "2026-11-06T12:29:11.920267+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
