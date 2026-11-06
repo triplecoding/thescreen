@@ -1139,6 +1139,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-19T17:30:00+06:00"
+    },
+    {
+      "id": "101",
+      "date": "2026-11-19",
+      "slot": "20:00",
+      "duration": 145.84,
+      "title": "১৪ বছর ওমানে, ফিরে দেখেন নিজের বাড়িতে তিনি অতিথি… ছেলের ফুটবল মাঠে খালি পায়ে নামলেন আব্বা ⚽",
+      "youtube": "Qsv8yY7-6ks",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-19T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1172,7 +1183,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:14:44.248898+06:00",
+    "at": "2026-11-06T16:20:40.302199+06:00",
     "errors": []
   },
   "queue_remaining": 162,
