@@ -1480,6 +1480,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-24T20:00:00+06:00"
+    },
+    {
+      "id": "132",
+      "date": "2026-11-25",
+      "slot": "09:00",
+      "duration": 145.32,
+      "title": "ত্রিশ বছর প্রতিটা পাত্রকে বলেছেন ‘কোটিপতি’… তারপর নিজের ভাগ্নির বিয়ে 💍",
+      "youtube": "aiBSoLn0_Mw",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-25T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1517,12 +1528,11 @@
     "theme:parents": "PLJ6mTqLs5bbw"
   },
   "last_run": {
-    "at": "2026-11-06T19:47:15.948682+06:00",
-    "errors": [],
-    "queue_remaining": 126
+    "at": "2026-11-06T19:53:50.773243+06:00",
+    "errors": []
   },
   "queue_remaining": 126,
-  "_run_started": "2026-11-06T19:08:59.322659+06:00",
+  "_run_started": "2026-11-06T19:47:18.669690+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
