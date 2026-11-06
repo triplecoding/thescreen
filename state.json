@@ -708,6 +708,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-13T11:30:00+06:00"
+    },
+    {
+      "id": "062",
+      "date": "2026-11-13",
+      "slot": "13:30",
+      "duration": 128.65,
+      "title": "চৌদ্দ বছর সিএনজি চালান, তিনবার লাইসেন্স পরীক্ষায় ফেল… শিক্ষক হলো ক্লাস এইটের মেয়ে 🚦",
+      "youtube": "leAQFZ8V2yw",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-13T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -740,7 +751,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T12:37:34.169444+06:00",
+    "at": "2026-11-06T12:41:44.374237+06:00",
     "errors": []
   },
   "queue_remaining": 198,
