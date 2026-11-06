@@ -995,6 +995,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T15:30:00+06:00"
+    },
+    {
+      "id": "088",
+      "date": "2026-11-17",
+      "slot": "17:30",
+      "duration": 147.6,
+      "title": "সীমানার আমগাছ নিয়ে দুই ভাইয়ের তিন বছরের মামলা… জ্যৈষ্ঠের এক বিকেলে গাছে উঠল ছোট্ট মিথিলা 🥭",
+      "youtube": "HXgJvKmfr7E",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1028,7 +1039,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:57:48.485671+06:00",
+    "at": "2026-11-06T15:04:40.633942+06:00",
     "errors": []
   },
   "queue_remaining": 174,
