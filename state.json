@@ -717,10 +717,11 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T11:39:15.745466+06:00",
-    "errors": []
+    "at": "2026-11-06T11:39:17.559982+06:00",
+    "errors": [],
+    "queue_remaining": 198
   },
-  "queue_remaining": 204,
+  "queue_remaining": 198,
   "_run_started": "2026-11-06T11:01:01.279008+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
