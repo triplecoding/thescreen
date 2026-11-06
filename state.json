@@ -1216,6 +1216,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-20T20:00:00+06:00"
+    },
+    {
+      "id": "108",
+      "date": "2026-11-21",
+      "slot": "09:00",
+      "duration": 149.04,
+      "title": "পাশের বাড়ির ছেলে গোল্ডেন এ-প্লাস, নীলা ৩.৮৩… মা কাঁদলেন, বাবা আনলেন মিষ্টি 🍬",
+      "youtube": "pesF_dbJxuI",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-21T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1249,12 +1260,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T16:54:27.693088+06:00",
-    "errors": [],
-    "queue_remaining": 150
+    "at": "2026-11-06T17:00:23.053744+06:00",
+    "errors": []
   },
   "queue_remaining": 150,
-  "_run_started": "2026-11-06T16:20:45.239257+06:00",
+  "_run_started": "2026-11-06T16:54:30.874307+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
