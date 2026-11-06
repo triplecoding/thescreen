@@ -1799,6 +1799,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-29T17:30:00+06:00"
+    },
+    {
+      "id": "161",
+      "date": "2026-11-29",
+      "slot": "20:00",
+      "duration": 133.46,
+      "title": "৩৪ বছর একই অফিসে কেরানি, অবসরের দিনে কেউ বিদায় দেয়নি… ছেলে শুভ নিয়ে গেল একটা কেক আর একটা চিঠি 🎂",
+      "youtube": "xaDGzTa3YYU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-29T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1838,7 +1849,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T22:58:10.105495+06:00",
+    "at": "2026-11-06T23:04:15.903408+06:00",
     "errors": []
   },
   "queue_remaining": 102,
