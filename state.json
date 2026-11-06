@@ -1667,6 +1667,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-27T17:30:00+06:00"
+    },
+    {
+      "id": "149",
+      "date": "2026-11-27",
+      "slot": "20:00",
+      "duration": 139.11,
+      "title": "‘বড় বোন ফর্সা, ছোটটা কালো, বিয়া কেমনে হইবো?’— আত্মীয়দের কথায় চুপ নীলা… বড় বোন তিশা দাঁড়াল 🖤",
+      "youtube": "bc94RB5UHQA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-27T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1706,7 +1717,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T21:38:52.748768+06:00",
+    "at": "2026-11-06T21:45:26.638645+06:00",
     "errors": []
   },
   "queue_remaining": 114,
