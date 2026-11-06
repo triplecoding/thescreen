@@ -264,7 +264,8 @@
       "youtube": "ke3flK63054",
       "playlist": true,
       "facebook": "1144989154731271",
-      "scheduled_for": "2026-11-06T11:30:00+06:00"
+      "scheduled_for": "2026-11-06T11:30:00+06:00",
+      "yt_comment": "UgxgiM8UaTHl-D9pMzt4AaABAg"
     },
     {
       "id": "022",
@@ -685,6 +686,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-12T20:00:00+06:00"
+    },
+    {
+      "id": "060",
+      "date": "2026-11-13",
+      "slot": "09:00",
+      "duration": 131.47,
+      "title": "২,২০০ টাকার জন্য বন্ধ হচ্ছিল এসএসসি… দশ বছর পর নার্স সুমি জানল কে টাকাটা দিয়েছিল 🎓",
+      "youtube": "-yqFYAgkq6g",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-13T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -717,12 +729,11 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T11:39:17.559982+06:00",
-    "errors": [],
-    "queue_remaining": 198
+    "at": "2026-11-06T12:33:24.343897+06:00",
+    "errors": []
   },
   "queue_remaining": 198,
-  "_run_started": "2026-11-06T11:01:01.279008+06:00",
+  "_run_started": "2026-11-06T12:29:11.920267+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
