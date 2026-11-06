@@ -1535,6 +1535,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-25T17:30:00+06:00"
+    },
+    {
+      "id": "137",
+      "date": "2026-11-25",
+      "slot": "20:00",
+      "duration": 140.62,
+      "title": "ঘরে বানানো আচারের পেজ, এক মাসে ২৩টা ভুয়া অর্ডার… লাকি আপা থামলেন না 🫙",
+      "youtube": "G9oYNBk3US0",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-25T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1574,7 +1585,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T20:20:23.904422+06:00",
+    "at": "2026-11-06T20:26:52.063004+06:00",
     "errors": []
   },
   "queue_remaining": 126,
