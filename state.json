@@ -1821,6 +1821,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-30T09:00:00+06:00"
+    },
+    {
+      "id": "163",
+      "date": "2026-11-30",
+      "slot": "11:30",
+      "duration": 129.85,
+      "title": "নিজের ভুলের দোষ ওয়েটারের ঘাড়ে, অপমান করলেন ধনী কাস্টমার… ম্যানেজার যা বললেন 🍽️",
+      "youtube": "O-s98Mnr7l4",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-30T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1860,7 +1871,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T23:11:01.812590+06:00",
+    "at": "2026-11-06T23:17:03.750719+06:00",
     "errors": []
   },
   "queue_remaining": 96,
