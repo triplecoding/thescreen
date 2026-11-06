@@ -1865,6 +1865,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-30T17:30:00+06:00"
+    },
+    {
+      "id": "167",
+      "date": "2026-11-30",
+      "slot": "20:00",
+      "duration": 143.76,
+      "title": "গার্মেন্টসে কাজ শেষে রাতের স্কুলে পড়েন ৩৮ বছরের রেহানা… একই বছর মেয়ের সাথে দিলেন পরীক্ষা 📖",
+      "youtube": "vBIijRiJNrk",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-30T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1904,7 +1915,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T01:35:19.705323+06:00",
+    "at": "2026-11-07T01:41:00.801959+06:00",
     "errors": []
   },
   "queue_remaining": 92,
