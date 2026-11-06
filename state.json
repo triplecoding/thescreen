@@ -1810,6 +1810,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-29T20:00:00+06:00"
+    },
+    {
+      "id": "162",
+      "date": "2026-11-30",
+      "slot": "09:00",
+      "duration": 137.57,
+      "title": "পৌষ মাসে হঠাৎ বৃষ্টি, কক্সবাজারের লবণমাঠে এক মাসের লবণ গলে গেল… হায়দার চাচার মেয়ের এসএসসি ফি 🧂",
+      "youtube": "VmnLQCwm6M0",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-30T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1849,12 +1860,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-06T23:04:18.118902+06:00",
-    "errors": [],
-    "queue_remaining": 96
+    "at": "2026-11-06T23:11:01.812590+06:00",
+    "errors": []
   },
   "queue_remaining": 96,
-  "_run_started": "2026-11-06T22:25:21.662341+06:00",
+  "_run_started": "2026-11-06T23:04:21.401404+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
