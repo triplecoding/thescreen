@@ -973,6 +973,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T11:30:00+06:00"
+    },
+    {
+      "id": "086",
+      "date": "2026-11-17",
+      "slot": "13:30",
+      "duration": 141.6,
+      "title": "সিএনজির পেছনের সিটে পাসপোর্ট, ভিসা আর ৪০ হাজার টাকা… মেয়ের ভর্তির টাকা নেই কবিরের, কেউ দেখেনি 🛂",
+      "youtube": "cYnbUqZguq0",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1006,7 +1017,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:44:36.232667+06:00",
+    "at": "2026-11-06T14:51:20.409034+06:00",
     "errors": []
   },
   "queue_remaining": 174,
