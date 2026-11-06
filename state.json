@@ -1348,6 +1348,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-22T20:00:00+06:00"
+    },
+    {
+      "id": "120",
+      "date": "2026-11-23",
+      "slot": "09:00",
+      "duration": 133.56,
+      "title": "গ্রামের স্কুলে মেয়েদের ফুটবল দল, অভিভাবকরা বললেন ‘হাফপ্যান্টে মাঠে নামবে না’… তারপর ট্র্যাকস্যুট ⚽",
+      "youtube": "bpxy2sy2MOc",
+      "playlist": false,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-23T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1381,12 +1392,11 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T18:03:22.233592+06:00",
-    "errors": [],
-    "queue_remaining": 138
+    "at": "2026-11-06T18:09:04.957025+06:00",
+    "errors": []
   },
   "queue_remaining": 138,
-  "_run_started": "2026-11-06T17:29:19.122955+06:00",
+  "_run_started": "2026-11-06T18:03:25.572023+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00"
 }
