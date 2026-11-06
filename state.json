@@ -984,6 +984,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-17T13:30:00+06:00"
+    },
+    {
+      "id": "087",
+      "date": "2026-11-17",
+      "slot": "15:30",
+      "duration": 140.89,
+      "title": "ক্লাস এইটের রুমানার বিয়ে ঠিক, শুক্রবার… ম্যাডাম বাবাকে একটা প্রশ্ন করলেন, আর বাবা চুপ 📚",
+      "youtube": "SF-3ja71yAw",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-17T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1017,7 +1028,7 @@
     "theme:struggle": "PLMAYaBY5j7wI"
   },
   "last_run": {
-    "at": "2026-11-06T14:51:20.409034+06:00",
+    "at": "2026-11-06T14:57:48.485671+06:00",
     "errors": []
   },
   "queue_remaining": 174,
