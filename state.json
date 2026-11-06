@@ -1425,6 +1425,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-24T09:00:00+06:00"
+    },
+    {
+      "id": "127",
+      "date": "2026-11-24",
+      "slot": "11:30",
+      "duration": 132.17,
+      "title": "দুবাইয়ের লেবার ক্যাম্পে ৪০০ মানুষ, ঈদের দিনেও ডিউটি… রাত তিনটায় উঠে সেমাই রাঁধলেন বাবুর্চি কালাম 🍮",
+      "youtube": "zKimcuJhAvE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-24T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1457,10 +1468,11 @@
     "theme:school": "PLGV0VI6qNy64",
     "theme:struggle": "PLMAYaBY5j7wI",
     "theme:siblings": "PLEr2moaNpIqQ",
-    "theme:honesty": "PLf557_mEk6vQ"
+    "theme:honesty": "PLf557_mEk6vQ",
+    "theme:probashi": "PLRt24uGoc9QU"
   },
   "last_run": {
-    "at": "2026-11-06T19:14:52.802214+06:00",
+    "at": "2026-11-06T19:21:02.071959+06:00",
     "errors": []
   },
   "queue_remaining": 132,
