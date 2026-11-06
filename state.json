@@ -763,6 +763,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-11-14T09:00:00+06:00"
+    },
+    {
+      "id": "067",
+      "date": "2026-11-14",
+      "slot": "11:30",
+      "duration": 135.61,
+      "title": "কোচিংয়ের সেরা ছাত্র রোজ ক্লাসে ঘুমায়… রাত এগারোটায় বাজারে গিয়ে স্যার যা দেখলেন 💡",
+      "youtube": "vxLYJf7JfrU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-11-14T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -795,7 +806,7 @@
     "theme:school": "PLGV0VI6qNy64"
   },
   "last_run": {
-    "at": "2026-11-06T13:01:52.965994+06:00",
+    "at": "2026-11-06T13:06:32.648139+06:00",
     "errors": []
   },
   "queue_remaining": 192,
