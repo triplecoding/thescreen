@@ -2654,6 +2654,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-12T15:30:00+06:00"
+    },
+    {
+      "id": "238",
+      "date": "2026-12-12",
+      "slot": "17:30",
+      "duration": 138.74,
+      "title": "ফ্রি ক্যাম্পে কেউ আসে না… ডাক্তার লিখলেন, “আমি এই ঘাটের মেয়ে” 👓",
+      "youtube": "p0T6snP6qgI",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-12T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2693,7 +2704,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:07:10.312360+06:00",
+    "at": "2026-11-07T19:07:26.110170+06:00",
     "errors": []
   },
   "queue_remaining": 72,
