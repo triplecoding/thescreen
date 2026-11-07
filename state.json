@@ -2808,6 +2808,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-14T20:00:00+06:00"
+    },
+    {
+      "id": "252",
+      "date": "2026-12-15",
+      "slot": "09:00",
+      "duration": 138.07,
+      "title": "প্রথমবার একা ঢাকা, কাল চাকরির প্রথম দিন— লাকির খাতায় “ভয় → প্রশ্ন” 🚌",
+      "youtube": "j2RFcMdpfAY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-15T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2847,12 +2858,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:10:42.423673+06:00",
-    "errors": [],
-    "queue_remaining": 54
+    "at": "2026-11-07T19:10:57.178969+06:00",
+    "errors": []
   },
   "queue_remaining": 54,
-  "_run_started": "2026-11-07T19:09:12.603964+06:00",
+  "_run_started": "2026-11-07T19:10:44.783125+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T18:04:05.974668+06:00",
