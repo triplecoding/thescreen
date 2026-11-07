@@ -2067,6 +2067,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-03T17:30:00+06:00"
+    },
+    {
+      "id": "185",
+      "date": "2026-12-03",
+      "slot": "20:00",
+      "duration": 141.85,
+      "title": "বর্ষায় ভেসে গেল সাঁকো, তিন বছর আবেদনে কাজ হয়নি… এক শুক্রবারে গ্রাম যা করল 🌉",
+      "youtube": "vpAyS2_EE2U",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-03T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2106,7 +2117,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:34:22.446676+06:00",
+    "at": "2026-11-07T14:34:37.073958+06:00",
     "errors": []
   },
   "queue_remaining": 126,
