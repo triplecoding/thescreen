@@ -2199,6 +2199,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-05T17:30:00+06:00"
+    },
+    {
+      "id": "197",
+      "date": "2026-12-05",
+      "slot": "20:00",
+      "duration": 144.23,
+      "title": "আপা ডাক্তারি পড়ে, মিতু ফেল করে সেলাই শেখে… আপার বিয়ের শাড়িটা বানাল মিতু 🧵",
+      "youtube": "pUDy-rm_IAo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-05T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2238,7 +2249,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:37:13.958251+06:00",
+    "at": "2026-11-07T14:37:25.732063+06:00",
     "errors": []
   },
   "queue_remaining": 114,
