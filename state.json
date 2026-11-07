@@ -2852,6 +2852,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-15T15:30:00+06:00"
+    },
+    {
+      "id": "256",
+      "date": "2026-12-15",
+      "slot": "17:30",
+      "duration": 137.01,
+      "title": "বিশ বছরের মিস্ত্রি, দরজা থেকে ফেরত— স্ত্রীর সেলাই করা এক শার্ট বদলাল সব 👕",
+      "youtube": "WGrUlLLvFbM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-15T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2891,7 +2902,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T20:13:31.190379+06:00",
+    "at": "2026-11-07T20:13:43.394348+06:00",
     "errors": []
   },
   "queue_remaining": 51,
