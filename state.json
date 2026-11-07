@@ -2399,6 +2399,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-08T17:30:00+06:00"
+    },
+    {
+      "id": "215",
+      "date": "2026-12-08",
+      "slot": "20:00",
+      "duration": 135.1,
+      "title": "অফিস ভবনের লিফটম্যান রফিক ভাই, ১১ বছর সবাইকে ‘শুভ সকাল’ বলেন… তাঁর মেয়ের ভর্তির দিন টাকা কম পড়ল 🛗",
+      "youtube": "UdRYCiIoWuw",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-08T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2438,7 +2449,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:59:27.374576+06:00",
+    "at": "2026-11-07T16:59:38.573401+06:00",
     "errors": []
   },
   "queue_remaining": 96,
