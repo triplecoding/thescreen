@@ -2188,6 +2188,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-05T15:30:00+06:00"
+    },
+    {
+      "id": "196",
+      "date": "2026-12-05",
+      "slot": "17:30",
+      "duration": 138.3,
+      "title": "১৮ বছরের বাকির খাতা, ৪৭ হাজার টাকা… দোকান বন্ধের দিন ফিরে এল এক ছাত্র ☕",
+      "youtube": "xqtCgVrK3lA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-05T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2227,7 +2238,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:36:59.225522+06:00",
+    "at": "2026-11-07T14:37:13.958251+06:00",
     "errors": []
   },
   "queue_remaining": 114,
