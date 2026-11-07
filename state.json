@@ -2709,6 +2709,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-13T13:30:00+06:00"
+    },
+    {
+      "id": "243",
+      "date": "2026-12-13",
+      "slot": "15:30",
+      "duration": 145.49,
+      "title": "ঝগড়া হলেই আম্মা আর বড় আপা জজ… ছেলের আঁকা ছবি থামাল ছয় বছরের “মামলা” 🖍️",
+      "youtube": "PCWJ1K_7nTQ",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-13T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2748,7 +2759,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:08:28.676919+06:00",
+    "at": "2026-11-07T19:08:40.583543+06:00",
     "errors": []
   },
   "queue_remaining": 66,
