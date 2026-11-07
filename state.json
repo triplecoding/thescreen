@@ -2465,6 +2465,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-09T17:30:00+06:00"
+    },
+    {
+      "id": "221",
+      "date": "2026-12-09",
+      "slot": "20:00",
+      "duration": 130.43,
+      "title": "মাছবাজারে সবাই পাল্লায় চুম্বক লাগায়, বাবুলের বিক্রি কম… আব্বা বললেন ‘তুই উল্টাটা কর’ ⚖️",
+      "youtube": "K9xGlrkn18g",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-09T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2504,7 +2515,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:00:52.453131+06:00",
+    "at": "2026-11-07T17:01:05.803912+06:00",
     "errors": []
   },
   "queue_remaining": 90,
