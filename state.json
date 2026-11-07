@@ -2056,6 +2056,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-03T15:30:00+06:00"
+    },
+    {
+      "id": "184",
+      "date": "2026-12-03",
+      "slot": "17:30",
+      "duration": 140.81,
+      "title": "ছোট ভাইয়ের ইঞ্জিনিয়ারিংয়ের খরচ চলেছে বড় বোনের সেলাই মেশিনে… ছয় বছর পর ভাই এল একটা চাবি নিয়ে 🧵",
+      "youtube": "6pzxuhDIbD8",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-03T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2095,7 +2106,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:34:06.213169+06:00",
+    "at": "2026-11-07T14:34:22.446676+06:00",
     "errors": []
   },
   "queue_remaining": 126,
