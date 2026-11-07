@@ -1898,6 +1898,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook posting limit",
       "scheduled_for": "2026-12-01T11:30:00+06:00"
+    },
+    {
+      "id": "170",
+      "date": "2026-12-01",
+      "slot": "13:30",
+      "duration": 136.2,
+      "title": "ময়লার ব্যাগে রোজ ‘থ্যাংক ইউ চাচা’ লিখত ছোট্ট অয়ন… দুই বছর পর এল মিষ্টি 🗑️",
+      "youtube": "dvFRSXkpoes",
+      "playlist": true,
+      "facebook_error": "deferred: facebook posting limit",
+      "scheduled_for": "2026-12-01T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1937,14 +1948,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T07:34:43.460517+06:00",
-    "errors": [
-      "youtube 170: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
-    "queue_remaining": 88
+    "at": "2026-11-07T08:40:48.279160+06:00",
+    "errors": []
   },
   "queue_remaining": 88,
-  "_run_started": "2026-11-07T02:53:14.179122+06:00",
+  "_run_started": "2026-11-07T08:34:45.828344+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T07:34:43.417612+06:00"
