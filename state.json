@@ -2322,6 +2322,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-07T15:30:00+06:00"
+    },
+    {
+      "id": "208",
+      "date": "2026-12-07",
+      "slot": "17:30",
+      "duration": 141.48,
+      "title": "১৮ বছরের ড্রাইভার… এক রাতে স্যারের মেয়েকে নিয়ে বাসায় না গিয়ে গেলেন অফিসে 🚗",
+      "youtube": "CISFprbD8b0",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-07T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2361,7 +2372,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:58:00.924687+06:00",
+    "at": "2026-11-07T16:58:12.081474+06:00",
     "errors": []
   },
   "queue_remaining": 102,
