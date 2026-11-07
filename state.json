@@ -2117,10 +2117,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:34:37.073958+06:00",
-    "errors": []
+    "at": "2026-11-07T14:34:38.528261+06:00",
+    "errors": [],
+    "queue_remaining": 120
   },
-  "queue_remaining": 126,
+  "queue_remaining": 120,
   "_run_started": "2026-11-07T14:33:11.903028+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
