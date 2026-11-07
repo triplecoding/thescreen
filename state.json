@@ -1990,6 +1990,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-02T15:30:00+06:00"
+    },
+    {
+      "id": "178",
+      "date": "2026-12-02",
+      "slot": "17:30",
+      "duration": 138.4,
+      "title": "ক্যাশিয়ারের ভুলে নানু পেলেন এক হাজার টাকা বেশি… পরদিন সকালে দোকানের দরজায় 🛒",
+      "youtube": "VHowplUhvDo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-02T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2029,7 +2040,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:32:40.316857+06:00",
+    "at": "2026-11-07T14:32:53.464409+06:00",
     "errors": []
   },
   "queue_remaining": 132,
