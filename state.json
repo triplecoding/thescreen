@@ -2819,6 +2819,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-15T09:00:00+06:00"
+    },
+    {
+      "id": "253",
+      "date": "2026-12-15",
+      "slot": "11:30",
+      "duration": 138.63,
+      "title": "নয় শুক্রবার নয়বার প্লেট ফেরত— “হয় নাই”। তারপর বাবুর্চি খাতা নিয়ে বসল 🍤",
+      "youtube": "6QMaCdRNP9U",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-15T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2858,7 +2869,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:10:57.178969+06:00",
+    "at": "2026-11-07T19:11:24.253935+06:00",
     "errors": []
   },
   "queue_remaining": 54,
