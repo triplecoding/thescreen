@@ -1,0 +1,486 @@
+{
+ "id": "293",
+ "status": "ready",
+ "title_bn": "চার বছরের চুপ",
+ "theme": "work",
+ "source": {
+  "book": "The 33 Strategies of War",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STRATEGY 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "Negotiate While Advancing",
+  "title_bn": "এগোতে এগোতে কথা বলা"
+ },
+ "cast": {
+  "sohel": {
+   "name": "সোহেল",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#5B7A9E",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "shapla": {
+   "name": "শাপলা আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#B5476B",
+   "color2": "#F2E3C6",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "habib": {
+   "name": "হাবিব স্যার",
+   "type": "man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#2F3E5C",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "চার বছর চাকরি। বেতন চব্বিশ হাজার। ইনক্রিমেন্ট চাওয়া— *একবারও না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, উত্তরা— বায়িং হাউস",
+    "props": [
+     "signboard",
+     "sign:মার্চেন্ডাইজিং বিভাগ"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "৪ বছর"
+      },
+      {
+       "label": "বেতন",
+       "value": "২৪,০০০"
+      },
+      {
+       "label": "ইনক্রিমেন্ট চাওয়া",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সোহেল, ঊনত্রিশ। মার্চেন্ডাইজার। বেতনের অর্ধেক যায় কুড়িগ্রামে, আম্মা আর *বোনের পড়ায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রতি বছর ভাবে, এবার বলবে। প্রতি বছর এমডির দরজা পর্যন্ত গিয়ে *ফিরে আসে*।"
+  },
+  {
+   "voice": "shapla",
+   "say": "সোহেল, তোমার পরে ঢুকছে নয়ন, বেতন তোমার চেয়ে *ছয় হাজার বেশি*। জানো?",
+   "tone": "serious",
+   "scene": {
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shapla",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আপা, চাইলে স্যার যদি ভাবে আমি *লোভী*? চাকরিটাই যদি যায়?",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "sohel": "worried"
+    },
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চার বছরে লজ্জার কাছে *চারবার হার*।",
+   "card": {
+    "title": "সোহেলের চার বছর",
+    "items": [
+     {
+      "t": "ঈদের আগে বলবে— বলেনি",
+      "mark": "x"
+     },
+     {
+      "t": "বছর শেষে বলবে— বলেনি",
+      "mark": "x"
+     },
+     {
+      "t": "নয়নের বেতন শুনে রাগ— তবু চুপ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তারপর এক রাত। চল্লিশ হাজার শার্ট, শিপমেন্টের তিন দিন আগে— *বোতাম ভুল*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "গাজীপুর, ফ্যাক্টরি— রাত ১টা",
+    "props": [
+     "signboard",
+     "sign:ফিনিশিং সেকশন"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "1:00",
+     "label": "রাত"
+    }
+   }
+  },
+  {
+   "say": "সবাই বাসায়। সোহেল ফ্যাক্টরিতে। তিন রাত দাঁড়িয়ে থেকে *বোতাম বদল* করাল।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "জাহাজ ধরল সময়মতো। বায়ার মেইলে লিখল, পরের সিজনের অর্ডারও *এখানেই দেবে*।",
+   "scene": {
+    "moods": {
+     "sohel": "smile"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে এমডি হাবিব স্যার সবার সামনে *পিঠ চাপড়ালেন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:মার্চেন্ডাইজিং বিভাগ"
+    ],
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "sohel",
+      "x": 0.58,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "shapla",
+      "x": 0.84,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "সোহেল না থাকলে চল্লিশ লাখ টাকার অর্ডার যাইত। *সাবাস*, ইয়াংম্যান!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সোহেল লাজুক হেসে মাথা নামাল। শাপলা আপা পাশ থেকে ফিসফিস করলেন—"
+  },
+  {
+   "voice": "shapla",
+   "say": "এখনই, সোহেল। কাজটা যখন সবার *চোখের সামনে*, তখনই কথা বলো।",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "shapla",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চার বছরের লজ্জা গলায় আটকে আছে। তবু সোহেল *এক পা এগোল*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.5
+    },
+    "moods": {
+     "sohel": "worried"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "স্যার, দুই মিনিট সময় দিবেন? একটা *কাগজ* দেখাতে চাই।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কাগজে চার বছরের কাজের হিসাব। আর নিচে *একটা লাইন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এমডির রুম",
+    "props": [
+     "signboard",
+     "sign:ব্যবস্থাপনা পরিচালক"
+    ],
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "sohel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "চার বছরের কাজ",
+     "lines": [
+      "সময়মতো শিপমেন্ট— ১২টা অর্ডার",
+      "বাঁচানো শিপমেন্ট— ৩টা",
+      "নতুন বায়ার— ২ জন"
+     ],
+     "sub": "বেতন: ২৪,০০০— চার বছর একই"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "স্যার, বেশি চাই না। বাজারে এই কাজের যা বেতন, *সেইটুকু* চাই।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "চার বছরে একবারও বলো নাই ক্যান? আমি ভাবছিলাম তুমি *খুশিই আছো*।",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "habib": "surprised"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সোহেল চুপ। উত্তরটা সহজ— *লজ্জা*।",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হাবিব স্যার কাগজটা দুইবার পড়লেন। তারপর এইচআরকে *ফোন দিলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "habib": "call"
+    },
+    "holds": {
+     "habib": "phone"
+    },
+    "moods": {
+     "habib": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "পরের মাস থেকে বত্রিশ হাজার। আর বায়ারের পরের মিটিংয়ে *তুমি থাকবা*।",
+   "tone": "warmly",
+   "scene": {
+    "arms": {
+     "habib": "talk"
+    },
+    "holds": {
+     "habib": "none"
+    },
+    "moods": {
+     "habib": "smile"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় বাসে বসে সোহেল আম্মাকে ফোন দিল। কিন্তু বেতনের কথা *বলতে পারল না*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা, ফেরার বাসে",
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শুধু বলল— *‘আম্মা, শিউলির ফর্ম ফিলাপের টাকা এবার একবারে পাঠামু।’*"
+  },
+  {
+   "say": "ওপাশে আম্মা অনেকক্ষণ চুপ। তারপর শুধু বললেন— *‘খাইছস, বাবা?’*",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.5
+    },
+    "moods": {
+     "sohel": "crying"
+    }
+   }
+  },
+  {
+   "say": "বাসের কাচে উত্তরার আলো। সোহেলের মুখে *ভেজা হাসি*।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "sohel": "smile"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "লজ্জায় চুপ থাকলে কাজও চুপ থাকে… *সময়মতো বললে কাজ কথা বলে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "লজ্জায় চুপ থাকলে কাজও চুপ থাকে…",
+    "line2": "সময়মতো বললে\nকাজ কথা বলে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চার বছরে একবারও বেতন বাড়াতে বলেনি সোহেল— এক রাতের কাজের পর এল সেই মুহূর্ত 👔",
+  "description": "উত্তরার এক বায়িং হাউসের মার্চেন্ডাইজার সোহেল চার বছর ধরে চব্বিশ হাজার টাকা বেতনে, লজ্জায় কখনো ইনক্রিমেন্ট চায়নি। তারপর এক রাতে চল্লিশ হাজার শার্টের শিপমেন্টে বোতাম ভুল ধরা পড়ল…",
+  "tags": [
+   "অফিসের গল্প",
+   "চাকরির গল্প",
+   "বেতন",
+   "উত্তরা",
+   "বায়িং হাউস",
+   "মায়ের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চার বছর লজ্জায় চুপ— কাজটা যেদিন সবার চোখের সামনে, সেদিন সোহেল কথা বলল। 👔\nতুমি কি কখনো নিজের প্রাপ্যটা চাইতে লজ্জা পেয়েছ? 👇 #চাকরি #অফিস"
+ },
+ "thumbnail": {
+  "text": "চার বছরের চুপ",
+  "sub": "বেতন ২৪,০০০"
+ }
+}

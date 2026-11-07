@@ -1,0 +1,557 @@
+{
+ "id": "298",
+ "status": "ready",
+ "title_bn": "জিরান রস",
+ "theme": "family",
+ "source": {
+  "book": "The Book of Five Rings",
+  "author": "Miyamoto Musashi",
+  "author_bn": "মিয়ামোতো মুসাশি",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Timing in everything",
+  "title_bn": "সবকিছুর একটা সময় আছে"
+ },
+ "cast": {
+  "abba": {
+   "name": "মোসলেম গাছি",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#8A7A5C",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2E5E4E",
+   "hair": "side",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "farzana": {
+   "name": "ফারজানা",
+   "type": "woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "hijab",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "দিনে চল্লিশটা অনলাইন অর্ডার। খেজুর গাছ মাত্র *বাহাত্তরটা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "যশোর, খাজুরা",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ডার, দিনে",
+       "value": "৪০"
+      },
+      {
+       "label": "খেজুর গাছ",
+       "value": "৭২"
+      },
+      {
+       "label": "শীতের মৌসুম",
+       "value": "৯০ দিন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মোসলেম গাছি চল্লিশ বছর খেজুর গাছ কাটেন। ছেলে তানভীর অনলাইনে বেচে *বাবার গুড়*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এ বছর পেজ জমে গেছে। ঢাকা থেকে অর্ডার আর *থামে না*।"
+  },
+  {
+   "say": "কিন্তু মোসলেমের নিয়ম— তিন দিন রস নেওয়ার পর গাছের *তিন দিন বিশ্রাম*।"
+  },
+  {
+   "voice": "tanvir",
+   "say": "আব্বা, বিশ্রাম দিলে অর্ডার দিমু কেমনে? রোজ কাটেন, *গুড় হইবো ডাবল*।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "গাছেরও জিরানো লাগে, বাপ। জিরান রসই তো *সবচেয়ে মিঠা*।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "abba": "neutral"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানভীর শুনল না। ভাড়া করল আরেক গাছি। *রোজ কাটা*, রোজ রস।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ডিসেম্বর",
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রস বাড়ল, গুড় বাড়ল। দুই সপ্তাহে বিক্রি *দ্বিগুণ*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গুড়, দিনে",
+       "value": "১২ → ২৫ কেজি"
+      },
+      {
+       "label": "বিক্রি",
+       "value": "দ্বিগুণ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তারপর আসতে লাগল এমন *মেসেজ*।",
+   "scene": {
+    "moods": {
+     "tanvir": "worried"
+    },
+    "widget": {
+     "kind": "chat",
+     "title": "যশোরের খাঁটি গুড়",
+     "msgs": [
+      {
+       "who": "ফারজানা, মিরপুর",
+       "t": "এইবার গুড়টা টক টক"
+      },
+      {
+       "who": "রাশেদ, উত্তরা",
+       "t": "রং কালো, গন্ধ নাই"
+      },
+      {
+       "who": "নীলা, খুলনা",
+       "t": "আগেরটা ভালো ছিল"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তানভীর যা যা করল।",
+   "card": {
+    "title": "তানভীরের চেষ্টা",
+    "items": [
+     {
+      "t": "দাম কমাল",
+      "mark": "x"
+     },
+     {
+      "t": "ফ্রি ডেলিভারি দিল",
+      "mark": "x"
+     },
+     {
+      "t": "পোস্টে লিখল ‘নতুন ব্যাচ ভালো’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে চুলার পাশে তানভীর। কড়াইয়ে গুড় জ্বাল হচ্ছে, কিন্তু *সেই গন্ধ নেই*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "রাতের চুলা",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "গাছের মুখ শুকাইয়া গেছে, দেখছস? এমন কাটলে কয়দিনে *গাছ মরবো*।",
+   "tone": "sad",
+   "scene": {
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানভীর চুপ। ছোটবেলায় এই গাছগুলোর নিচে দাঁড়িয়েই সে *রস খেত*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "ভোর চারটায় তানভীর বাবার সাথে গাছে গেল। প্রথমবার, *ফোন ছাড়া*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ভোর ৪টা, কুয়াশা",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মোসলেম দেখালেন— কোন গাছ জিরানো, কোনটা ক্লান্ত, *কোন দিন কোন রস*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আব্বার পালা",
+     "lines": [
+      "১ম দিন — জিরান রস, সবচেয়ে মিঠা",
+      "২য় দিন — দোকাট",
+      "৩য় দিন — ঝরা রস",
+      "তারপর তিন দিন বিশ্রাম"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আব্বা, গাছগুলা ভাগ কইরা পালা দিলে… প্রতিদিনই কোনো না কোনো গাছের *জিরান রস*!",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "tanvir": "surprised"
+    },
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইটাই তো আমার দাদার নিয়ম। তুই এতদিনে *শুনলি*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "abba": "happy"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভাড়া গাছি বাদ। বাহাত্তর গাছ ভাগ হলো দলে দলে, পালা করে কাটা আর *বিশ্রাম*।"
+  },
+  {
+   "say": "অর্ডার নিল দিনে চল্লিশ না, *পঁচিশটা*। পেজে লিখল সত্যি কথা।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পেজের নতুন নোটিশ",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "আজকের নোটিশ",
+     "lines": [
+      "আজ নতুন অর্ডার বন্ধ— গাছের বিশ্রাম।",
+      "কাল আসছে জিরান রসের গুড়।"
+     ]
+    }
+   }
+  },
+  {
+   "say": "কেউ কেউ রাগ করল। কিন্তু *বেশিরভাগ অপেক্ষা করল*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "farzana",
+   "say": "ভাই, এইটা সেই গুড়! আব্বা মুখে দিয়া কইলেন, *ছোটবেলার গন্ধ*।",
+   "tone": "excited",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুই সপ্তাহ পর",
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "farzana",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "farzana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আপা, দেরি হইলে মাফ কইরেন। আমাদের গাছেরা *মাঝে মাঝে ঘুমায়*।",
+   "tone": "playfully",
+   "scene": {
+    "moods": {
+     "tanvir": "happy"
+    },
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মৌসুম শেষের হিসাব। কম অর্ডার, কিন্তু *একটাও অভিযোগ নেই*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ডার, দিনে",
+       "value": "২৫"
+      },
+      {
+       "label": "অভিযোগ",
+       "value": "০"
+      },
+      {
+       "label": "মরা গাছ",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শীতের শেষ ভোরে বাপ-ছেলে গাছতলায় বসে *এক ভাঁড় রস* ভাগ করে খেল।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শীতের শেষ ভোর",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আগামী বছর আরও বিশটা চারা লাগামু। *তোর পোলাপানের* জন্য।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানভীর হাসল। কুয়াশার ভেতর বাহাত্তরটা গাছ, *কিছু জেগে, কিছু ঘুমিয়ে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বেশি নিলে গাছও শুকায়… *সময় দিলে মিঠা ফেরে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "বেশি নিলে গাছও শুকায়…",
+    "line2": "সময় দিলে\nমিঠা ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রোজ গাছ কেটে গুড় দ্বিগুণ, তারপর টক… বাবার ‘জিরান’ নিয়মে ফিরল মিঠা 🌴",
+  "description": "যশোরের মোসলেম গাছি চল্লিশ বছর খেজুর গাছ কাটেন, তিন দিন রস নিলে তিন দিন বিশ্রাম। অনলাইনে অর্ডার বাড়তেই ছেলে তানভীর রোজ গাছ কাটাতে লাগল। দুই সপ্তাহ পর আসতে লাগল অভিযোগ…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "খেজুরের গুড়",
+   "যশোর",
+   "শীতের গল্প",
+   "অনলাইন ব্যবসা",
+   "bangla golpo",
+   "jiboner golpo",
+   "গ্রামের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "গাছেরও বিশ্রাম লাগে— বাবার পুরোনো নিয়মেই ফিরল গুড়ের মিঠা। 🌴\nতাড়াহুড়া করে তুমি কোন জিনিসটা নষ্ট করে ফেলেছিলে? 👇 #খেজুরেরগুড় #যশোর"
+ },
+ "thumbnail": {
+  "text": "গাছও ঘুমায়",
+  "sub": "বাবার জিরান নিয়ম"
+ }
+}

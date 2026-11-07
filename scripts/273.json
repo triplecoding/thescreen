@@ -1,0 +1,554 @@
+{
+ "id": "273",
+ "status": "ready",
+ "title_bn": "সাত টিউশনের দৌড়",
+ "theme": "struggle",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "Quality over quantity",
+  "title_bn": "বেশি না, ভালো"
+ },
+ "cast": {
+  "sohel": {
+   "name": "সোহেল",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#C9A227",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "mamun": {
+   "name": "মামুন ভাই",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#3F6E5A",
+   "hair": "short",
+   "beard": "stubble",
+   "glasses": true,
+   "voice": "man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#3F6E5A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "সাতটা টিউশন, মাসে সতেরো হাজার। আর নিজের পরীক্ষায় *তিন বিষয়ে ফেল*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ফকিরাপুলের মেস, রুম ছয়",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "টিউশন",
+       "value": "৭টা"
+      },
+      {
+       "label": "আয়",
+       "value": "১৭,০০০"
+      },
+      {
+       "label": "ফেল",
+       "value": "৩ বিষয়",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সোহেল অনার্স দ্বিতীয় বর্ষ। আব্বা অসুস্থ, বোনের স্কুল আর সংসার চলে *তার টাকায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "সকাল সাতটা থেকে রাত দশটা— মিরপুর, শেওড়াপাড়া, মালিবাগ। দিনে *চার ঘণ্টা বাসে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "প্রতিদিন",
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "pan"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বাবা, খাইছস? গলাটা এমন শুকনা ক্যান? *ঘুমাস না* নাকি?",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "পঞ্চগড়, আম্মার ফোন",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "ঘুমাই আম্মা, *সব ঠিক আছে*। টাকা কাল পাঠাইতেছি।",
+   "tone": "gently",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেস, রাত এগারোটা",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কিন্তু সব ঠিক ছিল না। সেই মাসে *দুইটা টিউশন* তাকে ছেড়ে দিল।",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সোহেল যা যা করল, কোনোটাই কাজে দিল না।",
+   "card": {
+    "title": "সোহেলের চেষ্টা",
+    "items": [
+     {
+      "t": "আরো একটা টিউশন নিল",
+      "mark": "x"
+     },
+     {
+      "t": "রাত জেগে নিজের পড়া",
+      "mark": "x"
+     },
+     {
+      "t": "ক্লাস বাদ দিয়ে টিউশনে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত দুইটা। মেসের বারান্দায় একা, হাতে *ফেলের রেজাল্ট*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশের রুমের মামুন ভাই এলেন, হাতে দুই কাপ চা। মেসের *সবচেয়ে পুরনো* মানুষ।",
+   "scene": {
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "mamun",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "সাতটা টিউশনের কয়টা বাচ্চার নাম মনে আছে? সাথে, *কে কোন অঙ্কে আটকায়*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সোহেল ভাবল। নাম মনে পড়ল চারটা। দুর্বলতা মনে পড়ল *একটারও না*।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "sohel": "thinking"
+    },
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "তুই পড়াস না রে, *দৌড়াস*। বাচ্চার মা-বাবা এইটা টের পায়।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "কমাইলে টাকা কমবে, ভাই। বাড়িতে *টাকা কে পাঠাবে*?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "কাছের চারটা রাখ, মন দিয়া পড়া। *ভালো মাস্টাররে* মানুষ নিজেই খোঁজে।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাহসটা কঠিন ছিল। তবু সোহেল দূরের তিনটা টিউশন *ছেড়ে দিল*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরের মাস",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বাকি চারজনের জন্য চারটা খাতা। কে কোথায় আটকায়, *প্রতি সপ্তাহে* কী শিখল।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "রাইয়ানের খাতা",
+     "lines": [
+      "ভগ্নাংশে ভয়",
+      "সপ্তাহ ১: ভাগ বুঝেছে",
+      "সপ্তাহ ৩: নিজে করছে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাঁচানো তিন ঘণ্টা গেল নিজের *ক্লাস আর লাইব্রেরিতে*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "sohel": "smile"
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর রাইয়ানের মা খাতাটা হাতে নিয়ে *অনেকক্ষণ দেখলেন*। বললেন, *‘আমার বোনের মেয়েটারেও পড়াবা? পাঁচ হাজার দিব।’*",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "দুই মাস পর, মিরপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক মাসে আরো দুইটা ফোন, *একই বিল্ডিং থেকে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "টিউশন",
+       "value": "৫টা",
+       "from": "৭"
+      },
+      {
+       "label": "আয়",
+       "value": "২১,০০০"
+      },
+      {
+       "label": "বাসে",
+       "value": "১ ঘণ্টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর সেমিস্টারের রেজাল্ট। এবার কোনো ফেল নেই, *সিজিপিএ তিন দশমিক চার*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "sohel": "happy"
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "আম্মা, এই মাসে টাকা বেশি পাঠাইছি। আর আজ রাতে *আট ঘণ্টা ঘুমামু*।",
+   "tone": "laughs",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "গলাটা আজ *হালকা লাগে*, বাবা। এইটাই আমার রেজাল্ট।",
+   "tone": "tearful",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পঞ্চগড়",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন রাতে মামুন ভাইয়ের দরজায় দুই কাপ চা। এবার *সোহেলের বানানো*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "মেসের বারান্দা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "sohel",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "mamun",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "কী রে, এখন কয়টা বাচ্চার *নাম মনে আছে*?",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sohel",
+   "say": "পাঁচটা ভাই। সাথে পাঁচটা *দুর্বল অঙ্কও*।",
+   "tone": "proudly",
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "sohel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "বেশি দৌড়ালেই বেশি দূর যাওয়া যায় না… *ঠিক পথে কম হাঁটাই যথেষ্ট।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "বেশি দৌড়ালেই বেশি দূর যাওয়া যায় না…",
+    "line2": "ঠিক পথে কম হাঁটাই\nযথেষ্ট।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সাতটা টিউশন, নিজের পরীক্ষায় তিন ফেল— রাত দুইটায় মেসের বড় ভাইয়ের এক প্রশ্ন 📚",
+  "description": "ফকিরাপুলের মেসে থাকে সোহেল। সংসার চালাতে সাতটা টিউশন, দিনে চার ঘণ্টা বাসে, আর নিজের পরীক্ষায় তিন বিষয়ে ফেল। রাত দুইটায় বারান্দায় মামুন ভাই এসে জিজ্ঞেস করলেন…",
+  "tags": [
+   "মেসের গল্প",
+   "টিউশন",
+   "ছাত্রজীবন",
+   "মায়ের গল্প",
+   "সংগ্রাম",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "সাতটা টিউশনে দৌড় ছিল, পড়ানো ছিল না— চারটায় নেমে সোহেল পেল সব। 📚\nতুমি কি কখনো বেশি করতে গিয়ে আসল জিনিসটাই হারিয়েছ? 👇 #মেসলাইফ #টিউশন"
+ },
+ "thumbnail": {
+  "text": "সাত টিউশন",
+  "sub": "নিজে তিন ফেল"
+ }
+}

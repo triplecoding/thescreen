@@ -1,0 +1,468 @@
+{
+ "id": "287",
+ "status": "ready",
+ "title_bn": "একুশ রাত",
+ "theme": "siblings",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Look How Hard I've Tried",
+  "title_bn": "দেখো, কত চেষ্টা করলাম"
+ },
+ "cast": {
+  "mamun": {
+   "name": "মামুন",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#4A5E7A",
+   "hair": "side",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "shila": {
+   "name": "শিলা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "tutul": {
+   "name": "টুটুল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#7A6B4A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয় বছরে বারোটা ঈদ। বারোবার মেসেজ— *‘ঈদ মোবারক’*। ছোট ভাইয়ের রিপ্লাই— শূন্য।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "ঢাকা, উত্তরা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঈদ",
+       "value": "১২"
+      },
+      {
+       "label": "মেসেজ",
+       "value": "১২"
+      },
+      {
+       "label": "রিপ্লাই",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "প্রতিবার স্ক্রিনশট দেখান স্ত্রী শিলাকে— *দেখো, আমি তো চেষ্টা করছি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ছয় বছর আগে আব্বার হাসপাতালের বিল নিয়ে আত্মীয়দের সামনে মামুন বলেছিলেন *একটা কথা*।"
+  },
+  {
+   "voice": "mamun",
+   "say": "তুই কী দিছিস, টুটুল? একটা টাকাও না। *সব আমি দিলাম*!",
+   "tone": "annoyed",
+   "scene": {
+    "fx": "bw",
+    "moods": {
+     "mamun": "angry"
+    },
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "টুটুল সেদিন কিছু বলেনি। চুপচাপ চলে গিয়েছিল। তারপর আর *ফোন ধরেনি*।",
+   "scene": {
+    "fx": null,
+    "moods": {
+     "mamun": "sad"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মামুনের চেষ্টার তালিকা ছোট না। কিন্তু সবগুলোই *দূর থেকে*।",
+   "card": {
+    "title": "মামুনের ছয় বছরের চেষ্টা",
+    "items": [
+     {
+      "t": "ঈদে একটা মেসেজ",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মাকে দিয়ে খবর পাঠানো",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুকে ছবিতে লাইক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "দেখলা? এবারও রিপ্লাই দেয় নাই। আমি আর *কত করমু*?",
+   "tone": "frustrated",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "এবারের ঈদের রাত",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "shila",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shila",
+   "say": "তুমি চেষ্টা করতেছো, নাকি *চেষ্টার প্রমাণ* জমাইতেছো?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মামুন রেগে উঠতে গিয়েও থামলেন। প্রশ্নটা *সত্যি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.5
+    },
+    "moods": {
+     "mamun": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "shila",
+   "say": "ছয় বছরে একবারও ওর দরজায় যাও নাই। মেসেজে যা লেখো, *মুখে কও নাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shila",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মামুনের মনে পড়ল হাসপাতালের করিডর। একুশ রাত টুটুল ঘুমিয়েছিল ওখানকার *বেঞ্চে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.5
+    },
+    "moods": {
+     "mamun": "sad"
+    }
+   }
+  },
+  {
+   "say": "টাকা দিয়েছিলেন মামুন। রাত জেগেছিল টুটুল। সেদিন হিসাবে ধরা হয়েছিল *একটাই*।"
+  },
+  {
+   "say": "শুক্রবার সকালে যাত্রাবাড়ী। পাঁচতলার সিঁড়ি। আগে থেকে *ফোন করেননি*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "যাত্রাবাড়ী, শুক্রবার সকাল",
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.4,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দরজা খুলল টুটুল। ছয় বছরে চুলে পাক ধরেছে। দুই ভাই *চুপচাপ দাঁড়িয়ে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "tutul",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "ভাইয়া… তুমি? কিছু হইছে? *আম্মা ঠিক আছে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "আম্মা ভালো। একটা কথা বলতে আসছি। ছয় বছর *দেরি হইছে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "সেদিন ভুল কইছিলাম। আমি টাকা দিছিলাম, তুই রাত জাগছিলি। *দুইটাই লাগছিল*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "mamun": "crying"
+    },
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "টুটুল দরজার চৌকাঠ ধরে দাঁড়িয়ে রইল। চোখ লাল। *কিছু বলতে পারল না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.5
+    },
+    "moods": {
+     "tutul": "sad"
+    }
+   }
+  },
+  {
+   "voice": "tutul",
+   "say": "একুশ রাত… তুমি *গুনছিলা*?",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "tutul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mamun",
+   "say": "তখন গুনি নাই রে। ছয় বছর ধইরা *গুনতেছি*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভেতর থেকে উঁকি দিল টুটুলের ছোট্ট মেয়ে। মামুন তাকে *আগে কখনো দেখেননি*।",
+   "scene": {
+    "arms": {
+     "mamun": "hug",
+     "tutul": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "সে জিজ্ঞেস করল, ইনি কে? টুটুল চোখ মুছে বলল— *তোর বড় আব্বু*।"
+  },
+  {
+   "say": "দুপুরে একসাথে খিচুড়ি। রান্নাঘর থেকে ভেসে আসে *হাসির শব্দ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "সেদিন দুপুর",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "tutul",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shila",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "টুটুল আব্বার শেষ দিনগুলোর গল্প বলল। মামুন *শুধু শুনলেন*।",
+   "scene": {
+    "cam": {
+     "focus": "mamun",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফেরার পথে মামুনের ফোনে টুটুলের মেসেজ, ছয় বছরে প্রথম— *‘সাবধানে যাইও, ভাইয়া।’*",
+   "pause": 0.8,
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ফেরার পথে",
+    "chars": [
+     {
+      "id": "mamun",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "shila",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মেসেজে চেষ্টা প্রমাণ হয়… *দরজায় গেলে সম্পর্ক ফেরে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "মেসেজে চেষ্টা প্রমাণ হয়…",
+    "line2": "দরজায় গেলে\nসম্পর্ক ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১২টা ঈদ মেসেজ, রিপ্লাই শূন্য— স্ত্রীর এক প্রশ্নে ছোট ভাইয়ের দরজায় মামুন 🚪",
+  "description": "উত্তরার মামুন ছয় বছর ধরে প্রতি ঈদে ছোট ভাই টুটুলকে মেসেজ পাঠান, উত্তর আসে না। আব্বার হাসপাতালের বিল নিয়ে একটা কথা বলেছিলেন তিনি। এবারের ঈদে স্ত্রী শিলা একটা প্রশ্ন করলেন…",
+  "tags": [
+   "দুই ভাইয়ের গল্প",
+   "ভাইবোনের গল্প",
+   "অভিমান",
+   "পরিবার",
+   "যাত্রাবাড়ী",
+   "ক্ষমা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মেসেজে চেষ্টা প্রমাণ হয়— কিন্তু দরজায় গেলে সম্পর্ক ফেরে। 🚪\nকার সাথে তোমার কথা বন্ধ, যার দরজায় একবার যাওয়া দরকার? 👇 #ভাই #অভিমান"
+ },
+ "thumbnail": {
+  "text": "একুশ রাত",
+  "sub": "ছয় বছরের নীরবতা"
+ }
+}

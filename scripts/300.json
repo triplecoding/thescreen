@@ -1,0 +1,546 @@
+{
+ "id": "300",
+ "status": "ready",
+ "title_bn": "বড় ভাইয়ের ‘না’",
+ "theme": "siblings",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "The Law of Repression — Confront Your Dark Side",
+  "title_bn": "চাপা রাগের মুখোমুখি"
+ },
+ "cast": {
+  "belal": {
+   "name": "বেলাল",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E8E2D0",
+   "hair": "side",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "jewel": {
+   "name": "জুয়েল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#4A6FA5",
+   "hair": "curly",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F1ECE2",
+   "color2": "#8E3B5A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "সাতাশ বছর ধরে সংসারের সব খরচ। মুখে একটাই কথা— *‘সমস্যা নাই’*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "কুমিল্লা, দাউদকান্দি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বড় ভাইয়ের দায়িত্ব",
+       "value": "২৭ বছর"
+      },
+      {
+       "label": "এবারের ঈদ খরচ",
+       "value": "৮৬,০০০"
+      },
+      {
+       "label": "‘না’ বলেছেন",
+       "value": "০ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বেলাল তিন ভাই-বোনের বড়। ক্লাস নাইনে আব্বা চলে যাওয়ার পর *সংসারের হাল তার*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ঈদের জামা, আম্মার ওষুধ, ছোট ভাইয়ের বাইকের কিস্তি— *সব বেলালের*।"
+  },
+  {
+   "voice": "jewel",
+   "say": "ভাইয়া, এইবার বাইকের কিস্তিটা একটু দিবা? *আটকাইয়া গেছি*।",
+   "tone": "softly",
+   "scene": {
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "jewel",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "সমস্যা নাই। *দিয়া দিমু*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচাতো ভাইয়ের ধার, বোনের শ্বশুরবাড়ির উপহার— *সমস্যা নাই, সমস্যা নাই*।",
+   "scene": {
+    "cam": "static"
+   }
+  },
+  {
+   "say": "কেউ খেয়াল করেনি, এবারও বেলাল নিজের জন্য *একটা জামাও কেনেনি*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঈদের রাত। সবাই একসাথে খেতে বসেছে। হাসি, *ঠাট্টা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "ঈদের রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "jewel",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "amma",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jewel",
+   "say": "আমাদের ভাইয়া না, একটা *এটিএম বুথ*! কার্ড ঢুকাও, টাকা বাইর!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সবাই হাসল। আর বেলাল হঠাৎ প্লেটটা *ঠেলে সরিয়ে দিল*।",
+   "scene": {
+    "moods": {
+     "belal": "angry",
+     "jewel": "surprised",
+     "amma": "surprised"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "হ্যাঁ, এটিএম! কেউ কোনোদিন জিগাইছে, *বুথটা খাইছে কিনা*?",
+   "tone": "frustrated",
+   "scene": {
+    "arms": {
+     "belal": "point"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাতাশ বছরে কেউ বেলালকে চিৎকার করতে শোনেনি। ঘর *একদম চুপ*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সাতাশ বছরের জমা কথা, এক রাতে।",
+   "card": {
+    "title": "যা কেউ জানত না",
+    "items": [
+     {
+      "t": "নিজের পড়া ছেড়ে ভাইয়ের কোচিং",
+      "mark": "x"
+     },
+     {
+      "t": "নিজের বিয়ের সোনা বেচে বোনের বিয়ে",
+      "mark": "x"
+     },
+     {
+      "t": "সাত বছর ছুটি না নিয়ে ওভারটাইম",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "বেলাল পুকুরঘাটে একা বসে রইল। ভাত পড়ে রইল *টেবিলে*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "পুকুরঘাট, রাত ১১টা",
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আম্মা এলেন আস্তে আস্তে, হাতে ঢাকা দেওয়া *এক থালা ভাত*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বাপ, শেষ কবে তুই কাউরে *‘না’ কইছিলি*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বেলাল অনেকক্ষণ চুপ। তারপর গলা ভেঙে এল।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "মনে নাই, আম্মা। আব্বা যাওয়ার দিন থেইকা ভাবছি, ‘না’ কইলে *সব ভাইসা যাইবো*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "belal": "crying"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "আমিও ক্লান্ত হই, আম্মা। খালি *কাউরে কই নাই*।",
+   "tone": "tearful",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পেছনে অন্ধকারে দাঁড়িয়ে ছিল জুয়েল। *সব শুনেছে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "jewel",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "jewel",
+   "say": "ভাইয়া, বাইকের কিস্তি আমি দিমু। আর আম্মার ওষুধ *এখন থেকে আমার*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jewel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জুয়েল ঘাটের সিঁড়িতে বসল ভাইয়ের পাশে। আম্মা ভাত মেখে তুলে দিলেন *দুই ছেলের মুখে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "jewel",
+      "x": 0.58,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hug"
+     },
+     {
+      "id": "amma",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন সকালে চাচাতো ভাই এল, আরেকটা ধারের কথা নিয়ে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের পরদিন",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "না রে ভাই, এইবার *পারুম না*। চা খাইয়া যা।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "belal": "smile"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বলে বেলাল নিজেই অবাক। আকাশ ভেঙে পড়েনি। চাচাতো ভাই চা খেয়ে *হাসিমুখেই গেল*।"
+  },
+  {
+   "say": "সেদিন দুপুরে বেলাল ঘুমাল। সাতাশ বছরে প্রথম, *ঈদের পরদিন দুপুরে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের পরদিন, দুপুর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "চুপ, কেউ শব্দ করিস না। *বড়টা ঘুমায়*।",
+   "tone": "whispers",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে কখনো রাগ করে না… *সে-ও ভেতরে জমিয়ে রাখে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে কখনো রাগ করে না…",
+    "line2": "সে-ও ভেতরে\nজমিয়ে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "২৭ বছর ধরে বড় ভাইয়ের মুখে শুধু ‘সমস্যা নাই’… ঈদের রাতে ভাঙল সব 🌙",
+  "description": "কুমিল্লার বেলাল ক্লাস নাইন থেকে সংসারের হাল ধরেছে। কারও কোনো আবদারে কোনোদিন ‘না’ বলেনি। ঈদের রাতে ছোট ভাইয়ের এক ঠাট্টায় সাতাশ বছরের চাপা কথা বেরিয়ে এল। তারপর পুকুরঘাটে মা একটা প্রশ্ন করলেন…",
+  "tags": [
+   "ভাইয়ের গল্প",
+   "বড় ভাই",
+   "ঈদের গল্প",
+   "মা ছেলের গল্প",
+   "কুমিল্লা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যে কোনোদিন ‘না’ বলে না, তারও একদিন বলার অধিকার আছে। 🌙\nতোমার পরিবারের ‘সমস্যা নাই’ মানুষটা কে? আজ তাকে একবার জিজ্ঞেস করবে? 👇 #বড়ভাই #ঈদ"
+ },
+ "thumbnail": {
+  "text": "সমস্যা নাই",
+  "sub": "২৭ বছরের চাপা কথা"
+ }
+}

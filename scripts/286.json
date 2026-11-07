@@ -1,0 +1,525 @@
+{
+ "id": "286",
+ "status": "ready",
+ "title_bn": "নেকলেসটা আম্মার কাছে",
+ "theme": "family",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Build a golden bridge for your opponent to retreat",
+  "title_bn": "ফেরার সম্মানের পথ"
+ },
+ "cast": {
+  "nipa": {
+   "name": "নিপা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#B5476B",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#7A5A9E",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "rahima": {
+   "name": "রহিমা খালা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#6B8E9E",
+   "color2": "#C9A15A",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বিয়ের সোনার নেকলেস, দুই ভরি। আলমারি থেকে *উধাও*। আর সন্দেহ গেল রহিমা খালার দিকে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "রাজশাহী, উপশহর",
+    "props": [
+     "almirah",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নেকলেস",
+       "value": "২ ভরি"
+      },
+      {
+       "label": "খালার কাজের বয়স",
+       "value": "১১ বছর"
+      },
+      {
+       "label": "সন্দেহ",
+       "value": "রহিমা খালা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নিপা, বিয়ের আট মাস। নেকলেসটা মায়ের দেওয়া, *নিজের গয়না ভেঙে* বানানো।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "খালা, আপনি কি সকালে *আলমারির ঘরে* গেছিলেন?",
+   "tone": "gently",
+   "scene": {
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "rahima",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "ঘর মুছতে গেছিলাম, ভাবি। গরিব হইতে পারি… *চোর না*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "rahima": "crying"
+    },
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলে শাশুড়ির ঘর গোছাতে গিয়ে নিপা পেল একটা ভাঁজ করা কাগজ। *বন্ধকির রসিদ*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    },
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "বন্ধকি রসিদ",
+     "lines": [
+      "দুই ভরি নেকলেস",
+      "টাকা: ৪৮,০০০"
+     ],
+     "sub": "সোনার দোকান, সাহেব বাজার"
+    }
+   }
+  },
+  {
+   "say": "আটচল্লিশ হাজার। দেবর সজীবের ভার্সিটির সেমিস্টার ফি *ঠিক এত*।"
+  },
+  {
+   "say": "ফ্ল্যাটের কিস্তিতে বড় ছেলে এমনিতেই হিমশিম। শাশুড়ি তাই কাউকে *বলতে পারেননি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নিপার সামনে তিনটা পথ। কোনোটাতেই কেউ *বাঁচে না*।",
+   "card": {
+    "title": "নিপার সামনে তিন পথ",
+    "items": [
+     {
+      "t": "সবার সামনে রসিদ দেখানো",
+      "mark": "x"
+     },
+     {
+      "t": "স্বামীকে সব বলে দেওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "চুপ থাকা— খালার বদনাম",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে খাবার টেবিলে ননদ বলল, কাল থানায় যাবে। রান্নাঘরে রহিমা খালা *চুপচাপ কাঁদছেন*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত, খাবার টেবিল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শাশুড়ির মুখ সাদা। ভাতের থালায় হাত *নড়ছে না*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "amma": "sad"
+    }
+   }
+  },
+  {
+   "say": "নিপা হঠাৎ কপালে হাত দিল, যেন কিছু *মনে পড়েছে*।",
+   "scene": {
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    },
+    "arms": {
+     "nipa": "face"
+    }
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "ইশ্‌, আম্মা! নেকলেসটা তো আমিই আপনার কাছে রাখতে দিছিলাম। *ভুলেই গেছি*!",
+   "scene": {
+    "arms": {
+     "nipa": "talk"
+    },
+    "moods": {
+     "nipa": "smile"
+    },
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাশুড়ি চমকে তাকালেন। নিপার চোখে কোনো প্রশ্ন নেই। শুধু একটা *খোলা দরজা*।",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "amma": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "হ্যাঁ… হ্যাঁ, আমার কাছেই। আমি… *পরে দিমু*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "টেবিলের সবাই হাঁফ ছাড়ল। রান্নাঘরের দরজায় রহিমা খালা *চোখ মুছলেন*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাত একটায় নিপার দরজায় টোকা। শাশুড়ি, হাতে *সেই রসিদ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত একটা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "তুমি জানতা, তাই না? তবু সবার সামনে *আমারে বাঁচাইলা*?",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "amma": "crying"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "আম্মা, সজীবের পড়াও তো *আমার সংসারের* কাজ। একা ক্যান নিলেন?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শাশুড়ি নিপার হাত ধরে বসে পড়লেন। আট মাসে এই প্রথম দুইজন *একসাথে কাঁদলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "nipa": "hug",
+     "amma": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তারপর দুই মাস দুইজনের গোপন হিসাব। সজীবও জেনে নিল একটা *পার্টটাইম কাজ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরের দুই মাস",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "নেকলেস ছাড়ানোর হিসাব",
+     "items": [
+      {
+       "t": "নিপার দুইটা টিউশনি— ২৪,০০০",
+       "mark": "check"
+      },
+      {
+       "t": "আম্মার ব্লাউজ সেলাই— ১৪,০০০",
+       "mark": "check"
+      },
+      {
+       "t": "সজীবের পার্টটাইম— ১০,০০০",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাষট্টি দিন পর নেকলেস ফিরল। শাশুড়ি নিজের হাতে পরিয়ে দিলেন *নিপার গলায়*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "nipa": "happy",
+     "amma": "happy"
+    }
+   }
+  },
+  {
+   "say": "তারপর তিনি রান্নাঘরে গেলেন, *রহিমা খালার কাছে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "সেদিন দুপুর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rahima",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "রহিমা, সেদিন সবাই তোমারে সন্দেহ করছিল। দোষটা আমার। *মাফ কইরো*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "আম্মা, আপনার মুখে এই কথা শুনলাম… এইটাই *বড় পাওয়া*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "rahima": "smile"
+    },
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রসিদ শাশুড়ি ছিঁড়লেন না। রেখে দিলেন পানের বাটায়, *সবচেয়ে কাছে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবার সামনে ধরলে মানুষ ভাঙে… *একটু পথ দিলে মানুষ ফেরে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবার সামনে ধরলে মানুষ ভাঙে…",
+    "line2": "একটু পথ দিলে\nমানুষ ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বউয়ের নেকলেস বন্ধক রাখলেন শাশুড়ি— সবার সামনে বউমা যা বলল 💛",
+  "description": "রাজশাহীর নিপার বিয়ের নেকলেস আলমারি থেকে উধাও, সন্দেহ গেল এগারো বছরের কাজের খালার দিকে। বিকেলে নিপা শাশুড়ির ঘরে পেল একটা বন্ধকির রসিদ। রাতে খাবার টেবিলে ননদ বলল, কাল থানায় যাবে…",
+  "tags": [
+   "শাশুড়ি বউমার গল্প",
+   "সংসারের গল্প",
+   "রাজশাহী",
+   "সম্মান",
+   "পরিবার",
+   "বিশ্বাস",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবার সামনে ধরলে শাশুড়ি ভেঙে পড়তেন— নিপা দিল একটা সম্মানের পথ। 💛\nকাউকে লজ্জা থেকে বাঁচাতে তুমি কখনো চুপ থেকেছ? 👇 #শাশুড়িবউমা #সংসার"
+ },
+ "thumbnail": {
+  "text": "নেকলেস কোথায়?",
+  "sub": "শাশুড়ির গোপন রসিদ"
+ }
+}

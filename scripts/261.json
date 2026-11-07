@@ -1,0 +1,512 @@
+{
+ "id": "261",
+ "status": "ready",
+ "title_bn": "আলমারির হারমোনিয়াম",
+ "theme": "family",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "The Law of Repression — Confront Your Dark Side",
+  "title_bn": "চাপা দেওয়া মনের মুখোমুখি"
+ },
+ "cast": {
+  "tania": {
+   "name": "তানিয়া",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "amma": {
+   "name": "আমেনা বেগম",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#8E3B5A",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "shamim": {
+   "name": "শামীম",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#5B7DB1",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নয় বছরের সংসারে একবারও ‘না’ বলেনি। আর ঈদের সকালে, এক চামচ লবণ নিয়ে *চিৎকার*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "কুমিল্লা, কান্দিরপাড়",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সংসার",
+       "value": "৯ বছর"
+      },
+      {
+       "label": "‘না’ বলা",
+       "value": "০ বার",
+       "red": true
+      },
+      {
+       "label": "ঈদের সকাল",
+       "value": "১টা চিৎকার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তানিয়া, যৌথ পরিবারের বড় বউ। সবার মুখে— *‘এমন লক্ষ্মী বউ হয় না’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "সেমাইয়ে লবণ বেশি, বলেছিল ছোট দেবর। কথাটা ছোট। কিন্তু তানিয়া *থামতে পারল না*।"
+  },
+  {
+   "voice": "tania",
+   "say": "সবার মাপমতো রান্ধি, সবারটা মনে রাখি! আমারটা কে মনে রাখে? *কেউ না*!",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রান্নাঘর চুপ। হাতের চামচ নামিয়ে তানিয়া নিজেই *কেঁপে উঠল*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "tania": "crying"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "সারাদিন মেহমান, হাসিমুখ। কিন্তু বাড়িতে ফিসফাস— *‘বউয়ের মাথা গরম’*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের বিকেল",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "shamim",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "আম্মা, ও তো এমন না। হঠাৎ কী হইল? *বুঝলাম না*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "হঠাৎ কিছু হয় না, বাবা। নয় বছর ধইরা জমছে। *আমরা দেখি নাই*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নয় বছরে তানিয়া যা কখনো মুখে আনেনি।",
+   "card": {
+    "title": "নয় বছরে যা চাপা পড়ল",
+    "items": [
+     {
+      "t": "ব্যাংকের চাকরির ডাক— ‘সংসার দেখবে কে?’",
+      "mark": "x"
+     },
+     {
+      "t": "বাপের বাড়ি— বছরে একবার",
+      "mark": "x"
+     },
+     {
+      "t": "হারমোনিয়াম— আলমারিতে তালা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে সবাই ঘুমালে আমেনা বেগম রান্নাঘরে এলেন। তানিয়া তখনো *হাঁড়ি মাজছে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বউ, একটা কথা কও তো। নয় বছরে তুমি কয়বার আমারে *‘না’* কইছো?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "একবারও না, আম্মা। ‘না’ কইলে যদি আপনারা ভাবেন— *বউটা খারাপ*?",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "tania": "crying"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আমেনা বেগম তানিয়ার হাত থেকে হাঁড়িটা নিয়ে নিলেন।",
+   "pause": 0.6
+  },
+  {
+   "voice": "amma",
+   "say": "আমিও চল্লিশ বছর ‘না’ কই নাই। তাই তোমার রাগটা আমি *চিনি*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "amma": "sad"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানিয়া প্রথমবার শাশুড়ির কাঁধে মাথা রাখল। কেউ কিছু বলল না।",
+   "pause": 0.9,
+   "scene": {
+    "arms": {
+     "tania": "hug",
+     "amma": "hug"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "পরদিন সকালে বাড়িতে নতুন নিয়ম, আমেনা বেগমের মুখে মুখে।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "sofa",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "shamim",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "tania",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "আম্মার নতুন নিয়ম",
+     "items": [
+      {
+       "t": "বৃহস্পতিবার রান্না— শামীম আর দেবর",
+       "mark": "check"
+      },
+      {
+       "t": "মাসে একবার বাপের বাড়ি",
+       "mark": "check"
+      },
+      {
+       "t": "‘না’ বললে কেউ রাগ করবে না",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shamim",
+   "say": "আমি রান্ধমু? আম্মা, ভাত তো *পুইড়া যাবে*!",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "shamim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "পুড়লে পুড়ুক। নয় বছর তো বউ একাই *পুড়ছে*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তারপর আমেনা বেগম আলমারির চাবিটা দিলেন *তানিয়ার হাতে*।",
+   "scene": {
+    "moods": {
+     "tania": "surprised"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভেতরে কাপড়ে মোড়ানো বিয়ের সময়ের হারমোনিয়াম। ধুলো, *নয় বছরের*।",
+   "pause": 0.7
+  },
+  {
+   "say": "প্রথম বৃহস্পতিবার। রান্নাঘর থেকে পোড়া গন্ধ, ছেলেদের *হইচই*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "প্রথম বৃহস্পতিবার",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "shamim",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আর বারান্দা থেকে ভেসে এলো হারমোনিয়াম। তানিয়ার গলা, *কাঁপা কাঁপা*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "বারান্দা",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশে বসে আমেনা বেগম গুনগুন করলেন। চল্লিশ বছর আগের *একটা গান*।",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "আম্মা, আপনিও গাইতেন? আগে তো কোনোদিন *কন নাই*!",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "tania": "surprised"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "কেউ জিগায় নাই, মা। আইজকা *তুমি জিগাইলা*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "amma": "happy"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে তানিয়া প্রথমবার বলল, *‘না, আজকে পারব না’*। কেউ রাগ করল না।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide",
+    "moods": {
+     "tania": "happy"
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "চাপা কষ্ট একদিন রাগ হয়ে ফাটে… *কেউ শুনলে সেটাই গান হয়ে ফেরে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "চাপা কষ্ট একদিন রাগ হয়ে ফাটে…",
+    "line2": "কেউ শুনলে\nসেটাই গান হয়ে ফেরে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নয় বছরে একবারও ‘না’ বলেনি বউ— ঈদের সকালে চিৎকার, রাতে শাশুড়ির এক প্রশ্ন 🎶",
+  "description": "কুমিল্লার তানিয়া যৌথ পরিবারের লক্ষ্মী বড় বউ, নয় বছরে কাউকে ‘না’ বলেনি। ঈদের সকালে এক চামচ লবণ নিয়ে সে হঠাৎ চিৎকার করে উঠল। সেই রাতে শাশুড়ি এলেন রান্নাঘরে…",
+  "tags": [
+   "শাশুড়ি বউয়ের গল্প",
+   "সংসারের গল্প",
+   "কুমিল্লা",
+   "যৌথ পরিবার",
+   "চাপা কষ্ট",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নয় বছরের চাপা কষ্ট এক চামচ লবণে ফেটে পড়ল— আর শাশুড়ি চিনলেন নিজের চল্লিশ বছর। 🎶\nতোমার বাড়িতে কে সবচেয়ে কম ‘না’ বলে? 👇 #সংসার #শাশুড়িবউ"
+ },
+ "thumbnail": {
+  "text": "‘না’ বলা ০ বার",
+  "sub": "নয় বছরের বড় বউ"
+ }
+}

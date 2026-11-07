@@ -1,0 +1,621 @@
+{
+ "id": "280",
+ "status": "ready",
+ "title_bn": "সিস্টার রুমা",
+ "theme": "parents",
+ "source": {
+  "book": "1984",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Rewriting history to suit the present",
+  "title_bn": "সুবিধামতো গল্প বদলানো"
+ },
+ "cast": {
+  "ruma": {
+   "name": "রুমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "scrub",
+   "color": "#F2EEE3",
+   "color2": "#4A90A4",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#7A5A9E",
+   "color2": "#F2D27A",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "minu": {
+   "name": "মিনু খালা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F5D8A",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "গ্রামের সবাই জানে, রুমা *ডাক্তারি* পড়ে। আসলে সে নার্সিং পড়ে, তৃতীয় বর্ষ।",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "ঢাকা, হাসপাতালের ওয়ার্ড",
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নার্সিং",
+       "value": "৩য় বর্ষ"
+      },
+      {
+       "label": "গ্রামে পরিচয়",
+       "value": "‘ডাক্তার’",
+       "red": true
+      },
+      {
+       "label": "সত্যি জানে",
+       "value": "২ জন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "গল্পটা শুরু আম্মার মুখে। ভর্তির দিন মিনু খালা জিজ্ঞেস করেছিলেন, আম্মা বলেছিলেন— *‘ডাক্তারি’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "রুমা থাকে মোহাম্মদপুরের এক মেয়েদের মেসে। রাতে ডিউটি, দিনে ক্লাস।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মোহাম্মদপুর, মেয়েদের মেস",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "ঈদে আসলে সাদা কোটটা আনিস। মিনু আপা *ছবি তুলতে চায়*।",
+   "tone": "playfully",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "শেরপুর, আম্মার ফোন",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "আম্মা, আমার সাদা কোট নাই, আছে *নার্সের ড্রেস*। কতবার কমু?",
+   "tone": "upset",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেস",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আস্তে ক! লোকে শুনলে কী কইবো? *ডাক্তার কইলে কী ক্ষতি*?",
+   "tone": "whispers",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "শেরপুর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমা ফোন রেখে দিল। মেসের অন্ধকারে ইউনিফর্মটা *ভাঁজ করে রাখল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মেস, রাত",
+    "props": [
+     "bed",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold"
+     }
+    ],
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রুমা কতবার সত্যিটা বলতে চেয়েছে।",
+   "card": {
+    "title": "যতবার থেমে গেছে",
+    "items": [
+     {
+      "t": "চাচাতো বোনের বিয়েতে",
+      "mark": "x"
+     },
+     {
+      "t": "খালার ‘চেম্বার কবে?’ প্রশ্নে",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মার চোখের দিকে তাকিয়ে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ঈদের ছুটি, গ্রামের বাড়ি। দ্বিতীয় রাতে হঠাৎ দরজায় *ধাক্কা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "শেরপুর, ঈদের দ্বিতীয় রাত",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "minu",
+      "x": 0.84,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "minu",
+   "say": "ডাক্তার মা, তোর চাচা কেমন জানি করতেছে! *একটু চল*!",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "minu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমা ব্যাগ নিয়ে দৌড়াল। প্রেশার মাপল, হাত ধরে রইল— *চুপচাপ, দ্রুত*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "মিনু খালার ঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.42,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "minu",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তারপর বলল— *এখনই উপজেলা হাসপাতাল*। ভ্যান ডাকল, নিজেও উঠল।",
+   "scene": {
+    "moods": {
+     "ruma": "neutral"
+    },
+    "arms": {
+     "ruma": "point"
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটা, উপজেলা স্বাস্থ্য কমপ্লেক্স। রুমা ডিউটি ডাক্তারকে সব বলল, *মিনিট ধরে ধরে*।",
+   "scene": {
+    "set": "hospital",
+    "light": "night",
+    "chip": "উপজেলা স্বাস্থ্য কমপ্লেক্স, রাত দুইটা",
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "minu",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ডাক্তার শুনে মাথা নাড়লেন। বললেন, *‘ঠিক সময়ে আনছেন, সিস্টার।’*"
+  },
+  {
+   "say": "মিনু খালা শব্দটা শুনলেন— *সিস্টার*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "minu": "surprised"
+    },
+    "cam": {
+     "focus": "minu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "minu",
+   "say": "সিস্টার? তুই… *ডাক্তার না*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "minu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "না খালা। আমি নার্স। ডাক্তার ওষুধ লেখেন, আমরা সারা রাত *পাশে থাকি*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভোরে আম্মা এলেন হাসপাতালে। খালার সামনে দাঁড়িয়ে *চোখ নামিয়ে* রইলেন।",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "ভোর",
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "ruma",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "minu",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "minu",
+   "say": "তোর মাইয়া না থাকলে কাল রাতে কী হইত, জানস? এইটা *লুকানোর জিনিস*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "minu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন দিন পর চাচা বাড়ি ফিরলেন, *সুস্থ হয়ে*। বিকেলে উঠানে পাড়ার মহিলারা।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "তিন দিন পর, উঠানে",
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hug"
+     },
+     {
+      "id": "ruma",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hug"
+     },
+     {
+      "id": "minu",
+      "x": 0.84,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আমার মাইয়া *নার্স*। ডাক্তারও রাতে ওর কথা শুনে।",
+   "tone": "proudly",
+   "scene": {
+    "moods": {
+     "amma": "happy"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন বছরের গল্পটা এক লাইনে বদলে গেল। এবার *সত্যি গল্প*।",
+   "scene": {
+    "moods": {
+     "ruma": "crying"
+    },
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঢাকায় ফেরার দিন আম্মা ব্যাগে ভরে দিলেন ইস্ত্রি করা *নার্সের ড্রেস*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ফেরার দিন",
+    "props": [
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ruma",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "এইটা পইরা একটা ছবি পাঠাইস। *ফেসবুকে দিমু*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ruma",
+   "say": "আগে তো লুকাইতা, আম্মা!",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "ruma": "happy"
+    },
+    "cam": {
+     "focus": "ruma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের সপ্তাহে আম্মার প্রোফাইলে নতুন ছবি। নিচে লেখা— *‘আমার মাইয়া, সিস্টার রুমা’*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "পরের সপ্তাহ",
+    "chars": [
+     {
+      "id": "ruma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অন্যের চোখে বড় করতে গল্প বদলাই… *অথচ সত্যিটাই সবচেয়ে বড়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "অন্যের চোখে বড় করতে গল্প বদলাই…",
+    "line2": "অথচ সত্যিটাই\nসবচেয়ে বড়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "গ্রামে সবাই জানে মেয়ে ‘ডাক্তার’— ঈদের এক রাতে ডাক্তার নিজেই ডাকলেন ‘সিস্টার’ 🩺",
+  "description": "নার্সিং পড়া রুমাকে আম্মা গ্রামে সবার কাছে বলেন ‘ডাক্তারি পড়ে’। লোকে কী বলবে— এই ভয়ে তিন বছর ধরে সত্যিটা লুকানো। তারপর ঈদের দ্বিতীয় রাতে মিনু খালা দরজায় ধাক্কা দিলেন…",
+  "tags": [
+   "মা মেয়ের গল্প",
+   "নার্সের গল্প",
+   "শেরপুর",
+   "লোকে কী বলবে",
+   "মেয়ের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘ডাক্তার’ বলে লুকিয়ে রাখা মেয়েটাই এক রাতে সবার ভরসা— সিস্টার রুমা। 🩺\nলোকে কী বলবে ভেবে তুমি কোন সত্যিটা লুকিয়েছ? 👇 #নার্স #মায়েরগল্প"
+ },
+ "thumbnail": {
+  "text": "ডাক্তার না?",
+  "sub": "সিস্টার রুমা"
+ }
+}

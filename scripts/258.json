@@ -1,0 +1,499 @@
+{
+ "id": "258",
+ "status": "ready",
+ "title_bn": "স্কোরের খাতা",
+ "theme": "parents",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "Regression to the Mean",
+  "title_bn": "খারাপের পরে ভালো এমনিই আসে"
+ },
+ "cast": {
+  "abba": {
+   "name": "মিজান সাহেব",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F5D8A",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "tuhin": {
+   "name": "তুহিন",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#F2EEE3",
+   "hair": "short",
+   "voice": "teen_boy"
+  },
+  "mitu": {
+   "name": "মিতু",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চোদ্দো ম্যাচ, চোদ্দোবার বকা। আর আব্বার বিশ্বাস— *বকা দিলেই রান আসে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খুলনা, সার্কিট হাউস মাঠের পাশে",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ম্যাচ",
+       "value": "১৪"
+      },
+      {
+       "label": "বকা",
+       "value": "১৪",
+       "red": true
+      },
+      {
+       "label": "প্রশংসা",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মিজান সাহেব একসময় জেলা দলে খেলতেন। এখন পনেরো বছরের ছেলে তুহিনের *কোচ*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "যেদিন তুহিন দুই রানে আউট, সেদিন মাঠেই, *সবার সামনে*।"
+  },
+  {
+   "voice": "abba",
+   "say": "এইটা খেলা? ব্যাট ধরছস না *বাজারের ব্যাগ*? কাল এমন হইলে খেলা বন্ধ।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের ম্যাচে তুহিন করল *বত্রিশ*। আব্বা খুশি— নিজের ওপর।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "দেখলি? বকা খাইলে পোলা *জাগে*। আদর দিলে মাথায় উঠে।",
+   "tone": "proudly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত, খাবার টেবিল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "mitu",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অথচ যেদিন তুহিন সত্তর করেছিল, আব্বা বলেছিলেন— *‘ভালো খেলছস’*।",
+   "scene": {
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরের ম্যাচে নয় রান। সেদিন থেকে আব্বার মুখে *প্রশংসা বন্ধ*।",
+   "scene": {
+    "moods": {
+     "abba": "neutral"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তুহিন সব চেষ্টা করল।",
+   "card": {
+    "title": "তুহিনের তিন মাস",
+    "items": [
+     {
+      "t": "ভোর পাঁচটায় একা নেটে",
+      "mark": "x"
+     },
+     {
+      "t": "বকার ভয়ে আরও সাবধানে ব্যাটিং",
+      "mark": "x"
+     },
+     {
+      "t": "আব্বার সামনে চুপ",
+      "mark": "x"
+     }
+    ],
+    "footer": "ভয় বাড়ল, রান না"
+   }
+  },
+  {
+   "say": "এক রাতে মিতু দেখল, ব্যাটটা খাটের নিচে। *একেবারে পেছনে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "তুহিনের ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tuhin",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "mitu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আপু, আমি আর খেলমু না। খারাপ খেললে বকা, ভালো খেললেও *ভয়*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মিতু কিছু বলল না। তার কাছে আছে চোদ্দো ম্যাচের *স্কোরের খাতা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "রাত জেগে সে মেলাল— কোন দিন বকা, পরের দিন কত রান।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "চোদ্দো ম্যাচের খাতা",
+     "lines": [
+      "খুব খারাপের পরের ম্যাচ: সাতবারে ছয়বার ভালো",
+      "খুব ভালোর পরের ম্যাচ: পাঁচবারে চারবার কম",
+      "আব্বা যশোরে, তিন ম্যাচ— বকা ছাড়াই একই"
+     ],
+     "sub": "রান ওঠে-নামে, এমনিই"
+    }
+   }
+  },
+  {
+   "say": "সকালে নাশতার টেবিলে খাতাটা রাখল *আব্বার সামনে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "mitu",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "আব্বা, যে তিন ম্যাচে আপনি যশোরে ছিলেন, কেউ বকে নাই। তবু *খারাপের পরে ভালোই* হইছে।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "তাইলে আমার বকার কোনো *দাম* নাই?",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "abba": "angry"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mitu",
+   "say": "রান নিজেই ওঠে-নামে, আব্বা। খালি আপনার বকাটা থাইকা যায় *ওর মনে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "mitu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মিজান সাহেব অনেকক্ষণ খাতাটার দিকে তাকিয়ে রইলেন।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    },
+    "moods": {
+     "abba": "thinking"
+    }
+   }
+  },
+  {
+   "say": "মনে পড়ল নিজের আব্বাকে। জেলা দল তিনি ছেড়েছিলেন *এই ভয়েই*।",
+   "scene": {
+    "moods": {
+     "abba": "sad"
+    }
+   }
+  },
+  {
+   "say": "পরের শুক্রবার। তুহিন আউট চার রানে। মাথা নিচু, সবাই অপেক্ষায় *বকার*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের শুক্রবার, মাঠ",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "tuhin",
+      "x": 0.7,
+      "pose": "walk",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আউট হইছস, হইছে। পানি খা। পরের বলটা নিয়া ভাব, *আগেরটা না*।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "abba": "smile",
+     "tuhin": "surprised"
+    },
+    "arms": {
+     "abba": "talk"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তুহিন অবাক হয়ে তাকিয়ে রইল। আব্বার চোখে আজ *বকা নেই*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর। তুহিন আবার হাসতে হাসতে খেলে। আর রানও *বেড়েছে*।",
+   "scene": {
+    "chip": "তিন মাস পর",
+    "moods": {
+     "tuhin": "happy",
+     "abba": "happy"
+    },
+    "cam": "wide",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গড় রান",
+       "value": "১৪ → ২৩"
+      },
+      {
+       "label": "মাঠে বকা",
+       "value": "০"
+      },
+      {
+       "label": "তুহিনের হাসি",
+       "value": "ফেরত"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tuhin",
+   "say": "আব্বা, আজকে বারো রানে আউট। *কিছু বলবেন না*?",
+   "tone": "playfully",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "tuhin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "বলমু। কাল ভোরে নেটে আমি বল করমু, তুই *খালি খেল*।",
+   "tone": "warmly",
+   "scene": {
+    "arms": {
+     "abba": "hug"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মিতুর খাতার শেষ পাতায় নতুন একটা কলাম— *‘আজ আব্বা হাসছেন’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খারাপের পরে ভালো এমনিই আসে… *বকাটা শুধু মনে থেকে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "খারাপের পরে ভালো এমনিই আসে…",
+    "line2": "বকাটা শুধু\nমনে থেকে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চোদ্দো ম্যাচে চোদ্দোবার বকা— বোনের একটা খাতা চুপ করাল আব্বাকে 🏏",
+  "description": "খুলনার মিজান সাহেব ছেলের কোচ, বিশ্বাস করেন বকা দিলেই রান আসে। ছেলে ব্যাট লুকিয়ে ফেলল খাটের নিচে। তারপর বোন মিতু টেবিলে রাখল চোদ্দো ম্যাচের স্কোরের খাতা…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "ক্রিকেটের গল্প",
+   "খুলনা",
+   "ভাই বোনের গল্প",
+   "সন্তান লালন",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "রান নিজের নিয়মে ওঠে-নামে, বকাটা শুধু থেকে যায় ছেলের মনে। 🏏\nছোটবেলায় কার একটা কথা আজও তোমার মনে বাজে? 👇 #বাবা #ক্রিকেট"
+ },
+ "thumbnail": {
+  "text": "বকা দিলেই রান?",
+  "sub": "চোদ্দো ম্যাচের খাতা"
+ }
+}

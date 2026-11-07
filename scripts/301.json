@@ -1,0 +1,521 @@
+{
+ "id": "301",
+ "status": "ready",
+ "title_bn": "দুই খাতার দোকান",
+ "theme": "money",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 8",
+  "chapter_bn": "৮ নম্বর অধ্যায়",
+  "title": "Be neither all dove nor all serpent",
+  "title_bn": "পুরো নরমও না, পুরো কঠিনও না"
+ },
+ "cast": {
+  "nani": {
+   "name": "জোহরা নানি",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F1ECE2",
+   "color2": "#2F7A6B",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "sumon": {
+   "name": "সুমন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "kuddus": {
+   "name": "কুদ্দুস চাচা",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#7A8B99",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "এক টিনের দোকান। বাকির খাতায় পাওনা *আটত্রিশ হাজার টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "নওগাঁ, মান্দা",
+    "props": [
+     "signboard",
+     "sign:জোহরা স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের পুঁজি",
+       "value": "২৫,০০০"
+      },
+      {
+       "label": "বাকি",
+       "value": "৩৮,০০০",
+       "red": true
+      },
+      {
+       "label": "খাতার বয়স",
+       "value": "৯ বছর"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "জোহরা বেগম, সত্তর বছর। নানা চলে যাওয়ার পর এই দোকানেই *তাঁর সংসার*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "কেউ বাকি চাইলে তিনি ‘না’ বলতে পারেন না। খাতায় নাম ওঠে, টাকা *ওঠে না*।"
+  },
+  {
+   "say": "নাতি সুমন অনার্স শেষ করে গ্রামে ফিরেছে। খাতা খুলে তার *মাথায় হাত*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sumon",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "নানি, কাল থেইকা বাকি বন্ধ। দরজায় লেইখা দিমু— *‘আজ নগদ, কাল বাকি’*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "মানুষ বিপদে আসে, ভাই। দুধের বাচ্চার মা আইলে *ফিরাইয়া দিমু*?",
+   "tone": "sad",
+   "scene": {
+    "moods": {
+     "nani": "sad"
+    },
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সুমন তবু কাগজ লাগাল। এক সপ্তাহে বিক্রি অর্ধেক। পাড়ায় কথা— *‘জোহরা খালা বদলাইয়া গেছে’*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "দোকানের দরজায়",
+     "lines": [
+      "আজ নগদ, কাল বাকি"
+     ]
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই দিকেই ক্ষতি।",
+   "card": {
+    "title": "জোহরা স্টোর",
+    "items": [
+     {
+      "t": "সবাইকে বাকি দিলে— পুঁজি শেষ",
+      "mark": "x"
+     },
+     {
+      "t": "কাউকে না দিলে— খদ্দের শেষ",
+      "mark": "x"
+     },
+     {
+      "t": "তাগাদা দিতে গেলে— নানির লজ্জা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে সুমন দেখল, নানি লুকিয়ে এক মায়ের হাতে চাল দিচ্ছেন। *খাতায় না লিখেই*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "এক রাত",
+    "props": [
+     "signboard",
+     "sign:জোহরা স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "sumon",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "ওর স্বামী অসুস্থ, ভাই। তোর কাগজ আছে, আমি *না কই কেমনে*?",
+   "tone": "whispers",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে সুমন খাতাটা নিয়ে বসল। এবার রাগ না, *নাম ধরে ধরে ভাগ*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "বাকির খাতা, নতুন করে",
+     "lines": [
+      "বিপদে আছে — ৯ জন — ৬,২০০",
+      "পারে, কিন্তু দেয় না — ৪ জন — ২৯,০০০",
+      "ধীরে দেবে — ৫ জন — ২,৮০০"
+     ]
+    }
+   }
+  },
+  {
+   "say": "আটত্রিশ হাজারের ঊনত্রিশই মাত্র চারজনের কাছে। যাদের পুকুরে মাছ, *উঠানে নতুন বাইক*।",
+   "scene": {
+    "moods": {
+     "sumon": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "নানি, যার পুকুরে মাছ, তার বাকি কেন *আপনার ঘাড়ে*?",
+   "tone": "curious",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:জোহরা স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nani",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "widget": null,
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "কুদ্দুসের কাছে সাড়ে বারো হাজার… অথচ মাইয়ার বিয়াতে *পাঁচশো মানুষ খাওয়াইলো*।",
+   "tone": "flatly",
+   "scene": {
+    "moods": {
+     "nani": "surprised"
+    },
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন দোকানে নতুন কাগজ। এবার নানির নিজের মুখের কথা।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "জোহরা স্টোর",
+     "lines": [
+      "বিপদের বাকি— খালার সাথে কথা বলেন",
+      "অন্য বাকি সর্বোচ্চ ৫০০ টাকা",
+      "শোধ মাসের ১০ তারিখে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "আর সুমন খাতার কপি নিয়ে গেল চার বাড়িতে। রাগ না, *শুধু হিসাব হাতে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "kuddus",
+   "say": "আরে, খালার বাকি! *ভুইলাই গেছিলাম*। এত টাকা হইছে?",
+   "tone": "curious",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কুদ্দুস চাচার বাড়ি",
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kuddus",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "kuddus",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "চাচা, নানি লজ্জায় কোনোদিন চায় নাই। *কপিটা রাখেন*, সময় নিয়া দিয়েন।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক মাসে চারজনের কাছ থেকে ফিরল *একুশ হাজার*। বিপদের বাকি চলল *আগের মতোই*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফেরত এল",
+       "value": "২১,০০০"
+      },
+      {
+       "label": "বিপদে থাকা ৯ জন",
+       "value": "বাকি চালু"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর দোকানে নতুন মাল। তেল, ডাল, আর বাচ্চাদের *লজেন্সের বয়াম*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard_new",
+     "sign:জোহরা স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "sumon",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "সেই মা এলেন। কাপড়ের গিঁট খুলে দিলেন *তিনশো টাকা*। স্বামী এখন কাজে যায়।"
+  },
+  {
+   "voice": "nani",
+   "say": "দিলি? আয়, বাচ্চার জন্য *একটা লজেন্স* নিয়া যা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "নানি, লজেন্সটা কোন খাতায় লিখমু?",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "sumon": "happy"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "ওইটা আরেক খাতায়। তুই খুঁজলেও *পাবি না*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "nani": "happy"
+    },
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দোকানে এখন দুইটা খাতা। একটায় হিসাব। আরেকটা থাকে *নানির মনে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শুধু দয়ায় দোকান চলে না… *শুধু হিসাবে মানুষ থাকে না।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "শুধু দয়ায় দোকান চলে না…",
+    "line2": "শুধু হিসাবে\nমানুষ থাকে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নানির দোকানে বাকি ৩৮ হাজার, নাতি বলল ‘বাকি বন্ধ’… তারপর খাতা খুলে যা পেল 📒",
+  "description": "নওগাঁর জোহরা নানি কাউকে বাকি দিতে ‘না’ বলতে পারেন না। অনার্স পাশ নাতি সুমন এসে দরজায় লিখে দিল— আজ নগদ, কাল বাকি। বিক্রি নেমে গেল অর্ধেকে। তারপর এক রাতে সুমন নানিকে লুকিয়ে চাল দিতে দেখল…",
+  "tags": [
+   "নানি নাতির গল্প",
+   "দোকানের গল্প",
+   "বাকির খাতা",
+   "নওগাঁ",
+   "গ্রামের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দয়া রইল বিপদের মানুষের জন্য, হিসাব রইল সামর্থ্যবানের জন্য। 📒\nতুমি কি সবাইকে ‘হ্যাঁ’ বলো, নাকি সবাইকে ‘না’? 👇 #নানি #গ্রামেরদোকান"
+ },
+ "thumbnail": {
+  "text": "বাকি ৩৮ হাজার",
+  "sub": "নানির দুই খাতা"
+ }
+}

@@ -1,0 +1,529 @@
+{
+ "id": "267",
+ "status": "ready",
+ "title_bn": "এক আঙুল, চল্লিশ মিনিট",
+ "theme": "work",
+ "source": {
+  "book": "The 50th Law",
+  "author": "Robert Greene & 50 Cent",
+  "author_bn": "রবার্ট গ্রিন ও ফিফটি সেন্ট",
+  "chapter": "CHAPTER 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "Respect the Process — Mastery",
+  "title_bn": "ধাপগুলোকে সম্মান করো"
+ },
+ "cast": {
+  "amma": {
+   "name": "শেফালী বেগম",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#E8C9A0",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  },
+  "nayeem": {
+   "name": "নাঈম",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#2F5D8A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "rimi": {
+   "name": "রিমি আপা",
+   "type": "young_woman",
+   "skin": "light",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "একটা নকশিকাঁথায় লাগে তিন মাস। আর নাঈম এক মাসে নিয়ে নিল *দুইশো অর্ডার*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "জামালপুর, মেলান্দহ",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.33,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "এক কাঁথা",
+       "value": "৩ মাস"
+      },
+      {
+       "label": "অর্ডার",
+       "value": "২০০",
+       "red": true
+      },
+      {
+       "label": "সময়",
+       "value": "১ মাস"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শেফালী বেগমের হাতের কাঁথা গ্রামে বিখ্যাত। ছেলে নাঈম খুলল *ফেসবুক পেজ*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "একটা ভিডিও ছড়িয়ে পড়ল। এক রাতে মেসেজ *তিনশো*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "শেফালীর নকশিকাঁথা",
+     "msgs": [
+      {
+       "who": "ঢাকা",
+       "t": "বিয়ের জন্য দুইটা লাগবে, কবে পাব?"
+      },
+      {
+       "who": "সিলেট",
+       "t": "ঈদের আগে দেওয়া যাবে?"
+      },
+      {
+       "who": "চট্টগ্রাম",
+       "t": "অগ্রিম পাঠালাম ✅"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "আম্মা, গ্রামের দশজন খালারে দেন। ফোঁড় বড় করেন। এক মাসে *দুইশো*!",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বড় ফোঁড়ের কাঁথা ধুইলে খুইলা যায়, বাবা। *এই কাম তাড়ার না*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈম শুনল না। অগ্রিম টাকা নেওয়া হয়ে গেছে। *ফেরানোর সাহস* নেই।",
+   "scene": {
+    "moods": {
+     "amma": "sad"
+    }
+   }
+  },
+  {
+   "say": "এক মাস। দশজন খালা, মোটা সুতো, বড় ফোঁড়। একশো আশিটা কাঁথা *কুরিয়ারে*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তারপর আসতে লাগল ফোন আর রিভিউ।",
+   "card": {
+    "title": "এক মাস পর",
+    "items": [
+     {
+      "t": "‘প্রথম ধোয়াতেই সুতো খুলে গেছে’",
+      "mark": "x"
+     },
+     {
+      "t": "‘ভিডিওর সাথে কোনো মিল নাই’",
+      "mark": "x"
+     },
+     {
+      "t": "টাকা ফেরত চাই— বাহাত্তরজন",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে নাঈম রিভিউ দেখে। এক তারা, এক তারা, *এক তারা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "nayeem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rimi",
+   "say": "ভাই, আম্মার জন্মদিনে দিছিলাম। প্রথম ধোয়াতেই *ফুলগুলা খুইলা গেছে*।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈম বারান্দায় গেল। আম্মা তখনো সুই-সুতো হাতে, *হারিকেনের আলোয়*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "লোডশেডিং",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "আম্মা, আমি সব নষ্ট কইরা ফেললাম। *আপনার নামটাও*।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "nayeem": "crying"
+    },
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা সুইটা নামালেন না। শুধু পাশের পিঁড়িটা দেখালেন।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বস। একটা ফোঁড় দে। *তাড়া করিস না*— যতক্ষণ সোজা না হয়।",
+   "tone": "gently",
+   "scene": {
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম ফোঁড় বাঁকা। খুলে আবার। চল্লিশ মিনিটে *এক আঙুল*।",
+   "scene": {
+    "moods": {
+     "nayeem": "thinking"
+    },
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "এক আঙুলে চল্লিশ মিনিট। এখন বোঝ, তিন মাস ক্যান লাগে। *কাঁথা সময় খায়*, বাবা।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "amma": "smile"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে নাঈম একটা সিদ্ধান্ত নিল। *কঠিন*, কিন্তু সৎ।",
+   "pause": 0.6
+  },
+  {
+   "say": "বাহাত্তরজনকে পুরো টাকা ফেরত। আর পেজে একটা *খোলা চিঠি*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "nayeem",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "শেফালীর নকশিকাঁথা— একটা স্বীকারোক্তি",
+     "lines": [
+      "তাড়াহুড়োয় আমরা ভুল করেছি",
+      "একটা আসল কাঁথা লাগে তিন মাস",
+      "এখন থেকে মাসে মাত্র আটটা"
+     ],
+     "sub": "— নাঈম"
+    }
+   }
+  },
+  {
+   "say": "ভেবেছিল, পেজ শেষ। কিন্তু চিঠিটা শেয়ার হলো *চার হাজার বার*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "nayeem": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "rimi",
+   "say": "ভাই, ফেরত টাকা পাইছি। এইবার আসলটা দেন। *চার মাস* অপেক্ষা করমু।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    },
+    "moods": {
+     "nayeem": "happy"
+    },
+    "arms": {
+     "nayeem": "call"
+    }
+   }
+  },
+  {
+   "say": "অপেক্ষার তালিকা এখন আট মাসের। সাথে একটা *ছোট কার্ড*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "মাসে কাঁথা",
+       "value": "৮টা"
+      },
+      {
+       "label": "অপেক্ষার তালিকা",
+       "value": "৮ মাস"
+      },
+      {
+       "label": "ফেরত",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কার্ডে লেখা— কে সেলাই করল, কত দিন লাগল, *কয়টা ফোঁড়*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "এই কাঁথার গল্প",
+     "lines": [
+      "সেলাই: শেফালী বেগম ও জরিনা খালা",
+      "সময়: সাতাশি দিন",
+      "ফোঁড়: এক লাখের বেশি"
+     ]
+    }
+   }
+  },
+  {
+   "say": "গ্রামের খালারা এখনো কাজ করেন। তবে এখন আম্মার পাশে বসে, *শিখে শিখে*।",
+   "scene": {
+    "set": "balcony",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nayeem",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "nayeem",
+   "say": "আম্মা, আমার প্রথম কাঁথাটা কবে শেষ হইব? *ছয় মাস* তো হইল।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "nayeem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "যেদিন আর তাড়া থাকবো না। সেইদিন দেখবি— *শেষ হইয়া গেছে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাঈমের কাঁথার কোনায় ছোট্ট একটা ফুল। বাঁকা। কিন্তু *একটা ফোঁড়ও খোলে না*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "তাড়া এক রাতে নাম ছড়ায়… *নামটা টেকে ধৈর্যের ফোঁড়ে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "তাড়া এক রাতে নাম ছড়ায়…",
+    "line2": "নামটা টেকে\nধৈর্যের ফোঁড়ে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন মাসের কাঁথা, এক মাসে দুইশো অর্ডার— বাহাত্তরজন টাকা ফেরত চাইল, তারপর… 🧵",
+  "description": "জামালপুরের শেফালী বেগমের একেকটা নকশিকাঁথায় লাগে তিন মাস। ছেলে নাঈমের ফেসবুক পেজে ভিডিও ছড়াল, আর এক মাসে সে নিয়ে নিল দুইশো অর্ডার। আম্মা বলেছিলেন, এই কাম তাড়ার না…",
+  "tags": [
+   "মা ছেলের গল্প",
+   "নকশিকাঁথা",
+   "জামালপুর",
+   "অনলাইন ব্যবসা",
+   "ধৈর্য",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "চল্লিশ মিনিটে এক আঙুল— সেদিন নাঈম বুঝল, আম্মার কাঁথা কেন তিন মাস নেয়। 🧵\nতাড়াহুড়ো করে কোন কাজটা তুমি নষ্ট করেছিলে? 👇 #নকশিকাঁথা #মা"
+ },
+ "thumbnail": {
+  "text": "এই কাম তাড়ার না",
+  "sub": "দুইশো অর্ডার, এক মাস"
+ }
+}

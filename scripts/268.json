@@ -1,0 +1,533 @@
+{
+ "id": "268",
+ "status": "ready",
+ "title_bn": "খালের দেয়াল",
+ "theme": "community",
+ "source": {
+  "book": "Propaganda",
+  "author": "Edward Bernays",
+  "author_bn": "এডওয়ার্ড বার্নেস",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Symbols speak louder than arguments",
+  "title_bn": "যুক্তির চেয়ে ছবি জোরে কথা বলে"
+ },
+ "cast": {
+  "lima": {
+   "name": "লিমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#E8A33D",
+   "color2": "#2F5D8A",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "kalam": {
+   "name": "কালাম চাচা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "belal": {
+   "name": "বেলাল ভাই",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#3E5641",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "সাতটা সাইনবোর্ড, তিনটা মিটিং, জরিমানার হুমকি। তবু খালে ময়লা পড়ে *রোজ সকালে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কিশোরগঞ্জ, শহরের পুরোনো খাল",
+    "chars": [
+     {
+      "id": "lima",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাইনবোর্ড",
+       "value": "৭টা"
+      },
+      {
+       "label": "মিটিং",
+       "value": "৩টা"
+      },
+      {
+       "label": "ময়লা ফেলা বন্ধ",
+       "value": "০ দিন",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "লিমা চারুকলায় পড়ে। ছুটিতে বাড়ি এসে দেখে, ছোটবেলার খালটা এখন *কালো পানি*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "lima": "sad"
+    }
+   }
+  },
+  {
+   "say": "খালের পাড়ে কালাম চাচার চায়ের দোকান। চল্লিশ বছর *একই জায়গায়*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "lima",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "সাইনবোর্ড দিয়া কী হইব, মা? মানুষ পড়ে, তারপর *বস্তাটা ফালায়*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে বেলাল ভাই দোকানের ময়লার বস্তা ছুড়লেন খালে। লিমা দৌড়ে গেল।",
+   "scene": {
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "lima",
+      "x": 0.68,
+      "pose": "walk",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "ভাই, এইটা তো খাল! সাইনবোর্ডেই লেখা, *জরিমানা*!",
+   "tone": "frustrated",
+   "scene": {
+    "arms": {
+     "lima": "point"
+    },
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "সবাই ফালায়, আমার এক বস্তায় কী হইব? আর ফালামু কই, *তুমিই কও*?",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "belal": "angry"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক সপ্তাহ লিমা যুক্তি দিল। কাজ হলো না।",
+   "card": {
+    "title": "যুক্তি দিয়ে চেষ্টা",
+    "items": [
+     {
+      "t": "পরিবেশের লিফলেট— চায়ের কাপের নিচে",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুক পোস্ট— এগারোটা লাইক",
+      "mark": "x"
+     },
+     {
+      "t": "পৌরসভায় দরখাস্ত— ‘দেখতেছি’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে লিমা পাড়ে একা দাঁড়িয়ে রইল। কালো পানিতে ভাসছে *প্লাস্টিক*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "সেই রাত",
+    "chars": [
+     {
+      "id": "lima",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "এক সন্ধ্যায় কালাম চাচা বের করলেন একটা পুরোনো ছবি। *উনিশশো পঁচাশি*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "চায়ের দোকান, সন্ধ্যা",
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.33,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "lima",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "এইখানে নৌকাবাইচ হইত। পুরা শহর পাড়ে দাঁড়াইত। এই যে, *আমি আর বেলালের আব্বা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "লিমা ছবিটার দিকে অনেকক্ষণ তাকিয়ে রইল। তারপর গেল *রং কিনতে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "তিন রাত জেগে খালের পাড়ের দেয়ালে সে আঁকল সেই ছবি, *বড় করে*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "তিন রাত",
+    "chars": [
+     {
+      "id": "lima",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "লিমার দেয়াল",
+     "items": [
+      {
+       "t": "নীল পানি, পাল তোলা নৌকা",
+       "mark": "check"
+      },
+      {
+       "t": "পাড়ে মানুষ, হাতে নিশান",
+       "mark": "check"
+      },
+      {
+       "t": "নিচে একটা লাইন",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নিচে শুধু একটা লাইন। কোনো নিষেধ নেই, *কোনো জরিমানা নেই*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "দেয়ালের নিচে",
+     "lines": [
+      "আমাদের খাল, ১৯৮৫"
+     ],
+     "sub": "আবার এমন হবে?"
+    }
+   }
+  },
+  {
+   "say": "সকালে দেয়ালের সামনে ভিড়। বুড়োরা আঙুল দিয়ে খুঁজছেন *নিজেদের*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "kalam",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "lima",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "belal",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "wide",
+    "widget": null
+   }
+  },
+  {
+   "say": "বেলাল ভাই এলেন বস্তা হাতে। থেমে গেলেন *একটা নৌকার সামনে*।",
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "এই নৌকা… এইটা তো আব্বার! *সবুজ পাল*। আমি এর ভিতরে বইসা থাকতাম।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "belal": "sad"
+    },
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বস্তাটা হাত থেকে নামল। খালে না, *রাস্তার পাশে*।",
+   "pause": 0.9,
+   "scene": {
+    "arms": {
+     "belal": "down"
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "চাচা, ময়লার একটা ভ্যান ঠিক করতে কত লাগে? *আমি আগে* দিমু।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "মাসে ঘরপ্রতি পঞ্চাশ টাকা। কিন্তু সবাই *দিব তো*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলেই দেয়ালের সামনে খাতা খোলা। চব্বিশটা দোকান *সই করল*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সই করা দোকান",
+       "value": "২৪"
+      },
+      {
+       "label": "মাসে ঘরপ্রতি",
+       "value": "৫০ টাকা"
+      },
+      {
+       "label": "ময়লার ভ্যান",
+       "value": "১টা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "প্রথম শুক্রবার, খাল পরিষ্কারের দিন। বেলাল ভাই নেমেছেন *হাঁটুপানিতে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "প্রথম শুক্রবার",
+    "chars": [
+     {
+      "id": "belal",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "lima",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "kalam",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "ছয় মাস পর পানি এখনো পুরো নীল না। কিন্তু খালে আর *বস্তা পড়ে না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "kalam",
+   "say": "মা, সামনের বর্ষায় ছোট একটা নৌকাবাইচ দিমু। *দেয়ালের ছবিটা* আবার সত্যি হইব।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "kalam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দেয়ালের প্রশ্নটার পাশে কেউ একজন চক দিয়ে লিখে গেছে— *‘হবে’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "নিষেধ মানুষ পড়ে, ভুলে যায়… *একটা ছবি মনে গেঁথে থাকে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "নিষেধ মানুষ পড়ে, ভুলে যায়…",
+    "line2": "একটা ছবি\nমনে গেঁথে থাকে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সাতটা সাইনবোর্ডেও থামেনি খালে ময়লা ফেলা— এক মেয়ের আঁকা দেয়াল যা পারল 🎨",
+  "description": "কিশোরগঞ্জের পুরোনো খালে রোজ সকালে ময়লার বস্তা পড়ে, সাইনবোর্ড আর জরিমানার হুমকিতে কাজ হয় না। চারুকলার ছাত্রী লিমা যুক্তি দিয়ে হেরে গেল। তারপর চায়ের দোকানের কালাম চাচা বের করলেন উনিশশো পঁচাশির একটা ছবি…",
+  "tags": [
+   "পাড়ার গল্প",
+   "খাল",
+   "কিশোরগঞ্জ",
+   "পরিবেশ",
+   "দেয়ালচিত্র",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নিষেধের সাইনবোর্ড কেউ মনে রাখে না, কিন্তু নিজের ছোটবেলার নৌকা সবাই চেনে। 🎨\nতোমার এলাকার কোন জায়গাটা ছোটবেলায় অন্যরকম ছিল? 👇 #পাড়া #পরিবেশ"
+ },
+ "thumbnail": {
+  "text": "আবার এমন হবে?",
+  "sub": "খালের দেয়াল"
+ }
+}

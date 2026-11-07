@@ -1,0 +1,457 @@
+{
+ "id": "288",
+ "status": "ready",
+ "title_bn": "আজকেই শেষ দিন",
+ "theme": "money",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 6",
+  "chapter_bn": "৬ নম্বর অধ্যায়",
+  "title": "Scarcity",
+  "title_bn": "দুর্লভতার ফাঁদ"
+ },
+ "cast": {
+  "tania": {
+   "name": "তানিয়া",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F6B7A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "sumon": {
+   "name": "সুমন",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#8A6B4A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "rakib": {
+   "name": "রাকিব সাহেব",
+   "type": "young_man",
+   "skin": "light",
+   "outfit": "shirt",
+   "color": "#2F3E5C",
+   "hair": "side",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "এগারো বছরের সঞ্চয় আর আম্মার গয়না— *বাইশ লাখ*। সেলসম্যান বলছে— *আজকেই শেষ দিন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, বছিলা— প্রজেক্ট অফিস",
+    "props": [
+     "signboard",
+     "sign:ফ্ল্যাট বুকিং অফিস"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "tania",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "rakib",
+      "x": 0.84,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সঞ্চয়",
+       "value": "১১ বছর"
+      },
+      {
+       "label": "বুকিং",
+       "value": "২২ লাখ"
+      },
+      {
+       "label": "ছাড়",
+       "value": "শুধু আজ",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সুমন আর তানিয়া। বারো বছর ভাড়া বাসায়। বাড়িওয়ালার নোটিশে *তিনবার বাসা বদল*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ঠান্ডা এসি, দেয়ালে ঝকঝকে ছবি, হাসিমুখে *রাকিব সাহেব*।"
+  },
+  {
+   "voice": "rakib",
+   "say": "ভাই, চৌদ্দটার মধ্যে বারোটা বুকড। আজ সাইন করলে *তিন লাখ ছাড়*, কাল থেকে নাই।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "তানিয়া, শুনলা? কাল আসলে হয়তো *আর পাবো না*।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সুমনের হাতে চেক বই। কলম খোলা। এগারো বছরের স্বপ্ন *এক সইয়ের দূরে*।",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাকিব সাহেবের ফোন বাজল। শোনা গেল, আরেক পার্টি নাকি *রওনা দিয়েছে*।",
+   "scene": {
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.3
+    },
+    "arms": {
+     "rakib": "call"
+    },
+    "holds": {
+     "rakib": "phone"
+    }
+   }
+  },
+  {
+   "say": "স্কুলশিক্ষক তানিয়া জানেন, তাড়াহুড়ার পরীক্ষায় *ভুল বেশি হয়*।",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "রাকিব ভাই, ছাড়টা যদি সত্যি হয়, শুক্রবার এসে *কত পাবো*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rakib",
+   "say": "আপা, শুক্রবার… মানে… *গ্যারান্টি দিতে পারি না*।",
+   "tone": "flatly",
+   "scene": {
+    "arms": {
+     "rakib": "down"
+    },
+    "holds": {
+     "rakib": "none"
+    },
+    "cam": {
+     "focus": "rakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "তাহলে শুক্রবারই আসব। না পেলে বুঝব, ফ্ল্যাটটা *আমাদের ছিল না*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বাসায় ফিরে সুমন কথা বললেন না। রাতে ভাত রেখে উঠে গেলেন। *অভিমান*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "cross"
+     },
+     {
+      "id": "tania",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পরের তিন দিন তানিয়া চুপচাপ খোঁজ নিলেন। *ফোন, অফিস, পরিচিত মানুষ*।",
+   "card": {
+    "title": "তানিয়ার তিন দিনের খোঁজ",
+    "items": [
+     {
+      "t": "রাজউক অনুমোদনের কাগজ— দেখাতে পারেনি",
+      "mark": "x"
+     },
+     {
+      "t": "জমির মালিকের সাথে চুক্তি— ঝুলে আছে",
+      "mark": "x"
+     },
+     {
+      "t": "আগের প্রজেক্ট— পাঁচ বছরেও অর্ধেক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "বৃহস্পতিবার রাতে তিনি সুমনকে নিয়ে গেলেন প্রজেক্টের জমিতে। *শুধু দেখতে*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "বৃহস্পতিবার রাত, প্রজেক্টের জমি",
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "tania",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আটতলার কংক্রিটের কাঠামো, কাজ বন্ধ। নিচে শুধু গার্ডের ঘরে *একটা বাতি*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "গার্ড চা খেতে খেতে হাসল। বলল, আট মাস ধরে *একই কথা শুনছে*।"
+  },
+  {
+   "say": "সেলসের লোকেরা প্রতিদিন বলে— *আজকেই শেষ দিন*।"
+  },
+  {
+   "say": "সুমন চুপচাপ বুকপকেটে হাত দিলেন— *চেক বইটা*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.5
+    },
+    "moods": {
+     "sumon": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "এগারো বছরের টাকা… একটা *ফোনকলের ভয়ে* দিয়া দিতেছিলাম।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "sumon": "sad"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "স্বপ্নটা ভুল ছিল না। শুধু *দোকানটা* ভুল।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "tania": "smile"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সুমন তানিয়ার হাত ধরলেন। তিন দিনের অভিমান *গলে গেল*।",
+   "scene": {
+    "arms": {
+     "sumon": "hug",
+     "tania": "hug"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর। টাকা ব্যাংকেই, একটু একটু *বাড়ছে*।",
+   "scene": {
+    "set": "balcony",
+    "light": "evening",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "plants",
+     "tea"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "tania",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক বিকেলে সুমনের ফোনে একটা মেসেজ। *রাকিব সাহেবের*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "রাকিব (প্রজেক্ট অফিস)",
+     "msgs": [
+      {
+       "who": "রাকিব",
+       "t": "ভাই, আজকেই শেষ দিন! সাইন করলে ৩ লাখ ছাড়!"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "তানিয়া, দেখো! ছয় মাস পরেও *আজকেই শেষ দিন*!",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "sumon": "happy"
+    },
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তানিয়া হাসতে হাসতে চা ঢাললেন। ভাড়া বাসার টবে তখন *নতুন ফুল*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "moods": {
+     "tania": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘আজকেই শেষ’ শুনলে মন দৌড়ায়… *সত্যিকারের সুযোগ অপেক্ষা করে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘আজকেই শেষ’ শুনলে মন দৌড়ায়…",
+    "line2": "সত্যিকারের সুযোগ\nঅপেক্ষা করে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১১ বছরের সঞ্চয়ে ফ্ল্যাট বুকিং, সেলসম্যান বলল ‘আজকেই শেষ’— স্ত্রী থামালেন 🏢",
+  "description": "বছিলার এক প্রজেক্ট অফিসে সুমনের হাতে চেক বই, এগারো বছরের সঞ্চয় আর আম্মার গয়না মিলে বাইশ লাখ। সেলসম্যান বলছে, আজ সাইন করলে তিন লাখ ছাড়। তখন স্ত্রী তানিয়া একটা প্রশ্ন করলেন…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "ফ্ল্যাট কেনা",
+   "সঞ্চয়",
+   "ঢাকা",
+   "প্রতারণা থেকে সাবধান",
+   "টাকার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘আজকেই শেষ’— ছয় মাস পরেও একই মেসেজ এল। তানিয়ার এক প্রশ্নে বাঁচল এগারো বছরের সঞ্চয়। 🏢\nতাড়াহুড়ায় কেনা কোন জিনিস নিয়ে তুমি পরে আফসোস করেছ? 👇 #সংসার #সঞ্চয়"
+ },
+ "thumbnail": {
+  "text": "আজকেই শেষ দিন?",
+  "sub": "এগারো বছরের সঞ্চয়"
+ }
+}

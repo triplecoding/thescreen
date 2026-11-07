@@ -1,0 +1,555 @@
+{
+ "id": "302",
+ "status": "ready",
+ "title_bn": "চৈত্রের বিশ তারিখ",
+ "theme": "struggle",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 6",
+  "chapter_bn": "৬ নম্বর অধ্যায়",
+  "title": "Victorious warriors win first, then go to war (preparation)",
+  "title_bn": "আগে প্রস্তুতি, পরে লড়াই"
+ },
+ "cast": {
+  "rokeya": {
+   "name": "রোকেয়া",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "shoshur": {
+   "name": "হামিদ মিয়া",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#E8E2D0",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "cap": true,
+   "voice": "old_man"
+  },
+  "hashem": {
+   "name": "হাশেম ভাই",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#B5523B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিন বছরে দুইবার পাকা ধান *ঢলের পানির নিচে*। এ বছর আবার পাঁচ বিঘা।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সুনামগঞ্জ, তাহিরপুর— হাওর",
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "জমি",
+       "value": "৫ বিঘা"
+      },
+      {
+       "label": "৩ বছরে ডুবেছে",
+       "value": "২ বার",
+       "red": true
+      },
+      {
+       "label": "ঋণ",
+       "value": "৬০,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রোকেয়ার স্বামী মালয়েশিয়ায়। হাওরের জমি দেখেন রোকেয়া আর *শ্বশুর হামিদ মিয়া*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "shoshur",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রতি বছর একই গল্প। বৈশাখে ধান পাকে, তার আগেই নামে *পাহাড়ি ঢল*।"
+  },
+  {
+   "say": "এবার রোকেয়া শুরু করল পৌষ মাসেই। ঝগড়া না, *প্রস্তুতি*।",
+   "scene": {
+    "widget": {
+     "kind": "checklist",
+     "title": "রোকেয়ার পৌষ মাস",
+     "items": [
+      {
+       "t": "আগাম জাতের বীজ",
+       "mark": "check"
+      },
+      {
+       "t": "চারা পনেরো দিন আগে",
+       "mark": "check"
+      },
+      {
+       "t": "হারভেস্টার আগাম বুকিং",
+       "mark": "check"
+      },
+      {
+       "t": "স্কুলমাঠে শুকানোর জায়গা",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "shoshur",
+   "say": "বাপ-দাদা কোনোদিন চৈত্রে ধান কাটে নাই। *পাকার আগে কাটবা*? ধান কম হইবো।",
+   "tone": "annoyed",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "shoshur": "angry"
+    },
+    "cam": {
+     "focus": "shoshur",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "আব্বা, কম হইলেও ঘরে উঠবো। *ঢলে গেলে* তো কিছুই থাকে না।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হারভেস্টারের মালিক হাশেম ভাই অবাক। চৈত্রে কেউ *মেশিন বুক করে না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "হাশেমের মেশিনঘর",
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "ভাবি, চৈত্রের বিশ তারিখ? সবাই তো বৈশাখে ডাকে। ঠিক আছে, *আগাম টাকা দেন*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রোকেয়া কানের দুল বন্ধক রাখল। *অগ্রিম তিন হাজার*।",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এরপর গ্রামে যা শুনতে হলো।",
+   "card": {
+    "title": "যা শুনতে হলো",
+    "items": [
+     {
+      "t": "‘মাইয়া মানুষ হাওর বোঝে না’",
+      "mark": "x"
+     },
+     {
+      "t": "‘কাঁচা ধান কাটবো!’",
+      "mark": "x"
+     },
+     {
+      "t": "‘বিদেশের টাকা উড়াইতেছে’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "চৈত্রের এক রাতে শ্বশুর ভাত খেলেন না। *একটা কথাও বললেন না*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "চৈত্রের এক রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "shoshur",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রোকেয়ার ফোনে আবহাওয়ার খবর।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "আবহাওয়া বার্তা",
+     "msgs": [
+      {
+       "who": "আবহাওয়া অফিস",
+       "t": "উজানে ভারী বৃষ্টি, হাওরে আগাম ঢলের আশঙ্কা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "আব্বা, কাল ভোরে মেশিন আসবো। আপনি *আইলে থাকবেন*?",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শ্বশুর উত্তর দিলেন না। শুধু বাতিটা *নিভিয়ে দিলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "shoshur",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "চৈত্রের বিশ তারিখ ভোর। মেশিন নামল রোকেয়ার জমিতে। ধান *আশি ভাগ পাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "চৈত্রের ২০ তারিখ",
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দুই দিনে পাঁচ বিঘা কাটা শেষ। স্কুলমাঠে ধান শুকায়, *ত্রিপলের নিচে*।"
+  },
+  {
+   "say": "তৃতীয় রাতে আকাশ ভেঙে বৃষ্টি। চতুর্থ সকালে *ঢল*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "তৃতীয় রাত",
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "হাওর ভরে গেল পানিতে। আশপাশের জমির পাকা-আধাপাকা ধান *ডুবছে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "চতুর্থ সকাল",
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": null
+   }
+  },
+  {
+   "voice": "rokeya",
+   "say": "হাশেম ভাই, আমার একদিনের পালা বাকি। *পাশের জমিগুলা কাটেন*, ভাড়া তো দেওয়াই।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rokeya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "ভাবি, ঢলের মধ্যে? হাঁটুপানিতে যতটুক পারি… *চলেন*!",
+   "tone": "excited",
+   "scene": {
+    "moods": {
+     "hashem": "happy"
+    },
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন হাঁটুপানিতে কাটা হলো আরও চার পরিবারের ধান। অর্ধেক, তবু *ঘরে উঠল*।"
+  },
+  {
+   "say": "সন্ধ্যায় স্কুলমাঠে ধানের স্তূপের পাশে দাঁড়িয়ে ছিলেন হামিদ মিয়া। *অনেকক্ষণ*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "স্কুলমাঠ",
+    "chars": [
+     {
+      "id": "shoshur",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rokeya",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shoshur",
+   "say": "বউ, সত্তর বছর ধান কাটছি… ঢলের *আগে* কোনোদিন ভাবি নাই।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "shoshur": "thinking"
+    },
+    "cam": {
+     "focus": "shoshur",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shoshur",
+   "say": "সামনের বছর বীজতলা *তুমি করবা*। আমি পাশে বসমু।",
+   "tone": "proudly",
+   "scene": {
+    "moods": {
+     "shoshur": "smile"
+    },
+    "cam": {
+     "focus": "shoshur",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে মালয়েশিয়া থেকে ভিডিও কল। স্বামী দেখল উঠানে ধানের স্তূপ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rokeya",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "shoshur",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ধান ঘরে",
+       "value": "৮২ মণ"
+      },
+      {
+       "label": "পাশের ৪ পরিবার",
+       "value": "অর্ধেক বাঁচল"
+      },
+      {
+       "label": "কানের দুল",
+       "value": "কাল ছাড়ানো"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আর ফোনের পেছনে বাবা, খাতায় লিখছেন *আগামী পৌষের হিসাব*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "লড়াইটা চৈত্রে দেখা যায়… *জেতা হয় পৌষ মাসেই।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "লড়াইটা চৈত্রে দেখা যায়…",
+    "line2": "জেতা হয়\nপৌষ মাসেই।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিন বছরে দুইবার ধান ডুবল ঢলে… এবার পৌষেই রোকেয়া যা করল, হাওর অবাক 🌾",
+  "description": "সুনামগঞ্জের হাওরে প্রতি বছর পাকা ধানের আগে নামে ঢল। স্বামী মালয়েশিয়ায়, শ্বশুরকে নিয়ে জমি দেখেন রোকেয়া। এবার তিনি পৌষ মাস থেকেই প্রস্তুতি শুরু করলেন, কানের দুল বন্ধক রেখে। গ্রামের সবাই হাসল…",
+  "tags": [
+   "হাওরের গল্প",
+   "কৃষকের গল্প",
+   "সুনামগঞ্জ",
+   "নারীর সংগ্রাম",
+   "শ্বশুর বউমা",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "ঢল এল সবার জমিতে— কিন্তু যে আগে তৈরি ছিল, সে অন্যদেরও বাঁচাল। 🌾\nকোন বিপদের প্রস্তুতি তুমি আজই শুরু করতে পারো? 👇 #হাওর #কৃষক"
+ },
+ "thumbnail": {
+  "text": "চৈত্রের বিশ তারিখ",
+  "sub": "ঢলের আগে ধান"
+ }
+}

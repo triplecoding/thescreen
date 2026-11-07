@@ -1,0 +1,522 @@
+{
+ "id": "297",
+ "status": "ready",
+ "title_bn": "চলে যাওয়া না, ফিরে আসা",
+ "theme": "parents",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "Framing",
+  "title_bn": "একই কথা, অন্য ফ্রেম"
+ },
+ "cast": {
+  "ma": {
+   "name": "শেফালী",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "teep": true,
+   "voice": "woman"
+  },
+  "rupa": {
+   "name": "রূপা",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F1ECE2",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "dulal": {
+   "name": "দুলাল কাকা",
+   "type": "old_man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#F1ECE2",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নার্সিংয়ে ভর্তির সুযোগ, হাতে সাত দিন। মায়ের উত্তর *একটাই— না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মৌলভীবাজার, চা-বাগান",
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ভর্তির শেষ দিন",
+       "value": "৭ দিন"
+      },
+      {
+       "label": "কোর্স",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "মায়ের উত্তর",
+       "value": "না",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শেফালী পঁচিশ বছর ধরে চা-পাতা তোলেন। মেয়ে রূপা এবার এইচএসসি পাশ, *লাইনের প্রথম*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "সিলেটের সরকারি নার্সিং কলেজে রূপার নাম এসেছে। *বৃত্তিও আছে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "ma",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "মা, আমি তিন বছর সিলেটে থাকব। বাগান ছেড়ে, *একা*!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "বাগান ছাইড়া? লোকে কইবো মেয়ে পালাইছে। আর তুই গেলে *ঘর দেখবো কে*?",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "ma": "angry"
+    },
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রূপা যত বোঝায়, মা তত শোনেন একটাই শব্দ— *‘ছেড়ে’*।",
+   "scene": {
+    "cam": "static"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সাত দিনে রূপার চেষ্টা।",
+   "card": {
+    "title": "রূপার চেষ্টা",
+    "items": [
+     {
+      "t": "শহরের চাকরির বেতন শোনাল",
+      "mark": "x"
+     },
+     {
+      "t": "স্কুলের স্যারকে দিয়ে বলাল",
+      "mark": "x"
+     },
+     {
+      "t": "রাগ করে ভাত খেল না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পাঁচ নম্বর রাত। ভর্তির ফর্ম টেবিলে, *সই ছাড়া*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পাঁচ নম্বর রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সেই রাতেই পাশের লাইনের এক বউয়ের প্রসবব্যথা উঠল। রাত তখন *দুইটা*।"
+  },
+  {
+   "say": "বাগানের ডিসপেনসারিতে ডাক্তার নেই। আছেন শুধু বুড়ো কম্পাউন্ডার *দুলাল কাকা*।",
+   "scene": {
+    "set": "hospital",
+    "light": "night",
+    "chip": "বাগানের ডিসপেনসারি, রাত ২টা",
+    "chars": [
+     {
+      "id": "dulal",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "ma",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "face"
+     },
+     {
+      "id": "rupa",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "dulal",
+   "say": "পঁয়ত্রিশ বছর এইখানে। একটা নার্স থাকলে *শহরে দৌড়াইতে হইত না*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "dulal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অ্যাম্বুলেন্স এল চল্লিশ মিনিট পর। শহরের হাসপাতালে মা আর শিশু, *দুইজনেই ভালো*।",
+   "pause": 0.6
+  },
+  {
+   "say": "ফেরার পথে কুয়াশায় চুপচাপ হাঁটছিল মা-মেয়ে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ফেরার পথ",
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "ma",
+      "x": 0.62,
+      "pose": "walk",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "মা, আমি বাগান ছাড়তে যাচ্ছি না। *ফিরে আসতে* যাচ্ছি।",
+   "tone": "softly",
+   "scene": {
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "ma",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "তিন বছর পর এই ডিসপেনসারিতে বাগানের *প্রথম নার্স*— তোমার মেয়ে।",
+   "tone": "hopeful",
+   "scene": {
+    "moods": {
+     "rupa": "smile"
+    },
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শেফালী থেমে দাঁড়ালেন। একই তিন বছর। কিন্তু এবার শুনলেন *অন্য একটা শব্দ*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "ma": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "দুলাল কাকা কইল, একটা নার্স থাকলে… *তুই হবি সেই নার্স*?",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "ma": "crying"
+    },
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে ফর্মে অভিভাবকের ঘরে পড়ল *একটা টিপসই*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ma",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold"
+     },
+     {
+      "id": "rupa",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "ভর্তি ফরম",
+     "lines": [
+      "শিক্ষার্থী: রূপা রানী",
+      "অভিভাবক: শেফালী রানী"
+     ],
+     "sub": "টিপসই"
+    }
+   }
+  },
+  {
+   "say": "ব্যাগ গোছালেন মা। জামার ভাঁজে চা-পাতার *একটা ছোট্ট পুঁটলি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "শহরের চা মুখে দিবি না। *বাগানের চা* খাবি, তাইলে বাড়ি মনে থাকবো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন বছর পর। ডিসপেনসারির দরজায় নতুন নাম— *রূপা রানী, নার্স*।",
+   "scene": {
+    "set": "hospital",
+    "light": "day",
+    "chip": "তিন বছর পর",
+    "chars": [
+     {
+      "id": "rupa",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "dulal",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "ma",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "প্রথম সকালে লাইনে সবার আগে শেফালী, হাতে *চায়ের ফ্লাস্ক*।",
+   "scene": {
+    "fx": null
+   }
+  },
+  {
+   "voice": "dulal",
+   "say": "এইবার আমি অবসর নিতে পারি। ডিসপেনসারি এখন *বাগানের মেয়ের* হাতে।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "dulal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "মা, তুমি লাইনে দাঁড়াইছো কেন? তুমি তো *রোগী না*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "rupa": "happy"
+    },
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ma",
+   "say": "সবাইরে দেখাইতে আইছি— আমার মেয়ে *পালায় নাই*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "ma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বাগানের ওপর সকালের রোদ। মায়ের চায়ের কাপ *মেয়ের দিকে বাড়ানো*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘চলে যাওয়া’ শুনলে মা কাঁদে… *‘ফিরে আসা’ শুনলে মা হাসে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘চলে যাওয়া’ শুনলে মা কাঁদে…",
+    "line2": "‘ফিরে আসা’ শুনলে\nমা হাসে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চা-বাগানের মেয়ে নার্স হবে, মা বললেন ‘না’… এক রাতের পর বদলাল একটাই শব্দ 🍃",
+  "description": "মৌলভীবাজারের চা-বাগানে পঁচিশ বছর পাতা তোলেন শেফালী। মেয়ে রূপা নার্সিংয়ে সুযোগ পেল, কিন্তু মা শুনলেন শুধু ‘বাগান ছেড়ে চলে যাওয়া’। তারপর এক রাত দুইটায় বাগানের ডিসপেনসারিতে…",
+  "tags": [
+   "মা মেয়ের গল্প",
+   "চা বাগানের গল্প",
+   "মৌলভীবাজার",
+   "নার্সিং",
+   "স্বপ্নের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "একই তিন বছর— একবার শোনাল ‘চলে যাওয়া’, আরেকবার ‘ফিরে আসা’। 🍃\nতোমার স্বপ্নের কথা প্রথম কাকে বলেছিলে, আর সে কী বলেছিল? 👇 #মা #চাবাগান"
+ },
+ "thumbnail": {
+  "text": "পালায় নাই",
+  "sub": "চা-বাগানের প্রথম নার্স"
+ }
+}

@@ -1,0 +1,505 @@
+{
+ "id": "295",
+ "status": "ready",
+ "title_bn": "আসল মুখ",
+ "theme": "money",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Social Proof",
+  "title_bn": "আসল মানুষের সাক্ষ্য"
+ },
+ "cast": {
+  "rahima": {
+   "name": "রহিমা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#B5523B",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "jalal": {
+   "name": "জালাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#4F6D7A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "nasrin": {
+   "name": "নাসরিন",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#E8A33D",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিনশো বারো জন ফলোয়ার। দুই সপ্তাহে অর্ডার— *মাত্র তিনটা*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ময়মনসিংহ, গৌরীপুর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rahima",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফলোয়ার",
+       "value": "৩১২"
+      },
+      {
+       "label": "অর্ডার, ২ সপ্তাহে",
+       "value": "৩",
+       "red": true
+      },
+      {
+       "label": "পাশের পেজ",
+       "value": "৫২,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রহিমার হাতের ভাপা আর চিতই গ্রামে বিখ্যাত। পেজের নাম— *‘রহিমার পিঠাঘর’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "স্বামী জালাল গাজীপুরের কারখানার চাকরি হারিয়ে ফিরেছে। পেজ চালায় সে, *ফোনে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "rahima",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "jalal",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ]
+   }
+  },
+  {
+   "say": "পাশেই আরেক পেজ। বাহান্ন হাজার ফলোয়ার। প্রতি পোস্টে শত শত কমেন্ট— *‘অসাধারণ’*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "পিঠা বাজার",
+     "msgs": [
+      {
+       "who": "আইডি ১",
+       "t": "অসাধারণ"
+      },
+      {
+       "who": "আইডি ২",
+       "t": "অসাধারণ"
+      },
+      {
+       "who": "আইডি ৩",
+       "t": "অসাধারণ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "দুই হাজার টাকায় দশ হাজার ফলোয়ার দেয়, রিভিউও লেইখা দেয়। *সবাই তো নেয়*।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "যে আমার পিঠা খায় নাই, সে কইবো *‘মজা’*? এইটা তো মিছা কথা।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "rahima": "angry"
+    },
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এর মধ্যে জালাল সব চেষ্টাই করল।",
+   "card": {
+    "title": "জালালের চেষ্টা",
+    "items": [
+     {
+      "t": "পাঁচশো টাকার বুস্ট— বিদেশি লাইক",
+      "mark": "x"
+     },
+     {
+      "t": "দাম কমাল— লোকসান",
+      "mark": "x"
+     },
+     {
+      "t": "দিনে দশটা পোস্ট— সাড়া নেই",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত বারোটা। জালালের ফোনে সেই লোকের নম্বর। *টাকা পাঠালেই হয়*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত ১২টা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "12:00",
+     "label": "রাত ১২টা"
+    }
+   }
+  },
+  {
+   "say": "পাশে রহিমার হাতে ফোস্কা। আজকের বানানো পিঠা *ঠান্ডা হয়ে গেছে*।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "rahima",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "যে তিনজন নিছিল, তারা কী কইছিল? *তাদের কথা কেউ শুনছে*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "রহিমা… আমি তো খালি *লাইক গুনছিলাম*।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "jalal": "thinking"
+    },
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিনজনের কারও কাছে সে কোনোদিন *কিছু জিজ্ঞেস করেনি*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে প্রথম ক্রেতাকে ফোন। উত্তরার নাসরিন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "ভাই, আমার আম্মা খাইয়া কাঁদছে। কইছে, *নানির হাতের স্বাদ*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "আপা, এই কথাটা দশ সেকেন্ডের একটা ভিডিওতে বলবেন? *নিজের মুখে*?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিকেলে এল ভিডিও। নাসরিনের আম্মা, হাতে চিতই, *চোখ ভেজা*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "রহিমার পিঠাঘর",
+     "msgs": [
+      {
+       "who": "নাসরিন, উত্তরা",
+       "t": "আম্মা বলল, নানির হাতের স্বাদ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাকি দুইজনও পাঠাল। এক স্কুলশিক্ষক, আর এক *দারোয়ান ভাই*।"
+  },
+  {
+   "say": "দারোয়ান ভাই বললেন, ডিউটির রাতে এই পিঠা খেয়ে *মায়ের কথা মনে পড়েছে*।"
+  },
+  {
+   "say": "জালাল পেজে লিখল সত্যি কথা।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "রহিমার পিঠাঘর",
+     "lines": [
+      "আমাদের ফলোয়ার কম।",
+      "পিঠা বানান রহিমা নিজে।",
+      "যারা খেয়েছেন— তাদের মুখ নিচে।"
+     ]
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর অচেনা একজনের মেসেজ। জালাল *দুইবার পড়ল*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "ইনবক্স",
+     "msgs": [
+      {
+       "who": "শিউলি, মিরপুর",
+       "t": "ভিডিওর মানুষগুলা আসল, তাই আপনাদের থেকেই নিলাম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ডিসেম্বরের শেষে অর্ডার তিন থেকে *একচল্লিশ*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অর্ডার",
+       "value": "৪১"
+      },
+      {
+       "label": "ভিডিও রিভিউ",
+       "value": "২৩"
+      },
+      {
+       "label": "কেনা ফলোয়ার",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এর অর্ধেকই অচেনা মানুষ, এসেছে *অন্যের মুখ দেখে*।"
+  },
+  {
+   "say": "রান্নাঘরে এখন দুইটা চুলা। জালাল চালের গুঁড়া মাপে, রহিমা দেয় *খেজুরের গুড়*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "evening",
+    "chip": "ডিসেম্বরের শেষ",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "jalal",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rahima",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "jalal",
+   "say": "দশ হাজার ফলোয়ার কিনলে আজ এত কাজ থাকত? *মনে হয় না*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "jalal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahima",
+   "say": "দশ হাজার দিয়া কী করমু? একচল্লিশ জন যে আবার খুঁজবো— *ওইটাই আসল*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "rahima": "happy"
+    },
+    "cam": {
+     "focus": "rahima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাতে আরেকটা ভিডিও। এক বৃদ্ধ, প্রথম কামড়ে চোখ বন্ধ করে বললেন— *‘আহা’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ভিড় কেনা যায় টাকায়… *ভরসা আসে আসল মুখে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ভিড় কেনা যায় টাকায়…",
+    "line2": "ভরসা আসে\nআসল মুখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৫২ হাজার ফলোয়ারের পাশে ৩১২— রহিমার পিঠার পেজ বাঁচাল তিনটা আসল মুখ 🍘",
+  "description": "ময়মনসিংহের রহিমার ভাপা-চিতই গ্রামে বিখ্যাত, কিন্তু অনলাইন পেজে অর্ডার নেই। চাকরি হারানো স্বামী জালাল দুই হাজার টাকায় দশ হাজার ফলোয়ার কিনতে যাচ্ছিল। তখন রহিমা একটা প্রশ্ন করল…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "অনলাইন ব্যবসা",
+   "পিঠার গল্প",
+   "শীতের পিঠা",
+   "ময়মনসিংহ",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "দশ হাজার কেনা ফলোয়ার যা পারেনি, তিনজন আসল মানুষের দশ সেকেন্ড তা পেরেছে। 🍘\nকারও কথায় ভরসা করে তুমি শেষ কী কিনেছিলে? 👇 #অনলাইনব্যবসা #পিঠা"
+ },
+ "thumbnail": {
+  "text": "লাইক না, মুখ",
+  "sub": "৩১২ ফলোয়ারের পেজ"
+ }
+}

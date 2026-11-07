@@ -1,0 +1,554 @@
+{
+ "id": "304",
+ "status": "ready",
+ "title_bn": "শিশির ধরার সকাল",
+ "theme": "family",
+ "source": {
+  "book": "The Art of Seduction",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "The Natural — the power of genuine childlike openness",
+  "title_bn": "শিশুর সরলতার শক্তি"
+ },
+ "cast": {
+  "nana": {
+   "name": "হারুন নানা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#7A8B99",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "ayan": {
+   "name": "আয়ান",
+   "type": "child_boy",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_boy"
+  },
+  "najma": {
+   "name": "নাজমা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "দুই বছর ধরে নানা দিনে কথা বলেন *দশটা শব্দ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "দিনাজপুর, শীতের সকাল",
+    "props": [
+     "window",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নানু নেই",
+       "value": "২ বছর"
+      },
+      {
+       "label": "দিনে কথা",
+       "value": "~১০ শব্দ",
+       "red": true
+      },
+      {
+       "label": "ফোন ধরেন",
+       "value": "সপ্তাহে ১ বার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "হারুন মাস্টার, চল্লিশ বছরের শিক্ষক। নানু চলে যাওয়ার পর বসে থাকেন *জানালার পাশে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "শীতের ছুটিতে ঢাকা থেকে এল মেয়ে নাজমা, আর সাত বছরের *আয়ান*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "najma",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "ayan",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "আব্বা, চলেন আমাদের সাথে ঢাকায়। একা একা *এভাবে থাকবেন*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nana",
+   "say": "ভালো আছি, মা। *তোরা যা*।",
+   "tone": "flatly",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "নাজমা সব চেষ্টা করল।",
+   "card": {
+    "title": "নাজমার চেষ্টা",
+    "items": [
+     {
+      "t": "ডাক্তার দেখাতে চাইল— ‘লাগবো না’",
+      "mark": "x"
+     },
+     {
+      "t": "আত্মীয়দের দাওয়াত— ঘর থেকেই বের হলেন না",
+      "mark": "x"
+     },
+     {
+      "t": "নতুন স্মার্টফোন— বাক্সেই রইল",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে নানা একা খেলেন। থালায় অর্ধেক ভাত *পড়ে রইল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "নাজমা দরজায় দাঁড়িয়ে দেখল। কিছু বলার মতো *কথা খুঁজে পেল না*।",
+   "pause": 0.6,
+   "scene": {
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "najma",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন ভোরে আয়ান কম্বল মুড়ি দিয়ে নানার পাশে এসে বসল। *কোনো কারণ ছাড়াই*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন ভোর",
+    "props": [
+     "window",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "ayan",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "নানা, কুয়াশা কোথা থেকে আসে? আকাশ কি *রাতে কাঁদে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানা অবাক হয়ে তাকালেন। দুই বছরে কেউ তাঁকে *কোনো প্রশ্ন করেনি*।",
+   "scene": {
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.4
+    },
+    "moods": {
+     "nana": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "nana",
+   "say": "কাঁদে না, নানাভাই। রাতে মাটি ঠান্ডা হয়, বাতাসের পানি *ফোঁটা হয়ে জমে*।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "nana": "neutral"
+    },
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "তাহলে চলেন, *ফোঁটা ধরি*! আপনি তো সব জানেন!",
+   "tone": "excited",
+   "scene": {
+    "moods": {
+     "ayan": "happy"
+    },
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই সকালে দুইজন উঠানে। ঘাসের ডগায় শিশির, আয়ানের হাতে *নানুর পুরোনো বাটি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "উঠান",
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "ayan",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তারপর প্রশ্নের পর প্রশ্ন। সরিষা ফুল কেন হলুদ? খেজুর গাছে *হাঁড়ি কেন*?"
+  },
+  {
+   "say": "নানা উত্তর দেন, আর মাঝে মাঝে *নিজেই হেসে ফেলেন*।",
+   "scene": {
+    "moods": {
+     "nana": "happy"
+    }
+   }
+  },
+  {
+   "say": "তিন দিনে খাতা ভরল। শুধু শেষ প্রশ্নটার পাশে *কোনো উত্তর নেই*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আয়ানের প্রশ্নের খাতা",
+     "lines": [
+      "কুয়াশা কোথা থেকে আসে ✓",
+      "সরিষা ফুল কেন হলুদ ✓",
+      "নানু কোথায় থাকে ?"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "নানা, নানুর কথা আপনি কাউরে বলেন না কেন? *আমারে বলবেন*?",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "set": "home",
+    "light": "evening",
+    "chip": "তৃতীয় দিন, সন্ধ্যা",
+    "props": [
+     "window",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ayan",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "ayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নানা অনেকক্ষণ চুপ। চশমার নিচে *চোখ ভিজে উঠল*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.5
+    },
+    "moods": {
+     "nana": "crying"
+    }
+   }
+  },
+  {
+   "voice": "nana",
+   "say": "তোর নানু শিশিরে পা ভিজাইয়া হাঁটত। কইত, শীত না আসলে *বসন্ত বোঝা যায় না*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন নানা কথা বললেন দুই ঘণ্টা। নানুর গল্প, *নিজের স্কুলের গল্প*।",
+   "scene": {
+    "moods": {
+     "nana": "smile",
+     "ayan": "happy"
+    }
+   }
+  },
+  {
+   "voice": "najma",
+   "say": "দুই বছরে আব্বা এত কথা… *আমার সাথেও* বলেন নাই।",
+   "tone": "whispers",
+   "scene": {
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "ayan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "najma",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "najma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ছুটি শেষ। বাক্সের সেই নতুন ফোনটা এখন *নানার হাতে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক মাস পর",
+    "props": [
+     "window",
+     "sofa"
+    ],
+    "chars": [
+     {
+      "id": "nana",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ayan",
+   "say": "নানা, আজকের প্রশ্ন— চাঁদ কেন *আমাদের সাথে হাঁটে*?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "nana",
+   "say": "দাঁড়া, চশমাটা আনি। আজকের উত্তর কিন্তু *লম্বা*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "nana": "happy"
+    },
+    "cam": {
+     "focus": "nana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জানালার পাশেই বসে আছেন নানা। শুধু মুখটা এবার *ঘরের দিকে ফেরানো*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "উপদেশে মানুষ চুপ হয়ে যায়… *সরল প্রশ্নে খুলে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "উপদেশে মানুষ চুপ হয়ে যায়…",
+    "line2": "সরল প্রশ্নে\nখুলে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "দুই বছর নানা দিনে বলেন ১০টা শব্দ… সাত বছরের নাতির একটা প্রশ্নে খুলে গেল সব 🌫️",
+  "description": "দিনাজপুরের অবসরপ্রাপ্ত শিক্ষক হারুন মাস্টার স্ত্রী চলে যাওয়ার পর জানালার পাশে চুপ করে বসে থাকেন। মেয়ের সব চেষ্টা ব্যর্থ। শীতের এক ভোরে সাত বছরের আয়ান কম্বল মুড়ি দিয়ে এসে জিজ্ঞেস করল— কুয়াশা কোথা থেকে আসে…",
+  "tags": [
+   "নানা নাতির গল্প",
+   "শীতের গল্প",
+   "দিনাজপুর",
+   "বাবা মেয়ের গল্প",
+   "পরিবারের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যেখানে উপদেশ পারেনি, সেখানে একটা শিশুর সরল প্রশ্ন পেরেছে। 🌫️\nতোমার বাড়ির বড়দের শেষ কবে একটা প্রশ্ন করে মন দিয়ে উত্তর শুনেছ? 👇 #নানা #শীতেরসকাল"
+ },
+ "thumbnail": {
+  "text": "কুয়াশা কোথা থেকে আসে?",
+  "sub": "নানার দশটা শব্দ"
+ }
+}

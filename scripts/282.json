@@ -1,0 +1,540 @@
+{
+ "id": "282",
+ "status": "ready",
+ "title_bn": "উনিশ বছরে একটা ‘না’",
+ "theme": "siblings",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "The Law of Repression — Confront Your Dark Side",
+  "title_bn": "চাপা রাগের মুখোমুখি"
+ },
+ "cast": {
+  "rashed": {
+   "name": "রাশেদ ভাইয়া",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B6B7A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "lima": {
+   "name": "লিমা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#B5476B",
+   "color2": "#F2E3C6",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "rony": {
+   "name": "রনি",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#2F7A6B",
+   "hair": "short",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "উনিশ বছর চাকরি। সংসারের সব খরচ এক হাতে। আর মুখে একটা *‘না’*— একবারও না।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঢাকা, মিরপুর ১১",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "১৯ বছর"
+      },
+      {
+       "label": "নিজের জন্য খরচ",
+       "value": "০",
+       "red": true
+      },
+      {
+       "label": "‘না’ বলা",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাশেদ, আটত্রিশ। আব্বা মারা যাওয়ার পর থেকেই *সংসারের হাল* তাঁর হাতে।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "বোনের বিয়ে, ভাইয়ের পড়া, আম্মার ওষুধ। সবাই জানে, ভাইয়া সব *সামলে নেবে*।"
+  },
+  {
+   "say": "শুধু ছোট বোন লিমা দেখত— ভাইয়ার জুতার তলা *তিন বছর ধরে ফাটা*।",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "এক রাতে খাবার টেবিলে ছোট ভাই রনি নতুন আবদার নিয়ে বসল।",
+   "scene": {
+    "set": "kitchen",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rony",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "lima",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "ভাইয়া, অফিসে সবাই বাইকে আসে। দেড় লাখ হইলেই হয়। *কিস্তিতে* দিলেও চলবে।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাশেদ চুপচাপ ভাত মাখছিলেন। হঠাৎ প্লেটটা *ঠেলে সরালেন*।",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    },
+    "moods": {
+     "rashed": "angry"
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "সবাই খালি চায়! কেউ কোনোদিন জিগাইছে, আমি কী চাই? *উনিশ বছরে একদিন*?",
+   "tone": "upset",
+   "scene": {
+    "arms": {
+     "rashed": "point"
+    },
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাত সাড়ে এগারোটায় রাশেদ দরজা খুলে *বেরিয়ে গেলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "rony",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "lima",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "টেবিলে ঠান্ডা ভাত। ভাইয়ার এমন গলা কেউ *কোনোদিন শোনেনি*।"
+  },
+  {
+   "kind": "list",
+   "say": "এতদিন সবাই যা ধরে নিয়েছিল, এক রাতে সব *ভেঙে গেল*।",
+   "card": {
+    "title": "এতদিন সবাই যা ভেবেছিল",
+    "items": [
+     {
+      "t": "ভাইয়া তো কিছু বলে না",
+      "mark": "x"
+     },
+     {
+      "t": "ভাইয়ার তো কিছু লাগে না",
+      "mark": "x"
+     },
+     {
+      "t": "ভাইয়া সব পারে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "লিমা তাঁকে পেল মোড়ের চায়ের দোকানে। হাতে *ঠান্ডা চা*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "মোড়ের চায়ের দোকান",
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "lima",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "সরি রে। রনিরে এমনে বলা ঠিক হয় নাই। *মাথাটা গরম* হইয়া গেল।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "লিমা পাশে বসল। উপদেশ না, শুধু একটা প্রশ্ন—",
+   "scene": {
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "lima",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "ভাইয়া, সত্যি বলো। তুমি নিজের জন্য *শেষ কবে* কিছু কিনছ?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অনেকক্ষণ রাস্তার দিকে তাকিয়ে থেকে রাশেদ আস্তে বললেন—",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.5
+    },
+    "moods": {
+     "rashed": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "শুক্রবারে পুরান বন্ধুরা ফুটবল খেলে। বিশ বছর যাই নাই। *একটা বুট* কিনতে মন চায়।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আটত্রিশ বছরের মানুষের চাওয়া— এক জোড়া বুট। লিমার *চোখ ভিজে গেল*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    },
+    "moods": {
+     "lima": "crying"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে টেবিলে একটা কাগজ। সংসারের *নতুন হিসাব*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rony",
+      "x": 0.58,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "lima",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "সংসারের নতুন হিসাব",
+     "items": [
+      {
+       "t": "রনির বাইক— নিজের বেতনে, পরে",
+       "mark": "check"
+      },
+      {
+       "t": "বাজার— এখন থেকে রনি",
+       "mark": "check"
+      },
+      {
+       "t": "ভাইয়ার নিজের জন্য— মাসে ৩,০০০",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "rony",
+   "say": "ভাইয়া, বাইক লাগবো না। *বাসেই যাই*। বাজার এই মাস থেকে আমার।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rony",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শেষ লাইনটা রাশেদ দুইবার পড়লেন— *নিজের জন্য*।",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rashed",
+   "say": "এইটা কী লিখছিস? আমার আবার *কী লাগে*…",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rashed",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "lima",
+   "say": "লাগে, ভাইয়া। এতদিন কেউ জিগায় নাই, তাই তুমি *বলো নাই*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "lima",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার ভোর। মাঠে রাশেদ, পায়ে নতুন বুট। *বিশ বছর পর*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শুক্রবার ভোর, মাঠের পাশে",
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দশ মিনিটেই হাঁপিয়ে গেলেন। কিন্তু বন্ধুরা *নাম ধরে ডাকল*।"
+  },
+  {
+   "say": "দুপুরে কাদামাখা বুট দরজার পাশে। অনেকদিন পর তিন ভাইবোন *একসাথে খেল*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "সেদিন দুপুর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "rashed",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "rony",
+      "x": 0.55,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "lima",
+      "x": 0.8,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে মানুষ কখনো কিছু চায় না… *তাকেই জিজ্ঞেস করতে হয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে মানুষ কখনো কিছু চায় না…",
+    "line2": "তাকেই\nজিজ্ঞেস করতে হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "১৯ বছর সংসার টানলেন, কখনো ‘না’ বলেননি— এক রাতে ভাইয়া ফেটে পড়লেন 👟",
+  "description": "মিরপুরের রাশেদ উনিশ বছর ধরে সংসারের সব খরচ চালান, কখনো কিছু চান না। এক রাতে ছোট ভাইয়ের বাইকের আবদারে তিনি ভাত ফেলে বেরিয়ে গেলেন। ছোট বোন লিমা তাঁকে খুঁজে পেল চায়ের দোকানে…",
+  "tags": [
+   "ভাইবোনের গল্প",
+   "বড় ভাইয়ের গল্প",
+   "চাপা কষ্ট",
+   "পরিবার",
+   "মিরপুর",
+   "দায়িত্ব",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "উনিশ বছর সবার চাওয়া পূরণ করলেন— নিজের চাওয়া ছিল শুধু এক জোড়া বুট। 👟\nতোমার পরিবারের ‘সব সামলে নেওয়া’ মানুষটাকে শেষ কবে জিজ্ঞেস করেছ, তার কী লাগে? 👇 #ভাইবোন #পরিবার"
+ },
+ "thumbnail": {
+  "text": "ভাইয়া কী চায়?",
+  "sub": "উনিশ বছরে প্রথম প্রশ্ন"
+ }
+}

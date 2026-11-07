@@ -1,0 +1,498 @@
+{
+ "id": "289",
+ "status": "ready",
+ "title_bn": "সিঁড়ির বাতি",
+ "theme": "community",
+ "source": {
+  "book": "The Daily Laws",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Study people's patterns, not their words",
+  "title_bn": "কথা নয়, কাজ দেখো"
+ },
+ "cast": {
+  "mou": {
+   "name": "মৌ",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#C4473A",
+   "color2": "#F2E3C6",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "rouf": {
+   "name": "রউফ চাচা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "majid": {
+   "name": "মজিদ ভাই",
+   "type": "man",
+   "skin": "dark",
+   "outfit": "uniform",
+   "color": "#6B7A5B",
+   "color2": "#3B3B3B",
+   "hair": "short",
+   "beard": "moustache",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয়তলা বিল্ডিং, চব্বিশটা ফ্ল্যাট। আর সবার এক কথা— চারতলার রউফ চাচা *খিটখিটে*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "ঢাকা, মোহাম্মদপুর",
+    "chars": [
+     {
+      "id": "rouf",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফ্ল্যাট",
+       "value": "২৪"
+      },
+      {
+       "label": "সালামের উত্তর",
+       "value": "০",
+       "red": true
+      },
+      {
+       "label": "বাচ্চাদের ধমক",
+       "value": "প্রতিদিন",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মৌ নতুন ভাড়াটে, দোতলায়। সাথে চার বছরের *ছেলে আরিয়ান*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rouf",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "rouf",
+   "say": "সিঁড়িতে দৌড়াদৌড়ি ক্যান? এইটা কি *খেলার মাঠ*?",
+   "tone": "annoyed",
+   "scene": {
+    "arms": {
+     "rouf": "point"
+    },
+    "cam": {
+     "focus": "rouf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মৌ সরি বললেন। চাচা উঠে গেলেন। পাশের ভাবি ফিসফিস করলেন— *উনি এমনই*।",
+   "scene": {
+    "moods": {
+     "mou": "worried"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পুরো বিল্ডিং চাচাকে চেনে *তিনটা কথায়*।",
+   "card": {
+    "title": "বিল্ডিংয়ের সবাই যা বলে",
+    "items": [
+     {
+      "t": "সালাম দিলে উত্তর দেন না",
+      "mark": "x"
+     },
+     {
+      "t": "বাচ্চাদের দেখলেই ধমক",
+      "mark": "x"
+     },
+     {
+      "t": "মিটিংয়ে শুধু তর্ক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "কিন্তু মৌ একটা জিনিস খেয়াল করলেন। সিঁড়ির বাতি প্রতিরাতে এগারোটায় *আবার জ্বলে ওঠে*।",
+   "scene": {
+    "set": "stairs",
+    "light": "night",
+    "chip": "রাত এগারোটা",
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "11:00",
+     "label": "রাত"
+    }
+   }
+  },
+  {
+   "say": "কমিটির নিয়মে বাতি দশটায় বন্ধ। তাহলে এগারোটায় *কে জ্বালায়*?",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "এক রাতে দেখলেন— রউফ চাচা নামছেন, হাতে টর্চ। *সুইচ টিপলেন*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "rouf",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আরেক সকালে দেখলেন, চাচা চুপচাপ দারোয়ানের হাতে *দুইটা রুটি* গুঁজে দিচ্ছেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক সকাল, গেটের সামনে",
+    "chars": [
+     {
+      "id": "rouf",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "majid",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "চাচার মুখের কথা কঠিন। কিন্তু হাত সবসময় *অন্য কথা* বলে।",
+   "scene": {
+    "cam": {
+     "focus": "rouf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "মজিদ ভাই, চাচা রাতে সিঁড়ির বাতি জ্বালান ক্যান? *কমিটি জানে*?",
+   "tone": "curious",
+   "scene": {
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "talk"
+     },
+     {
+      "id": "majid",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "জানে না, আপা। বিলটা চাচা নিজে দেন। *সাত বছর ধইরা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "majid",
+   "say": "চাচি নার্স আছিলেন। রাইতে ফিরতেন। অন্ধকার সিঁড়িতে একদিন *পইড়া গেছিলেন*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "majid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচি নেই তিন বছর। কিন্তু পাঁচতলার নার্স মেয়েটা ফেরে *রাত এগারোটায়*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    },
+    "moods": {
+     "mou": "sad"
+    }
+   }
+  },
+  {
+   "say": "সবাই চাচার *কথা* শুনেছে। কেউ তাঁর *কাজ* দেখেনি।",
+   "pause": 0.9
+  },
+  {
+   "say": "সন্ধ্যায় মৌ আরিয়ানকে নিয়ে চারতলায় উঠলেন। হাতে এক বাটি *পায়েস*।",
+   "scene": {
+    "set": "stairs",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা, চারতলা",
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rouf",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rouf",
+   "say": "কী চাই? আবার কেউ *নালিশ* করছে?",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "rouf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "না চাচা। সিঁড়ির বাতিটার জন্য। আমার ছেলেও *অন্ধকারে ভয় পায়*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচা বাটিটা নিলেন। মুখে কিছু বললেন না। কিন্তু চোখ দুটো *হঠাৎ ভিজে গেল*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rouf",
+     "zoom": 1.5
+    },
+    "moods": {
+     "rouf": "sad"
+    },
+    "arms": {
+     "rouf": "hold"
+    },
+    "holds": {
+     "rouf": "plate"
+    }
+   }
+  },
+  {
+   "voice": "rouf",
+   "say": "তোমার চাচিও পায়েস বানাইত… *এলাচ বেশি দিয়া*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rouf",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mou",
+   "say": "আমিও বেশি দিছি, চাচা। *খাইয়া কইয়েন*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "mou",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বিল্ডিং মিটিংয়ে মৌর একটাই প্রস্তাব— সিঁড়ির বাতি সারা রাত, বিল *সবাই মিলে*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "এক মাস পর, বিল্ডিং মিটিং",
+    "chars": [
+     {
+      "id": "mou",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "rouf",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কেউ জানতে চাইল, এতদিন বিল দিল কে? চাচা *অন্যদিকে তাকিয়ে রইলেন*।"
+  },
+  {
+   "say": "প্রস্তাব পাস, চব্বিশে চব্বিশ। সেদিন চাচা প্রথমবার সালামের *উত্তর দিলেন*।",
+   "scene": {
+    "moods": {
+     "rouf": "smile"
+    }
+   }
+  },
+  {
+   "say": "এখন বিকেলে সিঁড়িতে আরিয়ানের দৌড়। চাচা ধমক দেন— *আস্তে, পইড়া যাবি*। তারপর হাসেন।",
+   "pause": 0.8,
+   "scene": {
+    "set": "stairs",
+    "light": "evening",
+    "chip": "এখন, প্রতি বিকেল",
+    "chars": [
+     {
+      "id": "rouf",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "মানুষের কথা শোনা যায় এক মিনিটে… *মনটা চেনা যায় কাজে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "মানুষের কথা শোনা যায় এক মিনিটে…",
+    "line2": "মনটা চেনা যায়\nকাজে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সবাই বলত ‘খিটখিটে চাচা’— রাত এগারোটার সিঁড়ির বাতি খুলে দিল আসল মানুষটা 💡",
+  "description": "মোহাম্মদপুরের এক বিল্ডিংয়ে সবাই চারতলার রউফ চাচাকে খিটখিটে বলে চেনে। নতুন ভাড়াটে মৌ খেয়াল করলেন, কমিটির নিয়মে বাতি বন্ধ হলেও প্রতিরাতে এগারোটায় সিঁড়ির বাতি আবার জ্বলে ওঠে…",
+  "tags": [
+   "প্রতিবেশীর গল্প",
+   "অ্যাপার্টমেন্ট জীবন",
+   "মোহাম্মদপুর",
+   "মানুষ চেনা",
+   "বয়স্ক মানুষ",
+   "ভালোবাসা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই চাচার কথা শুনেছিল— কেউ তাঁর কাজ দেখেনি। 💡\nতোমার আশেপাশে এমন কোনো ‘কঠিন’ মানুষ আছেন, যাঁর মনটা আসলে নরম? 👇 #প্রতিবেশী #অ্যাপার্টমেন্ট"
+ },
+ "thumbnail": {
+  "text": "রাত এগারোটার বাতি",
+  "sub": "খিটখিটে চাচা"
+ }
+}

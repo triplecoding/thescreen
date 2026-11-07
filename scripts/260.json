@@ -1,0 +1,472 @@
+{
+ "id": "260",
+ "status": "ready",
+ "title_bn": "যার যা লাগে",
+ "theme": "parents",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Look How Hard I've Tried",
+  "title_bn": "দেখো, আমি কত কষ্ট করি"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্দুল কাদের",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#8A7F70",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  },
+  "sathi": {
+   "name": "সাথী",
+   "type": "teen_girl",
+   "skin": "tan",
+   "outfit": "salwar",
+   "color": "#5B7DB1",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "amma": {
+   "name": "রোকেয়া",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#8E3B5A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রোজ চার কিলোমিটার হেঁটে অফিস। আর প্রতি রাতে খাবার টেবিলে *একই হিসাব*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "নারায়ণগঞ্জ, চাষাঢ়া মোড়",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "pan",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রোজ হাঁটা",
+       "value": "৪ কিমি"
+      },
+      {
+       "label": "বাঁচে",
+       "value": "৪০ টাকা"
+      },
+      {
+       "label": "মনে করানো",
+       "value": "প্রতি রাতে",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আব্দুল কাদের, ডকইয়ার্ডের হিসাবরক্ষক। বাসভাড়া বাঁচান, দুপুরে খান *শুধু রুটি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ত্যাগটা সত্যি। কিন্তু সেটা তিনি মনে করিয়ে দেন— *প্রতিদিন*।"
+  },
+  {
+   "voice": "abba",
+   "say": "আমি হাঁইটা যাই, রুটি খাই— *তোমাগো জন্য*। কেউ বোঝে না।",
+   "tone": "sighs",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাতের খাবার",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "talk"
+     },
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sathi",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মেয়ে সাথী চুপ করে ভাত নাড়ে। রোকেয়া চোখ নামিয়ে নেন।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ধীরে ধীরে বাসায় একটা না-লেখা নিয়ম হলো— *আব্বার কাছে কিছু চাওয়া যাবে না*।",
+   "pause": 0.6
+  },
+  {
+   "kind": "list",
+   "say": "এক বছরে সাথী কিছুই চায়নি।",
+   "card": {
+    "title": "সাথীর না-বলা চাওয়া",
+    "items": [
+     {
+      "t": "কলেজের পিকনিক— যায়নি",
+      "mark": "x"
+     },
+     {
+      "t": "ছেঁড়া জুতা— সেলাই করে চালায়",
+      "mark": "x"
+     },
+     {
+      "t": "এইচএসসির ক্যালকুলেটর— বারোশো টাকা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "টেস্ট পরীক্ষায় সে ধার করে চালাল *বান্ধবীর ক্যালকুলেটর*।"
+  },
+  {
+   "say": "তারপর চুপচাপ একটা টিউশনি নিল। ক্লাস ফোরের বাচ্চা, মাসে *দুই হাজার*।"
+  },
+  {
+   "say": "এক সন্ধ্যায় কাদের সাহেব দেখলেন, মেয়ে অচেনা গলি থেকে *একা ফিরছে*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "এক সন্ধ্যা",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "sathi",
+      "x": 0.7,
+      "pose": "walk",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইখানে কী করস? এত সন্ধ্যায়? *কার বাসায়* গেছিলি?",
+   "tone": "suspicious",
+   "scene": {
+    "moods": {
+     "abba": "angry"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "টিউশনি, আব্বা। ক্যালকুলেটরের টাকা জমাইতেছি। *আর দুই মাস*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "আমারে একবার কইলি না? আমি কি *পর*?",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "abba": "sad"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "আপনি তো এমনিই অনেক কষ্ট করেন, আব্বা। *আরও কষ্ট* দিতে চাই নাই।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "sathi": "crying"
+    },
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কাদের সাহেব দাঁড়িয়ে রইলেন। নিজের কথাগুলো তাঁর কানে *ফিরে এলো*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "তিনি চেয়েছিলেন সবাই কষ্টটা জানুক। জেনেছে— তাই *কেউ আর কিছু চায় না*।"
+  },
+  {
+   "say": "সেই রাতে খাবার টেবিলে কোনো হিসাব হলো না।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "sathi",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "রোকেয়া, রান্নাঘরের দেয়ালে একটা কাগজ লাগাও। নাম দাও— *‘যার যা লাগে’*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "আর তোমার হাঁটার হিসাব? ওইটা *কোন কাগজে* লিখব?",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "amma": "smile"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ওইটা আর লেখার দরকার নাই। *আমি জানলেই* হবে।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "abba": "smile",
+     "sathi": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে দেয়ালে প্রথম লাইন, আব্বার নিজের হাতে লেখা।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "sathi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "যার যা লাগে",
+     "lines": [
+      "সাথী— ক্যালকুলেটর: অর্ধেক আব্বা, অর্ধেক টিউশনি",
+      "রোকেয়া— চশমার নতুন কাচ",
+      "আব্বা— ?"
+     ],
+     "sub": "চাইতে লজ্জা নাই"
+    }
+   }
+  },
+  {
+   "say": "সাথী আব্বার ঘরটার পাশে লিখল— *‘একদিন রিকশায় অফিস’*।"
+  },
+  {
+   "say": "এক সপ্তাহ পর মোড়ে রিকশা ডেকে দিল সাথী। আব্বা উঠলেন, *আপত্তি ছাড়া*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "sathi",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "sathi",
+   "say": "ভাড়াটা আমার টিউশনির টাকা থেকে, আব্বা। *একদিনই* তো।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "sathi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিকশা চলে গেল। আব্বা পেছন ফিরে হাত নাড়লেন, *অনেকক্ষণ*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "arms": {
+     "abba": "wave"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ত্যাগ চুপচাপ থাকলে ভালোবাসা… *বারবার বললে বোঝা হয়ে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ত্যাগ চুপচাপ থাকলে ভালোবাসা…",
+    "line2": "বারবার বললে\nবোঝা হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রোজ চার কিলোমিটার হাঁটেন আব্বা, আর রোজ মনে করান— মেয়ে চুপচাপ যা করল… 🧮",
+  "description": "নারায়ণগঞ্জের আব্দুল কাদের বাসভাড়া বাঁচিয়ে হেঁটে অফিস যান, আর প্রতি রাতে খাবার টেবিলে সেটা মনে করিয়ে দেন। মেয়ে সাথী এক বছরে কিছুই চায়নি। তারপর এক সন্ধ্যায় তিনি মেয়েকে দেখলেন অচেনা গলি থেকে ফিরতে…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "বাবার গল্প",
+   "নারায়ণগঞ্জ",
+   "পরিবার",
+   "ত্যাগ",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ত্যাগটা সত্যি ছিল, কিন্তু রোজ মনে করানোয় মেয়েটা কিছু চাওয়াই ছেড়ে দিয়েছিল। 🧮\nতোমার বাসায় কে আছে, যার কাছে কিছু চাইতে তুমি সংকোচ করো? 👇 #বাবা #পরিবার"
+ },
+ "thumbnail": {
+  "text": "আমি কি পর?",
+  "sub": "চুপচাপ টিউশনি"
+ }
+}

@@ -1,0 +1,600 @@
+{
+ "id": "279",
+ "status": "ready",
+ "title_bn": "চব্বিশটা ঈদ",
+ "theme": "work",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 2",
+  "chapter_bn": "২ নম্বর অধ্যায়",
+  "title": "Rules quietly rewritten after the fact",
+  "title_bn": "চুপচাপ বদলে যাওয়া নিয়ম"
+ },
+ "cast": {
+  "rahmat": {
+   "name": "রহমত",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "arif": {
+   "name": "আরিফ",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B6EA5",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "malik": {
+   "name": "জামান সাহেব",
+   "type": "man",
+   "skin": "light",
+   "outfit": "panjabi",
+   "color": "#3B4A6B",
+   "hair": "side",
+   "beard": "full_black",
+   "glasses": true,
+   "voice": "man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#6B8F71",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চব্বিশ বছর একই কাপড়ের দোকান। চব্বিশটা ঈদ— রহমত একবারও *বাড়ি যাননি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পুরান ঢাকা, কাপড়ের বাজার",
+    "props": [
+     "signboard",
+     "sign:জামান ক্লথ স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "২৪ বছর"
+      },
+      {
+       "label": "ঈদে বাড়ি",
+       "value": "০ বার",
+       "red": true
+      },
+      {
+       "label": "ছুটি চাওয়া",
+       "value": "০ বার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ঈদের আগে দোকানে ভিড়। মালিক বলেন, *‘রহমত না থাকলে দোকান চলে না’*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "malik",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "rahmat",
+   "say": "কোনো চিন্তা নাই সাহেব, *আমি আরো খাটমু*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নতুন সেলসম্যান আরিফ ঈদে মায়ের কাছে যেতে চায়। মাত্র *তিন দিনের ছুটি*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "rahmat",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "malik",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "malik",
+   "say": "রহমত ভাইরে দেখো। চব্বিশ বছরে একদিনও ছুটি নেয় নাই। *তোমরা পারো না ক্যান*?",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "malik": "angry"
+    },
+    "cam": {
+     "focus": "malik",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আরিফের ছুটি বাতিল। সাথে আরো দুজনের। সবার মুখে *একটাই নাম*।",
+   "scene": {
+    "moods": {
+     "arif": "sad",
+     "rahmat": "surprised"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দোকানের নিয়ম চুপচাপ বদলে গেল।",
+   "card": {
+    "title": "রহমতের মাপে নিয়ম",
+    "items": [
+     {
+      "t": "ঈদে ছুটি— বন্ধ",
+      "mark": "x"
+     },
+     {
+      "t": "শুক্রবার— অর্ধেক দিন খোলা",
+      "mark": "x"
+     },
+     {
+      "t": "রাত দশটার পর— ‘একটু থাকো’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে দোকান বন্ধের পর আরিফ বসে রইল সিঁড়িতে, *চোখ লাল*।",
+   "scene": {
+    "set": "stairs",
+    "light": "night",
+    "chip": "দোকানের সিঁড়ি, রাত এগারোটা",
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "down"
+     },
+     {
+      "id": "rahmat",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "চাচা, আপনি না যান, আমরা তো যাইতে চাই। আপনার খাটুনি দিয়া *আমাদের মাপে*।",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রহমত কিছু বললেন না। এত বছর ভেবেছেন, খাটুনিটা *শুধু তার নিজের*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "rahmat": "sad"
+    },
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে গ্রাম থেকে ফোন। প্রতি বছরের মতো আম্মা বললেন— *‘এই ঈদেও আসবি না, বাপ?’*",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রহমতের মেসঘর",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রহমত হিসাব করলেন। চব্বিশটা ঈদ গেছে। আম্মার বয়স *আশি*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে রহমত মালিকের সামনে দাঁড়ালেন। চব্বিশ বছরে *প্রথমবার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:জামান ক্লথ স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "malik",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahmat",
+   "say": "সাহেব, এই ঈদে তিন দিন বাড়ি যামু। আর আরিফসহ সবাই *পালা কইরা* যাক।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "malik",
+   "say": "তুমি? রহমত, তুমিও? তাইলে *দোকান চলবে কেমনে*?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "malik": "surprised"
+    },
+    "cam": {
+     "focus": "malik",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rahmat",
+   "say": "সবাইরে শিখাই দিমু। একজন না থাকলে যেন *দোকান থামে না*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মালিক অনেকক্ষণ চুপ। তারপর ক্যাশবাক্সের পাশে টাঙালেন একটা কাগজ।",
+   "scene": {
+    "moods": {
+     "malik": "thinking"
+    },
+    "widget": {
+     "kind": "checklist",
+     "title": "ঈদের ছুটির পালা",
+     "items": [
+      {
+       "t": "রহমত— ঈদের আগে ৩ দিন",
+       "mark": "check"
+      },
+      {
+       "t": "আরিফ— ঈদের পরে ৩ দিন",
+       "mark": "check"
+      },
+      {
+       "t": "বাকি দুজন— পরের ঈদে",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দশ দিন ধরে রহমত আরিফকে শেখালেন *থান মাপা আর দাম বলা*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "arif",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "malik",
+   "say": "যাও রহমত। আম্মারে সালাম দিও। আর এই নাও, *আম্মার শাড়ি*।",
+   "tone": "warmly",
+   "scene": {
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "malik",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "malik",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাঁদরাতের দুই দিন আগে, সদরঘাট থেকে লঞ্চে রহমত। হাতে *শাড়ির প্যাকেট*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "সদরঘাট–পটুয়াখালী লঞ্চ",
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ভোরে উঠানে আম্মা। চোখ ঝাপসা, তবু ছেলেকে *ঠিকই চিনলেন*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পটুয়াখালী, ঈদের আগের দিন",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.38,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "amma",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahmat",
+   "say": "আম্মা, চব্বিশ বছর পর *ঈদের সেমাই* খাইতে আসছি।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "rahmat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আম্মা কিছু বললেন না। শুধু ছেলের মুখে হাত বুলালেন, *অনেকক্ষণ*।",
+   "pause": 0.9,
+   "scene": {
+    "chars": [
+     {
+      "id": "rahmat",
+      "x": 0.44,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hug"
+     },
+     {
+      "id": "amma",
+      "x": 0.58,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hug"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ঢাকায় সেই ঈদের বাজার চলল। আরিফ থান মাপল, দাম বলল *রহমতের মতো*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, চাঁদরাত",
+    "props": [
+     "signboard",
+     "sign:জামান ক্লথ স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "চাচা, দোকান ঠিক আছে। আপনি নিশ্চিন্তে *আরো একদিন* থাকেন।",
+   "tone": "laughs",
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "একজনের না-থামা যখন সবার নিয়ম হয়… *তখন সবার ঈদ থেমে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "একজনের না-থামা যখন সবার নিয়ম হয়…",
+    "line2": "তখন সবার ঈদ\nথেমে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চব্বিশ বছরে একদিনও ছুটি নেননি রহমত— সেই রেকর্ডেই বাতিল হলো সবার ঈদের ছুটি 🧵",
+  "description": "পুরান ঢাকার এক কাপড়ের দোকানে চব্বিশ বছর ধরে রহমত, কোনো ঈদে বাড়ি যাননি। মালিক তার উদাহরণ দিয়ে নতুন সেলসম্যান আরিফের ছুটি বাতিল করলেন। সেই রাতে সিঁড়িতে আরিফ একটা কথা বলল…",
+  "tags": [
+   "ঈদের গল্প",
+   "মায়ের গল্প",
+   "পুরান ঢাকা",
+   "সেলসম্যান",
+   "কাজের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চব্বিশ বছরের না-থামা হয়ে গিয়েছিল সবার নিয়ম— এক ঈদে রহমত থামলেন, সবাই ঘরে ফিরল। 🌙\nতোমার কর্মস্থলে কার অতিরিক্ত খাটুনি সবার জন্য নিয়ম হয়ে গেছে? 👇 #ঈদ #মায়েরগল্প"
+ },
+ "thumbnail": {
+  "text": "২৪টা ঈদ",
+  "sub": "একদিনও ছুটি নেই"
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "id": "269",
+ "status": "ready",
+ "title_bn": "যে চাবি নেয়",
+ "theme": "school",
+ "source": {
+  "book": "The Republic",
+  "author": "Plato",
+  "author_bn": "প্লেটো",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Leaders should be those who do not crave power",
+  "title_bn": "নেতা হোক সে, যে নেতা হতে চায় না"
+ },
+ "cast": {
+  "madam": {
+   "name": "রুমানা ম্যাডাম",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "shimu": {
+   "name": "শিমু",
+   "type": "teen_girl",
+   "skin": "tan",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#3E5641",
+   "hair": "hijab",
+   "voice": "teen_girl"
+  },
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "teen_boy",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#3E5641",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "ক্লাস নাইনের ক্যাপ্টেন নির্বাচন, চারশো টাকার চকলেট। আর আসল কাজ করে যে, *সে প্রার্থীই না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "বরিশাল, একটা সরকারি স্কুল",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — ক শাখা"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রার্থী",
+       "value": "২ জন"
+      },
+      {
+       "label": "চকলেট",
+       "value": "১২০টা"
+      },
+      {
+       "label": "আসল কাজের লোক",
+       "value": "প্রার্থী না",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তানভীর আর রাফি, দুজনেই চায় ব্যাজটা। পোস্টার, চকলেট, *প্রতিশ্রুতি*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "আমারে ভোট দিলে টিফিনের পর *এক পিরিয়ড ফ্রি*, প্রমিস!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুমানা ম্যাডাম দরজায় দাঁড়িয়ে শুনলেন। প্রতি বছর একই *নাটক*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "madam",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "cross"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ম্যাডাম মনে করলেন গত তিন ক্যাপ্টেনের কথা।",
+   "card": {
+    "title": "গত তিন ক্যাপ্টেন",
+    "items": [
+     {
+      "t": "ব্যাজ পরে ছবি— ফেসবুকে",
+      "mark": "x"
+     },
+     {
+      "t": "ক্লাসের চাবি— হারিয়ে ফেলা",
+      "mark": "x"
+     },
+     {
+      "t": "ঝগড়া থামানো— কখনো না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "অথচ রোজ সকাল সাড়ে সাতটায় ক্লাসরুম খোলা থাকে। কে খোলে, *কেউ জানে না*।"
+  },
+  {
+   "say": "একদিন ম্যাডাম এলেন সাতটা বিশে। দাঁড়ালেন গেটের পাশে, *চুপচাপ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সকাল ৭টা ২০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "madam",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "7:20",
+     "label": "সকাল ৭টা ২০"
+    }
+   }
+  },
+  {
+   "say": "শিমু। পেছনের বেঞ্চের চুপচাপ মেয়েটা। দারোয়ানের কাছ থেকে নিল *চাবি*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "madam",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shimu",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "say": "জানালা খুলল, কলসিতে পানি আনল, বোর্ডে লিখল দিনের রুটিন। তারপর বসে পড়ল, *যেন কিছুই করেনি*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ক্লাসরুম, সকাল",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — ক শাখা"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     },
+     {
+      "id": "madam",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "madam",
+   "say": "শিমু, এগুলা তুমি করো? কেউ তো *বলে নাই* করতে।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "madam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "ম্যাডাম, বাসা কাছে, আগে আসি। ক্লাস নোংরা থাকলে *পড়তে ভালো লাগে না*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "shimu": "smile"
+    },
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "madam",
+   "say": "তুমি ক্যাপ্টেন হইতে চাও?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "madam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "না না ম্যাডাম! আমি তো সবার সামনে *কথাই বলতে পারি না*।",
+   "tone": "whispers",
+   "scene": {
+    "moods": {
+     "shimu": "worried"
+    },
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "টিফিনে তানভীর আনল আরও এক প্যাকেট চকলেট। ভোট *পাকা*, সে নিশ্চিত।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "টিফিনের সময়",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — ক শাখা"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.45,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "madam",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ম্যাডাম হাসলেন। আর ভোটের দিন বদলে দিলেন *একটা নিয়ম*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "madam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ব্যালটে কোনো নাম নেই। প্রশ্ন একটাই— *‘এই ক্লাসে কে না বলতেই কাজ করে?’*",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ভোটের দিন",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — ক শাখা"
+    ],
+    "chars": [
+     {
+      "id": "madam",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.6,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "shimu",
+      "x": 0.85,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "এবারের ব্যালট",
+     "lines": [
+      "এই ক্লাসে কে না বলতেই কাজ করে?",
+      "একটা নাম লেখো"
+     ],
+     "sub": "প্রার্থী লাগবে না"
+    }
+   }
+  },
+  {
+   "say": "ছেচল্লিশটা কাগজ। ম্যাডাম গুনলেন। একত্রিশটায় *একই নাম*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "শিমু",
+       "value": "৩১"
+      },
+      {
+       "label": "তানভীর",
+       "value": "৮"
+      },
+      {
+       "label": "রাফি",
+       "value": "৭"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পুরো ক্লাস ঘুরে তাকাল পেছনের বেঞ্চে। শিমু লাল হয়ে গেছে, *চোখে পানি*।",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "moods": {
+     "shimu": "crying"
+    },
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "ম্যাডাম, আমিও শিমুর নাম লিখছি। ও তো আমার *খাতাও* গুছায়া রাখে!",
+   "tone": "playfully",
+   "scene": {
+    "moods": {
+     "tanvir": "smile"
+    },
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শিমু ব্যাজটা নিল কাঁপা হাতে। প্রথম কাজ? একটা *পালার তালিকা*।",
+   "scene": {
+    "moods": {
+     "shimu": "smile"
+    },
+    "widget": {
+     "kind": "checklist",
+     "title": "ক্লাস নাইন— কাজের পালা",
+     "items": [
+      {
+       "t": "সোম-মঙ্গল: বোর্ড— তানভীর",
+       "mark": "check"
+      },
+      {
+       "t": "বুধ-বৃহস্পতি: পানি— রাফি",
+       "mark": "check"
+      },
+      {
+       "t": "রোজ সকালে চাবি— শিমু",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "তালিকায় প্রথম নাম তানভীরের। সে গজগজ করল, তারপর গেল *বোর্ড মুছতে*।",
+   "scene": {
+    "widget": null,
+    "arms": {
+     "tanvir": "point"
+    }
+   }
+  },
+  {
+   "say": "দুই মাস পর। ক্লাসে ঝগড়া হলে সবাই শিমুকে ডাকে। সে চিৎকার করে না, *শুধু শোনে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:৯ম শ্রেণি — ক শাখা"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "madam",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "madam",
+   "say": "শিমু, ক্যাপ্টেন হইয়া কেমন লাগে?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "madam",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "আগের মতোই, ম্যাডাম। খালি এখন সকালে চাবি আনতে গেলে *তিনজন সঙ্গে আসে*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "shimu": "happy"
+    },
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সাড়ে সাতটার ফাঁকা ক্লাসরুম আর ফাঁকা নেই। চারজন জানালা খোলে, *হাসতে হাসতে*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "set": "street",
+    "light": "day",
+    "chip": "সকাল সাড়ে সাতটা",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে চেয়ার চায়, সে চেয়ার দেখে… *যে চায় না, সে মানুষ দেখে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে চেয়ার চায়, সে চেয়ার দেখে…",
+    "line2": "যে চায় না,\nসে মানুষ দেখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চকলেট দিয়ে ক্যাপ্টেন হতে চাইল দুজন— জিতল পেছনের বেঞ্চের চুপচাপ মেয়েটা 🔑",
+  "description": "বরিশালের এক স্কুলে ক্লাস নাইনের ক্যাপ্টেন নির্বাচন, প্রচারে চলছে চকলেট আর প্রতিশ্রুতি। অথচ রোজ সকালে কে যেন ক্লাসরুম খুলে রাখে। একদিন রুমানা ম্যাডাম সাতটা বিশে স্কুলে এলেন…",
+  "tags": [
+   "স্কুলের গল্প",
+   "শিক্ষক ছাত্রীর গল্প",
+   "বরিশাল",
+   "ক্লাস ক্যাপ্টেন",
+   "নেতৃত্ব",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "যে চকলেট দিয়ে চেয়ার চায় না, রোজ সকালে চুপচাপ চাবি নেয়— ক্লাস তাকেই বেছে নিল। 🔑\nতোমার স্কুলে বা অফিসে কে না বলতেই কাজ করে? 👇 #স্কুল #নেতৃত্ব"
+ },
+ "thumbnail": {
+  "text": "সে প্রার্থীই না",
+  "sub": "পেছনের বেঞ্চের মেয়েটা"
+ }
+}

@@ -1,0 +1,550 @@
+{
+ "id": "292",
+ "status": "ready",
+ "title_bn": "শুধু তোমাকেই বলছি",
+ "theme": "community",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Fear and sweet talk keep people silent",
+  "title_bn": "ভয় আর মিষ্টি কথা"
+ },
+ "cast": {
+  "rina": {
+   "name": "রিনা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#3B7A5B",
+   "color2": "#E8C9A0",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "motaleb": {
+   "name": "মোতালেব সাহেব",
+   "type": "old_man",
+   "skin": "light",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "full_black",
+   "voice": "old_man"
+  },
+  "jahanara": {
+   "name": "জাহানারা খালা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#9E9E9E",
+   "color2": "#2F4A6B",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয় ফ্ল্যাট, ছয় ভাড়াটে। সবারই অভিযোগ আছে। কিন্তু বাড়িওয়ালার সামনে মুখ খোলে *একজনও না*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পুরান ঢাকা, লালবাগ",
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ফ্ল্যাট",
+       "value": "৬"
+      },
+      {
+       "label": "অভিযোগ",
+       "value": "সবার"
+      },
+      {
+       "label": "মুখ খুলেছে",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বাড়িওয়ালা মোতালেব সাহেব। মুখে মধু। সবাইকে ডাকেন *‘মা’, ‘বাবা’*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "motaleb",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "say": "কিন্তু পানির মোটর চলে দিনে এক ঘণ্টা। গ্যাস বিলের *রসিদ নেই*।"
+  },
+  {
+   "say": "আর বাসা ছাড়লে অ্যাডভান্স *কেউ ফেরত পায় না*।"
+  },
+  {
+   "say": "জাহানারা খালা দশ বছর পর বাসা ছাড়ছেন। অ্যাডভান্স *বিশ হাজার*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "jahanara",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "motaleb",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "motaleb",
+   "say": "খালা, রং করাইতে হবে, দরজা ভাঙা। আপনি তো *আমার মায়ের মতো*— বুঝবেন।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jahanara",
+   "say": "দশ বছর এক দরজা, রিনা। ভাঙলো কবে? কিন্তু কে কইবো? *বাসা তো আর পাই না*।",
+   "tone": "sad",
+   "scene": {
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "jahanara",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": {
+     "focus": "jahanara",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সবাই ক্ষুব্ধ। কিন্তু সবাই একা, *আলাদা আলাদা*।",
+   "card": {
+    "title": "ভাড়াটেরা যা ভাবে",
+    "items": [
+     {
+      "t": "‘কিছু বললে বাসা ছাড়তে বলবে’",
+      "mark": "x"
+     },
+     {
+      "t": "‘উনি তো ভালো মানুষ’",
+      "mark": "x"
+     },
+     {
+      "t": "‘অন্যরা তো কিছু বলে না’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে রিনার মনে পড়ল, তাঁকেও একদিন বলা হয়েছিল—",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "motaleb",
+   "say": "তোমারে বলি, মা। তুমি বুঝদার। বাকি ভাড়াটেরা খালি *ঝামেলা করে*।",
+   "tone": "warmly",
+   "scene": {
+    "fx": "bw",
+    "chars": [
+     {
+      "id": "motaleb",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিনা ভাবলেন, এই কথাটা কি উনি *সবাইকেই বলেন*?",
+   "pause": 0.8,
+   "scene": {
+    "fx": null,
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "শুক্রবার বিকেলে রিনা ছয় ফ্ল্যাটের ভাবিদের ডাকলেন। *চা আর মুড়ি*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "শুক্রবার বিকেল",
+    "props": [
+     "sofa",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "jahanara",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "কথায় কথায় বেরিয়ে এল— ছয়জনকেই তিনি বলেছেন একই কথা। *‘শুধু তোমাকেই বলছি’*।"
+  },
+  {
+   "say": "ঘরটা কিছুক্ষণ চুপ। তারপর সবাই একসাথে *হেসে ফেলল*।",
+   "pause": 0.7,
+   "scene": {
+    "moods": {
+     "rina": "happy",
+     "jahanara": "happy"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "ঝগড়া না। আমরা শুধু দুইটা জিনিস চাইব— খালার অ্যাডভান্স, আর *বিলের রসিদ*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jahanara",
+   "say": "আর উনি যদি বাসা ছাড়তে কয়? *ছয়জনরে* একসাথে?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "jahanara": "smile"
+    },
+    "cam": {
+     "focus": "jahanara",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে বাড়িওয়ালার দরজায় ছয়জন। হাতে *সই করা কাগজ*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "jahanara",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "motaleb",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আমাদের দুইটা অনুরোধ",
+     "lines": [
+      "১. জাহানারা খালার অ্যাডভান্স ফেরত",
+      "২. প্রতি মাসে গ্যাস-পানির রসিদ"
+     ],
+     "sub": "ছয় ফ্ল্যাটের সই"
+    }
+   }
+  },
+  {
+   "voice": "motaleb",
+   "say": "এইটা কী, মা? আমি তো সবাইরে *নিজের পোলাপান* ভাবি…",
+   "tone": "curious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "আমরাও আপনারে মুরুব্বি ভাবি, চাচা। তাই পিছনে না, *সামনে আইছি*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মোতালেব সাহেব ছয়টা মুখের দিকে তাকালেন। মিষ্টি কথা এবার *কাজ করল না*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "motaleb",
+     "zoom": 1.5
+    },
+    "moods": {
+     "motaleb": "thinking"
+    }
+   }
+  },
+  {
+   "say": "ভেতরে গেলেন। ফিরলেন একটা খাম হাতে। *বিশ হাজার টাকা*।",
+   "scene": {
+    "arms": {
+     "motaleb": "hold"
+    },
+    "holds": {
+     "motaleb": "envelope"
+    },
+    "moods": {
+     "motaleb": "neutral"
+    }
+   }
+  },
+  {
+   "voice": "jahanara",
+   "say": "দশ বছরে এই প্রথম কারো অ্যাডভান্স *ফেরত দিলেন*, ভাই।",
+   "tone": "tearful",
+   "scene": {
+    "moods": {
+     "jahanara": "crying"
+    },
+    "cam": {
+     "focus": "jahanara",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে সিঁড়ির দেয়ালে নোটিশ। গ্যাস-পানির বিল, পাশে *রসিদের ফটোকপি*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরের মাস",
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "checklist",
+     "title": "সিঁড়ির নোটিশ বোর্ড",
+     "items": [
+      {
+       "t": "গ্যাস বিল— রসিদসহ",
+       "mark": "check"
+      },
+      {
+       "t": "পানির মোটর— সকাল-বিকাল",
+       "mark": "check"
+      },
+      {
+       "t": "অ্যাডভান্স— লিখিত রসিদে",
+       "mark": "check"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "খালার নতুন বাসা দুই গলি পরে। শুক্রবার তিনি আসেন *চা খেতে*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "jahanara",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "say": "আর ভাড়াটেদের মেসেঞ্জার গ্রুপের নাম এখন— *‘ছয় দরজা’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘শুধু তোমাকেই বলছি’— মানুষকে আলাদা রাখে… *একসাথে দাঁড়ালে ভয় ছোট হয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘শুধু তোমাকেই বলছি’— মানুষকে আলাদা রাখে…",
+    "line2": "একসাথে দাঁড়ালে\nভয় ছোট হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বাড়িওয়ালা সবাইকে বলতেন ‘শুধু তোমাকেই বলছি’— এক বিকেলের চায়ে খুলল সত্য 🫖",
+  "description": "লালবাগের এক বাড়িতে ছয় ভাড়াটে, সবারই অভিযোগ, কিন্তু কেউ মুখ খোলে না। বাড়িওয়ালা মোতালেব সাহেব সবাইকে ডাকেন ‘মা’, ‘বাবা’। দশ বছরের ভাড়াটে জাহানারা খালার অ্যাডভান্স আটকে গেলে রিনা এক শুক্রবার সবাইকে চায়ে ডাকলেন…",
+  "tags": [
+   "বাড়িওয়ালা ভাড়াটের গল্প",
+   "প্রতিবেশীর গল্প",
+   "পুরান ঢাকা",
+   "একতা",
+   "ন্যায্য অধিকার",
+   "সাহস",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "‘শুধু তোমাকেই বলছি’— ছয়জনকেই বলা হয়েছিল। এক কাপ চায়ে সবাই এক হলো। 🫖\nএকা চুপ থেকেছ, অথচ সবাই একসাথে বললে বদলাত— এমন কিছু কি আছে? 👇 #ভাড়াটে #একতা"
+ },
+ "thumbnail": {
+  "text": "শুধু তোমাকেই বলছি",
+  "sub": "ছয় ভাড়াটে, এক কাগজ"
+ }
+}

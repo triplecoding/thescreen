@@ -1,0 +1,540 @@
+{
+ "id": "264",
+ "status": "ready",
+ "title_bn": "আমবাগানের রাত",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 13",
+  "chapter_bn": "১৩ নম্বর অধ্যায়",
+  "title": "Nothing's Free",
+  "title_bn": "কোনো কিছুই বিনামূল্যে না"
+ },
+ "cast": {
+  "abba": {
+   "name": "জালাল সাহেব",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "man"
+  },
+  "imran": {
+   "name": "ইমরান",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#5B7DB1",
+   "hair": "side",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#C4473A",
+   "hair": "hijab",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "আমের মৌসুমে আব্বার আয় তিন লাখ। ইমরানের বেতন বত্রিশ হাজার। *হিসাব তো সোজা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "রাজশাহী, বানেশ্বর আমের হাট",
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "cross"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আব্বার মৌসুম",
+       "value": "৩ লাখ"
+      },
+      {
+       "label": "ইমরানের বেতন",
+       "value": "৩২ হাজার"
+      },
+      {
+       "label": "ইমরানের হিসাব",
+       "value": "চাকরি ছাড়ো",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ইমরান ঢাকায় ব্যাংকে। রোজ বসের ধমক, *এগারো ঘণ্টা ডেস্ক*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ঈদের ছুটিতে বাড়ি এসে খাবার টেবিলে সে *ঘোষণা* দিল।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাজশাহী, বাড়িতে",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "imran",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "চাকরি ছাইড়া দিমু, আব্বা। আপনি দুই মাসে যা কামান, আমি *সারা বছরেও* পাই না।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বাপের কষ্ট তুই দেখছস কোনোদিন? খালি *টাকাটা* দেখছস।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "amma": "angry"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জালাল সাহেব হাসলেন। তর্ক করলেন না। শুধু একটা *প্রস্তাব* দিলেন।",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এইবার মৌসুমটা তুই চালা। দুই সপ্তাহ। *আমি ঘরে বসমু*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম দিন। রাত তিনটায় বাগানে। *চল্লিশজন শ্রমিক*, সবাই তাকিয়ে আছে তার দিকে।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত ৩টা, আমবাগান",
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "3:00",
+     "label": "রাত ৩টা"
+    }
+   }
+  },
+  {
+   "say": "ভোরে হাটে দাম পড়ল। আগের দিনের চেয়ে মণে *চারশো টাকা কম*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বানেশ্বর হাট, ভোর",
+    "widget": null,
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তৃতীয় দিন ট্রাক এলো না। দুইশো ক্যারেট আম রোদে, *নরম হতে শুরু করল*।",
+   "scene": {
+    "moods": {
+     "imran": "worried"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই সপ্তাহে ইমরান যা শিখল, কোনো ব্যাংকে শেখায় না।",
+   "card": {
+    "title": "ইমরানের দুই সপ্তাহ",
+    "items": [
+     {
+      "t": "ঘুম— রাতে তিন ঘণ্টা",
+      "mark": "x"
+     },
+     {
+      "t": "ঢাকার পাইকারের বাকি— দেড় লাখ",
+      "mark": "x"
+     },
+     {
+      "t": "এক রাতের ঝড়ে ঝরা আম— সাতশো কেজি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাত একটায় ইমরান বাগানের মাচায় বসে। হাতে খাতা, *মাথায় হাত*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত ১টা, বাগানের মাচা",
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পেছনে টর্চ হাতে আব্বা। আসলে তিনি এসেছেন *রোজ রাতেই*।",
+   "pause": 0.6,
+   "scene": {
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "আব্বা, আপনি না কইছিলেন *ঘরে বসবেন*!",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ত্রিশ বছর এই রাত জাগি, বাপ। ঘরে বইসা থাকলেও *ঘুম আসে না*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বাপ-ছেলে মাচায় পাশাপাশি। অনেকক্ষণ কেউ কথা বলল না।",
+   "pause": 0.9,
+   "scene": {
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.65,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "তিন লাখ আমি দেখছিলাম। এই রাতগুলা তো *রসিদে লেখা* থাকে না।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "তোর দাম বসের ধমক, আমার দাম এই রাত। *ফ্রি কিছু নাই*, বাপ।",
+   "tone": "gently",
+   "scene": {
+    "arms": {
+     "abba": "hug"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন ইমরান ঢাকার পাইকারকে ফোন দিল। *ব্যাংকের ভাষায়*, কাগজসহ।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন",
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক সপ্তাহে দেড় লাখের এক লাখ *উঠে এলো*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "imran",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "abba",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাকি আদায়",
+       "value": "১ লাখ"
+      },
+      {
+       "label": "তিন বছরের আটকে থাকা",
+       "value": "শেষ"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "এই কাম তো আমি তিন বছরে পারি নাই! *কেমনে* করলি?",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "imran",
+   "say": "ব্যাংকে রোজ এইটাই করি, আব্বা। *ধমক খাওয়ার দাম* এইবার কামে লাগল।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "imran",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ইমরান চাকরি ছাড়েনি। কিন্তু ঢাকায় ফিরে একটা *ছুটির প্ল্যান* করল।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "ইমরানের ছুটির প্ল্যান",
+     "lines": [
+      "জুন— দুই সপ্তাহ, বানেশ্বর",
+      "বাকি আদায়— ইমরান",
+      "রাত জাগা— পালা করে"
+     ],
+     "sub": "আব্বার ঘুম— রাত দশটা থেকে"
+    }
+   }
+  },
+  {
+   "say": "পরের মৌসুমের প্রথম রাত। আব্বা ঘুমিয়েছেন *রাত দশটায়*— ত্রিশ বছরে প্রথম।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "পরের মৌসুম",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "amma",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "ঘুমাইতে দে। মাচায় আইজকা *তার পোলা* জাগে।",
+   "tone": "warmly",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "অন্যের সাফল্যে চোখে পড়ে শুধু টাকা… *দামটা লুকিয়ে থাকে ঘুমহীন রাতে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "অন্যের সাফল্যে চোখে পড়ে শুধু টাকা…",
+    "line2": "দামটা লুকিয়ে থাকে\nঘুমহীন রাতে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "আব্বার আয় তিন লাখ, ছেলের বেতন বত্রিশ হাজার— দুই সপ্তাহ আমবাগানে যা শিখল ইমরান 🥭",
+  "description": "রাজশাহীর ইমরান ঢাকার ব্যাংকে চাকরি করে, আর হিসাব কষে দেখে আমের মৌসুমে আব্বার আয় তিন লাখ। সে চাকরি ছাড়তে চাইল। আব্বা তর্ক না করে বললেন, এবার মৌসুমটা তুই চালা…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "আমের ব্যবসা",
+   "রাজশাহী",
+   "চাকরি না ব্যবসা",
+   "টাকার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "তিন লাখ টাকা চোখে পড়ে, ত্রিশ বছরের নির্ঘুম রাত চোখে পড়ে না। 🥭\nকার সাফল্য দেখে তুমি ভেবেছিলে ‘ওর তো সহজ’? 👇 #বাবা #রাজশাহী"
+ },
+ "thumbnail": {
+  "text": "হিসাব তো সোজা?",
+  "sub": "তিন লাখ বনাম বত্রিশ হাজার"
+ }
+}

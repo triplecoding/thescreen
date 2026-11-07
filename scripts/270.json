@@ -1,0 +1,565 @@
+{
+ "id": "270",
+ "status": "ready",
+ "title_bn": "নয় বছরের জমা",
+ "theme": "money",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 13",
+  "chapter_bn": "১৩ নম্বর অধ্যায়",
+  "title": "Nothing's Free",
+  "title_bn": "বিনা মূল্যে কিছু নেই"
+ },
+ "cast": {
+  "jamal": {
+   "name": "জামাল",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#5E7D3A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "shahnaz": {
+   "name": "শাহনাজ",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#B5473A",
+   "color2": "#F2D27A",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "hashem": {
+   "name": "হাশেম মহাজন",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নয় বছর অন্যের সিএনজি। রোজ জমা এক হাজার টাকা। এবার নিজের গাড়ি— *কিস্তিতে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ঢাকা, যাত্রাবাড়ী",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "অন্যের গাড়ি",
+       "value": "৯ বছর"
+      },
+      {
+       "label": "রোজ জমা",
+       "value": "১,০০০"
+      },
+      {
+       "label": "কিস্তি বাকি",
+       "value": "১৮ মাস",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শাহনাজের কানের দুল আর গ্রামের এক টুকরা জমি বন্ধক। জামাল ভাবল, এবার *দিন বদলাবে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "shahnaz",
+   "say": "জমার টাকা এখন নিজের পকেটে। খালি সাবধানে চালাইও, *আর কিছু চাই না*।",
+   "tone": "warmly",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "বাসায়, প্রথম রাত",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "shahnaz",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "shahnaz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "এক বছর, শাহনাজ। এক বছরে তোমার দুল *ফেরত আনুম*।",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম মাস ভালোই গেল। দ্বিতীয় মাসে *ইঞ্জিন বসে গেল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "গ্যারেজ, দ্বিতীয় মাস",
+    "props": [
+     "signboard",
+     "sign:রহিম অটো ওয়ার্কশপ",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাসে একটার পর একটা ধাক্কা।",
+   "card": {
+    "title": "তিন মাসের হিসাব",
+    "items": [
+     {
+      "t": "ইঞ্জিন মেরামত— ১৪,০০০ টাকা",
+      "mark": "x"
+     },
+     {
+      "t": "বর্ষায় যাত্রী নাই— ১১ দিন",
+      "mark": "x"
+     },
+     {
+      "t": "কিস্তি বাকি— এক মাস",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "যে মাসে কিস্তি দিতে পারল না, সেই রাতে জামাল *ভাত খেল না*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shahnaz",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "পরদিন পুরনো মালিক হাশেম মহাজন এলেন। হাতে *নগদ টাকার প্রস্তাব*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সিএনজি স্ট্যান্ড",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "গাড়ি আমারে দিয়া দে। কিস্তি আমি টানুম। তুই আগের মতো *জমায় চালা*, ঝামেলা নাই।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দাম বললেন কেনা দামের চেয়ে *আশি হাজার কম*। জামাল প্রায় রাজি। শুধু বলল, রাতটা ভাবি।"
+  },
+  {
+   "say": "রাতে শাহনাজ পাশে বসল। হাতে জামালের ফোন, *ক্যালকুলেটর খোলা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত এগারোটা",
+    "props": [
+     "almirah",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "shahnaz",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এক হাজার গুণ তিনশো পঁয়ষট্টি দিন। তারপর *গুণ নয় বছর*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "ক্যালকুলেটর",
+     "lines": [
+      "১,০০০ × ৩৬৫ × ৯",
+      "= ৩২,৮৫,০০০ টাকা"
+     ],
+     "sub": "নয় বছরের জমা"
+    }
+   }
+  },
+  {
+   "voice": "shahnaz",
+   "say": "নয় বছরে মহাজনরে দিছ প্রায় তেত্রিশ লাখ। কোনোদিন কইছ, *এইটা লস*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shahnaz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "ওইটা তো জমা। ওইটা তো *দিতেই হয়*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shahnaz",
+   "say": "নিজের গাড়ির খারাপ মাসগুলাও জমা। এইটাই *মালিক হওয়ার ভাড়া*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shahnaz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জামাল অনেকক্ষণ ফোনের সংখ্যাটার দিকে তাকিয়ে রইল।",
+   "pause": 0.9,
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.5
+    },
+    "moods": {
+     "jamal": "thinking"
+    }
+   }
+  },
+  {
+   "say": "সকালে স্ট্যান্ডে গিয়ে হাশেম মহাজনকে বলল— *গাড়ি বেচুম না*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "talk"
+     },
+     {
+      "id": "hashem",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "পরে আবার আইসা *কান্দিস না* কিন্তু।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জামাল কাঁদল না। ভোর পাঁচটায় বের হয়, রাতে *একটা ট্রিপ বেশি*।",
+   "scene": {
+    "moods": {
+     "jamal": "smile"
+    },
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "বর্ষা গেল। শীতে বিয়ের মৌসুম, *রিজার্ভ ট্রিপ*। এক মাসে শোধ হলো দুই কিস্তি।"
+  },
+  {
+   "say": "এক বছর পর, শেষ কিস্তির রসিদ। জামালের হাতে *কাগজটা কাঁপছে*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "এক বছর পর",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "shahnaz",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কিস্তি বাকি",
+       "value": "০",
+       "from": "১৮"
+      },
+      {
+       "label": "খারাপ মাস",
+       "value": "৪টা"
+      },
+      {
+       "label": "গাড়ি",
+       "value": "নিজের"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "শাহনাজ, দুল দুইটা *ছাড়াইয়া আনছি*। আর আজ থেকে একটা নতুন জমা।",
+   "tone": "proudly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shahnaz",
+   "say": "নতুন জমা? এইবার *কার কাছে*?",
+   "tone": "curious",
+   "scene": {
+    "moods": {
+     "shahnaz": "happy"
+    },
+    "cam": {
+     "focus": "shahnaz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jamal",
+   "say": "রোজ পাঁচশো, *তোমার হাতে*। খারাপ মাসের জমা।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "jamal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন বিকেলে সিএনজির পেছনে নতুন লেখা উঠল— *‘জমা নিজের কাছে’*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "সেদিন বিকেল",
+    "props": [
+     "cng"
+    ],
+    "chars": [
+     {
+      "id": "jamal",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "shahnaz",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খারাপ মাসগুলো জরিমানা মনে হয়… *আসলে ওগুলোই মালিকানার ভাড়া।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "খারাপ মাসগুলো জরিমানা মনে হয়…",
+    "line2": "আসলে ওগুলোই\nমালিকানার ভাড়া।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নিজের সিএনজি কিনেই তিন মাসে বিপদ— স্ত্রীর এক হিসাবে বদলাল সিদ্ধান্ত 🛺",
+  "description": "নয় বছর অন্যের সিএনজি চালিয়ে জামাল কিস্তিতে নিজের গাড়ি কিনল। তিন মাসে ইঞ্জিন, বর্ষা, বাকি কিস্তি— পুরনো মালিক এল কম দামে কিনে নিতে। সেই রাতে শাহনাজ ফোনের ক্যালকুলেটরে একটা হিসাব করল…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "সিএনজি চালক",
+   "যাত্রাবাড়ী",
+   "সংসারের গল্প",
+   "টাকার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "খারাপ মাসগুলো জরিমানা না— নিজের হওয়ার ভাড়া। শাহনাজের এক হিসাব সেটাই দেখাল। 🛺\nতোমার জীবনে কোন কঠিন সময় পরে বুঝেছ, ওটা দরকার ছিল? 👇 #স্বামীস্ত্রী #সিএনজি"
+ },
+ "thumbnail": {
+  "text": "বেচব না",
+  "sub": "নয় বছরের জমা"
+ }
+}

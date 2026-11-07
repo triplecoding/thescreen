@@ -1,0 +1,511 @@
+{
+ "id": "271",
+ "status": "ready",
+ "title_bn": "লাইন নয়ের শার্ট",
+ "theme": "work",
+ "source": {
+  "book": "The Communist Manifesto",
+  "author": "Karl Marx & Friedrich Engels",
+  "author_bn": "কার্ল মার্ক্স ও ফ্রেডরিখ এঙ্গেলস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Workers feel distant from the work they make",
+  "title_bn": "নিজের কাজ থেকে দূরে"
+ },
+ "cast": {
+  "rina": {
+   "name": "রিনা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#7A5A9E",
+   "color2": "#F2D27A",
+   "hair": "long_braid",
+   "voice": "woman"
+  },
+  "mim": {
+   "name": "মিম",
+   "type": "child_girl",
+   "skin": "brown",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F5D8A",
+   "hair": "kid",
+   "voice": "child_girl"
+  },
+  "seller": {
+   "name": "ফুটপাতের দোকানি",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "curly",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয় বছর, দিনে চৌদ্দশো কলার। অথচ রিনা কোনোদিন *পুরো একটা শার্ট* বানায়নি।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "আশুলিয়া, লাইন নম্বর নয়",
+    "props": [
+     "signboard",
+     "sign:লাইন ৯ — কলার সেকশন"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "চাকরি",
+       "value": "৬ বছর"
+      },
+      {
+       "label": "রোজ কলার",
+       "value": "১,৪০০"
+      },
+      {
+       "label": "পুরো শার্ট",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মাথার ওপর টার্গেট বোর্ড। কলার যায় পরের টেবিলে, তারপর *হারিয়ে যায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "রাতে ঘরে ফিরে মেয়ে মিমের *স্কুলের খাতা* দেখে।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "জামগড়া, ভাড়া ঘর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "mim",
+      "x": 0.66,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "আম্মু, কাল ক্লাসে লিখতে হবে— *‘আমার মা কী বানায়’*। তুমি কী বানাও?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "আমি… কলার বানাই, মা। শার্টের *গলার অংশটা*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "খালি গলা? তাইলে পুরো শার্টটা *কে বানায়*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিনা উত্তর দিতে পারল না। আলো নিভিয়ে *চুপচাপ শুয়ে রইল*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "rina": "sad"
+    },
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন মিমের খাতায় এক লাইন। ক্লাসের বাচ্চারা পড়ে *হেসেছিল*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আমার মা কী বানায়",
+     "lines": [
+      "আমার মা কলার বানায়।"
+     ],
+     "sub": "বাকিটা জানি না"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "রিনা নিজেকে বোঝাতে চাইল। মন মানল না।",
+   "card": {
+    "title": "মন মানল না",
+    "items": [
+     {
+      "t": "কাজ তো কাজই",
+      "mark": "x"
+     },
+     {
+      "t": "কে আর পুরো শার্ট দেখে",
+      "mark": "x"
+     },
+     {
+      "t": "বেতন পেলেই হলো",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শুক্রবার। ফুটপাতে *রপ্তানির বাড়তি শার্ট*, একশো পঞ্চাশ টাকা।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "শুক্রবার, বাইপাইলের ফুটপাত",
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "seller",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "seller",
+   "say": "দেখেন আপা, বিদেশের মাল। একটু খুঁত আছে, তাই *এত সস্তা*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "seller",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিনা শার্টটা উল্টাল। কলারের কোণে দুইটা *ছোট্ট উল্টা ফোঁড়*।",
+   "scene": {
+    "moods": {
+     "rina": "surprised"
+    },
+    "arms": {
+     "rina": "hold"
+    },
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "ছয় বছর ধরে এই ফোঁড় সে দেয়, যেন সুতা না খোলে। এটা *তার হাতের কলার*।",
+   "pause": 0.8
+  },
+  {
+   "say": "দরদাম না করেই কিনে ফেলল। ঘরে ফিরে শার্টটা মেলে ধরল *মিমের সামনে*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "mim",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "দেখ, এই গলাটা আমার। শার্টটা বিদেশ গেছিল, *আবার ঘুইরা আসছে*।",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "সত্যি তোমার? তাইলে শার্টের *বাকিটা* কারা বানাইছে?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "পাশের টেবিলে শিউলি খালা হাতা দেয়, মর্জিনা আপা বোতাম। *আমরা সবাই মিলা*।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে বাড়তি কাপড় দিয়ে রিনা মিমের জন্য বানাল *একটা পুরো জামা*। জীবনে প্রথমবার।",
+   "scene": {
+    "light": "night",
+    "chip": "রাত একটা",
+    "moods": {
+     "rina": "smile",
+     "mim": "neutral"
+    },
+    "arms": {
+     "rina": "hold"
+    }
+   }
+  },
+  {
+   "say": "পরদিন শার্টটা নিয়ে গেল লাইনে। পুরো লাইন হাতে হাতে ঘোরাল, কেউ চুপ করে *নিজের ফোঁড় খুঁজল*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন, লাইন নয়",
+    "props": [
+     "signboard",
+     "sign:লাইন ৯ — কলার সেকশন"
+    ],
+    "chars": [
+     {
+      "id": "rina",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "লাইন চিফ শার্টটা ঝুলিয়ে দিলেন টার্গেট বোর্ডের পাশে। নিচে একটা কাগজ।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "লাইন নয়ের শার্ট",
+     "lines": [
+      "কলার— রিনা",
+      "হাতা— শিউলি",
+      "বোতাম— মর্জিনা"
+     ]
+    }
+   }
+  },
+  {
+   "say": "সেদিন লাইনে কেউ টার্গেটের কথা বলল না। সবাই বলল, *‘আমাদের শার্ট’*।",
+   "scene": {
+    "moods": {
+     "rina": "smile"
+    }
+   }
+  },
+  {
+   "say": "সোমবার মিম নতুন জামা পরে স্কুলে গেল। খাতায় এবার *নতুন লাইন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সোমবার, স্কুলের গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "mim",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "rina",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "আমার মা কী বানায়",
+     "lines": [
+      "আমার মা শার্ট বানায়,",
+      "আরো অনেক মায়ের সাথে মিলে।"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "mim",
+   "say": "আম্মু, ম্যাডাম কইছে আমার জামাটা *ক্লাসের সবচেয়ে সুন্দর*।",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "mim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rina",
+   "say": "কলারটা খেয়াল করছস? ওইটা কিন্তু *আমার স্পেশাল*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "rina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মিম হাসতে হাসতে কলারটা ছুঁয়ে দেখল। সেখানে দুইটা *ছোট্ট উল্টা ফোঁড়*।",
+   "pause": 0.6,
+   "scene": {
+    "chars": [
+     {
+      "id": "mim",
+      "x": 0.44,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "rina",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "এক টুকরা কাজ ছোট মনে হয়… *সবাই মিলে সেটাই একটা পুরো জামা।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "এক টুকরা কাজ ছোট মনে হয়…",
+    "line2": "সবাই মিলে সেটাই\nএকটা পুরো জামা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "‘তুমি কী বানাও, আম্মু?’— ছয় বছরে দিনে চৌদ্দশো কলার, মেয়ের প্রশ্নে চুপ রিনা 🧵",
+  "description": "আশুলিয়ার গার্মেন্টসে ছয় বছর ধরে রিনা শুধু কলার সেলাই করে। মেয়ে মিম জানতে চাইল, আম্মু কী বানায়? রিনা উত্তর দিতে পারল না। তারপর এক শুক্রবার ফুটপাতের একটা শার্ট…",
+  "tags": [
+   "মায়ের গল্প",
+   "গার্মেন্টস শ্রমিক",
+   "আশুলিয়া",
+   "মা মেয়ের গল্প",
+   "কাজের মর্যাদা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছোট্ট একটা কলার— কিন্তু সবাই মিলে সেটাই একটা পুরো জামা। 🧵\nতোমার কাজের কোন ছোট অংশটা আসলে অনেক বড় কিছুর অংশ? 👇 #মায়েরগল্প #গার্মেন্টস"
+ },
+ "thumbnail": {
+  "text": "তুমি কী বানাও?",
+  "sub": "দিনে ১৪০০ কলার"
+ }
+}

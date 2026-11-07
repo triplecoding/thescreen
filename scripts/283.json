@@ -1,0 +1,503 @@
+{
+ "id": "283",
+ "status": "ready",
+ "title_bn": "আব্বুর ক্লাস ফাইভের রচনা",
+ "theme": "parents",
+ "source": {
+  "book": "The Psychology of Money",
+  "author": "Morgan Housel",
+  "author_bn": "মরগান হাউজেল",
+  "chapter": "CHAPTER 12",
+  "chapter_bn": "১২ নম্বর অধ্যায়",
+  "title": "You'll Change",
+  "title_bn": "মানুষ বদলায়"
+ },
+ "cast": {
+  "abbu": {
+   "name": "আব্বু",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "glasses": true,
+   "voice": "man"
+  },
+  "riya": {
+   "name": "রিয়া",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#3B6FA0",
+   "color2": "#F2EEE3",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "dadi": {
+   "name": "দাদি",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#7A9E7E",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছয় বছর বয়সের এক ভিডিও। মেয়ে বলছে, *‘ডাক্তার হব’*। দশ বছর পরও আব্বু সেটাই ধরে আছেন।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "খুলনা, সোনাডাঙ্গা",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ভিডিওর বয়স",
+       "value": "১০ বছর"
+      },
+      {
+       "label": "মেডিকেল কোচিং",
+       "value": "৪৫,০০০"
+      },
+      {
+       "label": "রিয়ার মন",
+       "value": "হিসাববিজ্ঞান",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নাসির সাহেব ব্যাংকার। অতিথি এলেই ভিডিওটা *দেখান*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "এসএসসিতে রিয়া জিপিএ ফাইভ পেল। পরদিনই আব্বু মেডিকেল কোচিংয়ে জমা দিলেন *পঁয়তাল্লিশ হাজার*।"
+  },
+  {
+   "voice": "riya",
+   "say": "আব্বু, কলেজে আমি কমার্স নিতে চাই। হিসাবের অঙ্ক আমার *ভালো লাগে*।",
+   "tone": "gently",
+   "scene": {
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "phone"
+     },
+     {
+      "id": "riya",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "ছোটবেলায় তুই নিজেই কইছিলি ডাক্তার হবি। ভিডিও আছে। *এখন কী হইল*?",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "abbu": "angry"
+    },
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "আব্বু, তখন আমার বয়স ছিল *ছয়*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক সপ্তাহে তিনটা চেষ্টা। আব্বুর উত্তর একটাই— *ভিডিওটা*।",
+   "card": {
+    "title": "রিয়া যা যা দেখাল",
+    "items": [
+     {
+      "t": "নাইনের হিসাববিজ্ঞানের খাতা",
+      "mark": "x"
+     },
+     {
+      "t": "অলিম্পিয়াডের সার্টিফিকেট",
+      "mark": "x"
+     },
+     {
+      "t": "খালাতো বোনকে দিয়ে বলানো",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে রিয়ার টেবিলে কোচিংয়ের মোটা বই খোলা। এক সপ্তাহে পাতা *একটাও উল্টায়নি*।",
+   "pause": 0.7,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "riya",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পাশের ঘর থেকে দাদি সব শুনছিলেন। ভোরে খুললেন পুরোনো *টিনের ট্রাংক*।"
+  },
+  {
+   "say": "সকালে চায়ের সাথে দাদি রাখলেন একটা হলদে খাতা।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "sofa",
+     "almirah"
+    ],
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "dadi",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আমার জীবনের লক্ষ্য",
+     "lines": [
+      "আমি বড় হয়ে পাইলট হব।",
+      "আকাশে উড়ব, আম্মাকে নিয়ে।"
+     ],
+     "sub": "নাসির উদ্দিন, ক্লাস ফাইভ"
+    }
+   }
+  },
+  {
+   "say": "ক্লাস ফাইভের রচনা। লেখক— *নাসির উদ্দিন*।",
+   "scene": {
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "এইটা এখনো রাখছেন, আম্মা? ছোটবেলার কথা… *কেউ মনে রাখে*?",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "abbu": "smile"
+    },
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dadi",
+   "say": "তুই পাইলট হস নাই। তাইলে কি তুই *ভুল মানুষ* হইছস, বাপ?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "dadi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসির সাহেবের হাসি থেমে গেল। কাপটা নামিয়ে রাখলেন। অনেকক্ষণ *কিছু বললেন না*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.5
+    },
+    "moods": {
+     "abbu": "thinking"
+    }
+   }
+  },
+  {
+   "say": "তিনি পাইলট হননি, হয়েছেন ব্যাংকার। আর হিসাব মেলাতে আজও তাঁর *আনন্দ হয়*।"
+  },
+  {
+   "say": "ঠিক যেমন হয় *তাঁর মেয়ের*।",
+   "pause": 0.7
+  },
+  {
+   "say": "সন্ধ্যায় তিনি রিয়ার দরজায় টোকা দিলেন। হাতে কলেজের *ভর্তি ফর্ম*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "সেদিন সন্ধ্যা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "riya",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "গ্রুপের ঘরটা খালি রাখছি। তুই *নিজের হাতে* লেখ।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "আর কোচিংয়ের পঁয়তাল্লিশ হাজার? ওরা তো *ফেরত দিবে না*…",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abbu",
+   "say": "ছয় বছরের কথা ধইরা তোর দুই বছর নষ্ট করার চেয়ে, ওই টাকা *যাক*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "abbu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রিয়া ফর্মে লিখল— *ব্যবসায় শিক্ষা*। কলমটা একটু কাঁপছিল।",
+   "scene": {
+    "moods": {
+     "riya": "happy"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর কলেজের প্রথম পরীক্ষা। হিসাববিজ্ঞানে রিয়া *ক্লাসে প্রথম*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "riya",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "হিসাববিজ্ঞান",
+       "value": "৯৬"
+      },
+      {
+       "label": "ক্লাসে",
+       "value": "প্রথম"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ড্রয়িংরুমের দেয়ালে এখন দুইটা ফ্রেম। ছয় বছরের রিয়ার ছবি, আর আব্বুর *ক্লাস ফাইভের রচনা*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "riya",
+   "say": "আব্বু, তুমি পাইলট হইলে আমার হিসাবের খাতা *দেখত কে*?",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "riya",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসির সাহেব হেসে ফেললেন। দাদি দরজার আড়াল থেকে *মুখ টিপে হাসলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "chars": [
+     {
+      "id": "abbu",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "riya",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "dadi",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "ছয় বছরের স্বপ্ন দিয়ে… *ষোলো বছরের জীবন বাঁধা যায় না।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "ছয় বছরের স্বপ্ন দিয়ে…",
+    "line2": "ষোলো বছরের জীবন\nবাঁধা যায় না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ছয় বছর বয়সে বলেছিল ‘ডাক্তার হব’— দাদি বের করলেন আব্বুর পুরোনো রচনা 📓",
+  "description": "খুলনার রিয়া এসএসসিতে জিপিএ ফাইভ পেয়ে কমার্স পড়তে চায়। কিন্তু আব্বু ধরে আছেন দশ বছর আগের এক ভিডিও— ছয় বছরের রিয়া বলছে ‘ডাক্তার হব’। তখন দাদি খুললেন তাঁর পুরোনো ট্রাংক…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "দাদির গল্প",
+   "পড়াশোনা",
+   "ক্যারিয়ার",
+   "খুলনা",
+   "স্বপ্ন",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছয় বছরের স্বপ্ন দিয়ে ষোলো বছরের জীবন বাঁধা যায় না— দাদির এক প্রশ্নে বুঝলেন আব্বু। 📓\nছোটবেলায় তুমি কী হতে চেয়েছিলে, আর আজ কী হয়েছ? 👇 #বাবামেয়ে #স্বপ্ন"
+ },
+ "thumbnail": {
+  "text": "পাইলট হননি আব্বু",
+  "sub": "ক্লাস ফাইভের রচনা"
+ }
+}

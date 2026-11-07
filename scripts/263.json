@@ -1,0 +1,553 @@
+{
+ "id": "263",
+ "status": "ready",
+ "title_bn": "আরও দুই বছর",
+ "theme": "probashi",
+ "source": {
+  "book": "Animal Farm",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "The loyal worker who only says 'I will work harder'",
+  "title_bn": "যে শুধু বলে ‘আরও খাটব’"
+ },
+ "cast": {
+  "rafiq": {
+   "name": "রফিক",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#8A7F70",
+   "hair": "side_grey",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "morjina": {
+   "name": "মর্জিনা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "sakib": {
+   "name": "সাকিব",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "short",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "ষোলো বছর রিয়াদে। বাড়ি হয়েছে তিনতলা। আর রফিকের নিজের জায়গা— *ক্যাম্পের এক বিছানা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রিয়াদ, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রবাসে",
+       "value": "১৬ বছর"
+      },
+      {
+       "label": "বাড়ি",
+       "value": "৩ তলা"
+      },
+      {
+       "label": "দেশে ঈদ",
+       "value": "০ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রফিকের বয়স একান্ন। দুই শিফট কাজ। আর সব কিছুর উত্তর তার *একটাই*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "ভাইয়ের মোটরসাইকেল, ভাগ্নির বিয়ে, বাড়ির ছাদ— *রফিকই ভরসা*।"
+  },
+  {
+   "voice": "rafiq",
+   "say": "চিন্তা কইরো না। আমি আরও খাটমু। ওভারটাইম তো আছে, *শরীর এখনো চলে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "morjina",
+   "say": "আর কত? ষোলো বছরে তুমি নিজের জন্য *একটা জিনিস* কিনছো?",
+   "tone": "sad",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চাঁদপুর, গ্রামের বাড়ি",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "morjina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "morjina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "আমার কী লাগে? সবাই ভালো থাকলেই হইল। *আরও দুই বছর*।",
+   "tone": "flatly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রিয়াদ, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "‘আরও দুই বছর’— রফিক এই কথা বলেছে আটবার।",
+   "card": {
+    "title": "ষোলো বছরের ‘আরও দুই বছর’",
+    "items": [
+     {
+      "t": "দুই হাজার বারো— ‘ভাইয়ের পড়া শেষ হোক’",
+      "mark": "x"
+     },
+     {
+      "t": "দুই হাজার আঠারো— ‘দোতলাটা হোক’",
+      "mark": "x"
+     },
+     {
+      "t": "দুই হাজার চব্বিশ— ‘ছাদটা ঢালাই হোক’",
+      "mark": "x"
+     }
+    ],
+    "footer": "শেষ হয় না"
+   }
+  },
+  {
+   "say": "নতুন বাড়ির উদ্বোধন। সবাই ছবি তোলে। রফিক দেখে *ভিডিও কলে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রিয়াদ, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "ছবিতে সবাই আছে। শুধু যে বাড়িটা বানাল, *সে নেই*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "rafiq": "sad"
+    },
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "এক রাতে ছেলে সাকিবের ফোন। এসএসসির রেজাল্ট বেরিয়েছে।",
+   "scene": {
+    "moods": {
+     "rafiq": "neutral"
+    },
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sakib",
+   "say": "আব্বা, জিপিএ ফোর পয়েন্ট সেভেন! আর শোনেন, ঠিক করছি— আমিও *সৌদি আসমু*, আপনার কাছে।",
+   "tone": "excited",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চাঁদপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sakib",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "ক্যান? তুই পড়বি না?",
+   "tone": "upset",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রিয়াদ, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sakib",
+   "say": "আপনার মতো খাটমু, আব্বা। সবাই তো কয়— *রফিকের মতো পোলা হয় না*।",
+   "tone": "proudly",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "চাঁদপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "sakib",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রফিকের হাত থেকে ফোনটা প্রায় পড়ে গেল।",
+   "pause": 0.9,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রিয়াদ, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "চোখে ভাসল ক্যাম্পের ভোর চারটা। ঝলসানো রোদ। একা ঈদ, *ষোলোবার*।",
+   "scene": {
+    "moods": {
+     "rafiq": "crying"
+    }
+   }
+  },
+  {
+   "say": "এই জীবন সে ছেলের জন্য চায় না। অথচ ছেলেকে শিখিয়েছে *এটাই*।"
+  },
+  {
+   "voice": "rafiq",
+   "say": "শোন বাপ, তুই কলেজে ভর্তি হবি। আর আমি আসতেছি— *এইবার সত্যি*।",
+   "tone": "serious",
+   "scene": {
+    "moods": {
+     "rafiq": "sad"
+    },
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে মর্জিনার সাথে ফোনে বসে রফিক লিখল একটা *‘যথেষ্টর হিসাব’*।",
+   "scene": {
+    "moods": {
+     "rafiq": "thinking"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "কত হলে যথেষ্ট",
+     "lines": [
+      "সাকিবের পড়া— চার বছর",
+      "একটা ছোট মুদি দোকান",
+      "ভাইয়েরা— নিজের পায়ে"
+     ],
+     "sub": "ফেরার তারিখ: আগামী বছর ডিসেম্বর"
+    }
+   }
+  },
+  {
+   "say": "ভাইদের জানাল, এরপর টাকা যাবে *শুধু ঘরের খরচে*। কেউ খুশি হলো না।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "morjina",
+   "say": "রাগ করুক। ষোলো বছর তুমি সবার ছিলা। এখন একটু *আমাগো* হও।",
+   "tone": "softly",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "চাঁদপুর",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "morjina",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "morjina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চৌদ্দ মাস পর। চাঁদপুর বাজারে ছোট্ট একটা মুদি দোকান। সাইনবোর্ডে *‘সাকিব স্টোর’*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "চৌদ্দ মাস পর, চাঁদপুর বাজার",
+    "props": [
+     "signboard_new",
+     "sign:সাকিব স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "sakib",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বিকেলে কলেজ থেকে ফিরে সাকিব বসে ক্যাশে। আব্বা মাপেন *চাল*।"
+  },
+  {
+   "voice": "sakib",
+   "say": "আব্বা, লাভ তো রিয়াদের চেয়ে *অনেক কম*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "sakib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rafiq",
+   "say": "কম। কিন্তু এইখানে রাতে ভাত খাই *তোগো সাথে*। এইটার হিসাব কোনো খাতায় নাই।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "rafiq": "happy"
+    },
+    "cam": {
+     "focus": "rafiq",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সন্ধ্যায় দোকানের ঝাঁপ নামল। তিনজন একসাথে বাড়ির পথে, *হেঁটে হেঁটে*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "set": "street",
+    "light": "evening",
+    "chip": "বাড়ির পথে",
+    "chars": [
+     {
+      "id": "rafiq",
+      "x": 0.28,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "morjina",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "sakib",
+      "x": 0.72,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "‘আরও খাটব’ বলতে বলতে… *জীবনটাই ওভারটাইম হয়ে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "‘আরও খাটব’ বলতে বলতে…",
+    "line2": "জীবনটাই\nওভারটাইম হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ষোলো বছর রিয়াদে, প্রতিবার ‘আরও দুই বছর’— ছেলের এক কথায় থমকে গেলেন বাবা ✈️",
+  "description": "চাঁদপুরের রফিক ষোলো বছর রিয়াদে, গ্রামের বাড়ি তিনতলা হয়েছে, কিন্তু তার উত্তর একটাই— আরও খাটব। নতুন বাড়ির উদ্বোধন তিনি দেখলেন ভিডিও কলে। তারপর এক রাতে এসএসসির রেজাল্ট নিয়ে ফোন দিল ছেলে…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "বাবা ছেলের গল্প",
+   "সৌদি প্রবাসী",
+   "চাঁদপুর",
+   "রেমিট্যান্স",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ষোলো বছর ‘আরও খাটব’— থামলেন সেদিন, যেদিন ছেলে বলল, আমিও আপনার মতো হব। ✈️\nতোমার পরিবারে কে আছেন, যিনি কখনো নিজের জন্য কিছু চান না? 👇 #প্রবাসী #বাবা"
+ },
+ "thumbnail": {
+  "text": "আরও দুই বছর",
+  "sub": "ষোলো বছর রিয়াদে"
+ }
+}

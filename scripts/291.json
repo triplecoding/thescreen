@@ -1,0 +1,486 @@
+{
+ "id": "291",
+ "status": "ready",
+ "title_bn": "রাত দশটার গেট",
+ "theme": "struggle",
+ "source": {
+  "book": "The Open Society and Its Enemies",
+  "author": "Karl Popper",
+  "author_bn": "কার্ল পপার",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "No one should be beyond questioning",
+  "title_bn": "প্রশ্নের ঊর্ধ্বে কেউ নয়"
+ },
+ "cast": {
+  "sumi": {
+   "name": "সুমি",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "scrub",
+   "color": "#5FA3A0",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "aziz": {
+   "name": "আজিজ সাহেব",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#D8D2C2",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "khala": {
+   "name": "খালাম্মা",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8A5A9E",
+   "color2": "#E8C9A0",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "রাত দশটায় গেট বন্ধ— বাড়িওয়ালার নিয়ম। আর নার্স সুমির ডিউটি শেষ হয় *রাত এগারোটায়*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "ঢাকা, শ্যামলী— রাত ১১টা ২০",
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গেট বন্ধ",
+       "value": "রাত ১০টা"
+      },
+      {
+       "label": "ডিউটি শেষ",
+       "value": "রাত ১১টা"
+      },
+      {
+       "label": "বাইরে দাঁড়ানো",
+       "value": "সপ্তাহে ৩ রাত",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সুমি, চব্বিশ। সরকারি হাসপাতালের স্টাফ নার্স। রংপুর থেকে ঢাকায় *একা থাকে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রতিরাতে তালাবন্ধ গেট, দারোয়ান *ঘুমিয়ে*।"
+  },
+  {
+   "say": "পাঁচ বছর আগের এক চুরির পর বাড়িওয়ালা আজিজ সাহেবের এই নিয়ম। তারপর কেউ *প্রশ্ন করেনি*।"
+  },
+  {
+   "voice": "sumi",
+   "say": "চাচা, আমার নাইট ডিউটি। একটা চাবি দিলে আর কাউকে *জাগাইতে হবে না*।",
+   "tone": "gently",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরদিন সকাল, সিঁড়ি",
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "aziz",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "নিয়ম সবার জন্য এক। আজ তোমারে চাবি দিলে কাল *দশজন চাইবো*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক মাসে তিনটা চেষ্টা। গেট তবু রাত দশটাতেই *বন্ধ*।",
+   "card": {
+    "title": "সুমির এক মাস",
+    "items": [
+     {
+      "t": "অন্য ভাড়াটেদের দিয়ে বলানো",
+      "mark": "x"
+     },
+     {
+      "t": "দারোয়ানকে চায়ের টাকা দেওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "ডিউটি বদলের আবেদন— হয়নি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক বর্ষার রাত। ভিজে চুপচুপে সুমি গেটের সামনে। দারোয়ানের ফোন *বন্ধ*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক বর্ষার রাত",
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "ভাবল আম্মাকে ফোন দেবে। দিল না— আম্মা *আর ঘুমাতে পারবেন না*।"
+  },
+  {
+   "say": "পঞ্চাশ মিনিট পর দোতলার জানালা খুলল। খালাম্মার *ঘুম ভেঙে গেছে*।",
+   "pause": 0.7
+  },
+  {
+   "say": "খালাম্মা ছাতা নিয়ে নেমে তালা খুললেন। সুমির হাত *বরফ*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "khala",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ঘরে ফিরে খালাম্মা স্বামীর পাশে বসলেন। আজিজ সাহেব *জেগেই ছিলেন*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত, দোতলা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "khala",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": null
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "আমাদের নাদিয়া খুলনায় রাতে ডিউটি করে। ওর বাড়িওয়ালা গেট না খুললে তুমি *কী করতা*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আজিজ সাহেব উত্তর দিলেন না। পাঁচ বছরের নিয়মটা হঠাৎ *অন্য রকম দেখাল*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.5
+    },
+    "moods": {
+     "aziz": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "নিয়মটা তো চোরের জন্য বানাইছিলাম… *মেয়েটার জন্য না*।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "aziz": "sad"
+    },
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সারা রাত তিনি জানালার পাশে *বসে রইলেন*।",
+   "pause": 0.7
+  },
+  {
+   "say": "সকালে সুমির দরজায় টোকা। আজিজ সাহেব, হাতে *একটা চাবি* আর একটা খাতা।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "aziz",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "রাতের খাতা",
+     "lines": [
+      "নাম • ফ্ল্যাট • ফেরার সময়",
+      "সুমি • ৩-বি • রাত ১১:২০"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "রাতে যারা কাজ করে, চাবি পাইবো। খাতায় শুধু *নাম আর সময়* লিখবা।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumi",
+   "say": "চাচা… নিয়মটা আপনি *নিজে বদলাইলেন*?",
+   "tone": "hopeful",
+   "scene": {
+    "cam": {
+     "focus": "sumi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "প্রশ্নটা তোমার ঠিক ছিল, মা। আমার *শুনতে দেরি হইছে*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "aziz": "smile"
+    },
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সপ্তাহখানেকে খাতায় আরও দুই নাম— কল সেন্টারের রুবা, *নাইটগার্ড জসিম*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "রাতের খাতা",
+     "lines": [
+      "সুমি • ৩-বি • রাত ১১:২০",
+      "রুবা • ৪-এ • রাত ১২:১০",
+      "জসিম • ৫-সি • ভোর ৬:০৫"
+     ]
+    }
+   }
+  },
+  {
+   "say": "এক মাস পর। সুমি নিজের চাবিতে গেট খুলল। দোতলায় *বাতি জ্বলছে*।",
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "এক মাস পর",
+    "widget": null,
+    "chars": [
+     {
+      "id": "sumi",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আজিজ সাহেব জানালায়। খাতায় সুমির নাম উঠলে তবেই তিনি *বাতি নেভান*।"
+  },
+  {
+   "voice": "khala",
+   "say": "দেখছো? চাবি দিয়া কেউ চুরি করে নাই। সবাই খালি *শান্তিতে ঘুমায়*।",
+   "tone": "teasing",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দোতলা",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "khala",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আজিজ সাহেব হাসলেন। তারপর খুলনায় মেয়েকে ফোন দিলেন— *‘ফিরছস, মা?’*",
+   "pause": 0.8,
+   "scene": {
+    "arms": {
+     "aziz": "call"
+    },
+    "holds": {
+     "aziz": "phone"
+    },
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    },
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে নিয়মে প্রশ্ন চলে না… *সেটা নিয়ম নয়, দেয়াল।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে নিয়মে প্রশ্ন চলে না…",
+    "line2": "সেটা নিয়ম নয়,\nদেয়াল।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "রাত দশটায় গেট বন্ধ, নার্সের ডিউটি শেষ এগারোটায়— বাড়িওয়ালির এক প্রশ্ন 🔑",
+  "description": "শ্যামলীতে একা থাকে নার্স সুমি। বাড়িওয়ালা আজিজ সাহেবের নিয়ম— রাত দশটায় গেট বন্ধ, কোনো চাবি নয়। এক বর্ষার রাতে সুমি পঞ্চাশ মিনিট ভিজল তালাবন্ধ গেটের সামনে। সেই রাতে খালাম্মা স্বামীকে একটা প্রশ্ন করলেন…",
+  "tags": [
+   "বাড়িওয়ালা ভাড়াটের গল্প",
+   "নার্সের গল্প",
+   "শ্যামলী",
+   "নিয়ম",
+   "মেয়েদের নিরাপত্তা",
+   "সম্মান",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নিয়মটা চোরের জন্য বানানো ছিল— আটকে যাচ্ছিল রাত জাগা এক নার্স। 🔑\nতোমার জীবনে কোন নিয়মটা নিয়ে কেউ কখনো প্রশ্ন তোলেনি? 👇 #বাড়িওয়ালা #নার্স"
+ },
+ "thumbnail": {
+  "text": "রাত দশটার গেট",
+  "sub": "নার্সের ডিউটি এগারোটায়"
+ }
+}

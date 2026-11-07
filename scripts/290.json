@@ -1,0 +1,522 @@
+{
+ "id": "290",
+ "status": "ready",
+ "title_bn": "লাল কলমের সাতটা নোট",
+ "theme": "school",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 9",
+  "chapter_bn": "৯ নম্বর অধ্যায়",
+  "title": "Get more use from enemies than a fool from friends",
+  "title_bn": "সমালোচকের কাছে শেখা"
+ },
+ "cast": {
+  "arif": {
+   "name": "আরিফ স্যার",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#4A7A9E",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "nasrin": {
+   "name": "নাসরিন আপা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#7A3B4A",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  },
+  "juwel": {
+   "name": "জুয়েল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "curly",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "প্রথম মডেল টেস্ট। আরিফের ব্যাচে নব্বই জন। পাস করল *মাত্র সতেরো জন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, ফার্মগেট",
+    "props": [
+     "signboard",
+     "sign:অ্যাডমিশন কোচিং— রুম ৪"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ছাত্রছাত্রী",
+       "value": "৯০"
+      },
+      {
+       "label": "পাস",
+       "value": "১৭",
+       "red": true
+      },
+      {
+       "label": "বন্ধুদের রিভিউ",
+       "value": "দারুণ!"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আরিফ, ছাব্বিশ। নিজে এই কোচিং থেকেই চান্স পেয়েছিল। এখন *পদার্থবিজ্ঞানের* শিক্ষক।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রতিটা ক্লাসের পর কলিগ-বন্ধু জুয়েল বলে একই কথা।",
+   "scene": {
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "juwel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "juwel",
+   "say": "ভাই, আজকে তো *ফাটাইয়া দিছেন*! পোলাপান হাসতে হাসতে শেষ!",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "juwel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আরিফেরও ভালো লাগে। ক্লাস মানে এখন *হাসি আর তালি*।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কিন্তু পেছনের বেঞ্চে বসে থাকেন সিনিয়র শিক্ষক নাসরিন আপা। হাতে *লাল কলম*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "আরিফ, বোর্ডের লেখা পেছন থেকে পড়া যায় না। আর প্রশ্ন করে *উত্তর নিজেই দিয়া দাও*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আরিফের কান গরম। সবাই শুনেছে। সে আপার নোট ভাঁজ করে *ব্যাগে ঢুকিয়ে* রাখল।",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    },
+    "moods": {
+     "arif": "angry"
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "উনার কাজ একটাই, জুয়েল— *ভুল ধরা*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক মাস আরিফ আপাকে *এড়িয়ে চলল*।",
+   "card": {
+    "title": "আরিফ যা যা করল",
+    "items": [
+     {
+      "t": "জুয়েলের সাথে আপাকে নিয়ে হাসাহাসি",
+      "mark": "x"
+     },
+     {
+      "t": "আপার নোট না পড়া",
+      "mark": "x"
+     },
+     {
+      "t": "ক্লাসে আরও বেশি জোকস",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "টেস্টের রাতে মেসে ফিরে আরিফ *খাতা দেখতে* বসল।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "টেস্টের রাত, মেসের রুম",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "একই ভুল বারবার। ঠিক সেই অঙ্কগুলোতে, যেগুলো ক্লাসে সে *নিজেই করে দিয়েছিল*।",
+   "scene": {
+    "moods": {
+     "arif": "sad"
+    }
+   }
+  },
+  {
+   "say": "ব্যাগ থেকে বের হলো এক মাসের ভাঁজ করা কাগজ। নাসরিন আপার *সাতটা নোট*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নাসরিন আপার নোট",
+     "lines": [
+      "১. বোর্ডে বড় করে লেখো",
+      "২. প্রশ্ন করে দশ সেকেন্ড চুপ থাকো",
+      "৩. পেছনের বেঞ্চে একবার যাও"
+     ],
+     "sub": "আরও চারটা…"
+    }
+   }
+  },
+  {
+   "say": "প্রতিটা নোট যেন এই খাতাগুলো *আগেই দেখে* লেখা।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.5
+    },
+    "moods": {
+     "arif": "thinking"
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে আরিফ শিক্ষক কক্ষে। আপা চা খাচ্ছেন, *চোখ তুললেন না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল, শিক্ষক কক্ষ",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আপা, আপনার সাতটা নোট এক মাস ব্যাগে ছিল। কাল রাতে পড়লাম। *দেরি হইয়া গেল*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "দেরি? টেস্ট তো আরও পাঁচটা বাকি। কাল থেকে আমি আবার *পেছনে বসব*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "arif",
+   "say": "আপা… আমার ওপর রাগ কইরা এত কিছু *লিখছিলেন*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "রাগ না। তোমার বয়সে আমারে কেউ লিখে দেয় নাই। আমি *তিন বছর* ভুল পড়াইছি।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "nasrin": "sad"
+    },
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "যাকে এক মাস এড়িয়েছে, সেই মানুষটাই ছিল তার *সবচেয়ে মন দেওয়া দর্শক*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "arif",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই মাস। আরিফ বোর্ডে বড় করে লেখে। প্রশ্ন করে দশ সেকেন্ড *চুপ থাকে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দুই মাস পর",
+    "props": [
+     "signboard",
+     "sign:অ্যাডমিশন কোচিং— রুম ৪"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.78,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "জোকস কমেছে। কিন্তু পেছনের বেঞ্চের ছেলেমেয়েরা এখন *হাত তোলে*।"
+  },
+  {
+   "say": "শেষ মডেল টেস্ট। নব্বই জনে পাস *বাষট্টি জন*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রথম টেস্টে পাস",
+       "value": "১৭"
+      },
+      {
+       "label": "শেষ টেস্টে পাস",
+       "value": "৬২"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "juwel",
+   "say": "ভাই, এইবার তো সত্যিই ফাটাইছেন! *পার্টি দেন*!",
+   "tone": "laughs",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "juwel",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "wave"
+     }
+    ],
+    "cam": {
+     "focus": "juwel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আরিফ হাসল। প্রথম মিষ্টির প্যাকেটটা রাখল নাসরিন আপার টেবিলে। সাথে *একটা নতুন লাল কলম*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "শিক্ষক কক্ষ",
+    "props": [
+     "signboard",
+     "sign:শিক্ষক কক্ষ"
+    ],
+    "chars": [
+     {
+      "id": "arif",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে শুধু প্রশংসা করে, সে আরাম দেয়… *যে ভুল ধরে, সে পথ দেখায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে শুধু প্রশংসা করে, সে আরাম দেয়…",
+    "line2": "যে ভুল ধরে,\nসে পথ দেখায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নব্বই জনে পাস মাত্র সতেরো— যে আপাকে ‘শত্রু’ ভাবত, তাঁর সাত নোটেই উত্তর ✍️",
+  "description": "ফার্মগেটের এক অ্যাডমিশন কোচিংয়ের তরুণ শিক্ষক আরিফ। বন্ধুরা বলে ক্লাস দারুণ, কিন্তু সিনিয়র নাসরিন আপা লাল কলমে ভুল ধরেন। প্রথম মডেল টেস্টে নব্বই জনে পাস মাত্র সতেরো জন…",
+  "tags": [
+   "শিক্ষকের গল্প",
+   "কোচিং",
+   "ফার্মগেট",
+   "সমালোচনা",
+   "অফিসের গল্প",
+   "শেখা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "প্রশংসায় ক্লাস মজার হয়েছিল— কিন্তু আপার লাল কলমে ছিল আসল উত্তর। ✍️\nযে মানুষটা তোমার ভুল ধরত, পরে বুঝেছ সে-ই তোমার সবচেয়ে বড় শিক্ষক? 👇 #শিক্ষক #কোচিং"
+ },
+ "thumbnail": {
+  "text": "লাল কলমের নোট",
+  "sub": "নব্বই জনে পাস সতেরো"
+ }
+}

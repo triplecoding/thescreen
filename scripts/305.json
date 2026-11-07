@@ -1,0 +1,527 @@
+{
+ "id": "305",
+ "status": "ready",
+ "title_bn": "দোকানের চাবি",
+ "theme": "parents",
+ "source": {
+  "book": "1984",
+  "author": "George Orwell",
+  "author_bn": "জর্জ অরওয়েল",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Rewriting history to suit the present",
+  "title_bn": "সুবিধামতো লেখা ইতিহাস"
+ },
+ "cast": {
+  "abba": {
+   "name": "জামাল উদ্দিন",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F1ECE2",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "shampa": {
+   "name": "শম্পা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#2F7A6B",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "amma": {
+   "name": "রাবেয়া বেগম",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#8E3B5A",
+   "color2": "#F1ECE2",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ছত্রিশ বছরের দোকান। প্রতি ঈদে একই গল্প— *‘আমি একা দাঁড় করাইছি’*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "নরসিংদী, ঈদের দিন",
+    "props": [
+     "sofa",
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকানের বয়স",
+       "value": "৩৬ বছর"
+      },
+      {
+       "label": "গল্পটা বলা",
+       "value": "প্রতি ঈদে"
+      },
+      {
+       "label": "গল্পে আম্মার নাম",
+       "value": "০ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "জামাল উদ্দিন, বাবুরহাটে কাপড়ের দোকান। ঈদের দিন নাতি-নাতনিদের *গল্প শোনান*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "শূন্য হাতে শুরু, বুঝছস? এই দোকান আমি *একা হাতে* দাঁড় করাইছি।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পেছনে আম্মা রাবেয়া, হাতে সেমাইয়ের বাটি। প্রতিবারের মতো *চুপচাপ হাসেন*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "amma",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "shampa",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "এবার মেয়ে শম্পার ব্যাগে *কিছু একটা আছে*।",
+   "scene": {
+    "cam": {
+     "focus": "shampa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ আগে পুরোনো আলমারি গোছাতে গিয়ে পেয়েছিল দুইটা *লাল খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "এক সপ্তাহ আগে",
+    "props": [
+     "almirah",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shampa",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "প্রতিটা পাতায় হিসাব। আর নিচে একটাই নাম— *রাবেয়া*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "দোকানের খাতা, ২০০৩",
+     "lines": [
+      "১২ মার্চ — বিক্রি ২,৪০০ — রাবেয়া",
+      "২ মে — মহাজনের বাকি শোধ — রাবেয়া",
+      "নভেম্বর — দোকান আবার লাভে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "শম্পার মনে পড়ল। সে বছর আব্বার এক্সিডেন্ট, পা ভেঙে *আট মাস বিছানায়*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "shampa": "thinking"
+    }
+   }
+  },
+  {
+   "voice": "shampa",
+   "say": "আম্মা, বাজারে আপনি আট মাস দোকান চালাইছেন? *একা*?",
+   "tone": "curious",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "রান্নাঘর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "shampa",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "shampa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "মহাজনরা হাসত, কইত মাইয়া মানুষ কাপড়ের দর বুঝবো? পরে তারাই *আপা ডাকত*।",
+   "tone": "proudly",
+   "scene": {
+    "moods": {
+     "amma": "smile"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "ওইটা পুরান কথা, মা। *বাদ দে*। তোর আব্বার একটা মান আছে।",
+   "tone": "gently",
+   "scene": {
+    "moods": {
+     "amma": "worried"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "ছত্রিশ বছরের গল্প থেকে যা বাদ পড়েছে।",
+   "card": {
+    "title": "গল্পে নেই",
+    "items": [
+     {
+      "t": "আম্মার আট মাস",
+      "mark": "x"
+     },
+     {
+      "t": "বেচে দেওয়া দুই জোড়া চুড়ি",
+      "mark": "x"
+     },
+     {
+      "t": "রাত জেগে লেখা এই খাতা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে শম্পা ভাবল— সবার সামনে বললে আব্বা *ছোট হবেন*। না বললে আম্মা মুছে যাবেন।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shampa",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "এখন ঈদের দুপুর। আব্বা গল্পের *ঠিক মাঝখানে*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "ঈদের দুপুর",
+    "props": [
+     "sofa",
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "shampa",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "amma",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শম্পা অভিযোগ করল না। খাতাটা রাখল আব্বার হাতে। আর *একটা প্রশ্ন*।",
+   "scene": {
+    "holds": {
+     "abba": "book"
+    },
+    "arms": {
+     "abba": "hold"
+    }
+   }
+  },
+  {
+   "voice": "shampa",
+   "say": "আব্বা, পা ভাঙার পর আট মাস দোকানের *চাবি কার কাছে* ছিল?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shampa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঘর চুপ। আব্বা খাতার পাতা ওল্টালেন। পাতায় পাতায় *একটাই হাতের লেখা*।",
+   "pause": 1.0,
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    },
+    "moods": {
+     "abba": "surprised"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "চাবি… তোর আম্মার কাছে। আমি তো বিছানায় শুইয়া ভাবতাম, *দোকান শেষ*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "abba": "sad"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "শোন সবাই, গল্পটা আমি অর্ধেক কইতাম। কঠিন আট মাস দোকান চালাইছে *তোদের দাদি*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেমাইয়ের বাটি হাতে রাবেয়া বেগম। ছত্রিশ বছরে প্রথম, *চোখ ভেজা*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.5
+    },
+    "moods": {
+     "amma": "crying"
+    }
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "থাক, এত বছর পরে… *সেমাই ঠান্ডা হইয়া যাইতেছে*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "amma": "smile"
+    },
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ঈদের পর দোকান খুলল। ক্যাশবাক্সের পাশে নতুন একটা *চেয়ার*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঈদের পর, বাবুরহাট",
+    "props": [
+     "signboard_new",
+     "sign:জামাল-রাবেয়া ক্লথ স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "amma",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মাথার ওপর নতুন সাইনবোর্ড— *জামাল-রাবেয়া ক্লথ স্টোর*।"
+  },
+  {
+   "voice": "abba",
+   "say": "দরদামটা তুমিই করো। আট মাসে তো আমার চাইতে *বেশি লাভ* করছিলা।",
+   "tone": "playfully",
+   "scene": {
+    "moods": {
+     "abba": "happy"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শম্পা দূর থেকে ছবি তুলল। ফ্রেমে দুইজন, মাঝখানে *সেই লাল খাতা*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যে গল্প বলে, গল্পটা তার হয়ে যায়… *খাতাটা কিন্তু সব মনে রাখে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যে গল্প বলে, গল্পটা তার হয়ে যায়…",
+    "line2": "খাতাটা কিন্তু\nসব মনে রাখে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৩৬ বছর আব্বা বলেন ‘দোকান আমি একা দাঁড় করাইছি’… মেয়ে পেল দুইটা লাল খাতা 🔑",
+  "description": "নরসিংদীর জামাল উদ্দিন প্রতি ঈদে নাতি-নাতনিদের শোনান, কীভাবে একা হাতে কাপড়ের দোকান দাঁড় করিয়েছেন। মেয়ে শম্পা পুরোনো আলমারিতে পেল ২০০৩ সালের দুইটা খাতা— প্রতিটা পাতার নিচে মায়ের নাম…",
+  "tags": [
+   "বাবা মায়ের গল্প",
+   "মায়ের ত্যাগ",
+   "ঈদের গল্প",
+   "নরসিংদী",
+   "পরিবারের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "ছত্রিশ বছরের গল্পে মায়ের আট মাস ছিল না— একটা প্রশ্নেই ফিরে এল। 🔑\nতোমার পরিবারের কোন গল্পে মায়ের অংশটা কেউ বলে না? 👇 #মা #পরিবার"
+ },
+ "thumbnail": {
+  "text": "চাবি কার কাছে ছিল?",
+  "sub": "আম্মার আট মাস"
+ }
+}

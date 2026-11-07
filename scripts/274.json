@@ -1,0 +1,583 @@
+{
+ "id": "274",
+ "status": "ready",
+ "title_bn": "বাপ-মেয়ের দোকান",
+ "theme": "family",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "See What You Made Me Do",
+  "title_bn": "দেখ, তুই কী করাইলি"
+ },
+ "cast": {
+  "abba": {
+   "name": "আব্বা",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  },
+  "nipa": {
+   "name": "নিপা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6E",
+   "color2": "#F2D27A",
+   "hair": "long_braid",
+   "voice": "young_woman"
+  },
+  "amma": {
+   "name": "আম্মা",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#B5473A",
+   "color2": "#F2EEE3",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "তিনটা নতুন বুদ্ধি, তিনবার একই কথা— *‘তোর জন্যই’*। চার নম্বর বুদ্ধিটা নিপা আর বলেনি।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "খুলনা, দৌলতপুর",
+    "props": [
+     "signboard",
+     "sign:মোতালেব স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "দোকান",
+       "value": "৩০ বছর"
+      },
+      {
+       "label": "নিপার বুদ্ধি",
+       "value": "৩টা"
+      },
+      {
+       "label": "‘তোর জন্যই’",
+       "value": "৩ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নিপা অনার্সে হিসাববিজ্ঞান পড়ে। বিকেলে বসে আব্বার *ত্রিশ বছরের দোকানে*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "say": "প্রথম বুদ্ধি— দেয়ালে দামের বোর্ড। প্রথম দিনই এক কাস্টমার *তর্ক জুড়লেন*।",
+   "scene": {
+    "moods": {
+     "abba": "angry"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "দেখলি? তোর বোর্ডের জন্যই ঝগড়া। আগে *কোনোদিন হয় নাই*।",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এরপর আরো দুইবার।",
+   "card": {
+    "title": "নিপার বুদ্ধি",
+    "items": [
+     {
+      "t": "দামের বোর্ড— ‘তোর জন্যই ঝগড়া’",
+      "mark": "x"
+     },
+     {
+      "t": "বিকাশে পেমেন্ট— ‘তোর জন্যই দুইশো গেল’",
+      "mark": "x"
+     },
+     {
+      "t": "শুক্রবার ডেলিভারি— ‘দেখ কী করাইলি’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "তারপর থেকে নিপা চুপ। দোকানে বসে, কিন্তু *কোনো কথা বলে না*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "তারপর",
+    "props": [
+     "signboard",
+     "sign:মোতালেব স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দুই মাস পর মোড়ে নতুন দোকান। ফোনে অর্ডার, *বাসায় ডেলিভারি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুই মাস পর, মোড়ে",
+    "props": [
+     "superstore",
+     "sign:নিউ ফ্যামিলি মার্ট"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.4,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মোতালেব স্টোরের বিক্রি নামল। পুরনো কাস্টমার রহিমা খালাও এখন *ওই দোকানে*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বিক্রি",
+       "value": "৩০% কম",
+       "red": true
+      },
+      {
+       "label": "পুরনো কাস্টমার",
+       "value": "১৮ জন নাই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাতে খেতে বসে আব্বা চুপ। আম্মা দুজনের মুখের দিকে তাকালেন।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "nipa",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "amma",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "amma",
+   "say": "বাপ-মেয়ে দুইজনেই চুপ। দোকানটা কি *চুপ থাইকাই চলবে*?",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "amma",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নিপা অনেকক্ষণ ভাত নাড়ল। তারপর একটা প্রশ্ন করল, *খুব আস্তে*।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "আব্বা, আটানব্বইয়ের বন্যায় বাকিতে চাল দিছিলা, অর্ধেক টাকা ফেরে নাই। *তখন দোষ কার ছিল*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "কারো না, মা। ব্যবসায় এমন *হয়ই*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "আমার বুদ্ধিগুলাও তো ব্যবসা ছিল, আব্বা। ওইগুলা ভুল হইলে খালি *আমার দোষ*?",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আব্বা কিছু বললেন না। প্লেটের ভাত *ঠান্ডা হয়ে গেল*।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "abba": "thinking"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে তিনি অনেকক্ষণ বারান্দায় বসে রইলেন, *একা*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "রাত একটা",
+    "props": [
+     "plants"
+    ],
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সকালে দোকান খুলে নিপা দেখল, কাউন্টারে একটা কাগজ। আব্বার হাতের লেখা।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:মোতালেব স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "hold"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নতুন নিয়ম",
+     "lines": [
+      "শুক্রবার ডেলিভারি— আবার চালু",
+      "সিদ্ধান্ত: আব্বা আর নিপা",
+      "ভুল হইলে— দুইজনের"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ডেলিভারির ছেলে ঠিক কর। এইবার ভুল হইলে… *দুইজনের ভুল*।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nipa",
+   "say": "আর ঠিক হইলে, *আব্বা*?",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "nipa": "smile"
+    },
+    "cam": {
+     "focus": "nipa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ঠিক হইলে… সেইটাও *দুইজনের*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    },
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "প্রথম শুক্রবার বৃষ্টি, ডেলিভারির ছেলে আসেনি। আব্বা নিজেই *ব্যাগ কাঁধে* নিলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "প্রথম শুক্রবার",
+    "chars": [
+     {
+      "id": "abba",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "pan",
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "রহিমা খালার দরজায় চাল, ডাল আর এক প্যাকেট বিস্কুট। খালা হেসে বললেন, *‘মোতালেব ভাই নিজে?’*",
+   "scene": {
+    "moods": {
+     "abba": "smile"
+    }
+   }
+  },
+  {
+   "say": "এক মাসে ডেলিভারি অর্ডার *একশো বিশটা*। পুরনো কাস্টমাররা ফিরল একে একে।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "signboard",
+     "sign:মোতালেব স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "nipa",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "abba",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ডেলিভারি অর্ডার",
+       "value": "১২০",
+       "from": "০"
+      },
+      {
+       "label": "বিক্রি",
+       "value": "আগের মতো"
+      },
+      {
+       "label": "‘তোর জন্যই’",
+       "value": "০ বার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "একদিন বিকাশে আবার ভুল, পঞ্চাশ টাকা। নিপা ভয়ে আব্বার দিকে তাকাল।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "nipa": "worried"
+    }
+   }
+  },
+  {
+   "voice": "abba",
+   "say": "ব্যবসায় এমন *হয়ই*, মা। চা খাবি?",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "abba",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নিপা হাসল। সাইনবোর্ডের নিচে এখন ছোট্ট একটা নতুন লাইন— *‘বাপ-মেয়ের দোকান’*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "nipa": "happy",
+     "abba": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দোষ একজনের ঘাড়ে দিলে… *নতুন বুদ্ধিরা চুপ হয়ে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "দোষ একজনের ঘাড়ে দিলে…",
+    "line2": "নতুন বুদ্ধিরা\nচুপ হয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "তিনটা বুদ্ধি, তিনবার ‘তোর জন্যই’— চুপ হয়ে গেল মেয়ে, তারপর এক প্রশ্ন 🏪",
+  "description": "খুলনার দৌলতপুরে আব্বার ত্রিশ বছরের মুদি দোকানে বিকেলে বসে নিপা। তার প্রতিটা নতুন বুদ্ধি একটু ভুল হলেই আব্বা বলেন, তোর জন্যই। নিপা চুপ হয়ে গেল, মোড়ে খুলল নতুন দোকান। তারপর এক রাতে খাবার টেবিলে…",
+  "tags": [
+   "বাবা মেয়ের গল্প",
+   "মুদি দোকান",
+   "খুলনা",
+   "পরিবারের গল্প",
+   "ব্যবসার গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "নিজের ভুলে ‘ব্যবসায় এমন হয়’, মেয়ের ভুলে ‘তোর জন্যই’— এক প্রশ্নে বদলাল আব্বা। 🏪\nতোমার নতুন কোন বুদ্ধি ‘তোর জন্যই’ শুনে থেমে গিয়েছিল? 👇 #বাবামেয়ে #মুদিদোকান"
+ },
+ "thumbnail": {
+  "text": "তোর জন্যই",
+  "sub": "তিনটা বুদ্ধি"
+ }
+}

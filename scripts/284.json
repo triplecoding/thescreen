@@ -1,0 +1,484 @@
+{
+ "id": "284",
+ "status": "ready",
+ "title_bn": "বকার হিসাব",
+ "theme": "work",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 11",
+  "chapter_bn": "১১ নম্বর অধ্যায়",
+  "title": "Regression to the Mean",
+  "title_bn": "গড়ে ফেরা"
+ },
+ "cast": {
+  "jahid": {
+   "name": "জাহিদ স্যার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#3B4A6B",
+   "hair": "side",
+   "beard": "moustache",
+   "voice": "man"
+  },
+  "tanvir": {
+   "name": "তানভীর",
+   "type": "young_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#6FA08A",
+   "hair": "short",
+   "glasses": true,
+   "voice": "young_man"
+  },
+  "ripon": {
+   "name": "রিপন ভাই",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#C9A15A",
+   "hair": "side_grey",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "খারাপ মাসে বকা, পরের মাসে বিক্রি বাড়ে। জাহিদ স্যারের বিশ্বাস— *বকাই ওষুধ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ঢাকা, তেজগাঁও",
+    "props": [
+     "signboard",
+     "sign:সেলস অফিস"
+    ],
+    "chars": [
+     {
+      "id": "jahid",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বকার মিটিং",
+       "value": "১১"
+      },
+      {
+       "label": "পরের মাসে বিক্রি বাড়ল",
+       "value": "৯ বার"
+      },
+      {
+       "label": "টিমে হাসি",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "বারো জনের সেলস টিম। মাসের প্রথম দিন মানেই *মিটিংয়ের ভয়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "এ মাসে বিক্রি নেমেছে আঠারো ভাগ। সবার সামনে দাঁড় করানো হলো *রিপন ভাইকে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "jahid",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "point"
+     },
+     {
+      "id": "ripon",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "jahid",
+   "say": "পনেরো বছর চাকরি করেন, আর টার্গেটের *অর্ধেকও* না? লজ্জা লাগে না?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "jahid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ripon",
+   "say": "স্যার, এই মাসে বৃষ্টিতে তিনটা বাজার *পানির নিচে* আছিল…",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jahid",
+   "say": "অজুহাত না! দেখবেন, বকা খাইলে পরের মাসে বিক্রি *ঠিকই বাড়ে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "jahid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে বিক্রি সত্যিই বাড়ল। জাহিদ স্যার হাসলেন— *প্রমাণ তো হাতেই*।",
+   "scene": {
+    "moods": {
+     "jahid": "smile"
+    }
+   }
+  },
+  {
+   "say": "কিন্তু রিপন ভাই আর আগের মতো হাসেন না। টিফিনের সময় *একা বসেন*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "ripon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন বছর ধরে এই অফিসের নিয়ম *একটাই*।",
+   "card": {
+    "title": "জাহিদ স্যারের নিয়ম",
+    "items": [
+     {
+      "t": "খারাপ মাস— সবার সামনে বকা",
+      "mark": "x"
+     },
+     {
+      "t": "ভালো মাস— কোনো কথা নেই",
+      "mark": "x"
+     },
+     {
+      "t": "প্রশংসা— ‘মাথায় উঠবে’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে নতুন এমআইএস অফিসার তানভীর একা অফিসে। স্ক্রিনে *তিন বছরের হিসাব*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "রাত ৯টা, অফিস",
+    "props": [
+     "signboard",
+     "sign:সেলস অফিস"
+    ],
+    "chars": [
+     {
+      "id": "tanvir",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সে খেয়াল করল, স্যার যে মাসগুলোয় ছুটিতে ছিলেন, *সেগুলোও*।"
+  },
+  {
+   "say": "খারাপ মাসের পর বিক্রি এমনিতেই বাড়ে। *বকা থাকুক বা না থাকুক*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "খারাপ মাসের পরের মাস",
+     "lines": [
+      "বকা দেওয়া হয়েছে— ৯ বারের ৭ বার বেড়েছে",
+      "স্যার ছুটিতে, বকা নেই— ৪ বারের ৪ বার বেড়েছে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "পরদিন সকালে কাগজটা হাতে তানভীর স্যারের দরজায়। *হাত ঘামছে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:সেলস ম্যানেজার"
+    ],
+    "chars": [
+     {
+      "id": "jahid",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "cross"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "স্যার, আপনি ছুটিতে থাকলেও খারাপ মাসের পর *বিক্রি বাড়ছে*। একটু দেখবেন?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jahid",
+   "say": "মানে? আমার বকার *কোনো দাম* নাই?",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "jahid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "tanvir",
+   "say": "দাম আছে, স্যার। শুধু বিক্রির খাতায় না… *রিপন ভাইয়ের মুখে*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "tanvir",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জাহিদ স্যার কাগজটা নিয়ে জানালার দিকে তাকালেন। অনেকক্ষণ *চুপ*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "jahid",
+     "zoom": 1.5
+    },
+    "moods": {
+     "jahid": "thinking"
+    }
+   }
+  },
+  {
+   "say": "মনে পড়ল নিজের প্রথম বসের কথা। যার মিটিংয়ের আগের রাতে তাঁর *ঘুম আসত না*।"
+  },
+  {
+   "say": "পরের মাস। বিক্রি আবার কমেছে। সবাই মাথা নিচু করে *বকার অপেক্ষায়*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরের মাসের মিটিং",
+    "props": [
+     "signboard",
+     "sign:সেলস অফিস"
+    ],
+    "chars": [
+     {
+      "id": "jahid",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "ripon",
+      "x": 0.58,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.82,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "জাহিদ স্যার টেবিলে রাখলেন বারো কাপ চা আর এক প্যাকেট *সিঙ্গারা*।",
+   "scene": {
+    "arms": {
+     "jahid": "hold"
+    }
+   }
+  },
+  {
+   "voice": "jahid",
+   "say": "রিপন ভাই, আপনার এলাকায় আসল সমস্যাটা কী? *বলেন, শুনি*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "jahid": "smile"
+    },
+    "cam": {
+     "focus": "jahid",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ripon",
+   "say": "স্যার… দুইটা বড় দোকান সাত দিনের বাকি চায়। আমরা দেই না, *তাই নেয় না*।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "ripon": "surprised"
+    },
+    "cam": {
+     "focus": "ripon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন মিটিং চলল দুই ঘণ্টা। *কারো গলা উঁচু হলো না*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "তিন মাস পর বিক্রি আগের মতোই ওঠানামা করে। কিন্তু এ বছর কেউ *চাকরি ছাড়েনি*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "ripon",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "tanvir",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "chip": "তিন মাস পর",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "গত বছর চাকরি ছেড়েছে",
+       "value": "৪"
+      },
+      {
+       "label": "এ বছর",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আর টিফিনের সময় রিপন ভাই এখন সবার আগে বলেন— *‘চা কে খাবে?’*",
+   "pause": 0.8,
+   "scene": {
+    "widget": null,
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "খাতার অঙ্ক নিজে নিজেই ফেরে… *ভাঙা মন নিজে ফেরে না।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "খাতার অঙ্ক নিজে নিজেই ফেরে…",
+    "line2": "ভাঙা মন\nনিজে ফেরে না।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বকা দিলেই বিক্রি বাড়ে— বসের এই বিশ্বাস ভাঙল নতুন ছেলেটার এক কাগজ 📊",
+  "description": "তেজগাঁওয়ের সেলস ম্যানেজার জাহিদ স্যার বিশ্বাস করেন, খারাপ মাসে বকা দিলেই পরের মাসে বিক্রি বাড়ে। নতুন এমআইএস অফিসার তানভীর তিন বছরের হিসাব ঘেঁটে দেখল অন্য এক সত্য…",
+  "tags": [
+   "অফিসের গল্প",
+   "বস আর কর্মী",
+   "সেলস টিম",
+   "ঢাকা",
+   "চাকরির গল্প",
+   "সম্মান",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বকা দিয়ে বিক্রির খাতা হয়তো ঠিক হয়— কিন্তু মানুষের মুখের হাসি ফেরে না। 📊\nতোমার জীবনের সবচেয়ে ভালো বস কেমন ছিলেন? 👇 #অফিস #চাকরি"
+ },
+ "thumbnail": {
+  "text": "বকাই ওষুধ?",
+  "sub": "তিন বছরের হিসাব"
+ }
+}

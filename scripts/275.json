@@ -1,0 +1,598 @@
+{
+ "id": "275",
+ "status": "ready",
+ "title_bn": "এগারো জন মা",
+ "theme": "work",
+ "source": {
+  "book": "The Laws of Human Nature",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "CHAPTER 13",
+  "chapter_bn": "১৩ নম্বর অধ্যায়",
+  "title": "The Law of Conformity — Resist the Downward Pull of the Group",
+  "title_bn": "দলের টান পেরিয়ে"
+ },
+ "cast": {
+  "mukta": {
+   "name": "মুক্তা",
+   "type": "young_woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#D9822B",
+   "color2": "#3B4A6B",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "parvin": {
+   "name": "পারভীন আপা",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#3F6E5A",
+   "color2": "#F2D27A",
+   "hair": "long_braid",
+   "voice": "woman"
+  },
+  "shashuri": {
+   "name": "শাশুড়ি",
+   "type": "old_woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#9B3D5A",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "কারখানার ভেতরেই বাচ্চাদের ঘর, তিন বছর ধরে। দুইশো দশ জন মা, বাচ্চা আনে *একজনও না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "গাজীপুর, কোনাবাড়ী",
+    "props": [
+     "signboard",
+     "sign:শিশু যত্নকেন্দ্র"
+    ],
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "নারী শ্রমিক",
+       "value": "২১০"
+      },
+      {
+       "label": "শিশুকক্ষ",
+       "value": "৩ বছর"
+      },
+      {
+       "label": "বাচ্চা",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "মুক্তার মেয়ে জুঁইয়ের বয়স দুই। থাকে পাশের ঘরের এক খালার কাছে, *দিনে একশো টাকায়*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "দুপুরে ফোন আসে— জুঁই কাঁদছে, কিছু খাচ্ছে না। মুক্তার হাত *মেশিনে কাঁপে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "লাইন চার, দুপুর",
+    "props": [
+     "signboard",
+     "sign:লাইন ৪"
+    ],
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "parvin",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mukta",
+   "say": "পারভীন আপা, ওই বাচ্চার ঘরে কেউ দেয় না ক্যান? *ভিতরেই তো*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "mukta",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "parvin",
+   "say": "কেউ দেয় না বইলাই কেউ দেয় না। শুনছি *ওইখানে কান্দায়*। কে আগে দিবে?",
+   "tone": "suspicious",
+   "scene": {
+    "cam": {
+     "focus": "parvin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বাড়িতে শাশুড়ির আপত্তি আরো বড়।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "বাসায়",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "down"
+     },
+     {
+      "id": "mukta",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "কারখানার মধ্যে দুধের বাচ্চা? মেশিনের শব্দে *ডরাইবো*। লোকে কী কইবো?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "মুক্তা কয়েকবার বোঝাতে চাইল।",
+   "card": {
+    "title": "বোঝানোর চেষ্টা",
+    "items": [
+     {
+      "t": "শাশুড়িকে নিয়ম পড়ে শোনানো",
+      "mark": "x"
+     },
+     {
+      "t": "লাইনের আপাদের বলা",
+      "mark": "x"
+     },
+     {
+      "t": "সুপারভাইজারকে অনুরোধ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে ফিরে দেখে, জুঁই সারাদিন প্রায় কিছুই খায়নি। মুখে *শুকনো কান্নার দাগ*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাতে",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "hug"
+     }
+    ],
+    "cam": {
+     "focus": "mukta",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন মুক্তা সিদ্ধান্ত নিল। ভোরে জুঁইকে কোলে নিয়ে *কারখানার গেটে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সকাল সাড়ে সাতটা, কারখানার গেট",
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hug"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "শিশুকক্ষে দুইজন আয়া, খেলনা, ছোট্ট বিছানা। জুঁই এক ঘণ্টা কাঁদল, তারপর *ঘুমিয়ে পড়ল*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শিশুকক্ষ",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "দুপুরের বিরতিতে মুক্তা নিজের হাতে মেয়েকে খাওয়াল। জানালার কাচে *আরো কয়েকটা মুখ*।",
+   "scene": {
+    "arms": {
+     "mukta": "hold"
+    },
+    "holds": {
+     "mukta": "plate"
+    }
+   }
+  },
+  {
+   "voice": "mukta",
+   "say": "পারভীন আপা, ভিতরে আসেন। দেখেন, আমার মাইয়া *কান্দে না*, খেলে।",
+   "tone": "warmly",
+   "scene": {
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "parvin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "mukta",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "parvin",
+   "say": "ওমা! এইখানে তো *ফ্যান আছে*, আমার ঘরেও নাই।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "parvin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন পারভীন আর কিছু বলল না। পরের সোমবার কোলে নিয়ে এল *ছেলে তুষারকে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের সোমবার",
+    "chars": [
+     {
+      "id": "parvin",
+      "x": 0.4,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hug"
+     },
+     {
+      "id": "mukta",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "মুক্তা কাউকে কিছু বলেনি। শুধু রোজ দুপুরে *জানালার পাশে* বসে খাওয়াত।"
+  },
+  {
+   "say": "এক মাসে শিশুকক্ষে বাচ্চা *এগারো জন*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক মাস পর",
+    "props": [
+     "signboard",
+     "sign:শিশু যত্নকেন্দ্র"
+    ],
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "parvin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাচ্চা",
+       "value": "১১",
+       "from": "০"
+      },
+      {
+       "label": "দুপুরে মা আসে",
+       "value": "১১ জন"
+      },
+      {
+       "label": "দিনে বাঁচে",
+       "value": "১০০ টাকা"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কিন্তু বাড়িতে শাশুড়ি তখনো *মুখ ফিরিয়ে*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "বাসায়",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "mukta",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mukta",
+   "say": "আম্মা, কাল একবার চলেন। *নিজের চোখে* দেখেন, তারপর যা কইবেন।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "mukta",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন শাশুড়ি এলেন শিশুকক্ষে। এগারোটা বাচ্চা, এগারোটা থালা, *এগারো জন মা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "শিশুকক্ষ, দুপুর",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shashuri",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "mukta",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "জুঁই দৌড়ে এসে দাদির হাত ধরল। হাতে *রং পেন্সিলের ছবি*।",
+   "scene": {
+    "moods": {
+     "shashuri": "smile"
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "এতগুলা মা যখন দিছে, তখন ঠিকই আছে। দেখ, *নাতনি আমার হাসে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mukta",
+   "say": "আপনেই তো কইছিলেন, *লোকে কী কইবো*!",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "mukta",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shashuri",
+   "say": "লোকে এখন কইবো, *ভালো করছে*।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "shashuri": "happy",
+     "mukta": "happy"
+    },
+    "cam": {
+     "focus": "shashuri",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন দুপুরের সাইরেন বাজলেই ফ্লোর থেকে এক দল মা হাঁটে *একটা ছোট্ট ঘরের দিকে*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "এখন, প্রতিদিন",
+    "chars": [
+     {
+      "id": "mukta",
+      "x": 0.3,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "parvin",
+      "x": 0.55,
+      "pose": "walk",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "shashuri",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "একজন যখন প্রথম পা ফেলে… *বাকিরা খুঁজে পায় নিজের সাহস।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "একজন যখন প্রথম পা ফেলে…",
+    "line2": "বাকিরা খুঁজে পায়\nনিজের সাহস।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "কারখানায় বাচ্চার ঘর তিন বছর খালি— এক মা প্রথম মেয়েকে আনল, তারপর… 🍼",
+  "description": "গাজীপুরের এক কারখানায় তিন বছর ধরে শিশুকক্ষ আছে, অথচ দুইশো মায়ের কেউ বাচ্চা আনে না। মুক্তার দুই বছরের মেয়ে সারাদিন কাঁদে প্রতিবেশীর ঘরে। শাশুড়ি বলেন, লোকে কী বলবে। তারপর এক ভোরে মুক্তা…",
+  "tags": [
+   "মায়ের গল্প",
+   "গার্মেন্টস শ্রমিক",
+   "গাজীপুর",
+   "শাশুড়ি বউমা",
+   "কর্মজীবী মা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "কেউ আগে যায় না বলেই কেউ যায় না— মুক্তা প্রথম গেল, তারপর এগারো জন মা। 🍼\nতোমার চারপাশে কোন কাজটা সবাই ‘কেউ আগে করুক’ বলে ফেলে রেখেছে? 👇 #কর্মজীবীমা #গার্মেন্টস"
+ },
+ "thumbnail": {
+  "text": "কে আগে দিবে?",
+  "sub": "তিন বছর খালি"
+ }
+}

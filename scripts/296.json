@@ -1,0 +1,571 @@
+{
+ "id": "296",
+ "status": "ready",
+ "title_bn": "দুই কলামের খাতা",
+ "theme": "family",
+ "source": {
+  "book": "Games People Play",
+  "author": "Eric Berne",
+  "author_bn": "এরিক বার্ন",
+  "chapter": "GAME 10",
+  "chapter_bn": "১০ নম্বর অধ্যায়",
+  "title": "Parent, Adult, Child — the three ego states",
+  "title_bn": "বাবা, বড়, আর শিশুর গলা"
+ },
+ "cast": {
+  "dada": {
+   "name": "জব্বার মিয়া",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "panjabi",
+   "color": "#EDE6D6",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "cap": true,
+   "voice": "old_man"
+  },
+  "kader": {
+   "name": "কাদের",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#6B8E4E",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "rafi": {
+   "name": "রাফি",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "side",
+   "voice": "teen_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "বাপ-ছেলে এক উঠোনে থাকে। কিন্তু *একচল্লিশ দিন* কেউ কারও সাথে কথা বলেনি।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ভোলা, চরফ্যাশন",
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "angry",
+      "arm": "cross"
+     },
+     {
+      "id": "kader",
+      "x": 0.72,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কথা বন্ধ",
+       "value": "৪১ দিন",
+       "red": true
+      },
+      {
+       "label": "জমি",
+       "value": "৪ বিঘা"
+      },
+      {
+       "label": "তর্ক",
+       "value": "তরমুজ না ধান"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চরের সবাই এখন শীতে তরমুজ করে। কাদেরও চায় *চার বিঘায় তরমুজ*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "বাবা জব্বার মিয়ার এক কথা— বাপ-দাদার জমিতে *ধান হইবো*।"
+  },
+  {
+   "voice": "dada",
+   "say": "তুই কী বুঝস? সিডরের বছর লোনা পানিতে সব গেছে। *আমি দেখছি*।",
+   "tone": "annoyed",
+   "scene": {
+    "moods": {
+     "dada": "angry"
+    },
+    "arms": {
+     "dada": "point"
+    },
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "আপনে তো জীবনে আমারে মানুষই মনে করেন নাই। থাক, *কিছুই করমু না*।",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "kader": "angry"
+    },
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "কাদের মাঠে যাওয়া বন্ধ করল। জব্বার মিয়া বন্ধ করলেন *রাতের খাওয়া*।",
+   "scene": {
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "মাঝখানে ষোলো বছরের রাফি, দশম শ্রেণি। দুইজনের মাঝে তার *খবর আনা-নেওয়া*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.2,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "cross"
+     },
+     {
+      "id": "rafi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "kader",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "kind": "list",
+   "say": "চুপের মধ্যে যা যা হলো।",
+   "card": {
+    "title": "একচল্লিশ দিন",
+    "items": [
+     {
+      "t": "মা কাঁদলেন— কেউ শুনল না",
+      "mark": "x"
+     },
+     {
+      "t": "চাচা মীমাংসায় এলেন— ঝগড়া বাড়ল",
+      "mark": "x"
+     },
+     {
+      "t": "বীজ কেনার সময় পার হচ্ছে",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে রাফি দেখল, দাদা উঠোনে একা বসে। আব্বা ঘরে, *জেগে*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাত",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন রাফি একটা খাতা নিয়ে দাদার কাছে গেল। ঝগড়ার কথা না, *প্রশ্ন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "dada",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দাদা, সিডরের বছর ঠিক কী হইছিল? পানি *কোন দিক দিয়া* ঢুকছিল?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "উত্তরের বাঁধ ভাঙছিল। নালা না থাকলে লোনা পানি *বাইর হয় না*।",
+   "tone": "serious",
+   "scene": {
+    "moods": {
+     "dada": "thinking"
+    },
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দাদা কথা বললেন এক ঘণ্টা। রাফি লিখল সব।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "দাদার কলাম",
+     "lines": [
+      "উত্তরের বাঁধ দুর্বল",
+      "দুইটা নালা কাটতে হবে",
+      "চৈত্রে লোনা বাড়ে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "বিকেলে একই খাতা নিয়ে আব্বার কাছে।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "বিকেল",
+    "chars": [
+     {
+      "id": "rafi",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kader",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "আব্বা, এক বিঘা তরমুজে খরচ কত? পানি দিবেন *কোন পুকুর থেকে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "খরচ ত্রিশ হাজার। পানি… এইটা তো ভাবি নাই। *পুকুর তো লোনা*।",
+   "tone": "flatly",
+   "scene": {
+    "moods": {
+     "kader": "surprised"
+    },
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাফির খাতায় এবার দুইটা কলাম।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "আব্বার কলাম",
+     "lines": [
+      "খরচ বিঘায় ৩০,০০০",
+      "দাম ভালো হলে লাভ দ্বিগুণ",
+      "মিঠা পানি— জানা নেই"
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাতে খাতাটা খুলে রাখল উঠোনের চৌকিতে। *দুইজনের মাঝখানে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.2,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "cross"
+     },
+     {
+      "id": "rafi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kader",
+      "x": 0.8,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "rafi",
+   "say": "দাদার কলামে জমি, আব্বার কলামে বাজার। একটা খাতা কি *দুইজনে পড়া যায় না*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "rafi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "অনেকক্ষণ কেউ কিছু বলল না। তারপর জব্বার মিয়া খাতাটা *হাতে নিলেন*।",
+   "pause": 0.9,
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    },
+    "arms": {
+     "dada": "hold"
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "এক বিঘা তরমুজ, তিন বিঘা ধান। আর নালা কাটবো *আমার হিসাবে*। রাজি?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "kader",
+   "say": "রাজি, আব্বা। মিঠা পানির *পুরান খালটা* তো আপনেই চিনেন।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "kader": "smile"
+    },
+    "cam": {
+     "focus": "kader",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চৈত্র মাস। এক বিঘায় সবুজ লতা, তার নিচে ডোরাকাটা *তরমুজ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "চার মাস পর, চৈত্র",
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "kader",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "রাতে জমি পাহারা দেন জব্বার মিয়া। নালার পানি মাপেন *নিজে, রোজ*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খরচ",
+       "value": "৩০,০০০"
+      },
+      {
+       "label": "বিক্রি",
+       "value": "৯৫,০০০"
+      },
+      {
+       "label": "কথা বন্ধ",
+       "value": "০ দিন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "আগামী বছর দুই বিঘা। কিন্তু খাতাটা থাকবো *রাফির কাছে*।",
+   "tone": "proudly",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "talk"
+     },
+     {
+      "id": "rafi",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "kader",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আইলের ওপর বাপ-ছেলে এক ফালি তরমুজ ভাগ করে খেল। রাফি খাতায় লিখল— *‘কথা চালু’*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "হুকুম আর অভিমানে কথা থামে… *প্রশ্নে আবার শুরু হয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "হুকুম আর অভিমানে কথা থামে…",
+    "line2": "প্রশ্নে আবার\nশুরু হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৪১ দিন বাপ-ছেলের কথা বন্ধ… নাতির একটা খাতা চরের জমিতে আনল তরমুজ 🍉",
+  "description": "ভোলার চরে কাদের চায় তরমুজ, বাবা জব্বার মিয়া চান ধান। একচল্লিশ দিন দুইজনের কথা বন্ধ। তখন ষোলো বছরের রাফি একটা খাতা নিয়ে দুইজনের কাছে গেল— ঝগড়া না, শুধু প্রশ্ন নিয়ে…",
+  "tags": [
+   "বাবা ছেলের গল্প",
+   "দাদা নাতির গল্প",
+   "চরের গল্প",
+   "ভোলা",
+   "কৃষকের গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "পরিবারের গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "দাদার অভিজ্ঞতা আর বাবার স্বপ্ন— এক খাতায় এসে মিলল নাতির প্রশ্নে। 🍉\nতোমার বাড়িতে দুই প্রজন্মের তর্ক কে থামায়? 👇 #পরিবার #চরেরজীবন"
+ },
+ "thumbnail": {
+  "text": "একচল্লিশ দিন চুপ",
+  "sub": "নাতির দুই কলামের খাতা"
+ }
+}

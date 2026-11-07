@@ -1,0 +1,523 @@
+{
+ "id": "276",
+ "status": "ready",
+ "title_bn": "হুকুম না, পার্টনার",
+ "theme": "probashi",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Reciprocity",
+  "title_bn": "যা দিই, তা-ই ফেরে"
+ },
+ "cast": {
+  "jasim": {
+   "name": "জসিম",
+   "type": "man",
+   "skin": "tan",
+   "outfit": "tshirt",
+   "color": "#8A6D3B",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "shakil": {
+   "name": "শাকিল",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#2F7A6E",
+   "hair": "side",
+   "voice": "young_man"
+  },
+  "belal": {
+   "name": "বেলাল ভাই",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "shirt",
+   "color": "#E9E4D8",
+   "hair": "side_grey",
+   "beard": "moustache",
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "নয় বছর দাম্মামে। প্রতি মাসে ছোট ভাইকে বিশ হাজার। আর চার মাস ধরে শাকিল *ফোন ধরে না*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দাম্মাম, লেবার ক্যাম্প",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "প্রবাসে",
+       "value": "৯ বছর"
+      },
+      {
+       "label": "মাসে পাঠায়",
+       "value": "২০,০০০"
+      },
+      {
+       "label": "ফোন ধরে না",
+       "value": "৪ মাস",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "লক্ষ্মীপুরে আম্মা আর শাকিল। জসিমের স্বপ্ন— ভাই একদিন *মাস্টার্স পাস* করবে।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "চার মাস আগের শেষ কলটা ছিল এরকম।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "লক্ষ্মীপুর, চার মাস আগে",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "টাকা কই যায়? পরীক্ষা কবে? আমি কি এইখানে *খেলতে আইছি*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "সব তো তুমিই কইয়া দিলা। *আমি আর কী কমু*।",
+   "tone": "upset",
+   "scene": {
+    "moods": {
+     "shakil": "sad"
+    },
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এরপর থেকে শাকিল কল কেটে দেয়। আম্মা বলেন, *‘ভালো আছে, ব্যস্ত’*।"
+  },
+  {
+   "kind": "list",
+   "say": "চার মাসে জসিম যা যা করল।",
+   "card": {
+    "title": "চার মাসের চেষ্টা",
+    "items": [
+     {
+      "t": "রাতে দশবার কল",
+      "mark": "x"
+     },
+     {
+      "t": "আম্মাকে দিয়ে ধমক",
+      "mark": "x"
+     },
+     {
+      "t": "টাকা বন্ধের হুমকি",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে ক্যাম্পে পাশের খাটের বেলাল ভাই সব শুনলেন। *বারো বছরের প্রবাসী*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দাম্মাম, রাত একটা",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "belal",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "তুমি ওর লগে বাপের মতো কথা কও। তাই ও *পোলার মতো লুকায়*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "আমি বড় ভাই। ধমক না দিলে ও *বুঝবে কেমনে*?",
+   "tone": "frustrated",
+   "scene": {
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "কোনোদিন জিগাইছ, ও কী চায়? সমান মানুষের মতো, *একবার*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জসিম চুপ। নয় বছরে শাকিলের কাছে কিছু *জানতে চাননি*, শুধু হুকুম দিয়েছেন।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "jasim": "sad"
+    },
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পরদিন ডিউটি শেষে জসিম একটা ভয়েস মেসেজ পাঠালেন। কোনো প্রশ্ন নেই, *টাকার কথা নেই*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "পরদিন, ডিউটি শেষে",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "শাকিল",
+     "msgs": [
+      {
+       "who": "জসিম",
+       "t": "ভয়েস মেসেজ — ১:১২"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "আজ পঞ্চাশ ডিগ্রি ছিল রে। পা ফুইলা গেছে। দুই বছর পর দেশে আসমু ভাবতেছি। *তুই কী কস*?",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রাত দুইটায় চার মাসে প্রথমবার ফোন বাজল। ওপাশে *শাকিল*।",
+   "pause": 0.6,
+   "scene": {
+    "light": "night",
+    "chip": "রাত দুইটা",
+    "moods": {
+     "jasim": "surprised"
+    },
+    "arms": {
+     "jasim": "call"
+    }
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "ভাইয়া… একটা জিনিস দেখাই? রাগ কইরো না, *আগে পুরাটা দেখো*।",
+   "tone": "softly",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "লক্ষ্মীপুর বাজার",
+    "props": [
+     "signboard",
+     "sign:মোবাইল সার্ভিসিং"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভিডিওতে বাজারের এক কোণে ছোট্ট টেবিল। ভাঙা ফোন, স্ক্রু ড্রাইভার, *হাতে লেখা সাইনবোর্ড*।",
+   "scene": {
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shakil",
+   "say": "পড়ায় মন বসে না, ভাইয়া। ছয় মাসের কোর্স করছি। মাসে নয় হাজার কামাই। *ডরে কই নাই*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "shakil",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "জসিম অনেকক্ষণ কিছু বললেন না। শাকিলের হাত *কাঁপছিল*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "shakil": "crying"
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "সাইনবোর্ডের বানানটা ভুল। ঠিক কর। আর দোকানে *একটা লাইট লাগা*।",
+   "tone": "teasing",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দাম্মাম",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "নয় বছর ধমক দিছি। এখন *পার্টনার হমু*। প্ল্যানটা বানা, আমারে বুঝা।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "jasim": "happy"
+    },
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই মাসে বিশ হাজার গেল, কিন্তু *অন্য নামে*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "এই মাসের টাকা",
+     "lines": [
+      "২০,০০০ টাকা",
+      "খাত: দোকানের পুঁজি"
+     ],
+     "sub": "প্ল্যান: শাকিলের"
+    }
+   }
+  },
+  {
+   "say": "ছয় মাস পর। সাইনবোর্ডে নতুন নাম, আর কাউন্টারের পেছনে একটা ছবি— *দাম্মামের রোদে জসিম*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "ছয় মাস পর",
+    "props": [
+     "signboard_new",
+     "sign:জসিম–শাকিল মোবাইল সার্ভিস"
+    ],
+    "chars": [
+     {
+      "id": "shakil",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "fx": "glow"
+   }
+  },
+  {
+   "say": "এখন প্রতি শুক্রবার দুই ভাইয়ের কল। ধমক নেই, আছে *হিসাব আর হাসি*।",
+   "scene": {
+    "fx": null
+   }
+  },
+  {
+   "voice": "belal",
+   "say": "কী জসিম, ভাই এখন *ফোন ধরে*?",
+   "tone": "teasing",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "দাম্মাম, শুক্রবার রাত",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "jasim",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "belal",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "belal",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jasim",
+   "say": "ধরে মানে? এখন ও-ই আমারে *হিসাব বুঝায়*!",
+   "tone": "laughs",
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "jasim",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "হুকুম দিলে মানুষ লুকায়… *সমান করে ডাকলে কাছে আসে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "হুকুম দিলে মানুষ লুকায়…",
+    "line2": "সমান করে ডাকলে\nকাছে আসে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "সৌদি থেকে ভাইকে মাসে বিশ হাজার, চার মাস ফোন ধরে না— এক ভয়েস মেসেজে ভাঙল বরফ 📱",
+  "description": "নয় বছর ধরে দাম্মাম থেকে ছোট ভাই শাকিলকে টাকা পাঠান জসিম। প্রতিটা কলে শুধু প্রশ্ন আর ধমক, আর চার মাস ধরে শাকিল ফোন ধরে না। ক্যাম্পের বেলাল ভাই একটা কথা বললেন…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "ভাইয়ের গল্প",
+   "সৌদি প্রবাসী",
+   "লক্ষ্মীপুর",
+   "অভিমান",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "বড় ভাই ধমক থামিয়ে একটা প্রশ্ন করলেন— চার মাসের নীরবতা ভাঙল এক রাতেই। 📱\nতোমার পরিবারে কার সাথে কথা বলা মানেই শুধু হুকুম? 👇 #প্রবাসী #ভাইয়েরগল্প"
+ },
+ "thumbnail": {
+  "text": "তুই কী কস?",
+  "sub": "৪ মাস ফোন বন্ধ"
+ }
+}

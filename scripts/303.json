@@ -1,0 +1,540 @@
+{
+ "id": "303",
+ "status": "ready",
+ "title_bn": "সত্তর দিনের কাঁথা",
+ "theme": "work",
+ "source": {
+  "book": "The Wealth of Nations",
+  "author": "Adam Smith",
+  "author_bn": "অ্যাডাম স্মিথ",
+  "chapter": "IDEA 4",
+  "chapter_bn": "৪ নম্বর অধ্যায়",
+  "title": "Value comes from labour and usefulness",
+  "title_bn": "শ্রমেই আসল দাম"
+ },
+ "cast": {
+  "nani": {
+   "name": "ফাতেমা নানি",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#E8E2D0",
+   "color2": "#C4473A",
+   "hair": "grey_bun",
+   "glasses": true,
+   "voice": "old_woman"
+  },
+  "tania": {
+   "name": "তানিয়া",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#5B3F8C",
+   "color2": "#E8A33D",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "motin": {
+   "name": "মতিন পাইকার",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "shirt",
+   "color": "#4F6D7A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "সত্তর দিন, প্রায় দুই লাখ ফোঁড়। পাইকার দিল *নয়শো টাকা*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "জামালপুর, সরিষাবাড়ী",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সময়",
+       "value": "৭০ দিন"
+      },
+      {
+       "label": "ফোঁড়",
+       "value": "~২ লাখ"
+      },
+      {
+       "label": "দাম",
+       "value": "৯০০ টাকা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ফাতেমা নানি চল্লিশ বছর নকশিকাঁথা সেলাই করেন। চোখে মোটা চশমা, হাতে *সুঁই*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "প্রতি মাসে আসে পাইকার মতিন। কাঁথা নেয়, দর করে না— *দর বলে দেয়*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "উঠানে পাইকার",
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold"
+     },
+     {
+      "id": "motin",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "motin",
+   "say": "খালা, বাজার খারাপ। ঢাকার ভাড়া, আমার যাতায়াত— *নয়শোই দিলাম*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "দিও বাবা। *না বেচলে* তো সুতার টাকাও উঠবো না।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "nani": "sad"
+    },
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মতিন চলে গেল। নানি খালি হাতের দিকে অনেকক্ষণ *তাকিয়ে রইলেন*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "নাতনি তানিয়া, একাদশ শ্রেণি। এক রাতে ফোনে দেখল শহরের এক শোরুমের পেজ।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "এক রাত",
+    "props": [
+     "bed",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "সেই কাঁথা। নানির নকশা, নানির *ময়ূর*। দাম আট হাজার পাঁচশো।",
+   "scene": {
+    "moods": {
+     "tania": "surprised"
+    },
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "শোরুমের পোস্ট",
+     "lines": [
+      "হাতে সেলাই নকশিকাঁথা",
+      "দাম: ৮,৫০০ টাকা"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "নানি! আপনার কাঁথা ঢাকায় সাড়ে আট হাজারে বেচে! আর আপনে পাইছেন *নয়শো*!",
+   "tone": "upset",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "tania",
+      "x": 0.32,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "nani",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold"
+     }
+    ],
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "শহরের দাম শহরের, বইন। আমি গ্রামের মানুষ, কে কিনবো *আমার থেইকা*?",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তানিয়ার প্রথম চেষ্টা।",
+   "card": {
+    "title": "তানিয়ার চেষ্টা",
+    "items": [
+     {
+      "t": "পাইকারের কাছে বেশি চাইল— ‘তাইলে নিমু না’",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুকে ছবি দিল— ‘এত দাম ক্যান?’",
+      "mark": "x"
+     },
+     {
+      "t": "দাম কমাল দুই হাজারে— তবু কেউ না",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক মাসে একটাও বিক্রি নেই। নানি আবার মতিনের *নম্বর খুঁজছেন*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "tania": "sad",
+     "nani": "sad"
+    }
+   }
+  },
+  {
+   "say": "তানিয়া বুঝল, মানুষ দেখে শুধু কাঁথার ছবি। দেখে না *সত্তর দিন*।",
+   "scene": {
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    },
+    "moods": {
+     "tania": "thinking"
+    }
+   }
+  },
+  {
+   "say": "পরের কাঁথা শুরু হলো। তানিয়া রোজ রাতে তুলল *এক মিনিটের ভিডিও*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "পরের কাঁথা",
+    "props": [
+     "window",
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold"
+     },
+     {
+      "id": "tania",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "কাঁথার ডায়েরি",
+     "lines": [
+      "দিন ১ — পুরোনো তিনটা শাড়ি জোড়া",
+      "দিন ১২ — মাঝখানের পদ্ম",
+      "দিন ৪০ — আঙুলে সুঁই ফুটল",
+      "দিন ৭০ — শেষ ফোঁড়"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "এই ময়ূরটা তোর নানার পছন্দ আছিল। প্রথম কাঁথায় *এইটাই তুলছিলাম*।",
+   "tone": "softly",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভিডিওর নিচে মানুষ লিখতে লাগল— নানি কেমন আছেন, *আজ কতদূর*?",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "নানির কাঁথা",
+     "msgs": [
+      {
+       "who": "শারমিন, লন্ডন",
+       "t": "দিন ৪০— আঙুল ঠিক আছে তো?"
+      },
+      {
+       "who": "রাকিব, খুলনা",
+       "t": "ময়ূরের গল্পটা আরেকবার বলেন"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চল্লিশতম দিনে নানির আঙুলে সুঁই ফুটল। সেই রাতে কমেন্ট পড়ল *তিনশো*।"
+  },
+  {
+   "say": "সত্তর দিন পর শেষ ফোঁড়। তানিয়া দাম লিখল, সঙ্গে *পুরো হিসাবটাও*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "দামের হিসাব",
+     "lines": [
+      "সুতা আর কাপড় — ১,২০০",
+      "সত্তর দিনের শ্রম — দিনে ৮০ টাকা",
+      "মোট — ৬,৮০০ টাকা"
+     ]
+    }
+   }
+  },
+  {
+   "say": "কয়েক ঘণ্টায় সাতজন চাইল। কাঁথা তো *একটাই*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "tania",
+   "say": "নানি, লন্ডনের সেই আপা নিছে! আর ছয়জন *অপেক্ষা করবো*, বলছে।",
+   "tone": "excited",
+   "scene": {
+    "moods": {
+     "tania": "happy"
+    },
+    "cam": {
+     "focus": "tania",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "ছয়জন অপেক্ষা করবো… *আমার সেলাইয়ের লাইগা*?",
+   "tone": "tearful",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "nani": "crying"
+    },
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে মতিন এল। এবার দাম বললেন *নানি নিজে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরের মাস",
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     },
+     {
+      "id": "tania",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "motin",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nani",
+   "say": "মতিন, সত্তর দিনের সেলাই। *দিনে আশি টাকা* তো আমার হক।",
+   "tone": "proudly",
+   "scene": {
+    "cam": {
+     "focus": "nani",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "say": "খালা… ঠিক আছে। শোরুমও কইছে, *আপনার কাঁথাই চাই*।",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "motin": "smile"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন উঠানে চারজন। পাড়ার আরও তিন নানি-খালা, *একই হিসাবে*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "তিন মাস পর",
+    "chars": [
+     {
+      "id": "nani",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold"
+     },
+     {
+      "id": "tania",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তানিয়ার কলেজের বেতন এখন আসে *নানির সুঁই থেকে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "জিনিসের দাম চোখে দেখা যায়… *শ্রমের দাম বলে দিতে হয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "জিনিসের দাম চোখে দেখা যায়…",
+    "line2": "শ্রমের দাম\nবলে দিতে হয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "৭০ দিনের নকশিকাঁথা, পাইকার দিল ৯০০ টাকা… নাতনি দেখাল আসল হিসাব 🧵",
+  "description": "জামালপুরের ফাতেমা নানি চল্লিশ বছর নকশিকাঁথা সেলাই করেন। সত্তর দিনের একটা কাঁথা পাইকার নেয় নয়শো টাকায়, ঢাকার শোরুমে বিক্রি হয় সাড়ে আট হাজারে। নাতনি তানিয়া ঠিক করল, মানুষকে দেখাবে সেই সত্তর দিন…",
+  "tags": [
+   "নানি নাতনির গল্প",
+   "নকশিকাঁথা",
+   "জামালপুর",
+   "হাতের কাজ",
+   "অনলাইন ব্যবসা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মানুষ শুধু কাঁথা দেখে— তানিয়া দেখাল সত্তর দিনের সেলাই। 🧵\nতোমার পরিবারে কার পরিশ্রমের দাম কেউ কোনোদিন ঠিকমতো দেয়নি? 👇 #নকশিকাঁথা #নানি"
+ },
+ "thumbnail": {
+  "text": "৭০ দিন, ৯০০ টাকা",
+  "sub": "নানির কাঁথার আসল দাম"
+ }
+}

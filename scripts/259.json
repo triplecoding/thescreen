@@ -1,0 +1,571 @@
+{
+ "id": "259",
+ "status": "ready",
+ "title_bn": "চারটা কোচিং",
+ "theme": "school",
+ "source": {
+  "book": "Influence: The Psychology of Persuasion",
+  "author": "Robert Cialdini",
+  "author_bn": "রবার্ট চালডিনি",
+  "chapter": "PRINCIPLE 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Social Proof",
+  "title_bn": "সবাই করে, তাই করি"
+ },
+ "cast": {
+  "ammu": {
+   "name": "নাসরিন",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "salwar",
+   "color": "#2F7A6B",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "oishi": {
+   "name": "ঐশী",
+   "type": "teen_girl",
+   "skin": "wheat",
+   "outfit": "uniform",
+   "color": "#F2EEE3",
+   "color2": "#2F5D8A",
+   "hair": "long_braid",
+   "voice": "teen_girl"
+  },
+  "rupa": {
+   "name": "রুপা আপা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#E8A33D",
+   "hair": "long_bun",
+   "glasses": true,
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "ক্লাস এইট, চারটা কোচিং, দিনে এগারো ঘণ্টা পড়া। আর ঐশী ঘুমায় *পাঁচ ঘণ্টা*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ঢাকা, মিরপুর ১০",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "oishi",
+      "x": 0.35,
+      "pose": "walk",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "ammu",
+      "x": 0.65,
+      "pose": "walk",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কোচিং",
+       "value": "৪টা"
+      },
+      {
+       "label": "পড়া",
+       "value": "১১ ঘণ্টা"
+      },
+      {
+       "label": "ঘুম",
+       "value": "৫ ঘণ্টা",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "ভোর ছয়টায় স্কুল, তারপর এক কোচিং থেকে আরেক কোচিং। *রিকশাতেই টিফিন*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "নাসরিনের যুক্তি একটাই— মায়েদের গ্রুপে *সবাই দিচ্ছে*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "ক্লাস এইট মাদার্স গ্রুপ",
+     "msgs": [
+      {
+       "who": "রুপা আপা",
+       "t": "ম্যাথের নতুন ব্যাচ খুলছে, সবাই ভর্তি করাচ্ছে"
+      },
+      {
+       "who": "শিমু",
+       "t": "আমরাও দিলাম ✅"
+      },
+      {
+       "who": "নাসরিন",
+       "t": "আমিও দিচ্ছি কালকে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "গ্রুপে পাঁচশো মা। কেউ নতুন ব্যাচ দিলেই বাকিরা ভাবে— *পিছিয়ে পড়লাম*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "রাত এগারোটা। টেবিলে মাথা রেখে ঐশী *ঘুমিয়ে পড়েছে*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "oishi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "clock",
+     "time": "11:00",
+     "label": "রাত ১১টা"
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "ঘুমাইস না, মা। রুপা আপার মেয়ে এখনো *ফিজিক্স* করতেছে।",
+   "tone": "serious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "oishi",
+   "say": "আম্মু, তুমি কি কখনো রুপা আন্টির মেয়েরে *জিজ্ঞেস করছো*, ও খুশি কি না?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "oishi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসরিন উত্তর দিলেন না। সকালেই কিনলেন আরেকটা ব্যাচের *ফর্ম*।",
+   "pause": 0.7,
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "এক বছরের হিসাব।",
+   "card": {
+    "title": "এক বছর পর",
+    "items": [
+     {
+      "t": "মাসে কোচিং খরচ এগারো হাজার",
+      "mark": "x"
+     },
+     {
+      "t": "গণিতে নম্বর বাহাত্তর থেকে আটষট্টি",
+      "mark": "x"
+     },
+     {
+      "t": "টিফিন বক্স ফেরত আসে ভরা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ঐশী আর আগের মতো গল্প করে না। খাবার টেবিলে শুধু *‘হুঁ’, ‘না’*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাতের খাবার",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "oishi",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "ammu",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": {
+     "focus": "oishi",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "একদিন স্কুল থেকে ফোন। ঐশী ক্লাসে ঘুমিয়ে পড়ে, *প্রায় রোজ*।",
+   "scene": {
+    "set": "home",
+    "light": "day",
+    "chip": "একদিন দুপুরে",
+    "props": [
+     "sofa",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "বিকেলে কোচিংয়ের গেটে নাসরিন দাঁড়ালেন রুপা আপার পাশে।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কোচিং সেন্টারের গেট",
+    "props": [
+     "school_gate"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "rupa",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "আপা, একটা সত্যি কথা বলবেন? আপনার মেয়ে চারটা কোচিংয়ে *খুশি*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "খুশি? রাতে কান্দে। দিছি তো আপনারে দেইখা। ভাবলাম *আমারটা পিছায়া যাবে*!",
+   "tone": "sighs",
+   "scene": {
+    "moods": {
+     "rupa": "sad"
+    },
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দুই মা একে অপরের দিকে তাকালেন। তারপর হেসে ফেললেন— *চোখে পানি*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": "wide",
+    "moods": {
+     "ammu": "smile",
+     "rupa": "smile"
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে নাসরিন গ্রুপে লিখলেন, প্রথমবার *সত্যি কথা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "ammu",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "oishi",
+      "x": 0.75,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "ক্লাস এইট মাদার্স গ্রুপ",
+     "msgs": [
+      {
+       "who": "নাসরিন",
+       "t": "আমার মেয়ে চারটা কোচিংয়ে, কিন্তু ও ভালো নাই। আপনাদের বাচ্চারা কি সত্যি ভালো আছে?"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "আধা ঘণ্টায় তেষট্টিটা উত্তর। প্রায় সবার একই কথা— *‘আমারটাও না’*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "ক্লাস এইট মাদার্স গ্রুপ",
+     "msgs": [
+      {
+       "who": "রুপা আপা",
+       "t": "আমারটাও না।"
+      },
+      {
+       "who": "শিমু",
+       "t": "সবাই দেয় দেখে দিছিলাম…"
+      },
+      {
+       "who": "মৌসুমী",
+       "t": "চলেন সবাই মিলে একটা করে কমাই?"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "oishi",
+   "say": "আম্মু, এত রাতে মোবাইলে কী? *আবার নতুন ব্যাচ*?",
+   "tone": "suspicious",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "oishi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "ammu",
+   "say": "না রে। একটা ব্যাচ বাদ। শুক্রবার বিকালটা *তোর*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "ammu": "smile",
+     "oishi": "surprised"
+    },
+    "cam": {
+     "focus": "ammu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরের মাসে বিশজন মা একসাথে একটা করে কোচিং কমালেন। কেউ *একা পিছিয়ে পড়ল না*।",
+   "scene": {
+    "moods": {
+     "oishi": "happy"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "আর শুক্রবার বিকেলে মিরপুরের মাঠে— ব্যাডমিন্টন, ঝালমুড়ি, *হাসি*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "শুক্রবার বিকেল",
+    "chars": [
+     {
+      "id": "oishi",
+      "x": 0.25,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "wave"
+     },
+     {
+      "id": "ammu",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "rupa",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rupa",
+   "say": "আপা, দেখাদেখি কোচিং দিছিলাম। এখন সবাই দেখাদেখি *মাঠে আসে*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "rupa",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর পরীক্ষার খাতা। গণিতে আটষট্টি থেকে *একাশি*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "কোচিং",
+       "value": "৪ → ৩"
+      },
+      {
+       "label": "ঘুম",
+       "value": "৫ → ৮ ঘণ্টা"
+      },
+      {
+       "label": "গণিত",
+       "value": "৬৮ → ৮১"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "oishi",
+   "say": "আম্মু, কালকে তুমিও খেলবা? রুপা আন্টি তো নতুন *র‍্যাকেট* কিনছে!",
+   "tone": "playfully",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "oishi",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসরিন হাসলেন। গ্রুপের নাম এখন— *‘ক্লাস এইট মাদার্স, শুক্রবার মাঠে’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবাই করে বলে আমরাও করি… *একজন সত্যি বললে সবাই থামতে পারে।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবাই করে বলে আমরাও করি…",
+    "line2": "একজন সত্যি বললে\nসবাই থামতে পারে।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ক্লাস এইটে চারটা কোচিং, ঘুম পাঁচ ঘণ্টা— এক মায়ের একটা সত্যি মেসেজ বদলাল সব 📚",
+  "description": "মিরপুরের নাসরিন মেয়েকে চারটা কোচিংয়ে দেন, কারণ মায়েদের গ্রুপে সবাই দিচ্ছে। মেয়ে ক্লাসে ঘুমিয়ে পড়ে। তারপর কোচিংয়ের গেটে আরেক মাকে তিনি একটা প্রশ্ন করলেন…",
+  "tags": [
+   "মা মেয়ের গল্প",
+   "কোচিং",
+   "পড়ালেখার চাপ",
+   "ঢাকা",
+   "মিরপুর",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "সবাই দেখাদেখি কোচিং দিচ্ছিল— একজন মা সত্যি বলতেই সবাই থামল। 📚\nতোমার সন্তানের দিনটা কি সত্যি তার নিজের? 👇 #মা #পড়ালেখা"
+ },
+ "thumbnail": {
+  "text": "সবাই দিচ্ছে!",
+  "sub": "চারটা কোচিং, পাঁচ ঘণ্টা ঘুম"
+ }
+}

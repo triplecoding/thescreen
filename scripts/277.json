@@ -1,0 +1,573 @@
+{
+ "id": "277",
+ "status": "ready",
+ "title_bn": "বাকি জীবনটা",
+ "theme": "probashi",
+ "source": {
+  "book": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "author_bn": "ড্যানিয়েল কাহনেম্যান",
+  "chapter": "IDEA 5",
+  "chapter_bn": "৫ নম্বর অধ্যায়",
+  "title": "Loss Aversion",
+  "title_bn": "হারানোর ভয়"
+ },
+ "cast": {
+  "mizan": {
+   "name": "মিজান",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#4A6FA5",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "man"
+  },
+  "nasrin": {
+   "name": "নাসরিন",
+   "type": "woman",
+   "skin": "wheat",
+   "outfit": "sari",
+   "color": "#9B3D5A",
+   "color2": "#F2D27A",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "rahat": {
+   "name": "রাহাত",
+   "type": "child_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#E8A33D",
+   "hair": "kid",
+   "voice": "child_boy"
+  }
+ },
+ "beats": [
+  {
+   "say": "চার লাখ টাকা খরচ করে মালয়েশিয়া। সাত মাস ধরে *বেতন বন্ধ*।",
+   "scene": {
+    "light": "night",
+    "chip": "কুয়ালালামপুর, শ্রমিকদের ঘর",
+    "set": "home",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "খরচ",
+       "value": "৪ লাখ"
+      },
+      {
+       "label": "বেতন বন্ধ",
+       "value": "৭ মাস",
+       "red": true
+      },
+      {
+       "label": "রুমমেটদের ধার",
+       "value": "৬৫,০০০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কোম্পানি বলে, আগামী মাসে। মিজান রুমমেটদের কাছে ধার করে খায়, বাড়িতে বলে *‘ভালো আছি’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "কিশোরগঞ্জে নাসরিন সবই টের পায়। ফোনে মিজানের গলা *ফাঁকা শোনায়*।",
+   "scene": {
+    "light": "evening",
+    "chip": "কিশোরগঞ্জ, ভিডিও কল",
+    "set": "home",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "nasrin",
+      "x": 0.38,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "call",
+      "hold": "phone"
+     },
+     {
+      "id": "rahat",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "ফিরা আসো। এইখানে শাক-ভাত খামু, তাও *একসাথে খামু*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mizan",
+   "say": "চার লাখ টাকা! জমি বন্ধক, তোমার বালা বেচা। *খালি হাতে* ফিরমু কেমনে?",
+   "tone": "upset",
+   "scene": {
+    "light": "night",
+    "chip": "কুয়ালালামপুর",
+    "set": "home",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "angry",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "mizan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এই চার লাখই মিজানকে আটকে রাখে। রোজ মনে হয়, কাল হয়তো *বেতন আসবে*।",
+   "scene": {
+    "moods": {
+     "mizan": "sad"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সাত মাসে মিজান যা যা করল।",
+   "card": {
+    "title": "সাত মাসের অপেক্ষা",
+    "items": [
+     {
+      "t": "‘আগামী মাসে’— সাতবার শুনল",
+      "mark": "x"
+     },
+     {
+      "t": "রুমমেটদের কাছে ধার",
+      "mark": "x"
+     },
+     {
+      "t": "দালালকে ফোন— নম্বর বন্ধ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক রাতে রুমমেটদের ধারও ফুরাল। ভাত রান্না হলো, *ডাল ছাড়া*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "mizan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভিডিও কলে ক্লাস ফোরের রাহাত। হাতে অঙ্ক খাতা।",
+   "scene": {
+    "light": "evening",
+    "chip": "কিশোরগঞ্জ, পরদিন",
+    "set": "home",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rahat",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "আব্বু, চার লাখ টাকা তো চইলাই গেছে। তুমি থাকলে কি ওইটা *ফেরত আসবে*?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মিজানের কাছে কোনো উত্তর ছিল না।",
+   "pause": 0.9,
+   "scene": {
+    "light": "night",
+    "chip": "কুয়ালালামপুর",
+    "set": "home",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "surprised",
+      "arm": "call",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "mizan",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "তাইলে তুমি চইলা আসো। আমার *ঈদের সালামি* তোমারে দিমু।",
+   "tone": "softly",
+   "scene": {
+    "light": "evening",
+    "chip": "কিশোরগঞ্জ",
+    "set": "home",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "rahat",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ],
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে মিজান প্রথমবার ভাবল— চার লাখ চলে গেছে। কিন্তু *বাকি জীবনটা* এখনো যায়নি।",
+   "scene": {
+    "light": "night",
+    "chip": "সেই রাত",
+    "set": "home",
+    "props": [
+     "bed"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "crying",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন গেল দূতাবাসের শ্রম শাখায়। সাথে বেতনের কাগজ আর *সাত মাসের হিসাব*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দূতাবাসের শ্রম শাখা",
+    "props": [
+     "signboard",
+     "sign:শ্রম কল্যাণ শাখা"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "envelope"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "অভিযোগ জমা হলো। দুই মাস পর মিলল তিন মাসের বেতন আর *দেশে ফেরার কাগজ*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বকেয়া",
+       "value": "৭ মাস"
+      },
+      {
+       "label": "পাওয়া গেল",
+       "value": "৩ মাস"
+      },
+      {
+       "label": "টিকিট",
+       "value": "হাতে"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রুমমেটদের ধার শোধ করে, বাকিটা নিয়ে মিজান *প্লেনে উঠল*।",
+   "scene": {
+    "widget": null,
+    "moods": {
+     "mizan": "smile"
+    }
+   }
+  },
+  {
+   "say": "কিশোরগঞ্জ, ভোরবেলা। বাড়ির সামনে রাহাত *দৌড়ে এল*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "কিশোরগঞ্জ, ভোর",
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.32,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "rahat",
+      "x": 0.52,
+      "pose": "walk",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hug"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "mizan",
+   "say": "খালি হাতেই আসলাম। *লজ্জা লাগে*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "mizan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nasrin",
+   "say": "খালি হাত? হাত দুইটা তো আছে। *ওইটাই আমাদের পুঁজি*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "nasrin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এক সপ্তাহ পর মিজান কাজ নিল চালের মিলে। বেতন পনেরো হাজার, *দেশের মাটিতে*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "এক সপ্তাহ পর, চালের মিল",
+    "props": [
+     "signboard",
+     "sign:সোনালী রাইস মিল"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "জমির বন্ধক ছাড়াতে লাগবে তিন বছর। নাসরিন হিসাবটা লিখে রেখেছে।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "নতুন হিসাব",
+     "lines": [
+      "মিলের বেতন— ১৫,০০০",
+      "সংসার— ১১,০০০",
+      "বন্ধক শোধ— মাসে ৪,০০০"
+     ]
+    }
+   }
+  },
+  {
+   "say": "রাতে তিনজন এক পাটিতে ভাত খায়। *সাত মাস পর প্রথম*।",
+   "scene": {
+    "light": "night",
+    "chip": "সেই রাত",
+    "set": "home",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "mizan",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "rahat",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "nasrin",
+      "x": 0.76,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rahat",
+   "say": "আব্বু, সালামির টাকা কিন্তু রাখছি। *লাগলে কইও*।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "rahat",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "mizan",
+   "say": "ওইটা তোর। আমার পুঁজি তো *পাশেই বইসা আছে*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "mizan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসরিন মুখ ফিরিয়ে হাসল। চোখ দুটো *একটু ভেজা*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "nasrin": "happy"
+    },
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "যা চলে গেছে, তার পেছনে দৌড়ালে… *যা আছে, সেটাও হারিয়ে যায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "যা চলে গেছে, তার পেছনে দৌড়ালে…",
+    "line2": "যা আছে, সেটাও\nহারিয়ে যায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চার লাখ খরচ, সাত মাস বেতন নেই— ছেলের এক প্রশ্নে দেশে ফেরার সিদ্ধান্ত ✈️",
+  "description": "চার লাখ টাকা খরচ করে মালয়েশিয়া গিয়েছিল মিজান। সাত মাস বেতন নেই, তবু ফিরতে পারে না— খালি হাতে ফিরবে কেমনে? তারপর ভিডিও কলে ক্লাস ফোরের ছেলে রাহাত একটা প্রশ্ন করল…",
+  "tags": [
+   "প্রবাসীর গল্প",
+   "মালয়েশিয়া",
+   "কিশোরগঞ্জ",
+   "বাবা ছেলের গল্প",
+   "স্বামী স্ত্রীর গল্প",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "চার লাখ চলে গেছে— কিন্তু বাকি জীবনটা তখনো যায়নি। ✈️\nতুমি কি কখনো হারানো কিছুর জন্য আরো বেশি হারিয়েছ? 👇 #প্রবাসী #মালয়েশিয়া"
+ },
+ "thumbnail": {
+  "text": "ফেরত আসবে?",
+  "sub": "৭ মাস বেতন নেই"
+ }
+}

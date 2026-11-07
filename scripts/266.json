@@ -1,0 +1,538 @@
+{
+ "id": "266",
+ "status": "ready",
+ "title_bn": "মায়ার খাতা",
+ "theme": "money",
+ "source": {
+  "book": "The Art of Worldly Wisdom",
+  "author": "Baltasar Gracián",
+  "author_bn": "বালতাসার গ্রাসিয়ান",
+  "chapter": "MAXIM 8",
+  "chapter_bn": "৮ নম্বর অধ্যায়",
+  "title": "Be neither all dove nor all serpent",
+  "title_bn": "শুধু নরমও না, শুধু কঠিনও না"
+ },
+ "cast": {
+  "motin": {
+   "name": "মতিন মিয়া",
+   "type": "man",
+   "skin": "brown",
+   "outfit": "panjabi",
+   "color": "#E9E4D8",
+   "hair": "short",
+   "beard": "full_black",
+   "voice": "man"
+  },
+  "rehana": {
+   "name": "রেহানা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#5B7DB1",
+   "color2": "#E8C9A0",
+   "hair": "long_bun",
+   "voice": "woman"
+  },
+  "jobeda": {
+   "name": "জোবেদা খালা",
+   "type": "old_woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#F2EEE3",
+   "color2": "#8A7F70",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "বাকির খাতায় বিরানব্বই হাজার টাকা। আর মতিন মিয়া কাউকে *‘না’ বলতে পারেন না*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "রংপুর, পীরগঞ্জ বাজার",
+    "props": [
+     "signboard",
+     "sign:মতিন স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাকি",
+       "value": "৯২,০০০ টাকা",
+       "red": true
+      },
+      {
+       "label": "বাকির পরিবার",
+       "value": "৪৭"
+      },
+      {
+       "label": "‘না’ বলা",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "কুড়ি বছরের মুদি দোকান। নরম মানুষ। তার একটাই কথা— *‘পরে দিয়েন’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "কেউ সত্যিই পারে না। আর কেউ নতুন মোটরসাইকেলে এসে বলে— *‘লেইখা রাখেন’*।"
+  },
+  {
+   "say": "এ মাসে পাইকার মাল দিল না। আগের বিল *শোধ হয়নি*।",
+   "scene": {
+    "moods": {
+     "motin": "sad"
+    },
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "তুমি সবার কাছে ভালো মানুষ। খালি নিজের ঘরে *চাল নাই*।",
+   "tone": "frustrated",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.33,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rehana",
+      "x": 0.7,
+      "pose": "sit",
+      "face": "left",
+      "mood": "angry",
+      "arm": "talk"
+     }
+    ],
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "say": "মানুষরে না কমু কেমনে? গ্রামের দোকান, মুখ দেখাদেখি। *লোকে কী কইবো*?",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুইবার মতিন মিয়া কঠিন হতে চেয়েছিলেন।",
+   "card": {
+    "title": "মতিন মিয়ার চেষ্টা",
+    "items": [
+     {
+      "t": "‘বাকি বন্ধ’ নোটিশ— তিন দিনে নিজেই তুললেন",
+      "mark": "x"
+     },
+     {
+      "t": "জোবেদা খালাকে ফেরালেন— সারারাত ঘুম নেই",
+      "mark": "x"
+     },
+     {
+      "t": "মোটরসাইকেলওয়ালাকে— কিছুই বলতে পারলেন না",
+      "mark": "x"
+     }
+    ],
+    "footer": "নরম হয়েও না, কঠিন হয়েও না"
+   }
+  },
+  {
+   "say": "সেই রাতে রেহানা খাতাটা নিয়ে বসলেন। হাতে *তিন রঙের কলম*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "রাত বারোটা",
+    "props": [
+     "table",
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "rehana",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "motin",
+      "x": 0.72,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "বাকির খাতা— তিন ভাগ",
+     "lines": [
+      "সবুজ: সত্যি পারে না— নয় পরিবার",
+      "হলুদ: দেরি করে, তবু দেয়— ঊনত্রিশ",
+      "লাল: পারে, দেয় না— নয়জন"
+     ],
+     "sub": "লালের কাছেই একষট্টি হাজার"
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "দেখো, বেশি টাকা আটকায়া আছে *এই নয়জনের* কাছে। যারা পারে।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "say": "তাইলে কী করমু? *ঝগড়া* করমু?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "ঝগড়া না। নিয়ম। সবার জন্য এক নিয়ম, খালি গরিবের খাতা *আলাদা*।",
+   "tone": "gently",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন দোকানে রেহানার হাতে লেখা নতুন একটা *বোর্ড*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "পরদিন সকাল",
+    "props": [
+     "signboard",
+     "sign:মতিন স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "মতিন স্টোর— বাকির নিয়ম",
+     "lines": [
+      "বাকি সর্বোচ্চ দুই হাজার টাকা",
+      "মাসের দশ তারিখে অর্ধেক শোধ",
+      "শোধের দিন চা আমাদের"
+     ],
+     "sub": "নিয়ম সবার জন্য এক"
+    }
+   }
+  },
+  {
+   "say": "সবচেয়ে বড় বাকি মোটরসাইকেলওয়ালা কাশেমের— *আঠারো হাজার*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "মতিন মিয়া তাকে চা খাওয়ালেন। হেসে বোর্ডটা দেখালেন। *গলা নরম, কথা শক্ত*।",
+   "pause": 0.6,
+   "scene": {
+    "moods": {
+     "motin": "smile"
+    },
+    "arms": {
+     "motin": "talk"
+    }
+   }
+  },
+  {
+   "say": "কাশেম গজগজ করল। কিন্তু সবার সামনে বোর্ডটা পড়ে *মানিব্যাগ খুলল*।"
+  },
+  {
+   "say": "দশ তারিখ এলো। দোকানের সামনে চায়ের কেটলি, লাইনে দাঁড়িয়ে *অর্ধেক শোধ*।",
+   "scene": {
+    "set": "shop",
+    "light": "day",
+    "chip": "দশ তারিখ",
+    "props": [
+     "signboard",
+     "sign:মতিন স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "rehana",
+      "x": 0.62,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "লাইনের শেষে জোবেদা খালা। হাতে একটা পুঁটলি, *দশটা ডিম*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rehana",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     },
+     {
+      "id": "jobeda",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "jobeda",
+   "say": "বাবা, টাকা নাই। মুরগির ডিম আনছি। বাকিটা *লেইখা রাখেন*…",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "jobeda",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মতিন মিয়া রেহানার দিকে তাকালেন। রেহানা ড্রয়ার থেকে বের করলেন *ছোট্ট একটা খাতা*।",
+   "scene": {
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "rehana",
+   "say": "খালা, আপনার নাম বড় খাতায় নাই। এইটা আমাগো *মায়ার খাতা*। এইখানে শোধ লাগে না।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "rehana": "smile"
+    },
+    "cam": {
+     "focus": "rehana",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jobeda",
+   "say": "তাইলে ডিমগুলা রাখো, মা। গরিবেরও তো *দেওয়ার সাধ* থাকে।",
+   "tone": "softly",
+   "scene": {
+    "moods": {
+     "jobeda": "crying"
+    },
+    "cam": {
+     "focus": "jobeda",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তিন মাস পর। পাইকার আবার মাল দিল। তাক ভরা, বাকি নেমেছে *অর্ধেকের নিচে*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "তিন মাস পর",
+    "props": [
+     "signboard",
+     "sign:মতিন স্টোর",
+     "cashbox"
+    ],
+    "chars": [
+     {
+      "id": "motin",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "rehana",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "বাকি",
+       "value": "৯২ → ৩৫ হাজার"
+      },
+      {
+       "label": "কাস্টমার কমেছে",
+       "value": "০"
+      },
+      {
+       "label": "মায়ার খাতায়",
+       "value": "৯ পরিবার"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "motin",
+   "say": "রেহানা, ভাবছিলাম নিয়ম দিলে মানুষ চইলা যাইবো। কেউ তো *গেল না*!",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "বোর্ডের নিচে মতিন মিয়া নিজের হাতে একটা লাইন যোগ করলেন।",
+   "scene": {
+    "cam": {
+     "focus": "motin",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "*‘যে সত্যি পারে না, তার জন্য আলাদা খাতা আছে— লজ্জা করবেন না।’*",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "শুধু নরম হলে মানুষ ঠকায়… *নরম গলায় শক্ত নিয়ম দুটোই বাঁচায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "শুধু নরম হলে মানুষ ঠকায়…",
+    "line2": "নরম গলায় শক্ত নিয়ম\nদুটোই বাঁচায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "বাকির খাতায় ৯২ হাজার, দোকানি কাউকে ‘না’ বলতে পারেন না— স্ত্রীর তিন রঙের কলম 📒",
+  "description": "রংপুরের মতিন মিয়া কুড়ি বছর ধরে সবাইকে বাকি দেন। এখন খাতায় বিরানব্বই হাজার টাকা, পাইকার মাল দেয় না। কঠিন হতে গিয়ে তিনি ফিরিয়ে দিলেন ভুল মানুষকে। সেই রাতে স্ত্রী রেহানা খাতাটা নিয়ে বসলেন…",
+  "tags": [
+   "স্বামী স্ত্রীর গল্প",
+   "দোকানির গল্প",
+   "রংপুর",
+   "বাকির খাতা",
+   "সততা",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "যারা পারে তাদের জন্য নিয়ম, যারা পারে না তাদের জন্য মায়ার খাতা— দোকানও বাঁচল, মানুষও। 📒\nতুমি কি কখনো নরম থাকতে গিয়ে নিজেই ঠকেছ? 👇 #দোকান #রংপুর"
+ },
+ "thumbnail": {
+  "text": "৯২ হাজার বাকি",
+  "sub": "যিনি ‘না’ বলতে পারেন না"
+ }
+}

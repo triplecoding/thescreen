@@ -1,0 +1,521 @@
+{
+ "id": "278",
+ "status": "ready",
+ "title_bn": "আগে চাঁদ দেখ",
+ "theme": "struggle",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 7",
+  "chapter_bn": "৭ নম্বর অধ্যায়",
+  "title": "Know the terrain",
+  "title_bn": "ভূমিকে চেনো"
+ },
+ "cast": {
+  "hashem": {
+   "name": "হাশেম চাচা",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#6B8F71",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "sumon": {
+   "name": "সুমন",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#C4473A",
+   "hair": "curly",
+   "voice": "young_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "বর্ষায় আগ্রাবাদের রাস্তায় হাঁটুপানি। নতুন রিকশাচালক সুমন সেদিন আয় করল *মাত্র আশি টাকা*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "চট্টগ্রাম, আগ্রাবাদ",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push",
+    "fx": "rain",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সুমনের কামাই",
+       "value": "৮০ টাকা",
+       "red": true
+      },
+      {
+       "label": "হাশেম চাচার",
+       "value": "৯৫০ টাকা"
+      },
+      {
+       "label": "রাস্তা",
+       "value": "একই"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "সুমন ভোলার ছেলে, শহরে এসেছে দুই মাস। মালিককে জমা দিতে হয় দিনে *তিনশো টাকা*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "অথচ গ্যারেজের সবচেয়ে বুড়ো হাশেম চাচা পানির দিনেও *যাত্রী পান*।",
+   "scene": {
+    "set": "shop",
+    "light": "evening",
+    "chip": "রিকশা গ্যারেজ, সন্ধ্যা",
+    "props": [
+     "signboard",
+     "sign:হক রিকশা গ্যারেজ"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "sumon",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "চাচা, আপনার কপাল ভালো। পানির মধ্যে আপনে *যাত্রী পান কেমনে*?",
+   "tone": "annoyed",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "কপাল না রে। পানি কখন আসে, কখন যায়— *ওইটা চিনি*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "পরের সপ্তাহে সুমন সব চেষ্টা করল।",
+   "card": {
+    "title": "সুমনের চেষ্টা",
+    "items": [
+     {
+      "t": "ভোরে সবার আগে বের হওয়া",
+      "mark": "x"
+     },
+     {
+      "t": "বড় রাস্তায় দাঁড়িয়ে থাকা",
+      "mark": "x"
+     },
+     {
+      "t": "ভাড়া কমিয়ে ডাকা",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "শুক্রবার রাতে জমার টাকা হলো না। মালিক বলল, *কাল থেকে রিকশা নাই*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "শুক্রবার রাত",
+    "props": [
+     "signboard",
+     "sign:হক রিকশা গ্যারেজ"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "হাশেম চাচা এসে বসলেন পাশে। তাকালেন *আকাশের দিকে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.36,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "point"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "চাঁদটা দেখ। কাল পূর্ণিমা। কাল জোয়ার *সবচেয়ে বড়*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "চাঁদের লগে রাস্তার পানির *কী সম্পর্ক*, চাচা?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "জোয়ারের সময় বৃষ্টির পানি নদীতে নামতে পারে না। তখন *রাস্তা ডোবে*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পকেট থেকে বের করলেন ভাঁজ করা কাগজ। হাতে আঁকা *গলির ম্যাপ*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "হাশেম চাচার কাগজ",
+     "lines": [
+      "জোয়ারে ডোবে: বেপারীপাড়া, সিডিএ",
+      "উঁচা গলি: স্কুলের পেছন",
+      "ভাটা: জোয়ারের ছয় ঘণ্টা পর"
+     ]
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "জোয়ারের আগে বড় রাস্তা। ডুবলে উঁচা গলি। আর ভাটায় *অফিসের যাত্রী*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন সুমন চাচার কাগজ ধরে চালাল। জোয়ার আসার আগেই *তিনটা ট্রিপ*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন, পূর্ণিমার জোয়ার",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.5,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "pan",
+    "widget": null
+   }
+  },
+  {
+   "say": "দুপুরে বড় রাস্তায় সবাই পানিতে আটকা। সুমন তখন *উঁচা গলিতে*।",
+   "scene": {
+    "fx": "rain"
+   }
+  },
+  {
+   "say": "সন্ধ্যায় ভাটা। অফিস ফেরত মানুষ রিকশা খোঁজে। সুমনের সামনে *লম্বা লাইন*।",
+   "scene": {
+    "light": "evening",
+    "fx": null,
+    "moods": {
+     "sumon": "happy"
+    }
+   }
+  },
+  {
+   "say": "রাতে গ্যারেজে জমা দেওয়ার পর হাতে থাকল *সাতশো চল্লিশ টাকা*।",
+   "scene": {
+    "set": "shop",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "signboard",
+     "sign:হক রিকশা গ্যারেজ"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "envelope"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "আজকের কামাই",
+       "value": "১,০৪০"
+      },
+      {
+       "label": "জমা",
+       "value": "৩০০"
+      },
+      {
+       "label": "হাতে",
+       "value": "৭৪০",
+       "from": "৮০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "চাচা, আপনি চাঁদ দেখেন। আমি ফোনে *জোয়ারের সময়* দেখাইতে পারি। মিলাই?",
+   "tone": "excited",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "দেখা তো। চল্লিশ বছর চাঁদ দেইখা চালাইছি, দেখি *ফোন কী কয়*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ফোনের জোয়ার আর চাচার চাঁদ— মিলে গেল *প্রায় মিনিটে মিনিটে*।",
+   "scene": {
+    "moods": {
+     "hashem": "surprised"
+    }
+   }
+  },
+  {
+   "say": "দুজনে মিলে বানাল নতুন কাগজ। গ্যারেজের দেয়ালে টাঙানো, *সবার জন্য*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "sticky",
+     "title": "গ্যারেজের জোয়ার বোর্ড",
+     "lines": [
+      "আজ জোয়ার: সকাল ১১:৪০",
+      "ডোবে: বেপারীপাড়া, সিডিএ",
+      "উঁচা গলি: স্কুলের পেছন"
+     ]
+    }
+   }
+  },
+  {
+   "say": "সেই বর্ষায় গ্যারেজের বিশটা রিকশার কামাই হলো *প্রায় দ্বিগুণ*।"
+  },
+  {
+   "say": "এখন নতুন চালকদের সুমন প্রথমেই বলে— *‘আগে চাঁদ দেখ’*।",
+   "scene": {
+    "widget": null,
+    "set": "shop",
+    "light": "evening",
+    "chip": "এক বছর পর",
+    "props": [
+     "signboard",
+     "sign:হক রিকশা গ্যারেজ"
+    ],
+    "chars": [
+     {
+      "id": "sumon",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "point"
+     },
+     {
+      "id": "hashem",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "hashem",
+   "say": "কী রে, এখন তো আমার চেয়ে *তুই বেশি জানস*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "hashem",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "sumon",
+   "say": "না চাচা। আপনি চাঁদ জানেন, আমি খালি *ফোন জানি*।",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "sumon",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "চাচা হাসলেন। মাথার ওপর আধখানা চাঁদ, নিচে *শুকনো রাস্তা*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "street",
+    "light": "night",
+    "chip": "রাত",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "hashem",
+      "x": 0.38,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "sumon",
+      "x": 0.64,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "রাস্তা সবাই দেখে… *যে রাস্তার মেজাজ চেনে, সে-ই পৌঁছায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "রাস্তা সবাই দেখে…",
+    "line2": "যে রাস্তার মেজাজ চেনে,\nসে-ই পৌঁছায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "একই রাস্তা, একই বৃষ্টি— নতুন চালক ৮০ টাকা, বুড়ো চাচা ৯৫০! রহস্যটা চাঁদে 🌕",
+  "description": "চট্টগ্রামের আগ্রাবাদে বর্ষার দিনে নতুন রিকশাচালক সুমন সারা দিনে কামায় আশি টাকা, আর গ্যারেজের বুড়ো হাশেম চাচা নয়শো পঞ্চাশ। সুমন ভাবে কপাল। এক রাতে চাচা আকাশের দিকে আঙুল তুললেন…",
+  "tags": [
+   "রিকশাচালকের গল্প",
+   "চট্টগ্রাম",
+   "আগ্রাবাদ",
+   "জোয়ার",
+   "গুরু শিষ্য",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "কপাল না— পানি কখন আসে, কখন যায়, সেটা চেনাই ছিল হাশেম চাচার রহস্য। 🌕\nতোমার কাজের জায়গায় এমন কোন ‘চাঁদ’ আছে, যা শুধু অভিজ্ঞরা দেখে? 👇 #রিকশা #চট্টগ্রাম"
+ },
+ "thumbnail": {
+  "text": "আগে চাঁদ দেখ",
+  "sub": "৮০ বনাম ৯৫০"
+ }
+}

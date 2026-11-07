@@ -1,0 +1,518 @@
+{
+ "id": "262",
+ "status": "ready",
+ "title_bn": "টিফিন আর খোঁজখবর",
+ "theme": "struggle",
+ "source": {
+  "book": "The Art of War",
+  "author": "Sun Tzu",
+  "author_bn": "সান জু",
+  "chapter": "IDEA 3",
+  "chapter_bn": "৩ নম্বর অধ্যায়",
+  "title": "Avoid what is strong, strike at what is weak",
+  "title_bn": "শক্ত জায়গা এড়িয়ে ফাঁকা জায়গায়"
+ },
+ "cast": {
+  "khala": {
+   "name": "নাসিমা খালা",
+   "type": "woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#C4473A",
+   "color2": "#F2EEE3",
+   "hair": "hijab",
+   "voice": "woman"
+  },
+  "rubel": {
+   "name": "রুবেল",
+   "type": "teen_boy",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#3E5641",
+   "hair": "curly",
+   "voice": "teen_boy"
+  },
+  "chacha": {
+   "name": "মোতালেব চাচা",
+   "type": "old_man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#F2EEE3",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "glasses": true,
+   "voice": "old_man"
+  }
+ },
+ "beats": [
+  {
+   "say": "আঠারো বছরের টিফিন সার্ভিস। এক বছরে রোজের অর্ডার পঁয়ষট্টি থেকে *বাইশে*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "ঢাকা, মোহাম্মদপুর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "টিফিন সার্ভিস",
+       "value": "১৮ বছর"
+      },
+      {
+       "label": "আগে রোজ",
+       "value": "৬৫"
+      },
+      {
+       "label": "এখন",
+       "value": "২২",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নাসিমা খালার রান্না পাড়ায় বিখ্যাত। কিন্তু এখন সবার হাতে *খাবারের অ্যাপ*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "অ্যাপে তিনশো পদ, ত্রিশ মিনিটে দরজায়। খালার মেনু রোজ *একটাই*।"
+  },
+  {
+   "say": "দুপুরে রুবেলের সাইকেলের ঝুড়ি এখন *অর্ধেক খালি*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "rubel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "খালা, আমরাও অ্যাপে উঠি? মেনু বাড়াই, *ডিসকাউন্ট* দেই?",
+   "tone": "excited",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "তিনশো পদ আমি একা রান্ধমু? ওগো লগে দৌড়াইলে *আমি হারমু*, বাবা।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তবু খালা চেষ্টা করলেন।",
+   "card": {
+    "title": "তিন মাসের চেষ্টা",
+    "items": [
+     {
+      "t": "দাম কমালেন বিশ টাকা— লাভ শেষ",
+      "mark": "x"
+     },
+     {
+      "t": "মেনুতে বিরিয়ানি, চাইনিজ— খাবার নষ্ট",
+      "mark": "x"
+     },
+     {
+      "t": "ফেসবুকে পোস্ট— তিনটা লাইক",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "এক দুপুরে রুবেল ছয়তলার মোতালেব চাচার দরজায় আটকে গেল, *আধা ঘণ্টা*।",
+   "scene": {
+    "set": "stairs",
+    "light": "day",
+    "chip": "ছয়তলা, লিফট নষ্ট",
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "bag"
+     },
+     {
+      "id": "chacha",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "sad",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "বাবা, একটু বসবা? ছেলেটা কানাডায়। সারাদিন কথা কওয়ার *মানুষ নাই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "রুবেল বসল। ফিউজ হওয়া বাল্বটা বদলে দিল। চাচা খেলেন, *গল্প করতে করতে*।",
+   "scene": {
+    "moods": {
+     "chacha": "smile"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "ফিরে এসে রুবেল বলল, এই গলিতেই এমন একা মানুষ *আরও সাতজন*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "খালার রান্নাঘর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "khala",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "rubel",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "talk"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "rubel",
+   "say": "অ্যাপ খাবার দেয় ত্রিশ মিনিটে। কিন্তু কেউ জিগায় না— *চাচা, ভালো আছেন*?",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "rubel",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নাসিমা খালা হাতের খুন্তি থামালেন। অনেকক্ষণ *ভাবলেন*।",
+   "pause": 0.8,
+   "scene": {
+    "moods": {
+     "khala": "thinking"
+    },
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "ওরা জোরে দৌড়ায়। আমরা ধীরে, কিন্তু মানুষ *চিনি*। খেলাটা তাইলে ওইখানে।",
+   "tone": "hopeful",
+   "scene": {
+    "moods": {
+     "khala": "smile"
+    },
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই রাতে খালা আর রুবেল বানাল নতুন একটা *কার্ড*।",
+   "scene": {
+    "light": "night",
+    "widget": {
+     "kind": "note",
+     "style": "paper",
+     "title": "নাসিমা খালার টিফিন",
+     "lines": [
+      "রোজ দুপুরে ঘরের রান্না",
+      "দরজায় দশ মিনিট গল্প",
+      "প্রতি সন্ধ্যায় সন্তানকে একটা মেসেজ"
+     ],
+     "sub": "মাসে চার হাজার আটশো টাকা"
+    }
+   }
+  },
+  {
+   "say": "পরদিন রুবেল কানাডায় পাঠাল চাচার *হাসিমুখের ছবি*।",
+   "scene": {
+    "widget": {
+     "kind": "chat",
+     "title": "মোতালেব চাচা — আপডেট",
+     "msgs": [
+      {
+       "who": "রুবেল",
+       "t": "চাচা আজ পুরা ভাত খাইছেন, পত্রিকা পড়ছেন 🙂"
+      },
+      {
+       "who": "চাচার ছেলে",
+       "t": "এক বছরে প্রথম এমন খবর পাইলাম। থ্যাংক ইউ, ভাই।"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "চাচার ছেলে কার্ডটা পোস্ট করল প্রবাসীদের এক *ফেসবুক গ্রুপে*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "তিন মাসে ফোন এলো লন্ডন, দুবাই, টরন্টো থেকে। সবার অনুরোধ *একই*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "রোজের টিফিন",
+       "value": "২২ → ৫৮"
+      },
+      {
+       "label": "প্রবাসী সন্তান",
+       "value": "৩১ জন"
+      },
+      {
+       "label": "অ্যাপের সাথে লড়াই",
+       "value": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "রুবেলের সাইকেলে এখন টিফিনের সাথে একটা খাতা— *কে কেমন আছেন*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "তিন মাস পর",
+    "props": [
+     "bicycle"
+    ],
+    "chars": [
+     {
+      "id": "rubel",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "say": "লিফট ঠিক হয়েছে। এক দুপুরে মোতালেব চাচা নিজেই *নেমে এলেন*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.3,
+      "pose": "walk",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "khala",
+      "x": 0.6,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     },
+     {
+      "id": "rubel",
+      "x": 0.85,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "নাসিমা, আজকে টিফিন আমি *নিজে নিতে* আসছি। কতদিন রাস্তা দেখি নাই।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "khala",
+   "say": "তাইলে বসেন, চাচা। আজকে খাবেন *আমার রান্নাঘরে*, আমাগো সাথে।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "khala": "happy"
+    },
+    "cam": {
+     "focus": "khala",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেদিন খালার রান্নাঘরে তিনজন। ডাল, বেগুন ভাজা, আর *অনেক গল্প*।",
+   "scene": {
+    "set": "kitchen",
+    "light": "day",
+    "chip": "খালার রান্নাঘর",
+    "props": [
+     "stove",
+     "pot"
+    ],
+    "chars": [
+     {
+      "id": "chacha",
+      "x": 0.25,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     },
+     {
+      "id": "khala",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "rubel",
+      "x": 0.8,
+      "pose": "sit",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "plate"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "chacha",
+   "say": "ছেলে কাল রাতে কইল— আব্বা, তোমার গলাটা আজকাল *অন্যরকম লাগে*।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "chacha",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "খালা হাসলেন। দেয়ালের পুরোনো বোর্ডে নতুন নাম— *‘টিফিন আর খোঁজখবর’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "সবার সাথে একই দৌড়ে হার… *যে ফাঁকটা কেউ দেখে না, সেটাই তোমার জায়গা।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "সবার সাথে একই দৌড়ে হার…",
+    "line2": "যে ফাঁকটা কেউ দেখে না,\nসেটাই তোমার জায়গা।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "অ্যাপের কাছে হারছিল খালার টিফিন— ছয়তলার এক একা চাচা দেখাল অন্য পথ 🍱",
+  "description": "মোহাম্মদপুরের নাসিমা খালার আঠারো বছরের টিফিন সার্ভিস, অর্ডার নেমেছে বাইশে। অ্যাপের সাথে দাম আর মেনুর দৌড়ে তিনি হারছিলেন। তারপর ডেলিভারি দিতে গিয়ে রুবেল আটকে গেল ছয়তলার এক একা চাচার দরজায়…",
+  "tags": [
+   "ছোট ব্যবসার গল্প",
+   "টিফিন সার্ভিস",
+   "ঢাকা",
+   "প্রবাসী সন্তান",
+   "একাকী বাবা",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "অ্যাপ খাবার দেয় ত্রিশ মিনিটে, খালা দেন দশ মিনিটের খোঁজখবর। 🍱\nতোমার পরিবারের কেউ কি একা থাকেন— শেষ কবে তাঁর দরজায় কেউ দাঁড়িয়েছে? 👇 #টিফিন #প্রবাস"
+ },
+ "thumbnail": {
+  "text": "অ্যাপের সাথে লড়াই?",
+  "sub": "টিফিন আর খোঁজখবর"
+ }
+}

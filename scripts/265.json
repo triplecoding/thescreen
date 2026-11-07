@@ -1,0 +1,532 @@
+{
+ "id": "265",
+ "status": "ready",
+ "title_bn": "দাদার অ্যাপ",
+ "theme": "family",
+ "source": {
+  "book": "Mastery",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STAGE 6",
+  "chapter_bn": "৬ নম্বর অধ্যায়",
+  "title": "Fuse the Intuitive with the Rational: Mastery",
+  "title_bn": "অভিজ্ঞতা আর হিসাবের মিলন"
+ },
+ "cast": {
+  "dada": {
+   "name": "হাশেম মাঝি",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "shirt",
+   "color": "#8A7F70",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "raju": {
+   "name": "রাজু",
+   "type": "young_man",
+   "skin": "brown",
+   "outfit": "tshirt",
+   "color": "#2F5D8A",
+   "hair": "short",
+   "beard": "stubble",
+   "voice": "young_man"
+  },
+  "parul": {
+   "name": "পারুল",
+   "type": "woman",
+   "skin": "brown",
+   "outfit": "sari",
+   "color": "#E8A33D",
+   "color2": "#2F7A6B",
+   "hair": "long_bun",
+   "voice": "woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "চল্লিশ বছর সাগরে। হাতে কোনো যন্ত্র নেই। তবু হাশেম মাঝি ঝড় টের পান *আগেই*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "বরগুনা, পাথরঘাটা ঘাট",
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সাগরে",
+       "value": "৪০ বছর"
+      },
+      {
+       "label": "যন্ত্র",
+       "value": "০"
+      },
+      {
+       "label": "ভরসা",
+       "value": "আকাশ আর পানি"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "নাতি রাজু এখন ট্রলারের মালিক। হাতে স্মার্টফোন, তাতে *আবহাওয়ার অ্যাপ*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "raju",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "দাদা, গাঙচিল আর বাতাসের গন্ধ বাদ দেন। অ্যাপে *সব লেখা* আছে।",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "অ্যাপ আকাশ দেখে উপর থাইকা। আমি দেখি *পানির ভিতর থাইকা*।",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "তিন মাসে তর্ক বারোবার। কেউ কারো কথা মানে না।",
+   "card": {
+    "title": "দাদা-নাতির তর্ক",
+    "items": [
+     {
+      "t": "দাদা: ‘ঢেউয়ের রং কালচে’— রাজু: ‘অ্যাপে রোদ’",
+      "mark": "x"
+     },
+     {
+      "t": "রাজু: ‘সংকেত নাই’— দাদা: ‘তবু আগে ফির’",
+      "mark": "x"
+     },
+     {
+      "t": "ঘাটের মাঝিরাও দুই ভাগ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "ভাদ্র মাসের এক ভোর। অ্যাপে লেখা— *আকাশ পরিষ্কার*, সাগর শান্ত।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ভাদ্র মাসের এক ভোর",
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "thinking",
+      "arm": "down"
+     },
+     {
+      "id": "raju",
+      "x": 0.65,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "phone",
+      "hold": "phone"
+     },
+     {
+      "id": "parul",
+      "x": 0.88,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "chat",
+     "title": "আবহাওয়া অ্যাপ",
+     "msgs": [
+      {
+       "who": "আজ",
+       "t": "রোদ ☀️ · বাতাস হালকা · সাগর শান্ত"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দাদা পানিতে হাত ডুবিয়ে নাকের কাছে আনলেন। তারপর তাকালেন *আকাশে*।",
+   "scene": {
+    "widget": null,
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "রাজু, আইজ যাইস না। পানি গরম, গাঙচিল *তীরে ফিরছে*। বিকালে ঝড়।",
+   "tone": "serious",
+   "scene": {
+    "moods": {
+     "dada": "worried"
+    },
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "দাদা, ছয়টা ট্রলার যাইতেছে। আমি বইসা থাকলে *বিশ হাজার* লস!",
+   "tone": "frustrated",
+   "scene": {
+    "moods": {
+     "raju": "angry"
+    },
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "শ্বশুর আর ছেলের মাঝখানে পারুল। কাউকে কিছু বলতে পারলেন না।",
+   "pause": 0.6,
+   "scene": {
+    "cam": {
+     "focus": "parul",
+     "zoom": 1.4
+    },
+    "moods": {
+     "parul": "worried"
+    }
+   }
+  },
+  {
+   "say": "রাজু গেল। তবে দাদার একটা শর্ত মানল— *দুপুর দুইটার মধ্যে ফেরা*।"
+  },
+  {
+   "say": "দুপুর দুইটা। আকাশ তখনো নীল। মাঝিরা হাসল— *‘বুড়ার কথায় ফিরলি?’*",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "দুপুর ২টা, ঘাট",
+    "chars": [
+     {
+      "id": "raju",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold",
+      "hold": "bag"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "তিনটায় হঠাৎ কালো মেঘ। বাতাস, ঢেউ। রেডিওতে *তিন নম্বর সংকেত*।",
+   "scene": {
+    "light": "evening",
+    "fx": "rain",
+    "moods": {
+     "raju": "surprised"
+    },
+    "widget": {
+     "kind": "clock",
+     "time": "3:00",
+     "label": "বিকাল ৩টা"
+    }
+   }
+  },
+  {
+   "say": "ঘাটে দাদা দাঁড়িয়ে, প্রতিটা ট্রলার *গুনে গুনে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "down"
+     },
+     {
+      "id": "raju",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "worried",
+      "arm": "down"
+     }
+    ],
+    "widget": null
+   }
+  },
+  {
+   "say": "বাকি ট্রলার ফিরল রাত আটটায়। জাল হারিয়ে, *ভিজে, কাঁপতে কাঁপতে*।",
+   "scene": {
+    "fx": "rain",
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "রাতে রাজু দাদার পাশে বসল। হাতে একটা নতুন *খাতা*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "সেই রাত",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.35,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "raju",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "দাদা, আপনার সব লক্ষণ আমারে লেখাইয়া দেন। গাঙচিল, পানির গন্ধ— *সব*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "আমার লক্ষণ লিখবি? তাইলে তোর অ্যাপ *ফালাবি*?",
+   "tone": "teasing",
+   "scene": {
+    "moods": {
+     "dada": "smile"
+    },
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "raju",
+   "say": "না দাদা। দুইটা একসাথে। অ্যাপ কয় *কী হবে*, আপনি কন *কখন*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "raju",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "দাদা অনেকক্ষণ চুপ। তারপর বলতে শুরু করলেন, *একটা একটা করে*।",
+   "pause": 0.8,
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "say": "পনেরো রাতে সাতাশটা লক্ষণ। পাশে অ্যাপের সাথে *মিলিয়ে দেখার ঘর*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "দাদার লক্ষণ আর অ্যাপ",
+     "lines": [
+      "গাঙচিল তীরে ফিরলে— সাবধান",
+      "পানি হঠাৎ গরম— বিকালে ঝড়",
+      "অ্যাপ আর লক্ষণ না মিললে— দুপুরেই ফেরা"
+     ],
+     "sub": "সাতাশটা লক্ষণ"
+    }
+   }
+  },
+  {
+   "say": "মৌসুম শেষে হিসাব। ঝড়ের সাত দিনে রাজুর ট্রলার একবারও *জাল হারায়নি*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঝড়ের দিন",
+       "value": "৭"
+      },
+      {
+       "label": "রাজুর জাল হারানো",
+       "value": "০"
+      },
+      {
+       "label": "ঘাটে জাল হারানো",
+       "value": "১৯ বার",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "এখন ঘাটের চায়ের দোকানে টাঙানো সেই খাতার *ফটোকপি*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "মৌসুম শেষে, ঘাটের চায়ের দোকান",
+    "chars": [
+     {
+      "id": "dada",
+      "x": 0.28,
+      "pose": "sit",
+      "face": "right",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "tea"
+     },
+     {
+      "id": "raju",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "parul",
+      "x": 0.82,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": null
+   }
+  },
+  {
+   "voice": "parul",
+   "say": "আব্বা, মাঝিরা এখন সকালে আগে আপনারে জিগায়, তারপর *মোবাইল দেখে*!",
+   "tone": "laughs",
+   "scene": {
+    "cam": {
+     "focus": "parul",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "dada",
+   "say": "আগে কইত বুড়া মাঝি। এখন কয়— *‘দাদার অ্যাপ’*!",
+   "tone": "playfully",
+   "scene": {
+    "cam": {
+     "focus": "dada",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকালে দাদা দেখেন আকাশ, নাতি দেখে ফোন। তারপর একসাথে— *‘আইজ যাওয়া যায়’*।",
+   "pause": 0.8,
+   "scene": {
+    "fx": "glow",
+    "cam": "wide"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "এক চোখে আকাশ, এক চোখে হিসাব… *দুটো মিললে সাগরও পথ দেয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "এক চোখে আকাশ, এক চোখে হিসাব…",
+    "line2": "দুটো মিললে\nসাগরও পথ দেয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "চল্লিশ বছরের মাঝি বনাম নাতির অ্যাপ— ঝড়ের এক দুপুরে কে জিতল? 🌊",
+  "description": "বরগুনার হাশেম মাঝি কোনো যন্ত্র ছাড়াই ঝড় টের পান। নাতি রাজুর ভরসা আবহাওয়ার অ্যাপ। ভাদ্রের এক ভোরে অ্যাপ বলল সাগর শান্ত, আর দাদা পানিতে হাত ডুবিয়ে বললেন— আইজ যাইস না…",
+  "tags": [
+   "দাদা নাতির গল্প",
+   "জেলের গল্প",
+   "বরগুনা",
+   "সাগর",
+   "অভিজ্ঞতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "অ্যাপ বলে কী হবে, দাদা বলেন কখন— দুটো মিলিয়েই ঘাটের সব ট্রলার আজ নিরাপদ। 🌊\nতোমার পরিবারের কোন বড় মানুষের অভিজ্ঞতা কোনো বইয়ে পাওয়া যায় না? 👇 #দাদা #সাগর"
+ },
+ "thumbnail": {
+  "text": "আইজ যাইস না",
+  "sub": "মাঝি বনাম অ্যাপ"
+ }
+}

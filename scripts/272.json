@@ -1,0 +1,516 @@
+{
+ "id": "272",
+ "status": "ready",
+ "title_bn": "নদী বদলাইছে",
+ "theme": "work",
+ "source": {
+  "book": "The 33 Strategies of War",
+  "author": "Robert Greene",
+  "author_bn": "রবার্ট গ্রিন",
+  "chapter": "STRATEGY 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Do Not Fight the Last War",
+  "title_bn": "পুরনো যুদ্ধ আর না"
+ },
+ "cast": {
+  "habib": {
+   "name": "সারেং হাবিব",
+   "type": "old_man",
+   "skin": "tan",
+   "outfit": "shirt",
+   "color": "#F2EEE3",
+   "hair": "side_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "nayan": {
+   "name": "নয়ন",
+   "type": "young_man",
+   "skin": "wheat",
+   "outfit": "tshirt",
+   "color": "#2F5D8A",
+   "hair": "short",
+   "voice": "young_man"
+  },
+  "owner": {
+   "name": "মালিক কাশেম",
+   "type": "man",
+   "skin": "wheat",
+   "outfit": "panjabi",
+   "color": "#3B4A6B",
+   "hair": "side",
+   "beard": "full_black",
+   "glasses": true,
+   "voice": "man"
+  }
+ },
+ "beats": [
+  {
+   "say": "ত্রিশ বছর, একই নদী। চোখ বন্ধ করেও সারেং হাবিব বলতে পারেন *কোথায় বাঁক*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "বরিশাল–ভোলা লঞ্চ, সারেংয়ের ঘর",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.42,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "hold"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "সারেং",
+       "value": "৩০ বছর"
+      },
+      {
+       "label": "যাত্রী",
+       "value": "৬০০"
+      },
+      {
+       "label": "নদীর ম্যাপ",
+       "value": "মাথায়"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "পাশে নতুন সুকানি নয়ন, বয়স বাইশ। ঘাটের জেলেদের সাথে তার *রোজ আড্ডা*।",
+   "scene": {
+    "widget": null,
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     },
+     {
+      "id": "nayan",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "talk"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "nayan",
+   "say": "চাচা, জেলেরা কইতেছে এইবার চর সরছে। মোড়ে পানি *অনেক কম*।",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "nayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "জেলেরা মাছ চিনে, বাবা। *নদী চিনি আমি*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নয়ন চুপ হয়ে গেল। সারেংয়ের ঘরে সারেংয়ের কথাই *শেষ কথা*।",
+   "scene": {
+    "moods": {
+     "nayan": "sad"
+    },
+    "cam": {
+     "focus": "nayan",
+     "zoom": 1.3
+    }
+   }
+  },
+  {
+   "say": "ভোর চারটা, ঘন কুয়াশা। হঠাৎ নিচ থেকে *ঘষার শব্দ*।",
+   "scene": {
+    "chip": "ভোর চারটা, মেঘনার মোড়",
+    "moods": {
+     "habib": "surprised",
+     "nayan": "worried"
+    },
+    "cam": "static",
+    "fx": "pulse"
+   }
+  },
+  {
+   "say": "লঞ্চ আটকে গেল নতুন চরে। কেউ ব্যথা পায়নি, কিন্তু ছয়শো যাত্রী *পাঁচ ঘণ্টা আটকা*।",
+   "scene": {
+    "fx": null
+   }
+  },
+  {
+   "kind": "list",
+   "say": "সেই সকালে হাবিব সব পুরনো কৌশল চালালেন।",
+   "card": {
+    "title": "পুরনো কৌশল",
+    "items": [
+     {
+      "t": "ইঞ্জিন পেছনে— নড়ল না",
+      "mark": "x"
+     },
+     {
+      "t": "পুরনো পথে ঘোরানো— আরো চর",
+      "mark": "x"
+     },
+     {
+      "t": "‘আগেও তো এই পথে গেছি’",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "জোয়ার এলে লঞ্চ ভাসল। ঘাটে মালিক অপেক্ষা করছিলেন।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ভোলা ঘাট, দুপুর",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "owner",
+      "x": 0.7,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "cross"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "হাবিব ভাই, ত্রিশ বছরে প্রথম। যাত্রীরা ফেসবুকে লেখতাছে। *আর যেন না হয়*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "হাবিব কিছু বললেন না। রাতে বাড়ি ফিরে *ভাত ছুঁলেন না*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "হাবিবের বাড়ি",
+    "props": [
+     "window",
+     "table"
+    ],
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "sad",
+      "arm": "face"
+     }
+    ],
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "মাথায় একটাই কথা— নদী কি তাকে *চিনতে ভুলে গেল*?",
+   "pause": 0.6
+  },
+  {
+   "say": "পরদিন বিকেলে হাবিব ডাকলেন নয়নকে। হাতে লম্বা *বাঁশের লগি*।",
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "ঘাটের পাশে, ভাটার সময়",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     },
+     {
+      "id": "nayan",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "চল, তোর ওই জেলেদের কাছে। *ডিঙি নিয়া* পানি মাইপা আসি।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "nayan",
+   "say": "আপনি… আমার কাছে *শিখবেন*, চাচা?",
+   "tone": "curious",
+   "scene": {
+    "cam": {
+     "focus": "nayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "নদী বদলাইছে, বাবা। আমি বদলাই নাই। *ভুলটা ওইখানেই*।",
+   "tone": "sighs",
+   "scene": {
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "ভাটায় ডিঙিতে তিনজন— হাবিব, নয়ন আর বুড়ো জেলে মোতালেব। লগি পড়ে, *এক হাত, দুই হাত*…",
+   "scene": {
+    "moods": {
+     "habib": "thinking",
+     "nayan": "smile"
+    },
+    "arms": {
+     "nayan": "point",
+     "habib": "hold"
+    },
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "যেখানে ত্রিশ বছর গভীর পানি ছিল, সেখানে এখন *হাঁটুপানি*।",
+   "scene": {
+    "widget": {
+     "kind": "note",
+     "style": "notebook",
+     "title": "নতুন নদী",
+     "lines": [
+      "মেঘনার মোড়— ২ হাত",
+      "চরের বাম দিক— ১২ হাত",
+      "নতুন পথ: চরের বামে"
+     ]
+    }
+   }
+  },
+  {
+   "say": "হাবিব খাতায় লিখলেন নতুন পথ। পুরনো ম্যাপটা মাথা থেকে *মুছে দিলেন*।",
+   "pause": 0.6
+  },
+  {
+   "say": "এক সপ্তাহ পর আবার কুয়াশা। লঞ্চ মোড়ে এসে নিল *নতুন পথ*।",
+   "scene": {
+    "set": "balcony",
+    "light": "night",
+    "chip": "এক সপ্তাহ পর, রাত তিনটা",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.35,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     },
+     {
+      "id": "nayan",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "point"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "nayan",
+   "say": "চাচা, বামে চর, ডাইনে বারো হাত। *খাতার মতোই*।",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "nayan",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "ঠিক আছে, কারণ আজকের নদী দেখতেছি। *কালকের না*।",
+   "tone": "warmly",
+   "scene": {
+    "moods": {
+     "habib": "smile"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সকাল সাতটা, ভোলা ঘাট। ছয়শো যাত্রী নামল *ঠিক সময়ে*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "ভোলা ঘাট, সকাল সাতটা",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "nayan",
+      "x": 0.52,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "down"
+     },
+     {
+      "id": "owner",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "smile",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "owner",
+   "say": "হাবিব ভাই, নতুন কোনো *যন্ত্র কিনলেন* নাকি?",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "owner",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "habib",
+   "say": "যন্ত্র না, সাহেব। দুইজন *নতুন শিক্ষক*— এক সুকানি, এক জেলে।",
+   "tone": "laughs",
+   "scene": {
+    "moods": {
+     "nayan": "happy"
+    },
+    "cam": {
+     "focus": "habib",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "এখন প্রতি মাসের প্রথম ভাটায় দুজন ডিঙি নিয়ে নামে। খাতার পাতা *বাড়তেই থাকে*।",
+   "pause": 0.6,
+   "scene": {
+    "set": "street",
+    "light": "evening",
+    "chip": "প্রতি মাসে",
+    "chars": [
+     {
+      "id": "habib",
+      "x": 0.38,
+      "pose": "stand",
+      "face": "right",
+      "mood": "happy",
+      "arm": "point"
+     },
+     {
+      "id": "nayan",
+      "x": 0.64,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "hold",
+      "hold": "book"
+     }
+    ],
+    "cam": "wide",
+    "fx": "glow"
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "পুরনো পথ চেনা লাগে… *কিন্তু নদী রোজ নতুন করে বয়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "পুরনো পথ চেনা লাগে…",
+    "line2": "কিন্তু নদী রোজ\nনতুন করে বয়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "ত্রিশ বছরের সারেং, কুয়াশায় লঞ্চ আটকাল নতুন চরে— তারপর ডিঙিতে নতুন পাঠ ⛴️",
+  "description": "বরিশাল–ভোলা রুটে ত্রিশ বছর ধরে সারেং হাবিব চোখ বন্ধ করে লঞ্চ চালান। নতুন সুকানি নয়ন বলল, জেলেরা বলছে এবার চর সরেছে। হাবিব হেসে উড়িয়ে দিলেন। তারপর এক কুয়াশার ভোরে…",
+  "tags": [
+   "লঞ্চের গল্প",
+   "নদীর গল্প",
+   "বরিশাল",
+   "ভোলা",
+   "গুরু শিষ্য",
+   "bangla golpo",
+   "jiboner golpo",
+   "motivational story bangla"
+  ]
+ },
+ "facebook": {
+  "caption": "ত্রিশ বছরের অভিজ্ঞতাও হার মানে, যদি নদী বদলায় আর আমরা না বদলাই। ⛴️\nতুমি শেষ কবে ছোট কারো কাছে নতুন কিছু শিখেছ? 👇 #লঞ্চ #নদী"
+ },
+ "thumbnail": {
+  "text": "নদী বদলাইছে",
+  "sub": "৩০ বছরের সারেং"
+ }
+}

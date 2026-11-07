@@ -2051,6 +2051,390 @@
    "relation": "friends (business partners) / wife",
    "set": "shop",
    "hook": "two friends' 12-year Cox's Bazar dried-fish shop splits over online vs counter; instead of lawyers they ask a trusted elder to divide everything in half, keep the shared name, refer customers to each other and eat jilapi together again"
+  },
+  {
+   "id": "258",
+   "book": "Thinking, Fast and Slow",
+   "item": "Regression to the Mean",
+   "relation": "father (coach)-son / elder sister",
+   "set": "street",
+   "hook": "a Khulna ex-district cricketer coaches his 15-year-old son by scolding after every failure and stops praising after one big score; the son hides his bat; his elder sister's 14-match score notebook shows good innings follow bad ones even when the father was away, so the father stops scolding and offers to bowl at the nets"
+  },
+  {
+   "id": "259",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Social Proof",
+   "relation": "mother-daughter (teen) / another mother",
+   "set": "street",
+   "hook": "a Mirpur mother puts her class-8 daughter in four coaching batches because 'everyone in the mothers' group does'; at the coaching gate another mother admits she copied her; one honest group message gets 63 'mine too' replies and twenty mothers each drop a batch together for a Friday play afternoon"
+  },
+  {
+   "id": "260",
+   "book": "Games People Play",
+   "item": "Look How Hard I've Tried",
+   "relation": "father-daughter (teen) / spouses",
+   "set": "street",
+   "hook": "a Narayanganj dockyard accountant walks 4 km daily to save bus fare and reminds the family every night, so his HSC daughter stops asking for anything and secretly tutors to buy a calculator; caught, she says she didn't want to add to his hardship; he stops the speeches and starts a 'what everyone needs' sheet"
+  },
+  {
+   "id": "261",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Repression — Confront Your Dark Side",
+   "relation": "daughter-in-law / mother-in-law / husband",
+   "set": "kitchen",
+   "hook": "a Comilla joint-family bride who never said 'no' in nine years explodes over salt in the Eid semai; at night her mother-in-law asks how many times she has said no, admits she swallowed forty years herself, sets Thursday cooking for the men and hands back the bride's locked-away harmonium"
+  },
+  {
+   "id": "262",
+   "book": "The Art of War",
+   "item": "Avoid what is strong, strike at what is weak",
+   "relation": "tiffin cook / delivery boy / elderly customer",
+   "set": "kitchen",
+   "hook": "a Mohammadpur widow's 18-year tiffin service loses to food apps; her teen delivery boy finds a lonely sixth-floor widower whose son is in Canada; instead of competing on menu and speed she adds a ten-minute doorstep chat and an evening update for probashi children, and orders climb back"
+  },
+  {
+   "id": "263",
+   "book": "Animal Farm",
+   "item": "The loyal worker who only says 'I will work harder'",
+   "relation": "probashi father-son / spouses",
+   "set": "home",
+   "hook": "a 51-year-old Riyadh worker answers every family demand for 16 years with 'I'll work harder, two more years' and watches his own housewarming on video call; when his SSC son says he will come to Saudi to work just like him, he writes an 'enough' list, returns and opens a small grocery with the son"
+  },
+  {
+   "id": "264",
+   "book": "The Psychology of Money",
+   "item": "Nothing's Free",
+   "relation": "father-son / mother",
+   "set": "street",
+   "hook": "a Dhaka bank officer wants to quit because his Rajshahi father earns 3 lakh in mango season; the father lets him run two weeks of the harvest—3 am starts, price drops, a missing truck, storms, unpaid buyers—and he finds the father awake beside him every night; he stays in his job but spends each season's leave at the orchard"
+  },
+  {
+   "id": "265",
+   "book": "Mastery",
+   "item": "Fuse the Intuitive with the Rational: Mastery",
+   "relation": "grandfather (fisherman)-grandson / daughter-in-law",
+   "set": "street",
+   "hook": "a Barguna trawler owner trusts his weather app over his 40-year fisherman grandfather; on a 'clear' day he agrees only to return by 2 pm and escapes a sudden storm that strands the other boats; he records the grandfather's 27 sea signs beside the app forecast, and the notebook is pinned up at the ghat tea stall"
+  },
+  {
+   "id": "266",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Be neither all dove nor all serpent",
+   "relation": "spouses (grocer) / widow customer",
+   "set": "shop",
+   "hook": "a soft-hearted Rangpur grocer owes his supplier and carries 92,000 taka of credit because he can't refuse anyone; his wife colour-codes the ledger, posts one firm credit rule for all with tea on payment day and keeps a separate 'mayar khata' for families who truly can't pay; dues halve and no customer leaves"
+  },
+  {
+   "id": "267",
+   "book": "The 50th Law",
+   "item": "Respect the Process — Mastery",
+   "relation": "mother (nakshi kantha maker)-son / customer",
+   "set": "home",
+   "hook": "a Jamalpur son goes viral and takes 200 kantha orders in a month, rushing them with big stitches; 72 refund requests follow; his mother has him sew one finger-width in forty minutes; he refunds everyone, posts an honest letter capping eight kanthas a month, and gets an eight-month waiting list"
+  },
+  {
+   "id": "268",
+   "book": "Propaganda",
+   "item": "Symbols speak louder than arguments",
+   "relation": "neighbours (art student / tea-stall elder / shopkeeper)",
+   "set": "street",
+   "hook": "seven signboards fail to stop rubbish dumping in a Kishoreganj canal; a tea-stall elder shows an art student a 1985 boat-race photo, she paints it on the canal wall with 'will it be like this again?', and the worst offender recognises his late father's green-sail boat and funds a garbage van"
+  },
+  {
+   "id": "269",
+   "book": "The Republic",
+   "item": "Leaders should be those who do not crave power",
+   "relation": "teacher-student (girl) / classmate",
+   "set": "shop",
+   "hook": "two class-9 boys campaign for captain with chocolates; a Barishal teacher discovers a quiet backbencher secretly opens the classroom at 7:30 every day; the ballot asks 'who works here without being asked?', 31 of 46 write her name, and she starts a duty roster where the chocolate candidate cleans the board"
+  },
+  {
+   "id": "270",
+   "book": "The Psychology of Money",
+   "item": "Nothing's Free",
+   "relation": "family (CNG driver husband / wife) / old owner",
+   "set": "street",
+   "hook": "a Jatrabari CNG driver buys his own CNG on instalments; three bad months and the old owner offers to buy it back 80,000 under cost; his wife multiplies his 9 years of daily 1,000-taka rent on the phone calculator (≈33 lakh) and calls bad months the rent of ownership; he keeps it, clears the loan in a year and redeems her earrings"
+  },
+  {
+   "id": "271",
+   "book": "The Communist Manifesto",
+   "item": "Workers feel distant from the work they make",
+   "relation": "mother (garments worker) / young daughter / footpath seller",
+   "set": "shop",
+   "hook": "an Ashulia operator has sewn only collars for 6 years; her daughter's class essay 'what my mother makes' stumps her; she finds her own hidden double back-stitch on a 150-taka export-surplus shirt, sews her daughter a whole dress, and the line hangs 'Line 9's shirt' with every worker's part named"
+  },
+  {
+   "id": "272",
+   "book": "The 33 Strategies of War",
+   "item": "Do Not Fight the Last War",
+   "relation": "old launch master / young helmsman / launch owner",
+   "set": "balcony",
+   "hook": "a Barishal–Bhola launch master of 30 years dismisses fishermen's talk that the char has moved and runs aground in dawn fog; he then goes out at low tide with his young helmsman and an old fisherman to sound the new channel with a bamboo pole and now re-maps the river every month"
+  },
+  {
+   "id": "273",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Quality over quantity",
+   "relation": "mess student / mess senior / mother",
+   "set": "home",
+   "hook": "a Fakirapool mess student runs 7 tuitions across Dhaka and fails 3 subjects; a senior asks how many pupils' weak points he remembers (none); he keeps 4 nearby, keeps a progress notebook per child, gets referrals at 5,000, passes with CGPA 3.4 and sleeps eight hours"
+  },
+  {
+   "id": "274",
+   "book": "Games People Play",
+   "item": "See What You Made Me Do",
+   "relation": "father (grocer) / daughter / mother",
+   "set": "shop",
+   "hook": "a Khulna grocer blames his accounting-student daughter for every hiccup of her three ideas (price board, bKash, delivery) until she goes silent and a new delivery shop takes his customers; at dinner she asks whom he blamed for the 1998 flood credit losses; next morning he writes 'mistakes will be both of ours' and restarts delivery himself"
+  },
+  {
+   "id": "275",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Conformity — Resist the Downward Pull of the Group",
+   "relation": "young mother (garments worker) / co-worker / mother-in-law",
+   "set": "shop",
+   "hook": "a Gazipur factory's day-care room has stayed empty for 3 years because 'nobody else uses it'; a mother brings her two-year-old first and feeds her at the window every lunch; co-workers follow until 11 children attend, and her sceptical mother-in-law visits and changes her mind"
+  },
+  {
+   "id": "276",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Reciprocity",
+   "relation": "elder brother (Saudi migrant) / younger brother / camp roommate",
+   "set": "home",
+   "hook": "a Dammam worker who only scolds his younger brother on calls is ignored for 4 months; a camp roommate says he talks like a father; he sends a voice note about his own swollen feet and asks his brother's opinion; the brother reveals a secret phone-repair corner and they become partners"
+  },
+  {
+   "id": "277",
+   "book": "Thinking, Fast and Slow",
+   "item": "Loss Aversion",
+   "relation": "migrant husband (Malaysia) / wife / young son",
+   "set": "home",
+   "hook": "a Malaysia worker unpaid for 7 months won't return because of the 4-lakh cost; his class-4 son asks whether staying will bring the money back and offers his Eid salami; he files a complaint at the embassy labour wing, gets 3 months' wages and an exit pass, and takes a rice-mill job at home"
+  },
+  {
+   "id": "278",
+   "book": "The Art of War",
+   "item": "Know the terrain",
+   "relation": "old rickshaw puller / young rickshaw puller",
+   "set": "street",
+   "hook": "in tidal-flooded Agrabad a new puller earns 80 taka while an old puller earns 950; the old man reads the moon to know when the tide floods which lanes and keeps a hand-drawn map; the young man matches it with phone tide tables and they put up a garage tide board"
+  },
+  {
+   "id": "279",
+   "book": "Animal Farm",
+   "item": "Rules quietly rewritten after the fact",
+   "relation": "senior salesman / young salesman / shop owner",
+   "set": "shop",
+   "hook": "an Old Dhaka cloth-shop owner cancels everyone's Eid leave because loyal Rahmat hasn't taken one in 24 years; a young salesman tells Rahmat his overwork has become their rule; Rahmat asks for 3 days for the first time, a leave rota goes up, and he eats Eid semai with his 80-year-old mother"
+  },
+  {
+   "id": "280",
+   "book": "1984",
+   "item": "Rewriting history to suit the present",
+   "relation": "nursing-student daughter / mother / neighbour aunt",
+   "set": "hospital",
+   "hook": "a mother tells the village her nursing-student daughter studies medicine; on Eid night the neighbour's husband falls ill, the daughter takes him to the upazila health complex where the doctor calls her 'sister'; the mother publicly says 'my daughter is a nurse' and posts her photo in uniform"
+  },
+  {
+   "id": "281",
+   "book": "Propaganda",
+   "item": "Opinion is shaped through group leaders",
+   "relation": "union volunteer (young woman) / old boatman / his wife",
+   "set": "street",
+   "hook": "on a Jamuna char at Kazipur no family moves its house despite two weeks of mike announcements about erosion; a volunteer asks the trusted ferry boatman's opinion and he dismantles his own tin house first; all 33 houses move in a day, carried free on his boat, before the river takes the old homestead"
+  },
+  {
+   "id": "282",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Repression — Confront Your Dark Side",
+   "relation": "siblings (younger sister protagonist) / eldest brother / younger brother",
+   "set": "home",
+   "hook": "an eldest brother who has carried the family for 19 years and never said 'no' explodes at dinner over his brother's motorbike demand; his sister finds him at a tea stall and asks when he last bought anything for himself; he wants football boots; the family writes a new budget with a line for him"
+  },
+  {
+   "id": "283",
+   "book": "The Psychology of Money",
+   "item": "You'll Change",
+   "relation": "father–teen daughter / grandmother",
+   "set": "home",
+   "hook": "a Khulna banker holds his daughter to the 'I'll be a doctor' video she made at six and pays 45,000 for medical coaching; she wants commerce; the grandmother shows him his own class-5 essay 'I will be a pilot' and asks if not becoming one made him the wrong person; he hands her the form"
+  },
+  {
+   "id": "284",
+   "book": "Thinking, Fast and Slow",
+   "item": "Regression to the Mean",
+   "relation": "colleagues (sales manager / junior MIS officer / veteran salesman)",
+   "set": "shop",
+   "hook": "a Tejgaon sales manager believes public scolding raises sales because numbers rise after bad months; a new MIS officer shows three years of data where sales rose after bad months even while the boss was on leave; he replaces scolding with tea and listening and nobody quits that year"
+  },
+  {
+   "id": "285",
+   "book": "Thinking, Fast and Slow",
+   "item": "Framing",
+   "relation": "teacher–father / father–son",
+   "set": "street",
+   "hook": "a Karwan Bazar vegetable seller pulls his class-9 son out of school after he fails four subjects; the class teacher rewrites the result as 'passed six, needs only 21 more marks'; the father lifts the sack off his son's back and tracks the 21 marks nightly; the boy passes everything"
+  },
+  {
+   "id": "286",
+   "book": "The Art of War",
+   "item": "Build a golden bridge for your opponent to retreat",
+   "relation": "daughter-in-law / mother-in-law / house help",
+   "set": "home",
+   "hook": "a new bride's wedding necklace disappears and the 11-year maid is suspected; the bride finds the mother-in-law's pawn receipt (48,000 for the brother-in-law's semester fee) and at dinner 'remembers' she gave it to her for safekeeping; they redeem it together in 62 days and the mother-in-law apologises to the maid"
+  },
+  {
+   "id": "287",
+   "book": "Games People Play",
+   "item": "Look How Hard I've Tried",
+   "relation": "brothers / wife",
+   "set": "balcony",
+   "hook": "an elder brother sends 12 unanswered Eid messages in six years after shaming his younger brother over their father's hospital bill; his wife asks if he is trying or collecting proof of trying; he goes to the Jatrabari flat unannounced and admits 'I paid, you stayed awake 21 nights — both were needed'"
+  },
+  {
+   "id": "288",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Scarcity",
+   "relation": "spouses (wife protagonist) / flat salesman",
+   "set": "shop",
+   "hook": "a couple about to pay 22 lakh (11 years' savings + mother's gold) for a flat under 'sign today for 3 lakh off'; the schoolteacher wife asks what happens if they come Friday, checks papers for three days and visits the stalled site where the guard says sales has said 'today is the last day' for eight months"
+  },
+  {
+   "id": "289",
+   "book": "The Daily Laws",
+   "item": "Study people's patterns, not their words",
+   "relation": "neighbours (young tenant mother / 'grumpy' old neighbour / building guard)",
+   "set": "stairs",
+   "hook": "a new tenant notices the stair light switched back on every night at 11 by the building's 'grumpy' old man; the guard reveals he has paid for it for seven years since his late wife, a nurse, fell on dark stairs; she brings him payesh and proposes the whole building share the light bill"
+  },
+  {
+   "id": "290",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Get more use from enemies than a fool from friends",
+   "relation": "colleagues (young coaching teacher / strict senior teacher / flattering friend)",
+   "set": "shop",
+   "hook": "a young Farmgate admission-coaching teacher ignores his senior's red-pen notes while a friend praises every class; only 17 of 90 pass the first mock test; he reads her seven folded notes, asks her to sit in again, and the last mock test has 62 passes"
+  },
+  {
+   "id": "291",
+   "book": "The Open Society and Its Enemies",
+   "item": "No one should be beyond questioning",
+   "relation": "landlord / night-shift nurse tenant / landlord's wife",
+   "set": "street",
+   "hook": "a Shyamoli landlord's 10 pm gate rule leaves a young nurse locked out in the rain for 50 minutes; his wife asks what he would do if their own night-duty daughter in Khulna were locked out; he gives keys and a night register to all night workers and waits up until her name is written"
+  },
+  {
+   "id": "292",
+   "book": "Animal Farm",
+   "item": "Fear and sweet talk keep people silent",
+   "relation": "tenants (neighbours) / sweet-talking landlord",
+   "set": "stairs",
+   "hook": "an Old Dhaka landlord calls every tenant 'ma' and keeps every advance; a tenant invites the six wives to tea and they discover he told each of them 'I only tell you, the others make trouble'; together they hand him one signed note and the widow's 20,000 advance is returned"
+  },
+  {
+   "id": "293",
+   "book": "The 33 Strategies of War",
+   "item": "Negotiate While Advancing",
+   "relation": "junior merchandiser / senior woman colleague / managing director",
+   "set": "shop",
+   "hook": "a buying-house merchandiser on 24,000 for four years never asks for a raise out of shame; after he saves a 40,000-shirt shipment over three nights, a senior colleague tells him to speak while the work is in front of everyone; he shows a one-page record and gets 32,000"
+  },
+  {
+   "id": "294",
+   "book": "The Psychology of Money",
+   "item": "Reasonable > Rational",
+   "relation": "widowed mother / bank-officer son / neighbour child",
+   "set": "street",
+   "hook": "a Sherpur widow's banker son calculates she should sell her only cow for a savings certificate; at 2 am he finds her covering the cow in the winter shed and sees the dawn milk queue is her reason to live; he keeps the cow and hires help for the heavy work"
+  },
+  {
+   "id": "295",
+   "book": "Influence: The Psychology of Persuasion",
+   "item": "Social Proof",
+   "relation": "spouses (pitha-maker wife / laid-off husband) / customer",
+   "set": "kitchen",
+   "hook": "a Mymensingh pitha page with 312 followers beside a 52k bought-follower page; the husband nearly buys fake followers; the wife asks what the three real buyers said; their 10-second honest videos lift orders from 3 to 41"
+  },
+  {
+   "id": "296",
+   "book": "Games People Play",
+   "item": "Parent, Adult, Child — the three ego states",
+   "relation": "grandfather / father / teen grandson",
+   "set": "street",
+   "hook": "a Bhola char father and son stop speaking for 41 days over watermelon vs rice; the 16-year-old grandson asks each only factual questions and writes two columns in one notebook; they agree on one bigha trial with grandfather's drainage plan"
+  },
+  {
+   "id": "297",
+   "book": "Thinking, Fast and Slow",
+   "item": "Framing",
+   "relation": "tea-plucker mother / daughter / garden compounder",
+   "set": "hospital",
+   "hook": "a Moulvibazar tea-garden mother refuses her daughter's nursing admission because she hears 'leaving the garden'; after a 2 am labour emergency at the doctorless garden dispensary, the daughter reframes it as 'coming back as the garden's first nurse'"
+  },
+  {
+   "id": "298",
+   "book": "The Book of Five Rings",
+   "item": "Timing in everything",
+   "relation": "date-palm tapper father / online-seller son / customer",
+   "set": "street",
+   "hook": "a Jessore son taps all 72 date palms daily to meet online jaggery orders, ignoring his father's 3-day rest rule; the jaggery turns sour and trees weaken; he learns the jiran rotation, cuts orders to 25 a day and posts honest 'rest day' notices"
+  },
+  {
+   "id": "299",
+   "book": "Animal Farm",
+   "item": "Power slowly changes people who once fought for fairness",
+   "relation": "women sellers' Facebook group admin / young spice seller / mother-in-law",
+   "set": "home",
+   "hook": "a Rangpur sellers' group founded on 'all posts equal' now pins only the admin's posts and paid sponsors; a spice seller's post sits pending 11 days; instead of fighting she writes a pending-only thank-you note quoting the admin's own first-sale help; the admin starts a free 'new sellers' Friday'"
+  },
+  {
+   "id": "300",
+   "book": "The Laws of Human Nature",
+   "item": "The Law of Repression — Confront Your Dark Side",
+   "relation": "eldest brother / mother / younger brother",
+   "set": "home",
+   "hook": "a Cumilla eldest son who has said 'no problem' to every family demand for 27 years explodes at an Eid dinner joke calling him an ATM; at the pond ghat his mother asks when he last said no; the younger brother takes over bills and he finally refuses a loan"
+  },
+  {
+   "id": "301",
+   "book": "The Art of Worldly Wisdom",
+   "item": "Be neither all dove nor all serpent",
+   "relation": "grandmother shopkeeper / grandson / debtor neighbour",
+   "set": "shop",
+   "hook": "a Naogaon grandmother's tin shop has Tk 38,000 unpaid credit; her grandson bans credit and sales halve; he sorts the ledger and finds 29,000 owed by four well-off men; distress credit stays, capped credit for others, and calm copies of the ledger recover 21,000"
+  },
+  {
+   "id": "302",
+   "book": "The Art of War",
+   "item": "Victorious warriors win first, then go to war (preparation)",
+   "relation": "daughter-in-law farmer / father-in-law / harvester owner",
+   "set": "street",
+   "hook": "a Sunamganj haor woman whose husband is in Malaysia prepares from Poush — early seed, harvester booked for Chaitra 20 with pawned earrings; she harvests two days before the flash flood and gives her spare machine day to save four neighbours' rice"
+  },
+  {
+   "id": "303",
+   "book": "The Wealth of Nations",
+   "item": "Value comes from labour and usefulness",
+   "relation": "grandmother kantha maker / teen granddaughter / middleman",
+   "set": "home",
+   "hook": "a Jamalpur grandmother sells 70-day nakshi kanthas to a middleman for Tk 900 while a showroom lists them at 8,500; her granddaughter films one minute of every stitching day and posts an honest price breakdown of thread plus Tk 80 a day for labour"
+  },
+  {
+   "id": "304",
+   "book": "The Art of Seduction",
+   "item": "The Natural — the power of genuine childlike openness",
+   "relation": "retired-teacher grandfather / 7-year-old grandson / daughter",
+   "set": "home",
+   "hook": "a Dinajpur widowed headmaster speaks about ten words a day for two years; his daughter's advice fails; his 7-year-old grandson's winter-dawn questions about fog and dew reopen him, until the boy asks him to talk about grandmother"
+  },
+  {
+   "id": "305",
+   "book": "1984",
+   "item": "Rewriting history to suit the present",
+   "relation": "father / daughter / mother",
+   "set": "home",
+   "hook": "every Eid a Narsingdi cloth merchant tells how he built his shop alone; his daughter finds 2003 ledgers in her mother's hand from the eight months he was bedridden; she hands him the ledger and asks who held the shop key; he retells the story crediting his wife and renames the shop"
   }
  ]
 }

@@ -1,0 +1,552 @@
+{
+ "id": "281",
+ "status": "ready",
+ "title_bn": "আগে কে যায়",
+ "theme": "community",
+ "source": {
+  "book": "Propaganda",
+  "author": "Edward Bernays",
+  "author_bn": "এডওয়ার্ড বার্নেস",
+  "chapter": "IDEA 1",
+  "chapter_bn": "১ নম্বর অধ্যায়",
+  "title": "Opinion is shaped through group leaders",
+  "title_bn": "চেনা মুখের কথা"
+ },
+ "cast": {
+  "shimu": {
+   "name": "শিমু",
+   "type": "young_woman",
+   "skin": "brown",
+   "outfit": "salwar",
+   "color": "#2F7A6E",
+   "color2": "#F2D27A",
+   "hair": "hijab",
+   "voice": "young_woman"
+  },
+  "aziz": {
+   "name": "আজিজ মাঝি",
+   "type": "old_man",
+   "skin": "dark",
+   "outfit": "tshirt",
+   "color": "#E9E4D8",
+   "hair": "bald_grey",
+   "beard": "short_grey",
+   "voice": "old_man"
+  },
+  "jorina": {
+   "name": "জরিনা",
+   "type": "old_woman",
+   "skin": "tan",
+   "outfit": "sari",
+   "color": "#9B3D5A",
+   "color2": "#F2EEE3",
+   "hair": "grey_bun",
+   "voice": "old_woman"
+  }
+ },
+ "beats": [
+  {
+   "say": "নদী এগোচ্ছে দিনে *তিন হাত*। চরের তেত্রিশটা ঘর, সরেনি একটাও।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "সিরাজগঞ্জ, কাজিপুর— যমুনার চর",
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "point"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ভাঙন",
+       "value": "দিনে ৩ হাত"
+      },
+      {
+       "label": "প্রথম ঘর থেকে নদী",
+       "value": "৪০ হাত"
+      },
+      {
+       "label": "ঘর সরেছে",
+       "value": "০",
+       "red": true
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "শিমু ইউনিয়নের স্বেচ্ছাসেবক। দুই সপ্তাহ ধরে মাইকে বলছে— *‘ঘর সরান’*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "চাচি, উঁচা জায়গায় জমি দেওয়া হইছে। টিনগুলা খুইলা *এখনই সরান*।",
+   "tone": "serious",
+   "scene": {
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "worried",
+      "arm": "talk"
+     },
+     {
+      "id": "jorina",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "cross"
+     }
+    ],
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "jorina",
+   "say": "বাপ-দাদার ভিটা, মা। সবাই যখন যাইবো, তখন দেখমু। *আগে কে যায়*?",
+   "tone": "flatly",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "তেত্রিশ ঘরে একই উত্তর— *‘আগে কেউ যাক’*।",
+   "scene": {
+    "moods": {
+     "shimu": "sad"
+    }
+   }
+  },
+  {
+   "kind": "list",
+   "say": "দুই সপ্তাহে শিমু যা যা করল।",
+   "card": {
+    "title": "শিমুর চেষ্টা",
+    "items": [
+     {
+      "t": "মাইকে ঘোষণা— রোজ দুইবার",
+      "mark": "x"
+     },
+     {
+      "t": "ঘরে ঘরে লিফলেট",
+      "mark": "x"
+     },
+     {
+      "t": "ইউনিয়ন অফিসের নোটিশ",
+      "mark": "x"
+     }
+    ]
+   }
+  },
+  {
+   "say": "রাতে নদীর গর্জন। চোখ বন্ধ করলেই শিমু শোনে *ভাঙনের শব্দ*।",
+   "pause": 0.8,
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "শিমুর ঘর",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.5,
+      "pose": "sit",
+      "face": "right",
+      "mood": "worried",
+      "arm": "face"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "পরদিন ঘাটে বসে সে খেয়াল করল— চরের সবাই সকালে *একজনের কাছে* যায়।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "খেয়াঘাট, সকাল",
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "talk"
+     },
+     {
+      "id": "shimu",
+      "x": 0.75,
+      "pose": "stand",
+      "face": "left",
+      "mood": "thinking",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "say": "আজিজ মাঝি। পঞ্চাশ বছর খেয়া পারাপার। কার মেয়ের বিয়ে, কার গরু হারাল— *সবার আগে তাঁর কাছে*।"
+  },
+  {
+   "say": "শিমু মাইকটা রেখে দিল। গিয়ে বসল আজিজ মাঝির *নৌকার গলুইয়ে*।",
+   "scene": {
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.4,
+      "pose": "sit",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "down"
+     },
+     {
+      "id": "shimu",
+      "x": 0.68,
+      "pose": "sit",
+      "face": "left",
+      "mood": "neutral",
+      "arm": "down"
+     }
+    ]
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "চাচা, এই নদী আপনিই সবচেয়ে বেশি চিনেন। *আপনার কী মনে হয়*?",
+   "tone": "softly",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "নদী এইবার রাগছে, মা। *আটানব্বইয়ের মতো*।",
+   "tone": "serious",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "তাইলে আপনার ঘরটা আগে সরান। আপনারে দেখলে *সবাই সরবে*।",
+   "tone": "gently",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "আজিজ মাঝি অনেকক্ষণ নদীর দিকে তাকিয়ে রইলেন।",
+   "pause": 0.9,
+   "scene": {
+    "moods": {
+     "aziz": "sad"
+    },
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.5
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "জরিনারে কী কমু? এই ঘরেই *আমাগো বিয়া হইছিল*।",
+   "tone": "sad",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "সেই সন্ধ্যায় আজিজ মাঝি নিজের ঘরের প্রথম টিনটা *নিজ হাতে খুললেন*।",
+   "scene": {
+    "set": "home",
+    "light": "evening",
+    "chip": "আজিজ মাঝির ঘর",
+    "props": [
+     "door_closed"
+    ],
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.38,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "hold"
+     },
+     {
+      "id": "jorina",
+      "x": 0.68,
+      "pose": "stand",
+      "face": "left",
+      "mood": "angry",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "jorina",
+   "say": "এইটা কী করো? সবার আগে *আমরাই*?",
+   "tone": "upset",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "সবার আগে আমরা, তাই *সবাই বাঁচব*। টিন খোল, জরিনা।",
+   "tone": "warmly",
+   "scene": {
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "পরদিন ভোরে চরজুড়ে খবর— *‘আজিজ মাঝি ঘর সরাইতেছে’*।",
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "পরদিন ভোর",
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.36,
+      "pose": "stand",
+      "face": "right",
+      "mood": "neutral",
+      "arm": "hold"
+     },
+     {
+      "id": "shimu",
+      "x": 0.66,
+      "pose": "stand",
+      "face": "left",
+      "mood": "surprised",
+      "arm": "down"
+     }
+    ],
+    "cam": "push",
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঘর সরেছে",
+       "value": "১",
+       "from": "০"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "say": "দুপুরের মধ্যে আরো এগারোটা ঘর। সন্ধ্যায় *সব তেত্রিশটা*।",
+   "scene": {
+    "widget": {
+     "kind": "stats",
+     "items": [
+      {
+       "label": "ঘর সরেছে",
+       "value": "৩৩",
+       "from": "১"
+      },
+      {
+       "label": "সময়",
+       "value": "১ দিন"
+      }
+     ]
+    },
+    "moods": {
+     "shimu": "happy"
+    }
+   }
+  },
+  {
+   "say": "সারা রাত আজিজ মাঝির নৌকায় পার হলো টিন, চৌকি, হাঁড়ি। *ভাড়া নিলেন না*।",
+   "scene": {
+    "widget": null
+   }
+  },
+  {
+   "say": "চার দিন পর ভোরবেলা। পুরনো ভিটার জায়গাটা নদী *নিয়ে নিল*।",
+   "pause": 0.9,
+   "scene": {
+    "set": "street",
+    "light": "day",
+    "chip": "চার দিন পর",
+    "chars": [
+     {
+      "id": "shimu",
+      "x": 0.3,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "aziz",
+      "x": 0.55,
+      "pose": "stand",
+      "face": "right",
+      "mood": "sad",
+      "arm": "down"
+     },
+     {
+      "id": "jorina",
+      "x": 0.8,
+      "pose": "stand",
+      "face": "left",
+      "mood": "crying",
+      "arm": "down"
+     }
+    ],
+    "cam": "wide"
+   }
+  },
+  {
+   "say": "উঁচু জায়গা থেকে তেত্রিশ পরিবার দেখল। *কেউ হারায়নি*— না মানুষ, না গরু।"
+  },
+  {
+   "voice": "jorina",
+   "say": "ভিটা গেল। কিন্তু দেখো, *সবাই পাশে আছে*।",
+   "tone": "tearful",
+   "scene": {
+    "cam": {
+     "focus": "jorina",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "say": "নতুন জায়গায় প্রথম রাতে তেত্রিশ ঘরের চুলা জ্বলল *পাশাপাশি*।",
+   "scene": {
+    "set": "home",
+    "light": "night",
+    "chip": "নতুন জায়গা, প্রথম রাত",
+    "props": [
+     "window"
+    ],
+    "chars": [
+     {
+      "id": "aziz",
+      "x": 0.3,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "jorina",
+      "x": 0.52,
+      "pose": "sit",
+      "face": "right",
+      "mood": "smile",
+      "arm": "down"
+     },
+     {
+      "id": "shimu",
+      "x": 0.78,
+      "pose": "stand",
+      "face": "left",
+      "mood": "happy",
+      "arm": "down"
+     }
+    ],
+    "cam": "push"
+   }
+  },
+  {
+   "voice": "shimu",
+   "say": "চাচা, সামনের বর্ষায় মাইকটা *আপনারেই দিমু*।",
+   "tone": "teasing",
+   "scene": {
+    "cam": {
+     "focus": "shimu",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "voice": "aziz",
+   "say": "মাইক লাগবে না, মা। আমার নৌকাটা *ঘাটে থাকলেই* হইব।",
+   "tone": "laughs",
+   "scene": {
+    "fx": "glow",
+    "cam": {
+     "focus": "aziz",
+     "zoom": 1.4
+    }
+   }
+  },
+  {
+   "kind": "outro",
+   "say": "দূরের গলা কানে আসে… *চেনা মানুষের পা পথ দেখায়।*",
+   "pause": 1.6,
+   "card": {
+    "line1": "দূরের গলা কানে আসে…",
+    "line2": "চেনা মানুষের পা\nপথ দেখায়।"
+   }
+  }
+ ],
+ "youtube": {
+  "title": "নদী এগোচ্ছে দিনে তিন হাত, তেত্রিশ ঘর নড়ে না— বুড়ো মাঝি খুললেন প্রথম টিন 🌊",
+  "description": "যমুনার চরে নদী এগোচ্ছে দিনে তিন হাত। দুই সপ্তাহ মাইকে বলেও শিমু একটা ঘরও সরাতে পারেনি— সবাই বলে, আগে কেউ যাক। তারপর শিমু মাইক রেখে বসল আজিজ মাঝির নৌকায়…",
+  "tags": [
+   "নদীভাঙনের গল্প",
+   "যমুনার চর",
+   "সিরাজগঞ্জ",
+   "গ্রামের গল্প",
+   "একতা",
+   "bangla golpo",
+   "jiboner golpo",
+   "হৃদয়ছোঁয়া গল্প"
+  ]
+ },
+ "facebook": {
+  "caption": "মাইকের কথা কেউ শোনেনি— আজিজ মাঝি একটা টিন খুললেন, তেত্রিশ ঘর পিছে পিছে এল। 🌊\nতোমার এলাকায় কার কথায় সবাই এক হয়ে যায়? 👇 #নদীভাঙন #গ্রামেরগল্প"
+ },
+ "thumbnail": {
+  "text": "আগে কে যায়?",
+  "sub": "তেত্রিশ ঘর"
+ }
+}
