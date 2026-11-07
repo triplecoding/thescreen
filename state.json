@@ -2476,6 +2476,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-09T20:00:00+06:00"
+    },
+    {
+      "id": "222",
+      "date": "2026-12-10",
+      "slot": "09:00",
+      "duration": 132.15,
+      "title": "২৯ বছরের নতুন বস, আর ২০ বছরের অভিজ্ঞ কামাল ভাই, যিনি তাঁকে মানেন না… 💼",
+      "youtube": "SMsWF7pq7sE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-10T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2515,12 +2526,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:01:07.281324+06:00",
-    "errors": [],
-    "queue_remaining": 84
+    "at": "2026-11-07T17:01:20.550947+06:00",
+    "errors": []
   },
   "queue_remaining": 84,
-  "_run_started": "2026-11-07T16:59:42.258570+06:00",
+  "_run_started": "2026-11-07T17:01:09.652088+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
