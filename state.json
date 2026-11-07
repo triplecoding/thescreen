@@ -2232,6 +2232,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-06T11:30:00+06:00"
+    },
+    {
+      "id": "200",
+      "date": "2026-12-06",
+      "slot": "13:30",
+      "duration": 144.41,
+      "title": "আম্মার রান্নার রেসিপি? ‘আন্দাজে দেই’… ছেলে ঠিক করল, এবার লিখে রাখবে 📒",
+      "youtube": "ZECsob8GscA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-06T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2271,7 +2282,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:37:52.468801+06:00",
+    "at": "2026-11-07T14:38:04.624259+06:00",
     "errors": []
   },
   "queue_remaining": 108,
