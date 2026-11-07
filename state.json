@@ -1979,6 +1979,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-02T13:30:00+06:00"
+    },
+    {
+      "id": "177",
+      "date": "2026-12-02",
+      "slot": "15:30",
+      "duration": 144.5,
+      "title": "তিন বছর থালাবাসন ধোয়, কেউ খেয়াল করে না… হেড শেফ অসুস্থ, ঈদের দিন ৩০০ প্লেট কাচ্চি কে রাঁধবে? 🍛",
+      "youtube": "UrFdyLZMleY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-02T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2018,7 +2029,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:32:27.219586+06:00",
+    "at": "2026-11-07T14:32:40.316857+06:00",
     "errors": []
   },
   "queue_remaining": 132,
