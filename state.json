@@ -2111,6 +2111,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-04T13:30:00+06:00"
+    },
+    {
+      "id": "189",
+      "date": "2026-12-04",
+      "slot": "15:30",
+      "duration": 137.12,
+      "title": "ক্লাসের প্রথম আর দ্বিতীয়, দুইজন চিরপ্রতিদ্বন্দ্বী… পরীক্ষার মাঝখানে নাবিলার কলমের কালি শেষ 🖊️",
+      "youtube": "Fq1QIWGTgyA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-04T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2150,7 +2161,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:35:18.331501+06:00",
+    "at": "2026-11-07T14:35:33.178648+06:00",
     "errors": []
   },
   "queue_remaining": 120,
