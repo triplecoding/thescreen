@@ -2454,6 +2454,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-09T15:30:00+06:00"
+    },
+    {
+      "id": "220",
+      "date": "2026-12-09",
+      "slot": "17:30",
+      "duration": 138.27,
+      "title": "১১ বছরের শাকিব দিনে ৫০০ ইট বয়… সাথী আপা ভাটার পাশেই খুললেন সন্ধ্যার স্কুল 🧱",
+      "youtube": "HHgaWenVEJE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-09T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2493,7 +2504,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:00:32.911393+06:00",
+    "at": "2026-11-07T17:00:52.453131+06:00",
     "errors": []
   },
   "queue_remaining": 90,
