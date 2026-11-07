@@ -2045,6 +2045,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-03T13:30:00+06:00"
+    },
+    {
+      "id": "183",
+      "date": "2026-12-03",
+      "slot": "15:30",
+      "duration": 147.73,
+      "title": "স্ক্রিন ভাঙা, ব্যাটারি ফোলা, তবু আম্মা নতুন ফোন নেবেন না… ভেতরে আব্বার ২১৪টা ভয়েস মেসেজ 📱",
+      "youtube": "pQZ_Odc0lg4",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-03T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2084,7 +2095,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:33:53.565227+06:00",
+    "at": "2026-11-07T14:34:06.213169+06:00",
     "errors": []
   },
   "queue_remaining": 126,
