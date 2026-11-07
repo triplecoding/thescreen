@@ -2012,6 +2012,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-02T20:00:00+06:00"
+    },
+    {
+      "id": "180",
+      "date": "2026-12-03",
+      "slot": "09:00",
+      "duration": 142.82,
+      "title": "শ্বশুর বললেন ‘বউ মানুষ ব্যাংকে চাকরি করবে না’… তারপর পেনশনের অনলাইন ঝামেলায় আটকে গেলেন তিনিই 🏦",
+      "youtube": "143I2SGfJYk",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-03T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2051,12 +2062,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:33:09.615229+06:00",
-    "errors": [],
-    "queue_remaining": 126
+    "at": "2026-11-07T14:33:24.124041+06:00",
+    "errors": []
   },
   "queue_remaining": 126,
-  "_run_started": "2026-11-07T14:31:41.977390+06:00",
+  "_run_started": "2026-11-07T14:33:11.903028+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
