@@ -2487,6 +2487,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-10T09:00:00+06:00"
+    },
+    {
+      "id": "223",
+      "date": "2026-12-10",
+      "slot": "11:30",
+      "duration": 139.39,
+      "title": "ভাইয়া রোজ বোনের ফোন চেক করতেন… মৌ সব লুকাতে শুরু করল, যতদিন না বিপদ এল 📵",
+      "youtube": "qbX4WuRK3X8",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-10T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2526,7 +2537,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:01:20.550947+06:00",
+    "at": "2026-11-07T17:01:32.306982+06:00",
     "errors": []
   },
   "queue_remaining": 84,
