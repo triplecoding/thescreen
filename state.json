@@ -3095,7 +3095,15 @@
       "scheduled_for": "2026-12-19T09:00:00+06:00"
     }
   ],
-  "failed": [],
+  "failed": [
+    {
+      "id": "277",
+      "reason": "all uploads failed: ",
+      "at": "2026-11-08T05:39:19.431812+06:00",
+      "kind": "upload",
+      "retry": true
+    }
+  ],
   "playlists": {
     "The Laws of Human Nature": "PLa_DKXTCT90U",
     "The Art of War": "PLdM5Kv756r_M",
@@ -3132,14 +3140,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T05:38:15.132745+06:00",
-    "errors": [
-      "youtube 277: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
-    "queue_remaining": 29
+    "at": "2026-11-08T05:39:23.732039+06:00",
+    "errors": []
   },
   "queue_remaining": 29,
-  "_run_started": "2026-11-08T05:25:56.847324+06:00",
+  "_run_started": "2026-11-08T05:39:19.431812+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-08T05:38:15.106407+06:00",
