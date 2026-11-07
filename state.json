@@ -2621,6 +2621,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-12T09:00:00+06:00"
+    },
+    {
+      "id": "235",
+      "date": "2026-12-12",
+      "slot": "11:30",
+      "duration": 138.8,
+      "title": "“আমার দ্বারা হইব না”— বাবার এই কথা মেয়ের মুখে শুনে থমকে গেলেন জসিম সাহেব 📝",
+      "youtube": "IJxVHcBcUKQ",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-12T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2660,7 +2671,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:06:29.457699+06:00",
+    "at": "2026-11-07T19:06:42.326305+06:00",
     "errors": []
   },
   "queue_remaining": 72,
