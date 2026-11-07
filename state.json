@@ -2786,6 +2786,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-14T15:30:00+06:00"
+    },
+    {
+      "id": "250",
+      "date": "2026-12-14",
+      "slot": "17:30",
+      "duration": 141.48,
+      "title": "খরচ কমাতে দুই বুড়ো কারিগর বাদ? এক সপ্তাহেই এমবিএ ছেলের হিসাব উল্টে গেল 🍬",
+      "youtube": "j0fuHG8RKF4",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-14T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2825,7 +2836,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:10:10.698645+06:00",
+    "at": "2026-11-07T19:10:21.667059+06:00",
     "errors": []
   },
   "queue_remaining": 60,
