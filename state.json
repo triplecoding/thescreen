@@ -2797,6 +2797,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-14T17:30:00+06:00"
+    },
+    {
+      "id": "251",
+      "date": "2026-12-14",
+      "slot": "20:00",
+      "duration": 138.25,
+      "title": "নকলসহ ধরা ছাত্র: শূন্য, নাকি মাফ? ভোরের চায়ের দোকানে মিলল উত্তর ✏️",
+      "youtube": "Y2gWzTpc9Mw",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-14T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2836,7 +2847,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:10:21.667059+06:00",
+    "at": "2026-11-07T19:10:41.029391+06:00",
     "errors": []
   },
   "queue_remaining": 60,
