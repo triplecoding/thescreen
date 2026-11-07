@@ -2986,6 +2986,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-17T15:30:00+06:00"
+    },
+    {
+      "id": "268",
+      "date": "2026-12-17",
+      "slot": "17:30",
+      "duration": 141.89,
+      "title": "সাতটা সাইনবোর্ডেও থামেনি খালে ময়লা ফেলা— এক মেয়ের আঁকা দেয়াল যা পারল 🎨",
+      "youtube": "H7mPnJrDbhY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-17T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -3025,12 +3036,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T21:18:05.137851+06:00",
-    "errors": [],
-    "queue_remaining": 38
+    "at": "2026-11-07T21:20:44.582574+06:00",
+    "errors": []
   },
   "queue_remaining": 38,
-  "_run_started": "2026-11-07T21:17:49.808447+06:00",
+  "_run_started": "2026-11-07T21:20:23.240184+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T20:20:19.772330+06:00",
