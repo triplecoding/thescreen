@@ -2122,6 +2122,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-04T15:30:00+06:00"
+    },
+    {
+      "id": "190",
+      "date": "2026-12-04",
+      "slot": "17:30",
+      "duration": 139.55,
+      "title": "২২ বছর ভোরে পত্রিকা বিলান হাকিম চাচা… এক সকালে খবর, ৬ বছরের রাফি নিখোঁজ 📰",
+      "youtube": "NnrzJmfI2_w",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-04T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2161,7 +2172,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:35:33.178648+06:00",
+    "at": "2026-11-07T14:35:50.799201+06:00",
     "errors": []
   },
   "queue_remaining": 120,
