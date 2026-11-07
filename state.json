@@ -1972,7 +1972,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T13:29:01.786824+06:00",
+    "at": "2026-11-07T13:31:09.207100+06:00",
     "errors": [
       "youtube 173: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
     ],
@@ -1982,6 +1982,6 @@
   "_run_started": "2026-11-07T12:11:10.403881+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
-  "yt_limit_at": "2026-11-07T13:29:01.759023+06:00",
+  "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
   "fb_last_upload": "2026-11-07T12:11:10.403881+06:00"
 }
