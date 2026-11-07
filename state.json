@@ -2498,6 +2498,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-10T11:30:00+06:00"
+    },
+    {
+      "id": "224",
+      "date": "2026-12-10",
+      "slot": "13:30",
+      "duration": 137.39,
+      "title": "পাড়ার একমাত্র মাঠে প্লট হবে, পোস্টার-ঝগড়ায় কিছু হলো না… তারপর চাচার বুদ্ধি 🏏",
+      "youtube": "MqZtGM4thJo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-10T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2537,7 +2548,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:01:32.306982+06:00",
+    "at": "2026-11-07T17:01:45.297724+06:00",
     "errors": []
   },
   "queue_remaining": 84,
