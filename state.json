@@ -1949,10 +1949,8 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T08:48:26.656371+06:00",
-    "errors": [
-      "youtube 171: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
+    "at": "2026-11-07T09:42:42.394172+06:00",
+    "errors": [],
     "queue_remaining": 87
   },
   "queue_remaining": 87,
