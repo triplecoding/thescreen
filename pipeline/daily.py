@@ -469,6 +469,11 @@ def main():
                 rec["facebook_error"] = "deferred: facebook posting limit"   # fb_repair posts it once the pause ends
                 fb_store(sid, video)
                 log(f"facebook deferred for {sid} (posting limit until {state['fb_block_until']})")
+            elif "facebook" in platforms and state.get("fb_last_upload") and datetime.fromisoformat(state["fb_last_upload"]) > datetime.now(tz) - timedelta(minutes=int(os.environ.get("FB_REPAIR_GAP_MIN", "110"))):
+                # keep Facebook at ~1 upload per ~2 h (bursts trigger its posting limit): fb_repair uploads it later, earliest slot first
+                rec["facebook_error"] = "deferred: facebook spacing"
+                fb_store(sid, video)
+                log(f"facebook deferred for {sid} (last upload {state['fb_last_upload']}, spacing)")
             elif "facebook" in platforms:
                 try:
                     rec["facebook"] = upload_facebook.upload(video, script, when.timestamp() if schedule else None, Path(odir) / "thumb_9x16.jpg")

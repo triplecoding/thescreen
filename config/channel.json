@@ -3,6 +3,7 @@
  "tagline_bn": "গল্পে দেখি জীবন",
  "timezone": "Asia/Dhaka",
  "posts_per_day": 6,
+ "produce_until": "2027-01-31",
  "slots": [
   "09:00",
   "11:30",

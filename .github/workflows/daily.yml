@@ -124,6 +124,20 @@ jobs:
           git config user.email "bot@thescreen.local"
           pip install -q requests >/dev/null 2>&1 || true
           python pipeline/photo_posts.py || echo "photo posts: error (ignored)"
+      - name: Keep "Produce days ahead" going (future days, while scripts remain)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q origin main >/dev/null 2>&1 || true
+          next=$(python pipeline/range_next.py 2>/dev/null || true)
+          if [ -z "$next" ]; then echo "nothing to produce ahead now (all days filled, no scripts, or YouTube limit)"; exit 0; fi
+          n=$(gh api "repos/${{ github.repository }}/actions/workflows/produce-range.yml/runs?per_page=5" --jq '[.workflow_runs[]|select(.status!="completed")]|length' || echo 1)
+          echo "next days: $next · active produce-range runs: $n"
+          if [ "$n" = "0" ]; then
+            set -- $next
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/produce-range.yml/dispatches" -f ref=main -f "inputs[start]=$1" -f "inputs[end]=$2" && echo "produce-range started: $1 → $2"
+          fi
       - name: Make sure the Keeper timer is running
         if: always()
         env:
