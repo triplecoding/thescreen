@@ -68,7 +68,7 @@ jobs:
           filled() { git pull -q --rebase origin main >/dev/null 2>&1 || git pull -q origin main; python3 -c "import json;s=json.load(open('state.json'));print(sum(1 for p in s['posted'] if p['date']=='$1'))"; }
           busy() { gh api "repos/${{ github.repository }}/actions/workflows/daily.yml/runs?per_page=5" --jq '[.workflow_runs[]|select(.status=="in_progress")]|length'; }
           while [[ "$D" < "$END" || "$D" == "$END" ]]; do
-            if [ $(( $(date +%s) - T0 )) -gt 17400 ]; then
+            if [ $(( $(date +%s) - T0 )) -gt 14400 ]; then
               echo "time budget used — continuing from $D in a new run"
               gh api -X POST repos/${{ github.repository }}/actions/workflows/produce-range.yml/dispatches -f ref=main -f "inputs[start]=$D" -f "inputs[end]=$END"
               exit 0
@@ -83,7 +83,7 @@ jobs:
             if [ "$n" -ge 6 ]; then echo "$D: done"; D=$(date -d "$D +1 day" +%F); TRIES=0; continue; fi
             LIMIT=$(python3 -c "import json,datetime as d;s=json.load(open('state.json'));t=s.get('yt_limit_at');print(1 if t and d.datetime.fromisoformat(t)>d.datetime.now(d.timezone.utc)-d.timedelta(minutes=90) else 0)")
             if [ "$LIMIT" = "1" ]; then
-              if [ $(( $(date +%s) - T0 + 3600 )) -gt 17400 ]; then
+              if [ $(( $(date +%s) - T0 + 3600 )) -gt 14400 ]; then
                 echo "$D: YouTube daily upload limit reached — continuing in a new run (time budget)"
                 gh api -X POST repos/${{ github.repository }}/actions/workflows/produce-range.yml/dispatches -f ref=main -f "inputs[start]=$D" -f "inputs[end]=$END"
                 exit 0
