@@ -2588,6 +2588,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-11T15:30:00+06:00"
+    },
+    {
+      "id": "232",
+      "date": "2026-12-11",
+      "slot": "17:30",
+      "duration": 129.24,
+      "title": "‘মেয়ে মেকানিক দিয়ে কাজ করাব না’… তিনজন হাল ছাড়ার পর রূপা শুনল ইঞ্জিনের শব্দ 🔧",
+      "youtube": "j_cTK88R2us",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-11T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2627,7 +2638,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:05:41.004886+06:00",
+    "at": "2026-11-07T19:05:57.536257+06:00",
     "errors": []
   },
   "queue_remaining": 78,
