@@ -2731,6 +2731,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-13T17:30:00+06:00"
+    },
+    {
+      "id": "245",
+      "date": "2026-12-13",
+      "slot": "20:00",
+      "duration": 141.6,
+      "title": "অভাবে জমির ওপরের মাটি বেচতে রাজি বাবা— ছেলে নিয়ে গেল এক ফাটা জমিতে 🌼",
+      "youtube": "kRXIhBoUwfU",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-13T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2770,7 +2781,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:08:54.001188+06:00",
+    "at": "2026-11-07T19:09:08.852837+06:00",
     "errors": []
   },
   "queue_remaining": 66,
