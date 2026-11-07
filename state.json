@@ -2880,13 +2880,16 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:12:11.959572+06:00",
-    "errors": []
+    "at": "2026-11-07T19:13:15.757725+06:00",
+    "errors": [
+      "youtube 255: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
+    ],
+    "queue_remaining": 51
   },
-  "queue_remaining": 54,
+  "queue_remaining": 51,
   "_run_started": "2026-11-07T19:10:44.783125+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
-  "yt_limit_at": "2026-11-07T18:04:05.974668+06:00",
+  "yt_limit_at": "2026-11-07T19:13:15.706538+06:00",
   "fb_last_upload": "2026-11-07T19:04:08.536422+06:00"
 }
