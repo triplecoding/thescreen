@@ -2443,6 +2443,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-09T13:30:00+06:00"
+    },
+    {
+      "id": "219",
+      "date": "2026-12-09",
+      "slot": "15:30",
+      "duration": 140.72,
+      "title": "৭২ বছরের নানু বিকাশ শিখতে চাইলেন, সবাই হাসল… তিন মাস পর একটা প্রতারকের ফোন ধরলেন নানু নিজেই 📱",
+      "youtube": "oJZx_AvLqbo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-09T15:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2482,7 +2493,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T17:00:20.228901+06:00",
+    "at": "2026-11-07T17:00:32.911393+06:00",
     "errors": []
   },
   "queue_remaining": 90,
