@@ -2155,6 +2155,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-05T09:00:00+06:00"
+    },
+    {
+      "id": "193",
+      "date": "2026-12-05",
+      "slot": "11:30",
+      "duration": 132.83,
+      "title": "‘ছবি তোলা আবার কাজ নাকি?’… একটা বিয়েতে আব্বা নিজে দেখলেন ছেলের কাজ 📷",
+      "youtube": "zy5sm9vWGSA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-05T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2194,7 +2205,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:36:23.928560+06:00",
+    "at": "2026-11-07T14:36:35.894465+06:00",
     "errors": []
   },
   "queue_remaining": 114,
