@@ -2254,6 +2254,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-06T15:30:00+06:00"
+    },
+    {
+      "id": "202",
+      "date": "2026-12-06",
+      "slot": "17:30",
+      "duration": 138.76,
+      "title": "রিকশার পেছনে লেখা ‘আমার মেয়ে ডাক্তার হবে’, লোকে হাসত… সাত্তার মুছে ফেলেননি ১০ বছর 🛺",
+      "youtube": "7f3TCAMCtUs",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-06T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2293,7 +2304,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:38:19.153083+06:00",
+    "at": "2026-11-07T14:38:32.152540+06:00",
     "errors": []
   },
   "queue_remaining": 108,
