@@ -2533,6 +2533,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-10T17:30:00+06:00"
+    },
+    {
+      "id": "227",
+      "date": "2026-12-10",
+      "slot": "20:00",
+      "duration": 140.61,
+      "title": "ঈদের আগে মালিক শেখালেন ‘বলবি শেষ দুইটা আছে’… সেলসম্যান লিটন বলল না, বিক্রি করল অন্যভাবে 🛍️",
+      "youtube": "GZGi6MaQEvs",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-10T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2572,7 +2583,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:04:31.749730+06:00",
+    "at": "2026-11-07T19:04:45.908273+06:00",
     "errors": []
   },
   "queue_remaining": 80,
