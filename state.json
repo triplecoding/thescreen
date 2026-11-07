@@ -3008,6 +3008,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-17T20:00:00+06:00"
+    },
+    {
+      "id": "270",
+      "date": "2026-12-18",
+      "slot": "09:00",
+      "duration": 136.38,
+      "title": "নিজের সিএনজি কিনেই তিন মাসে বিপদ— স্ত্রীর এক হিসাবে বদলাল সিদ্ধান্ত 🛺",
+      "youtube": "L3yeISfMfcc",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-18T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -3047,12 +3058,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T21:21:04.529745+06:00",
-    "errors": [],
-    "queue_remaining": 36
+    "at": "2026-11-07T21:21:35.817926+06:00",
+    "errors": []
   },
   "queue_remaining": 36,
-  "_run_started": "2026-11-07T21:20:23.240184+06:00",
+  "_run_started": "2026-11-07T21:21:07.820169+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T20:20:19.772330+06:00",
