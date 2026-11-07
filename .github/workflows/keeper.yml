@@ -33,7 +33,7 @@ jobs:
           from datetime import datetime, timedelta, timezone
           tz = timezone(timedelta(hours=6))
           now = datetime.now(tz)
-          fire = ["08:25", "10:55", "12:10", "12:55", "14:55", "16:55", "18:55", "19:25"]   # 35 min before each slot (09:00 11:30 13:30 15:30 17:30 20:00) + photo-card comments
+          fire = ["01:25", "03:25", "05:25", "07:25", "08:25", "10:55", "12:10", "12:55", "14:55", "16:55", "18:55", "19:25", "21:25", "23:25"]   # 35 min before each slot (09:00 11:30 13:30 15:30 17:30 20:00) + extra runs so the Facebook catch-up (1 video per run, ≥110 min apart) gets ~11 chances a day
           cands = []
           for d in (0, 1):
               day = (now + timedelta(days=d)).date()
