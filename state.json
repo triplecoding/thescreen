@@ -2265,6 +2265,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-06T17:30:00+06:00"
+    },
+    {
+      "id": "203",
+      "date": "2026-12-06",
+      "slot": "20:00",
+      "duration": 132.03,
+      "title": "নতুন বউকে শ্বশুর মেনে নেননি, কথা বলেন না দুই মাস… প্রিয়া খেয়াল করল তাঁর চশমার একটা ডাঁটি ভাঙা 👓",
+      "youtube": "r8-4WnihULQ",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-06T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2304,7 +2315,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:38:32.152540+06:00",
+    "at": "2026-11-07T14:38:45.308292+06:00",
     "errors": []
   },
   "queue_remaining": 108,
