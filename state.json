@@ -2078,6 +2078,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-03T20:00:00+06:00"
+    },
+    {
+      "id": "186",
+      "date": "2026-12-04",
+      "slot": "09:00",
+      "duration": 138.01,
+      "title": "১৪ বছর অন্যের রিকশা, রোজ ৫০ টাকা জমিয়ে তিন বছরে কালামের নিজের রিকশা 🛺",
+      "youtube": "b0NBY_2nZGY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-04T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2117,12 +2128,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:34:38.528261+06:00",
-    "errors": [],
-    "queue_remaining": 120
+    "at": "2026-11-07T14:34:53.370937+06:00",
+    "errors": []
   },
   "queue_remaining": 120,
-  "_run_started": "2026-11-07T14:33:11.903028+06:00",
+  "_run_started": "2026-11-07T14:34:40.843701+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
