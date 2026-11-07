@@ -3078,6 +3078,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-18T20:00:00+06:00"
+    },
+    {
+      "id": "276",
+      "date": "2026-12-19",
+      "slot": "09:00",
+      "duration": 145.1,
+      "title": "সৌদি থেকে ভাইকে মাসে বিশ হাজার, চার মাস ফোন ধরে না— এক ভয়েস মেসেজে ভাঙল বরফ 📱",
+      "youtube": "5cZQ0-BH21g",
+      "playlist": false,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-19T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -3117,12 +3128,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T02:33:39.266169+06:00",
-    "errors": [],
-    "queue_remaining": 30
+    "at": "2026-11-08T02:33:52.141283+06:00",
+    "errors": []
   },
   "queue_remaining": 30,
-  "_run_started": "2026-11-08T02:33:25.371482+06:00",
+  "_run_started": "2026-11-08T02:33:41.966383+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-08T02:32:20.734962+06:00",
