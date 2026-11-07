@@ -2388,6 +2388,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-08T15:30:00+06:00"
+    },
+    {
+      "id": "214",
+      "date": "2026-12-08",
+      "slot": "17:30",
+      "duration": 141.45,
+      "title": "আমন ধান পাকার ঠিক আগে বন্যা, তিন বিঘার সব ডুবে গেল… কাদের ভাই হাল ছাড়লেন না, বদলালেন হিসাব 🌾",
+      "youtube": "lSBPY0jRkbg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-08T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2427,7 +2438,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:59:14.573369+06:00",
+    "at": "2026-11-07T16:59:27.374576+06:00",
     "errors": []
   },
   "queue_remaining": 96,
