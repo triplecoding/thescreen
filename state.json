@@ -2278,6 +2278,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-06T20:00:00+06:00"
+    },
+    {
+      "id": "204",
+      "date": "2026-12-07",
+      "slot": "09:00",
+      "duration": 141.66,
+      "title": "ফার্মেসির নতুন কর্মী নাঈম ভুল ওষুধ দিয়ে ফেলেছিল… মালিক বললেন ‘চুপ থাক’, কিন্তু নাঈম চুপ থাকল না 💊",
+      "youtube": "h9uxv1AG7yQ",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-07T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2317,12 +2328,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:56:08.402059+06:00",
-    "errors": [],
-    "queue_remaining": 102
+    "at": "2026-11-07T16:57:24.313133+06:00",
+    "errors": []
   },
   "queue_remaining": 102,
-  "_run_started": "2026-11-07T16:55:57.421961+06:00",
+  "_run_started": "2026-11-07T16:57:13.273299+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
