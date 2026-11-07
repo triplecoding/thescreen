@@ -2742,6 +2742,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-13T20:00:00+06:00"
+    },
+    {
+      "id": "246",
+      "date": "2026-12-14",
+      "slot": "09:00",
+      "duration": 147.1,
+      "title": "মেয়ে ঢাকায় একা? আব্বার উত্তর “না”— ভাইয়া তর্ক ছেড়ে লিখল আব্বার তিনটা ভয় 📄",
+      "youtube": "CeEP1AbgoNA",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-14T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2781,12 +2792,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:09:10.386614+06:00",
-    "errors": [],
-    "queue_remaining": 60
+    "at": "2026-11-07T19:09:26.915088+06:00",
+    "errors": []
   },
   "queue_remaining": 60,
-  "_run_started": "2026-11-07T19:07:45.769496+06:00",
+  "_run_started": "2026-11-07T19:09:12.603964+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T18:04:05.974668+06:00",
