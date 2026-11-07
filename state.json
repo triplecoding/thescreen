@@ -2144,6 +2144,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-04T20:00:00+06:00"
+    },
+    {
+      "id": "192",
+      "date": "2026-12-05",
+      "slot": "09:00",
+      "duration": 136.52,
+      "title": "সুন্দরবনে মধু আনতে যান আজিজ মৌয়াল, তিন পুরুষের পেশা… এবার ছেলে মাসুদ জেদ ধরল সাথে যাবে 🍯",
+      "youtube": "fD4Ep5MS5cI",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-05T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2183,12 +2194,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:36:08.243200+06:00",
-    "errors": [],
-    "queue_remaining": 114
+    "at": "2026-11-07T14:36:23.928560+06:00",
+    "errors": []
   },
   "queue_remaining": 114,
-  "_run_started": "2026-11-07T14:34:40.843701+06:00",
+  "_run_started": "2026-11-07T14:36:10.485263+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
