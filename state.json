@@ -2133,6 +2133,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-04T17:30:00+06:00"
+    },
+    {
+      "id": "191",
+      "date": "2026-12-04",
+      "slot": "20:00",
+      "duration": 141.12,
+      "title": "ছেলে রাত দুইটা পর্যন্ত গেম খেলে, তিন মাস কথা নেই… তারপর আব্বা বললেন ‘শিখাবি?’ 🎮",
+      "youtube": "ydbXsM8nQok",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-04T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2172,7 +2183,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:35:50.799201+06:00",
+    "at": "2026-11-07T14:36:06.723686+06:00",
     "errors": []
   },
   "queue_remaining": 120,
