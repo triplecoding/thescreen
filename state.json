@@ -2720,6 +2720,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-13T15:30:00+06:00"
+    },
+    {
+      "id": "244",
+      "date": "2026-12-13",
+      "slot": "17:30",
+      "duration": 141.79,
+      "title": "পাঁচ লাখে সরকারি চাকরি! আম্মা সোনা বেচতে রাজি— ছেলের এক প্রশ্নে থামল সব 💍",
+      "youtube": "_dI91VBISSs",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-13T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2759,7 +2770,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:08:40.583543+06:00",
+    "at": "2026-11-07T19:08:54.001188+06:00",
     "errors": []
   },
   "queue_remaining": 66,
