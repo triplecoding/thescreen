@@ -2221,6 +2221,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-06T09:00:00+06:00"
+    },
+    {
+      "id": "199",
+      "date": "2026-12-06",
+      "slot": "11:30",
+      "duration": 136.56,
+      "title": "ওয়ার্ডের ৪০ জন রোগী, কেউ নাম জানে না, সবাই ‘বেড ১২’… জোছনা সিস্টার শুধু একটা কাজ বদলালেন 🏥",
+      "youtube": "tSfJsB-xinc",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-06T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2260,7 +2271,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:37:41.189121+06:00",
+    "at": "2026-11-07T14:37:52.468801+06:00",
     "errors": []
   },
   "queue_remaining": 108,
