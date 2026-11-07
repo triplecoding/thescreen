@@ -1,0 +1,109 @@
+name: "Render videos in advance"
+# Renders queued scripts (real ElevenLabs voice) into the release 'ready-videos' so publishing later only uploads.
+# 3 parallel jobs; each works up to ~5 h, then the workflow starts itself again while videos are left.
+# daily.py / produce.py use a stored video automatically when its script is unchanged.
+on:
+  workflow_dispatch:
+    inputs:
+      shards:
+        description: "parallel jobs"
+        default: "3"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: prerender
+  cancel-in-progress: false
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    outputs:
+      left: ${{ steps.c.outputs.left }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Make sure the release exists
+        run: |
+          gh api repos/${{ github.repository }}/releases/tags/ready-videos --jq .id >/dev/null 2>&1 || \
+          gh api -X POST repos/${{ github.repository }}/releases -f tag_name=ready-videos -f name="Ready videos" -F prerelease=true \
+            -f body="Videos rendered in advance (pipeline/prerender.py). Used and removed automatically." --jq .id
+      - name: Count videos still to render
+        id: c
+        run: |
+          R=$(gh api repos/${{ github.repository }}/releases/tags/ready-videos --jq .id 2>/dev/null || echo)
+          : > have.txt
+          if [ -n "$R" ]; then for p in 1 2 3 4 5; do gh api "repos/${{ github.repository }}/releases/$R/assets?per_page=100&page=$p" --jq '.[].name' >> have.txt || break; done; fi
+          left=$(python -c "import sys;sys.path.insert(0,'pipeline');from common import STATE,load_json;from daily import queue;h=set(open('have.txt').read().split());print(sum(1 for s in queue(load_json(STATE,{}) or {}) if s+'.tgz' not in h))")
+          echo "to render: $left"; echo "left=$left" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2]
+    env:
+      TZ: Asia/Dhaka
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Node + Chromium
+        run: npm install --no-audit --no-fund && npx playwright install --with-deps chromium
+      - name: Python deps
+        run: pip install -q -r requirements.txt
+      - name: Voice cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: voice-pre-${{ github.run_id }}-${{ matrix.shard }}
+          restore-keys: voice-
+      - name: Render
+        id: r
+        run: python pipeline/prerender.py --shard ${{ matrix.shard }} --shards 3 --minutes 270
+
+  again:
+    needs: [prep, render]
+    if: always()
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Start again while videos are left (only if this run made progress)
+        run: |
+          R=$(gh api repos/${{ github.repository }}/releases/tags/ready-videos --jq .id 2>/dev/null || echo)
+          : > have.txt
+          if [ -n "$R" ]; then for p in 1 2 3 4 5; do gh api "repos/${{ github.repository }}/releases/$R/assets?per_page=100&page=$p" --jq '.[].name' >> have.txt || break; done; fi
+          left=$(python -c "import sys;sys.path.insert(0,'pipeline');from common import STATE,load_json;from daily import queue;h=set(open('have.txt').read().split());print(sum(1 for s in queue(load_json(STATE,{}) or {}) if s+'.tgz' not in h))")
+          before="${{ needs.prep.outputs.left }}"
+          echo "to render: before=$before now=$left"
+          if [ "${left:-0}" -gt 0 ] && [ "${left:-0}" -lt "${before:-0}" ]; then
+            gh api -X POST repos/${{ github.repository }}/actions/workflows/prerender.yml/dispatches -f ref=main && echo "started again"
+          fi

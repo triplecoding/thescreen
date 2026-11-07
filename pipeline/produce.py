@@ -81,6 +81,40 @@ def story_only(script):
     return script
 
 
+STASH = "ready-videos"   # GitHub release with videos rendered in advance (pipeline/prerender.py): <id>.tgz
+STASH_FILES = ["video.mp4", "meta.json", "timeline.json", "captions.srt", "thumb_16x9.jpg", "thumb_9x16.jpg", "thumb_9x16.png"]
+
+
+def script_hash(path):
+    import hashlib
+    return hashlib.sha1(Path(path).read_bytes()).hexdigest()[:16]
+
+
+def from_stash(sid, odir, path):
+    """Use the video rendered in advance for this exact script version, if one is stored."""
+    import os
+    import tarfile
+    if os.environ.get("NO_STASH") or not os.environ.get("GH_TOKEN"):
+        return False
+    r = subprocess.run(["gh", "release", "download", STASH, "-p", f"{sid}.tgz", "-D", str(odir), "--clobber"],
+                       cwd=ROOT, capture_output=True, text=True)
+    tgz = odir / f"{sid}.tgz"
+    if r.returncode != 0 or not tgz.exists():
+        return False
+    try:
+        with tarfile.open(tgz) as t:
+            t.extractall(odir, filter="data")
+        tgz.unlink()
+        meta = load_json(odir / "meta.json", {})
+        ok = (odir / "video.mp4").exists() and not meta.get("problems") and meta.get("script_hash") == script_hash(path) \
+            and meta.get("tts") == "elevenlabs"
+        log(f"stash: using the video rendered in advance for {sid}" if ok else f"stash: {sid} is outdated — rendering again")
+        return ok
+    except Exception as e:  # noqa
+        log(f"stash: {sid} unusable ({e}) — rendering again")
+        return False
+
+
 def produce(sid, tts="elevenlabs", workers=0, stills=False):
     path = SCRIPTS / f"{sid}.json"
     script = story_only(load_json(path))
@@ -90,6 +124,8 @@ def produce(sid, tts="elevenlabs", workers=0, stills=False):
         raise RuntimeError("script invalid: " + "; ".join(errs))
     odir = OUT / sid
     odir.mkdir(parents=True, exist_ok=True)
+    if tts == "elevenlabs" and not stills and from_stash(sid, odir, path):
+        return odir
     work = odir / "work"
     clips = voice.generate(script, work, tts)
     rows, total, speed = TLM.build(script, clips)
@@ -111,7 +147,7 @@ def produce(sid, tts="elevenlabs", workers=0, stills=False):
     (odir / "captions.srt").write_text(srt(tl), encoding="utf-8")
     thumbnails(tl_path, odir)
     dur, problems = qa(final, tl)
-    meta = {"id": sid, "duration": round(dur, 2), "problems": problems, "tts": tts, "title": script["youtube"]["title"]}
+    meta = {"id": sid, "duration": round(dur, 2), "problems": problems, "tts": tts, "title": script["youtube"]["title"], "script_hash": script_hash(path)}
     save_json(odir / "meta.json", meta)
     if problems:
         raise RuntimeError("QA failed: " + "; ".join(problems))
