@@ -2566,6 +2566,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-11T11:30:00+06:00"
+    },
+    {
+      "id": "230",
+      "date": "2026-12-11",
+      "slot": "13:30",
+      "duration": 148.84,
+      "title": "নতুন ফ্ল্যাটে সব নতুন, শুধু আম্মার পুরোনো খাটটা আসেনি… আম্মা ঘুমাতে পারেন না 🛏️",
+      "youtube": "m8Wat3cMwIg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-11T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2605,7 +2616,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:05:16.244398+06:00",
+    "at": "2026-11-07T19:05:28.563450+06:00",
     "errors": []
   },
   "queue_remaining": 78,
