@@ -2764,6 +2764,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-14T11:30:00+06:00"
+    },
+    {
+      "id": "248",
+      "date": "2026-12-14",
+      "slot": "13:30",
+      "duration": 140.98,
+      "title": "একটা ভিডিও দেখে আম্মু সাইকেলে তালা দিলেন— মেয়ে বলল, “চলেন, গুনে দেখি” 🚲",
+      "youtube": "laWTt53OP0w",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-14T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2803,7 +2814,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:09:38.959764+06:00",
+    "at": "2026-11-07T19:09:54.611061+06:00",
     "errors": []
   },
   "queue_remaining": 60,
