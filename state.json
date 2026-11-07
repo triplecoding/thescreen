@@ -1946,6 +1946,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-01T20:00:00+06:00"
+    },
+    {
+      "id": "174",
+      "date": "2026-12-02",
+      "slot": "09:00",
+      "duration": 128.31,
+      "title": "রাত দুইটায় অ্যাম্বুলেন্স এল, গলিতে ঢুকতে পারল না— দুই পাশে বাইক আর গাড়ি… পাড়ার ছেলেরা যা করল 🚑",
+      "youtube": "9Cf1IYiX9C4",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-02T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -1985,12 +1996,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:31:39.657585+06:00",
-    "errors": [],
-    "queue_remaining": 132
+    "at": "2026-11-07T14:31:57.832692+06:00",
+    "errors": []
   },
   "queue_remaining": 132,
-  "_run_started": "2026-11-07T14:31:11.733229+06:00",
+  "_run_started": "2026-11-07T14:31:41.977390+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
