@@ -2289,6 +2289,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-07T09:00:00+06:00"
+    },
+    {
+      "id": "205",
+      "date": "2026-12-07",
+      "slot": "11:30",
+      "duration": 132.1,
+      "title": "১৪ বছর সৌদিতে ইলেকট্রিশিয়ান, দেশে ফিরে কাজ নেই… সবাই বলে ‘আবার বিদেশ যাও’, আনোয়ার গেলেন না ⚡",
+      "youtube": "PgROmWRKLbE",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-07T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2328,7 +2339,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:57:24.313133+06:00",
+    "at": "2026-11-07T16:57:36.978984+06:00",
     "errors": []
   },
   "queue_remaining": 102,
