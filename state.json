@@ -2687,6 +2687,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-13T09:00:00+06:00"
+    },
+    {
+      "id": "241",
+      "date": "2026-12-13",
+      "slot": "11:30",
+      "duration": 144.95,
+      "title": "একই খামার, একই পরিশ্রম— এক রাতের ঝড়ে একজন শেষ, আরেকজন “সফল” 🐔",
+      "youtube": "WsDYN_TK-Hc",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-13T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2726,7 +2737,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:07:59.926747+06:00",
+    "at": "2026-11-07T19:08:14.458197+06:00",
     "errors": []
   },
   "queue_remaining": 66,
