@@ -2940,6 +2940,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-16T20:00:00+06:00"
+    },
+    {
+      "id": "264",
+      "date": "2026-12-17",
+      "slot": "09:00",
+      "duration": 134.35,
+      "title": "আব্বার আয় তিন লাখ, ছেলের বেতন বত্রিশ হাজার— দুই সপ্তাহ আমবাগানে যা শিখল ইমরান 🥭",
+      "youtube": "BJEZIb5GTxg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-17T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2979,12 +2990,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T20:17:42.685026+06:00",
-    "errors": [],
-    "queue_remaining": 42
+    "at": "2026-11-07T20:18:02.546786+06:00",
+    "errors": []
   },
   "queue_remaining": 42,
-  "_run_started": "2026-11-07T20:17:09.398990+06:00",
+  "_run_started": "2026-11-07T20:17:46.093616+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T20:16:01.210264+06:00",
