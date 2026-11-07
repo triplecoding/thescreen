@@ -2344,6 +2344,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-07T20:00:00+06:00"
+    },
+    {
+      "id": "210",
+      "date": "2026-12-08",
+      "slot": "09:00",
+      "duration": 130.07,
+      "title": "আব্বার মৃত্যুর তিন মাস পর ডাকে এল আব্বারই লেখা একটা চিঠি, নাদিয়ার নামে… ✉️",
+      "youtube": "E-u3Gd7bxhM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-08T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2383,12 +2394,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:58:24.799744+06:00",
-    "errors": [],
-    "queue_remaining": 96
+    "at": "2026-11-07T16:58:37.783675+06:00",
+    "errors": []
   },
   "queue_remaining": 96,
-  "_run_started": "2026-11-07T16:57:13.273299+06:00",
+  "_run_started": "2026-11-07T16:58:27.290834+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
