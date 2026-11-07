@@ -2997,6 +2997,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-17T17:30:00+06:00"
+    },
+    {
+      "id": "269",
+      "date": "2026-12-17",
+      "slot": "20:00",
+      "duration": 141.3,
+      "title": "চকলেট দিয়ে ক্যাপ্টেন হতে চাইল দুজন— জিতল পেছনের বেঞ্চের চুপচাপ মেয়েটা 🔑",
+      "youtube": "BXIXLGKK2nk",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-17T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -3036,7 +3047,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T21:20:44.582574+06:00",
+    "at": "2026-11-07T21:21:02.583654+06:00",
     "errors": []
   },
   "queue_remaining": 38,
