@@ -1968,6 +1968,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-02T11:30:00+06:00"
+    },
+    {
+      "id": "176",
+      "date": "2026-12-02",
+      "slot": "13:30",
+      "duration": 136.69,
+      "title": "বিধবা ভাড়াটের ভাড়া দশ বছর এক টাকাও বাড়াননি বাড়িওয়ালি নানু… ছেলে চাকরি পেয়ে নিয়ে এল একটা খাম 🏠",
+      "youtube": "tXQRamV_CVg",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-02T13:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2007,7 +2018,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:32:12.164824+06:00",
+    "at": "2026-11-07T14:32:27.219586+06:00",
     "errors": []
   },
   "queue_remaining": 132,
