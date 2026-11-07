@@ -3067,6 +3067,17 @@
       "playlist": false,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-18T17:30:00+06:00"
+    },
+    {
+      "id": "275",
+      "date": "2026-12-18",
+      "slot": "20:00",
+      "duration": 141.21,
+      "title": "কারখানায় বাচ্চার ঘর তিন বছর খালি— এক মা প্রথম মেয়েকে আনল, তারপর… 🍼",
+      "youtube": "y4MZR5tWNog",
+      "playlist": false,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-18T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -3106,14 +3117,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T02:32:20.770613+06:00",
-    "errors": [
-      "youtube 275: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
-    "queue_remaining": 31
+    "at": "2026-11-08T02:33:37.462526+06:00",
+    "errors": []
   },
   "queue_remaining": 31,
-  "_run_started": "2026-11-08T01:29:30.738339+06:00",
+  "_run_started": "2026-11-08T02:33:25.371482+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-08T02:32:20.734962+06:00",
