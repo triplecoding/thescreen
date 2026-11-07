@@ -2676,6 +2676,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-12T20:00:00+06:00"
+    },
+    {
+      "id": "240",
+      "date": "2026-12-13",
+      "slot": "09:00",
+      "duration": 139.1,
+      "title": "তিন মাস বেতন নেই, বসের নতুন গাড়ি… মাহমুদের খাতায় ছয়টা তারিখ 📒",
+      "youtube": "u3LGuAWkSPM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-13T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2715,12 +2726,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:07:43.465851+06:00",
-    "errors": [],
-    "queue_remaining": 66
+    "at": "2026-11-07T19:07:59.926747+06:00",
+    "errors": []
   },
   "queue_remaining": 66,
-  "_run_started": "2026-11-07T19:06:14.152946+06:00",
+  "_run_started": "2026-11-07T19:07:45.769496+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T18:04:05.974668+06:00",
