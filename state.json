@@ -1957,6 +1957,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-02T09:00:00+06:00"
+    },
+    {
+      "id": "175",
+      "date": "2026-12-02",
+      "slot": "11:30",
+      "duration": 136.41,
+      "title": "গ্রামের স্কুলের লাইব্রেরিতে মাত্র ১২টা বই, তালাবন্ধ… নতুন স্যার চাবিটা দিলেন সবচেয়ে দুষ্টু ছেলেকে 📚",
+      "youtube": "6bkPfytfh-U",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-02T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -1996,7 +2007,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:31:57.832692+06:00",
+    "at": "2026-11-07T14:32:12.164824+06:00",
     "errors": []
   },
   "queue_remaining": 132,
