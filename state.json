@@ -2555,6 +2555,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-11T09:00:00+06:00"
+    },
+    {
+      "id": "229",
+      "date": "2026-12-11",
+      "slot": "11:30",
+      "duration": 140.44,
+      "title": "সিএনজির পেছনের সিটে একটা মানিব্যাগ, ভেতরে ৪৮ হাজার টাকা, আর মনিরের মেয়ের ভর্তির টাকা কম পড়েছে… 💵",
+      "youtube": "7ZYoAMf1ANk",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-11T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2594,7 +2605,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:04:58.924126+06:00",
+    "at": "2026-11-07T19:05:16.244398+06:00",
     "errors": []
   },
   "queue_remaining": 78,
