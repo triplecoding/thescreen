@@ -2210,6 +2210,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-05T20:00:00+06:00"
+    },
+    {
+      "id": "198",
+      "date": "2026-12-06",
+      "slot": "09:00",
+      "duration": 135.27,
+      "title": "জেনারেটরের টাকা দেয় সবাই, আলো জ্বলে শুধু সেক্রেটারির তলায়… তারপর একটা খাতা ⚡",
+      "youtube": "xWveAhNP4Qo",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-06T09:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2249,12 +2260,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:37:27.141050+06:00",
-    "errors": [],
-    "queue_remaining": 108
+    "at": "2026-11-07T14:37:41.189121+06:00",
+    "errors": []
   },
   "queue_remaining": 108,
-  "_run_started": "2026-11-07T14:36:10.485263+06:00",
+  "_run_started": "2026-11-07T14:37:29.407876+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T13:31:09.164599+06:00",
