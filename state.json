@@ -2847,10 +2847,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T19:10:41.029391+06:00",
-    "errors": []
+    "at": "2026-11-07T19:10:42.423673+06:00",
+    "errors": [],
+    "queue_remaining": 54
   },
-  "queue_remaining": 60,
+  "queue_remaining": 54,
   "_run_started": "2026-11-07T19:09:12.603964+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
