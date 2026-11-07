@@ -2421,6 +2421,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-09T09:00:00+06:00"
+    },
+    {
+      "id": "217",
+      "date": "2026-12-09",
+      "slot": "11:30",
+      "duration": 137.26,
+      "title": "ক্যাশিয়ার জুঁই ধরল মাসে ৪০ হাজারের গরমিল… রিপোর্টটা জমা পড়ল সুপারভাইজারের নামে 🧾",
+      "youtube": "s_wx-_kfrxM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-09T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2460,7 +2471,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:59:52.222749+06:00",
+    "at": "2026-11-07T17:00:06.482455+06:00",
     "errors": []
   },
   "queue_remaining": 90,
