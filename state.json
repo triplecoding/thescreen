@@ -2355,6 +2355,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-08T09:00:00+06:00"
+    },
+    {
+      "id": "211",
+      "date": "2026-12-08",
+      "slot": "11:30",
+      "duration": 137.44,
+      "title": "বোর্ডের খাতা দেখছেন মুনির স্যার, প্রতিবেশী এলেন মিষ্টি নিয়ে, ‘ছেলের রোল নম্বরটা একটু দেখবেন’… 📝",
+      "youtube": "JqDLfyXetyM",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-08T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2394,7 +2405,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T16:58:37.783675+06:00",
+    "at": "2026-11-07T16:58:49.142172+06:00",
     "errors": []
   },
   "queue_remaining": 96,
