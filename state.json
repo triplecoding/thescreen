@@ -2863,6 +2863,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-15T17:30:00+06:00"
+    },
+    {
+      "id": "257",
+      "date": "2026-12-15",
+      "slot": "20:00",
+      "duration": 142.6,
+      "title": "বারো বছরের পার্টনার, এক বছরে সাতাশটা তর্ক— দুই বন্ধু আলাদা হলো, শত্রু না হয়ে 🐟",
+      "youtube": "689mEZP3e0o",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-15T20:00:00+06:00"
     }
   ],
   "failed": [],
@@ -2902,7 +2913,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T20:13:43.394348+06:00",
+    "at": "2026-11-07T20:13:56.515880+06:00",
     "errors": []
   },
   "queue_remaining": 51,
