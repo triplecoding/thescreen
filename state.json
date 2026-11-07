@@ -2023,6 +2023,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-03T09:00:00+06:00"
+    },
+    {
+      "id": "181",
+      "date": "2026-12-03",
+      "slot": "11:30",
+      "duration": 138.12,
+      "title": "ক্লাসে ‘ভালো খবরের বোর্ড’, মিলি লিখল ‘আজকে আমার আম্মা হাসছে’ 📌",
+      "youtube": "nrw8RP2uIrY",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-03T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2062,7 +2073,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T14:33:24.124041+06:00",
+    "at": "2026-11-07T14:33:35.668872+06:00",
     "errors": []
   },
   "queue_remaining": 126,
