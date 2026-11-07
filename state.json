@@ -2918,6 +2918,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-16T15:30:00+06:00"
+    },
+    {
+      "id": "262",
+      "date": "2026-12-16",
+      "slot": "17:30",
+      "duration": 135.06,
+      "title": "অ্যাপের কাছে হারছিল খালার টিফিন— ছয়তলার এক একা চাচা দেখাল অন্য পথ 🍱",
+      "youtube": "SYeSjzNJzxw",
+      "playlist": true,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-16T17:30:00+06:00"
     }
   ],
   "failed": [],
@@ -2957,14 +2968,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T20:16:01.261330+06:00",
-    "errors": [
-      "youtube 262: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
-    "queue_remaining": 44
+    "at": "2026-11-07T20:17:24.642759+06:00",
+    "errors": []
   },
   "queue_remaining": 44,
-  "_run_started": "2026-11-07T20:14:00.299950+06:00",
+  "_run_started": "2026-11-07T20:17:09.398990+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T20:16:01.210264+06:00",
