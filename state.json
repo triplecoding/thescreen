@@ -3021,6 +3021,17 @@
       "playlist": true,
       "facebook_error": "deferred: facebook spacing",
       "scheduled_for": "2026-12-18T09:00:00+06:00"
+    },
+    {
+      "id": "271",
+      "date": "2026-12-18",
+      "slot": "11:30",
+      "duration": 140.07,
+      "title": "‘তুমি কী বানাও, আম্মু?’— ছয় বছরে দিনে চৌদ্দশো কলার, মেয়ের প্রশ্নে চুপ রিনা 🧵",
+      "youtube": "EqCm4mK6Nlg",
+      "playlist": false,
+      "facebook_error": "deferred: facebook spacing",
+      "scheduled_for": "2026-12-18T11:30:00+06:00"
     }
   ],
   "failed": [],
@@ -3060,14 +3071,11 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-07T22:23:47.967790+06:00",
-    "errors": [
-      "youtube 271: YouTube init failed: 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:526217664792'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_numb"
-    ],
-    "queue_remaining": 35
+    "at": "2026-11-07T23:26:43.900386+06:00",
+    "errors": []
   },
   "queue_remaining": 35,
-  "_run_started": "2026-11-07T23:23:51.404055+06:00",
+  "_run_started": "2026-11-07T23:26:27.895677+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-07T22:23:47.931771+06:00",
