@@ -3216,6 +3216,13 @@
       "at": "2026-11-08T07:40:59.528175+06:00",
       "kind": "upload",
       "retry": true
+    },
+    {
+      "id": "294",
+      "reason": "all uploads failed: ",
+      "at": "2026-11-08T07:40:59.528175+06:00",
+      "kind": "upload",
+      "retry": true
     }
   ],
   "playlists": {
@@ -3254,7 +3261,7 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T07:41:10.932299+06:00",
+    "at": "2026-11-08T07:41:17.750905+06:00",
     "errors": []
   },
   "queue_remaining": 14,
