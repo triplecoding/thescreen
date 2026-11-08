@@ -3340,10 +3340,8 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T07:42:37.187744+06:00",
-    "errors": [
-      "queue empty — no ready scripts"
-    ],
+    "at": "2026-11-08T10:56:11.394867+06:00",
+    "errors": [],
     "queue_remaining": 0
   },
   "queue_remaining": 0,
