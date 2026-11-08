@@ -3338,10 +3338,13 @@
     "theme:family": "PLToILJfQAZQE"
   },
   "last_run": {
-    "at": "2026-11-08T07:42:35.547744+06:00",
-    "errors": []
+    "at": "2026-11-08T07:42:37.187744+06:00",
+    "errors": [
+      "queue empty — no ready scripts"
+    ],
+    "queue_remaining": 0
   },
-  "queue_remaining": 4,
+  "queue_remaining": 0,
   "_run_started": "2026-11-08T07:42:10.965196+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
