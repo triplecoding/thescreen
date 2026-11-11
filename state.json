@@ -1113,8 +1113,9 @@
       "title": "জাহাজের অফিসার বাবা কোনো জন্মদিনে থাকেন না… মেয়ে রোজ রাতে খুঁজত মানচিত্রের একটা বিন্দু 🚢",
       "youtube": "MSynXAzxhJc",
       "playlist": false,
-      "facebook_error": "deferred: facebook posting limit",
-      "scheduled_for": "2026-11-18T09:00:00+06:00"
+      "facebook_error": "Facebook upload failed: 400 {\"error\":{\"message\":\"We limit how often you can post, comment or do other things in a given amount of time in order to help protect the community from spam. You can try again later. Learn More\",\"type\":\"OAuthException\",\"code\":368,\"error_data\":{\"sentry_block_data\":\"AevcfjU1",
+      "scheduled_for": "2026-11-18T09:00:00+06:00",
+      "fb_tries": 0
     },
     {
       "id": "091",
@@ -3409,9 +3410,9 @@
     "queue_remaining": 0
   },
   "queue_remaining": 0,
-  "_run_started": "2026-11-11T07:26:04.302913+06:00",
+  "_run_started": "2026-11-11T12:05:38.616495+06:00",
   "dry_runs": [],
-  "fb_block_until": "2026-11-07T09:00:00+06:00",
+  "fb_block_until": "2026-11-13T00:05:38.616495+06:00",
   "yt_limit_at": "2026-11-08T05:38:15.106407+06:00",
   "fb_last_upload": "2026-11-11T07:26:04.302913+06:00"
 }
