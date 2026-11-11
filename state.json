@@ -1101,7 +1101,9 @@
       "youtube": "kCR9xEhcv70",
       "playlist": false,
       "facebook_error": "deferred: facebook posting limit",
-      "scheduled_for": "2026-11-17T20:00:00+06:00"
+      "scheduled_for": "2026-11-17T20:00:00+06:00",
+      "fb_tries": 1,
+      "facebook": "1179645514387526"
     },
     {
       "id": "090",
@@ -3407,9 +3409,9 @@
     "queue_remaining": 0
   },
   "queue_remaining": 0,
-  "_run_started": "2026-11-11T05:26:28.107426+06:00",
+  "_run_started": "2026-11-11T07:26:04.302913+06:00",
   "dry_runs": [],
   "fb_block_until": "2026-11-07T09:00:00+06:00",
   "yt_limit_at": "2026-11-08T05:38:15.106407+06:00",
-  "fb_last_upload": "2026-11-11T05:26:28.107426+06:00"
+  "fb_last_upload": "2026-11-11T07:26:04.302913+06:00"
 }
